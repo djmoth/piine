@@ -68,7 +68,7 @@ namespace piine.Voxels
         }
 
         /// <summary>
-        /// Free the unmanaged memory. The boject will be unusable afterwards.
+        /// Free the unmanaged memory. The object will be unusable afterwards.
         /// </summary>
         protected virtual void Dispose (bool disposing)
         {
@@ -77,6 +77,21 @@ namespace piine.Voxels
                 voxels.Dispose ();
                 voxels = null;
             }
+        }
+
+        public override int GetHashCode ()
+        {
+            const int prime = 31;
+
+            int hash = 0;
+
+            for (int i = 0; i < Volume; i++)
+            {
+                hash ^= voxels.ArrayPointer[i].GetHashCode ();
+                hash *= prime;
+            }
+
+            return hash;
         }
     }
 }

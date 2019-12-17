@@ -10,12 +10,12 @@ namespace tests.Voxels
         [Test]
         public void TestIndexPositions ()
         {
-            IntVector3 dimensions = new IntVector3 (4, 7, 9);
+            Int3 dimensions = new Int3 (4, 7, 9);
             int volume = dimensions.CalculateVolume ();
 
             for (int i = 0; i < volume; i++)
             {
-                IntVector3 positionFromIndex = VoxelGrid<byte>.CalculatePosition (dimensions, i);
+                Int3 positionFromIndex = VoxelGrid<byte>.CalculatePosition (dimensions, i);
                 int indexFromPosition = VoxelGrid<byte>.CalculateIndex (dimensions, positionFromIndex);
 
                 Assert.IsTrue (indexFromPosition == i);
@@ -25,7 +25,13 @@ namespace tests.Voxels
         [Test]
         public void ForeachTest ()
         {
-            VoxelVol
+            
+        }
+
+        [Test]
+        public void HashCodeTest ()
+        {
+
         }
     }
 }

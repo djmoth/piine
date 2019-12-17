@@ -51,7 +51,7 @@ namespace piine.Memory
             if (difference > 0)
                 GC.AddMemoryPressure (difference);
             else if (difference < 0)
-                GC.RemoveMemoryPressure (difference);
+                GC.RemoveMemoryPressure (-difference);
 
             memory = (T*)Marshal.ReAllocHGlobal ((IntPtr)memory, (IntPtr)newSizeBytes);
         }

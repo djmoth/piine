@@ -6,15 +6,15 @@ using System.Runtime.InteropServices;
 namespace piine
 {
     [StructLayout (LayoutKind.Sequential, Size = 12)]
-    public struct IntVector3 : IEquatable<IntVector3>
+    public struct Int3 : IEquatable<Int3>
     {
         public const int Size = 3; //Number of dimensions
 
-        public static IntVector3 Zero => new IntVector3 (0);
-        public static IntVector3 One => new IntVector3 (1);
-        public static IntVector3 UnitX => new IntVector3 (1, 0, 0);
-        public static IntVector3 UnitY => new IntVector3 (0, 1, 0);
-        public static IntVector3 UnitZ => new IntVector3 (0, 0, 1);
+        public static Int3 Zero { get; } = new Int3 (0);
+        public static Int3 One { get; } = new Int3 (1);
+        public static Int3 UnitX { get; } = new Int3 (1, 0, 0);
+        public static Int3 UnitY { get; } = new Int3 (0, 1, 0);
+        public static Int3 UnitZ { get; } = new Int3 (0, 0, 1);
 
         public int x;
         public int y;
@@ -24,28 +24,28 @@ namespace piine
 
         public float LengthSquared => (x * x) + (y * y) + (z * z);
 
-        public IntVector3 (int x, int y, int z)
+        public Int3 (int x, int y, int z)
         {
             this.x = x;
             this.y = y;
             this.z = z;
         }
 
-        public IntVector3 (float x, float y, float z)
+        public Int3 (float x, float y, float z)
         {
             this.x = (int)Math.Round (x);
             this.y = (int)Math.Round (y);
             this.z = (int)Math.Round (z);
         }
 
-        public IntVector3 (int all)
+        public Int3 (int all)
         {
             x = all;
             y = all;
             z = all;
         }
 
-        public IntVector3 (Vector<int> v, int startIndex = 0)
+        public Int3 (Vector<int> v, int startIndex = 0)
         {
             x = v[startIndex];
             y = v[startIndex + 1];
@@ -78,7 +78,7 @@ namespace piine
             }
         }
 
-        public static IntVector3 Normalize (IntVector3 v)
+        public static Int3 Normalize (Int3 v)
         {
             if (v == Zero)
                 return Zero;
@@ -91,7 +91,7 @@ namespace piine
             return v;
         }
 
-        public static Vector3 NormalizeToVector3 (IntVector3 v) => Vector3.Normalize (v);
+        public static Vector3 NormalizeToVector3 (Int3 v) => Vector3.Normalize (v);
 
         public int GetLongestComponent ()
         {
@@ -103,24 +103,24 @@ namespace piine
         }
         public int CalculateVolume () => x * y * z;
 
-        public static IntVector3 Absolute (IntVector3 v)
+        public static Int3 Absolute (Int3 v)
         {
-            return new IntVector3 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z));
+            return new Int3 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z));
         }
 
-        public static float Distance (IntVector3 a, IntVector3 b)
+        public static float Distance (Int3 a, Int3 b)
         {
             return (a - b).Length;
         }
 
         public static Vector3 RoundVector3 (Vector3 v)
         {
-            return (IntVector3)v;
+            return (Int3)v;
         }   
 
-        public static IntVector3 Cross (IntVector3 a, IntVector3 b)
+        public static Int3 Cross (Int3 a, Int3 b)
         {
-            IntVector3 r = new IntVector3 ();
+            Int3 r = new Int3 ();
             r.x = a.y * b.z - a.z * b.y;
             r.y = a.x * b.z - a.z * b.x;
             r.z = a.y * b.x - a.x * b.y;
@@ -129,7 +129,7 @@ namespace piine
         }
 
         [CLSCompliant (false)]
-        public static unsafe IntVector3 Sum (IntVector3* vectorPtr, int length)
+        public static unsafe Int3 Sum (Int3* vectorPtr, int length)
         {
             Vector<int> result = Unsafe.ReadUnaligned<Vector<int>> (vectorPtr);
 
@@ -141,7 +141,7 @@ namespace piine
                 result += vector;
             }
 
-            return new IntVector3 (result);
+            return new Int3 (result);
 
             /*int fullVectorsInSIMD = Vector<int>.Count / Size; //The number of IntVector3's that fit in one Vector<int>
             int simdLength = fullVectorsInSIMD * Size; //Number of ints that fit in fullVectorsInSIMD
@@ -169,27 +169,27 @@ namespace piine
             return new IntVector3 (wideResult);*/
         }
 
-        public static implicit operator Vector3 (IntVector3 iv)
+        public static implicit operator Vector3 (Int3 iv)
         {
             return new Vector3 (iv.x, iv.y, iv.z);
         }
 
-        public static implicit operator IntVector3 (Vector3 iv)
+        public static implicit operator Int3 (Vector3 iv)
         {
-            return new IntVector3 (iv.X, iv.Y, iv.Z);
+            return new Int3 (iv.X, iv.Y, iv.Z);
         }
 
-        public static implicit operator IntVector3 ((int x, int y, int z) v)
+        public static implicit operator Int3 ((int x, int y, int z) v)
         {
-            return new IntVector3 (v.x, v.y, v.z);
+            return new Int3 (v.x, v.y, v.z);
         }
 
-        public static implicit operator (int, int, int) (IntVector3 v)
+        public static implicit operator (int, int, int) (Int3 v)
         {
             return (v.x, v.y, v.z);
         }
 
-        public static bool operator == (IntVector3 a, IntVector3 b)
+        public static bool operator == (Int3 a, Int3 b)
         {
             if (a.x == b.x && a.y == b.y && a.z == b.z)
                 return true;
@@ -197,7 +197,7 @@ namespace piine
                 return false;
         }
 
-        public static bool operator != (IntVector3 a, IntVector3 b)
+        public static bool operator != (Int3 a, Int3 b)
         {
             if (a.x == b.x && a.y == b.y && a.z == b.z)
                 return false;
@@ -205,7 +205,7 @@ namespace piine
                 return true;
         }
 
-        public static bool operator == (IntVector3 a, Vector3 b)
+        public static bool operator == (Int3 a, Vector3 b)
         {
             if (a.x == b.X && a.y == b.Y && a.z == b.Z)
                 return true;
@@ -213,7 +213,7 @@ namespace piine
                 return false;
         }
 
-        public static bool operator != (IntVector3 a, Vector3 b)
+        public static bool operator != (Int3 a, Vector3 b)
         {
             if (a.x == b.X && a.y == b.Y && a.z == b.Z)
                 return false;
@@ -221,38 +221,38 @@ namespace piine
                 return true;
         }
 
-        public unsafe static IntVector3 operator + (IntVector3 a, IntVector3 b)
+        public unsafe static Int3 operator + (Int3 a, Int3 b)
         {
-            return new IntVector3 (a.x + b.x, a.y + b.y, a.z + b.z);
+            return new Int3 (a.x + b.x, a.y + b.y, a.z + b.z);
         }
 
-        public static IntVector3 operator - (IntVector3 a, IntVector3 b)
+        public static Int3 operator - (Int3 a, Int3 b)
         {
-            return new IntVector3 (a.x - b.x, a.y - b.y, a.z - b.z);
+            return new Int3 (a.x - b.x, a.y - b.y, a.z - b.z);
         }
 
-        public static IntVector3 operator - (IntVector3 v)
+        public static Int3 operator - (Int3 v)
         {
-            return new IntVector3 (v.x * -1, v.y * -1, v.z * -1);
+            return new Int3 (v.x * -1, v.y * -1, v.z * -1);
         }
 
-        public static IntVector3 operator * (IntVector3 a, int b)
+        public static Int3 operator * (Int3 a, int b)
         {
-            return new IntVector3 (a.x * b, a.y * b, a.z * b);
+            return new Int3 (a.x * b, a.y * b, a.z * b);
         }
 
-        public static IntVector3 operator / (IntVector3 a, float b)
+        public static Int3 operator / (Int3 a, float b)
         {
-            return new IntVector3 (a.x / b, a.y / b, a.z / b);
+            return new Int3 (a.x / b, a.y / b, a.z / b);
         }
 
-        public static bool operator > (IntVector3 a, IntVector3 b) => a.x > b.x && a.y > b.y && a.z > b.z;
+        public static bool operator > (Int3 a, Int3 b) => a.x > b.x && a.y > b.y && a.z > b.z;
 
-        public static bool operator < (IntVector3 a, IntVector3 b) => a.x < b.x && a.y < b.y && a.z < b.z;
+        public static bool operator < (Int3 a, Int3 b) => a.x < b.x && a.y < b.y && a.z < b.z;
 
-        public static bool operator >= (IntVector3 a, IntVector3 b) => a.x >= b.x && a.y >= b.y && a.z >= b.z;
+        public static bool operator >= (Int3 a, Int3 b) => a.x >= b.x && a.y >= b.y && a.z >= b.z;
 
-        public static bool operator <= (IntVector3 a, IntVector3 b) => a.x <= b.x && a.y <= b.y && a.z <= b.z;
+        public static bool operator <= (Int3 a, Int3 b) => a.x <= b.x && a.y <= b.y && a.z <= b.z;
 
         public override string ToString ()
         {
@@ -264,11 +264,11 @@ namespace piine
             return (x * 73856093) ^ (y * 19349663) ^ (z * 83492791);
         }
 
-        public bool Equals (IntVector3 other) => this == other;
+        public bool Equals (Int3 other) => this == other;
 
         public override bool Equals (object obj)
         {
-            IntVector3? v = obj as IntVector3?;
+            Int3? v = obj as Int3?;
 
             if (v != null)
                 return v == this;

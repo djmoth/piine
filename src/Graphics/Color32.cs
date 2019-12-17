@@ -65,6 +65,8 @@ namespace piine.Graphics
 
         public override int GetHashCode () => AsInt32;
 
+        public override string ToString () => "#" + r.ToString ("X2") + g.ToString ("X2") + b.ToString ("X2") + a.ToString ("X2");
+
         //Colors
         public static Color32 Black => new Color32 (0, 0, 0);
         public static Color32 White => new Color32 (255, 255, 255);

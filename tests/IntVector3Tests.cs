@@ -11,25 +11,25 @@ namespace Tests
         [Test]
         public void TestAdd ()
         {
-            IntVector3 v1 = new IntVector3 (4, 2, 5);
-            IntVector3 v2 = new IntVector3 (3, 7, -2);
+            Int3 v1 = new Int3 (4, 2, 5);
+            Int3 v2 = new Int3 (3, 7, -2);
 
-            IntVector3 result = v1 + v2;
+            Int3 result = v1 + v2;
 
-            Assert.IsTrue (result == new IntVector3 (3 + 4, 2 + 7, 5 + (-2)));
+            Assert.IsTrue (result == new Int3 (3 + 4, 2 + 7, 5 + (-2)));
         }
 
         [Test]
         [Explicit]
         public unsafe void TestAddPerformanceNoSIMD ()
         {
-            IntVector3 result = IntVector3.Zero;
+            Int3 result = Int3.Zero;
 
             Stopwatch sw = Stopwatch.StartNew ();
 
             for (int i = 0; i < 10_000; i++)
             {
-                result += new IntVector3 (1, 2, 3);
+                result += new Int3 (1, 2, 3);
             }
 
             sw.Stop ();
@@ -43,18 +43,27 @@ namespace Tests
         {
             Stopwatch sw = Stopwatch.StartNew ();
 
-            IntVector3* vectors = stackalloc IntVector3[10_000];
+            Int3* vectors = stackalloc Int3[10_000];
 
             for (int i = 0; i < 10_000; i++)
             {
-                vectors[i] = new IntVector3 (1, 2, 3);
+                vectors[i] = new Int3 (1, 2, 3);
             }
 
-            IntVector3 result = IntVector3.Sum (vectors, 10_000);
+            Int3 result = Int3.Sum (vectors, 10_000);
 
             sw.Stop ();
 
-            Assert.Pass ("SIMD (" + Vector.IsHardwareAccelerated + "): Time = " + sw.Elapsed.TotalMilliseconds + " ms, result = " + result.ToString () + ", Sizeof (IntVector3) = " + sizeof (IntVector3));
+            Assert.Pass ("SIMD (" + Vector.IsHardwareAccelerated + "): Time = " + sw.Elapsed.TotalMilliseconds + " ms, result = " + result.ToString () + ", Sizeof (IntVector3) = " + sizeof (Int3));
+        }
+
+        [Test]
+        public void TestTupleCast ()
+        {
+            Int3 v1 = (2, 4, 6);
+            Int3 v2 = v1 + (2, 1, -1);
+
+            Assert.IsTrue (v2 == (4, 5, 5));
         }
     }
 }

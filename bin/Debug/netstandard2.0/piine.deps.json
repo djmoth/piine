@@ -11,12 +11,14 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.4",
           "NETStandard.Library": "2.0.3",
-          "System.Memory": "4.5.3"
+          "System.Memory": "4.5.3",
+          "docfx.console": "2.45.1"
         },
         "runtime": {
           "piine.dll": {}
         }
       },
+      "docfx.console/2.45.1": {},
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
         "dependencies": {
           "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "2.9.4",
@@ -79,6 +81,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "docfx.console/2.45.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7uaKD/LHN2lAXJGo5z3evsJ5mvdbn5EoDx3LWwSVMKSsHRBktZCQwQ+5dancNRVsDUxvb9c9aax5qq8NeCwc6A==",
+      "path": "docfx.console/2.45.1",
+      "hashPath": "docfx.console.2.45.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
       "type": "package",

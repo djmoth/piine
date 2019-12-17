@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using piine.Graphics;
 
 namespace piine.Voxels
 {
-    public interface IVoxelVolume<T>
+    public interface IColorVolume
     {
         int Width { get; }
         int Height { get; }
         int Depth { get; }
 
-        void SetVoxel (Int3 voxel, T data);
-        T GetVoxel (Int3 voxel);
+        Color32 GetColor (Int3 voxel);
     }
 }

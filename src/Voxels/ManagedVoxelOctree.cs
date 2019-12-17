@@ -22,7 +22,7 @@ namespace piine.Voxels
             MaxSubdivisions = (int)Math.Log (Size, 2);
         }
 
-        public override void SetVoxel (IntVector3 position, T data)
+        public override void SetVoxel (Int3 position, T data)
         {
             if (IsEmpty)
                 root = new Node ();
@@ -33,7 +33,7 @@ namespace piine.Voxels
             {
                 int halfSize = Size / 2;
 
-                IntVector3 nodePosition = new IntVector3 (position.x / halfSize, position.x / halfSize, position.x / halfSize);
+                Int3 nodePosition = new Int3 (position.x / halfSize, position.x / halfSize, position.x / halfSize);
 
                 if (!parent.HasChildren)
                     parent.CreateChildren ();
@@ -42,22 +42,11 @@ namespace piine.Voxels
             }
         }
 
-        public override T GetVoxel (IntVector3 position)
+        public override T GetVoxel (Int3 position)
         {
-            if (IsEmpty)
                 return default;
 
             
-        }
-
-        private Node GetNode (IntVector3 voxelPosition)
-        {
-            
-        }
-
-        private Node GetEndNode (IntVector3 voxelPosition)
-        {
-
         }
 
         private class Node
@@ -78,7 +67,7 @@ namespace piine.Voxels
 
             public Node GetChild (int index) => children?[index];
 
-            public Node GetChild (IntVector3 position) => children?[CalculateNodeIndex (position)];
+            public Node GetChild (Int3 position) => children?[CalculateNodeIndex (position)];
         }
     }
 }
