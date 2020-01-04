@@ -11,6 +11,7 @@ namespace piine.Voxels
         int Height { get; }
         int Depth { get; }
 
+        void SetColor (Int3 voxel, Color32 color);
         Color32 GetColor (Int3 voxel);
     }
 }

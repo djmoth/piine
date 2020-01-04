@@ -6,7 +6,7 @@ using piine;
 
 namespace Tests
 {
-    public class IntVector3Tests
+    public class Int3Tests
     {
         [Test]
         public void TestAdd ()

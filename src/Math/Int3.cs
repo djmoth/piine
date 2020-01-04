@@ -5,22 +5,35 @@ using System.Runtime.InteropServices;
 
 namespace piine
 {
-    [StructLayout (LayoutKind.Sequential, Size = 12)]
-    public struct Int3 : IEquatable<Int3>
+    [StructLayout (LayoutKind.Explicit, Size = 12)]
+    public unsafe struct Int3 : IEquatable<Int3>
     {
         public const int Size = 3; //Number of dimensions
 
-        public static Int3 Zero { get; } = new Int3 (0);
-        public static Int3 One { get; } = new Int3 (1);
-        public static Int3 UnitX { get; } = new Int3 (1, 0, 0);
-        public static Int3 UnitY { get; } = new Int3 (0, 1, 0);
-        public static Int3 UnitZ { get; } = new Int3 (0, 0, 1);
+        private static readonly Int3 zero = new Int3 (0);
+        private static readonly Int3 one = new Int3 (1);
+        private static readonly Int3 unitX = new Int3 (1, 0, 0);
+        private static readonly Int3 unitY = new Int3 (0, 1, 0);
+        private static readonly Int3 unitZ = new Int3 (0, 0, 1);
 
+        public static ref readonly Int3 Zero => ref zero;
+        public static ref readonly Int3 One => ref one;
+        public static ref readonly Int3 UnitX => ref unitX;
+        public static ref readonly Int3 UnitY => ref unitY;
+        public static ref readonly Int3 UnitZ => ref unitZ;
+
+        [CLSCompliant (false)]
+        [FieldOffset (0)]
+        public fixed int data[3];
+
+        [FieldOffset (0)]
         public int x;
+        [FieldOffset (4)]
         public int y;
+        [FieldOffset (8)]
         public int z;
 
-        public float Length => (float)Math.Sqrt ((x * x) + (y * y) + (z * z));
+        public float Length => (float)Math.Sqrt (LengthSquared);
 
         public float LengthSquared => (x * x) + (y * y) + (z * z);
 
@@ -56,25 +69,17 @@ namespace piine
         {
             get
             {
-                switch (index)
-                {
-                    case 0: return x;
-                    case 1: return y;
-                    case 2: return z;
-                }
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
 
-                throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+                return data[0];
             }
             set
             {
-                switch (index)
-                {
-                    case 0: x = value; return;
-                    case 1: y = value; return;
-                    case 2: z = value; return;
-                }
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
 
-                throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+                data[0] = value;
             }
         }
 
