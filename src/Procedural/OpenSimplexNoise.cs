@@ -1,6 +1,6 @@
 ﻿//OpenSimplexNoise, written by Kurt Spencer, translated to C# by Daniel J. Moth
 
-namespace Procedural
+namespace piine.Procedural
 {
     public class OpenSimplexNoise
     {

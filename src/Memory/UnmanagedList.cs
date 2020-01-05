@@ -251,12 +251,14 @@ namespace piine.Memory
             }
         }
 
-        public IEnumerator<T> GetEnumerator ()
+        public Enumerator GetEnumerator ()
         {
             CheckIfAllocated ();
 
             return new Enumerator (this);
         }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator () => GetEnumerator ();
 
         IEnumerator IEnumerable.GetEnumerator () => GetEnumerator ();
 
@@ -286,7 +288,7 @@ namespace piine.Memory
             Allocated = false;
         }
 
-        private struct Enumerator : IEnumerator<T>
+        public struct Enumerator : IEnumerator<T>
         {
             private readonly UnmanagedList<T> list;
             public T Current => list.array[position];

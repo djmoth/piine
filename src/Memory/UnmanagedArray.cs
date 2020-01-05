@@ -62,7 +62,7 @@ namespace piine.Memory
         /// <summary>
         /// Allocate a new UnmanagedArray.
         /// </summary>
-        /// <param name="size">Size of the new array</param>
+        /// <param name="size">Size of the new array in elements of T</param>
         public UnmanagedArray (int size)
         {
             ArrayPointer = Unmanaged.AllocMemory<T> (size);
@@ -78,7 +78,7 @@ namespace piine.Memory
         /// Allocate a new UnmanagedArray.
         /// </summary>
         /// <param name="size">Size of the new array</param>
-        /// <param name="fillWithDefaultValues">"Zero-out" the array with the default value of T. The array can otherwise contain garbage data.</param>
+        /// <param name="fillWithDefaultValues">"Zero-out" the array with the default value of T. The array may otherwise contain garbage data.</param>
         public UnmanagedArray (int size, bool fillWithDefaultValues)
         {
             ArrayPointer = Unmanaged.AllocMemory<T> (size);
@@ -94,7 +94,7 @@ namespace piine.Memory
         }
 
         /// <summary>
-        /// Allocate a new UnmanagedArray with the size of span. The contents of span are copied to the new UnmanagedArray.
+        /// Allocate a new UnmanagedArray from a Span The contents of the span are copied to the new UnmanagedArray.
         /// </summary>
         /// <param name="span">Span to copy from</param>
         public UnmanagedArray (Span<T> span)
@@ -203,12 +203,14 @@ namespace piine.Memory
         /// </summary>
         public Span<T> GetSpan () => new Span<T> (ArrayPointer, Length);
 
-        public IEnumerator<T> GetEnumerator ()
+        public Enumerator GetEnumerator ()
         {
             CheckIfAllocated ();
 
             return new Enumerator (this);
         }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator () => GetEnumerator ();
 
         IEnumerator IEnumerable.GetEnumerator () => GetEnumerator ();
 
@@ -246,7 +248,7 @@ namespace piine.Memory
             Allocated = false;
         }
 
-        private struct Enumerator : IEnumerator<T>
+        public struct Enumerator : IEnumerator<T>
         {
             private readonly UnmanagedArray<T> array;
             public T Current => array.ArrayPointer[position];
