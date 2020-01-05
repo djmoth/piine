@@ -23,7 +23,7 @@ namespace piine
 
         [CLSCompliant (false)]
         [FieldOffset (0)]
-        public fixed float data[3];
+        public fixed float components[Size];
 
         [FieldOffset (0)]
         public float x;
@@ -61,20 +61,22 @@ namespace piine
                 if (index < 0 || index >= Size)
                     throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
 
-                return data[0];
+                return components[index];
             }
             set
             {
                 if (index < 0 || index >= Size)
                     throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
 
-                data[0] = value;
+                components[index] = value;
             }
         }
 
-        public float GetUnsafe (int index) => data[index];
+        public float GetUnsafe (int index) => components[index];
 
-        public void SetUnsafe (int index, float value) => data[index] = value;
+        public void SetUnsafe (int index, float value) => components[index] = value;     
+
+        public float CalculateVolume () => x * y * z;
 
         public static Float3 Normalize (Float3 v)
         {
@@ -88,8 +90,6 @@ namespace piine
 
             return v;
         }
-
-        public float CalculateVolume () => x * y * z;
 
         public static Float3 Absolute (Float3 v)
         {
@@ -111,76 +111,29 @@ namespace piine
             return r;
         }
 
+        public static explicit operator Float3 (Int3 v) => new Float3 (v.x, v.y, v.z);
+
         public static explicit operator Vector3 (Float3 v) => new Vector3 (v.x, v.y, v.z);
 
         public static explicit operator Float3 (Vector3 v) => new Float3 (v.X, v.Y, v.Z);
 
-        public static implicit operator Float3 ((float x, float y, float z) v)
-        {
-            return new Float3 (v.x, v.y, v.z);
-        }
+        public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
 
-        public static implicit operator (float, float, float) (Float3 v)
-        {
-            return (v.x, v.y, v.z);
-        }
+        public static implicit operator (float, float, float) (Float3 v) => (v.x, v.y, v.z);
 
-        public static bool operator == (Float3 a, Float3 b)
-        {
-            if (a.x == b.x && a.y == b.y && a.z == b.z)
-                return true;
-            else
-                return false;
-        }
+        public static bool operator == (Float3 a, Float3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
-        public static bool operator != (Float3 a, Float3 b)
-        {
-            if (a.x == b.x && a.y == b.y && a.z == b.z)
-                return false;
-            else
-                return true;
-        }
+        public static bool operator != (Float3 a, Float3 b) => a.x != b.x || a.y != b.y || a.z != b.z;
 
-        public static bool operator == (Float3 a, Vector3 b)
-        {
-            if (a.x == b.X && a.y == b.Y && a.z == b.Z)
-                return true;
-            else
-                return false;
-        }
+        public unsafe static Float3 operator + (Float3 a, Float3 b) => new Float3 (a.x + b.x, a.y + b.y, a.z + b.z);
 
-        public static bool operator != (Float3 a, Vector3 b)
-        {
-            if (a.x == b.X && a.y == b.Y && a.z == b.Z)
-                return false;
-            else
-                return true;
-        }
+        public static Float3 operator - (Float3 a, Float3 b) => new Float3 (a.x - b.x, a.y - b.y, a.z - b.z);
 
-        public unsafe static Float3 operator + (Float3 a, Float3 b)
-        {
-            return new Float3 (a.x + b.x, a.y + b.y, a.z + b.z);
-        }
+        public static Float3 operator - (Float3 v) => new Float3 (v.x * -1, v.y * -1, v.z * -1);
 
-        public static Float3 operator - (Float3 a, Float3 b)
-        {
-            return new Float3 (a.x - b.x, a.y - b.y, a.z - b.z);
-        }
+        public static Float3 operator * (Float3 a, float b) => new Float3 (a.x * b, a.y * b, a.z * b);
 
-        public static Float3 operator - (Float3 v)
-        {
-            return new Float3 (v.x * -1, v.y * -1, v.z * -1);
-        }
-
-        public static Float3 operator * (Float3 a, float b)
-        {
-            return new Float3 (a.x * b, a.y * b, a.z * b);
-        }
-
-        public static Float3 operator / (Float3 a, float b)
-        {
-            return new Float3 (a.x / b, a.y / b, a.z / b);
-        }
+        public static Float3 operator / (Float3 a, float b) => new Float3 (a.x / b, a.y / b, a.z / b);
 
         public static bool operator > (Float3 a, Float3 b) => a.x > b.x && a.y > b.y && a.z > b.z;
 
@@ -189,6 +142,8 @@ namespace piine
         public static bool operator >= (Float3 a, Float3 b) => a.x >= b.x && a.y >= b.y && a.z >= b.z;
 
         public static bool operator <= (Float3 a, Float3 b) => a.x <= b.x && a.y <= b.y && a.z <= b.z;
+
+        public override string ToString () => "(" + x + ", " + y + ", " + z + ")";
 
         public bool Equals (Float3 other) => this == other;
 

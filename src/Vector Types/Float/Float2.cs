@@ -21,7 +21,7 @@ namespace piine
 
         [CLSCompliant (false)]
         [FieldOffset (0)]
-        public fixed float data[2];
+        public fixed float components[Size];
 
         [FieldOffset (0)]
         public float x;
@@ -49,22 +49,24 @@ namespace piine
             get
             {
                 if (index < 0 || index >= Size)
-                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-1, index was " + index);
 
-                return data[0];
+                return components[index];
             }
             set
             {
                 if (index < 0 || index >= Size)
-                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-1, index was " + index);
 
-                data[0] = value;
+                components[index] = value;
             }
         }
 
-        public float GetUnsafe (int index) => data[index];
+        public float GetUnsafe (int index) => components[index];
 
-        public void SetUnsafe (int index, float value) => data[index] = value;
+        public void SetUnsafe (int index, float value) => components[index] = value;    
+
+        public float CalculateArea () => x * y;
 
         public static Float2 Normalize (Float2 v)
         {
@@ -78,89 +80,34 @@ namespace piine
             return v;
         }
 
-        public float CalculateArea () => x * y;
+        public static Float2 Absolute (Float2 v) => new Float2 (Math.Abs (v.x), Math.Abs (v.y));
 
-        public static Float2 Absolute (Float2 v)
-        {
-            return new Float2 (Math.Abs (v.x), Math.Abs (v.y));
-        }
+        public static float Distance (Float2 a, Float2 b) => (a - b).Length;
 
-        public static float Distance (Float2 a, Float2 b)
-        {
-            return (a - b).Length;
-        }
+        public static explicit operator Float2 (Int2 v) => new Float2 (v.x, v.y);
 
         public static explicit operator Vector2 (Float2 v) => new Vector2 (v.x, v.y);
 
         public static explicit operator Float2 (Vector2 v) => new Float2 (v.X, v.Y);
 
-        public static implicit operator Float2 ((float x, float y) v)
-        {
-            return new Float2 (v.x, v.y);
-        }
+        public static implicit operator Float2 ((float x, float y) v) => new Float2 (v.x, v.y);
 
-        public static implicit operator (float, float) (Float2 v)
-        {
-            return (v.x, v.y);
-        }
+        public static implicit operator (float, float) (Float2 v) => (v.x, v.y);
 
-        public static bool operator == (Float2 a, Float2 b)
-        {
-            if (a.x == b.x && a.y == b.y)
-                return true;
-            else
-                return false;
-        }
+        public static bool operator == (Float2 a, Float2 b) => a.x == b.x && a.y == b.y;
 
-        public static bool operator != (Float2 a, Float2 b)
-        {
-            if (a.x == b.x && a.y == b.y)
-                return false;
-            else
-                return true;
-        }
+        public static bool operator != (Float2 a, Float2 b) => a.x != b.x || a.y != b.y;
 
-        public static bool operator == (Float2 a, Vector2 b)
-        {
-            if (a.x == b.X && a.y == b.Y)
-                return true;
-            else
-                return false;
-        }
+        public unsafe static Float2 operator + (Float2 a, Float2 b) => new Float2 (a.x + b.x, a.y + b.y);
 
-        public static bool operator != (Float2 a, Vector2 b)
-        {
-            if (a.x == b.X && a.y == b.Y)
-                return false;
-            else
-                return true;
-        }
+        public static Float2 operator - (Float2 a, Float2 b) => new Float2 (a.x - b.x, a.y - b.y);
 
-        public unsafe static Float2 operator + (Float2 a, Float2 b)
-        {
-            return new Float2 (a.x + b.x, a.y + b.y);
-        }
+        public static Float2 operator - (Float2 v) => new Float2 (v.x * -1, v.y * -1);
 
-        public static Float2 operator - (Float2 a, Float2 b)
-        {
-            return new Float2 (a.x - b.x, a.y - b.y);
-        }
+        public static Float2 operator * (Float2 a, float b) => new Float2 (a.x * b, a.y * b);
 
-        public static Float2 operator - (Float2 v)
-        {
-            return new Float2 (v.x * -1, v.y * -1);
-        }
-
-        public static Float2 operator * (Float2 a, float b)
-        {
-            return new Float2 (a.x * b, a.y * b);
-        }
-
-        public static Float2 operator / (Float2 a, float b)
-        {
-            return new Float2 (a.x / b, a.y / b);
-        }
-
+        public static Float2 operator / (Float2 a, float b) => new Float2 (a.x / b, a.y / b);
+        
         public static bool operator > (Float2 a, Float2 b) => a.x > b.x && a.y > b.y;
 
         public static bool operator < (Float2 a, Float2 b) => a.x < b.x && a.y < b.y;
@@ -168,6 +115,8 @@ namespace piine
         public static bool operator >= (Float2 a, Float2 b) => a.x >= b.x && a.y >= b.y;
 
         public static bool operator <= (Float2 a, Float2 b) => a.x <= b.x && a.y <= b.y;
+
+        public override string ToString () => "(" + x + ", " + y + ")";
 
         public bool Equals (Float2 other) => this == other;
 
