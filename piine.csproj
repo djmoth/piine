@@ -51,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="docs\" />
     <Folder Include="src\Pixels\" />
   </ItemGroup>
 
