@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Int3Tests
+  commentId: T:Tests.Int3Tests
+  id: Int3Tests
+  parent: Tests
+  children:
+  - Tests.Int3Tests.TestAdd
+  - Tests.Int3Tests.TestAddPerformanceNoSIMD
+  - Tests.Int3Tests.TestAddPerformanceSIMD
+  - Tests.Int3Tests.TestTupleCast
+  langs:
+  - csharp
+  - vb
+  name: Int3Tests
+  nameWithType: Int3Tests
+  fullName: Tests.Int3Tests
+  type: Class
+  source:
+    remote:
+      path: tests/Int3Tests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Int3Tests
+    path: tests/Int3Tests.cs
+    startLine: 8
+  assemblies:
+  - tests
+  namespace: Tests
+  syntax:
+    content: public class Int3Tests
+    content.vb: Public Class Int3Tests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Tests.Int3Tests.TestAdd
+  commentId: M:Tests.Int3Tests.TestAdd
+  id: TestAdd
+  parent: Tests.Int3Tests
+  langs:
+  - csharp
+  - vb
+  name: TestAdd()
+  nameWithType: Int3Tests.TestAdd()
+  fullName: Tests.Int3Tests.TestAdd()
+  type: Method
+  source:
+    remote:
+      path: tests/Int3Tests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestAdd
+    path: tests/Int3Tests.cs
+    startLine: 10
+  assemblies:
+  - tests
+  namespace: Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestAdd()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestAdd
+  overload: Tests.Int3Tests.TestAdd*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Int3Tests.TestAddPerformanceNoSIMD
+  commentId: M:Tests.Int3Tests.TestAddPerformanceNoSIMD
+  id: TestAddPerformanceNoSIMD
+  parent: Tests.Int3Tests
+  langs:
+  - csharp
+  - vb
+  name: TestAddPerformanceNoSIMD()
+  nameWithType: Int3Tests.TestAddPerformanceNoSIMD()
+  fullName: Tests.Int3Tests.TestAddPerformanceNoSIMD()
+  type: Method
+  source:
+    remote:
+      path: tests/Int3Tests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestAddPerformanceNoSIMD
+    path: tests/Int3Tests.cs
+    startLine: 21
+  assemblies:
+  - tests
+  namespace: Tests
+  syntax:
+    content: >-
+      [Test]
+
+      [Explicit]
+
+      public void TestAddPerformanceNoSIMD()
+    content.vb: >-
+      <Test>
+
+      <Explicit>
+
+      Public Sub TestAddPerformanceNoSIMD
+  overload: Tests.Int3Tests.TestAddPerformanceNoSIMD*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  - type: NUnit.Framework.ExplicitAttribute
+    ctor: NUnit.Framework.ExplicitAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Int3Tests.TestAddPerformanceSIMD
+  commentId: M:Tests.Int3Tests.TestAddPerformanceSIMD
+  id: TestAddPerformanceSIMD
+  parent: Tests.Int3Tests
+  langs:
+  - csharp
+  - vb
+  name: TestAddPerformanceSIMD()
+  nameWithType: Int3Tests.TestAddPerformanceSIMD()
+  fullName: Tests.Int3Tests.TestAddPerformanceSIMD()
+  type: Method
+  source:
+    remote:
+      path: tests/Int3Tests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestAddPerformanceSIMD
+    path: tests/Int3Tests.cs
+    startLine: 39
+  assemblies:
+  - tests
+  namespace: Tests
+  syntax:
+    content: >-
+      [Test]
+
+      [Explicit]
+
+      public void TestAddPerformanceSIMD()
+    content.vb: >-
+      <Test>
+
+      <Explicit>
+
+      Public Sub TestAddPerformanceSIMD
+  overload: Tests.Int3Tests.TestAddPerformanceSIMD*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  - type: NUnit.Framework.ExplicitAttribute
+    ctor: NUnit.Framework.ExplicitAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Int3Tests.TestTupleCast
+  commentId: M:Tests.Int3Tests.TestTupleCast
+  id: TestTupleCast
+  parent: Tests.Int3Tests
+  langs:
+  - csharp
+  - vb
+  name: TestTupleCast()
+  nameWithType: Int3Tests.TestTupleCast()
+  fullName: Tests.Int3Tests.TestTupleCast()
+  type: Method
+  source:
+    remote:
+      path: tests/Int3Tests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestTupleCast
+    path: tests/Int3Tests.cs
+    startLine: 59
+  assemblies:
+  - tests
+  namespace: Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestTupleCast()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestTupleCast
+  overload: Tests.Int3Tests.TestTupleCast*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Tests
+  commentId: N:Tests
+  name: Tests
+  nameWithType: Tests
+  fullName: Tests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Int3Tests.TestAdd*
+  commentId: Overload:Tests.Int3Tests.TestAdd
+  name: TestAdd
+  nameWithType: Int3Tests.TestAdd
+  fullName: Tests.Int3Tests.TestAdd
+- uid: Tests.Int3Tests.TestAddPerformanceNoSIMD*
+  commentId: Overload:Tests.Int3Tests.TestAddPerformanceNoSIMD
+  name: TestAddPerformanceNoSIMD
+  nameWithType: Int3Tests.TestAddPerformanceNoSIMD
+  fullName: Tests.Int3Tests.TestAddPerformanceNoSIMD
+- uid: Tests.Int3Tests.TestAddPerformanceSIMD*
+  commentId: Overload:Tests.Int3Tests.TestAddPerformanceSIMD
+  name: TestAddPerformanceSIMD
+  nameWithType: Int3Tests.TestAddPerformanceSIMD
+  fullName: Tests.Int3Tests.TestAddPerformanceSIMD
+- uid: Tests.Int3Tests.TestTupleCast*
+  commentId: Overload:Tests.Int3Tests.TestTupleCast
+  name: TestTupleCast
+  nameWithType: Int3Tests.TestTupleCast
+  fullName: Tests.Int3Tests.TestTupleCast

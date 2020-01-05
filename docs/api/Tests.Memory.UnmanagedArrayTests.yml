@@ -1,0 +1,750 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Memory.UnmanagedArrayTests
+  commentId: T:Tests.Memory.UnmanagedArrayTests
+  id: UnmanagedArrayTests
+  parent: Tests.Memory
+  children:
+  - Tests.Memory.UnmanagedArrayTests.GetRandomizedArray(System.Int32)
+  - Tests.Memory.UnmanagedArrayTests.TestAccess
+  - Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan
+  - Tests.Memory.UnmanagedArrayTests.TestCreateNew
+  - Tests.Memory.UnmanagedArrayTests.TestDispose
+  - Tests.Memory.UnmanagedArrayTests.TestForeach
+  - Tests.Memory.UnmanagedArrayTests.TestIndexOf
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedArrayTests
+  nameWithType: UnmanagedArrayTests
+  fullName: Tests.Memory.UnmanagedArrayTests
+  type: Class
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnmanagedArrayTests
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 6
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: public class UnmanagedArrayTests
+    content.vb: Public Class UnmanagedArrayTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Tests.Memory.UnmanagedArrayTests.TestCreateNew
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestCreateNew
+  id: TestCreateNew
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestCreateNew()
+  nameWithType: UnmanagedArrayTests.TestCreateNew()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestCreateNew()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestCreateNew
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 8
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestCreateNew()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestCreateNew
+  overload: Tests.Memory.UnmanagedArrayTests.TestCreateNew*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan
+  id: TestCreateFromSpan
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestCreateFromSpan()
+  nameWithType: UnmanagedArrayTests.TestCreateFromSpan()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestCreateFromSpan
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 21
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestCreateFromSpan()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestCreateFromSpan
+  overload: Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestAccess
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestAccess
+  id: TestAccess
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestAccess()
+  nameWithType: UnmanagedArrayTests.TestAccess()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestAccess()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestAccess
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 41
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestAccess()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestAccess
+  overload: Tests.Memory.UnmanagedArrayTests.TestAccess*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestDispose
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestDispose
+  id: TestDispose
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestDispose()
+  nameWithType: UnmanagedArrayTests.TestDispose()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestDispose()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestDispose
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 59
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestDispose()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestDispose
+  overload: Tests.Memory.UnmanagedArrayTests.TestDispose*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestIndexOf
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestIndexOf
+  id: TestIndexOf
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestIndexOf()
+  nameWithType: UnmanagedArrayTests.TestIndexOf()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestIndexOf()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestIndexOf
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 69
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestIndexOf()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestIndexOf
+  overload: Tests.Memory.UnmanagedArrayTests.TestIndexOf*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestForeach
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestForeach
+  id: TestForeach
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestForeach()
+  nameWithType: UnmanagedArrayTests.TestForeach()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestForeach()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: TestForeach
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 82
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestForeach()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestForeach
+  overload: Tests.Memory.UnmanagedArrayTests.TestForeach*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.GetRandomizedArray(System.Int32)
+  commentId: M:Tests.Memory.UnmanagedArrayTests.GetRandomizedArray(System.Int32)
+  id: GetRandomizedArray(System.Int32)
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: GetRandomizedArray(Int32)
+  nameWithType: UnmanagedArrayTests.GetRandomizedArray(Int32)
+  fullName: Tests.Memory.UnmanagedArrayTests.GetRandomizedArray(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetRandomizedArray
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 104
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: public UnmanagedArray<int> GetRandomizedArray(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    return:
+      type: piine.Memory.UnmanagedArray{System.Int32}
+    content.vb: Public Function GetRandomizedArray(size As Integer) As UnmanagedArray(Of Integer)
+  overload: Tests.Memory.UnmanagedArrayTests.GetRandomizedArray*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Tests.Memory
+  commentId: N:Tests.Memory
+  name: Tests.Memory
+  nameWithType: Tests.Memory
+  fullName: Tests.Memory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Memory.UnmanagedArrayTests.TestCreateNew*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestCreateNew
+  name: TestCreateNew
+  nameWithType: UnmanagedArrayTests.TestCreateNew
+  fullName: Tests.Memory.UnmanagedArrayTests.TestCreateNew
+- uid: Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan
+  name: TestCreateFromSpan
+  nameWithType: UnmanagedArrayTests.TestCreateFromSpan
+  fullName: Tests.Memory.UnmanagedArrayTests.TestCreateFromSpan
+- uid: Tests.Memory.UnmanagedArrayTests.TestAccess*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestAccess
+  name: TestAccess
+  nameWithType: UnmanagedArrayTests.TestAccess
+  fullName: Tests.Memory.UnmanagedArrayTests.TestAccess
+- uid: Tests.Memory.UnmanagedArrayTests.TestDispose*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestDispose
+  name: TestDispose
+  nameWithType: UnmanagedArrayTests.TestDispose
+  fullName: Tests.Memory.UnmanagedArrayTests.TestDispose
+- uid: Tests.Memory.UnmanagedArrayTests.TestIndexOf*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestIndexOf
+  name: TestIndexOf
+  nameWithType: UnmanagedArrayTests.TestIndexOf
+  fullName: Tests.Memory.UnmanagedArrayTests.TestIndexOf
+- uid: Tests.Memory.UnmanagedArrayTests.TestForeach*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestForeach
+  name: TestForeach
+  nameWithType: UnmanagedArrayTests.TestForeach
+  fullName: Tests.Memory.UnmanagedArrayTests.TestForeach
+- uid: Tests.Memory.UnmanagedArrayTests.GetRandomizedArray*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.GetRandomizedArray
+  name: GetRandomizedArray
+  nameWithType: UnmanagedArrayTests.GetRandomizedArray
+  fullName: Tests.Memory.UnmanagedArrayTests.GetRandomizedArray
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Memory.UnmanagedArray{System.Int32}
+  commentId: T:piine.Memory.UnmanagedArray{System.Int32}
+  parent: piine.Memory
+  definition: piine.Memory.UnmanagedArray`1
+  name: UnmanagedArray<Int32>
+  nameWithType: UnmanagedArray<Int32>
+  fullName: piine.Memory.UnmanagedArray<System.Int32>
+  nameWithType.vb: UnmanagedArray(Of Int32)
+  fullName.vb: piine.Memory.UnmanagedArray(Of System.Int32)
+  name.vb: UnmanagedArray(Of Int32)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1
+  commentId: T:piine.Memory.UnmanagedArray`1
+  parent: piine.Memory
+  name: UnmanagedArray<T>
+  nameWithType: UnmanagedArray<T>
+  fullName: piine.Memory.UnmanagedArray<T>
+  nameWithType.vb: UnmanagedArray(Of T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T)
+  name.vb: UnmanagedArray(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory
+  commentId: N:piine.Memory
+  name: piine.Memory
+  nameWithType: piine.Memory
+  fullName: piine.Memory

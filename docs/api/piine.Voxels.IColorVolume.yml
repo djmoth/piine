@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Voxels.IColorVolume
+  commentId: T:piine.Voxels.IColorVolume
+  id: IColorVolume
+  parent: piine.Voxels
+  children:
+  - piine.Voxels.IColorVolume.Depth
+  - piine.Voxels.IColorVolume.GetColor(piine.Int3)
+  - piine.Voxels.IColorVolume.Height
+  - piine.Voxels.IColorVolume.SetColor(piine.Int3,piine.Graphics.Color32)
+  - piine.Voxels.IColorVolume.Width
+  langs:
+  - csharp
+  - vb
+  name: IColorVolume
+  nameWithType: IColorVolume
+  fullName: piine.Voxels.IColorVolume
+  type: Interface
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: IColorVolume
+    path: src/Voxels/IColorVolume.cs
+    startLine: 7
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public interface IColorVolume
+    content.vb: Public Interface IColorVolume
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: piine.Voxels.IColorVolume.Width
+  commentId: P:piine.Voxels.IColorVolume.Width
+  id: Width
+  parent: piine.Voxels.IColorVolume
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: IColorVolume.Width
+  fullName: piine.Voxels.IColorVolume.Width
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Width
+    path: src/Voxels/IColorVolume.cs
+    startLine: 9
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Width As Integer
+  overload: piine.Voxels.IColorVolume.Width*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IColorVolume.Height
+  commentId: P:piine.Voxels.IColorVolume.Height
+  id: Height
+  parent: piine.Voxels.IColorVolume
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: IColorVolume.Height
+  fullName: piine.Voxels.IColorVolume.Height
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Height
+    path: src/Voxels/IColorVolume.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Height As Integer
+  overload: piine.Voxels.IColorVolume.Height*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IColorVolume.Depth
+  commentId: P:piine.Voxels.IColorVolume.Depth
+  id: Depth
+  parent: piine.Voxels.IColorVolume
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: IColorVolume.Depth
+  fullName: piine.Voxels.IColorVolume.Depth
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Depth
+    path: src/Voxels/IColorVolume.cs
+    startLine: 11
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: int Depth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Depth As Integer
+  overload: piine.Voxels.IColorVolume.Depth*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IColorVolume.SetColor(piine.Int3,piine.Graphics.Color32)
+  commentId: M:piine.Voxels.IColorVolume.SetColor(piine.Int3,piine.Graphics.Color32)
+  id: SetColor(piine.Int3,piine.Graphics.Color32)
+  parent: piine.Voxels.IColorVolume
+  langs:
+  - csharp
+  - vb
+  name: SetColor(Int3, Color32)
+  nameWithType: IColorVolume.SetColor(Int3, Color32)
+  fullName: piine.Voxels.IColorVolume.SetColor(piine.Int3, piine.Graphics.Color32)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetColor
+    path: src/Voxels/IColorVolume.cs
+    startLine: 13
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: void SetColor(Int3 voxel, Color32 color)
+    parameters:
+    - id: voxel
+      type: piine.Int3
+    - id: color
+      type: piine.Graphics.Color32
+    content.vb: Sub SetColor(voxel As Int3, color As Color32)
+  overload: piine.Voxels.IColorVolume.SetColor*
+- uid: piine.Voxels.IColorVolume.GetColor(piine.Int3)
+  commentId: M:piine.Voxels.IColorVolume.GetColor(piine.Int3)
+  id: GetColor(piine.Int3)
+  parent: piine.Voxels.IColorVolume
+  langs:
+  - csharp
+  - vb
+  name: GetColor(Int3)
+  nameWithType: IColorVolume.GetColor(Int3)
+  fullName: piine.Voxels.IColorVolume.GetColor(piine.Int3)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/IColorVolume.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetColor
+    path: src/Voxels/IColorVolume.cs
+    startLine: 14
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: Color32 GetColor(Int3 voxel)
+    parameters:
+    - id: voxel
+      type: piine.Int3
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Function GetColor(voxel As Int3) As Color32
+  overload: piine.Voxels.IColorVolume.GetColor*
+references:
+- uid: piine.Voxels
+  commentId: N:piine.Voxels
+  name: piine.Voxels
+  nameWithType: piine.Voxels
+  fullName: piine.Voxels
+- uid: piine.Voxels.IColorVolume.Width*
+  commentId: Overload:piine.Voxels.IColorVolume.Width
+  name: Width
+  nameWithType: IColorVolume.Width
+  fullName: piine.Voxels.IColorVolume.Width
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Voxels.IColorVolume.Height*
+  commentId: Overload:piine.Voxels.IColorVolume.Height
+  name: Height
+  nameWithType: IColorVolume.Height
+  fullName: piine.Voxels.IColorVolume.Height
+- uid: piine.Voxels.IColorVolume.Depth*
+  commentId: Overload:piine.Voxels.IColorVolume.Depth
+  name: Depth
+  nameWithType: IColorVolume.Depth
+  fullName: piine.Voxels.IColorVolume.Depth
+- uid: piine.Voxels.IColorVolume.SetColor*
+  commentId: Overload:piine.Voxels.IColorVolume.SetColor
+  name: SetColor
+  nameWithType: IColorVolume.SetColor
+  fullName: piine.Voxels.IColorVolume.SetColor
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: piine.Graphics.Color32
+  commentId: T:piine.Graphics.Color32
+  parent: piine.Graphics
+  name: Color32
+  nameWithType: Color32
+  fullName: piine.Graphics.Color32
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: piine.Graphics
+  commentId: N:piine.Graphics
+  name: piine.Graphics
+  nameWithType: piine.Graphics
+  fullName: piine.Graphics
+- uid: piine.Voxels.IColorVolume.GetColor*
+  commentId: Overload:piine.Voxels.IColorVolume.GetColor
+  name: GetColor
+  nameWithType: IColorVolume.GetColor
+  fullName: piine.Voxels.IColorVolume.GetColor

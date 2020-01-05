@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Procedural.OpenSimplexNoise
+  commentId: T:piine.Procedural.OpenSimplexNoise
+  id: OpenSimplexNoise
+  parent: piine.Procedural
+  children:
+  - piine.Procedural.OpenSimplexNoise.#ctor(System.Int16[])
+  - piine.Procedural.OpenSimplexNoise.#ctor(System.Int64)
+  - piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double)
+  - piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double)
+  - piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplexNoise
+  nameWithType: OpenSimplexNoise
+  fullName: piine.Procedural.OpenSimplexNoise
+  type: Class
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: OpenSimplexNoise
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 4
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public class OpenSimplexNoise
+    content.vb: Public Class OpenSimplexNoise
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: piine.Procedural.OpenSimplexNoise.#ctor(System.Int16[])
+  commentId: M:piine.Procedural.OpenSimplexNoise.#ctor(System.Int16[])
+  id: '#ctor(System.Int16[])'
+  parent: piine.Procedural.OpenSimplexNoise
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplexNoise(Int16[])
+  nameWithType: OpenSimplexNoise.OpenSimplexNoise(Int16[])
+  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int16[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 20
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public OpenSimplexNoise(short[] perm)
+    parameters:
+    - id: perm
+      type: System.Int16[]
+    content.vb: Public Sub New(perm As Short())
+  overload: piine.Procedural.OpenSimplexNoise.#ctor*
+  nameWithType.vb: OpenSimplexNoise.OpenSimplexNoise(Int16())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int16())
+  name.vb: OpenSimplexNoise(Int16())
+- uid: piine.Procedural.OpenSimplexNoise.#ctor(System.Int64)
+  commentId: M:piine.Procedural.OpenSimplexNoise.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: piine.Procedural.OpenSimplexNoise
+  langs:
+  - csharp
+  - vb
+  name: OpenSimplexNoise(Int64)
+  nameWithType: OpenSimplexNoise.OpenSimplexNoise(Int64)
+  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int64)
+  type: Constructor
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 35
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public OpenSimplexNoise(long seed)
+    parameters:
+    - id: seed
+      type: System.Int64
+    content.vb: Public Sub New(seed As Long)
+  overload: piine.Procedural.OpenSimplexNoise.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double)
+  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double)
+  id: Evaluate(System.Double,System.Double)
+  parent: piine.Procedural.OpenSimplexNoise
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(Double, Double)
+  nameWithType: OpenSimplexNoise.Evaluate(Double, Double)
+  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Evaluate
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 64
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public double Evaluate(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function Evaluate(x As Double, y As Double) As Double
+  overload: piine.Procedural.OpenSimplexNoise.Evaluate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double)
+  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double)
+  id: Evaluate(System.Double,System.Double,System.Double)
+  parent: piine.Procedural.OpenSimplexNoise
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(Double, Double, Double)
+  nameWithType: OpenSimplexNoise.Evaluate(Double, Double, Double)
+  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Evaluate
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 193
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public double Evaluate(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function Evaluate(x As Double, y As Double, z As Double) As Double
+  overload: piine.Procedural.OpenSimplexNoise.Evaluate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double,System.Double)
+  id: Evaluate(System.Double,System.Double,System.Double,System.Double)
+  parent: piine.Procedural.OpenSimplexNoise
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(Double, Double, Double, Double)
+  nameWithType: OpenSimplexNoise.Evaluate(Double, Double, Double, Double)
+  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Procedural/OpenSimplexNoise.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Evaluate
+    path: src/Procedural/OpenSimplexNoise.cs
+    startLine: 835
+  assemblies:
+  - piine
+  namespace: piine.Procedural
+  syntax:
+    content: public double Evaluate(double x, double y, double z, double w)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    - id: w
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function Evaluate(x As Double, y As Double, z As Double, w As Double) As Double
+  overload: piine.Procedural.OpenSimplexNoise.Evaluate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: piine.Procedural
+  commentId: N:piine.Procedural
+  name: piine.Procedural
+  nameWithType: piine.Procedural
+  fullName: piine.Procedural
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Procedural.OpenSimplexNoise.#ctor*
+  commentId: Overload:piine.Procedural.OpenSimplexNoise.#ctor
+  name: OpenSimplexNoise
+  nameWithType: OpenSimplexNoise.OpenSimplexNoise
+  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise
+- uid: System.Int16[]
+  isExternal: true
+  name: Int16[]
+  nameWithType: Int16[]
+  fullName: System.Int16[]
+  nameWithType.vb: Int16()
+  fullName.vb: System.Int16()
+  name.vb: Int16()
+  spec.csharp:
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: piine.Procedural.OpenSimplexNoise.Evaluate*
+  commentId: Overload:piine.Procedural.OpenSimplexNoise.Evaluate
+  name: Evaluate
+  nameWithType: OpenSimplexNoise.Evaluate
+  fullName: piine.Procedural.OpenSimplexNoise.Evaluate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Voxels
+  commentId: N:piine.Voxels
+  id: piine.Voxels
+  children:
+  - piine.Voxels.IColorVolume
+  - piine.Voxels.IVoxelVolume`1
+  - piine.Voxels.ManagedVoxelGrid`1
+  - piine.Voxels.ManagedVoxelOctree`1
+  - piine.Voxels.UnmanagedVoxelGrid`1
+  - piine.Voxels.VoxelGrid`1
+  - piine.Voxels.VoxelOctree`1
+  langs:
+  - csharp
+  - vb
+  name: piine.Voxels
+  nameWithType: piine.Voxels
+  fullName: piine.Voxels
+  type: Namespace
+  assemblies:
+  - piine
+references:
+- uid: piine.Voxels.IColorVolume
+  commentId: T:piine.Voxels.IColorVolume
+  name: IColorVolume
+  nameWithType: IColorVolume
+  fullName: piine.Voxels.IColorVolume
+- uid: piine.Voxels.IVoxelVolume`1
+  commentId: T:piine.Voxels.IVoxelVolume`1
+  name: IVoxelVolume<T>
+  nameWithType: IVoxelVolume<T>
+  fullName: piine.Voxels.IVoxelVolume<T>
+  nameWithType.vb: IVoxelVolume(Of T)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T)
+  name.vb: IVoxelVolume(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.ManagedVoxelGrid`1
+  commentId: T:piine.Voxels.ManagedVoxelGrid`1
+  name: ManagedVoxelGrid<T>
+  nameWithType: ManagedVoxelGrid<T>
+  fullName: piine.Voxels.ManagedVoxelGrid<T>
+  nameWithType.vb: ManagedVoxelGrid(Of T)
+  fullName.vb: piine.Voxels.ManagedVoxelGrid(Of T)
+  name.vb: ManagedVoxelGrid(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.ManagedVoxelGrid`1
+    name: ManagedVoxelGrid
+    nameWithType: ManagedVoxelGrid
+    fullName: piine.Voxels.ManagedVoxelGrid
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.ManagedVoxelGrid`1
+    name: ManagedVoxelGrid
+    nameWithType: ManagedVoxelGrid
+    fullName: piine.Voxels.ManagedVoxelGrid
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.ManagedVoxelOctree`1
+  commentId: T:piine.Voxels.ManagedVoxelOctree`1
+  name: ManagedVoxelOctree<T>
+  nameWithType: ManagedVoxelOctree<T>
+  fullName: piine.Voxels.ManagedVoxelOctree<T>
+  nameWithType.vb: ManagedVoxelOctree(Of T)
+  fullName.vb: piine.Voxels.ManagedVoxelOctree(Of T)
+  name.vb: ManagedVoxelOctree(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.ManagedVoxelOctree`1
+    name: ManagedVoxelOctree
+    nameWithType: ManagedVoxelOctree
+    fullName: piine.Voxels.ManagedVoxelOctree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.ManagedVoxelOctree`1
+    name: ManagedVoxelOctree
+    nameWithType: ManagedVoxelOctree
+    fullName: piine.Voxels.ManagedVoxelOctree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.UnmanagedVoxelGrid`1
+  commentId: T:piine.Voxels.UnmanagedVoxelGrid`1
+  name: UnmanagedVoxelGrid<T>
+  nameWithType: UnmanagedVoxelGrid<T>
+  fullName: piine.Voxels.UnmanagedVoxelGrid<T>
+  nameWithType.vb: UnmanagedVoxelGrid(Of T)
+  fullName.vb: piine.Voxels.UnmanagedVoxelGrid(Of T)
+  name.vb: UnmanagedVoxelGrid(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.UnmanagedVoxelGrid`1
+    name: UnmanagedVoxelGrid
+    nameWithType: UnmanagedVoxelGrid
+    fullName: piine.Voxels.UnmanagedVoxelGrid
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.UnmanagedVoxelGrid`1
+    name: UnmanagedVoxelGrid
+    nameWithType: UnmanagedVoxelGrid
+    fullName: piine.Voxels.UnmanagedVoxelGrid
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.VoxelGrid`1
+  commentId: T:piine.Voxels.VoxelGrid`1
+  name: VoxelGrid<T>
+  nameWithType: VoxelGrid<T>
+  fullName: piine.Voxels.VoxelGrid<T>
+  nameWithType.vb: VoxelGrid(Of T)
+  fullName.vb: piine.Voxels.VoxelGrid(Of T)
+  name.vb: VoxelGrid(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.VoxelGrid`1
+    name: VoxelGrid
+    nameWithType: VoxelGrid
+    fullName: piine.Voxels.VoxelGrid
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.VoxelGrid`1
+    name: VoxelGrid
+    nameWithType: VoxelGrid
+    fullName: piine.Voxels.VoxelGrid
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.VoxelOctree`1
+  commentId: T:piine.Voxels.VoxelOctree`1
+  name: VoxelOctree<T>
+  nameWithType: VoxelOctree<T>
+  fullName: piine.Voxels.VoxelOctree<T>
+  nameWithType.vb: VoxelOctree(Of T)
+  fullName.vb: piine.Voxels.VoxelOctree(Of T)
+  name.vb: VoxelOctree(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.VoxelOctree`1
+    name: VoxelOctree
+    nameWithType: VoxelOctree
+    fullName: piine.Voxels.VoxelOctree
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.VoxelOctree`1
+    name: VoxelOctree
+    nameWithType: VoxelOctree
+    fullName: piine.Voxels.VoxelOctree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

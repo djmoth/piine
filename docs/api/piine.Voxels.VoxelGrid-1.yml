@@ -1,0 +1,1368 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Voxels.VoxelGrid`1
+  commentId: T:piine.Voxels.VoxelGrid`1
+  id: VoxelGrid`1
+  parent: piine.Voxels
+  children:
+  - piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3)
+  - piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3,piine.Int3)
+  - piine.Voxels.VoxelGrid`1.CalculatePosition(piine.Int3,System.Int32)
+  - piine.Voxels.VoxelGrid`1.CalculatePosition(System.Int32)
+  - piine.Voxels.VoxelGrid`1.Depth
+  - piine.Voxels.VoxelGrid`1.Dimensions
+  - piine.Voxels.VoxelGrid`1.GetVoxel(piine.Int3)
+  - piine.Voxels.VoxelGrid`1.GetVoxel(System.Int32)
+  - piine.Voxels.VoxelGrid`1.Height
+  - piine.Voxels.VoxelGrid`1.Item(piine.Int3)
+  - piine.Voxels.VoxelGrid`1.Item(System.Int32)
+  - piine.Voxels.VoxelGrid`1.SetVoxel(piine.Int3,`0)
+  - piine.Voxels.VoxelGrid`1.SetVoxel(System.Int32,`0)
+  - piine.Voxels.VoxelGrid`1.Volume
+  - piine.Voxels.VoxelGrid`1.Width
+  langs:
+  - csharp
+  - vb
+  name: VoxelGrid<T>
+  nameWithType: VoxelGrid<T>
+  fullName: piine.Voxels.VoxelGrid<T>
+  type: Class
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: VoxelGrid
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 12
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  summary: "\nBase-class for voxel data.\n"
+  example: []
+  syntax:
+    content: 'public abstract class VoxelGrid<T> : IVoxelVolume<T>'
+    typeParameters:
+    - id: T
+      description: Type of voxels
+    content.vb: >-
+      Public MustInherit Class VoxelGrid(Of T)
+
+          Implements IVoxelVolume(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - piine.Voxels.ManagedVoxelGrid`1
+  - piine.Voxels.UnmanagedVoxelGrid`1
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: VoxelGrid(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: piine.Voxels.VoxelGrid(Of T)
+  name.vb: VoxelGrid(Of T)
+- uid: piine.Voxels.VoxelGrid`1.Width
+  commentId: P:piine.Voxels.VoxelGrid`1.Width
+  id: Width
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: VoxelGrid<T>.Width
+  fullName: piine.Voxels.VoxelGrid<T>.Width
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Width
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 14
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public abstract int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property Width As Integer
+  overload: piine.Voxels.VoxelGrid`1.Width*
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}.Width
+  nameWithType.vb: VoxelGrid(Of T).Width
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Width
+- uid: piine.Voxels.VoxelGrid`1.Height
+  commentId: P:piine.Voxels.VoxelGrid`1.Height
+  id: Height
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: VoxelGrid<T>.Height
+  fullName: piine.Voxels.VoxelGrid<T>.Height
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Height
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 15
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public abstract int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property Height As Integer
+  overload: piine.Voxels.VoxelGrid`1.Height*
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}.Height
+  nameWithType.vb: VoxelGrid(Of T).Height
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Height
+- uid: piine.Voxels.VoxelGrid`1.Depth
+  commentId: P:piine.Voxels.VoxelGrid`1.Depth
+  id: Depth
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: VoxelGrid<T>.Depth
+  fullName: piine.Voxels.VoxelGrid<T>.Depth
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Depth
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 16
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public abstract int Depth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property Depth As Integer
+  overload: piine.Voxels.VoxelGrid`1.Depth*
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}.Depth
+  nameWithType.vb: VoxelGrid(Of T).Depth
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Depth
+- uid: piine.Voxels.VoxelGrid`1.Volume
+  commentId: P:piine.Voxels.VoxelGrid`1.Volume
+  id: Volume
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: VoxelGrid<T>.Volume
+  fullName: piine.Voxels.VoxelGrid<T>.Volume
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Volume
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 17
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public int Volume { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Volume As Integer
+  overload: piine.Voxels.VoxelGrid`1.Volume*
+  nameWithType.vb: VoxelGrid(Of T).Volume
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Volume
+- uid: piine.Voxels.VoxelGrid`1.Dimensions
+  commentId: P:piine.Voxels.VoxelGrid`1.Dimensions
+  id: Dimensions
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Dimensions
+  nameWithType: VoxelGrid<T>.Dimensions
+  fullName: piine.Voxels.VoxelGrid<T>.Dimensions
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Dimensions
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 18
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public Int3 Dimensions { get; }
+    parameters: []
+    return:
+      type: piine.Int3
+    content.vb: Public ReadOnly Property Dimensions As Int3
+  overload: piine.Voxels.VoxelGrid`1.Dimensions*
+  nameWithType.vb: VoxelGrid(Of T).Dimensions
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Dimensions
+- uid: piine.Voxels.VoxelGrid`1.Item(System.Int32)
+  commentId: P:piine.Voxels.VoxelGrid`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: VoxelGrid<T>.Item[Int32]
+  fullName: piine.Voxels.VoxelGrid<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 24
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Property Item(index As Integer) As T
+  overload: piine.Voxels.VoxelGrid`1.Item*
+  nameWithType.vb: VoxelGrid(Of T).Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Voxels.VoxelGrid`1.Item(piine.Int3)
+  commentId: P:piine.Voxels.VoxelGrid`1.Item(piine.Int3)
+  id: Item(piine.Int3)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int3]
+  nameWithType: VoxelGrid<T>.Item[Int3]
+  fullName: piine.Voxels.VoxelGrid<T>.Item[piine.Int3]
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 30
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public T this[Int3 position] { get; set; }
+    parameters:
+    - id: position
+      type: piine.Int3
+    return:
+      type: '{T}'
+    content.vb: Public Property Item(position As Int3) As T
+  overload: piine.Voxels.VoxelGrid`1.Item*
+  nameWithType.vb: VoxelGrid(Of T).Item(Int3)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Item(piine.Int3)
+  name.vb: Item(Int3)
+- uid: piine.Voxels.VoxelGrid`1.SetVoxel(piine.Int3,`0)
+  commentId: M:piine.Voxels.VoxelGrid`1.SetVoxel(piine.Int3,`0)
+  id: SetVoxel(piine.Int3,`0)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: SetVoxel(Int3, T)
+  nameWithType: VoxelGrid<T>.SetVoxel(Int3, T)
+  fullName: piine.Voxels.VoxelGrid<T>.SetVoxel(piine.Int3, T)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetVoxel
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 32
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public virtual void SetVoxel(Int3 position, T data)
+    parameters:
+    - id: position
+      type: piine.Int3
+    - id: data
+      type: '{T}'
+    content.vb: Public Overridable Sub SetVoxel(position As Int3, data As T)
+  overload: piine.Voxels.VoxelGrid`1.SetVoxel*
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}.SetVoxel(piine.Int3,{T})
+  nameWithType.vb: VoxelGrid(Of T).SetVoxel(Int3, T)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).SetVoxel(piine.Int3, T)
+- uid: piine.Voxels.VoxelGrid`1.SetVoxel(System.Int32,`0)
+  commentId: M:piine.Voxels.VoxelGrid`1.SetVoxel(System.Int32,`0)
+  id: SetVoxel(System.Int32,`0)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: SetVoxel(Int32, T)
+  nameWithType: VoxelGrid<T>.SetVoxel(Int32, T)
+  fullName: piine.Voxels.VoxelGrid<T>.SetVoxel(System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetVoxel
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 39
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public abstract void SetVoxel(int index, T data)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: data
+      type: '{T}'
+    content.vb: Public MustOverride Sub SetVoxel(index As Integer, data As T)
+  overload: piine.Voxels.VoxelGrid`1.SetVoxel*
+  nameWithType.vb: VoxelGrid(Of T).SetVoxel(Int32, T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).SetVoxel(System.Int32, T)
+- uid: piine.Voxels.VoxelGrid`1.GetVoxel(piine.Int3)
+  commentId: M:piine.Voxels.VoxelGrid`1.GetVoxel(piine.Int3)
+  id: GetVoxel(piine.Int3)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: GetVoxel(Int3)
+  nameWithType: VoxelGrid<T>.GetVoxel(Int3)
+  fullName: piine.Voxels.VoxelGrid<T>.GetVoxel(piine.Int3)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetVoxel
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 41
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public virtual T GetVoxel(Int3 position)
+    parameters:
+    - id: position
+      type: piine.Int3
+    return:
+      type: '{T}'
+    content.vb: Public Overridable Function GetVoxel(position As Int3) As T
+  overload: piine.Voxels.VoxelGrid`1.GetVoxel*
+  implements:
+  - piine.Voxels.IVoxelVolume{{T}}.GetVoxel(piine.Int3)
+  nameWithType.vb: VoxelGrid(Of T).GetVoxel(Int3)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).GetVoxel(piine.Int3)
+- uid: piine.Voxels.VoxelGrid`1.GetVoxel(System.Int32)
+  commentId: M:piine.Voxels.VoxelGrid`1.GetVoxel(System.Int32)
+  id: GetVoxel(System.Int32)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: GetVoxel(Int32)
+  nameWithType: VoxelGrid<T>.GetVoxel(Int32)
+  fullName: piine.Voxels.VoxelGrid<T>.GetVoxel(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetVoxel
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 49
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public abstract T GetVoxel(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public MustOverride Function GetVoxel(index As Integer) As T
+  overload: piine.Voxels.VoxelGrid`1.GetVoxel*
+  nameWithType.vb: VoxelGrid(Of T).GetVoxel(Int32)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).GetVoxel(System.Int32)
+- uid: piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3)
+  commentId: M:piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3)
+  id: CalculateIndex(piine.Int3)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: CalculateIndex(Int3)
+  nameWithType: VoxelGrid<T>.CalculateIndex(Int3)
+  fullName: piine.Voxels.VoxelGrid<T>.CalculateIndex(piine.Int3)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculateIndex
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 54
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  summary: "\nCalculates a 1D index from a 3D position.\n"
+  example: []
+  syntax:
+    content: public int CalculateIndex(Int3 voxel)
+    parameters:
+    - id: voxel
+      type: piine.Int3
+    return:
+      type: System.Int32
+    content.vb: Public Function CalculateIndex(voxel As Int3) As Integer
+  overload: piine.Voxels.VoxelGrid`1.CalculateIndex*
+  nameWithType.vb: VoxelGrid(Of T).CalculateIndex(Int3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculateIndex(piine.Int3)
+- uid: piine.Voxels.VoxelGrid`1.CalculatePosition(System.Int32)
+  commentId: M:piine.Voxels.VoxelGrid`1.CalculatePosition(System.Int32)
+  id: CalculatePosition(System.Int32)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: CalculatePosition(Int32)
+  nameWithType: VoxelGrid<T>.CalculatePosition(Int32)
+  fullName: piine.Voxels.VoxelGrid<T>.CalculatePosition(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculatePosition
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 59
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  summary: "\nCalculates a 3D position from a 1D index.\n"
+  example: []
+  syntax:
+    content: public Int3 CalculatePosition(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: piine.Int3
+    content.vb: Public Function CalculatePosition(index As Integer) As Int3
+  overload: piine.Voxels.VoxelGrid`1.CalculatePosition*
+  nameWithType.vb: VoxelGrid(Of T).CalculatePosition(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculatePosition(System.Int32)
+- uid: piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3,piine.Int3)
+  commentId: M:piine.Voxels.VoxelGrid`1.CalculateIndex(piine.Int3,piine.Int3)
+  id: CalculateIndex(piine.Int3,piine.Int3)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: CalculateIndex(Int3, Int3)
+  nameWithType: VoxelGrid<T>.CalculateIndex(Int3, Int3)
+  fullName: piine.Voxels.VoxelGrid<T>.CalculateIndex(piine.Int3, piine.Int3)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculateIndex
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 61
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public static int CalculateIndex(Int3 dimensions, Int3 voxel)
+    parameters:
+    - id: dimensions
+      type: piine.Int3
+    - id: voxel
+      type: piine.Int3
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CalculateIndex(dimensions As Int3, voxel As Int3) As Integer
+  overload: piine.Voxels.VoxelGrid`1.CalculateIndex*
+  nameWithType.vb: VoxelGrid(Of T).CalculateIndex(Int3, Int3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculateIndex(piine.Int3, piine.Int3)
+- uid: piine.Voxels.VoxelGrid`1.CalculatePosition(piine.Int3,System.Int32)
+  commentId: M:piine.Voxels.VoxelGrid`1.CalculatePosition(piine.Int3,System.Int32)
+  id: CalculatePosition(piine.Int3,System.Int32)
+  parent: piine.Voxels.VoxelGrid`1
+  langs:
+  - csharp
+  - vb
+  name: CalculatePosition(Int3, Int32)
+  nameWithType: VoxelGrid<T>.CalculatePosition(Int3, Int32)
+  fullName: piine.Voxels.VoxelGrid<T>.CalculatePosition(piine.Int3, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Voxels/VoxelGrid.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculatePosition
+    path: src/Voxels/VoxelGrid.cs
+    startLine: 62
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public static Int3 CalculatePosition(Int3 dimensions, int index)
+    parameters:
+    - id: dimensions
+      type: piine.Int3
+    - id: index
+      type: System.Int32
+    return:
+      type: piine.Int3
+    content.vb: Public Shared Function CalculatePosition(dimensions As Int3, index As Integer) As Int3
+  overload: piine.Voxels.VoxelGrid`1.CalculatePosition*
+  nameWithType.vb: VoxelGrid(Of T).CalculatePosition(Int3, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculatePosition(piine.Int3, System.Int32)
+references:
+- uid: piine.Voxels
+  commentId: N:piine.Voxels
+  name: piine.Voxels
+  nameWithType: piine.Voxels
+  fullName: piine.Voxels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: piine.Voxels.IVoxelVolume{{T}}
+  commentId: T:piine.Voxels.IVoxelVolume{`0}
+  parent: piine.Voxels
+  definition: piine.Voxels.IVoxelVolume`1
+  name: IVoxelVolume<T>
+  nameWithType: IVoxelVolume<T>
+  fullName: piine.Voxels.IVoxelVolume<T>
+  nameWithType.vb: IVoxelVolume(Of T)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T)
+  name.vb: IVoxelVolume(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Voxels.IVoxelVolume`1
+  commentId: T:piine.Voxels.IVoxelVolume`1
+  name: IVoxelVolume<T>
+  nameWithType: IVoxelVolume<T>
+  fullName: piine.Voxels.IVoxelVolume<T>
+  nameWithType.vb: IVoxelVolume(Of T)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T)
+  name.vb: IVoxelVolume(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1
+    name: IVoxelVolume
+    nameWithType: IVoxelVolume
+    fullName: piine.Voxels.IVoxelVolume
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.VoxelGrid`1.Width*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Width
+  name: Width
+  nameWithType: VoxelGrid<T>.Width
+  fullName: piine.Voxels.VoxelGrid<T>.Width
+  nameWithType.vb: VoxelGrid(Of T).Width
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Width
+- uid: piine.Voxels.IVoxelVolume{{T}}.Width
+  commentId: P:piine.Voxels.IVoxelVolume{`0}.Width
+  parent: piine.Voxels.IVoxelVolume{{T}}
+  definition: piine.Voxels.IVoxelVolume`1.Width
+  name: Width
+  nameWithType: IVoxelVolume<T>.Width
+  fullName: piine.Voxels.IVoxelVolume<T>.Width
+  nameWithType.vb: IVoxelVolume(Of T).Width
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Width
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Voxels.IVoxelVolume`1.Width
+  commentId: P:piine.Voxels.IVoxelVolume`1.Width
+  name: Width
+  nameWithType: IVoxelVolume<T>.Width
+  fullName: piine.Voxels.IVoxelVolume<T>.Width
+  nameWithType.vb: IVoxelVolume(Of T).Width
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Width
+- uid: piine.Voxels.VoxelGrid`1.Height*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Height
+  name: Height
+  nameWithType: VoxelGrid<T>.Height
+  fullName: piine.Voxels.VoxelGrid<T>.Height
+  nameWithType.vb: VoxelGrid(Of T).Height
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Height
+- uid: piine.Voxels.IVoxelVolume{{T}}.Height
+  commentId: P:piine.Voxels.IVoxelVolume{`0}.Height
+  parent: piine.Voxels.IVoxelVolume{{T}}
+  definition: piine.Voxels.IVoxelVolume`1.Height
+  name: Height
+  nameWithType: IVoxelVolume<T>.Height
+  fullName: piine.Voxels.IVoxelVolume<T>.Height
+  nameWithType.vb: IVoxelVolume(Of T).Height
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Height
+- uid: piine.Voxels.IVoxelVolume`1.Height
+  commentId: P:piine.Voxels.IVoxelVolume`1.Height
+  name: Height
+  nameWithType: IVoxelVolume<T>.Height
+  fullName: piine.Voxels.IVoxelVolume<T>.Height
+  nameWithType.vb: IVoxelVolume(Of T).Height
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Height
+- uid: piine.Voxels.VoxelGrid`1.Depth*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Depth
+  name: Depth
+  nameWithType: VoxelGrid<T>.Depth
+  fullName: piine.Voxels.VoxelGrid<T>.Depth
+  nameWithType.vb: VoxelGrid(Of T).Depth
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Depth
+- uid: piine.Voxels.IVoxelVolume{{T}}.Depth
+  commentId: P:piine.Voxels.IVoxelVolume{`0}.Depth
+  parent: piine.Voxels.IVoxelVolume{{T}}
+  definition: piine.Voxels.IVoxelVolume`1.Depth
+  name: Depth
+  nameWithType: IVoxelVolume<T>.Depth
+  fullName: piine.Voxels.IVoxelVolume<T>.Depth
+  nameWithType.vb: IVoxelVolume(Of T).Depth
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Depth
+- uid: piine.Voxels.IVoxelVolume`1.Depth
+  commentId: P:piine.Voxels.IVoxelVolume`1.Depth
+  name: Depth
+  nameWithType: IVoxelVolume<T>.Depth
+  fullName: piine.Voxels.IVoxelVolume<T>.Depth
+  nameWithType.vb: IVoxelVolume(Of T).Depth
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).Depth
+- uid: piine.Voxels.VoxelGrid`1.Volume*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Volume
+  name: Volume
+  nameWithType: VoxelGrid<T>.Volume
+  fullName: piine.Voxels.VoxelGrid<T>.Volume
+  nameWithType.vb: VoxelGrid(Of T).Volume
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Volume
+- uid: piine.Voxels.VoxelGrid`1.Dimensions*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Dimensions
+  name: Dimensions
+  nameWithType: VoxelGrid<T>.Dimensions
+  fullName: piine.Voxels.VoxelGrid<T>.Dimensions
+  nameWithType.vb: VoxelGrid(Of T).Dimensions
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Dimensions
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: piine.Voxels.VoxelGrid`1.Item*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.Item
+  name: Item
+  nameWithType: VoxelGrid<T>.Item
+  fullName: piine.Voxels.VoxelGrid<T>.Item
+  nameWithType.vb: VoxelGrid(Of T).Item
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).Item
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: piine.Voxels.VoxelGrid`1.SetVoxel*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.SetVoxel
+  name: SetVoxel
+  nameWithType: VoxelGrid<T>.SetVoxel
+  fullName: piine.Voxels.VoxelGrid<T>.SetVoxel
+  nameWithType.vb: VoxelGrid(Of T).SetVoxel
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).SetVoxel
+- uid: piine.Voxels.IVoxelVolume{{T}}.SetVoxel(piine.Int3,{T})
+  commentId: M:piine.Voxels.IVoxelVolume{`0}.SetVoxel(piine.Int3,`0)
+  parent: piine.Voxels.IVoxelVolume{{T}}
+  definition: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+  name: SetVoxel(Int3, T)
+  nameWithType: IVoxelVolume<T>.SetVoxel(Int3, T)
+  fullName: piine.Voxels.IVoxelVolume<T>.SetVoxel(piine.Int3, T)
+  nameWithType.vb: IVoxelVolume(Of T).SetVoxel(Int3, T)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).SetVoxel(piine.Int3, T)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+    name: SetVoxel
+    nameWithType: IVoxelVolume<T>.SetVoxel
+    fullName: piine.Voxels.IVoxelVolume<T>.SetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+    name: SetVoxel
+    nameWithType: IVoxelVolume(Of T).SetVoxel
+    fullName: piine.Voxels.IVoxelVolume(Of T).SetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+  commentId: M:piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+  name: SetVoxel(Int3, T)
+  nameWithType: IVoxelVolume<T>.SetVoxel(Int3, T)
+  fullName: piine.Voxels.IVoxelVolume<T>.SetVoxel(piine.Int3, T)
+  nameWithType.vb: IVoxelVolume(Of T).SetVoxel(Int3, T)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).SetVoxel(piine.Int3, T)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+    name: SetVoxel
+    nameWithType: IVoxelVolume<T>.SetVoxel
+    fullName: piine.Voxels.IVoxelVolume<T>.SetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1.SetVoxel(piine.Int3,`0)
+    name: SetVoxel
+    nameWithType: IVoxelVolume(Of T).SetVoxel
+    fullName: piine.Voxels.IVoxelVolume(Of T).SetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.VoxelGrid`1.GetVoxel*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.GetVoxel
+  name: GetVoxel
+  nameWithType: VoxelGrid<T>.GetVoxel
+  fullName: piine.Voxels.VoxelGrid<T>.GetVoxel
+  nameWithType.vb: VoxelGrid(Of T).GetVoxel
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).GetVoxel
+- uid: piine.Voxels.IVoxelVolume{{T}}.GetVoxel(piine.Int3)
+  commentId: M:piine.Voxels.IVoxelVolume{`0}.GetVoxel(piine.Int3)
+  parent: piine.Voxels.IVoxelVolume{{T}}
+  definition: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+  name: GetVoxel(Int3)
+  nameWithType: IVoxelVolume<T>.GetVoxel(Int3)
+  fullName: piine.Voxels.IVoxelVolume<T>.GetVoxel(piine.Int3)
+  nameWithType.vb: IVoxelVolume(Of T).GetVoxel(Int3)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).GetVoxel(piine.Int3)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+    name: GetVoxel
+    nameWithType: IVoxelVolume<T>.GetVoxel
+    fullName: piine.Voxels.IVoxelVolume<T>.GetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+    name: GetVoxel
+    nameWithType: IVoxelVolume(Of T).GetVoxel
+    fullName: piine.Voxels.IVoxelVolume(Of T).GetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+  commentId: M:piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+  name: GetVoxel(Int3)
+  nameWithType: IVoxelVolume<T>.GetVoxel(Int3)
+  fullName: piine.Voxels.IVoxelVolume<T>.GetVoxel(piine.Int3)
+  nameWithType.vb: IVoxelVolume(Of T).GetVoxel(Int3)
+  fullName.vb: piine.Voxels.IVoxelVolume(Of T).GetVoxel(piine.Int3)
+  spec.csharp:
+  - uid: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+    name: GetVoxel
+    nameWithType: IVoxelVolume<T>.GetVoxel
+    fullName: piine.Voxels.IVoxelVolume<T>.GetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: piine.Voxels.IVoxelVolume`1.GetVoxel(piine.Int3)
+    name: GetVoxel
+    nameWithType: IVoxelVolume(Of T).GetVoxel
+    fullName: piine.Voxels.IVoxelVolume(Of T).GetVoxel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.VoxelGrid`1.CalculateIndex*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.CalculateIndex
+  name: CalculateIndex
+  nameWithType: VoxelGrid<T>.CalculateIndex
+  fullName: piine.Voxels.VoxelGrid<T>.CalculateIndex
+  nameWithType.vb: VoxelGrid(Of T).CalculateIndex
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculateIndex
+- uid: piine.Voxels.VoxelGrid`1.CalculatePosition*
+  commentId: Overload:piine.Voxels.VoxelGrid`1.CalculatePosition
+  name: CalculatePosition
+  nameWithType: VoxelGrid<T>.CalculatePosition
+  fullName: piine.Voxels.VoxelGrid<T>.CalculatePosition
+  nameWithType.vb: VoxelGrid(Of T).CalculatePosition
+  fullName.vb: piine.Voxels.VoxelGrid(Of T).CalculatePosition

@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Memory.Unmanaged
+  commentId: T:piine.Memory.Unmanaged
+  id: Unmanaged
+  parent: piine.Memory
+  children:
+  - piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
+  - piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
+  - piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: Unmanaged
+  nameWithType: Unmanaged
+  fullName: piine.Memory.Unmanaged
+  type: Class
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Unmanaged
+    path: src/Memory/Unmanaged.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static class Unmanaged
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Module Unmanaged
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
+  commentId: M:piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
+  id: AllocMemory``1(System.Int64)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: AllocMemory<T>(Int64)
+  nameWithType: Unmanaged.AllocMemory<T>(Int64)
+  fullName: piine.Memory.Unmanaged.AllocMemory<T>(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: AllocMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 15
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAllocate unmanaged memory. Also informs the GC of the added memory pressure.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T*AllocMemory<T>(long length)
+
+          where T : struct
+    parameters:
+    - id: length
+      type: System.Int64
+      description: Number of elements to allocate.
+    typeParameters:
+    - id: T
+      description: Unmanaged Type to allocate for.
+    return:
+      type: '{T}*'
+      description: ''
+    content.vb: Public Shared Function AllocMemory(Of T As Structure)(length As Long) As T
+  overload: piine.Memory.Unmanaged.AllocMemory*
+  nameWithType.vb: Unmanaged.AllocMemory(Of T)(Int64)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.AllocMemory(Of T)(System.Int64)
+  name.vb: AllocMemory(Of T)(Int64)
+- uid: piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
+  commentId: M:piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
+  id: FreeMemory``1(``0*,System.Int64)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: FreeMemory<T>(T*, Int64)
+  nameWithType: Unmanaged.FreeMemory<T>(T*, Int64)
+  fullName: piine.Memory.Unmanaged.FreeMemory<T>(T*, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: FreeMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 28
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFree unmanaged memory. Also informs the GC of the relieved memory pressure.\n"
+  example: []
+  syntax:
+    content: >-
+      public static void FreeMemory<T>(T*memory, long length)
+
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory
+    - id: length
+      type: System.Int64
+      description: Number of elements to free
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub FreeMemory(Of T As Structure)(memory As T *, length As Long)
+  overload: piine.Memory.Unmanaged.FreeMemory*
+  nameWithType.vb: Unmanaged.FreeMemory(Of T)(T*, Int64)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.FreeMemory(Of T)(T*, System.Int64)
+  name.vb: FreeMemory(Of T)(T*, Int64)
+- uid: piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
+  commentId: M:piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
+  id: ReAllocMemory``1(``0*@,System.Int64,System.Int64)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: ReAllocMemory<T>(ref T*, Int64, Int64)
+  nameWithType: Unmanaged.ReAllocMemory<T>(ref T*, Int64, Int64)
+  fullName: piine.Memory.Unmanaged.ReAllocMemory<T>(ref T*, System.Int64, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ReAllocMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 43
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nResizes already allocated memory\n"
+  example: []
+  syntax:
+    content: >-
+      public static void ReAllocMemory<T>(ref T*memory, long currentLength, long newLength)
+
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory
+    - id: currentLength
+      type: System.Int64
+      description: Current number of elements
+    - id: newLength
+      type: System.Int64
+      description: New number of elements
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub ReAllocMemory(Of T As Structure)(ByRef memory As T *, currentLength As Long, newLength As Long)
+  overload: piine.Memory.Unmanaged.ReAllocMemory*
+  nameWithType.vb: Unmanaged.ReAllocMemory(Of T)(ByRef T*, Int64, Int64)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.ReAllocMemory(Of T)(ByRef T*, System.Int64, System.Int64)
+  name.vb: ReAllocMemory(Of T)(ByRef T*, Int64, Int64)
+references:
+- uid: piine.Memory
+  commentId: N:piine.Memory
+  name: piine.Memory
+  nameWithType: piine.Memory
+  fullName: piine.Memory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Memory.Unmanaged.AllocMemory*
+  commentId: Overload:piine.Memory.Unmanaged.AllocMemory
+  name: AllocMemory
+  nameWithType: Unmanaged.AllocMemory
+  fullName: piine.Memory.Unmanaged.AllocMemory
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: '{T}*'
+  isExternal: true
+  name: T*
+  nameWithType: T*
+  fullName: T*
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+- uid: piine.Memory.Unmanaged.FreeMemory*
+  commentId: Overload:piine.Memory.Unmanaged.FreeMemory
+  name: FreeMemory
+  nameWithType: Unmanaged.FreeMemory
+  fullName: piine.Memory.Unmanaged.FreeMemory
+- uid: piine.Memory.Unmanaged.ReAllocMemory*
+  commentId: Overload:piine.Memory.Unmanaged.ReAllocMemory
+  name: ReAllocMemory
+  nameWithType: Unmanaged.ReAllocMemory
+  fullName: piine.Memory.Unmanaged.ReAllocMemory

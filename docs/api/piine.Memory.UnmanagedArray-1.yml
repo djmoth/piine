@@ -1,0 +1,3030 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Memory.UnmanagedArray`1
+  commentId: T:piine.Memory.UnmanagedArray`1
+  id: UnmanagedArray`1
+  parent: piine.Memory
+  children:
+  - piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
+  - piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
+  - piine.Memory.UnmanagedArray`1.#ctor(System.Span{`0})
+  - piine.Memory.UnmanagedArray`1.Allocated
+  - piine.Memory.UnmanagedArray`1.ArrayPointer
+  - piine.Memory.UnmanagedArray`1.Clear
+  - piine.Memory.UnmanagedArray`1.Contains(`0)
+  - piine.Memory.UnmanagedArray`1.CopyTo(`0[],System.Int32)
+  - piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
+  - piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0})
+  - piine.Memory.UnmanagedArray`1.Count
+  - piine.Memory.UnmanagedArray`1.Dispose
+  - piine.Memory.UnmanagedArray`1.Dispose(System.Boolean)
+  - piine.Memory.UnmanagedArray`1.Finalize
+  - piine.Memory.UnmanagedArray`1.GetEnumerator
+  - piine.Memory.UnmanagedArray`1.GetSpan
+  - piine.Memory.UnmanagedArray`1.IndexOf(`0)
+  - piine.Memory.UnmanagedArray`1.IsReadOnly
+  - piine.Memory.UnmanagedArray`1.Item(System.Int32)
+  - piine.Memory.UnmanagedArray`1.Length
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  - piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedArray<T>
+  nameWithType: UnmanagedArray<T>
+  fullName: piine.Memory.UnmanagedArray<T>
+  type: Class
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnmanagedArray
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 11
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAn Array stored in unmanaged memory. May help relieve pressure from the Garbage Collector\n"
+  example: []
+  syntax:
+    content: 'public class UnmanagedArray<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IDisposable where T : struct'
+    typeParameters:
+    - id: T
+      description: The unmanaged type that the array will contain
+    content.vb: >-
+      Public Class UnmanagedArray(Of T As Structure)
+
+          Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UnmanagedArray(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: piine.Memory.UnmanagedArray(Of T)
+  name.vb: UnmanagedArray(Of T)
+- uid: piine.Memory.UnmanagedArray`1.ArrayPointer
+  commentId: P:piine.Memory.UnmanagedArray`1.ArrayPointer
+  id: ArrayPointer
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: ArrayPointer
+  nameWithType: UnmanagedArray<T>.ArrayPointer
+  fullName: piine.Memory.UnmanagedArray<T>.ArrayPointer
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ArrayPointer
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 16
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nGet the underlying pointer. Be mindful when working with this.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public T*ArrayPointer { get; }
+    parameters: []
+    return:
+      type: '{T}*'
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public ReadOnly Property ArrayPointer As T
+  overload: piine.Memory.UnmanagedArray`1.ArrayPointer*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: UnmanagedArray(Of T).ArrayPointer
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).ArrayPointer
+- uid: piine.Memory.UnmanagedArray`1.Length
+  commentId: P:piine.Memory.UnmanagedArray`1.Length
+  id: Length
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: UnmanagedArray<T>.Length
+  fullName: piine.Memory.UnmanagedArray<T>.Length
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 21
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nSize of the array. The same as Count\n"
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: piine.Memory.UnmanagedArray`1.Length*
+  nameWithType.vb: UnmanagedArray(Of T).Length
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Length
+- uid: piine.Memory.UnmanagedArray`1.Count
+  commentId: P:piine.Memory.UnmanagedArray`1.Count
+  id: Count
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: UnmanagedArray<T>.Count
+  fullName: piine.Memory.UnmanagedArray<T>.Count
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Count
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 25
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nSize of the array. The same as Length\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: piine.Memory.UnmanagedArray`1.Count*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  nameWithType.vb: UnmanagedArray(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Count
+- uid: piine.Memory.UnmanagedArray`1.Allocated
+  commentId: P:piine.Memory.UnmanagedArray`1.Allocated
+  id: Allocated
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Allocated
+  nameWithType: UnmanagedArray<T>.Allocated
+  fullName: piine.Memory.UnmanagedArray<T>.Allocated
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Allocated
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 29
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nSet to false when the object is disposed\n"
+  example: []
+  syntax:
+    content: public bool Allocated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Allocated As Boolean
+  overload: piine.Memory.UnmanagedArray`1.Allocated*
+  nameWithType.vb: UnmanagedArray(Of T).Allocated
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Allocated
+- uid: piine.Memory.UnmanagedArray`1.IsReadOnly
+  commentId: P:piine.Memory.UnmanagedArray`1.IsReadOnly
+  id: IsReadOnly
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: UnmanagedArray<T>.IsReadOnly
+  fullName: piine.Memory.UnmanagedArray<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: IsReadOnly
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 33
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAlways false\n"
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: piine.Memory.UnmanagedArray`1.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  nameWithType.vb: UnmanagedArray(Of T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).IsReadOnly
+- uid: piine.Memory.UnmanagedArray`1.Item(System.Int32)
+  commentId: P:piine.Memory.UnmanagedArray`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: UnmanagedArray<T>.Item[Int32]
+  fullName: piine.Memory.UnmanagedArray<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 39
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAccess an element in the UnmanagedArray. Performs bounds checking.\n"
+  example: []
+  syntax:
+    content: public T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Zero-based index of element.
+    return:
+      type: '{T}'
+    content.vb: Public Property Item(index As Integer) As T
+  overload: piine.Memory.UnmanagedArray`1.Item*
+  implements:
+  - System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  nameWithType.vb: UnmanagedArray(Of T).Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
+  commentId: M:piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedArray(Int32)
+  nameWithType: UnmanagedArray<T>.UnmanagedArray(Int32)
+  fullName: piine.Memory.UnmanagedArray<T>.UnmanagedArray(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 65
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAllocate a new UnmanagedArray.\n"
+  example: []
+  syntax:
+    content: public UnmanagedArray(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: Size of the new array in elements of T
+    content.vb: Public Sub New(size As Integer)
+  overload: piine.Memory.UnmanagedArray`1.#ctor*
+  nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray(System.Int32)
+- uid: piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
+  commentId: M:piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.Boolean)'
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedArray(Int32, Boolean)
+  nameWithType: UnmanagedArray<T>.UnmanagedArray(Int32, Boolean)
+  fullName: piine.Memory.UnmanagedArray<T>.UnmanagedArray(System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 81
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAllocate a new UnmanagedArray.\n"
+  example: []
+  syntax:
+    content: public UnmanagedArray(int size, bool fillWithDefaultValues)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: Size of the new array
+    - id: fillWithDefaultValues
+      type: System.Boolean
+      description: '&quot;Zero-out&quot; the array with the default value of T. The array may otherwise contain garbage data.'
+    content.vb: Public Sub New(size As Integer, fillWithDefaultValues As Boolean)
+  overload: piine.Memory.UnmanagedArray`1.#ctor*
+  nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray(Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray(System.Int32, System.Boolean)
+- uid: piine.Memory.UnmanagedArray`1.#ctor(System.Span{`0})
+  commentId: M:piine.Memory.UnmanagedArray`1.#ctor(System.Span{`0})
+  id: '#ctor(System.Span{`0})'
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedArray(Span<T>)
+  nameWithType: UnmanagedArray<T>.UnmanagedArray(Span<T>)
+  fullName: piine.Memory.UnmanagedArray<T>.UnmanagedArray(System.Span<T>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 99
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAllocate a new UnmanagedArray from a Span The contents of the span are copied to the new UnmanagedArray.\n"
+  example: []
+  syntax:
+    content: public UnmanagedArray(Span<T> span)
+    parameters:
+    - id: span
+      type: System.Span{{T}}
+      description: Span to copy from
+    content.vb: Public Sub New(span As Span(Of T))
+  overload: piine.Memory.UnmanagedArray`1.#ctor*
+  nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray(Span(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray(System.Span(Of T))
+  name.vb: UnmanagedArray(Span(Of T))
+- uid: piine.Memory.UnmanagedArray`1.IndexOf(`0)
+  commentId: M:piine.Memory.UnmanagedArray`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: UnmanagedArray<T>.IndexOf(T)
+  fullName: piine.Memory.UnmanagedArray<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: IndexOf
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 118
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nTries to find the index of item.\n"
+  example: []
+  syntax:
+    content: public int IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: Item to find.
+    return:
+      type: System.Int32
+      description: Index of item if it was found, otherwise -1.
+    content.vb: Public Function IndexOf(item As T) As Integer
+  overload: piine.Memory.UnmanagedArray`1.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{{T}}.IndexOf({T})
+  nameWithType.vb: UnmanagedArray(Of T).IndexOf(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).IndexOf(T)
+- uid: piine.Memory.UnmanagedArray`1.Clear
+  commentId: M:piine.Memory.UnmanagedArray`1.Clear
+  id: Clear
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: UnmanagedArray<T>.Clear()
+  fullName: piine.Memory.UnmanagedArray<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Clear
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 134
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFills the array with the default value of T.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: piine.Memory.UnmanagedArray`1.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  nameWithType.vb: UnmanagedArray(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Clear()
+- uid: piine.Memory.UnmanagedArray`1.Contains(`0)
+  commentId: M:piine.Memory.UnmanagedArray`1.Contains(`0)
+  id: Contains(`0)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: UnmanagedArray<T>.Contains(T)
+  fullName: piine.Memory.UnmanagedArray<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Contains
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 144
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: piine.Memory.UnmanagedArray`1.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  nameWithType.vb: UnmanagedArray(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Contains(T)
+- uid: piine.Memory.UnmanagedArray`1.CopyTo(`0[],System.Int32)
+  commentId: M:piine.Memory.UnmanagedArray`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  nameWithType: UnmanagedArray<T>.CopyTo(T[], Int32)
+  fullName: piine.Memory.UnmanagedArray<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CopyTo
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 157
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void CopyTo(T[] destination, int destinationIndex)
+    parameters:
+    - id: destination
+      type: '{T}[]'
+    - id: destinationIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(destination As T(), destinationIndex As Integer)
+  overload: piine.Memory.UnmanagedArray`1.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  nameWithType.vb: UnmanagedArray(Of T).CopyTo(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
+  commentId: M:piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
+  id: CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(UnmanagedArray<T>, Int32)
+  nameWithType: UnmanagedArray<T>.CopyTo(UnmanagedArray<T>, Int32)
+  fullName: piine.Memory.UnmanagedArray<T>.CopyTo(piine.Memory.UnmanagedArray<T>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CopyTo
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 176
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void CopyTo(UnmanagedArray<T> destination, int destinationIndex)
+    parameters:
+    - id: destination
+      type: piine.Memory.UnmanagedArray`1
+    - id: destinationIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(destination As UnmanagedArray(Of T), destinationIndex As Integer)
+  overload: piine.Memory.UnmanagedArray`1.CopyTo*
+  nameWithType.vb: UnmanagedArray(Of T).CopyTo(UnmanagedArray(Of T), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo(piine.Memory.UnmanagedArray(Of T), System.Int32)
+  name.vb: CopyTo(UnmanagedArray(Of T), Int32)
+- uid: piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0})
+  commentId: M:piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0})
+  id: CopyTo(System.Span{`0})
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Span<T>)
+  nameWithType: UnmanagedArray<T>.CopyTo(Span<T>)
+  fullName: piine.Memory.UnmanagedArray<T>.CopyTo(System.Span<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CopyTo
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 193
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void CopyTo(Span<T> destination)
+    parameters:
+    - id: destination
+      type: System.Span{{T}}
+    content.vb: Public Sub CopyTo(destination As Span(Of T))
+  overload: piine.Memory.UnmanagedArray`1.CopyTo*
+  nameWithType.vb: UnmanagedArray(Of T).CopyTo(Span(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo(System.Span(Of T))
+  name.vb: CopyTo(Span(Of T))
+- uid: piine.Memory.UnmanagedArray`1.GetSpan
+  commentId: M:piine.Memory.UnmanagedArray`1.GetSpan
+  id: GetSpan
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetSpan()
+  nameWithType: UnmanagedArray<T>.GetSpan()
+  fullName: piine.Memory.UnmanagedArray<T>.GetSpan()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetSpan
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 203
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nGet a Span that points to this array\n"
+  example: []
+  syntax:
+    content: public Span<T> GetSpan()
+    return:
+      type: System.Span{{T}}
+    content.vb: Public Function GetSpan As Span(Of T)
+  overload: piine.Memory.UnmanagedArray`1.GetSpan*
+  nameWithType.vb: UnmanagedArray(Of T).GetSpan()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetSpan()
+- uid: piine.Memory.UnmanagedArray`1.GetEnumerator
+  commentId: M:piine.Memory.UnmanagedArray`1.GetEnumerator
+  id: GetEnumerator
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: UnmanagedArray<T>.GetEnumerator()
+  fullName: piine.Memory.UnmanagedArray<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetEnumerator
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 205
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public UnmanagedArray<T>.Enumerator GetEnumerator()
+    return:
+      type: piine.Memory.UnmanagedArray`1.Enumerator
+    content.vb: Public Function GetEnumerator As UnmanagedArray(Of T).Enumerator
+  overload: piine.Memory.UnmanagedArray`1.GetEnumerator*
+  nameWithType.vb: UnmanagedArray(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetEnumerator()
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable<T>.GetEnumerator()
+  nameWithType: UnmanagedArray<T>.IEnumerable<T>.GetEnumerator()
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 212
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: UnmanagedArray<T>.IEnumerable.GetEnumerator()
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 214
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  id: System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IList<T>.Insert(Int32, T)
+  nameWithType: UnmanagedArray<T>.IList<T>.Insert(Int32, T)
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.Generic.IList<T>.Insert
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 221
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: void IList<T>.Insert(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+    content.vb: Sub System.Collections.Generic.IList<T>.Insert(index As Integer, item As T) Implements IList(Of T).Insert
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert*
+  implements:
+  - System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IList<T>.Insert(Int32, T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  name.vb: System.Collections.Generic.IList<T>.Insert(Int32, T)
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  id: System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: IList<T>.RemoveAt(Int32)
+  nameWithType: UnmanagedArray<T>.IList<T>.RemoveAt(Int32)
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.Generic.IList<T>.RemoveAt
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 223
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: void IList<T>.RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Sub System.Collections.Generic.IList<T>.RemoveAt(index As Integer) Implements IList(Of T).RemoveAt
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt*
+  implements:
+  - System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt(Int32)
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: ICollection<T>.Add(T)
+  nameWithType: UnmanagedArray<T>.ICollection<T>.Add(T)
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.Generic.ICollection<T>.Add
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 225
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  commentId: M:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  id: System#Collections#Generic#ICollection{T}#Remove(`0)
+  isEii: true
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: ICollection<T>.Remove(T)
+  nameWithType: UnmanagedArray<T>.ICollection<T>.Remove(T)
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: System.Collections.Generic.ICollection<T>.Remove
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 227
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: bool ICollection<T>.Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Function System.Collections.Generic.ICollection<T>.Remove(item As T) As Boolean Implements ICollection(Of T).Remove
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Remove(T)
+- uid: piine.Memory.UnmanagedArray`1.Finalize
+  commentId: M:piine.Memory.UnmanagedArray`1.Finalize
+  id: Finalize
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: UnmanagedArray<T>.Finalize()
+  fullName: piine.Memory.UnmanagedArray<T>.Finalize()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Finalize
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 229
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: piine.Memory.UnmanagedArray`1.Finalize*
+  nameWithType.vb: UnmanagedArray(Of T).Finalize()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Finalize()
+- uid: piine.Memory.UnmanagedArray`1.Dispose
+  commentId: M:piine.Memory.UnmanagedArray`1.Dispose
+  id: Dispose
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnmanagedArray<T>.Dispose()
+  fullName: piine.Memory.UnmanagedArray<T>.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Dispose
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 231
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: piine.Memory.UnmanagedArray`1.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  nameWithType.vb: UnmanagedArray(Of T).Dispose()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Dispose()
+- uid: piine.Memory.UnmanagedArray`1.Dispose(System.Boolean)
+  commentId: M:piine.Memory.UnmanagedArray`1.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: UnmanagedArray<T>.Dispose(Boolean)
+  fullName: piine.Memory.UnmanagedArray<T>.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Dispose
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 240
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFree the unmanaged memory. The array will be unusable afterwards\n"
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: piine.Memory.UnmanagedArray`1.Dispose*
+  nameWithType.vb: UnmanagedArray(Of T).Dispose(Boolean)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Dispose(System.Boolean)
+references:
+- uid: piine.Memory
+  commentId: N:piine.Memory
+  name: piine.Memory
+  nameWithType: piine.Memory
+  fullName: piine.Memory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: piine.Memory.UnmanagedArray`1.ArrayPointer*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.ArrayPointer
+  name: ArrayPointer
+  nameWithType: UnmanagedArray<T>.ArrayPointer
+  fullName: piine.Memory.UnmanagedArray<T>.ArrayPointer
+  nameWithType.vb: UnmanagedArray(Of T).ArrayPointer
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).ArrayPointer
+- uid: '{T}*'
+  isExternal: true
+  name: T*
+  nameWithType: T*
+  fullName: T*
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+- uid: piine.Memory.UnmanagedArray`1.Length*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Length
+  name: Length
+  nameWithType: UnmanagedArray<T>.Length
+  fullName: piine.Memory.UnmanagedArray<T>.Length
+  nameWithType.vb: UnmanagedArray(Of T).Length
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Length
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Memory.UnmanagedArray`1.Count*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Count
+  name: Count
+  nameWithType: UnmanagedArray<T>.Count
+  fullName: piine.Memory.UnmanagedArray<T>.Count
+  nameWithType.vb: UnmanagedArray(Of T).Count
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: piine.Memory.UnmanagedArray`1.Allocated*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Allocated
+  name: Allocated
+  nameWithType: UnmanagedArray<T>.Allocated
+  fullName: piine.Memory.UnmanagedArray<T>.Allocated
+  nameWithType.vb: UnmanagedArray(Of T).Allocated
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Allocated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Memory.UnmanagedArray`1.IsReadOnly*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: UnmanagedArray<T>.IsReadOnly
+  fullName: piine.Memory.UnmanagedArray<T>.IsReadOnly
+  nameWithType.vb: UnmanagedArray(Of T).IsReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: piine.Memory.UnmanagedArray`1.Item*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Item
+  name: Item
+  nameWithType: UnmanagedArray<T>.Item
+  fullName: piine.Memory.UnmanagedArray<T>.Item
+  nameWithType.vb: UnmanagedArray(Of T).Item
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Item
+- uid: System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{`0}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: IList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList<T>.Item
+    fullName: System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList(Of T).Item
+    fullName: System.Collections.Generic.IList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: IList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList<T>.Item
+    fullName: System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList(Of T).Item
+    fullName: System.Collections.Generic.IList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: piine.Memory.UnmanagedArray`1.#ctor*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.#ctor
+  name: UnmanagedArray
+  nameWithType: UnmanagedArray<T>.UnmanagedArray
+  fullName: piine.Memory.UnmanagedArray<T>.UnmanagedArray
+  nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray
+- uid: System.Span{{T}}
+  commentId: T:System.Span{`0}
+  parent: System
+  definition: System.Span`1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.IndexOf*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.IndexOf
+  name: IndexOf
+  nameWithType: UnmanagedArray<T>.IndexOf
+  fullName: piine.Memory.UnmanagedArray<T>.IndexOf
+  nameWithType.vb: UnmanagedArray(Of T).IndexOf
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).IndexOf
+- uid: System.Collections.Generic.IList{{T}}.IndexOf({T})
+  commentId: M:System.Collections.Generic.IList{`0}.IndexOf(`0)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList<T>.IndexOf
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList(Of T).IndexOf
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList<T>.IndexOf
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList(Of T).IndexOf
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.Clear*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Clear
+  name: Clear
+  nameWithType: UnmanagedArray<T>.Clear
+  fullName: piine.Memory.UnmanagedArray<T>.Clear
+  nameWithType.vb: UnmanagedArray(Of T).Clear
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Clear
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.Contains*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Contains
+  name: Contains
+  nameWithType: UnmanagedArray<T>.Contains
+  fullName: piine.Memory.UnmanagedArray<T>.Contains
+  nameWithType.vb: UnmanagedArray(Of T).Contains
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Contains
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.CopyTo*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.CopyTo
+  name: CopyTo
+  nameWithType: UnmanagedArray<T>.CopyTo
+  fullName: piine.Memory.UnmanagedArray<T>.CopyTo
+  nameWithType.vb: UnmanagedArray(Of T).CopyTo
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1
+  commentId: T:piine.Memory.UnmanagedArray`1
+  parent: piine.Memory
+  name: UnmanagedArray<T>
+  nameWithType: UnmanagedArray<T>
+  fullName: piine.Memory.UnmanagedArray<T>
+  nameWithType.vb: UnmanagedArray(Of T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T)
+  name.vb: UnmanagedArray(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.GetSpan*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.GetSpan
+  name: GetSpan
+  nameWithType: UnmanagedArray<T>.GetSpan
+  fullName: piine.Memory.UnmanagedArray<T>.GetSpan
+  nameWithType.vb: UnmanagedArray(Of T).GetSpan
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetSpan
+- uid: piine.Memory.UnmanagedArray`1.GetEnumerator*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: UnmanagedArray<T>.GetEnumerator
+  fullName: piine.Memory.UnmanagedArray<T>.GetEnumerator
+  nameWithType.vb: UnmanagedArray(Of T).GetEnumerator
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetEnumerator
+- uid: piine.Memory.UnmanagedArray`1.Enumerator
+  commentId: T:piine.Memory.UnmanagedArray`1.Enumerator
+  parent: piine.Memory
+  name: UnmanagedArray.Enumerator<>
+  nameWithType: UnmanagedArray.Enumerator<>
+  fullName: piine.Memory.UnmanagedArray.Enumerator<>
+  nameWithType.vb: UnmanagedArray.Enumerator(Of )
+  fullName.vb: piine.Memory.UnmanagedArray.Enumerator(Of )
+  name.vb: UnmanagedArray.Enumerator(Of )
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedArray`1.Enumerator
+    name: UnmanagedArray.Enumerator
+    nameWithType: UnmanagedArray.Enumerator
+    fullName: piine.Memory.UnmanagedArray.Enumerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedArray`1.Enumerator
+    name: UnmanagedArray.Enumerator
+    nameWithType: UnmanagedArray.Enumerator
+    fullName: piine.Memory.UnmanagedArray.Enumerator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  name: IEnumerable<T>.GetEnumerator
+  nameWithType: UnmanagedArray<T>.IEnumerable<T>.GetEnumerator
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator
+  nameWithType: UnmanagedArray<T>.IEnumerable.GetEnumerator
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert
+  name: IList<T>.Insert
+  nameWithType: UnmanagedArray<T>.IList<T>.Insert
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IList<T>.Insert
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IList<T>.Insert
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IList<T>.Insert
+  name.vb: System.Collections.Generic.IList<T>.Insert
+- uid: System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  commentId: M:System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  name: Insert(Int32, T)
+  nameWithType: IList<T>.Insert(Int32, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList<T>.Insert
+    fullName: System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList(Of T).Insert
+    fullName: System.Collections.Generic.IList(Of T).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  name: Insert(Int32, T)
+  nameWithType: IList<T>.Insert(Int32, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList<T>.Insert
+    fullName: System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList(Of T).Insert
+    fullName: System.Collections.Generic.IList(Of T).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#RemoveAt
+  name: IList<T>.RemoveAt
+  nameWithType: UnmanagedArray<T>.IList<T>.RemoveAt
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.IList<T>.RemoveAt
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.IList<T>.RemoveAt
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.IList<T>.RemoveAt
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt
+- uid: System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList<T>.RemoveAt
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList(Of T).RemoveAt
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList<T>.RemoveAt
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList(Of T).RemoveAt
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add
+  name: ICollection<T>.Add
+  nameWithType: UnmanagedArray<T>.ICollection<T>.Add
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.Add
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Add
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Add
+  name.vb: System.Collections.Generic.ICollection<T>.Add
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove
+  name: ICollection<T>.Remove
+  nameWithType: UnmanagedArray<T>.ICollection<T>.Remove
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.Remove
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Remove
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.Remove
+  name.vb: System.Collections.Generic.ICollection<T>.Remove
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedArray`1.Finalize*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Finalize
+  name: Finalize
+  nameWithType: UnmanagedArray<T>.Finalize
+  fullName: piine.Memory.UnmanagedArray<T>.Finalize
+  nameWithType.vb: UnmanagedArray(Of T).Finalize
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Finalize
+- uid: piine.Memory.UnmanagedArray`1.Dispose*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.Dispose
+  name: Dispose
+  nameWithType: UnmanagedArray<T>.Dispose
+  fullName: piine.Memory.UnmanagedArray<T>.Dispose
+  nameWithType.vb: UnmanagedArray(Of T).Dispose
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

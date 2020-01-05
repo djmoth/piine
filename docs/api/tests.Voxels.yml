@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: tests.Voxels
+  commentId: N:tests.Voxels
+  id: tests.Voxels
+  children:
+  - tests.Voxels.VoxelVolumeTests
+  langs:
+  - csharp
+  - vb
+  name: tests.Voxels
+  nameWithType: tests.Voxels
+  fullName: tests.Voxels
+  type: Namespace
+  assemblies:
+  - tests
+references:
+- uid: tests.Voxels.VoxelVolumeTests
+  commentId: T:tests.Voxels.VoxelVolumeTests
+  name: VoxelVolumeTests
+  nameWithType: VoxelVolumeTests
+  fullName: tests.Voxels.VoxelVolumeTests

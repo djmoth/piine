@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Graphics.Voxels
+  commentId: N:piine.Graphics.Voxels
+  id: piine.Graphics.Voxels
+  children:
+  - piine.Graphics.Voxels.NaiveVoxelMesher
+  langs:
+  - csharp
+  - vb
+  name: piine.Graphics.Voxels
+  nameWithType: piine.Graphics.Voxels
+  fullName: piine.Graphics.Voxels
+  type: Namespace
+  assemblies:
+  - piine
+references:
+- uid: piine.Graphics.Voxels.NaiveVoxelMesher
+  commentId: T:piine.Graphics.Voxels.NaiveVoxelMesher
+  name: NaiveVoxelMesher
+  nameWithType: NaiveVoxelMesher
+  fullName: piine.Graphics.Voxels.NaiveVoxelMesher

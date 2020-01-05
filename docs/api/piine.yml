@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine
+  commentId: N:piine
+  id: piine
+  children:
+  - piine.Float12x3
+  - piine.Float2
+  - piine.Float3
+  - piine.Float3x3
+  - piine.Int3
+  - piine.Int4
+  - piine.Piine
+  langs:
+  - csharp
+  - vb
+  name: piine
+  nameWithType: piine
+  fullName: piine
+  type: Namespace
+  assemblies:
+  - piine
+references:
+- uid: piine.Float12x3
+  commentId: T:piine.Float12x3
+  name: Float12x3
+  nameWithType: Float12x3
+  fullName: piine.Float12x3
+- uid: piine.Float2
+  commentId: T:piine.Float2
+  parent: piine
+  name: Float2
+  nameWithType: Float2
+  fullName: piine.Float2
+- uid: piine.Float3
+  commentId: T:piine.Float3
+  parent: piine
+  name: Float3
+  nameWithType: Float3
+  fullName: piine.Float3
+- uid: piine.Float3x3
+  commentId: T:piine.Float3x3
+  name: Float3x3
+  nameWithType: Float3x3
+  fullName: piine.Float3x3
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: piine.Int4
+  commentId: T:piine.Int4
+  parent: piine
+  name: Int4
+  nameWithType: Int4
+  fullName: piine.Int4
+- uid: piine.Piine
+  commentId: T:piine.Piine
+  name: Piine
+  nameWithType: Piine
+  fullName: piine.Piine
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine

@@ -1,0 +1,1266 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Graphics.Color32
+  commentId: T:piine.Graphics.Color32
+  id: Color32
+  parent: piine.Graphics
+  children:
+  - piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte)
+  - piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)
+  - piine.Graphics.Color32.#ctor(System.Int32)
+  - piine.Graphics.Color32.a
+  - piine.Graphics.Color32.AsInt32
+  - piine.Graphics.Color32.b
+  - piine.Graphics.Color32.Black
+  - piine.Graphics.Color32.Blue
+  - piine.Graphics.Color32.Equals(piine.Graphics.Color32)
+  - piine.Graphics.Color32.Equals(System.Object)
+  - piine.Graphics.Color32.g
+  - piine.Graphics.Color32.GetHashCode
+  - piine.Graphics.Color32.Green
+  - piine.Graphics.Color32.op_Equality(piine.Graphics.Color32,piine.Graphics.Color32)
+  - piine.Graphics.Color32.op_Inequality(piine.Graphics.Color32,piine.Graphics.Color32)
+  - piine.Graphics.Color32.r
+  - piine.Graphics.Color32.Red
+  - piine.Graphics.Color32.ToString
+  - piine.Graphics.Color32.White
+  langs:
+  - csharp
+  - vb
+  name: Color32
+  nameWithType: Color32
+  fullName: piine.Graphics.Color32
+  type: Struct
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Color32
+    path: src/Graphics/Color32.cs
+    startLine: 7
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: 'public struct Color32 : IEquatable<Color32>'
+    content.vb: >-
+      Public Structure Color32
+
+          Implements IEquatable(Of Color32)
+  implements:
+  - System.IEquatable{piine.Graphics.Color32}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Graphics.Color32.r
+  commentId: F:piine.Graphics.Color32.r
+  id: r
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: r
+  nameWithType: Color32.r
+  fullName: piine.Graphics.Color32.r
+  type: Field
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: r
+    path: src/Graphics/Color32.cs
+    startLine: 11
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public byte r
+    return:
+      type: System.Byte
+    content.vb: Public r As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.g
+  commentId: F:piine.Graphics.Color32.g
+  id: g
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: g
+  nameWithType: Color32.g
+  fullName: piine.Graphics.Color32.g
+  type: Field
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: g
+    path: src/Graphics/Color32.cs
+    startLine: 13
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public byte g
+    return:
+      type: System.Byte
+    content.vb: Public g As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.b
+  commentId: F:piine.Graphics.Color32.b
+  id: b
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: b
+  nameWithType: Color32.b
+  fullName: piine.Graphics.Color32.b
+  type: Field
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: b
+    path: src/Graphics/Color32.cs
+    startLine: 15
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public byte b
+    return:
+      type: System.Byte
+    content.vb: Public b As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.a
+  commentId: F:piine.Graphics.Color32.a
+  id: a
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: a
+  nameWithType: Color32.a
+  fullName: piine.Graphics.Color32.a
+  type: Field
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: a
+    path: src/Graphics/Color32.cs
+    startLine: 17
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public byte a
+    return:
+      type: System.Byte
+    content.vb: Public a As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.AsInt32
+  commentId: P:piine.Graphics.Color32.AsInt32
+  id: AsInt32
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: AsInt32
+  nameWithType: Color32.AsInt32
+  fullName: piine.Graphics.Color32.AsInt32
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: AsInt32
+    path: src/Graphics/Color32.cs
+    startLine: 21
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public int AsInt32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property AsInt32 As Integer
+  overload: piine.Graphics.Color32.AsInt32*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)
+  commentId: M:piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.Byte,System.Byte,System.Byte,System.Byte)'
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Color32(Byte, Byte, Byte, Byte)
+  nameWithType: Color32.Color32(Byte, Byte, Byte, Byte)
+  fullName: piine.Graphics.Color32.Color32(System.Byte, System.Byte, System.Byte, System.Byte)
+  type: Constructor
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Graphics/Color32.cs
+    startLine: 23
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public Color32(byte r, byte g, byte b, byte a)
+    parameters:
+    - id: r
+      type: System.Byte
+    - id: g
+      type: System.Byte
+    - id: b
+      type: System.Byte
+    - id: a
+      type: System.Byte
+    content.vb: Public Sub New(r As Byte, g As Byte, b As Byte, a As Byte)
+  overload: piine.Graphics.Color32.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte)
+  commentId: M:piine.Graphics.Color32.#ctor(System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.Byte,System.Byte,System.Byte)'
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Color32(Byte, Byte, Byte)
+  nameWithType: Color32.Color32(Byte, Byte, Byte)
+  fullName: piine.Graphics.Color32.Color32(System.Byte, System.Byte, System.Byte)
+  type: Constructor
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Graphics/Color32.cs
+    startLine: 31
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public Color32(byte r, byte g, byte b)
+    parameters:
+    - id: r
+      type: System.Byte
+    - id: g
+      type: System.Byte
+    - id: b
+      type: System.Byte
+    content.vb: Public Sub New(r As Byte, g As Byte, b As Byte)
+  overload: piine.Graphics.Color32.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.#ctor(System.Int32)
+  commentId: M:piine.Graphics.Color32.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Color32(Int32)
+  nameWithType: Color32.Color32(Int32)
+  fullName: piine.Graphics.Color32.Color32(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Graphics/Color32.cs
+    startLine: 40
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public Color32(int rawRGBA)
+    parameters:
+    - id: rawRGBA
+      type: System.Int32
+    content.vb: Public Sub New(rawRGBA As Integer)
+  overload: piine.Graphics.Color32.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.op_Equality(piine.Graphics.Color32,piine.Graphics.Color32)
+  commentId: M:piine.Graphics.Color32.op_Equality(piine.Graphics.Color32,piine.Graphics.Color32)
+  id: op_Equality(piine.Graphics.Color32,piine.Graphics.Color32)
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Equality(Color32, Color32)
+  nameWithType: Color32.Equality(Color32, Color32)
+  fullName: piine.Graphics.Color32.Equality(piine.Graphics.Color32, piine.Graphics.Color32)
+  type: Operator
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Graphics/Color32.cs
+    startLine: 49
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static bool operator ==(Color32 left, Color32 right)
+    parameters:
+    - id: left
+      type: piine.Graphics.Color32
+    - id: right
+      type: piine.Graphics.Color32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Color32, right As Color32) As Boolean
+  overload: piine.Graphics.Color32.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Graphics.Color32.op_Inequality(piine.Graphics.Color32,piine.Graphics.Color32)
+  commentId: M:piine.Graphics.Color32.op_Inequality(piine.Graphics.Color32,piine.Graphics.Color32)
+  id: op_Inequality(piine.Graphics.Color32,piine.Graphics.Color32)
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Color32, Color32)
+  nameWithType: Color32.Inequality(Color32, Color32)
+  fullName: piine.Graphics.Color32.Inequality(piine.Graphics.Color32, piine.Graphics.Color32)
+  type: Operator
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Graphics/Color32.cs
+    startLine: 51
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static bool operator !=(Color32 left, Color32 right)
+    parameters:
+    - id: left
+      type: piine.Graphics.Color32
+    - id: right
+      type: piine.Graphics.Color32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Color32, right As Color32) As Boolean
+  overload: piine.Graphics.Color32.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Graphics.Color32.Equals(piine.Graphics.Color32)
+  commentId: M:piine.Graphics.Color32.Equals(piine.Graphics.Color32)
+  id: Equals(piine.Graphics.Color32)
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Equals(Color32)
+  nameWithType: Color32.Equals(Color32)
+  fullName: piine.Graphics.Color32.Equals(piine.Graphics.Color32)
+  type: Method
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Graphics/Color32.cs
+    startLine: 53
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public bool Equals(Color32 other)
+    parameters:
+    - id: other
+      type: piine.Graphics.Color32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Color32) As Boolean
+  overload: piine.Graphics.Color32.Equals*
+  implements:
+  - System.IEquatable{piine.Graphics.Color32}.Equals(piine.Graphics.Color32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Graphics.Color32.Equals(System.Object)
+  commentId: M:piine.Graphics.Color32.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Color32.Equals(Object)
+  fullName: piine.Graphics.Color32.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Graphics/Color32.cs
+    startLine: 55
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Graphics.Color32.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Graphics.Color32.GetHashCode
+  commentId: M:piine.Graphics.Color32.GetHashCode
+  id: GetHashCode
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Color32.GetHashCode()
+  fullName: piine.Graphics.Color32.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Graphics/Color32.cs
+    startLine: 65
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Graphics.Color32.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Graphics.Color32.ToString
+  commentId: M:piine.Graphics.Color32.ToString
+  id: ToString
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Color32.ToString()
+  fullName: piine.Graphics.Color32.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Graphics/Color32.cs
+    startLine: 67
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Graphics.Color32.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Graphics.Color32.Black
+  commentId: P:piine.Graphics.Color32.Black
+  id: Black
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Black
+  nameWithType: Color32.Black
+  fullName: piine.Graphics.Color32.Black
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Black
+    path: src/Graphics/Color32.cs
+    startLine: 70
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static Color32 Black { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Public Shared ReadOnly Property Black As Color32
+  overload: piine.Graphics.Color32.Black*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Graphics.Color32.White
+  commentId: P:piine.Graphics.Color32.White
+  id: White
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: White
+  nameWithType: Color32.White
+  fullName: piine.Graphics.Color32.White
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: White
+    path: src/Graphics/Color32.cs
+    startLine: 71
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static Color32 White { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Public Shared ReadOnly Property White As Color32
+  overload: piine.Graphics.Color32.White*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Graphics.Color32.Red
+  commentId: P:piine.Graphics.Color32.Red
+  id: Red
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: Color32.Red
+  fullName: piine.Graphics.Color32.Red
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Red
+    path: src/Graphics/Color32.cs
+    startLine: 72
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static Color32 Red { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Public Shared ReadOnly Property Red As Color32
+  overload: piine.Graphics.Color32.Red*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Graphics.Color32.Green
+  commentId: P:piine.Graphics.Color32.Green
+  id: Green
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: Color32.Green
+  fullName: piine.Graphics.Color32.Green
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Green
+    path: src/Graphics/Color32.cs
+    startLine: 73
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static Color32 Green { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Public Shared ReadOnly Property Green As Color32
+  overload: piine.Graphics.Color32.Green*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Graphics.Color32.Blue
+  commentId: P:piine.Graphics.Color32.Blue
+  id: Blue
+  parent: piine.Graphics.Color32
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: Color32.Blue
+  fullName: piine.Graphics.Color32.Blue
+  type: Property
+  source:
+    remote:
+      path: src/Graphics/Color32.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Blue
+    path: src/Graphics/Color32.cs
+    startLine: 74
+  assemblies:
+  - piine
+  namespace: piine.Graphics
+  syntax:
+    content: public static Color32 Blue { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: Public Shared ReadOnly Property Blue As Color32
+  overload: piine.Graphics.Color32.Blue*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: piine.Graphics
+  commentId: N:piine.Graphics
+  name: piine.Graphics
+  nameWithType: piine.Graphics
+  fullName: piine.Graphics
+- uid: System.IEquatable{piine.Graphics.Color32}
+  commentId: T:System.IEquatable{piine.Graphics.Color32}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Color32>
+  nameWithType: IEquatable<Color32>
+  fullName: System.IEquatable<piine.Graphics.Color32>
+  nameWithType.vb: IEquatable(Of Color32)
+  fullName.vb: System.IEquatable(Of piine.Graphics.Color32)
+  name.vb: IEquatable(Of Color32)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Graphics.Color32
+    name: Color32
+    nameWithType: Color32
+    fullName: piine.Graphics.Color32
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Graphics.Color32
+    name: Color32
+    nameWithType: Color32
+    fullName: piine.Graphics.Color32
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: piine.Graphics.Color32.AsInt32*
+  commentId: Overload:piine.Graphics.Color32.AsInt32
+  name: AsInt32
+  nameWithType: Color32.AsInt32
+  fullName: piine.Graphics.Color32.AsInt32
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Graphics.Color32.#ctor*
+  commentId: Overload:piine.Graphics.Color32.#ctor
+  name: Color32
+  nameWithType: Color32.Color32
+  fullName: piine.Graphics.Color32.Color32
+- uid: piine.Graphics.Color32.op_Equality*
+  commentId: Overload:piine.Graphics.Color32.op_Equality
+  name: Equality
+  nameWithType: Color32.Equality
+  fullName: piine.Graphics.Color32.Equality
+- uid: piine.Graphics.Color32
+  commentId: T:piine.Graphics.Color32
+  parent: piine.Graphics
+  name: Color32
+  nameWithType: Color32
+  fullName: piine.Graphics.Color32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Graphics.Color32.op_Inequality*
+  commentId: Overload:piine.Graphics.Color32.op_Inequality
+  name: Inequality
+  nameWithType: Color32.Inequality
+  fullName: piine.Graphics.Color32.Inequality
+- uid: piine.Graphics.Color32.Equals*
+  commentId: Overload:piine.Graphics.Color32.Equals
+  name: Equals
+  nameWithType: Color32.Equals
+  fullName: piine.Graphics.Color32.Equals
+- uid: System.IEquatable{piine.Graphics.Color32}.Equals(piine.Graphics.Color32)
+  commentId: M:System.IEquatable{piine.Graphics.Color32}.Equals(piine.Graphics.Color32)
+  parent: System.IEquatable{piine.Graphics.Color32}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Color32)
+  nameWithType: IEquatable<Color32>.Equals(Color32)
+  fullName: System.IEquatable<piine.Graphics.Color32>.Equals(piine.Graphics.Color32)
+  nameWithType.vb: IEquatable(Of Color32).Equals(Color32)
+  fullName.vb: System.IEquatable(Of piine.Graphics.Color32).Equals(piine.Graphics.Color32)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Color32>.Equals
+    fullName: System.IEquatable<piine.Graphics.Color32>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Graphics.Color32
+    name: Color32
+    nameWithType: Color32
+    fullName: piine.Graphics.Color32
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Color32).Equals
+    fullName: System.IEquatable(Of piine.Graphics.Color32).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Graphics.Color32
+    name: Color32
+    nameWithType: Color32
+    fullName: piine.Graphics.Color32
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Graphics.Color32.GetHashCode*
+  commentId: Overload:piine.Graphics.Color32.GetHashCode
+  name: GetHashCode
+  nameWithType: Color32.GetHashCode
+  fullName: piine.Graphics.Color32.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Graphics.Color32.ToString*
+  commentId: Overload:piine.Graphics.Color32.ToString
+  name: ToString
+  nameWithType: Color32.ToString
+  fullName: piine.Graphics.Color32.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: piine.Graphics.Color32.Black*
+  commentId: Overload:piine.Graphics.Color32.Black
+  name: Black
+  nameWithType: Color32.Black
+  fullName: piine.Graphics.Color32.Black
+- uid: piine.Graphics.Color32.White*
+  commentId: Overload:piine.Graphics.Color32.White
+  name: White
+  nameWithType: Color32.White
+  fullName: piine.Graphics.Color32.White
+- uid: piine.Graphics.Color32.Red*
+  commentId: Overload:piine.Graphics.Color32.Red
+  name: Red
+  nameWithType: Color32.Red
+  fullName: piine.Graphics.Color32.Red
+- uid: piine.Graphics.Color32.Green*
+  commentId: Overload:piine.Graphics.Color32.Green
+  name: Green
+  nameWithType: Color32.Green
+  fullName: piine.Graphics.Color32.Green
+- uid: piine.Graphics.Color32.Blue*
+  commentId: Overload:piine.Graphics.Color32.Blue
+  name: Blue
+  nameWithType: Color32.Blue
+  fullName: piine.Graphics.Color32.Blue

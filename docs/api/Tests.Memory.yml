@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Memory
+  commentId: N:Tests.Memory
+  id: Tests.Memory
+  children:
+  - Tests.Memory.UnmanagedArrayTests
+  - Tests.Memory.UnmanagedListTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Memory
+  nameWithType: Tests.Memory
+  fullName: Tests.Memory
+  type: Namespace
+  assemblies:
+  - tests
+references:
+- uid: Tests.Memory.UnmanagedArrayTests
+  commentId: T:Tests.Memory.UnmanagedArrayTests
+  name: UnmanagedArrayTests
+  nameWithType: UnmanagedArrayTests
+  fullName: Tests.Memory.UnmanagedArrayTests
+- uid: Tests.Memory.UnmanagedListTests
+  commentId: T:Tests.Memory.UnmanagedListTests
+  name: UnmanagedListTests
+  nameWithType: UnmanagedListTests
+  fullName: Tests.Memory.UnmanagedListTests
