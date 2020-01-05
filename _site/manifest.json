@@ -1,0 +1,582 @@
+{
+  "homepages": [],
+  "source_base_path": "E:/Game Development/piine",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "d0OM312nFd53onMEKO87Vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Int3Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Int3Tests.html",
+          "hash": "rRbgp+0WVKQYBN/mU9ciFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Memory.UnmanagedArrayTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Memory.UnmanagedArrayTests.html",
+          "hash": "uRyBQn3PMcKL3G7mxILVdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Memory.UnmanagedListTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Memory.UnmanagedListTests.html",
+          "hash": "56iiD2L6rfTOxNESaREyBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Memory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Memory.html",
+          "hash": "vth8Ky5KvKUnqD8fi+s5fA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.html",
+          "hash": "Dc3LqgaVSAZ9NJs+cfp9FA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "mgwrqtRPs2SZawCruqPaEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Float12x3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Float12x3.html",
+          "hash": "Xl2Nwjj8llFXAU/9tsR2KA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Float2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Float2.html",
+          "hash": "zH4PgLINjioa1xdlQTd61g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Float3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Float3.html",
+          "hash": "yPCPTnxKaQUpmVMuRkEX2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Float3x3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Float3x3.html",
+          "hash": "wOHuMyRkz2EJd4Wmb82Z4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.Camera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.Camera.html",
+          "hash": "L6Kw9kdYRn3/3vl8gS+CVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.Color32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.Color32.html",
+          "hash": "3xxOMFP/SWW+FTq4+Hivwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.VoxelShader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.VoxelShader-1.html",
+          "hash": "/nn8WLkmJ0yBdRJemM0UPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.Voxels.NaiveVoxelMesher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.Voxels.NaiveVoxelMesher.html",
+          "hash": "euy5zK/mBvYhmAVN0z/MXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.Voxels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.Voxels.html",
+          "hash": "kNE9lYD3cVcR8NuPiBpGlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Graphics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Graphics.html",
+          "hash": "V2PkV3DZIAqNn7ecxWu2QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Int3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Int3.html",
+          "hash": "S6khpaoBBi/c+v24etbCWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Int4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Int4.html",
+          "hash": "mdmNJ3lErwxcOhzyXVgK6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.Unmanaged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.Unmanaged.html",
+          "hash": "T3jzAzrMbPTljrp+5lzWCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.UnmanagedArray-1.Enumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.UnmanagedArray-1.Enumerator.html",
+          "hash": "ZE++ZyXxe4vvX6BLT1bZTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.UnmanagedArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.UnmanagedArray-1.html",
+          "hash": "dKnFHIizb4RlIhtsPsXMhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.UnmanagedList-1.Enumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.UnmanagedList-1.Enumerator.html",
+          "hash": "yX8vSpsdnfQUBH+Ff//IQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.UnmanagedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.UnmanagedList-1.html",
+          "hash": "IFJy67Urq138RtjbFmouTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Memory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Memory.html",
+          "hash": "H0ufWqGRjZF3nB3Iig34tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Piine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Piine.html",
+          "hash": "XScqAYraRyX95vrCiuFkhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Procedural.OpenSimplexNoise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Procedural.OpenSimplexNoise.html",
+          "hash": "6Zux8GYZu7l67tIQAYwW1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Procedural.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Procedural.html",
+          "hash": "kuJXeyvm+nWtyg2qC9dLSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.IColorVolume.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.IColorVolume.html",
+          "hash": "oAPOjMFql3YAtmgjPp6M3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.IVoxelVolume-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.IVoxelVolume-1.html",
+          "hash": "6Lvi1C/kX/Agc26YGhfKyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.ManagedVoxelGrid-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.ManagedVoxelGrid-1.html",
+          "hash": "vLM5AVhC8z3jzDG0pCFzfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.ManagedVoxelOctree-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.ManagedVoxelOctree-1.html",
+          "hash": "KYgPWFCGIRcfrtudAcVVBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.UnmanagedVoxelGrid-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.UnmanagedVoxelGrid-1.html",
+          "hash": "HI5m6s442MakdPQQh9OAig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.VoxelGrid-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.VoxelGrid-1.html",
+          "hash": "+bG4BmskLOYeaRdPaRKlaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.VoxelOctree-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.VoxelOctree-1.html",
+          "hash": "lWCE30S5C+dvMf7IccMmAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.Voxels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.Voxels.html",
+          "hash": "mSt73X/sakpEdxHLpcqnYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/piine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/piine.html",
+          "hash": "9zESloEnzNQYVjsbNnp/Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/tests.Voxels.VoxelVolumeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/tests.Voxels.VoxelVolumeTests.html",
+          "hash": "iNFj5rvxwEpENKuHC9ow7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/tests.Voxels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/tests.Voxels.html",
+          "hash": "lZLCXYhl5MKdLd8fZt19iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "RrEuGfLReuAasKH6m9Wa/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "CSuPX49F3IKLhqWJcBAjsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "0KBW3muIdTGmIWQAjD63qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 37,
+          "skipped_file_count": 22
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
