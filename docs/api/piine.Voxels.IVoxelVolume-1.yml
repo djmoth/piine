@@ -19,11 +19,11 @@ items:
   type: Interface
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: IVoxelVolume
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 6
   assemblies:
   - piine
@@ -55,11 +55,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Width
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 8
   assemblies:
   - piine
@@ -90,11 +90,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Height
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 9
   assemblies:
   - piine
@@ -125,11 +125,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Depth
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 10
   assemblies:
   - piine
@@ -160,11 +160,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 12
   assemblies:
   - piine
@@ -193,11 +193,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/IVoxelVolume.cs
+      path: src/Voxels/Volumes/IVoxelVolume.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/IVoxelVolume.cs
+    path: src/Voxels/Volumes/IVoxelVolume.cs
     startLine: 13
   assemblies:
   - piine

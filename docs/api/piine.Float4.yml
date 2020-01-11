@@ -1,0 +1,2511 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Float4
+  commentId: T:piine.Float4
+  id: Float4
+  parent: piine
+  children:
+  - piine.Float4.#ctor(System.Single)
+  - piine.Float4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - piine.Float4.Absolute(piine.Float4)
+  - piine.Float4.CalculateVolume
+  - piine.Float4.Cross(piine.Float4,piine.Float4)
+  - piine.Float4.Distance(piine.Float4,piine.Float4)
+  - piine.Float4.Equals(piine.Float4)
+  - piine.Float4.Equals(System.Object)
+  - piine.Float4.GetUnsafe(System.Int32)
+  - piine.Float4.Item(System.Int32)
+  - piine.Float4.Length
+  - piine.Float4.LengthSquared
+  - piine.Float4.Normalize(piine.Float4)
+  - piine.Float4.One
+  - piine.Float4.op_Addition(piine.Float4,piine.Float4)
+  - piine.Float4.op_Division(piine.Float4,System.Single)
+  - piine.Float4.op_Equality(piine.Float4,piine.Float4)
+  - piine.Float4.op_Explicit(piine.Float4)~UnityEngine.Vector4
+  - piine.Float4.op_Explicit(piine.Int4)~piine.Float4
+  - piine.Float4.op_Explicit(UnityEngine.Vector4)~piine.Float4
+  - piine.Float4.op_GreaterThan(piine.Float4,piine.Float4)
+  - piine.Float4.op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  - piine.Float4.op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  - piine.Float4.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  - piine.Float4.op_Inequality(piine.Float4,piine.Float4)
+  - piine.Float4.op_LessThan(piine.Float4,piine.Float4)
+  - piine.Float4.op_LessThanOrEqual(piine.Float4,piine.Float4)
+  - piine.Float4.op_Multiply(piine.Float4,System.Single)
+  - piine.Float4.op_Subtraction(piine.Float4,piine.Float4)
+  - piine.Float4.op_UnaryNegation(piine.Float4)
+  - piine.Float4.SetUnsafe(System.Int32,System.Single)
+  - piine.Float4.Size
+  - piine.Float4.ToString
+  - piine.Float4.UnitW
+  - piine.Float4.UnitX
+  - piine.Float4.UnitY
+  - piine.Float4.UnitZ
+  - piine.Float4.w
+  - piine.Float4.x
+  - piine.Float4.XY
+  - piine.Float4.XZ
+  - piine.Float4.y
+  - piine.Float4.YZ
+  - piine.Float4.z
+  - piine.Float4.Zero
+  langs:
+  - csharp
+  - vb
+  name: Float4
+  nameWithType: Float4
+  fullName: piine.Float4
+  type: Struct
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Float4
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 7
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: 'public struct Float4 : IEquatable<Float4>'
+    content.vb: >-
+      Public Structure Float4
+          Implements IEquatable(Of Float4)
+  implements:
+  - System.IEquatable{piine.Float4}
+  inheritedMembers:
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Float4.Size
+  commentId: F:piine.Float4.Size
+  id: Size
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Float4.Size
+  fullName: piine.Float4.Size
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Size
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const int Size = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const Size As Integer = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Float4.Zero
+  commentId: P:piine.Float4.Zero
+  id: Zero
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Float4.Zero
+  fullName: piine.Float4.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Zero
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 19
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 Zero { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property Zero As Float4
+  overload: piine.Float4.Zero*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.One
+  commentId: P:piine.Float4.One
+  id: One
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Float4.One
+  fullName: piine.Float4.One
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: One
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 20
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 One { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property One As Float4
+  overload: piine.Float4.One*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.UnitX
+  commentId: P:piine.Float4.UnitX
+  id: UnitX
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: UnitX
+  nameWithType: Float4.UnitX
+  fullName: piine.Float4.UnitX
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitX
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 21
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 UnitX { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property UnitX As Float4
+  overload: piine.Float4.UnitX*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.UnitY
+  commentId: P:piine.Float4.UnitY
+  id: UnitY
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: UnitY
+  nameWithType: Float4.UnitY
+  fullName: piine.Float4.UnitY
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitY
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 22
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 UnitY { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property UnitY As Float4
+  overload: piine.Float4.UnitY*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.UnitZ
+  commentId: P:piine.Float4.UnitZ
+  id: UnitZ
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: UnitZ
+  nameWithType: Float4.UnitZ
+  fullName: piine.Float4.UnitZ
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitZ
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 23
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 UnitZ { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property UnitZ As Float4
+  overload: piine.Float4.UnitZ*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.UnitW
+  commentId: P:piine.Float4.UnitW
+  id: UnitW
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: UnitW
+  nameWithType: Float4.UnitW
+  fullName: piine.Float4.UnitW
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitW
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 24
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 UnitW { get; }
+    parameters: []
+    return:
+      type: piine.Float4
+    content.vb: Public Shared ReadOnly Property UnitW As Float4
+  overload: piine.Float4.UnitW*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Float4.x
+  commentId: F:piine.Float4.x
+  id: x
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Float4.x
+  fullName: piine.Float4.x
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: x
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 30
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float x
+    return:
+      type: System.Single
+    content.vb: Public x As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.y
+  commentId: F:piine.Float4.y
+  id: y
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Float4.y
+  fullName: piine.Float4.y
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: y
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 32
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float y
+    return:
+      type: System.Single
+    content.vb: Public y As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.z
+  commentId: F:piine.Float4.z
+  id: z
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: Float4.z
+  fullName: piine.Float4.z
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: z
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 34
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float z
+    return:
+      type: System.Single
+    content.vb: Public z As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.w
+  commentId: F:piine.Float4.w
+  id: w
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: w
+  nameWithType: Float4.w
+  fullName: piine.Float4.w
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: w
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 36
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float w
+    return:
+      type: System.Single
+    content.vb: Public w As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.XY
+  commentId: P:piine.Float4.XY
+  id: XY
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: XY
+  nameWithType: Float4.XY
+  fullName: piine.Float4.XY
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: XY
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 38
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Float2 XY { get; }
+    parameters: []
+    return:
+      type: piine.Float2
+    content.vb: Public ReadOnly Property XY As Float2
+  overload: piine.Float4.XY*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Float4.XZ
+  commentId: P:piine.Float4.XZ
+  id: XZ
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: XZ
+  nameWithType: Float4.XZ
+  fullName: piine.Float4.XZ
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: XZ
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 39
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Float2 XZ { get; }
+    parameters: []
+    return:
+      type: piine.Float2
+    content.vb: Public ReadOnly Property XZ As Float2
+  overload: piine.Float4.XZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Float4.YZ
+  commentId: P:piine.Float4.YZ
+  id: YZ
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: YZ
+  nameWithType: Float4.YZ
+  fullName: piine.Float4.YZ
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: YZ
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 40
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Float2 YZ { get; }
+    parameters: []
+    return:
+      type: piine.Float2
+    content.vb: Public ReadOnly Property YZ As Float2
+  overload: piine.Float4.YZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Float4.Length
+  commentId: P:piine.Float4.Length
+  id: Length
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: Float4.Length
+  fullName: piine.Float4.Length
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 42
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float Length { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Length As Single
+  overload: piine.Float4.Length*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Float4.LengthSquared
+  commentId: P:piine.Float4.LengthSquared
+  id: LengthSquared
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared
+  nameWithType: Float4.LengthSquared
+  fullName: piine.Float4.LengthSquared
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: LengthSquared
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 44
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float LengthSquared { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property LengthSquared As Single
+  overload: piine.Float4.LengthSquared*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Float4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:piine.Float4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Float4(Single, Single, Single, Single)
+  nameWithType: Float4.Float4(Single, Single, Single, Single)
+  fullName: piine.Float4.Float4(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 46
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Float4(float x, float y, float z, float w)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    - id: w
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, w As Single)
+  overload: piine.Float4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.#ctor(System.Single)
+  commentId: M:piine.Float4.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Float4(Single)
+  nameWithType: Float4.Float4(Single)
+  fullName: piine.Float4.Float4(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 54
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Float4(float all)
+    parameters:
+    - id: all
+      type: System.Single
+    content.vb: Public Sub New(all As Single)
+  overload: piine.Float4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.Item(System.Int32)
+  commentId: P:piine.Float4.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Float4.Item[Int32]
+  fullName: piine.Float4.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 62
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Property Item(index As Integer) As Single
+  overload: piine.Float4.Item*
+  nameWithType.vb: Float4.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Float4.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Float4.GetUnsafe(System.Int32)
+  commentId: M:piine.Float4.GetUnsafe(System.Int32)
+  id: GetUnsafe(System.Int32)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: GetUnsafe(Int32)
+  nameWithType: Float4.GetUnsafe(Int32)
+  fullName: piine.Float4.GetUnsafe(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetUnsafe
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 80
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float GetUnsafe(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function GetUnsafe(index As Integer) As Single
+  overload: piine.Float4.GetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.SetUnsafe(System.Int32,System.Single)
+  commentId: M:piine.Float4.SetUnsafe(System.Int32,System.Single)
+  id: SetUnsafe(System.Int32,System.Single)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: SetUnsafe(Int32, Single)
+  nameWithType: Float4.SetUnsafe(Int32, Single)
+  fullName: piine.Float4.SetUnsafe(System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetUnsafe
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 82
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void SetUnsafe(int index, float value)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: System.Single
+    content.vb: Public Sub SetUnsafe(index As Integer, value As Single)
+  overload: piine.Float4.SetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.CalculateVolume
+  commentId: M:piine.Float4.CalculateVolume
+  id: CalculateVolume
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: CalculateVolume()
+  nameWithType: Float4.CalculateVolume()
+  fullName: piine.Float4.CalculateVolume()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculateVolume
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 84
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float CalculateVolume()
+    return:
+      type: System.Single
+    content.vb: Public Function CalculateVolume As Single
+  overload: piine.Float4.CalculateVolume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.Normalize(piine.Float4)
+  commentId: M:piine.Float4.Normalize(piine.Float4)
+  id: Normalize(piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Float4)
+  nameWithType: Float4.Normalize(Float4)
+  fullName: piine.Float4.Normalize(piine.Float4)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Normalize
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 86
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 Normalize(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Function Normalize(v As Float4) As Float4
+  overload: piine.Float4.Normalize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.Absolute(piine.Float4)
+  commentId: M:piine.Float4.Absolute(piine.Float4)
+  id: Absolute(piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Absolute(Float4)
+  nameWithType: Float4.Absolute(Float4)
+  fullName: piine.Float4.Absolute(piine.Float4)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Absolute
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 96
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 Absolute(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Function Absolute(v As Float4) As Float4
+  overload: piine.Float4.Absolute*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.Distance(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.Distance(piine.Float4,piine.Float4)
+  id: Distance(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Distance(Float4, Float4)
+  nameWithType: Float4.Distance(Float4, Float4)
+  fullName: piine.Float4.Distance(piine.Float4, piine.Float4)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Distance
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 101
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static float Distance(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Float4, b As Float4) As Single
+  overload: piine.Float4.Distance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.Cross(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.Cross(piine.Float4,piine.Float4)
+  id: Cross(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Cross(Float4, Float4)
+  nameWithType: Float4.Cross(Float4, Float4)
+  fullName: piine.Float4.Cross(piine.Float4, piine.Float4)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Cross
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 106
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 Cross(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Function Cross(a As Float4, b As Float4) As Float4
+  overload: piine.Float4.Cross*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Explicit(piine.Int4)~piine.Float4
+  commentId: M:piine.Float4.op_Explicit(piine.Int4)~piine.Float4
+  id: op_Explicit(piine.Int4)~piine.Float4
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Int4 to Float4)
+  nameWithType: Float4.Explicit(Int4 to Float4)
+  fullName: piine.Float4.Explicit(piine.Int4 to piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 116
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Float4(Int4 v)
+    parameters:
+    - id: v
+      type: piine.Int4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Narrowing Operator CType(v As Int4) As Float4
+  overload: piine.Float4.op_Explicit*
+  nameWithType.vb: Float4.Narrowing(Int4 to Float4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float4.Narrowing(piine.Int4 to piine.Float4)
+  name.vb: Narrowing(Int4 to Float4)
+- uid: piine.Float4.op_Explicit(piine.Float4)~UnityEngine.Vector4
+  commentId: M:piine.Float4.op_Explicit(piine.Float4)~UnityEngine.Vector4
+  id: op_Explicit(piine.Float4)~UnityEngine.Vector4
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Float4 to Vector4)
+  nameWithType: Float4.Explicit(Float4 to Vector4)
+  fullName: piine.Float4.Explicit(piine.Float4 to UnityEngine.Vector4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 118
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Vector4(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: UnityEngine.Vector4
+    content.vb: Public Shared Narrowing Operator CType(v As Float4) As Vector4
+  overload: piine.Float4.op_Explicit*
+  nameWithType.vb: Float4.Narrowing(Float4 to Vector4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float4.Narrowing(piine.Float4 to UnityEngine.Vector4)
+  name.vb: Narrowing(Float4 to Vector4)
+- uid: piine.Float4.op_Explicit(UnityEngine.Vector4)~piine.Float4
+  commentId: M:piine.Float4.op_Explicit(UnityEngine.Vector4)~piine.Float4
+  id: op_Explicit(UnityEngine.Vector4)~piine.Float4
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Vector4 to Float4)
+  nameWithType: Float4.Explicit(Vector4 to Float4)
+  fullName: piine.Float4.Explicit(UnityEngine.Vector4 to piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 120
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Float4(Vector4 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Narrowing Operator CType(v As Vector4) As Float4
+  overload: piine.Float4.op_Explicit*
+  nameWithType.vb: Float4.Narrowing(Vector4 to Float4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float4.Narrowing(UnityEngine.Vector4 to piine.Float4)
+  name.vb: Narrowing(Vector4 to Float4)
+- uid: piine.Float4.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  commentId: M:piine.Float4.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  id: op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Implicit((Single x, Single y, Single z, Single w) to Float4)
+  nameWithType: Float4.Implicit((Single x, Single y, Single z, Single w) to Float4)
+  fullName: piine.Float4.Implicit(System.ValueTuple<System.Single, System.Single, System.Single, System.Single> to piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 122
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Float4((float x, float y, float z, float w)v)
+    parameters:
+    - id: v
+      type: System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Widening Operator CType(v As(x As Single, y As Single, z As Single, w As Single)) As Float4
+  overload: piine.Float4.op_Implicit*
+  nameWithType.vb: Float4.Widening((x As Single, y As Single, z As Single, w As Single) to Float4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float4.Widening(System.ValueTuple(Of System.Single, System.Single, System.Single, System.Single) to piine.Float4)
+  name.vb: Widening((x As Single, y As Single, z As Single, w As Single) to Float4)
+- uid: piine.Float4.op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  commentId: M:piine.Float4.op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  id: op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Float4 to (Single, Single, Single, Single))
+  nameWithType: Float4.Implicit(Float4 to (Single, Single, Single, Single))
+  fullName: piine.Float4.Implicit(piine.Float4 to System.ValueTuple<System.Single, System.Single, System.Single, System.Single>)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 124
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator (float, float, float, float)(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+    content.vb: Public Shared Widening Operator CType(v As Float4) As(Single, Single, Single, Single)
+  overload: piine.Float4.op_Implicit*
+  nameWithType.vb: Float4.Widening(Float4 to (Single, Single, Single, Single))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float4.Widening(piine.Float4 to System.ValueTuple(Of System.Single, System.Single, System.Single, System.Single))
+  name.vb: Widening(Float4 to (Single, Single, Single, Single))
+- uid: piine.Float4.op_Equality(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_Equality(piine.Float4,piine.Float4)
+  id: op_Equality(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Equality(Float4, Float4)
+  nameWithType: Float4.Equality(Float4, Float4)
+  fullName: piine.Float4.Equality(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 126
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Inequality(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_Inequality(piine.Float4,piine.Float4)
+  id: op_Inequality(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Float4, Float4)
+  nameWithType: Float4.Inequality(Float4, Float4)
+  fullName: piine.Float4.Inequality(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 128
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Addition(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_Addition(piine.Float4,piine.Float4)
+  id: op_Addition(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Addition(Float4, Float4)
+  nameWithType: Float4.Addition(Float4, Float4)
+  fullName: piine.Float4.Addition(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 130
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 operator +(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Operator +(a As Float4, b As Float4) As Float4
+  overload: piine.Float4.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Subtraction(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_Subtraction(piine.Float4,piine.Float4)
+  id: op_Subtraction(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Float4, Float4)
+  nameWithType: Float4.Subtraction(Float4, Float4)
+  fullName: piine.Float4.Subtraction(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 132
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 operator -(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Operator -(a As Float4, b As Float4) As Float4
+  overload: piine.Float4.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_UnaryNegation(piine.Float4)
+  commentId: M:piine.Float4.op_UnaryNegation(piine.Float4)
+  id: op_UnaryNegation(piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: UnaryNegation(Float4)
+  nameWithType: Float4.UnaryNegation(Float4)
+  fullName: piine.Float4.UnaryNegation(piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_UnaryNegation
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 134
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 operator -(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Operator -(v As Float4) As Float4
+  overload: piine.Float4.op_UnaryNegation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Multiply(piine.Float4,System.Single)
+  commentId: M:piine.Float4.op_Multiply(piine.Float4,System.Single)
+  id: op_Multiply(piine.Float4,System.Single)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Float4, Single)
+  nameWithType: Float4.Multiply(Float4, Single)
+  fullName: piine.Float4.Multiply(piine.Float4, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 136
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 operator *(Float4 a, float b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Operator *(a As Float4, b As Single) As Float4
+  overload: piine.Float4.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_Division(piine.Float4,System.Single)
+  commentId: M:piine.Float4.op_Division(piine.Float4,System.Single)
+  id: op_Division(piine.Float4,System.Single)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Division(Float4, Single)
+  nameWithType: Float4.Division(Float4, Single)
+  fullName: piine.Float4.Division(piine.Float4, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 138
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Float4 operator /(Float4 a, float b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Float4
+    content.vb: Public Shared Operator /(a As Float4, b As Single) As Float4
+  overload: piine.Float4.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_GreaterThan(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_GreaterThan(piine.Float4,piine.Float4)
+  id: op_GreaterThan(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan(Float4, Float4)
+  nameWithType: Float4.GreaterThan(Float4, Float4)
+  fullName: piine.Float4.GreaterThan(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThan
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 140
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator>(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator>(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_GreaterThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_LessThan(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_LessThan(piine.Float4,piine.Float4)
+  id: op_LessThan(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: LessThan(Float4, Float4)
+  nameWithType: Float4.LessThan(Float4, Float4)
+  fullName: piine.Float4.LessThan(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThan
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 142
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_LessThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  id: op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual(Float4, Float4)
+  nameWithType: Float4.GreaterThanOrEqual(Float4, Float4)
+  fullName: piine.Float4.GreaterThanOrEqual(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThanOrEqual
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 144
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator >=(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_GreaterThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.op_LessThanOrEqual(piine.Float4,piine.Float4)
+  commentId: M:piine.Float4.op_LessThanOrEqual(piine.Float4,piine.Float4)
+  id: op_LessThanOrEqual(piine.Float4,piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual(Float4, Float4)
+  nameWithType: Float4.LessThanOrEqual(Float4, Float4)
+  fullName: piine.Float4.LessThanOrEqual(piine.Float4, piine.Float4)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThanOrEqual
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 146
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <=(Float4 a, Float4 b)
+    parameters:
+    - id: a
+      type: piine.Float4
+    - id: b
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(a As Float4, b As Float4) As Boolean
+  overload: piine.Float4.op_LessThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Float4.ToString
+  commentId: M:piine.Float4.ToString
+  id: ToString
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Float4.ToString()
+  fullName: piine.Float4.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 148
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Float4.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Float4.Equals(piine.Float4)
+  commentId: M:piine.Float4.Equals(piine.Float4)
+  id: Equals(piine.Float4)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Equals(Float4)
+  nameWithType: Float4.Equals(Float4)
+  fullName: piine.Float4.Equals(piine.Float4)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 150
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Float4 other)
+    parameters:
+    - id: other
+      type: piine.Float4
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Float4) As Boolean
+  overload: piine.Float4.Equals*
+  implements:
+  - System.IEquatable{piine.Float4}.Equals(piine.Float4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Float4.Equals(System.Object)
+  commentId: M:piine.Float4.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Float4
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Float4.Equals(Object)
+  fullName: piine.Float4.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float4.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Vector Types/Float/Float4.cs
+    startLine: 152
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Float4.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.IEquatable{piine.Float4}
+  commentId: T:System.IEquatable{piine.Float4}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Float4>
+  nameWithType: IEquatable<Float4>
+  fullName: System.IEquatable<piine.Float4>
+  nameWithType.vb: IEquatable(Of Float4)
+  fullName.vb: System.IEquatable(Of piine.Float4)
+  name.vb: IEquatable(Of Float4)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Float4
+    name: Float4
+    nameWithType: Float4
+    fullName: piine.Float4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Float4
+    name: Float4
+    nameWithType: Float4
+    fullName: piine.Float4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Float4.Zero*
+  commentId: Overload:piine.Float4.Zero
+  name: Zero
+  nameWithType: Float4.Zero
+  fullName: piine.Float4.Zero
+- uid: piine.Float4
+  commentId: T:piine.Float4
+  parent: piine
+  name: Float4
+  nameWithType: Float4
+  fullName: piine.Float4
+- uid: piine.Float4.One*
+  commentId: Overload:piine.Float4.One
+  name: One
+  nameWithType: Float4.One
+  fullName: piine.Float4.One
+- uid: piine.Float4.UnitX*
+  commentId: Overload:piine.Float4.UnitX
+  name: UnitX
+  nameWithType: Float4.UnitX
+  fullName: piine.Float4.UnitX
+- uid: piine.Float4.UnitY*
+  commentId: Overload:piine.Float4.UnitY
+  name: UnitY
+  nameWithType: Float4.UnitY
+  fullName: piine.Float4.UnitY
+- uid: piine.Float4.UnitZ*
+  commentId: Overload:piine.Float4.UnitZ
+  name: UnitZ
+  nameWithType: Float4.UnitZ
+  fullName: piine.Float4.UnitZ
+- uid: piine.Float4.UnitW*
+  commentId: Overload:piine.Float4.UnitW
+  name: UnitW
+  nameWithType: Float4.UnitW
+  fullName: piine.Float4.UnitW
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: piine.Float4.XY*
+  commentId: Overload:piine.Float4.XY
+  name: XY
+  nameWithType: Float4.XY
+  fullName: piine.Float4.XY
+- uid: piine.Float2
+  commentId: T:piine.Float2
+  parent: piine
+  name: Float2
+  nameWithType: Float2
+  fullName: piine.Float2
+- uid: piine.Float4.XZ*
+  commentId: Overload:piine.Float4.XZ
+  name: XZ
+  nameWithType: Float4.XZ
+  fullName: piine.Float4.XZ
+- uid: piine.Float4.YZ*
+  commentId: Overload:piine.Float4.YZ
+  name: YZ
+  nameWithType: Float4.YZ
+  fullName: piine.Float4.YZ
+- uid: piine.Float4.Length*
+  commentId: Overload:piine.Float4.Length
+  name: Length
+  nameWithType: Float4.Length
+  fullName: piine.Float4.Length
+- uid: piine.Float4.LengthSquared*
+  commentId: Overload:piine.Float4.LengthSquared
+  name: LengthSquared
+  nameWithType: Float4.LengthSquared
+  fullName: piine.Float4.LengthSquared
+- uid: piine.Float4.#ctor*
+  commentId: Overload:piine.Float4.#ctor
+  name: Float4
+  nameWithType: Float4.Float4
+  fullName: piine.Float4.Float4
+- uid: piine.Float4.Item*
+  commentId: Overload:piine.Float4.Item
+  name: Item
+  nameWithType: Float4.Item
+  fullName: piine.Float4.Item
+- uid: piine.Float4.GetUnsafe*
+  commentId: Overload:piine.Float4.GetUnsafe
+  name: GetUnsafe
+  nameWithType: Float4.GetUnsafe
+  fullName: piine.Float4.GetUnsafe
+- uid: piine.Float4.SetUnsafe*
+  commentId: Overload:piine.Float4.SetUnsafe
+  name: SetUnsafe
+  nameWithType: Float4.SetUnsafe
+  fullName: piine.Float4.SetUnsafe
+- uid: piine.Float4.CalculateVolume*
+  commentId: Overload:piine.Float4.CalculateVolume
+  name: CalculateVolume
+  nameWithType: Float4.CalculateVolume
+  fullName: piine.Float4.CalculateVolume
+- uid: piine.Float4.Normalize*
+  commentId: Overload:piine.Float4.Normalize
+  name: Normalize
+  nameWithType: Float4.Normalize
+  fullName: piine.Float4.Normalize
+- uid: piine.Float4.Absolute*
+  commentId: Overload:piine.Float4.Absolute
+  name: Absolute
+  nameWithType: Float4.Absolute
+  fullName: piine.Float4.Absolute
+- uid: piine.Float4.Distance*
+  commentId: Overload:piine.Float4.Distance
+  name: Distance
+  nameWithType: Float4.Distance
+  fullName: piine.Float4.Distance
+- uid: piine.Float4.Cross*
+  commentId: Overload:piine.Float4.Cross
+  name: Cross
+  nameWithType: Float4.Cross
+  fullName: piine.Float4.Cross
+- uid: piine.Float4.op_Explicit*
+  commentId: Overload:piine.Float4.op_Explicit
+  name: Explicit
+  nameWithType: Float4.Explicit
+  fullName: piine.Float4.Explicit
+  nameWithType.vb: Float4.Narrowing
+  fullName.vb: piine.Float4.Narrowing
+  name.vb: Narrowing
+- uid: piine.Int4
+  commentId: T:piine.Int4
+  parent: piine
+  name: Int4
+  nameWithType: Int4
+  fullName: piine.Int4
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: piine.Float4.op_Implicit*
+  commentId: Overload:piine.Float4.op_Implicit
+  name: Implicit
+  nameWithType: Float4.Implicit
+  fullName: piine.Float4.Implicit
+  nameWithType.vb: Float4.Widening
+  fullName.vb: piine.Float4.Widening
+  name.vb: Widening
+- uid: System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  commentId: T:System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Single, Single, Single, Single>
+  nameWithType: ValueTuple<Single, Single, Single, Single>
+  fullName: System.ValueTuple<System.Single, System.Single, System.Single, System.Single>
+  nameWithType.vb: ValueTuple(Of Single, Single, Single, Single)
+  fullName.vb: System.ValueTuple(Of System.Single, System.Single, System.Single, System.Single)
+  name.vb: ValueTuple(Of Single, Single, Single, Single)
+  spec.csharp:
+  - uid: System.ValueTuple`4
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`4
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Float4.op_Equality*
+  commentId: Overload:piine.Float4.op_Equality
+  name: Equality
+  nameWithType: Float4.Equality
+  fullName: piine.Float4.Equality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Float4.op_Inequality*
+  commentId: Overload:piine.Float4.op_Inequality
+  name: Inequality
+  nameWithType: Float4.Inequality
+  fullName: piine.Float4.Inequality
+- uid: piine.Float4.op_Addition*
+  commentId: Overload:piine.Float4.op_Addition
+  name: Addition
+  nameWithType: Float4.Addition
+  fullName: piine.Float4.Addition
+- uid: piine.Float4.op_Subtraction*
+  commentId: Overload:piine.Float4.op_Subtraction
+  name: Subtraction
+  nameWithType: Float4.Subtraction
+  fullName: piine.Float4.Subtraction
+- uid: piine.Float4.op_UnaryNegation*
+  commentId: Overload:piine.Float4.op_UnaryNegation
+  name: UnaryNegation
+  nameWithType: Float4.UnaryNegation
+  fullName: piine.Float4.UnaryNegation
+- uid: piine.Float4.op_Multiply*
+  commentId: Overload:piine.Float4.op_Multiply
+  name: Multiply
+  nameWithType: Float4.Multiply
+  fullName: piine.Float4.Multiply
+- uid: piine.Float4.op_Division*
+  commentId: Overload:piine.Float4.op_Division
+  name: Division
+  nameWithType: Float4.Division
+  fullName: piine.Float4.Division
+- uid: piine.Float4.op_GreaterThan*
+  commentId: Overload:piine.Float4.op_GreaterThan
+  name: GreaterThan
+  nameWithType: Float4.GreaterThan
+  fullName: piine.Float4.GreaterThan
+- uid: piine.Float4.op_LessThan*
+  commentId: Overload:piine.Float4.op_LessThan
+  name: LessThan
+  nameWithType: Float4.LessThan
+  fullName: piine.Float4.LessThan
+- uid: piine.Float4.op_GreaterThanOrEqual*
+  commentId: Overload:piine.Float4.op_GreaterThanOrEqual
+  name: GreaterThanOrEqual
+  nameWithType: Float4.GreaterThanOrEqual
+  fullName: piine.Float4.GreaterThanOrEqual
+- uid: piine.Float4.op_LessThanOrEqual*
+  commentId: Overload:piine.Float4.op_LessThanOrEqual
+  name: LessThanOrEqual
+  nameWithType: Float4.LessThanOrEqual
+  fullName: piine.Float4.LessThanOrEqual
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Float4.ToString*
+  commentId: Overload:piine.Float4.ToString
+  name: ToString
+  nameWithType: Float4.ToString
+  fullName: piine.Float4.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: piine.Float4.Equals*
+  commentId: Overload:piine.Float4.Equals
+  name: Equals
+  nameWithType: Float4.Equals
+  fullName: piine.Float4.Equals
+- uid: System.IEquatable{piine.Float4}.Equals(piine.Float4)
+  commentId: M:System.IEquatable{piine.Float4}.Equals(piine.Float4)
+  parent: System.IEquatable{piine.Float4}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Float4)
+  nameWithType: IEquatable<Float4>.Equals(Float4)
+  fullName: System.IEquatable<piine.Float4>.Equals(piine.Float4)
+  nameWithType.vb: IEquatable(Of Float4).Equals(Float4)
+  fullName.vb: System.IEquatable(Of piine.Float4).Equals(piine.Float4)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Float4>.Equals
+    fullName: System.IEquatable<piine.Float4>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Float4
+    name: Float4
+    nameWithType: Float4
+    fullName: piine.Float4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Float4).Equals
+    fullName: System.IEquatable(Of piine.Float4).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Float4
+    name: Float4
+    nameWithType: Float4
+    fullName: piine.Float4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

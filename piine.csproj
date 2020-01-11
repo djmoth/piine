@@ -6,7 +6,7 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU</Platforms>
     <Company>Emjada</Company>
     <Copyright>Copyright (C) Emjada</Copyright>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -17,15 +17,7 @@
     <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
@@ -36,6 +28,13 @@
     <EmbeddedResource Remove="tests\**" />
     <None Remove="Demo\**" />
     <None Remove="tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\Ray.cs" />
+    <Compile Remove="src\Voxels\VoxelObject.cs" />
+    <Compile Remove="src\Voxels\VoxelRaytracer.cs" />
+    <Compile Remove="src\Voxels\VoxelScene.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +51,22 @@
 
   <ItemGroup>
     <Folder Include="src\2D\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="src\Voxels\VoxelObject.cs" />
+    <None Include="src\Voxels\VoxelRaytracer.cs" />
+    <None Include="src\Voxels\VoxelScene.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="src\Ray.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.2f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

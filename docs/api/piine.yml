@@ -4,13 +4,15 @@ items:
   commentId: N:piine
   id: piine
   children:
-  - piine.Float12x3
+  - piine.Double2
   - piine.Float2
   - piine.Float3
-  - piine.Float3x3
+  - piine.Float4
+  - piine.Int2
   - piine.Int3
   - piine.Int4
   - piine.Piine
+  - piine.Simd
   langs:
   - csharp
   - vb
@@ -21,11 +23,17 @@ items:
   assemblies:
   - piine
 references:
-- uid: piine.Float12x3
-  commentId: T:piine.Float12x3
-  name: Float12x3
-  nameWithType: Float12x3
-  fullName: piine.Float12x3
+- uid: piine.Piine
+  commentId: T:piine.Piine
+  name: Piine
+  nameWithType: Piine
+  fullName: piine.Piine
+- uid: piine.Double2
+  commentId: T:piine.Double2
+  parent: piine
+  name: Double2
+  nameWithType: Double2
+  fullName: piine.Double2
 - uid: piine.Float2
   commentId: T:piine.Float2
   parent: piine
@@ -38,11 +46,18 @@ references:
   name: Float3
   nameWithType: Float3
   fullName: piine.Float3
-- uid: piine.Float3x3
-  commentId: T:piine.Float3x3
-  name: Float3x3
-  nameWithType: Float3x3
-  fullName: piine.Float3x3
+- uid: piine.Float4
+  commentId: T:piine.Float4
+  parent: piine
+  name: Float4
+  nameWithType: Float4
+  fullName: piine.Float4
+- uid: piine.Int2
+  commentId: T:piine.Int2
+  parent: piine
+  name: Int2
+  nameWithType: Int2
+  fullName: piine.Int2
 - uid: piine.Int3
   commentId: T:piine.Int3
   parent: piine
@@ -55,11 +70,11 @@ references:
   name: Int4
   nameWithType: Int4
   fullName: piine.Int4
-- uid: piine.Piine
-  commentId: T:piine.Piine
-  name: Piine
-  nameWithType: Piine
-  fullName: piine.Piine
+- uid: piine.Simd
+  commentId: T:piine.Simd
+  name: Simd
+  nameWithType: Simd
+  fullName: piine.Simd
 - uid: piine
   commentId: N:piine
   name: piine

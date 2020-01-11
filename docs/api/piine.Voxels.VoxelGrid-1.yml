@@ -29,11 +29,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: VoxelGrid
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 12
   assemblies:
   - piine
@@ -47,7 +47,6 @@ items:
       description: Type of voxels
     content.vb: >-
       Public MustInherit Class VoxelGrid(Of T)
-
           Implements IVoxelVolume(Of T)
   inheritance:
   - System.Object
@@ -88,11 +87,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Width
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 14
   assemblies:
   - piine
@@ -129,11 +128,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Height
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 15
   assemblies:
   - piine
@@ -170,11 +169,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Depth
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 16
   assemblies:
   - piine
@@ -211,11 +210,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Volume
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 17
   assemblies:
   - piine
@@ -248,11 +247,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Dimensions
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 18
   assemblies:
   - piine
@@ -285,11 +284,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: this[]
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 24
   assemblies:
   - piine
@@ -325,11 +324,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: this[]
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 30
   assemblies:
   - piine
@@ -365,11 +364,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 32
   assemblies:
   - piine
@@ -406,11 +405,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 39
   assemblies:
   - piine
@@ -445,11 +444,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 41
   assemblies:
   - piine
@@ -486,11 +485,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 49
   assemblies:
   - piine
@@ -525,11 +524,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculateIndex
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 54
   assemblies:
   - piine
@@ -564,11 +563,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculatePosition
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 59
   assemblies:
   - piine
@@ -603,11 +602,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculateIndex
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 61
   assemblies:
   - piine
@@ -644,11 +643,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelGrid.cs
+      path: src/Voxels/Volumes/VoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculatePosition
-    path: src/Voxels/VoxelGrid.cs
+    path: src/Voxels/Volumes/VoxelGrid.cs
     startLine: 62
   assemblies:
   - piine

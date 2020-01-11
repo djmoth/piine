@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Numerics;
+//using System.Numerics;
+using UnityEngine;
 using System.Runtime.InteropServices;
 
 namespace piine
@@ -19,9 +20,8 @@ namespace piine
         public static ref readonly Int2 UnitX => ref unitX;
         public static ref readonly Int2 UnitY => ref unitY;
 
-        [CLSCompliant (false)]
         [FieldOffset (0)]
-        public fixed int components[Size];
+        internal fixed int components[Size];
 
         [FieldOffset (0)]
         public int x;
@@ -90,7 +90,7 @@ namespace piine
 
         public static explicit operator Vector2 (Int2 v) => new Vector2 (v.x, v.y);
 
-        public static explicit operator Int2 (Vector2 v) => new Int2 ((int)v.X, (int)v.Y);
+        public static explicit operator Int2 (Vector2 v) => new Int2 ((int)v.x, (int)v.y);
 
         public static implicit operator Int2 ((int x, int y) v) => new Int2 (v.x, v.y);
 

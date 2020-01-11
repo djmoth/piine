@@ -4,9 +4,7 @@ items:
   commentId: N:piine.Graphics
   id: piine.Graphics
   children:
-  - piine.Graphics.Camera
   - piine.Graphics.Color32
-  - piine.Graphics.VoxelShader`1
   langs:
   - csharp
   - vb
@@ -17,53 +15,12 @@ items:
   assemblies:
   - piine
 references:
-- uid: piine.Graphics.Camera
-  commentId: T:piine.Graphics.Camera
-  name: Camera
-  nameWithType: Camera
-  fullName: piine.Graphics.Camera
 - uid: piine.Graphics.Color32
   commentId: T:piine.Graphics.Color32
   parent: piine.Graphics
   name: Color32
   nameWithType: Color32
   fullName: piine.Graphics.Color32
-- uid: piine.Graphics.VoxelShader`1
-  commentId: T:piine.Graphics.VoxelShader`1
-  name: VoxelShader<T>
-  nameWithType: VoxelShader<T>
-  fullName: piine.Graphics.VoxelShader<T>
-  nameWithType.vb: VoxelShader(Of T)
-  fullName.vb: piine.Graphics.VoxelShader(Of T)
-  name.vb: VoxelShader(Of T)
-  spec.csharp:
-  - uid: piine.Graphics.VoxelShader`1
-    name: VoxelShader
-    nameWithType: VoxelShader
-    fullName: piine.Graphics.VoxelShader
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: piine.Graphics.VoxelShader`1
-    name: VoxelShader
-    nameWithType: VoxelShader
-    fullName: piine.Graphics.VoxelShader
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: piine.Graphics
   commentId: N:piine.Graphics
   name: piine.Graphics

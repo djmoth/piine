@@ -2,30 +2,29 @@
 - uid: piine
   name: piine
   items:
-  - uid: piine.Float12x3
-    name: Float12x3
+  - uid: piine.Double2
+    name: Double2
   - uid: piine.Float2
     name: Float2
   - uid: piine.Float3
     name: Float3
-  - uid: piine.Float3x3
-    name: Float3x3
+  - uid: piine.Float4
+    name: Float4
+  - uid: piine.Int2
+    name: Int2
   - uid: piine.Int3
     name: Int3
   - uid: piine.Int4
     name: Int4
   - uid: piine.Piine
     name: Piine
+  - uid: piine.Simd
+    name: Simd
 - uid: piine.Graphics
   name: piine.Graphics
   items:
-  - uid: piine.Graphics.Camera
-    name: Camera
   - uid: piine.Graphics.Color32
     name: Color32
-  - uid: piine.Graphics.VoxelShader`1
-    name: VoxelShader<T>
-    name.vb: VoxelShader(Of T)
 - uid: piine.Graphics.Voxels
   name: piine.Graphics.Voxels
   items:
@@ -56,8 +55,8 @@
 - uid: piine.Voxels
   name: piine.Voxels
   items:
-  - uid: piine.Voxels.IColorVolume
-    name: IColorVolume
+  - uid: piine.Voxels.IVoxel
+    name: IVoxel
   - uid: piine.Voxels.IVoxelVolume`1
     name: IVoxelVolume<T>
     name.vb: IVoxelVolume(Of T)

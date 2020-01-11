@@ -1,31 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: piine.Graphics.Camera
-  commentId: T:piine.Graphics.Camera
-  id: Camera
-  parent: piine.Graphics
-  children: []
+- uid: piine.Simd
+  commentId: T:piine.Simd
+  id: Simd
+  parent: piine
+  children:
+  - piine.Simd.Sum(System.Span{piine.Int3})
   langs:
   - csharp
   - vb
-  name: Camera
-  nameWithType: Camera
-  fullName: piine.Graphics.Camera
+  name: Simd
+  nameWithType: Simd
+  fullName: piine.Simd
   type: Class
   source:
     remote:
-      path: src/Graphics/Camera.cs
+      path: src/Vector Types/Simd.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
-    id: Camera
-    path: src/Graphics/Camera.cs
+    id: Simd
+    path: src/Vector Types/Simd.cs
     startLine: 6
   assemblies:
   - piine
-  namespace: piine.Graphics
+  namespace: piine
   syntax:
-    content: public abstract class Camera
-    content.vb: Public MustInherit Class Camera
+    content: public static class Simd
+    content.vb: Public Module Simd
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,18 +39,57 @@ items:
   - System.Object.ToString
   modifiers.csharp:
   - public
-  - abstract
+  - static
   - class
   modifiers.vb:
   - Public
-  - MustInherit
-  - Class
+  - Module
+- uid: piine.Simd.Sum(System.Span{piine.Int3})
+  commentId: M:piine.Simd.Sum(System.Span{piine.Int3})
+  id: Sum(System.Span{piine.Int3})
+  parent: piine.Simd
+  langs:
+  - csharp
+  - vb
+  name: Sum(Span<Int3>)
+  nameWithType: Simd.Sum(Span<Int3>)
+  fullName: piine.Simd.Sum(System.Span<piine.Int3>)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Simd.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Sum
+    path: src/Vector Types/Simd.cs
+    startLine: 8
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int3 Sum(Span<Int3> vectors)
+    parameters:
+    - id: vectors
+      type: System.Span{piine.Int3}
+    return:
+      type: piine.Int3
+    content.vb: Public Shared Function Sum(vectors As Span(Of Int3)) As Int3
+  overload: piine.Simd.Sum*
+  nameWithType.vb: Simd.Sum(Span(Of Int3))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Simd.Sum(System.Span(Of piine.Int3))
+  name.vb: Sum(Span(Of Int3))
 references:
-- uid: piine.Graphics
-  commentId: N:piine.Graphics
-  name: piine.Graphics
-  nameWithType: piine.Graphics
-  fullName: piine.Graphics
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -342,3 +382,95 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: piine.Simd.Sum*
+  commentId: Overload:piine.Simd.Sum
+  name: Sum
+  nameWithType: Simd.Sum
+  fullName: piine.Simd.Sum
+- uid: System.Span{piine.Int3}
+  commentId: T:System.Span{piine.Int3}
+  parent: System
+  definition: System.Span`1
+  name: Span<Int3>
+  nameWithType: Span<Int3>
+  fullName: System.Span<piine.Int3>
+  nameWithType.vb: Span(Of Int3)
+  fullName.vb: System.Span(Of piine.Int3)
+  name.vb: Span(Of Int3)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Int3
+    name: Int3
+    nameWithType: Int3
+    fullName: piine.Int3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

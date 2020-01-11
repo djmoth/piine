@@ -7,47 +7,467 @@ references:
   commentId: N:piine
   fullName: piine
   nameWithType: piine
-- uid: piine.Float12x3
-  name: Float12x3
-  href: docs/api/piine.Float12x3.html
-  commentId: T:piine.Float12x3
-  fullName: piine.Float12x3
-  nameWithType: Float12x3
-- uid: piine.Float12x3.CalculateIndex(System.Int32,System.Int32)
-  name: CalculateIndex(Int32, Int32)
-  href: docs/api/piine.Float12x3.html#piine_Float12x3_CalculateIndex_System_Int32_System_Int32_
-  commentId: M:piine.Float12x3.CalculateIndex(System.Int32,System.Int32)
-  fullName: piine.Float12x3.CalculateIndex(System.Int32, System.Int32)
-  nameWithType: Float12x3.CalculateIndex(Int32, Int32)
-- uid: piine.Float12x3.CalculateIndex*
-  name: CalculateIndex
-  href: docs/api/piine.Float12x3.html#piine_Float12x3_CalculateIndex_
-  commentId: Overload:piine.Float12x3.CalculateIndex
+- uid: piine.Double2
+  name: Double2
+  href: docs/api/piine.Double2.html
+  commentId: T:piine.Double2
+  fullName: piine.Double2
+  nameWithType: Double2
+- uid: piine.Double2.#ctor(System.Double)
+  name: Double2(Double)
+  href: docs/api/piine.Double2.html#piine_Double2__ctor_System_Double_
+  commentId: M:piine.Double2.#ctor(System.Double)
+  fullName: piine.Double2.Double2(System.Double)
+  nameWithType: Double2.Double2(Double)
+- uid: piine.Double2.#ctor(System.Double,System.Double)
+  name: Double2(Double, Double)
+  href: docs/api/piine.Double2.html#piine_Double2__ctor_System_Double_System_Double_
+  commentId: M:piine.Double2.#ctor(System.Double,System.Double)
+  fullName: piine.Double2.Double2(System.Double, System.Double)
+  nameWithType: Double2.Double2(Double, Double)
+- uid: piine.Double2.#ctor*
+  name: Double2
+  href: docs/api/piine.Double2.html#piine_Double2__ctor_
+  commentId: Overload:piine.Double2.#ctor
   isSpec: "True"
-  fullName: piine.Float12x3.CalculateIndex
-  nameWithType: Float12x3.CalculateIndex
-- uid: piine.Float12x3.data
-  name: data
-  href: docs/api/piine.Float12x3.html#piine_Float12x3_data
-  commentId: F:piine.Float12x3.data
-  fullName: piine.Float12x3.data
-  nameWithType: Float12x3.data
-- uid: piine.Float12x3.Item(System.Int32,System.Int32)
-  name: Item[Int32, Int32]
-  href: docs/api/piine.Float12x3.html#piine_Float12x3_Item_System_Int32_System_Int32_
-  commentId: P:piine.Float12x3.Item(System.Int32,System.Int32)
-  name.vb: Item(Int32, Int32)
-  fullName: piine.Float12x3.Item[System.Int32, System.Int32]
-  fullName.vb: piine.Float12x3.Item(System.Int32, System.Int32)
-  nameWithType: Float12x3.Item[Int32, Int32]
-  nameWithType.vb: Float12x3.Item(Int32, Int32)
-- uid: piine.Float12x3.Item*
+  fullName: piine.Double2.Double2
+  nameWithType: Double2.Double2
+- uid: piine.Double2.Absolute(piine.Double2)
+  name: Absolute(Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_Absolute_piine_Double2_
+  commentId: M:piine.Double2.Absolute(piine.Double2)
+  fullName: piine.Double2.Absolute(piine.Double2)
+  nameWithType: Double2.Absolute(Double2)
+- uid: piine.Double2.Absolute*
+  name: Absolute
+  href: docs/api/piine.Double2.html#piine_Double2_Absolute_
+  commentId: Overload:piine.Double2.Absolute
+  isSpec: "True"
+  fullName: piine.Double2.Absolute
+  nameWithType: Double2.Absolute
+- uid: piine.Double2.CalculateArea
+  name: CalculateArea()
+  href: docs/api/piine.Double2.html#piine_Double2_CalculateArea
+  commentId: M:piine.Double2.CalculateArea
+  fullName: piine.Double2.CalculateArea()
+  nameWithType: Double2.CalculateArea()
+- uid: piine.Double2.CalculateArea*
+  name: CalculateArea
+  href: docs/api/piine.Double2.html#piine_Double2_CalculateArea_
+  commentId: Overload:piine.Double2.CalculateArea
+  isSpec: "True"
+  fullName: piine.Double2.CalculateArea
+  nameWithType: Double2.CalculateArea
+- uid: piine.Double2.components
+  name: components
+  href: docs/api/piine.Double2.html#piine_Double2_components
+  commentId: F:piine.Double2.components
+  fullName: piine.Double2.components
+  nameWithType: Double2.components
+- uid: piine.Double2.Distance(piine.Double2,piine.Double2)
+  name: Distance(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_Distance_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.Distance(piine.Double2,piine.Double2)
+  fullName: piine.Double2.Distance(piine.Double2, piine.Double2)
+  nameWithType: Double2.Distance(Double2, Double2)
+- uid: piine.Double2.Distance*
+  name: Distance
+  href: docs/api/piine.Double2.html#piine_Double2_Distance_
+  commentId: Overload:piine.Double2.Distance
+  isSpec: "True"
+  fullName: piine.Double2.Distance
+  nameWithType: Double2.Distance
+- uid: piine.Double2.Equals(piine.Double2)
+  name: Equals(Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_Equals_piine_Double2_
+  commentId: M:piine.Double2.Equals(piine.Double2)
+  fullName: piine.Double2.Equals(piine.Double2)
+  nameWithType: Double2.Equals(Double2)
+- uid: piine.Double2.Equals(System.Object)
+  name: Equals(Object)
+  href: docs/api/piine.Double2.html#piine_Double2_Equals_System_Object_
+  commentId: M:piine.Double2.Equals(System.Object)
+  fullName: piine.Double2.Equals(System.Object)
+  nameWithType: Double2.Equals(Object)
+- uid: piine.Double2.Equals*
+  name: Equals
+  href: docs/api/piine.Double2.html#piine_Double2_Equals_
+  commentId: Overload:piine.Double2.Equals
+  isSpec: "True"
+  fullName: piine.Double2.Equals
+  nameWithType: Double2.Equals
+- uid: piine.Double2.GetUnsafe(System.Int32)
+  name: GetUnsafe(Int32)
+  href: docs/api/piine.Double2.html#piine_Double2_GetUnsafe_System_Int32_
+  commentId: M:piine.Double2.GetUnsafe(System.Int32)
+  fullName: piine.Double2.GetUnsafe(System.Int32)
+  nameWithType: Double2.GetUnsafe(Int32)
+- uid: piine.Double2.GetUnsafe*
+  name: GetUnsafe
+  href: docs/api/piine.Double2.html#piine_Double2_GetUnsafe_
+  commentId: Overload:piine.Double2.GetUnsafe
+  isSpec: "True"
+  fullName: piine.Double2.GetUnsafe
+  nameWithType: Double2.GetUnsafe
+- uid: piine.Double2.Item(System.Int32)
+  name: Item[Int32]
+  href: docs/api/piine.Double2.html#piine_Double2_Item_System_Int32_
+  commentId: P:piine.Double2.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: piine.Double2.Item[System.Int32]
+  fullName.vb: piine.Double2.Item(System.Int32)
+  nameWithType: Double2.Item[Int32]
+  nameWithType.vb: Double2.Item(Int32)
+- uid: piine.Double2.Item*
   name: Item
-  href: docs/api/piine.Float12x3.html#piine_Float12x3_Item_
-  commentId: Overload:piine.Float12x3.Item
+  href: docs/api/piine.Double2.html#piine_Double2_Item_
+  commentId: Overload:piine.Double2.Item
   isSpec: "True"
-  fullName: piine.Float12x3.Item
-  nameWithType: Float12x3.Item
+  fullName: piine.Double2.Item
+  nameWithType: Double2.Item
+- uid: piine.Double2.Length
+  name: Length
+  href: docs/api/piine.Double2.html#piine_Double2_Length
+  commentId: P:piine.Double2.Length
+  fullName: piine.Double2.Length
+  nameWithType: Double2.Length
+- uid: piine.Double2.Length*
+  name: Length
+  href: docs/api/piine.Double2.html#piine_Double2_Length_
+  commentId: Overload:piine.Double2.Length
+  isSpec: "True"
+  fullName: piine.Double2.Length
+  nameWithType: Double2.Length
+- uid: piine.Double2.LengthSquared
+  name: LengthSquared
+  href: docs/api/piine.Double2.html#piine_Double2_LengthSquared
+  commentId: P:piine.Double2.LengthSquared
+  fullName: piine.Double2.LengthSquared
+  nameWithType: Double2.LengthSquared
+- uid: piine.Double2.LengthSquared*
+  name: LengthSquared
+  href: docs/api/piine.Double2.html#piine_Double2_LengthSquared_
+  commentId: Overload:piine.Double2.LengthSquared
+  isSpec: "True"
+  fullName: piine.Double2.LengthSquared
+  nameWithType: Double2.LengthSquared
+- uid: piine.Double2.Normalize(piine.Double2)
+  name: Normalize(Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_Normalize_piine_Double2_
+  commentId: M:piine.Double2.Normalize(piine.Double2)
+  fullName: piine.Double2.Normalize(piine.Double2)
+  nameWithType: Double2.Normalize(Double2)
+- uid: piine.Double2.Normalize*
+  name: Normalize
+  href: docs/api/piine.Double2.html#piine_Double2_Normalize_
+  commentId: Overload:piine.Double2.Normalize
+  isSpec: "True"
+  fullName: piine.Double2.Normalize
+  nameWithType: Double2.Normalize
+- uid: piine.Double2.One
+  name: One
+  href: docs/api/piine.Double2.html#piine_Double2_One
+  commentId: P:piine.Double2.One
+  fullName: piine.Double2.One
+  nameWithType: Double2.One
+- uid: piine.Double2.One*
+  name: One
+  href: docs/api/piine.Double2.html#piine_Double2_One_
+  commentId: Overload:piine.Double2.One
+  isSpec: "True"
+  fullName: piine.Double2.One
+  nameWithType: Double2.One
+- uid: piine.Double2.op_Addition(piine.Double2,piine.Double2)
+  name: Addition(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Addition_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_Addition(piine.Double2,piine.Double2)
+  fullName: piine.Double2.Addition(piine.Double2, piine.Double2)
+  nameWithType: Double2.Addition(Double2, Double2)
+- uid: piine.Double2.op_Addition*
+  name: Addition
+  href: docs/api/piine.Double2.html#piine_Double2_op_Addition_
+  commentId: Overload:piine.Double2.op_Addition
+  isSpec: "True"
+  fullName: piine.Double2.Addition
+  nameWithType: Double2.Addition
+- uid: piine.Double2.op_Division(piine.Double2,System.Double)
+  name: Division(Double2, Double)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Division_piine_Double2_System_Double_
+  commentId: M:piine.Double2.op_Division(piine.Double2,System.Double)
+  fullName: piine.Double2.Division(piine.Double2, System.Double)
+  nameWithType: Double2.Division(Double2, Double)
+- uid: piine.Double2.op_Division*
+  name: Division
+  href: docs/api/piine.Double2.html#piine_Double2_op_Division_
+  commentId: Overload:piine.Double2.op_Division
+  isSpec: "True"
+  fullName: piine.Double2.Division
+  nameWithType: Double2.Division
+- uid: piine.Double2.op_Equality(piine.Double2,piine.Double2)
+  name: Equality(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Equality_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_Equality(piine.Double2,piine.Double2)
+  fullName: piine.Double2.Equality(piine.Double2, piine.Double2)
+  nameWithType: Double2.Equality(Double2, Double2)
+- uid: piine.Double2.op_Equality*
+  name: Equality
+  href: docs/api/piine.Double2.html#piine_Double2_op_Equality_
+  commentId: Overload:piine.Double2.op_Equality
+  isSpec: "True"
+  fullName: piine.Double2.Equality
+  nameWithType: Double2.Equality
+- uid: piine.Double2.op_Explicit(piine.Double2)~System.Numerics.Vector2
+  name: Explicit(Double2 to Vector2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Explicit_piine_Double2__System_Numerics_Vector2
+  commentId: M:piine.Double2.op_Explicit(piine.Double2)~System.Numerics.Vector2
+  name.vb: Narrowing(Double2 to Vector2)
+  fullName: piine.Double2.Explicit(piine.Double2 to System.Numerics.Vector2)
+  fullName.vb: piine.Double2.Narrowing(piine.Double2 to System.Numerics.Vector2)
+  nameWithType: Double2.Explicit(Double2 to Vector2)
+  nameWithType.vb: Double2.Narrowing(Double2 to Vector2)
+- uid: piine.Double2.op_Explicit(piine.Int2)~piine.Double2
+  name: Explicit(Int2 to Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Explicit_piine_Int2__piine_Double2
+  commentId: M:piine.Double2.op_Explicit(piine.Int2)~piine.Double2
+  name.vb: Narrowing(Int2 to Double2)
+  fullName: piine.Double2.Explicit(piine.Int2 to piine.Double2)
+  fullName.vb: piine.Double2.Narrowing(piine.Int2 to piine.Double2)
+  nameWithType: Double2.Explicit(Int2 to Double2)
+  nameWithType.vb: Double2.Narrowing(Int2 to Double2)
+- uid: piine.Double2.op_Explicit(System.Numerics.Vector2)~piine.Double2
+  name: Explicit(Vector2 to Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Explicit_System_Numerics_Vector2__piine_Double2
+  commentId: M:piine.Double2.op_Explicit(System.Numerics.Vector2)~piine.Double2
+  name.vb: Narrowing(Vector2 to Double2)
+  fullName: piine.Double2.Explicit(System.Numerics.Vector2 to piine.Double2)
+  fullName.vb: piine.Double2.Narrowing(System.Numerics.Vector2 to piine.Double2)
+  nameWithType: Double2.Explicit(Vector2 to Double2)
+  nameWithType.vb: Double2.Narrowing(Vector2 to Double2)
+- uid: piine.Double2.op_Explicit*
+  name: Explicit
+  href: docs/api/piine.Double2.html#piine_Double2_op_Explicit_
+  commentId: Overload:piine.Double2.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: piine.Double2.Explicit
+  fullName.vb: piine.Double2.Narrowing
+  nameWithType: Double2.Explicit
+  nameWithType.vb: Double2.Narrowing
+- uid: piine.Double2.op_GreaterThan(piine.Double2,piine.Double2)
+  name: GreaterThan(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_GreaterThan_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_GreaterThan(piine.Double2,piine.Double2)
+  fullName: piine.Double2.GreaterThan(piine.Double2, piine.Double2)
+  nameWithType: Double2.GreaterThan(Double2, Double2)
+- uid: piine.Double2.op_GreaterThan*
+  name: GreaterThan
+  href: docs/api/piine.Double2.html#piine_Double2_op_GreaterThan_
+  commentId: Overload:piine.Double2.op_GreaterThan
+  isSpec: "True"
+  fullName: piine.Double2.GreaterThan
+  nameWithType: Double2.GreaterThan
+- uid: piine.Double2.op_GreaterThanOrEqual(piine.Double2,piine.Double2)
+  name: GreaterThanOrEqual(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_GreaterThanOrEqual_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_GreaterThanOrEqual(piine.Double2,piine.Double2)
+  fullName: piine.Double2.GreaterThanOrEqual(piine.Double2, piine.Double2)
+  nameWithType: Double2.GreaterThanOrEqual(Double2, Double2)
+- uid: piine.Double2.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: docs/api/piine.Double2.html#piine_Double2_op_GreaterThanOrEqual_
+  commentId: Overload:piine.Double2.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: piine.Double2.GreaterThanOrEqual
+  nameWithType: Double2.GreaterThanOrEqual
+- uid: piine.Double2.op_Implicit(piine.Double2)~System.ValueTuple{System.Double,System.Double}
+  name: Implicit(Double2 to (Double, Double))
+  href: docs/api/piine.Double2.html#piine_Double2_op_Implicit_piine_Double2__System_ValueTuple_System_Double_System_Double_
+  commentId: M:piine.Double2.op_Implicit(piine.Double2)~System.ValueTuple{System.Double,System.Double}
+  name.vb: Widening(Double2 to (Double, Double))
+  fullName: piine.Double2.Implicit(piine.Double2 to System.ValueTuple<System.Double, System.Double>)
+  fullName.vb: piine.Double2.Widening(piine.Double2 to System.ValueTuple(Of System.Double, System.Double))
+  nameWithType: Double2.Implicit(Double2 to (Double, Double))
+  nameWithType.vb: Double2.Widening(Double2 to (Double, Double))
+- uid: piine.Double2.op_Implicit(System.ValueTuple{System.Double,System.Double})~piine.Double2
+  name: Implicit((Double x, Double y) to Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Implicit_System_ValueTuple_System_Double_System_Double___piine_Double2
+  commentId: M:piine.Double2.op_Implicit(System.ValueTuple{System.Double,System.Double})~piine.Double2
+  name.vb: Widening((x As Double, y As Double) to Double2)
+  fullName: piine.Double2.Implicit(System.ValueTuple<System.Double, System.Double> to piine.Double2)
+  fullName.vb: piine.Double2.Widening(System.ValueTuple(Of System.Double, System.Double) to piine.Double2)
+  nameWithType: Double2.Implicit((Double x, Double y) to Double2)
+  nameWithType.vb: Double2.Widening((x As Double, y As Double) to Double2)
+- uid: piine.Double2.op_Implicit*
+  name: Implicit
+  href: docs/api/piine.Double2.html#piine_Double2_op_Implicit_
+  commentId: Overload:piine.Double2.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: piine.Double2.Implicit
+  fullName.vb: piine.Double2.Widening
+  nameWithType: Double2.Implicit
+  nameWithType.vb: Double2.Widening
+- uid: piine.Double2.op_Inequality(piine.Double2,piine.Double2)
+  name: Inequality(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Inequality_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_Inequality(piine.Double2,piine.Double2)
+  fullName: piine.Double2.Inequality(piine.Double2, piine.Double2)
+  nameWithType: Double2.Inequality(Double2, Double2)
+- uid: piine.Double2.op_Inequality*
+  name: Inequality
+  href: docs/api/piine.Double2.html#piine_Double2_op_Inequality_
+  commentId: Overload:piine.Double2.op_Inequality
+  isSpec: "True"
+  fullName: piine.Double2.Inequality
+  nameWithType: Double2.Inequality
+- uid: piine.Double2.op_LessThan(piine.Double2,piine.Double2)
+  name: LessThan(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_LessThan_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_LessThan(piine.Double2,piine.Double2)
+  fullName: piine.Double2.LessThan(piine.Double2, piine.Double2)
+  nameWithType: Double2.LessThan(Double2, Double2)
+- uid: piine.Double2.op_LessThan*
+  name: LessThan
+  href: docs/api/piine.Double2.html#piine_Double2_op_LessThan_
+  commentId: Overload:piine.Double2.op_LessThan
+  isSpec: "True"
+  fullName: piine.Double2.LessThan
+  nameWithType: Double2.LessThan
+- uid: piine.Double2.op_LessThanOrEqual(piine.Double2,piine.Double2)
+  name: LessThanOrEqual(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_LessThanOrEqual_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_LessThanOrEqual(piine.Double2,piine.Double2)
+  fullName: piine.Double2.LessThanOrEqual(piine.Double2, piine.Double2)
+  nameWithType: Double2.LessThanOrEqual(Double2, Double2)
+- uid: piine.Double2.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: docs/api/piine.Double2.html#piine_Double2_op_LessThanOrEqual_
+  commentId: Overload:piine.Double2.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: piine.Double2.LessThanOrEqual
+  nameWithType: Double2.LessThanOrEqual
+- uid: piine.Double2.op_Multiply(piine.Double2,System.Double)
+  name: Multiply(Double2, Double)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Multiply_piine_Double2_System_Double_
+  commentId: M:piine.Double2.op_Multiply(piine.Double2,System.Double)
+  fullName: piine.Double2.Multiply(piine.Double2, System.Double)
+  nameWithType: Double2.Multiply(Double2, Double)
+- uid: piine.Double2.op_Multiply*
+  name: Multiply
+  href: docs/api/piine.Double2.html#piine_Double2_op_Multiply_
+  commentId: Overload:piine.Double2.op_Multiply
+  isSpec: "True"
+  fullName: piine.Double2.Multiply
+  nameWithType: Double2.Multiply
+- uid: piine.Double2.op_Subtraction(piine.Double2,piine.Double2)
+  name: Subtraction(Double2, Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_Subtraction_piine_Double2_piine_Double2_
+  commentId: M:piine.Double2.op_Subtraction(piine.Double2,piine.Double2)
+  fullName: piine.Double2.Subtraction(piine.Double2, piine.Double2)
+  nameWithType: Double2.Subtraction(Double2, Double2)
+- uid: piine.Double2.op_Subtraction*
+  name: Subtraction
+  href: docs/api/piine.Double2.html#piine_Double2_op_Subtraction_
+  commentId: Overload:piine.Double2.op_Subtraction
+  isSpec: "True"
+  fullName: piine.Double2.Subtraction
+  nameWithType: Double2.Subtraction
+- uid: piine.Double2.op_UnaryNegation(piine.Double2)
+  name: UnaryNegation(Double2)
+  href: docs/api/piine.Double2.html#piine_Double2_op_UnaryNegation_piine_Double2_
+  commentId: M:piine.Double2.op_UnaryNegation(piine.Double2)
+  fullName: piine.Double2.UnaryNegation(piine.Double2)
+  nameWithType: Double2.UnaryNegation(Double2)
+- uid: piine.Double2.op_UnaryNegation*
+  name: UnaryNegation
+  href: docs/api/piine.Double2.html#piine_Double2_op_UnaryNegation_
+  commentId: Overload:piine.Double2.op_UnaryNegation
+  isSpec: "True"
+  fullName: piine.Double2.UnaryNegation
+  nameWithType: Double2.UnaryNegation
+- uid: piine.Double2.SetUnsafe(System.Int32,System.Double)
+  name: SetUnsafe(Int32, Double)
+  href: docs/api/piine.Double2.html#piine_Double2_SetUnsafe_System_Int32_System_Double_
+  commentId: M:piine.Double2.SetUnsafe(System.Int32,System.Double)
+  fullName: piine.Double2.SetUnsafe(System.Int32, System.Double)
+  nameWithType: Double2.SetUnsafe(Int32, Double)
+- uid: piine.Double2.SetUnsafe*
+  name: SetUnsafe
+  href: docs/api/piine.Double2.html#piine_Double2_SetUnsafe_
+  commentId: Overload:piine.Double2.SetUnsafe
+  isSpec: "True"
+  fullName: piine.Double2.SetUnsafe
+  nameWithType: Double2.SetUnsafe
+- uid: piine.Double2.Size
+  name: Size
+  href: docs/api/piine.Double2.html#piine_Double2_Size
+  commentId: F:piine.Double2.Size
+  fullName: piine.Double2.Size
+  nameWithType: Double2.Size
+- uid: piine.Double2.ToString
+  name: ToString()
+  href: docs/api/piine.Double2.html#piine_Double2_ToString
+  commentId: M:piine.Double2.ToString
+  fullName: piine.Double2.ToString()
+  nameWithType: Double2.ToString()
+- uid: piine.Double2.ToString*
+  name: ToString
+  href: docs/api/piine.Double2.html#piine_Double2_ToString_
+  commentId: Overload:piine.Double2.ToString
+  isSpec: "True"
+  fullName: piine.Double2.ToString
+  nameWithType: Double2.ToString
+- uid: piine.Double2.UnitX
+  name: UnitX
+  href: docs/api/piine.Double2.html#piine_Double2_UnitX
+  commentId: P:piine.Double2.UnitX
+  fullName: piine.Double2.UnitX
+  nameWithType: Double2.UnitX
+- uid: piine.Double2.UnitX*
+  name: UnitX
+  href: docs/api/piine.Double2.html#piine_Double2_UnitX_
+  commentId: Overload:piine.Double2.UnitX
+  isSpec: "True"
+  fullName: piine.Double2.UnitX
+  nameWithType: Double2.UnitX
+- uid: piine.Double2.UnitY
+  name: UnitY
+  href: docs/api/piine.Double2.html#piine_Double2_UnitY
+  commentId: P:piine.Double2.UnitY
+  fullName: piine.Double2.UnitY
+  nameWithType: Double2.UnitY
+- uid: piine.Double2.UnitY*
+  name: UnitY
+  href: docs/api/piine.Double2.html#piine_Double2_UnitY_
+  commentId: Overload:piine.Double2.UnitY
+  isSpec: "True"
+  fullName: piine.Double2.UnitY
+  nameWithType: Double2.UnitY
+- uid: piine.Double2.x
+  name: x
+  href: docs/api/piine.Double2.html#piine_Double2_x
+  commentId: F:piine.Double2.x
+  fullName: piine.Double2.x
+  nameWithType: Double2.x
+- uid: piine.Double2.y
+  name: y
+  href: docs/api/piine.Double2.html#piine_Double2_y
+  commentId: F:piine.Double2.y
+  fullName: piine.Double2.y
+  nameWithType: Double2.y
+- uid: piine.Double2.Zero
+  name: Zero
+  href: docs/api/piine.Double2.html#piine_Double2_Zero
+  commentId: P:piine.Double2.Zero
+  fullName: piine.Double2.Zero
+  nameWithType: Double2.Zero
+- uid: piine.Double2.Zero*
+  name: Zero
+  href: docs/api/piine.Double2.html#piine_Double2_Zero_
+  commentId: Overload:piine.Double2.Zero
+  isSpec: "True"
+  fullName: piine.Double2.Zero
+  nameWithType: Double2.Zero
 - uid: piine.Float2
   name: Float2
   href: docs/api/piine.Float2.html
@@ -99,12 +519,6 @@ references:
   isSpec: "True"
   fullName: piine.Float2.CalculateArea
   nameWithType: Float2.CalculateArea
-- uid: piine.Float2.data
-  name: data
-  href: docs/api/piine.Float2.html#piine_Float2_data
-  commentId: F:piine.Float2.data
-  fullName: piine.Float2.data
-  nameWithType: Float2.data
 - uid: piine.Float2.Distance(piine.Float2,piine.Float2)
   name: Distance(Float2, Float2)
   href: docs/api/piine.Float2.html#piine_Float2_Distance_piine_Float2_piine_Float2_
@@ -250,12 +664,6 @@ references:
   commentId: M:piine.Float2.op_Equality(piine.Float2,piine.Float2)
   fullName: piine.Float2.Equality(piine.Float2, piine.Float2)
   nameWithType: Float2.Equality(Float2, Float2)
-- uid: piine.Float2.op_Equality(piine.Float2,System.Numerics.Vector2)
-  name: Equality(Float2, Vector2)
-  href: docs/api/piine.Float2.html#piine_Float2_op_Equality_piine_Float2_System_Numerics_Vector2_
-  commentId: M:piine.Float2.op_Equality(piine.Float2,System.Numerics.Vector2)
-  fullName: piine.Float2.Equality(piine.Float2, System.Numerics.Vector2)
-  nameWithType: Float2.Equality(Float2, Vector2)
 - uid: piine.Float2.op_Equality*
   name: Equality
   href: docs/api/piine.Float2.html#piine_Float2_op_Equality_
@@ -263,22 +671,31 @@ references:
   isSpec: "True"
   fullName: piine.Float2.Equality
   nameWithType: Float2.Equality
-- uid: piine.Float2.op_Explicit(piine.Float2)~System.Numerics.Vector2
+- uid: piine.Float2.op_Explicit(piine.Float2)~UnityEngine.Vector2
   name: Explicit(Float2 to Vector2)
-  href: docs/api/piine.Float2.html#piine_Float2_op_Explicit_piine_Float2__System_Numerics_Vector2
-  commentId: M:piine.Float2.op_Explicit(piine.Float2)~System.Numerics.Vector2
+  href: docs/api/piine.Float2.html#piine_Float2_op_Explicit_piine_Float2__UnityEngine_Vector2
+  commentId: M:piine.Float2.op_Explicit(piine.Float2)~UnityEngine.Vector2
   name.vb: Narrowing(Float2 to Vector2)
-  fullName: piine.Float2.Explicit(piine.Float2 to System.Numerics.Vector2)
-  fullName.vb: piine.Float2.Narrowing(piine.Float2 to System.Numerics.Vector2)
+  fullName: piine.Float2.Explicit(piine.Float2 to UnityEngine.Vector2)
+  fullName.vb: piine.Float2.Narrowing(piine.Float2 to UnityEngine.Vector2)
   nameWithType: Float2.Explicit(Float2 to Vector2)
   nameWithType.vb: Float2.Narrowing(Float2 to Vector2)
-- uid: piine.Float2.op_Explicit(System.Numerics.Vector2)~piine.Float2
+- uid: piine.Float2.op_Explicit(piine.Int2)~piine.Float2
+  name: Explicit(Int2 to Float2)
+  href: docs/api/piine.Float2.html#piine_Float2_op_Explicit_piine_Int2__piine_Float2
+  commentId: M:piine.Float2.op_Explicit(piine.Int2)~piine.Float2
+  name.vb: Narrowing(Int2 to Float2)
+  fullName: piine.Float2.Explicit(piine.Int2 to piine.Float2)
+  fullName.vb: piine.Float2.Narrowing(piine.Int2 to piine.Float2)
+  nameWithType: Float2.Explicit(Int2 to Float2)
+  nameWithType.vb: Float2.Narrowing(Int2 to Float2)
+- uid: piine.Float2.op_Explicit(UnityEngine.Vector2)~piine.Float2
   name: Explicit(Vector2 to Float2)
-  href: docs/api/piine.Float2.html#piine_Float2_op_Explicit_System_Numerics_Vector2__piine_Float2
-  commentId: M:piine.Float2.op_Explicit(System.Numerics.Vector2)~piine.Float2
+  href: docs/api/piine.Float2.html#piine_Float2_op_Explicit_UnityEngine_Vector2__piine_Float2
+  commentId: M:piine.Float2.op_Explicit(UnityEngine.Vector2)~piine.Float2
   name.vb: Narrowing(Vector2 to Float2)
-  fullName: piine.Float2.Explicit(System.Numerics.Vector2 to piine.Float2)
-  fullName.vb: piine.Float2.Narrowing(System.Numerics.Vector2 to piine.Float2)
+  fullName: piine.Float2.Explicit(UnityEngine.Vector2 to piine.Float2)
+  fullName.vb: piine.Float2.Narrowing(UnityEngine.Vector2 to piine.Float2)
   nameWithType: Float2.Explicit(Vector2 to Float2)
   nameWithType.vb: Float2.Narrowing(Vector2 to Float2)
 - uid: piine.Float2.op_Explicit*
@@ -351,12 +768,6 @@ references:
   commentId: M:piine.Float2.op_Inequality(piine.Float2,piine.Float2)
   fullName: piine.Float2.Inequality(piine.Float2, piine.Float2)
   nameWithType: Float2.Inequality(Float2, Float2)
-- uid: piine.Float2.op_Inequality(piine.Float2,System.Numerics.Vector2)
-  name: Inequality(Float2, Vector2)
-  href: docs/api/piine.Float2.html#piine_Float2_op_Inequality_piine_Float2_System_Numerics_Vector2_
-  commentId: M:piine.Float2.op_Inequality(piine.Float2,System.Numerics.Vector2)
-  fullName: piine.Float2.Inequality(piine.Float2, System.Numerics.Vector2)
-  nameWithType: Float2.Inequality(Float2, Vector2)
 - uid: piine.Float2.op_Inequality*
   name: Inequality
   href: docs/api/piine.Float2.html#piine_Float2_op_Inequality_
@@ -448,6 +859,19 @@ references:
   commentId: F:piine.Float2.Size
   fullName: piine.Float2.Size
   nameWithType: Float2.Size
+- uid: piine.Float2.ToString
+  name: ToString()
+  href: docs/api/piine.Float2.html#piine_Float2_ToString
+  commentId: M:piine.Float2.ToString
+  fullName: piine.Float2.ToString()
+  nameWithType: Float2.ToString()
+- uid: piine.Float2.ToString*
+  name: ToString
+  href: docs/api/piine.Float2.html#piine_Float2_ToString_
+  commentId: Overload:piine.Float2.ToString
+  isSpec: "True"
+  fullName: piine.Float2.ToString
+  nameWithType: Float2.ToString
 - uid: piine.Float2.UnitX
   name: UnitX
   href: docs/api/piine.Float2.html#piine_Float2_UnitX
@@ -563,12 +987,6 @@ references:
   isSpec: "True"
   fullName: piine.Float3.Cross
   nameWithType: Float3.Cross
-- uid: piine.Float3.data
-  name: data
-  href: docs/api/piine.Float3.html#piine_Float3_data
-  commentId: F:piine.Float3.data
-  fullName: piine.Float3.data
-  nameWithType: Float3.data
 - uid: piine.Float3.Distance(piine.Float3,piine.Float3)
   name: Distance(Float3, Float3)
   href: docs/api/piine.Float3.html#piine_Float3_Distance_piine_Float3_piine_Float3_
@@ -714,12 +1132,6 @@ references:
   commentId: M:piine.Float3.op_Equality(piine.Float3,piine.Float3)
   fullName: piine.Float3.Equality(piine.Float3, piine.Float3)
   nameWithType: Float3.Equality(Float3, Float3)
-- uid: piine.Float3.op_Equality(piine.Float3,System.Numerics.Vector3)
-  name: Equality(Float3, Vector3)
-  href: docs/api/piine.Float3.html#piine_Float3_op_Equality_piine_Float3_System_Numerics_Vector3_
-  commentId: M:piine.Float3.op_Equality(piine.Float3,System.Numerics.Vector3)
-  fullName: piine.Float3.Equality(piine.Float3, System.Numerics.Vector3)
-  nameWithType: Float3.Equality(Float3, Vector3)
 - uid: piine.Float3.op_Equality*
   name: Equality
   href: docs/api/piine.Float3.html#piine_Float3_op_Equality_
@@ -727,22 +1139,31 @@ references:
   isSpec: "True"
   fullName: piine.Float3.Equality
   nameWithType: Float3.Equality
-- uid: piine.Float3.op_Explicit(piine.Float3)~System.Numerics.Vector3
+- uid: piine.Float3.op_Explicit(piine.Float3)~UnityEngine.Vector3
   name: Explicit(Float3 to Vector3)
-  href: docs/api/piine.Float3.html#piine_Float3_op_Explicit_piine_Float3__System_Numerics_Vector3
-  commentId: M:piine.Float3.op_Explicit(piine.Float3)~System.Numerics.Vector3
+  href: docs/api/piine.Float3.html#piine_Float3_op_Explicit_piine_Float3__UnityEngine_Vector3
+  commentId: M:piine.Float3.op_Explicit(piine.Float3)~UnityEngine.Vector3
   name.vb: Narrowing(Float3 to Vector3)
-  fullName: piine.Float3.Explicit(piine.Float3 to System.Numerics.Vector3)
-  fullName.vb: piine.Float3.Narrowing(piine.Float3 to System.Numerics.Vector3)
+  fullName: piine.Float3.Explicit(piine.Float3 to UnityEngine.Vector3)
+  fullName.vb: piine.Float3.Narrowing(piine.Float3 to UnityEngine.Vector3)
   nameWithType: Float3.Explicit(Float3 to Vector3)
   nameWithType.vb: Float3.Narrowing(Float3 to Vector3)
-- uid: piine.Float3.op_Explicit(System.Numerics.Vector3)~piine.Float3
+- uid: piine.Float3.op_Explicit(piine.Int3)~piine.Float3
+  name: Explicit(Int3 to Float3)
+  href: docs/api/piine.Float3.html#piine_Float3_op_Explicit_piine_Int3__piine_Float3
+  commentId: M:piine.Float3.op_Explicit(piine.Int3)~piine.Float3
+  name.vb: Narrowing(Int3 to Float3)
+  fullName: piine.Float3.Explicit(piine.Int3 to piine.Float3)
+  fullName.vb: piine.Float3.Narrowing(piine.Int3 to piine.Float3)
+  nameWithType: Float3.Explicit(Int3 to Float3)
+  nameWithType.vb: Float3.Narrowing(Int3 to Float3)
+- uid: piine.Float3.op_Explicit(UnityEngine.Vector3)~piine.Float3
   name: Explicit(Vector3 to Float3)
-  href: docs/api/piine.Float3.html#piine_Float3_op_Explicit_System_Numerics_Vector3__piine_Float3
-  commentId: M:piine.Float3.op_Explicit(System.Numerics.Vector3)~piine.Float3
+  href: docs/api/piine.Float3.html#piine_Float3_op_Explicit_UnityEngine_Vector3__piine_Float3
+  commentId: M:piine.Float3.op_Explicit(UnityEngine.Vector3)~piine.Float3
   name.vb: Narrowing(Vector3 to Float3)
-  fullName: piine.Float3.Explicit(System.Numerics.Vector3 to piine.Float3)
-  fullName.vb: piine.Float3.Narrowing(System.Numerics.Vector3 to piine.Float3)
+  fullName: piine.Float3.Explicit(UnityEngine.Vector3 to piine.Float3)
+  fullName.vb: piine.Float3.Narrowing(UnityEngine.Vector3 to piine.Float3)
   nameWithType: Float3.Explicit(Vector3 to Float3)
   nameWithType.vb: Float3.Narrowing(Vector3 to Float3)
 - uid: piine.Float3.op_Explicit*
@@ -815,12 +1236,6 @@ references:
   commentId: M:piine.Float3.op_Inequality(piine.Float3,piine.Float3)
   fullName: piine.Float3.Inequality(piine.Float3, piine.Float3)
   nameWithType: Float3.Inequality(Float3, Float3)
-- uid: piine.Float3.op_Inequality(piine.Float3,System.Numerics.Vector3)
-  name: Inequality(Float3, Vector3)
-  href: docs/api/piine.Float3.html#piine_Float3_op_Inequality_piine_Float3_System_Numerics_Vector3_
-  commentId: M:piine.Float3.op_Inequality(piine.Float3,System.Numerics.Vector3)
-  fullName: piine.Float3.Inequality(piine.Float3, System.Numerics.Vector3)
-  nameWithType: Float3.Inequality(Float3, Vector3)
 - uid: piine.Float3.op_Inequality*
   name: Inequality
   href: docs/api/piine.Float3.html#piine_Float3_op_Inequality_
@@ -912,6 +1327,19 @@ references:
   commentId: F:piine.Float3.Size
   fullName: piine.Float3.Size
   nameWithType: Float3.Size
+- uid: piine.Float3.ToString
+  name: ToString()
+  href: docs/api/piine.Float3.html#piine_Float3_ToString
+  commentId: M:piine.Float3.ToString
+  fullName: piine.Float3.ToString()
+  nameWithType: Float3.ToString()
+- uid: piine.Float3.ToString*
+  name: ToString
+  href: docs/api/piine.Float3.html#piine_Float3_ToString_
+  commentId: Overload:piine.Float3.ToString
+  isSpec: "True"
+  fullName: piine.Float3.ToString
+  nameWithType: Float3.ToString
 - uid: piine.Float3.UnitX
   name: UnitX
   href: docs/api/piine.Float3.html#piine_Float3_UnitX
@@ -1021,59 +1449,557 @@ references:
   isSpec: "True"
   fullName: piine.Float3.Zero
   nameWithType: Float3.Zero
-- uid: piine.Float3x3
-  name: Float3x3
-  href: docs/api/piine.Float3x3.html
-  commentId: T:piine.Float3x3
-  fullName: piine.Float3x3
-  nameWithType: Float3x3
-- uid: piine.Float3x3.data
-  name: data
-  href: docs/api/piine.Float3x3.html#piine_Float3x3_data
-  commentId: F:piine.Float3x3.data
-  fullName: piine.Float3x3.data
-  nameWithType: Float3x3.data
-- uid: piine.Float3x3.Item(System.Int32,System.Int32)
-  name: Item[Int32, Int32]
-  href: docs/api/piine.Float3x3.html#piine_Float3x3_Item_System_Int32_System_Int32_
-  commentId: P:piine.Float3x3.Item(System.Int32,System.Int32)
-  name.vb: Item(Int32, Int32)
-  fullName: piine.Float3x3.Item[System.Int32, System.Int32]
-  fullName.vb: piine.Float3x3.Item(System.Int32, System.Int32)
-  nameWithType: Float3x3.Item[Int32, Int32]
-  nameWithType.vb: Float3x3.Item(Int32, Int32)
-- uid: piine.Float3x3.Item*
+- uid: piine.Float4
+  name: Float4
+  href: docs/api/piine.Float4.html
+  commentId: T:piine.Float4
+  fullName: piine.Float4
+  nameWithType: Float4
+- uid: piine.Float4.#ctor(System.Single)
+  name: Float4(Single)
+  href: docs/api/piine.Float4.html#piine_Float4__ctor_System_Single_
+  commentId: M:piine.Float4.#ctor(System.Single)
+  fullName: piine.Float4.Float4(System.Single)
+  nameWithType: Float4.Float4(Single)
+- uid: piine.Float4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name: Float4(Single, Single, Single, Single)
+  href: docs/api/piine.Float4.html#piine_Float4__ctor_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:piine.Float4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  fullName: piine.Float4.Float4(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Float4.Float4(Single, Single, Single, Single)
+- uid: piine.Float4.#ctor*
+  name: Float4
+  href: docs/api/piine.Float4.html#piine_Float4__ctor_
+  commentId: Overload:piine.Float4.#ctor
+  isSpec: "True"
+  fullName: piine.Float4.Float4
+  nameWithType: Float4.Float4
+- uid: piine.Float4.Absolute(piine.Float4)
+  name: Absolute(Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_Absolute_piine_Float4_
+  commentId: M:piine.Float4.Absolute(piine.Float4)
+  fullName: piine.Float4.Absolute(piine.Float4)
+  nameWithType: Float4.Absolute(Float4)
+- uid: piine.Float4.Absolute*
+  name: Absolute
+  href: docs/api/piine.Float4.html#piine_Float4_Absolute_
+  commentId: Overload:piine.Float4.Absolute
+  isSpec: "True"
+  fullName: piine.Float4.Absolute
+  nameWithType: Float4.Absolute
+- uid: piine.Float4.CalculateVolume
+  name: CalculateVolume()
+  href: docs/api/piine.Float4.html#piine_Float4_CalculateVolume
+  commentId: M:piine.Float4.CalculateVolume
+  fullName: piine.Float4.CalculateVolume()
+  nameWithType: Float4.CalculateVolume()
+- uid: piine.Float4.CalculateVolume*
+  name: CalculateVolume
+  href: docs/api/piine.Float4.html#piine_Float4_CalculateVolume_
+  commentId: Overload:piine.Float4.CalculateVolume
+  isSpec: "True"
+  fullName: piine.Float4.CalculateVolume
+  nameWithType: Float4.CalculateVolume
+- uid: piine.Float4.Cross(piine.Float4,piine.Float4)
+  name: Cross(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_Cross_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.Cross(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Cross(piine.Float4, piine.Float4)
+  nameWithType: Float4.Cross(Float4, Float4)
+- uid: piine.Float4.Cross*
+  name: Cross
+  href: docs/api/piine.Float4.html#piine_Float4_Cross_
+  commentId: Overload:piine.Float4.Cross
+  isSpec: "True"
+  fullName: piine.Float4.Cross
+  nameWithType: Float4.Cross
+- uid: piine.Float4.Distance(piine.Float4,piine.Float4)
+  name: Distance(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_Distance_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.Distance(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Distance(piine.Float4, piine.Float4)
+  nameWithType: Float4.Distance(Float4, Float4)
+- uid: piine.Float4.Distance*
+  name: Distance
+  href: docs/api/piine.Float4.html#piine_Float4_Distance_
+  commentId: Overload:piine.Float4.Distance
+  isSpec: "True"
+  fullName: piine.Float4.Distance
+  nameWithType: Float4.Distance
+- uid: piine.Float4.Equals(piine.Float4)
+  name: Equals(Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_Equals_piine_Float4_
+  commentId: M:piine.Float4.Equals(piine.Float4)
+  fullName: piine.Float4.Equals(piine.Float4)
+  nameWithType: Float4.Equals(Float4)
+- uid: piine.Float4.Equals(System.Object)
+  name: Equals(Object)
+  href: docs/api/piine.Float4.html#piine_Float4_Equals_System_Object_
+  commentId: M:piine.Float4.Equals(System.Object)
+  fullName: piine.Float4.Equals(System.Object)
+  nameWithType: Float4.Equals(Object)
+- uid: piine.Float4.Equals*
+  name: Equals
+  href: docs/api/piine.Float4.html#piine_Float4_Equals_
+  commentId: Overload:piine.Float4.Equals
+  isSpec: "True"
+  fullName: piine.Float4.Equals
+  nameWithType: Float4.Equals
+- uid: piine.Float4.GetUnsafe(System.Int32)
+  name: GetUnsafe(Int32)
+  href: docs/api/piine.Float4.html#piine_Float4_GetUnsafe_System_Int32_
+  commentId: M:piine.Float4.GetUnsafe(System.Int32)
+  fullName: piine.Float4.GetUnsafe(System.Int32)
+  nameWithType: Float4.GetUnsafe(Int32)
+- uid: piine.Float4.GetUnsafe*
+  name: GetUnsafe
+  href: docs/api/piine.Float4.html#piine_Float4_GetUnsafe_
+  commentId: Overload:piine.Float4.GetUnsafe
+  isSpec: "True"
+  fullName: piine.Float4.GetUnsafe
+  nameWithType: Float4.GetUnsafe
+- uid: piine.Float4.Item(System.Int32)
+  name: Item[Int32]
+  href: docs/api/piine.Float4.html#piine_Float4_Item_System_Int32_
+  commentId: P:piine.Float4.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: piine.Float4.Item[System.Int32]
+  fullName.vb: piine.Float4.Item(System.Int32)
+  nameWithType: Float4.Item[Int32]
+  nameWithType.vb: Float4.Item(Int32)
+- uid: piine.Float4.Item*
   name: Item
-  href: docs/api/piine.Float3x3.html#piine_Float3x3_Item_
-  commentId: Overload:piine.Float3x3.Item
+  href: docs/api/piine.Float4.html#piine_Float4_Item_
+  commentId: Overload:piine.Float4.Item
   isSpec: "True"
-  fullName: piine.Float3x3.Item
-  nameWithType: Float3x3.Item
-- uid: piine.Float3x3.TransformIndex(System.Int32,System.Int32)
-  name: TransformIndex(Int32, Int32)
-  href: docs/api/piine.Float3x3.html#piine_Float3x3_TransformIndex_System_Int32_System_Int32_
-  commentId: M:piine.Float3x3.TransformIndex(System.Int32,System.Int32)
-  fullName: piine.Float3x3.TransformIndex(System.Int32, System.Int32)
-  nameWithType: Float3x3.TransformIndex(Int32, Int32)
-- uid: piine.Float3x3.TransformIndex*
-  name: TransformIndex
-  href: docs/api/piine.Float3x3.html#piine_Float3x3_TransformIndex_
-  commentId: Overload:piine.Float3x3.TransformIndex
+  fullName: piine.Float4.Item
+  nameWithType: Float4.Item
+- uid: piine.Float4.Length
+  name: Length
+  href: docs/api/piine.Float4.html#piine_Float4_Length
+  commentId: P:piine.Float4.Length
+  fullName: piine.Float4.Length
+  nameWithType: Float4.Length
+- uid: piine.Float4.Length*
+  name: Length
+  href: docs/api/piine.Float4.html#piine_Float4_Length_
+  commentId: Overload:piine.Float4.Length
   isSpec: "True"
-  fullName: piine.Float3x3.TransformIndex
-  nameWithType: Float3x3.TransformIndex
+  fullName: piine.Float4.Length
+  nameWithType: Float4.Length
+- uid: piine.Float4.LengthSquared
+  name: LengthSquared
+  href: docs/api/piine.Float4.html#piine_Float4_LengthSquared
+  commentId: P:piine.Float4.LengthSquared
+  fullName: piine.Float4.LengthSquared
+  nameWithType: Float4.LengthSquared
+- uid: piine.Float4.LengthSquared*
+  name: LengthSquared
+  href: docs/api/piine.Float4.html#piine_Float4_LengthSquared_
+  commentId: Overload:piine.Float4.LengthSquared
+  isSpec: "True"
+  fullName: piine.Float4.LengthSquared
+  nameWithType: Float4.LengthSquared
+- uid: piine.Float4.Normalize(piine.Float4)
+  name: Normalize(Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_Normalize_piine_Float4_
+  commentId: M:piine.Float4.Normalize(piine.Float4)
+  fullName: piine.Float4.Normalize(piine.Float4)
+  nameWithType: Float4.Normalize(Float4)
+- uid: piine.Float4.Normalize*
+  name: Normalize
+  href: docs/api/piine.Float4.html#piine_Float4_Normalize_
+  commentId: Overload:piine.Float4.Normalize
+  isSpec: "True"
+  fullName: piine.Float4.Normalize
+  nameWithType: Float4.Normalize
+- uid: piine.Float4.One
+  name: One
+  href: docs/api/piine.Float4.html#piine_Float4_One
+  commentId: P:piine.Float4.One
+  fullName: piine.Float4.One
+  nameWithType: Float4.One
+- uid: piine.Float4.One*
+  name: One
+  href: docs/api/piine.Float4.html#piine_Float4_One_
+  commentId: Overload:piine.Float4.One
+  isSpec: "True"
+  fullName: piine.Float4.One
+  nameWithType: Float4.One
+- uid: piine.Float4.op_Addition(piine.Float4,piine.Float4)
+  name: Addition(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Addition_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_Addition(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Addition(piine.Float4, piine.Float4)
+  nameWithType: Float4.Addition(Float4, Float4)
+- uid: piine.Float4.op_Addition*
+  name: Addition
+  href: docs/api/piine.Float4.html#piine_Float4_op_Addition_
+  commentId: Overload:piine.Float4.op_Addition
+  isSpec: "True"
+  fullName: piine.Float4.Addition
+  nameWithType: Float4.Addition
+- uid: piine.Float4.op_Division(piine.Float4,System.Single)
+  name: Division(Float4, Single)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Division_piine_Float4_System_Single_
+  commentId: M:piine.Float4.op_Division(piine.Float4,System.Single)
+  fullName: piine.Float4.Division(piine.Float4, System.Single)
+  nameWithType: Float4.Division(Float4, Single)
+- uid: piine.Float4.op_Division*
+  name: Division
+  href: docs/api/piine.Float4.html#piine_Float4_op_Division_
+  commentId: Overload:piine.Float4.op_Division
+  isSpec: "True"
+  fullName: piine.Float4.Division
+  nameWithType: Float4.Division
+- uid: piine.Float4.op_Equality(piine.Float4,piine.Float4)
+  name: Equality(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Equality_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_Equality(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Equality(piine.Float4, piine.Float4)
+  nameWithType: Float4.Equality(Float4, Float4)
+- uid: piine.Float4.op_Equality*
+  name: Equality
+  href: docs/api/piine.Float4.html#piine_Float4_op_Equality_
+  commentId: Overload:piine.Float4.op_Equality
+  isSpec: "True"
+  fullName: piine.Float4.Equality
+  nameWithType: Float4.Equality
+- uid: piine.Float4.op_Explicit(piine.Float4)~UnityEngine.Vector4
+  name: Explicit(Float4 to Vector4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Explicit_piine_Float4__UnityEngine_Vector4
+  commentId: M:piine.Float4.op_Explicit(piine.Float4)~UnityEngine.Vector4
+  name.vb: Narrowing(Float4 to Vector4)
+  fullName: piine.Float4.Explicit(piine.Float4 to UnityEngine.Vector4)
+  fullName.vb: piine.Float4.Narrowing(piine.Float4 to UnityEngine.Vector4)
+  nameWithType: Float4.Explicit(Float4 to Vector4)
+  nameWithType.vb: Float4.Narrowing(Float4 to Vector4)
+- uid: piine.Float4.op_Explicit(piine.Int4)~piine.Float4
+  name: Explicit(Int4 to Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Explicit_piine_Int4__piine_Float4
+  commentId: M:piine.Float4.op_Explicit(piine.Int4)~piine.Float4
+  name.vb: Narrowing(Int4 to Float4)
+  fullName: piine.Float4.Explicit(piine.Int4 to piine.Float4)
+  fullName.vb: piine.Float4.Narrowing(piine.Int4 to piine.Float4)
+  nameWithType: Float4.Explicit(Int4 to Float4)
+  nameWithType.vb: Float4.Narrowing(Int4 to Float4)
+- uid: piine.Float4.op_Explicit(UnityEngine.Vector4)~piine.Float4
+  name: Explicit(Vector4 to Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Explicit_UnityEngine_Vector4__piine_Float4
+  commentId: M:piine.Float4.op_Explicit(UnityEngine.Vector4)~piine.Float4
+  name.vb: Narrowing(Vector4 to Float4)
+  fullName: piine.Float4.Explicit(UnityEngine.Vector4 to piine.Float4)
+  fullName.vb: piine.Float4.Narrowing(UnityEngine.Vector4 to piine.Float4)
+  nameWithType: Float4.Explicit(Vector4 to Float4)
+  nameWithType.vb: Float4.Narrowing(Vector4 to Float4)
+- uid: piine.Float4.op_Explicit*
+  name: Explicit
+  href: docs/api/piine.Float4.html#piine_Float4_op_Explicit_
+  commentId: Overload:piine.Float4.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: piine.Float4.Explicit
+  fullName.vb: piine.Float4.Narrowing
+  nameWithType: Float4.Explicit
+  nameWithType.vb: Float4.Narrowing
+- uid: piine.Float4.op_GreaterThan(piine.Float4,piine.Float4)
+  name: GreaterThan(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_GreaterThan_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_GreaterThan(piine.Float4,piine.Float4)
+  fullName: piine.Float4.GreaterThan(piine.Float4, piine.Float4)
+  nameWithType: Float4.GreaterThan(Float4, Float4)
+- uid: piine.Float4.op_GreaterThan*
+  name: GreaterThan
+  href: docs/api/piine.Float4.html#piine_Float4_op_GreaterThan_
+  commentId: Overload:piine.Float4.op_GreaterThan
+  isSpec: "True"
+  fullName: piine.Float4.GreaterThan
+  nameWithType: Float4.GreaterThan
+- uid: piine.Float4.op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  name: GreaterThanOrEqual(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_GreaterThanOrEqual_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_GreaterThanOrEqual(piine.Float4,piine.Float4)
+  fullName: piine.Float4.GreaterThanOrEqual(piine.Float4, piine.Float4)
+  nameWithType: Float4.GreaterThanOrEqual(Float4, Float4)
+- uid: piine.Float4.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: docs/api/piine.Float4.html#piine_Float4_op_GreaterThanOrEqual_
+  commentId: Overload:piine.Float4.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: piine.Float4.GreaterThanOrEqual
+  nameWithType: Float4.GreaterThanOrEqual
+- uid: piine.Float4.op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  name: Implicit(Float4 to (Single, Single, Single, Single))
+  href: docs/api/piine.Float4.html#piine_Float4_op_Implicit_piine_Float4__System_ValueTuple_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:piine.Float4.op_Implicit(piine.Float4)~System.ValueTuple{System.Single,System.Single,System.Single,System.Single}
+  name.vb: Widening(Float4 to (Single, Single, Single, Single))
+  fullName: piine.Float4.Implicit(piine.Float4 to System.ValueTuple<System.Single, System.Single, System.Single, System.Single>)
+  fullName.vb: piine.Float4.Widening(piine.Float4 to System.ValueTuple(Of System.Single, System.Single, System.Single, System.Single))
+  nameWithType: Float4.Implicit(Float4 to (Single, Single, Single, Single))
+  nameWithType.vb: Float4.Widening(Float4 to (Single, Single, Single, Single))
+- uid: piine.Float4.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  name: Implicit((Single x, Single y, Single z, Single w) to Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Implicit_System_ValueTuple_System_Single_System_Single_System_Single_System_Single___piine_Float4
+  commentId: M:piine.Float4.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single,System.Single})~piine.Float4
+  name.vb: Widening((x As Single, y As Single, z As Single, w As Single) to Float4)
+  fullName: piine.Float4.Implicit(System.ValueTuple<System.Single, System.Single, System.Single, System.Single> to piine.Float4)
+  fullName.vb: piine.Float4.Widening(System.ValueTuple(Of System.Single, System.Single, System.Single, System.Single) to piine.Float4)
+  nameWithType: Float4.Implicit((Single x, Single y, Single z, Single w) to Float4)
+  nameWithType.vb: Float4.Widening((x As Single, y As Single, z As Single, w As Single) to Float4)
+- uid: piine.Float4.op_Implicit*
+  name: Implicit
+  href: docs/api/piine.Float4.html#piine_Float4_op_Implicit_
+  commentId: Overload:piine.Float4.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: piine.Float4.Implicit
+  fullName.vb: piine.Float4.Widening
+  nameWithType: Float4.Implicit
+  nameWithType.vb: Float4.Widening
+- uid: piine.Float4.op_Inequality(piine.Float4,piine.Float4)
+  name: Inequality(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Inequality_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_Inequality(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Inequality(piine.Float4, piine.Float4)
+  nameWithType: Float4.Inequality(Float4, Float4)
+- uid: piine.Float4.op_Inequality*
+  name: Inequality
+  href: docs/api/piine.Float4.html#piine_Float4_op_Inequality_
+  commentId: Overload:piine.Float4.op_Inequality
+  isSpec: "True"
+  fullName: piine.Float4.Inequality
+  nameWithType: Float4.Inequality
+- uid: piine.Float4.op_LessThan(piine.Float4,piine.Float4)
+  name: LessThan(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_LessThan_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_LessThan(piine.Float4,piine.Float4)
+  fullName: piine.Float4.LessThan(piine.Float4, piine.Float4)
+  nameWithType: Float4.LessThan(Float4, Float4)
+- uid: piine.Float4.op_LessThan*
+  name: LessThan
+  href: docs/api/piine.Float4.html#piine_Float4_op_LessThan_
+  commentId: Overload:piine.Float4.op_LessThan
+  isSpec: "True"
+  fullName: piine.Float4.LessThan
+  nameWithType: Float4.LessThan
+- uid: piine.Float4.op_LessThanOrEqual(piine.Float4,piine.Float4)
+  name: LessThanOrEqual(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_LessThanOrEqual_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_LessThanOrEqual(piine.Float4,piine.Float4)
+  fullName: piine.Float4.LessThanOrEqual(piine.Float4, piine.Float4)
+  nameWithType: Float4.LessThanOrEqual(Float4, Float4)
+- uid: piine.Float4.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: docs/api/piine.Float4.html#piine_Float4_op_LessThanOrEqual_
+  commentId: Overload:piine.Float4.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: piine.Float4.LessThanOrEqual
+  nameWithType: Float4.LessThanOrEqual
+- uid: piine.Float4.op_Multiply(piine.Float4,System.Single)
+  name: Multiply(Float4, Single)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Multiply_piine_Float4_System_Single_
+  commentId: M:piine.Float4.op_Multiply(piine.Float4,System.Single)
+  fullName: piine.Float4.Multiply(piine.Float4, System.Single)
+  nameWithType: Float4.Multiply(Float4, Single)
+- uid: piine.Float4.op_Multiply*
+  name: Multiply
+  href: docs/api/piine.Float4.html#piine_Float4_op_Multiply_
+  commentId: Overload:piine.Float4.op_Multiply
+  isSpec: "True"
+  fullName: piine.Float4.Multiply
+  nameWithType: Float4.Multiply
+- uid: piine.Float4.op_Subtraction(piine.Float4,piine.Float4)
+  name: Subtraction(Float4, Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_Subtraction_piine_Float4_piine_Float4_
+  commentId: M:piine.Float4.op_Subtraction(piine.Float4,piine.Float4)
+  fullName: piine.Float4.Subtraction(piine.Float4, piine.Float4)
+  nameWithType: Float4.Subtraction(Float4, Float4)
+- uid: piine.Float4.op_Subtraction*
+  name: Subtraction
+  href: docs/api/piine.Float4.html#piine_Float4_op_Subtraction_
+  commentId: Overload:piine.Float4.op_Subtraction
+  isSpec: "True"
+  fullName: piine.Float4.Subtraction
+  nameWithType: Float4.Subtraction
+- uid: piine.Float4.op_UnaryNegation(piine.Float4)
+  name: UnaryNegation(Float4)
+  href: docs/api/piine.Float4.html#piine_Float4_op_UnaryNegation_piine_Float4_
+  commentId: M:piine.Float4.op_UnaryNegation(piine.Float4)
+  fullName: piine.Float4.UnaryNegation(piine.Float4)
+  nameWithType: Float4.UnaryNegation(Float4)
+- uid: piine.Float4.op_UnaryNegation*
+  name: UnaryNegation
+  href: docs/api/piine.Float4.html#piine_Float4_op_UnaryNegation_
+  commentId: Overload:piine.Float4.op_UnaryNegation
+  isSpec: "True"
+  fullName: piine.Float4.UnaryNegation
+  nameWithType: Float4.UnaryNegation
+- uid: piine.Float4.SetUnsafe(System.Int32,System.Single)
+  name: SetUnsafe(Int32, Single)
+  href: docs/api/piine.Float4.html#piine_Float4_SetUnsafe_System_Int32_System_Single_
+  commentId: M:piine.Float4.SetUnsafe(System.Int32,System.Single)
+  fullName: piine.Float4.SetUnsafe(System.Int32, System.Single)
+  nameWithType: Float4.SetUnsafe(Int32, Single)
+- uid: piine.Float4.SetUnsafe*
+  name: SetUnsafe
+  href: docs/api/piine.Float4.html#piine_Float4_SetUnsafe_
+  commentId: Overload:piine.Float4.SetUnsafe
+  isSpec: "True"
+  fullName: piine.Float4.SetUnsafe
+  nameWithType: Float4.SetUnsafe
+- uid: piine.Float4.Size
+  name: Size
+  href: docs/api/piine.Float4.html#piine_Float4_Size
+  commentId: F:piine.Float4.Size
+  fullName: piine.Float4.Size
+  nameWithType: Float4.Size
+- uid: piine.Float4.ToString
+  name: ToString()
+  href: docs/api/piine.Float4.html#piine_Float4_ToString
+  commentId: M:piine.Float4.ToString
+  fullName: piine.Float4.ToString()
+  nameWithType: Float4.ToString()
+- uid: piine.Float4.ToString*
+  name: ToString
+  href: docs/api/piine.Float4.html#piine_Float4_ToString_
+  commentId: Overload:piine.Float4.ToString
+  isSpec: "True"
+  fullName: piine.Float4.ToString
+  nameWithType: Float4.ToString
+- uid: piine.Float4.UnitW
+  name: UnitW
+  href: docs/api/piine.Float4.html#piine_Float4_UnitW
+  commentId: P:piine.Float4.UnitW
+  fullName: piine.Float4.UnitW
+  nameWithType: Float4.UnitW
+- uid: piine.Float4.UnitW*
+  name: UnitW
+  href: docs/api/piine.Float4.html#piine_Float4_UnitW_
+  commentId: Overload:piine.Float4.UnitW
+  isSpec: "True"
+  fullName: piine.Float4.UnitW
+  nameWithType: Float4.UnitW
+- uid: piine.Float4.UnitX
+  name: UnitX
+  href: docs/api/piine.Float4.html#piine_Float4_UnitX
+  commentId: P:piine.Float4.UnitX
+  fullName: piine.Float4.UnitX
+  nameWithType: Float4.UnitX
+- uid: piine.Float4.UnitX*
+  name: UnitX
+  href: docs/api/piine.Float4.html#piine_Float4_UnitX_
+  commentId: Overload:piine.Float4.UnitX
+  isSpec: "True"
+  fullName: piine.Float4.UnitX
+  nameWithType: Float4.UnitX
+- uid: piine.Float4.UnitY
+  name: UnitY
+  href: docs/api/piine.Float4.html#piine_Float4_UnitY
+  commentId: P:piine.Float4.UnitY
+  fullName: piine.Float4.UnitY
+  nameWithType: Float4.UnitY
+- uid: piine.Float4.UnitY*
+  name: UnitY
+  href: docs/api/piine.Float4.html#piine_Float4_UnitY_
+  commentId: Overload:piine.Float4.UnitY
+  isSpec: "True"
+  fullName: piine.Float4.UnitY
+  nameWithType: Float4.UnitY
+- uid: piine.Float4.UnitZ
+  name: UnitZ
+  href: docs/api/piine.Float4.html#piine_Float4_UnitZ
+  commentId: P:piine.Float4.UnitZ
+  fullName: piine.Float4.UnitZ
+  nameWithType: Float4.UnitZ
+- uid: piine.Float4.UnitZ*
+  name: UnitZ
+  href: docs/api/piine.Float4.html#piine_Float4_UnitZ_
+  commentId: Overload:piine.Float4.UnitZ
+  isSpec: "True"
+  fullName: piine.Float4.UnitZ
+  nameWithType: Float4.UnitZ
+- uid: piine.Float4.w
+  name: w
+  href: docs/api/piine.Float4.html#piine_Float4_w
+  commentId: F:piine.Float4.w
+  fullName: piine.Float4.w
+  nameWithType: Float4.w
+- uid: piine.Float4.x
+  name: x
+  href: docs/api/piine.Float4.html#piine_Float4_x
+  commentId: F:piine.Float4.x
+  fullName: piine.Float4.x
+  nameWithType: Float4.x
+- uid: piine.Float4.XY
+  name: XY
+  href: docs/api/piine.Float4.html#piine_Float4_XY
+  commentId: P:piine.Float4.XY
+  fullName: piine.Float4.XY
+  nameWithType: Float4.XY
+- uid: piine.Float4.XY*
+  name: XY
+  href: docs/api/piine.Float4.html#piine_Float4_XY_
+  commentId: Overload:piine.Float4.XY
+  isSpec: "True"
+  fullName: piine.Float4.XY
+  nameWithType: Float4.XY
+- uid: piine.Float4.XZ
+  name: XZ
+  href: docs/api/piine.Float4.html#piine_Float4_XZ
+  commentId: P:piine.Float4.XZ
+  fullName: piine.Float4.XZ
+  nameWithType: Float4.XZ
+- uid: piine.Float4.XZ*
+  name: XZ
+  href: docs/api/piine.Float4.html#piine_Float4_XZ_
+  commentId: Overload:piine.Float4.XZ
+  isSpec: "True"
+  fullName: piine.Float4.XZ
+  nameWithType: Float4.XZ
+- uid: piine.Float4.y
+  name: y
+  href: docs/api/piine.Float4.html#piine_Float4_y
+  commentId: F:piine.Float4.y
+  fullName: piine.Float4.y
+  nameWithType: Float4.y
+- uid: piine.Float4.YZ
+  name: YZ
+  href: docs/api/piine.Float4.html#piine_Float4_YZ
+  commentId: P:piine.Float4.YZ
+  fullName: piine.Float4.YZ
+  nameWithType: Float4.YZ
+- uid: piine.Float4.YZ*
+  name: YZ
+  href: docs/api/piine.Float4.html#piine_Float4_YZ_
+  commentId: Overload:piine.Float4.YZ
+  isSpec: "True"
+  fullName: piine.Float4.YZ
+  nameWithType: Float4.YZ
+- uid: piine.Float4.z
+  name: z
+  href: docs/api/piine.Float4.html#piine_Float4_z
+  commentId: F:piine.Float4.z
+  fullName: piine.Float4.z
+  nameWithType: Float4.z
+- uid: piine.Float4.Zero
+  name: Zero
+  href: docs/api/piine.Float4.html#piine_Float4_Zero
+  commentId: P:piine.Float4.Zero
+  fullName: piine.Float4.Zero
+  nameWithType: Float4.Zero
+- uid: piine.Float4.Zero*
+  name: Zero
+  href: docs/api/piine.Float4.html#piine_Float4_Zero_
+  commentId: Overload:piine.Float4.Zero
+  isSpec: "True"
+  fullName: piine.Float4.Zero
+  nameWithType: Float4.Zero
 - uid: piine.Graphics
   name: piine.Graphics
   href: docs/api/piine.Graphics.html
   commentId: N:piine.Graphics
   fullName: piine.Graphics
   nameWithType: piine.Graphics
-- uid: piine.Graphics.Camera
-  name: Camera
-  href: docs/api/piine.Graphics.Camera.html
-  commentId: T:piine.Graphics.Camera
-  fullName: piine.Graphics.Camera
-  nameWithType: Camera
 - uid: piine.Graphics.Color32
   name: Color32
   href: docs/api/piine.Graphics.Color32.html
@@ -1290,15 +2216,461 @@ references:
   commentId: T:piine.Graphics.Voxels.NaiveVoxelMesher
   fullName: piine.Graphics.Voxels.NaiveVoxelMesher
   nameWithType: NaiveVoxelMesher
-- uid: piine.Graphics.VoxelShader`1
-  name: VoxelShader<T>
-  href: docs/api/piine.Graphics.VoxelShader-1.html
-  commentId: T:piine.Graphics.VoxelShader`1
-  name.vb: VoxelShader(Of T)
-  fullName: piine.Graphics.VoxelShader<T>
-  fullName.vb: piine.Graphics.VoxelShader(Of T)
-  nameWithType: VoxelShader<T>
-  nameWithType.vb: VoxelShader(Of T)
+- uid: piine.Int2
+  name: Int2
+  href: docs/api/piine.Int2.html
+  commentId: T:piine.Int2
+  fullName: piine.Int2
+  nameWithType: Int2
+- uid: piine.Int2.#ctor(System.Int32)
+  name: Int2(Int32)
+  href: docs/api/piine.Int2.html#piine_Int2__ctor_System_Int32_
+  commentId: M:piine.Int2.#ctor(System.Int32)
+  fullName: piine.Int2.Int2(System.Int32)
+  nameWithType: Int2.Int2(Int32)
+- uid: piine.Int2.#ctor(System.Int32,System.Int32)
+  name: Int2(Int32, Int32)
+  href: docs/api/piine.Int2.html#piine_Int2__ctor_System_Int32_System_Int32_
+  commentId: M:piine.Int2.#ctor(System.Int32,System.Int32)
+  fullName: piine.Int2.Int2(System.Int32, System.Int32)
+  nameWithType: Int2.Int2(Int32, Int32)
+- uid: piine.Int2.#ctor*
+  name: Int2
+  href: docs/api/piine.Int2.html#piine_Int2__ctor_
+  commentId: Overload:piine.Int2.#ctor
+  isSpec: "True"
+  fullName: piine.Int2.Int2
+  nameWithType: Int2.Int2
+- uid: piine.Int2.Absolute(piine.Int2)
+  name: Absolute(Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_Absolute_piine_Int2_
+  commentId: M:piine.Int2.Absolute(piine.Int2)
+  fullName: piine.Int2.Absolute(piine.Int2)
+  nameWithType: Int2.Absolute(Int2)
+- uid: piine.Int2.Absolute*
+  name: Absolute
+  href: docs/api/piine.Int2.html#piine_Int2_Absolute_
+  commentId: Overload:piine.Int2.Absolute
+  isSpec: "True"
+  fullName: piine.Int2.Absolute
+  nameWithType: Int2.Absolute
+- uid: piine.Int2.CalculateArea
+  name: CalculateArea()
+  href: docs/api/piine.Int2.html#piine_Int2_CalculateArea
+  commentId: M:piine.Int2.CalculateArea
+  fullName: piine.Int2.CalculateArea()
+  nameWithType: Int2.CalculateArea()
+- uid: piine.Int2.CalculateArea*
+  name: CalculateArea
+  href: docs/api/piine.Int2.html#piine_Int2_CalculateArea_
+  commentId: Overload:piine.Int2.CalculateArea
+  isSpec: "True"
+  fullName: piine.Int2.CalculateArea
+  nameWithType: Int2.CalculateArea
+- uid: piine.Int2.Distance(piine.Int2,piine.Int2)
+  name: Distance(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_Distance_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.Distance(piine.Int2,piine.Int2)
+  fullName: piine.Int2.Distance(piine.Int2, piine.Int2)
+  nameWithType: Int2.Distance(Int2, Int2)
+- uid: piine.Int2.Distance*
+  name: Distance
+  href: docs/api/piine.Int2.html#piine_Int2_Distance_
+  commentId: Overload:piine.Int2.Distance
+  isSpec: "True"
+  fullName: piine.Int2.Distance
+  nameWithType: Int2.Distance
+- uid: piine.Int2.Equals(piine.Int2)
+  name: Equals(Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_Equals_piine_Int2_
+  commentId: M:piine.Int2.Equals(piine.Int2)
+  fullName: piine.Int2.Equals(piine.Int2)
+  nameWithType: Int2.Equals(Int2)
+- uid: piine.Int2.Equals(System.Object)
+  name: Equals(Object)
+  href: docs/api/piine.Int2.html#piine_Int2_Equals_System_Object_
+  commentId: M:piine.Int2.Equals(System.Object)
+  fullName: piine.Int2.Equals(System.Object)
+  nameWithType: Int2.Equals(Object)
+- uid: piine.Int2.Equals*
+  name: Equals
+  href: docs/api/piine.Int2.html#piine_Int2_Equals_
+  commentId: Overload:piine.Int2.Equals
+  isSpec: "True"
+  fullName: piine.Int2.Equals
+  nameWithType: Int2.Equals
+- uid: piine.Int2.GetUnsafe(System.Int32)
+  name: GetUnsafe(Int32)
+  href: docs/api/piine.Int2.html#piine_Int2_GetUnsafe_System_Int32_
+  commentId: M:piine.Int2.GetUnsafe(System.Int32)
+  fullName: piine.Int2.GetUnsafe(System.Int32)
+  nameWithType: Int2.GetUnsafe(Int32)
+- uid: piine.Int2.GetUnsafe*
+  name: GetUnsafe
+  href: docs/api/piine.Int2.html#piine_Int2_GetUnsafe_
+  commentId: Overload:piine.Int2.GetUnsafe
+  isSpec: "True"
+  fullName: piine.Int2.GetUnsafe
+  nameWithType: Int2.GetUnsafe
+- uid: piine.Int2.Item(System.Int32)
+  name: Item[Int32]
+  href: docs/api/piine.Int2.html#piine_Int2_Item_System_Int32_
+  commentId: P:piine.Int2.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: piine.Int2.Item[System.Int32]
+  fullName.vb: piine.Int2.Item(System.Int32)
+  nameWithType: Int2.Item[Int32]
+  nameWithType.vb: Int2.Item(Int32)
+- uid: piine.Int2.Item*
+  name: Item
+  href: docs/api/piine.Int2.html#piine_Int2_Item_
+  commentId: Overload:piine.Int2.Item
+  isSpec: "True"
+  fullName: piine.Int2.Item
+  nameWithType: Int2.Item
+- uid: piine.Int2.Length
+  name: Length
+  href: docs/api/piine.Int2.html#piine_Int2_Length
+  commentId: P:piine.Int2.Length
+  fullName: piine.Int2.Length
+  nameWithType: Int2.Length
+- uid: piine.Int2.Length*
+  name: Length
+  href: docs/api/piine.Int2.html#piine_Int2_Length_
+  commentId: Overload:piine.Int2.Length
+  isSpec: "True"
+  fullName: piine.Int2.Length
+  nameWithType: Int2.Length
+- uid: piine.Int2.LengthSquared
+  name: LengthSquared
+  href: docs/api/piine.Int2.html#piine_Int2_LengthSquared
+  commentId: P:piine.Int2.LengthSquared
+  fullName: piine.Int2.LengthSquared
+  nameWithType: Int2.LengthSquared
+- uid: piine.Int2.LengthSquared*
+  name: LengthSquared
+  href: docs/api/piine.Int2.html#piine_Int2_LengthSquared_
+  commentId: Overload:piine.Int2.LengthSquared
+  isSpec: "True"
+  fullName: piine.Int2.LengthSquared
+  nameWithType: Int2.LengthSquared
+- uid: piine.Int2.Normalize(piine.Int2)
+  name: Normalize(Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_Normalize_piine_Int2_
+  commentId: M:piine.Int2.Normalize(piine.Int2)
+  fullName: piine.Int2.Normalize(piine.Int2)
+  nameWithType: Int2.Normalize(Int2)
+- uid: piine.Int2.Normalize*
+  name: Normalize
+  href: docs/api/piine.Int2.html#piine_Int2_Normalize_
+  commentId: Overload:piine.Int2.Normalize
+  isSpec: "True"
+  fullName: piine.Int2.Normalize
+  nameWithType: Int2.Normalize
+- uid: piine.Int2.One
+  name: One
+  href: docs/api/piine.Int2.html#piine_Int2_One
+  commentId: P:piine.Int2.One
+  fullName: piine.Int2.One
+  nameWithType: Int2.One
+- uid: piine.Int2.One*
+  name: One
+  href: docs/api/piine.Int2.html#piine_Int2_One_
+  commentId: Overload:piine.Int2.One
+  isSpec: "True"
+  fullName: piine.Int2.One
+  nameWithType: Int2.One
+- uid: piine.Int2.op_Addition(piine.Int2,piine.Int2)
+  name: Addition(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Addition_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_Addition(piine.Int2,piine.Int2)
+  fullName: piine.Int2.Addition(piine.Int2, piine.Int2)
+  nameWithType: Int2.Addition(Int2, Int2)
+- uid: piine.Int2.op_Addition*
+  name: Addition
+  href: docs/api/piine.Int2.html#piine_Int2_op_Addition_
+  commentId: Overload:piine.Int2.op_Addition
+  isSpec: "True"
+  fullName: piine.Int2.Addition
+  nameWithType: Int2.Addition
+- uid: piine.Int2.op_Division(piine.Int2,System.Single)
+  name: Division(Int2, Single)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Division_piine_Int2_System_Single_
+  commentId: M:piine.Int2.op_Division(piine.Int2,System.Single)
+  fullName: piine.Int2.Division(piine.Int2, System.Single)
+  nameWithType: Int2.Division(Int2, Single)
+- uid: piine.Int2.op_Division*
+  name: Division
+  href: docs/api/piine.Int2.html#piine_Int2_op_Division_
+  commentId: Overload:piine.Int2.op_Division
+  isSpec: "True"
+  fullName: piine.Int2.Division
+  nameWithType: Int2.Division
+- uid: piine.Int2.op_Equality(piine.Int2,piine.Int2)
+  name: Equality(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Equality_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_Equality(piine.Int2,piine.Int2)
+  fullName: piine.Int2.Equality(piine.Int2, piine.Int2)
+  nameWithType: Int2.Equality(Int2, Int2)
+- uid: piine.Int2.op_Equality*
+  name: Equality
+  href: docs/api/piine.Int2.html#piine_Int2_op_Equality_
+  commentId: Overload:piine.Int2.op_Equality
+  isSpec: "True"
+  fullName: piine.Int2.Equality
+  nameWithType: Int2.Equality
+- uid: piine.Int2.op_Explicit(piine.Float2)~piine.Int2
+  name: Explicit(Float2 to Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Explicit_piine_Float2__piine_Int2
+  commentId: M:piine.Int2.op_Explicit(piine.Float2)~piine.Int2
+  name.vb: Narrowing(Float2 to Int2)
+  fullName: piine.Int2.Explicit(piine.Float2 to piine.Int2)
+  fullName.vb: piine.Int2.Narrowing(piine.Float2 to piine.Int2)
+  nameWithType: Int2.Explicit(Float2 to Int2)
+  nameWithType.vb: Int2.Narrowing(Float2 to Int2)
+- uid: piine.Int2.op_Explicit(piine.Int2)~UnityEngine.Vector2
+  name: Explicit(Int2 to Vector2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Explicit_piine_Int2__UnityEngine_Vector2
+  commentId: M:piine.Int2.op_Explicit(piine.Int2)~UnityEngine.Vector2
+  name.vb: Narrowing(Int2 to Vector2)
+  fullName: piine.Int2.Explicit(piine.Int2 to UnityEngine.Vector2)
+  fullName.vb: piine.Int2.Narrowing(piine.Int2 to UnityEngine.Vector2)
+  nameWithType: Int2.Explicit(Int2 to Vector2)
+  nameWithType.vb: Int2.Narrowing(Int2 to Vector2)
+- uid: piine.Int2.op_Explicit(UnityEngine.Vector2)~piine.Int2
+  name: Explicit(Vector2 to Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Explicit_UnityEngine_Vector2__piine_Int2
+  commentId: M:piine.Int2.op_Explicit(UnityEngine.Vector2)~piine.Int2
+  name.vb: Narrowing(Vector2 to Int2)
+  fullName: piine.Int2.Explicit(UnityEngine.Vector2 to piine.Int2)
+  fullName.vb: piine.Int2.Narrowing(UnityEngine.Vector2 to piine.Int2)
+  nameWithType: Int2.Explicit(Vector2 to Int2)
+  nameWithType.vb: Int2.Narrowing(Vector2 to Int2)
+- uid: piine.Int2.op_Explicit*
+  name: Explicit
+  href: docs/api/piine.Int2.html#piine_Int2_op_Explicit_
+  commentId: Overload:piine.Int2.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: piine.Int2.Explicit
+  fullName.vb: piine.Int2.Narrowing
+  nameWithType: Int2.Explicit
+  nameWithType.vb: Int2.Narrowing
+- uid: piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
+  name: GreaterThan(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_GreaterThan_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
+  fullName: piine.Int2.GreaterThan(piine.Int2, piine.Int2)
+  nameWithType: Int2.GreaterThan(Int2, Int2)
+- uid: piine.Int2.op_GreaterThan*
+  name: GreaterThan
+  href: docs/api/piine.Int2.html#piine_Int2_op_GreaterThan_
+  commentId: Overload:piine.Int2.op_GreaterThan
+  isSpec: "True"
+  fullName: piine.Int2.GreaterThan
+  nameWithType: Int2.GreaterThan
+- uid: piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  name: GreaterThanOrEqual(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_GreaterThanOrEqual_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  fullName: piine.Int2.GreaterThanOrEqual(piine.Int2, piine.Int2)
+  nameWithType: Int2.GreaterThanOrEqual(Int2, Int2)
+- uid: piine.Int2.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: docs/api/piine.Int2.html#piine_Int2_op_GreaterThanOrEqual_
+  commentId: Overload:piine.Int2.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: piine.Int2.GreaterThanOrEqual
+  nameWithType: Int2.GreaterThanOrEqual
+- uid: piine.Int2.op_Implicit(piine.Int2)~System.ValueTuple{System.Int32,System.Int32}
+  name: Implicit(Int2 to (Int32, Int32))
+  href: docs/api/piine.Int2.html#piine_Int2_op_Implicit_piine_Int2__System_ValueTuple_System_Int32_System_Int32_
+  commentId: M:piine.Int2.op_Implicit(piine.Int2)~System.ValueTuple{System.Int32,System.Int32}
+  name.vb: Widening(Int2 to (Int32, Int32))
+  fullName: piine.Int2.Implicit(piine.Int2 to System.ValueTuple<System.Int32, System.Int32>)
+  fullName.vb: piine.Int2.Widening(piine.Int2 to System.ValueTuple(Of System.Int32, System.Int32))
+  nameWithType: Int2.Implicit(Int2 to (Int32, Int32))
+  nameWithType.vb: Int2.Widening(Int2 to (Int32, Int32))
+- uid: piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
+  name: Implicit((Int32 x, Int32 y) to Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Implicit_System_ValueTuple_System_Int32_System_Int32___piine_Int2
+  commentId: M:piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
+  name.vb: Widening((x As Int32, y As Int32) to Int2)
+  fullName: piine.Int2.Implicit(System.ValueTuple<System.Int32, System.Int32> to piine.Int2)
+  fullName.vb: piine.Int2.Widening(System.ValueTuple(Of System.Int32, System.Int32) to piine.Int2)
+  nameWithType: Int2.Implicit((Int32 x, Int32 y) to Int2)
+  nameWithType.vb: Int2.Widening((x As Int32, y As Int32) to Int2)
+- uid: piine.Int2.op_Implicit*
+  name: Implicit
+  href: docs/api/piine.Int2.html#piine_Int2_op_Implicit_
+  commentId: Overload:piine.Int2.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: piine.Int2.Implicit
+  fullName.vb: piine.Int2.Widening
+  nameWithType: Int2.Implicit
+  nameWithType.vb: Int2.Widening
+- uid: piine.Int2.op_Inequality(piine.Int2,piine.Int2)
+  name: Inequality(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Inequality_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_Inequality(piine.Int2,piine.Int2)
+  fullName: piine.Int2.Inequality(piine.Int2, piine.Int2)
+  nameWithType: Int2.Inequality(Int2, Int2)
+- uid: piine.Int2.op_Inequality*
+  name: Inequality
+  href: docs/api/piine.Int2.html#piine_Int2_op_Inequality_
+  commentId: Overload:piine.Int2.op_Inequality
+  isSpec: "True"
+  fullName: piine.Int2.Inequality
+  nameWithType: Int2.Inequality
+- uid: piine.Int2.op_LessThan(piine.Int2,piine.Int2)
+  name: LessThan(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_LessThan_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_LessThan(piine.Int2,piine.Int2)
+  fullName: piine.Int2.LessThan(piine.Int2, piine.Int2)
+  nameWithType: Int2.LessThan(Int2, Int2)
+- uid: piine.Int2.op_LessThan*
+  name: LessThan
+  href: docs/api/piine.Int2.html#piine_Int2_op_LessThan_
+  commentId: Overload:piine.Int2.op_LessThan
+  isSpec: "True"
+  fullName: piine.Int2.LessThan
+  nameWithType: Int2.LessThan
+- uid: piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
+  name: LessThanOrEqual(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_LessThanOrEqual_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
+  fullName: piine.Int2.LessThanOrEqual(piine.Int2, piine.Int2)
+  nameWithType: Int2.LessThanOrEqual(Int2, Int2)
+- uid: piine.Int2.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: docs/api/piine.Int2.html#piine_Int2_op_LessThanOrEqual_
+  commentId: Overload:piine.Int2.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: piine.Int2.LessThanOrEqual
+  nameWithType: Int2.LessThanOrEqual
+- uid: piine.Int2.op_Multiply(piine.Int2,System.Int32)
+  name: Multiply(Int2, Int32)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Multiply_piine_Int2_System_Int32_
+  commentId: M:piine.Int2.op_Multiply(piine.Int2,System.Int32)
+  fullName: piine.Int2.Multiply(piine.Int2, System.Int32)
+  nameWithType: Int2.Multiply(Int2, Int32)
+- uid: piine.Int2.op_Multiply*
+  name: Multiply
+  href: docs/api/piine.Int2.html#piine_Int2_op_Multiply_
+  commentId: Overload:piine.Int2.op_Multiply
+  isSpec: "True"
+  fullName: piine.Int2.Multiply
+  nameWithType: Int2.Multiply
+- uid: piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
+  name: Subtraction(Int2, Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_Subtraction_piine_Int2_piine_Int2_
+  commentId: M:piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
+  fullName: piine.Int2.Subtraction(piine.Int2, piine.Int2)
+  nameWithType: Int2.Subtraction(Int2, Int2)
+- uid: piine.Int2.op_Subtraction*
+  name: Subtraction
+  href: docs/api/piine.Int2.html#piine_Int2_op_Subtraction_
+  commentId: Overload:piine.Int2.op_Subtraction
+  isSpec: "True"
+  fullName: piine.Int2.Subtraction
+  nameWithType: Int2.Subtraction
+- uid: piine.Int2.op_UnaryNegation(piine.Int2)
+  name: UnaryNegation(Int2)
+  href: docs/api/piine.Int2.html#piine_Int2_op_UnaryNegation_piine_Int2_
+  commentId: M:piine.Int2.op_UnaryNegation(piine.Int2)
+  fullName: piine.Int2.UnaryNegation(piine.Int2)
+  nameWithType: Int2.UnaryNegation(Int2)
+- uid: piine.Int2.op_UnaryNegation*
+  name: UnaryNegation
+  href: docs/api/piine.Int2.html#piine_Int2_op_UnaryNegation_
+  commentId: Overload:piine.Int2.op_UnaryNegation
+  isSpec: "True"
+  fullName: piine.Int2.UnaryNegation
+  nameWithType: Int2.UnaryNegation
+- uid: piine.Int2.SetUnsafe(System.Int32,System.Int32)
+  name: SetUnsafe(Int32, Int32)
+  href: docs/api/piine.Int2.html#piine_Int2_SetUnsafe_System_Int32_System_Int32_
+  commentId: M:piine.Int2.SetUnsafe(System.Int32,System.Int32)
+  fullName: piine.Int2.SetUnsafe(System.Int32, System.Int32)
+  nameWithType: Int2.SetUnsafe(Int32, Int32)
+- uid: piine.Int2.SetUnsafe*
+  name: SetUnsafe
+  href: docs/api/piine.Int2.html#piine_Int2_SetUnsafe_
+  commentId: Overload:piine.Int2.SetUnsafe
+  isSpec: "True"
+  fullName: piine.Int2.SetUnsafe
+  nameWithType: Int2.SetUnsafe
+- uid: piine.Int2.Size
+  name: Size
+  href: docs/api/piine.Int2.html#piine_Int2_Size
+  commentId: F:piine.Int2.Size
+  fullName: piine.Int2.Size
+  nameWithType: Int2.Size
+- uid: piine.Int2.ToString
+  name: ToString()
+  href: docs/api/piine.Int2.html#piine_Int2_ToString
+  commentId: M:piine.Int2.ToString
+  fullName: piine.Int2.ToString()
+  nameWithType: Int2.ToString()
+- uid: piine.Int2.ToString*
+  name: ToString
+  href: docs/api/piine.Int2.html#piine_Int2_ToString_
+  commentId: Overload:piine.Int2.ToString
+  isSpec: "True"
+  fullName: piine.Int2.ToString
+  nameWithType: Int2.ToString
+- uid: piine.Int2.UnitX
+  name: UnitX
+  href: docs/api/piine.Int2.html#piine_Int2_UnitX
+  commentId: P:piine.Int2.UnitX
+  fullName: piine.Int2.UnitX
+  nameWithType: Int2.UnitX
+- uid: piine.Int2.UnitX*
+  name: UnitX
+  href: docs/api/piine.Int2.html#piine_Int2_UnitX_
+  commentId: Overload:piine.Int2.UnitX
+  isSpec: "True"
+  fullName: piine.Int2.UnitX
+  nameWithType: Int2.UnitX
+- uid: piine.Int2.UnitY
+  name: UnitY
+  href: docs/api/piine.Int2.html#piine_Int2_UnitY
+  commentId: P:piine.Int2.UnitY
+  fullName: piine.Int2.UnitY
+  nameWithType: Int2.UnitY
+- uid: piine.Int2.UnitY*
+  name: UnitY
+  href: docs/api/piine.Int2.html#piine_Int2_UnitY_
+  commentId: Overload:piine.Int2.UnitY
+  isSpec: "True"
+  fullName: piine.Int2.UnitY
+  nameWithType: Int2.UnitY
+- uid: piine.Int2.x
+  name: x
+  href: docs/api/piine.Int2.html#piine_Int2_x
+  commentId: F:piine.Int2.x
+  fullName: piine.Int2.x
+  nameWithType: Int2.x
+- uid: piine.Int2.y
+  name: y
+  href: docs/api/piine.Int2.html#piine_Int2_y
+  commentId: F:piine.Int2.y
+  fullName: piine.Int2.y
+  nameWithType: Int2.y
+- uid: piine.Int2.Zero
+  name: Zero
+  href: docs/api/piine.Int2.html#piine_Int2_Zero
+  commentId: P:piine.Int2.Zero
+  fullName: piine.Int2.Zero
+  nameWithType: Int2.Zero
+- uid: piine.Int2.Zero*
+  name: Zero
+  href: docs/api/piine.Int2.html#piine_Int2_Zero_
+  commentId: Overload:piine.Int2.Zero
+  isSpec: "True"
+  fullName: piine.Int2.Zero
+  nameWithType: Int2.Zero
 - uid: piine.Int3
   name: Int3
   href: docs/api/piine.Int3.html
@@ -1317,21 +2689,6 @@ references:
   commentId: M:piine.Int3.#ctor(System.Int32,System.Int32,System.Int32)
   fullName: piine.Int3.Int3(System.Int32, System.Int32, System.Int32)
   nameWithType: Int3.Int3(Int32, Int32, Int32)
-- uid: piine.Int3.#ctor(System.Numerics.Vector{System.Int32},System.Int32)
-  name: Int3(Vector<Int32>, Int32)
-  href: docs/api/piine.Int3.html#piine_Int3__ctor_System_Numerics_Vector_System_Int32__System_Int32_
-  commentId: M:piine.Int3.#ctor(System.Numerics.Vector{System.Int32},System.Int32)
-  name.vb: Int3(Vector(Of Int32), Int32)
-  fullName: piine.Int3.Int3(System.Numerics.Vector<System.Int32>, System.Int32)
-  fullName.vb: piine.Int3.Int3(System.Numerics.Vector(Of System.Int32), System.Int32)
-  nameWithType: Int3.Int3(Vector<Int32>, Int32)
-  nameWithType.vb: Int3.Int3(Vector(Of Int32), Int32)
-- uid: piine.Int3.#ctor(System.Single,System.Single,System.Single)
-  name: Int3(Single, Single, Single)
-  href: docs/api/piine.Int3.html#piine_Int3__ctor_System_Single_System_Single_System_Single_
-  commentId: M:piine.Int3.#ctor(System.Single,System.Single,System.Single)
-  fullName: piine.Int3.Int3(System.Single, System.Single, System.Single)
-  nameWithType: Int3.Int3(Single, Single, Single)
 - uid: piine.Int3.#ctor*
   name: Int3
   href: docs/api/piine.Int3.html#piine_Int3__ctor_
@@ -1378,12 +2735,6 @@ references:
   isSpec: "True"
   fullName: piine.Int3.Cross
   nameWithType: Int3.Cross
-- uid: piine.Int3.data
-  name: data
-  href: docs/api/piine.Int3.html#piine_Int3_data
-  commentId: F:piine.Int3.data
-  fullName: piine.Int3.data
-  nameWithType: Int3.data
 - uid: piine.Int3.Distance(piine.Int3,piine.Int3)
   name: Distance(Int3, Int3)
   href: docs/api/piine.Int3.html#piine_Int3_Distance_piine_Int3_piine_Int3_
@@ -1429,19 +2780,6 @@ references:
   isSpec: "True"
   fullName: piine.Int3.GetHashCode
   nameWithType: Int3.GetHashCode
-- uid: piine.Int3.GetLongestComponent
-  name: GetLongestComponent()
-  href: docs/api/piine.Int3.html#piine_Int3_GetLongestComponent
-  commentId: M:piine.Int3.GetLongestComponent
-  fullName: piine.Int3.GetLongestComponent()
-  nameWithType: Int3.GetLongestComponent()
-- uid: piine.Int3.GetLongestComponent*
-  name: GetLongestComponent
-  href: docs/api/piine.Int3.html#piine_Int3_GetLongestComponent_
-  commentId: Overload:piine.Int3.GetLongestComponent
-  isSpec: "True"
-  fullName: piine.Int3.GetLongestComponent
-  nameWithType: Int3.GetLongestComponent
 - uid: piine.Int3.Item(System.Int32)
   name: Item[Int32]
   href: docs/api/piine.Int3.html#piine_Int3_Item_System_Int32_
@@ -1497,19 +2835,6 @@ references:
   isSpec: "True"
   fullName: piine.Int3.Normalize
   nameWithType: Int3.Normalize
-- uid: piine.Int3.NormalizeToVector3(piine.Int3)
-  name: NormalizeToVector3(Int3)
-  href: docs/api/piine.Int3.html#piine_Int3_NormalizeToVector3_piine_Int3_
-  commentId: M:piine.Int3.NormalizeToVector3(piine.Int3)
-  fullName: piine.Int3.NormalizeToVector3(piine.Int3)
-  nameWithType: Int3.NormalizeToVector3(Int3)
-- uid: piine.Int3.NormalizeToVector3*
-  name: NormalizeToVector3
-  href: docs/api/piine.Int3.html#piine_Int3_NormalizeToVector3_
-  commentId: Overload:piine.Int3.NormalizeToVector3
-  isSpec: "True"
-  fullName: piine.Int3.NormalizeToVector3
-  nameWithType: Int3.NormalizeToVector3
 - uid: piine.Int3.One
   name: One
   href: docs/api/piine.Int3.html#piine_Int3_One
@@ -1555,12 +2880,6 @@ references:
   commentId: M:piine.Int3.op_Equality(piine.Int3,piine.Int3)
   fullName: piine.Int3.Equality(piine.Int3, piine.Int3)
   nameWithType: Int3.Equality(Int3, Int3)
-- uid: piine.Int3.op_Equality(piine.Int3,System.Numerics.Vector3)
-  name: Equality(Int3, Vector3)
-  href: docs/api/piine.Int3.html#piine_Int3_op_Equality_piine_Int3_System_Numerics_Vector3_
-  commentId: M:piine.Int3.op_Equality(piine.Int3,System.Numerics.Vector3)
-  fullName: piine.Int3.Equality(piine.Int3, System.Numerics.Vector3)
-  nameWithType: Int3.Equality(Int3, Vector3)
 - uid: piine.Int3.op_Equality*
   name: Equality
   href: docs/api/piine.Int3.html#piine_Int3_op_Equality_
@@ -1568,6 +2887,43 @@ references:
   isSpec: "True"
   fullName: piine.Int3.Equality
   nameWithType: Int3.Equality
+- uid: piine.Int3.op_Explicit(piine.Float3)~piine.Int3
+  name: Explicit(Float3 to Int3)
+  href: docs/api/piine.Int3.html#piine_Int3_op_Explicit_piine_Float3__piine_Int3
+  commentId: M:piine.Int3.op_Explicit(piine.Float3)~piine.Int3
+  name.vb: Narrowing(Float3 to Int3)
+  fullName: piine.Int3.Explicit(piine.Float3 to piine.Int3)
+  fullName.vb: piine.Int3.Narrowing(piine.Float3 to piine.Int3)
+  nameWithType: Int3.Explicit(Float3 to Int3)
+  nameWithType.vb: Int3.Narrowing(Float3 to Int3)
+- uid: piine.Int3.op_Explicit(piine.Int3)~UnityEngine.Vector3
+  name: Explicit(Int3 to Vector3)
+  href: docs/api/piine.Int3.html#piine_Int3_op_Explicit_piine_Int3__UnityEngine_Vector3
+  commentId: M:piine.Int3.op_Explicit(piine.Int3)~UnityEngine.Vector3
+  name.vb: Narrowing(Int3 to Vector3)
+  fullName: piine.Int3.Explicit(piine.Int3 to UnityEngine.Vector3)
+  fullName.vb: piine.Int3.Narrowing(piine.Int3 to UnityEngine.Vector3)
+  nameWithType: Int3.Explicit(Int3 to Vector3)
+  nameWithType.vb: Int3.Narrowing(Int3 to Vector3)
+- uid: piine.Int3.op_Explicit(UnityEngine.Vector3)~piine.Int3
+  name: Explicit(Vector3 to Int3)
+  href: docs/api/piine.Int3.html#piine_Int3_op_Explicit_UnityEngine_Vector3__piine_Int3
+  commentId: M:piine.Int3.op_Explicit(UnityEngine.Vector3)~piine.Int3
+  name.vb: Narrowing(Vector3 to Int3)
+  fullName: piine.Int3.Explicit(UnityEngine.Vector3 to piine.Int3)
+  fullName.vb: piine.Int3.Narrowing(UnityEngine.Vector3 to piine.Int3)
+  nameWithType: Int3.Explicit(Vector3 to Int3)
+  nameWithType.vb: Int3.Narrowing(Vector3 to Int3)
+- uid: piine.Int3.op_Explicit*
+  name: Explicit
+  href: docs/api/piine.Int3.html#piine_Int3_op_Explicit_
+  commentId: Overload:piine.Int3.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: piine.Int3.Explicit
+  fullName.vb: piine.Int3.Narrowing
+  nameWithType: Int3.Explicit
+  nameWithType.vb: Int3.Narrowing
 - uid: piine.Int3.op_GreaterThan(piine.Int3,piine.Int3)
   name: GreaterThan(Int3, Int3)
   href: docs/api/piine.Int3.html#piine_Int3_op_GreaterThan_piine_Int3_piine_Int3_
@@ -1594,15 +2950,6 @@ references:
   isSpec: "True"
   fullName: piine.Int3.GreaterThanOrEqual
   nameWithType: Int3.GreaterThanOrEqual
-- uid: piine.Int3.op_Implicit(piine.Int3)~System.Numerics.Vector3
-  name: Implicit(Int3 to Vector3)
-  href: docs/api/piine.Int3.html#piine_Int3_op_Implicit_piine_Int3__System_Numerics_Vector3
-  commentId: M:piine.Int3.op_Implicit(piine.Int3)~System.Numerics.Vector3
-  name.vb: Widening(Int3 to Vector3)
-  fullName: piine.Int3.Implicit(piine.Int3 to System.Numerics.Vector3)
-  fullName.vb: piine.Int3.Widening(piine.Int3 to System.Numerics.Vector3)
-  nameWithType: Int3.Implicit(Int3 to Vector3)
-  nameWithType.vb: Int3.Widening(Int3 to Vector3)
 - uid: piine.Int3.op_Implicit(piine.Int3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
   name: Implicit(Int3 to (Int32, Int32, Int32))
   href: docs/api/piine.Int3.html#piine_Int3_op_Implicit_piine_Int3__System_ValueTuple_System_Int32_System_Int32_System_Int32_
@@ -1612,15 +2959,6 @@ references:
   fullName.vb: piine.Int3.Widening(piine.Int3 to System.ValueTuple(Of System.Int32, System.Int32, System.Int32))
   nameWithType: Int3.Implicit(Int3 to (Int32, Int32, Int32))
   nameWithType.vb: Int3.Widening(Int3 to (Int32, Int32, Int32))
-- uid: piine.Int3.op_Implicit(System.Numerics.Vector3)~piine.Int3
-  name: Implicit(Vector3 to Int3)
-  href: docs/api/piine.Int3.html#piine_Int3_op_Implicit_System_Numerics_Vector3__piine_Int3
-  commentId: M:piine.Int3.op_Implicit(System.Numerics.Vector3)~piine.Int3
-  name.vb: Widening(Vector3 to Int3)
-  fullName: piine.Int3.Implicit(System.Numerics.Vector3 to piine.Int3)
-  fullName.vb: piine.Int3.Widening(System.Numerics.Vector3 to piine.Int3)
-  nameWithType: Int3.Implicit(Vector3 to Int3)
-  nameWithType.vb: Int3.Widening(Vector3 to Int3)
 - uid: piine.Int3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Int3
   name: Implicit((Int32 x, Int32 y, Int32 z) to Int3)
   href: docs/api/piine.Int3.html#piine_Int3_op_Implicit_System_ValueTuple_System_Int32_System_Int32_System_Int32___piine_Int3
@@ -1646,12 +2984,6 @@ references:
   commentId: M:piine.Int3.op_Inequality(piine.Int3,piine.Int3)
   fullName: piine.Int3.Inequality(piine.Int3, piine.Int3)
   nameWithType: Int3.Inequality(Int3, Int3)
-- uid: piine.Int3.op_Inequality(piine.Int3,System.Numerics.Vector3)
-  name: Inequality(Int3, Vector3)
-  href: docs/api/piine.Int3.html#piine_Int3_op_Inequality_piine_Int3_System_Numerics_Vector3_
-  commentId: M:piine.Int3.op_Inequality(piine.Int3,System.Numerics.Vector3)
-  fullName: piine.Int3.Inequality(piine.Int3, System.Numerics.Vector3)
-  nameWithType: Int3.Inequality(Int3, Vector3)
 - uid: piine.Int3.op_Inequality*
   name: Inequality
   href: docs/api/piine.Int3.html#piine_Int3_op_Inequality_
@@ -1724,38 +3056,12 @@ references:
   isSpec: "True"
   fullName: piine.Int3.UnaryNegation
   nameWithType: Int3.UnaryNegation
-- uid: piine.Int3.RoundVector3(System.Numerics.Vector3)
-  name: RoundVector3(Vector3)
-  href: docs/api/piine.Int3.html#piine_Int3_RoundVector3_System_Numerics_Vector3_
-  commentId: M:piine.Int3.RoundVector3(System.Numerics.Vector3)
-  fullName: piine.Int3.RoundVector3(System.Numerics.Vector3)
-  nameWithType: Int3.RoundVector3(Vector3)
-- uid: piine.Int3.RoundVector3*
-  name: RoundVector3
-  href: docs/api/piine.Int3.html#piine_Int3_RoundVector3_
-  commentId: Overload:piine.Int3.RoundVector3
-  isSpec: "True"
-  fullName: piine.Int3.RoundVector3
-  nameWithType: Int3.RoundVector3
 - uid: piine.Int3.Size
   name: Size
   href: docs/api/piine.Int3.html#piine_Int3_Size
   commentId: F:piine.Int3.Size
   fullName: piine.Int3.Size
   nameWithType: Int3.Size
-- uid: piine.Int3.Sum(piine.Int3*,System.Int32)
-  name: Sum(Int3*, Int32)
-  href: docs/api/piine.Int3.html#piine_Int3_Sum_piine_Int3__System_Int32_
-  commentId: M:piine.Int3.Sum(piine.Int3*,System.Int32)
-  fullName: piine.Int3.Sum(piine.Int3*, System.Int32)
-  nameWithType: Int3.Sum(Int3*, Int32)
-- uid: piine.Int3.Sum*
-  name: Sum
-  href: docs/api/piine.Int3.html#piine_Int3_Sum_
-  commentId: Overload:piine.Int3.Sum
-  isSpec: "True"
-  fullName: piine.Int3.Sum
-  nameWithType: Int3.Sum
 - uid: piine.Int3.ToString
   name: ToString()
   href: docs/api/piine.Int3.html#piine_Int3_ToString
@@ -1814,12 +3120,51 @@ references:
   commentId: F:piine.Int3.x
   fullName: piine.Int3.x
   nameWithType: Int3.x
+- uid: piine.Int3.XY
+  name: XY
+  href: docs/api/piine.Int3.html#piine_Int3_XY
+  commentId: P:piine.Int3.XY
+  fullName: piine.Int3.XY
+  nameWithType: Int3.XY
+- uid: piine.Int3.XY*
+  name: XY
+  href: docs/api/piine.Int3.html#piine_Int3_XY_
+  commentId: Overload:piine.Int3.XY
+  isSpec: "True"
+  fullName: piine.Int3.XY
+  nameWithType: Int3.XY
+- uid: piine.Int3.XZ
+  name: XZ
+  href: docs/api/piine.Int3.html#piine_Int3_XZ
+  commentId: P:piine.Int3.XZ
+  fullName: piine.Int3.XZ
+  nameWithType: Int3.XZ
+- uid: piine.Int3.XZ*
+  name: XZ
+  href: docs/api/piine.Int3.html#piine_Int3_XZ_
+  commentId: Overload:piine.Int3.XZ
+  isSpec: "True"
+  fullName: piine.Int3.XZ
+  nameWithType: Int3.XZ
 - uid: piine.Int3.y
   name: y
   href: docs/api/piine.Int3.html#piine_Int3_y
   commentId: F:piine.Int3.y
   fullName: piine.Int3.y
   nameWithType: Int3.y
+- uid: piine.Int3.YZ
+  name: YZ
+  href: docs/api/piine.Int3.html#piine_Int3_YZ
+  commentId: P:piine.Int3.YZ
+  fullName: piine.Int3.YZ
+  nameWithType: Int3.YZ
+- uid: piine.Int3.YZ*
+  name: YZ
+  href: docs/api/piine.Int3.html#piine_Int3_YZ_
+  commentId: Overload:piine.Int3.YZ
+  isSpec: "True"
+  fullName: piine.Int3.YZ
+  nameWithType: Int3.YZ
 - uid: piine.Int3.z
   name: z
   href: docs/api/piine.Int3.html#piine_Int3_z
@@ -1857,21 +3202,6 @@ references:
   commentId: M:piine.Int4.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
   fullName: piine.Int4.Int4(System.Int32, System.Int32, System.Int32, System.Int32)
   nameWithType: Int4.Int4(Int32, Int32, Int32, Int32)
-- uid: piine.Int4.#ctor(System.Numerics.Vector{System.Int32},System.Int32)
-  name: Int4(Vector<Int32>, Int32)
-  href: docs/api/piine.Int4.html#piine_Int4__ctor_System_Numerics_Vector_System_Int32__System_Int32_
-  commentId: M:piine.Int4.#ctor(System.Numerics.Vector{System.Int32},System.Int32)
-  name.vb: Int4(Vector(Of Int32), Int32)
-  fullName: piine.Int4.Int4(System.Numerics.Vector<System.Int32>, System.Int32)
-  fullName.vb: piine.Int4.Int4(System.Numerics.Vector(Of System.Int32), System.Int32)
-  nameWithType: Int4.Int4(Vector<Int32>, Int32)
-  nameWithType.vb: Int4.Int4(Vector(Of Int32), Int32)
-- uid: piine.Int4.#ctor(System.Single,System.Single,System.Single,System.Single)
-  name: Int4(Single, Single, Single, Single)
-  href: docs/api/piine.Int4.html#piine_Int4__ctor_System_Single_System_Single_System_Single_System_Single_
-  commentId: M:piine.Int4.#ctor(System.Single,System.Single,System.Single,System.Single)
-  fullName: piine.Int4.Int4(System.Single, System.Single, System.Single, System.Single)
-  nameWithType: Int4.Int4(Single, Single, Single, Single)
 - uid: piine.Int4.#ctor*
   name: Int4
   href: docs/api/piine.Int4.html#piine_Int4__ctor_
@@ -1950,19 +3280,6 @@ references:
   isSpec: "True"
   fullName: piine.Int4.GetHashCode
   nameWithType: Int4.GetHashCode
-- uid: piine.Int4.GetLongestComponent
-  name: GetLongestComponent()
-  href: docs/api/piine.Int4.html#piine_Int4_GetLongestComponent
-  commentId: M:piine.Int4.GetLongestComponent
-  fullName: piine.Int4.GetLongestComponent()
-  nameWithType: Int4.GetLongestComponent()
-- uid: piine.Int4.GetLongestComponent*
-  name: GetLongestComponent
-  href: docs/api/piine.Int4.html#piine_Int4_GetLongestComponent_
-  commentId: Overload:piine.Int4.GetLongestComponent
-  isSpec: "True"
-  fullName: piine.Int4.GetLongestComponent
-  nameWithType: Int4.GetLongestComponent
 - uid: piine.Int4.Item(System.Int32)
   name: Item[Int32]
   href: docs/api/piine.Int4.html#piine_Int4_Item_System_Int32_
@@ -2018,19 +3335,6 @@ references:
   isSpec: "True"
   fullName: piine.Int4.Normalize
   nameWithType: Int4.Normalize
-- uid: piine.Int4.NormalizeToVector4(piine.Int4)
-  name: NormalizeToVector4(Int4)
-  href: docs/api/piine.Int4.html#piine_Int4_NormalizeToVector4_piine_Int4_
-  commentId: M:piine.Int4.NormalizeToVector4(piine.Int4)
-  fullName: piine.Int4.NormalizeToVector4(piine.Int4)
-  nameWithType: Int4.NormalizeToVector4(Int4)
-- uid: piine.Int4.NormalizeToVector4*
-  name: NormalizeToVector4
-  href: docs/api/piine.Int4.html#piine_Int4_NormalizeToVector4_
-  commentId: Overload:piine.Int4.NormalizeToVector4
-  isSpec: "True"
-  fullName: piine.Int4.NormalizeToVector4
-  nameWithType: Int4.NormalizeToVector4
 - uid: piine.Int4.One
   name: One
   href: docs/api/piine.Int4.html#piine_Int4_One
@@ -2076,12 +3380,6 @@ references:
   commentId: M:piine.Int4.op_Equality(piine.Int4,piine.Int4)
   fullName: piine.Int4.Equality(piine.Int4, piine.Int4)
   nameWithType: Int4.Equality(Int4, Int4)
-- uid: piine.Int4.op_Equality(piine.Int4,System.Numerics.Vector4)
-  name: Equality(Int4, Vector4)
-  href: docs/api/piine.Int4.html#piine_Int4_op_Equality_piine_Int4_System_Numerics_Vector4_
-  commentId: M:piine.Int4.op_Equality(piine.Int4,System.Numerics.Vector4)
-  fullName: piine.Int4.Equality(piine.Int4, System.Numerics.Vector4)
-  nameWithType: Int4.Equality(Int4, Vector4)
 - uid: piine.Int4.op_Equality*
   name: Equality
   href: docs/api/piine.Int4.html#piine_Int4_op_Equality_
@@ -2089,6 +3387,25 @@ references:
   isSpec: "True"
   fullName: piine.Int4.Equality
   nameWithType: Int4.Equality
+- uid: piine.Int4.op_Explicit(piine.Float4)~piine.Int4
+  name: Explicit(Float4 to Int4)
+  href: docs/api/piine.Int4.html#piine_Int4_op_Explicit_piine_Float4__piine_Int4
+  commentId: M:piine.Int4.op_Explicit(piine.Float4)~piine.Int4
+  name.vb: Narrowing(Float4 to Int4)
+  fullName: piine.Int4.Explicit(piine.Float4 to piine.Int4)
+  fullName.vb: piine.Int4.Narrowing(piine.Float4 to piine.Int4)
+  nameWithType: Int4.Explicit(Float4 to Int4)
+  nameWithType.vb: Int4.Narrowing(Float4 to Int4)
+- uid: piine.Int4.op_Explicit*
+  name: Explicit
+  href: docs/api/piine.Int4.html#piine_Int4_op_Explicit_
+  commentId: Overload:piine.Int4.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: piine.Int4.Explicit
+  fullName.vb: piine.Int4.Narrowing
+  nameWithType: Int4.Explicit
+  nameWithType.vb: Int4.Narrowing
 - uid: piine.Int4.op_GreaterThan(piine.Int4,piine.Int4)
   name: GreaterThan(Int4, Int4)
   href: docs/api/piine.Int4.html#piine_Int4_op_GreaterThan_piine_Int4_piine_Int4_
@@ -2115,15 +3432,6 @@ references:
   isSpec: "True"
   fullName: piine.Int4.GreaterThanOrEqual
   nameWithType: Int4.GreaterThanOrEqual
-- uid: piine.Int4.op_Implicit(piine.Int4)~System.Numerics.Vector4
-  name: Implicit(Int4 to Vector4)
-  href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_piine_Int4__System_Numerics_Vector4
-  commentId: M:piine.Int4.op_Implicit(piine.Int4)~System.Numerics.Vector4
-  name.vb: Widening(Int4 to Vector4)
-  fullName: piine.Int4.Implicit(piine.Int4 to System.Numerics.Vector4)
-  fullName.vb: piine.Int4.Widening(piine.Int4 to System.Numerics.Vector4)
-  nameWithType: Int4.Implicit(Int4 to Vector4)
-  nameWithType.vb: Int4.Widening(Int4 to Vector4)
 - uid: piine.Int4.op_Implicit(piine.Int4)~System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
   name: Implicit(Int4 to (Int32, Int32, Int32, Int32))
   href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_piine_Int4__System_ValueTuple_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -2133,15 +3441,15 @@ references:
   fullName.vb: piine.Int4.Widening(piine.Int4 to System.ValueTuple(Of System.Int32, System.Int32, System.Int32, System.Int32))
   nameWithType: Int4.Implicit(Int4 to (Int32, Int32, Int32, Int32))
   nameWithType.vb: Int4.Widening(Int4 to (Int32, Int32, Int32, Int32))
-- uid: piine.Int4.op_Implicit(System.Numerics.Vector4)~piine.Int4
-  name: Implicit(Vector4 to Int4)
-  href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_System_Numerics_Vector4__piine_Int4
-  commentId: M:piine.Int4.op_Implicit(System.Numerics.Vector4)~piine.Int4
-  name.vb: Widening(Vector4 to Int4)
-  fullName: piine.Int4.Implicit(System.Numerics.Vector4 to piine.Int4)
-  fullName.vb: piine.Int4.Widening(System.Numerics.Vector4 to piine.Int4)
-  nameWithType: Int4.Implicit(Vector4 to Int4)
-  nameWithType.vb: Int4.Widening(Vector4 to Int4)
+- uid: piine.Int4.op_Implicit(piine.Int4)~UnityEngine.Vector4
+  name: Implicit(Int4 to Vector4)
+  href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_piine_Int4__UnityEngine_Vector4
+  commentId: M:piine.Int4.op_Implicit(piine.Int4)~UnityEngine.Vector4
+  name.vb: Widening(Int4 to Vector4)
+  fullName: piine.Int4.Implicit(piine.Int4 to UnityEngine.Vector4)
+  fullName.vb: piine.Int4.Widening(piine.Int4 to UnityEngine.Vector4)
+  nameWithType: Int4.Implicit(Int4 to Vector4)
+  nameWithType.vb: Int4.Widening(Int4 to Vector4)
 - uid: piine.Int4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Int4
   name: Implicit((Int32 x, Int32 y, Int32 z, Int32 w) to Int4)
   href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_System_ValueTuple_System_Int32_System_Int32_System_Int32_System_Int32___piine_Int4
@@ -2151,6 +3459,15 @@ references:
   fullName.vb: piine.Int4.Widening(System.ValueTuple(Of System.Int32, System.Int32, System.Int32, System.Int32) to piine.Int4)
   nameWithType: Int4.Implicit((Int32 x, Int32 y, Int32 z, Int32 w) to Int4)
   nameWithType.vb: Int4.Widening((x As Int32, y As Int32, z As Int32, w As Int32) to Int4)
+- uid: piine.Int4.op_Implicit(UnityEngine.Vector4)~piine.Int4
+  name: Implicit(Vector4 to Int4)
+  href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_UnityEngine_Vector4__piine_Int4
+  commentId: M:piine.Int4.op_Implicit(UnityEngine.Vector4)~piine.Int4
+  name.vb: Widening(Vector4 to Int4)
+  fullName: piine.Int4.Implicit(UnityEngine.Vector4 to piine.Int4)
+  fullName.vb: piine.Int4.Widening(UnityEngine.Vector4 to piine.Int4)
+  nameWithType: Int4.Implicit(Vector4 to Int4)
+  nameWithType.vb: Int4.Widening(Vector4 to Int4)
 - uid: piine.Int4.op_Implicit*
   name: Implicit
   href: docs/api/piine.Int4.html#piine_Int4_op_Implicit_
@@ -2167,12 +3484,6 @@ references:
   commentId: M:piine.Int4.op_Inequality(piine.Int4,piine.Int4)
   fullName: piine.Int4.Inequality(piine.Int4, piine.Int4)
   nameWithType: Int4.Inequality(Int4, Int4)
-- uid: piine.Int4.op_Inequality(piine.Int4,System.Numerics.Vector4)
-  name: Inequality(Int4, Vector4)
-  href: docs/api/piine.Int4.html#piine_Int4_op_Inequality_piine_Int4_System_Numerics_Vector4_
-  commentId: M:piine.Int4.op_Inequality(piine.Int4,System.Numerics.Vector4)
-  fullName: piine.Int4.Inequality(piine.Int4, System.Numerics.Vector4)
-  nameWithType: Int4.Inequality(Int4, Vector4)
 - uid: piine.Int4.op_Inequality*
   name: Inequality
   href: docs/api/piine.Int4.html#piine_Int4_op_Inequality_
@@ -2206,12 +3517,12 @@ references:
   isSpec: "True"
   fullName: piine.Int4.LessThanOrEqual
   nameWithType: Int4.LessThanOrEqual
-- uid: piine.Int4.op_Multiply(piine.Int4,System.Int32)
-  name: Multiply(Int4, Int32)
-  href: docs/api/piine.Int4.html#piine_Int4_op_Multiply_piine_Int4_System_Int32_
-  commentId: M:piine.Int4.op_Multiply(piine.Int4,System.Int32)
-  fullName: piine.Int4.Multiply(piine.Int4, System.Int32)
-  nameWithType: Int4.Multiply(Int4, Int32)
+- uid: piine.Int4.op_Multiply(piine.Int4,System.Single)
+  name: Multiply(Int4, Single)
+  href: docs/api/piine.Int4.html#piine_Int4_op_Multiply_piine_Int4_System_Single_
+  commentId: M:piine.Int4.op_Multiply(piine.Int4,System.Single)
+  fullName: piine.Int4.Multiply(piine.Int4, System.Single)
+  nameWithType: Int4.Multiply(Int4, Single)
 - uid: piine.Int4.op_Multiply*
   name: Multiply
   href: docs/api/piine.Int4.html#piine_Int4_op_Multiply_
@@ -2245,38 +3556,12 @@ references:
   isSpec: "True"
   fullName: piine.Int4.UnaryNegation
   nameWithType: Int4.UnaryNegation
-- uid: piine.Int4.RoundVector4(System.Numerics.Vector4)
-  name: RoundVector4(Vector4)
-  href: docs/api/piine.Int4.html#piine_Int4_RoundVector4_System_Numerics_Vector4_
-  commentId: M:piine.Int4.RoundVector4(System.Numerics.Vector4)
-  fullName: piine.Int4.RoundVector4(System.Numerics.Vector4)
-  nameWithType: Int4.RoundVector4(Vector4)
-- uid: piine.Int4.RoundVector4*
-  name: RoundVector4
-  href: docs/api/piine.Int4.html#piine_Int4_RoundVector4_
-  commentId: Overload:piine.Int4.RoundVector4
-  isSpec: "True"
-  fullName: piine.Int4.RoundVector4
-  nameWithType: Int4.RoundVector4
 - uid: piine.Int4.Size
   name: Size
   href: docs/api/piine.Int4.html#piine_Int4_Size
   commentId: F:piine.Int4.Size
   fullName: piine.Int4.Size
   nameWithType: Int4.Size
-- uid: piine.Int4.Sum(piine.Int4*,System.Int32)
-  name: Sum(Int4*, Int32)
-  href: docs/api/piine.Int4.html#piine_Int4_Sum_piine_Int4__System_Int32_
-  commentId: M:piine.Int4.Sum(piine.Int4*,System.Int32)
-  fullName: piine.Int4.Sum(piine.Int4*, System.Int32)
-  nameWithType: Int4.Sum(Int4*, Int32)
-- uid: piine.Int4.Sum*
-  name: Sum
-  href: docs/api/piine.Int4.html#piine_Int4_Sum_
-  commentId: Overload:piine.Int4.Sum
-  isSpec: "True"
-  fullName: piine.Int4.Sum
-  nameWithType: Int4.Sum
 - uid: piine.Int4.ToString
   name: ToString()
   href: docs/api/piine.Int4.html#piine_Int4_ToString
@@ -2407,6 +3692,22 @@ references:
   fullName.vb: piine.Memory.Unmanaged.AllocMemory(Of T)(System.Int64)
   nameWithType: Unmanaged.AllocMemory<T>(Int64)
   nameWithType.vb: Unmanaged.AllocMemory(Of T)(Int64)
+- uid: piine.Memory.Unmanaged.AllocSpan*
+  name: AllocSpan
+  href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_AllocSpan_
+  commentId: Overload:piine.Memory.Unmanaged.AllocSpan
+  isSpec: "True"
+  fullName: piine.Memory.Unmanaged.AllocSpan
+  nameWithType: Unmanaged.AllocSpan
+- uid: piine.Memory.Unmanaged.AllocSpan``1(System.Int32)
+  name: AllocSpan<T>(Int32)
+  href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_AllocSpan__1_System_Int32_
+  commentId: M:piine.Memory.Unmanaged.AllocSpan``1(System.Int32)
+  name.vb: AllocSpan(Of T)(Int32)
+  fullName: piine.Memory.Unmanaged.AllocSpan<T>(System.Int32)
+  fullName.vb: piine.Memory.Unmanaged.AllocSpan(Of T)(System.Int32)
+  nameWithType: Unmanaged.AllocSpan<T>(Int32)
+  nameWithType.vb: Unmanaged.AllocSpan(Of T)(Int32)
 - uid: piine.Memory.Unmanaged.FreeMemory*
   name: FreeMemory
   href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_FreeMemory_
@@ -2423,6 +3724,22 @@ references:
   fullName.vb: piine.Memory.Unmanaged.FreeMemory(Of T)(T*, System.Int64)
   nameWithType: Unmanaged.FreeMemory<T>(T*, Int64)
   nameWithType.vb: Unmanaged.FreeMemory(Of T)(T*, Int64)
+- uid: piine.Memory.Unmanaged.FreeSpan*
+  name: FreeSpan
+  href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_FreeSpan_
+  commentId: Overload:piine.Memory.Unmanaged.FreeSpan
+  isSpec: "True"
+  fullName: piine.Memory.Unmanaged.FreeSpan
+  nameWithType: Unmanaged.FreeSpan
+- uid: piine.Memory.Unmanaged.FreeSpan``1(System.Span{``0})
+  name: FreeSpan<T>(Span<T>)
+  href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_FreeSpan__1_System_Span___0__
+  commentId: M:piine.Memory.Unmanaged.FreeSpan``1(System.Span{``0})
+  name.vb: FreeSpan(Of T)(Span(Of T))
+  fullName: piine.Memory.Unmanaged.FreeSpan<T>(System.Span<T>)
+  fullName.vb: piine.Memory.Unmanaged.FreeSpan(Of T)(System.Span(Of T))
+  nameWithType: Unmanaged.FreeSpan<T>(Span<T>)
+  nameWithType.vb: Unmanaged.FreeSpan(Of T)(Span(Of T))
 - uid: piine.Memory.Unmanaged.ReAllocMemory*
   name: ReAllocMemory
   href: docs/api/piine.Memory.Unmanaged.html#piine_Memory_Unmanaged_ReAllocMemory_
@@ -3528,83 +4845,105 @@ references:
   isSpec: "True"
   fullName: piine.Procedural.OpenSimplexNoise.Evaluate
   nameWithType: OpenSimplexNoise.Evaluate
+- uid: piine.Simd
+  name: Simd
+  href: docs/api/piine.Simd.html
+  commentId: T:piine.Simd
+  fullName: piine.Simd
+  nameWithType: Simd
+- uid: piine.Simd.Sum(System.Span{piine.Int3})
+  name: Sum(Span<Int3>)
+  href: docs/api/piine.Simd.html#piine_Simd_Sum_System_Span_piine_Int3__
+  commentId: M:piine.Simd.Sum(System.Span{piine.Int3})
+  name.vb: Sum(Span(Of Int3))
+  fullName: piine.Simd.Sum(System.Span<piine.Int3>)
+  fullName.vb: piine.Simd.Sum(System.Span(Of piine.Int3))
+  nameWithType: Simd.Sum(Span<Int3>)
+  nameWithType.vb: Simd.Sum(Span(Of Int3))
+- uid: piine.Simd.Sum*
+  name: Sum
+  href: docs/api/piine.Simd.html#piine_Simd_Sum_
+  commentId: Overload:piine.Simd.Sum
+  isSpec: "True"
+  fullName: piine.Simd.Sum
+  nameWithType: Simd.Sum
 - uid: piine.Voxels
   name: piine.Voxels
   href: docs/api/piine.Voxels.html
   commentId: N:piine.Voxels
   fullName: piine.Voxels
   nameWithType: piine.Voxels
-- uid: piine.Voxels.IColorVolume
-  name: IColorVolume
-  href: docs/api/piine.Voxels.IColorVolume.html
-  commentId: T:piine.Voxels.IColorVolume
-  fullName: piine.Voxels.IColorVolume
-  nameWithType: IColorVolume
-- uid: piine.Voxels.IColorVolume.Depth
-  name: Depth
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Depth
-  commentId: P:piine.Voxels.IColorVolume.Depth
-  fullName: piine.Voxels.IColorVolume.Depth
-  nameWithType: IColorVolume.Depth
-- uid: piine.Voxels.IColorVolume.Depth*
-  name: Depth
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Depth_
-  commentId: Overload:piine.Voxels.IColorVolume.Depth
+- uid: piine.Voxels.IVoxel
+  name: IVoxel
+  href: docs/api/piine.Voxels.IVoxel.html
+  commentId: T:piine.Voxels.IVoxel
+  fullName: piine.Voxels.IVoxel
+  nameWithType: IVoxel
+- uid: piine.Voxels.IVoxel.Color
+  name: Color
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Color
+  commentId: P:piine.Voxels.IVoxel.Color
+  fullName: piine.Voxels.IVoxel.Color
+  nameWithType: IVoxel.Color
+- uid: piine.Voxels.IVoxel.Color*
+  name: Color
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Color_
+  commentId: Overload:piine.Voxels.IVoxel.Color
   isSpec: "True"
-  fullName: piine.Voxels.IColorVolume.Depth
-  nameWithType: IColorVolume.Depth
-- uid: piine.Voxels.IColorVolume.GetColor(piine.Int3)
-  name: GetColor(Int3)
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_GetColor_piine_Int3_
-  commentId: M:piine.Voxels.IColorVolume.GetColor(piine.Int3)
-  fullName: piine.Voxels.IColorVolume.GetColor(piine.Int3)
-  nameWithType: IColorVolume.GetColor(Int3)
-- uid: piine.Voxels.IColorVolume.GetColor*
-  name: GetColor
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_GetColor_
-  commentId: Overload:piine.Voxels.IColorVolume.GetColor
+  fullName: piine.Voxels.IVoxel.Color
+  nameWithType: IVoxel.Color
+- uid: piine.Voxels.IVoxel.Density
+  name: Density
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Density
+  commentId: P:piine.Voxels.IVoxel.Density
+  fullName: piine.Voxels.IVoxel.Density
+  nameWithType: IVoxel.Density
+- uid: piine.Voxels.IVoxel.Density*
+  name: Density
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Density_
+  commentId: Overload:piine.Voxels.IVoxel.Density
   isSpec: "True"
-  fullName: piine.Voxels.IColorVolume.GetColor
-  nameWithType: IColorVolume.GetColor
-- uid: piine.Voxels.IColorVolume.Height
-  name: Height
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Height
-  commentId: P:piine.Voxels.IColorVolume.Height
-  fullName: piine.Voxels.IColorVolume.Height
-  nameWithType: IColorVolume.Height
-- uid: piine.Voxels.IColorVolume.Height*
-  name: Height
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Height_
-  commentId: Overload:piine.Voxels.IColorVolume.Height
+  fullName: piine.Voxels.IVoxel.Density
+  nameWithType: IVoxel.Density
+- uid: piine.Voxels.IVoxel.Emission
+  name: Emission
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Emission
+  commentId: P:piine.Voxels.IVoxel.Emission
+  fullName: piine.Voxels.IVoxel.Emission
+  nameWithType: IVoxel.Emission
+- uid: piine.Voxels.IVoxel.Emission*
+  name: Emission
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Emission_
+  commentId: Overload:piine.Voxels.IVoxel.Emission
   isSpec: "True"
-  fullName: piine.Voxels.IColorVolume.Height
-  nameWithType: IColorVolume.Height
-- uid: piine.Voxels.IColorVolume.SetColor(piine.Int3,piine.Graphics.Color32)
-  name: SetColor(Int3, Color32)
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_SetColor_piine_Int3_piine_Graphics_Color32_
-  commentId: M:piine.Voxels.IColorVolume.SetColor(piine.Int3,piine.Graphics.Color32)
-  fullName: piine.Voxels.IColorVolume.SetColor(piine.Int3, piine.Graphics.Color32)
-  nameWithType: IColorVolume.SetColor(Int3, Color32)
-- uid: piine.Voxels.IColorVolume.SetColor*
-  name: SetColor
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_SetColor_
-  commentId: Overload:piine.Voxels.IColorVolume.SetColor
+  fullName: piine.Voxels.IVoxel.Emission
+  nameWithType: IVoxel.Emission
+- uid: piine.Voxels.IVoxel.Normal
+  name: Normal
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Normal
+  commentId: P:piine.Voxels.IVoxel.Normal
+  fullName: piine.Voxels.IVoxel.Normal
+  nameWithType: IVoxel.Normal
+- uid: piine.Voxels.IVoxel.Normal*
+  name: Normal
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Normal_
+  commentId: Overload:piine.Voxels.IVoxel.Normal
   isSpec: "True"
-  fullName: piine.Voxels.IColorVolume.SetColor
-  nameWithType: IColorVolume.SetColor
-- uid: piine.Voxels.IColorVolume.Width
-  name: Width
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Width
-  commentId: P:piine.Voxels.IColorVolume.Width
-  fullName: piine.Voxels.IColorVolume.Width
-  nameWithType: IColorVolume.Width
-- uid: piine.Voxels.IColorVolume.Width*
-  name: Width
-  href: docs/api/piine.Voxels.IColorVolume.html#piine_Voxels_IColorVolume_Width_
-  commentId: Overload:piine.Voxels.IColorVolume.Width
+  fullName: piine.Voxels.IVoxel.Normal
+  nameWithType: IVoxel.Normal
+- uid: piine.Voxels.IVoxel.Specular
+  name: Specular
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Specular
+  commentId: P:piine.Voxels.IVoxel.Specular
+  fullName: piine.Voxels.IVoxel.Specular
+  nameWithType: IVoxel.Specular
+- uid: piine.Voxels.IVoxel.Specular*
+  name: Specular
+  href: docs/api/piine.Voxels.IVoxel.html#piine_Voxels_IVoxel_Specular_
+  commentId: Overload:piine.Voxels.IVoxel.Specular
   isSpec: "True"
-  fullName: piine.Voxels.IColorVolume.Width
-  nameWithType: IColorVolume.Width
+  fullName: piine.Voxels.IVoxel.Specular
+  nameWithType: IVoxel.Specular
 - uid: piine.Voxels.IVoxelVolume`1
   name: IVoxelVolume<T>
   href: docs/api/piine.Voxels.IVoxelVolume-1.html

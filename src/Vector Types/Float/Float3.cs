@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Numerics;
+//using System.Numerics;
+using UnityEngine;
 using System.Runtime.InteropServices;
 
 namespace piine
@@ -21,9 +22,8 @@ namespace piine
         public static ref readonly Float3 UnitY => ref unitY;
         public static ref readonly Float3 UnitZ => ref unitZ;
 
-        [CLSCompliant (false)]
         [FieldOffset (0)]
-        public fixed float components[Size];
+        internal fixed float components[Size];
 
         [FieldOffset (0)]
         public float x;
@@ -115,7 +115,7 @@ namespace piine
 
         public static explicit operator Vector3 (Float3 v) => new Vector3 (v.x, v.y, v.z);
 
-        public static explicit operator Float3 (Vector3 v) => new Float3 (v.X, v.Y, v.Z);
+        public static explicit operator Float3 (Vector3 v) => new Float3 (v.x, v.y, v.z);
 
         public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
 

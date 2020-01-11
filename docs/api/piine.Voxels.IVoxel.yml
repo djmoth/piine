@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Voxels.IVoxel
+  commentId: T:piine.Voxels.IVoxel
+  id: IVoxel
+  parent: piine.Voxels
+  children:
+  - piine.Voxels.IVoxel.Color
+  - piine.Voxels.IVoxel.Density
+  - piine.Voxels.IVoxel.Emission
+  - piine.Voxels.IVoxel.Normal
+  - piine.Voxels.IVoxel.Specular
+  langs:
+  - csharp
+  - vb
+  name: IVoxel
+  nameWithType: IVoxel
+  fullName: piine.Voxels.IVoxel
+  type: Interface
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: IVoxel
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 5
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: public interface IVoxel
+    content.vb: Public Interface IVoxel
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: piine.Voxels.IVoxel.Color
+  commentId: P:piine.Voxels.IVoxel.Color
+  id: Color
+  parent: piine.Voxels.IVoxel
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: IVoxel.Color
+  fullName: piine.Voxels.IVoxel.Color
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Color
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 7
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: Color32 Color { get; }
+    parameters: []
+    return:
+      type: piine.Graphics.Color32
+    content.vb: ReadOnly Property Color As Color32
+  overload: piine.Voxels.IVoxel.Color*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IVoxel.Density
+  commentId: P:piine.Voxels.IVoxel.Density
+  id: Density
+  parent: piine.Voxels.IVoxel
+  langs:
+  - csharp
+  - vb
+  name: Density
+  nameWithType: IVoxel.Density
+  fullName: piine.Voxels.IVoxel.Density
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Density
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 8
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: float Density { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property Density As Single
+  overload: piine.Voxels.IVoxel.Density*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IVoxel.Specular
+  commentId: P:piine.Voxels.IVoxel.Specular
+  id: Specular
+  parent: piine.Voxels.IVoxel
+  langs:
+  - csharp
+  - vb
+  name: Specular
+  nameWithType: IVoxel.Specular
+  fullName: piine.Voxels.IVoxel.Specular
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Specular
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 9
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: float Specular { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property Specular As Single
+  overload: piine.Voxels.IVoxel.Specular*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IVoxel.Normal
+  commentId: P:piine.Voxels.IVoxel.Normal
+  id: Normal
+  parent: piine.Voxels.IVoxel
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: IVoxel.Normal
+  fullName: piine.Voxels.IVoxel.Normal
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Normal
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: Float3 Normal { get; }
+    parameters: []
+    return:
+      type: piine.Float3
+    content.vb: ReadOnly Property Normal As Float3
+  overload: piine.Voxels.IVoxel.Normal*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Voxels.IVoxel.Emission
+  commentId: P:piine.Voxels.IVoxel.Emission
+  id: Emission
+  parent: piine.Voxels.IVoxel
+  langs:
+  - csharp
+  - vb
+  name: Emission
+  nameWithType: IVoxel.Emission
+  fullName: piine.Voxels.IVoxel.Emission
+  type: Property
+  source:
+    remote:
+      path: src/Voxels/Volumes/IVoxel.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Emission
+    path: src/Voxels/Volumes/IVoxel.cs
+    startLine: 11
+  assemblies:
+  - piine
+  namespace: piine.Voxels
+  syntax:
+    content: float Emission { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property Emission As Single
+  overload: piine.Voxels.IVoxel.Emission*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: piine.Voxels
+  commentId: N:piine.Voxels
+  name: piine.Voxels
+  nameWithType: piine.Voxels
+  fullName: piine.Voxels
+- uid: piine.Voxels.IVoxel.Color*
+  commentId: Overload:piine.Voxels.IVoxel.Color
+  name: Color
+  nameWithType: IVoxel.Color
+  fullName: piine.Voxels.IVoxel.Color
+- uid: piine.Graphics.Color32
+  commentId: T:piine.Graphics.Color32
+  parent: piine.Graphics
+  name: Color32
+  nameWithType: Color32
+  fullName: piine.Graphics.Color32
+- uid: piine.Graphics
+  commentId: N:piine.Graphics
+  name: piine.Graphics
+  nameWithType: piine.Graphics
+  fullName: piine.Graphics
+- uid: piine.Voxels.IVoxel.Density*
+  commentId: Overload:piine.Voxels.IVoxel.Density
+  name: Density
+  nameWithType: IVoxel.Density
+  fullName: piine.Voxels.IVoxel.Density
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Voxels.IVoxel.Specular*
+  commentId: Overload:piine.Voxels.IVoxel.Specular
+  name: Specular
+  nameWithType: IVoxel.Specular
+  fullName: piine.Voxels.IVoxel.Specular
+- uid: piine.Voxels.IVoxel.Normal*
+  commentId: Overload:piine.Voxels.IVoxel.Normal
+  name: Normal
+  nameWithType: IVoxel.Normal
+  fullName: piine.Voxels.IVoxel.Normal
+- uid: piine.Float3
+  commentId: T:piine.Float3
+  parent: piine
+  name: Float3
+  nameWithType: Float3
+  fullName: piine.Float3
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: piine.Voxels.IVoxel.Emission*
+  commentId: Overload:piine.Voxels.IVoxel.Emission
+  name: Emission
+  nameWithType: IVoxel.Emission
+  fullName: piine.Voxels.IVoxel.Emission

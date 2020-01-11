@@ -1,6 +1,0 @@
-E:\Game Development\piine\bin\x64\Release\netstandard2.0\piine.deps.json
-E:\Game Development\piine\bin\x64\Release\netstandard2.0\piine.dll
-E:\Game Development\piine\bin\x64\Release\netstandard2.0\piine.pdb
-E:\Game Development\piine\obj\x64\Release\netstandard2.0\piine.csprojAssemblyReference.cache
-E:\Game Development\piine\obj\x64\Release\netstandard2.0\piine.dll
-E:\Game Development\piine\obj\x64\Release\netstandard2.0\piine.pdb

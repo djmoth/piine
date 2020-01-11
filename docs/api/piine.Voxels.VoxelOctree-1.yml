@@ -22,11 +22,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: VoxelOctree
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 6
   assemblies:
   - piine
@@ -37,7 +37,6 @@ items:
     - id: T
     content.vb: >-
       Public MustInherit Class VoxelOctree(Of T)
-
           Implements IVoxelVolume(Of T)
   inheritance:
   - System.Object
@@ -77,11 +76,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Width
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 8
   assemblies:
   - piine
@@ -116,11 +115,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Height
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 9
   assemblies:
   - piine
@@ -155,11 +154,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Depth
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 10
   assemblies:
   - piine
@@ -194,11 +193,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Size
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 11
   assemblies:
   - piine
@@ -233,11 +232,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 13
   assemblies:
   - piine
@@ -274,11 +273,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 15
   assemblies:
   - piine
@@ -315,11 +314,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculateNodeIndex
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 20
   assemblies:
   - piine
@@ -356,11 +355,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/VoxelOctree.cs
+      path: src/Voxels/Volumes/VoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: CalculateNodePosition
-    path: src/Voxels/VoxelOctree.cs
+    path: src/Voxels/Volumes/VoxelOctree.cs
     startLine: 25
   assemblies:
   - piine

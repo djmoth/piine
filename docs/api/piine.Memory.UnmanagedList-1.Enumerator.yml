@@ -33,7 +33,6 @@ items:
     content: 'public struct Enumerator : IEnumerator<T>, IEnumerator, IDisposable'
     content.vb: >-
       Public Structure Enumerator
-
           Implements IEnumerator(Of T), IEnumerator, IDisposable
   implements:
   - System.Collections.Generic.IEnumerator{{T}}

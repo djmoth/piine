@@ -5,6 +5,9 @@ using System.Text;
 
 namespace piine.Graphics
 {
+    /// <summary>
+    /// A 32 bit RGBA color value. 1 byte for each component.
+    /// </summary>
     [StructLayout (LayoutKind.Explicit, Size = 4)]
     public struct Color32 : IEquatable<Color32>
     {
@@ -16,11 +19,22 @@ namespace piine.Graphics
         public byte b;
         [FieldOffset (3)]
         public byte a;
+
         [FieldOffset (0)]
         private int rawInt32;
 
+        /// <summary>
+        /// Get the 4 components packed into a 32bit integer in the order RGBA. The most significant byte is R and the least is A.
+        /// </summary>
         public int AsInt32 => rawInt32;
 
+        /// <summary>
+        /// Constructs a new color value
+        /// </summary>
+        /// <param name="r">Red</param>
+        /// <param name="g">Green</param>
+        /// <param name="b">Blue</param>
+        /// <param name="a">Alpha</param>
         public Color32 (byte r, byte g, byte b, byte a)
         {
             rawInt32 = 0;
@@ -29,6 +43,13 @@ namespace piine.Graphics
             this.b = b;
             this.a = a;
         }
+
+        /// <summary>
+        /// Constructs a new color value. Alpha will be set to 255
+        /// </summary>
+        /// <param name="r">Red</param>
+        /// <param name="g">Green</param>
+        /// <param name="b">Blue</param>
         public Color32 (byte r, byte g, byte b)
         {
             rawInt32 = 0;
@@ -38,6 +59,10 @@ namespace piine.Graphics
             a = 255;
         }
 
+        /// <summary>
+        /// Constructs a new color value from a 32 bit integer
+        /// </summary>
+        /// <param name="rawRGBA">RGBA components packed into an integer</param>
         public Color32 (int rawRGBA)
         {
             r = 0;

@@ -38,15 +38,16 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Color32
     path: src/Graphics/Color32.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - piine
   namespace: piine.Graphics
+  summary: "\nA 32 bit RGBA color value. 1 byte for each component.\n"
+  example: []
   syntax:
     content: 'public struct Color32 : IEquatable<Color32>'
     content.vb: >-
       Public Structure Color32
-
           Implements IEquatable(Of Color32)
   implements:
   - System.IEquatable{piine.Graphics.Color32}
@@ -78,7 +79,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: r
     path: src/Graphics/Color32.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -109,7 +110,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: g
     path: src/Graphics/Color32.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -140,7 +141,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: b
     path: src/Graphics/Color32.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -171,7 +172,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: a
     path: src/Graphics/Color32.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -202,10 +203,12 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AsInt32
     path: src/Graphics/Color32.cs
-    startLine: 21
+    startLine: 28
   assemblies:
   - piine
   namespace: piine.Graphics
+  summary: "\nGet the 4 components packed into a 32bit integer in the order RGBA. The most significant byte is R and the least is A.\n"
+  example: []
   syntax:
     content: public int AsInt32 { get; }
     parameters: []
@@ -237,21 +240,27 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
-    startLine: 23
+    startLine: 37
   assemblies:
   - piine
   namespace: piine.Graphics
+  summary: "\nConstructs a new color value\n"
+  example: []
   syntax:
     content: public Color32(byte r, byte g, byte b, byte a)
     parameters:
     - id: r
       type: System.Byte
+      description: Red
     - id: g
       type: System.Byte
+      description: Green
     - id: b
       type: System.Byte
+      description: Blue
     - id: a
       type: System.Byte
+      description: Alpha
     content.vb: Public Sub New(r As Byte, g As Byte, b As Byte, a As Byte)
   overload: piine.Graphics.Color32.#ctor*
   modifiers.csharp:
@@ -276,19 +285,24 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
-    startLine: 31
+    startLine: 52
   assemblies:
   - piine
   namespace: piine.Graphics
+  summary: "\nConstructs a new color value. Alpha will be set to 255\n"
+  example: []
   syntax:
     content: public Color32(byte r, byte g, byte b)
     parameters:
     - id: r
       type: System.Byte
+      description: Red
     - id: g
       type: System.Byte
+      description: Green
     - id: b
       type: System.Byte
+      description: Blue
     content.vb: Public Sub New(r As Byte, g As Byte, b As Byte)
   overload: piine.Graphics.Color32.#ctor*
   modifiers.csharp:
@@ -313,15 +327,18 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
-    startLine: 40
+    startLine: 65
   assemblies:
   - piine
   namespace: piine.Graphics
+  summary: "\nConstructs a new color value from a 32 bit integer\n"
+  example: []
   syntax:
     content: public Color32(int rawRGBA)
     parameters:
     - id: rawRGBA
       type: System.Int32
+      description: RGBA components packed into an integer
     content.vb: Public Sub New(rawRGBA As Integer)
   overload: piine.Graphics.Color32.#ctor*
   modifiers.csharp:
@@ -346,7 +363,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Graphics/Color32.cs
-    startLine: 49
+    startLine: 74
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -385,7 +402,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Graphics/Color32.cs
-    startLine: 51
+    startLine: 76
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -424,7 +441,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Graphics/Color32.cs
-    startLine: 53
+    startLine: 78
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -461,7 +478,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Graphics/Color32.cs
-    startLine: 55
+    startLine: 80
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -499,7 +516,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Graphics/Color32.cs
-    startLine: 65
+    startLine: 90
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -534,7 +551,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Graphics/Color32.cs
-    startLine: 67
+    startLine: 92
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -569,7 +586,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Black
     path: src/Graphics/Color32.cs
-    startLine: 70
+    startLine: 95
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -606,7 +623,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: White
     path: src/Graphics/Color32.cs
-    startLine: 71
+    startLine: 96
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -643,7 +660,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Red
     path: src/Graphics/Color32.cs
-    startLine: 72
+    startLine: 97
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -680,7 +697,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Green
     path: src/Graphics/Color32.cs
-    startLine: 73
+    startLine: 98
   assemblies:
   - piine
   namespace: piine.Graphics
@@ -717,7 +734,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Blue
     path: src/Graphics/Color32.cs
-    startLine: 74
+    startLine: 99
   assemblies:
   - piine
   namespace: piine.Graphics

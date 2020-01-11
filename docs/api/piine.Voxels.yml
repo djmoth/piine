@@ -4,7 +4,7 @@ items:
   commentId: N:piine.Voxels
   id: piine.Voxels
   children:
-  - piine.Voxels.IColorVolume
+  - piine.Voxels.IVoxel
   - piine.Voxels.IVoxelVolume`1
   - piine.Voxels.ManagedVoxelGrid`1
   - piine.Voxels.ManagedVoxelOctree`1
@@ -21,11 +21,11 @@ items:
   assemblies:
   - piine
 references:
-- uid: piine.Voxels.IColorVolume
-  commentId: T:piine.Voxels.IColorVolume
-  name: IColorVolume
-  nameWithType: IColorVolume
-  fullName: piine.Voxels.IColorVolume
+- uid: piine.Voxels.IVoxel
+  commentId: T:piine.Voxels.IVoxel
+  name: IVoxel
+  nameWithType: IVoxel
+  fullName: piine.Voxels.IVoxel
 - uid: piine.Voxels.IVoxelVolume`1
   commentId: T:piine.Voxels.IVoxelVolume`1
   name: IVoxelVolume<T>

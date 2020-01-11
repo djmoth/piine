@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Numerics;
+//using System.Numerics;
+using UnityEngine;
 using System.Runtime.InteropServices;
 
 namespace piine
@@ -19,9 +20,8 @@ namespace piine
         public static ref readonly Float2 UnitX => ref unitX;
         public static ref readonly Float2 UnitY => ref unitY;
 
-        [CLSCompliant (false)]
         [FieldOffset (0)]
-        public fixed float components[Size];
+        internal fixed float components[Size];
 
         [FieldOffset (0)]
         public float x;
@@ -62,8 +62,17 @@ namespace piine
             }
         }
 
+        /// <summary>
+        /// Get the value of a component without any bounds checking. Be mindful when working with this.
+        /// </summary>
+        /// <param name="index">The 0-based index of the component</param>
         public float GetUnsafe (int index) => components[index];
 
+        /// <summary>
+        /// Set the value of a component without any bounds checking. Be mindful when working with this.
+        /// </summary>
+        /// <param name="index">The 0-based index of the component</param>
+        /// <param name="value">The value to write</param>
         public void SetUnsafe (int index, float value) => components[index] = value;    
 
         public float CalculateArea () => x * y;
@@ -88,7 +97,7 @@ namespace piine
 
         public static explicit operator Vector2 (Float2 v) => new Vector2 (v.x, v.y);
 
-        public static explicit operator Float2 (Vector2 v) => new Float2 (v.X, v.Y);
+        public static explicit operator Float2 (Vector2 v) => new Float2 (v.x, v.y);
 
         public static implicit operator Float2 ((float x, float y) v) => new Float2 (v.x, v.y);
 

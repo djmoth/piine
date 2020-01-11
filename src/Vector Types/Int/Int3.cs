@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Numerics;
+//using System.Numerics;
+using UnityEngine;
 using System.Runtime.InteropServices;
 
 namespace piine
@@ -20,10 +21,9 @@ namespace piine
         public static ref readonly Int3 UnitX => ref unitX;
         public static ref readonly Int3 UnitY => ref unitY;
         public static ref readonly Int3 UnitZ => ref unitZ;
-
-        [CLSCompliant (false)]
+        
         [FieldOffset (0)]
-        public fixed int components[Size];
+        internal fixed int components[Size];
 
         [FieldOffset (0)]
         public int x;
@@ -52,13 +52,6 @@ namespace piine
             x = all;
             y = all;
             z = all;
-        }
-
-        public Int3 (Vector<int> v, int startIndex = 0)
-        {
-            x = v[startIndex];
-            y = v[startIndex + 1];
-            z = v[startIndex + 2];
         }
 
         public int this[int index]
@@ -112,7 +105,7 @@ namespace piine
 
         public static explicit operator Vector3 (Int3 v) => new Vector3 (v.x, v.y, v.z);
 
-        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
+        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
         public static implicit operator Int3 ((int x, int y, int z) v) => new Int3 (v.x, v.y, v.z);
 

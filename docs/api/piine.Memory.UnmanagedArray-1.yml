@@ -58,7 +58,6 @@ items:
       description: The unmanaged type that the array will contain
     content.vb: >-
       Public Class UnmanagedArray(Of T As Structure)
-
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -1853,7 +1852,7 @@ references:
   nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray
   fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray
 - uid: System.Span{{T}}
-  commentId: T:System.Span{`0}
+  commentId: T:System.Span{``0}
   parent: System
   definition: System.Span`1
   name: Span<T>

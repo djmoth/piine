@@ -10,7 +10,6 @@ items:
   - piine.Float3.Absolute(piine.Float3)
   - piine.Float3.CalculateVolume
   - piine.Float3.Cross(piine.Float3,piine.Float3)
-  - piine.Float3.data
   - piine.Float3.Distance(piine.Float3,piine.Float3)
   - piine.Float3.Equals(piine.Float3)
   - piine.Float3.Equals(System.Object)
@@ -23,15 +22,14 @@ items:
   - piine.Float3.op_Addition(piine.Float3,piine.Float3)
   - piine.Float3.op_Division(piine.Float3,System.Single)
   - piine.Float3.op_Equality(piine.Float3,piine.Float3)
-  - piine.Float3.op_Equality(piine.Float3,System.Numerics.Vector3)
-  - piine.Float3.op_Explicit(piine.Float3)~System.Numerics.Vector3
-  - piine.Float3.op_Explicit(System.Numerics.Vector3)~piine.Float3
+  - piine.Float3.op_Explicit(piine.Float3)~UnityEngine.Vector3
+  - piine.Float3.op_Explicit(piine.Int3)~piine.Float3
+  - piine.Float3.op_Explicit(UnityEngine.Vector3)~piine.Float3
   - piine.Float3.op_GreaterThan(piine.Float3,piine.Float3)
   - piine.Float3.op_GreaterThanOrEqual(piine.Float3,piine.Float3)
   - piine.Float3.op_Implicit(piine.Float3)~System.ValueTuple{System.Single,System.Single,System.Single}
   - piine.Float3.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single})~piine.Float3
   - piine.Float3.op_Inequality(piine.Float3,piine.Float3)
-  - piine.Float3.op_Inequality(piine.Float3,System.Numerics.Vector3)
   - piine.Float3.op_LessThan(piine.Float3,piine.Float3)
   - piine.Float3.op_LessThanOrEqual(piine.Float3,piine.Float3)
   - piine.Float3.op_Multiply(piine.Float3,System.Single)
@@ -39,6 +37,7 @@ items:
   - piine.Float3.op_UnaryNegation(piine.Float3)
   - piine.Float3.SetUnsafe(System.Int32,System.Single)
   - piine.Float3.Size
+  - piine.Float3.ToString
   - piine.Float3.UnitX
   - piine.Float3.UnitY
   - piine.Float3.UnitZ
@@ -58,12 +57,12 @@ items:
   type: Struct
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Float3
-    path: src/Float3.cs
-    startLine: 6
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 7
   assemblies:
   - piine
   namespace: piine
@@ -71,13 +70,11 @@ items:
     content: 'public struct Float3 : IEquatable<Float3>'
     content.vb: >-
       Public Structure Float3
-
           Implements IEquatable(Of Float3)
   implements:
   - System.IEquatable{piine.Float3}
   inheritedMembers:
   - System.ValueType.GetHashCode
-  - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -100,12 +97,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Size
-    path: src/Float3.cs
-    startLine: 9
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 10
   assemblies:
   - piine
   namespace: piine
@@ -133,12 +130,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Zero
-    path: src/Float3.cs
-    startLine: 17
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 18
   assemblies:
   - piine
   namespace: piine
@@ -170,12 +167,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: One
-    path: src/Float3.cs
-    startLine: 18
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 19
   assemblies:
   - piine
   namespace: piine
@@ -207,12 +204,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: UnitX
-    path: src/Float3.cs
-    startLine: 19
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 20
   assemblies:
   - piine
   namespace: piine
@@ -244,12 +241,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: UnitY
-    path: src/Float3.cs
-    startLine: 20
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 21
   assemblies:
   - piine
   namespace: piine
@@ -281,12 +278,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: UnitZ
-    path: src/Float3.cs
-    startLine: 21
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 22
   assemblies:
   - piine
   namespace: piine
@@ -305,49 +302,6 @@ items:
   - Public
   - Shared
   - ReadOnly
-- uid: piine.Float3.data
-  commentId: F:piine.Float3.data
-  id: data
-  parent: piine.Float3
-  langs:
-  - csharp
-  - vb
-  name: data
-  nameWithType: Float3.data
-  fullName: piine.Float3.data
-  type: Field
-  source:
-    remote:
-      path: src/Float3.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: data
-    path: src/Float3.cs
-    startLine: 25
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: >-
-      [CLSCompliant(false)]
-
-      public float *data
-    return:
-      type: System.Single*
-    content.vb: >-
-      <CLSCompliant(False)>
-
-      Public data As Single
-  attributes:
-  - type: System.CLSCompliantAttribute
-    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
-    arguments:
-    - type: System.Boolean
-      value: false
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: piine.Float3.x
   commentId: F:piine.Float3.x
   id: x
@@ -361,11 +315,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: x
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 28
   assemblies:
   - piine
@@ -392,11 +346,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: y
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 30
   assemblies:
   - piine
@@ -423,11 +377,11 @@ items:
   type: Field
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: z
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 32
   assemblies:
   - piine
@@ -454,11 +408,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: XY
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 34
   assemblies:
   - piine
@@ -489,11 +443,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: XZ
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 35
   assemblies:
   - piine
@@ -524,11 +478,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: YZ
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 36
   assemblies:
   - piine
@@ -559,11 +513,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Length
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 38
   assemblies:
   - piine
@@ -594,11 +548,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 40
   assemblies:
   - piine
@@ -629,11 +583,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 42
   assemblies:
   - piine
@@ -666,11 +620,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 49
   assemblies:
   - piine
@@ -699,11 +653,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: this[]
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 56
   assemblies:
   - piine
@@ -739,11 +693,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetUnsafe
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 74
   assemblies:
   - piine
@@ -774,11 +728,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetUnsafe
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 76
   assemblies:
   - piine
@@ -796,6 +750,38 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: piine.Float3.CalculateVolume
+  commentId: M:piine.Float3.CalculateVolume
+  id: CalculateVolume
+  parent: piine.Float3
+  langs:
+  - csharp
+  - vb
+  name: CalculateVolume()
+  nameWithType: Float3.CalculateVolume()
+  fullName: piine.Float3.CalculateVolume()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float3.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculateVolume
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 78
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float CalculateVolume()
+    return:
+      type: System.Single
+    content.vb: Public Function CalculateVolume As Single
+  overload: piine.Float3.CalculateVolume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: piine.Float3.Normalize(piine.Float3)
   commentId: M:piine.Float3.Normalize(piine.Float3)
   id: Normalize(piine.Float3)
@@ -809,12 +795,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Normalize
-    path: src/Float3.cs
-    startLine: 78
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 80
   assemblies:
   - piine
   namespace: piine
@@ -833,38 +819,6 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Float3.CalculateVolume
-  commentId: M:piine.Float3.CalculateVolume
-  id: CalculateVolume
-  parent: piine.Float3
-  langs:
-  - csharp
-  - vb
-  name: CalculateVolume()
-  nameWithType: Float3.CalculateVolume()
-  fullName: piine.Float3.CalculateVolume()
-  type: Method
-  source:
-    remote:
-      path: src/Float3.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: CalculateVolume
-    path: src/Float3.cs
-    startLine: 91
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public float CalculateVolume()
-    return:
-      type: System.Single
-    content.vb: Public Function CalculateVolume As Single
-  overload: piine.Float3.CalculateVolume*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: piine.Float3.Absolute(piine.Float3)
   commentId: M:piine.Float3.Absolute(piine.Float3)
   id: Absolute(piine.Float3)
@@ -878,11 +832,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Absolute
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 93
   assemblies:
   - piine
@@ -915,11 +869,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Distance
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 98
   assemblies:
   - piine
@@ -954,11 +908,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Cross
-    path: src/Float3.cs
+    path: src/Vector Types/Float/Float3.cs
     startLine: 103
   assemblies:
   - piine
@@ -980,25 +934,65 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Float3.op_Explicit(piine.Float3)~System.Numerics.Vector3
-  commentId: M:piine.Float3.op_Explicit(piine.Float3)~System.Numerics.Vector3
-  id: op_Explicit(piine.Float3)~System.Numerics.Vector3
+- uid: piine.Float3.op_Explicit(piine.Int3)~piine.Float3
+  commentId: M:piine.Float3.op_Explicit(piine.Int3)~piine.Float3
+  id: op_Explicit(piine.Int3)~piine.Float3
+  parent: piine.Float3
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Int3 to Float3)
+  nameWithType: Float3.Explicit(Int3 to Float3)
+  fullName: piine.Float3.Explicit(piine.Int3 to piine.Float3)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Float/Float3.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 113
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Float3(Int3 v)
+    parameters:
+    - id: v
+      type: piine.Int3
+    return:
+      type: piine.Float3
+    content.vb: Public Shared Narrowing Operator CType(v As Int3) As Float3
+  overload: piine.Float3.op_Explicit*
+  nameWithType.vb: Float3.Narrowing(Int3 to Float3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Float3.Narrowing(piine.Int3 to piine.Float3)
+  name.vb: Narrowing(Int3 to Float3)
+- uid: piine.Float3.op_Explicit(piine.Float3)~UnityEngine.Vector3
+  commentId: M:piine.Float3.op_Explicit(piine.Float3)~UnityEngine.Vector3
+  id: op_Explicit(piine.Float3)~UnityEngine.Vector3
   parent: piine.Float3
   langs:
   - csharp
   - vb
   name: Explicit(Float3 to Vector3)
   nameWithType: Float3.Explicit(Float3 to Vector3)
-  fullName: piine.Float3.Explicit(piine.Float3 to System.Numerics.Vector3)
+  fullName: piine.Float3.Explicit(piine.Float3 to UnityEngine.Vector3)
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
-    path: src/Float3.cs
-    startLine: 113
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 115
   assemblies:
   - piine
   namespace: piine
@@ -1008,7 +1002,7 @@ items:
     - id: v
       type: piine.Float3
     return:
-      type: System.Numerics.Vector3
+      type: UnityEngine.Vector3
     content.vb: Public Shared Narrowing Operator CType(v As Float3) As Vector3
   overload: piine.Float3.op_Explicit*
   nameWithType.vb: Float3.Narrowing(Float3 to Vector3)
@@ -1018,27 +1012,27 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Float3.Narrowing(piine.Float3 to System.Numerics.Vector3)
+  fullName.vb: piine.Float3.Narrowing(piine.Float3 to UnityEngine.Vector3)
   name.vb: Narrowing(Float3 to Vector3)
-- uid: piine.Float3.op_Explicit(System.Numerics.Vector3)~piine.Float3
-  commentId: M:piine.Float3.op_Explicit(System.Numerics.Vector3)~piine.Float3
-  id: op_Explicit(System.Numerics.Vector3)~piine.Float3
+- uid: piine.Float3.op_Explicit(UnityEngine.Vector3)~piine.Float3
+  commentId: M:piine.Float3.op_Explicit(UnityEngine.Vector3)~piine.Float3
+  id: op_Explicit(UnityEngine.Vector3)~piine.Float3
   parent: piine.Float3
   langs:
   - csharp
   - vb
   name: Explicit(Vector3 to Float3)
   nameWithType: Float3.Explicit(Vector3 to Float3)
-  fullName: piine.Float3.Explicit(System.Numerics.Vector3 to piine.Float3)
+  fullName: piine.Float3.Explicit(UnityEngine.Vector3 to piine.Float3)
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
-    path: src/Float3.cs
-    startLine: 115
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 117
   assemblies:
   - piine
   namespace: piine
@@ -1046,7 +1040,7 @@ items:
     content: public static explicit operator Float3(Vector3 v)
     parameters:
     - id: v
-      type: System.Numerics.Vector3
+      type: UnityEngine.Vector3
     return:
       type: piine.Float3
     content.vb: Public Shared Narrowing Operator CType(v As Vector3) As Float3
@@ -1058,7 +1052,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Float3.Narrowing(System.Numerics.Vector3 to piine.Float3)
+  fullName.vb: piine.Float3.Narrowing(UnityEngine.Vector3 to piine.Float3)
   name.vb: Narrowing(Vector3 to Float3)
 - uid: piine.Float3.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single})~piine.Float3
   commentId: M:piine.Float3.op_Implicit(System.ValueTuple{System.Single,System.Single,System.Single})~piine.Float3
@@ -1073,12 +1067,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
-    path: src/Float3.cs
-    startLine: 117
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 119
   assemblies:
   - piine
   namespace: piine
@@ -1113,12 +1107,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
-    path: src/Float3.cs
-    startLine: 122
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 121
   assemblies:
   - piine
   namespace: piine
@@ -1153,12 +1147,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
-    path: src/Float3.cs
-    startLine: 127
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 123
   assemblies:
   - piine
   namespace: piine
@@ -1192,12 +1186,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
-    path: src/Float3.cs
-    startLine: 135
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 125
   assemblies:
   - piine
   namespace: piine
@@ -1218,84 +1212,6 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Float3.op_Equality(piine.Float3,System.Numerics.Vector3)
-  commentId: M:piine.Float3.op_Equality(piine.Float3,System.Numerics.Vector3)
-  id: op_Equality(piine.Float3,System.Numerics.Vector3)
-  parent: piine.Float3
-  langs:
-  - csharp
-  - vb
-  name: Equality(Float3, Vector3)
-  nameWithType: Float3.Equality(Float3, Vector3)
-  fullName: piine.Float3.Equality(piine.Float3, System.Numerics.Vector3)
-  type: Operator
-  source:
-    remote:
-      path: src/Float3.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: op_Equality
-    path: src/Float3.cs
-    startLine: 143
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static bool operator ==(Float3 a, Vector3 b)
-    parameters:
-    - id: a
-      type: piine.Float3
-    - id: b
-      type: System.Numerics.Vector3
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Operator =(a As Float3, b As Vector3) As Boolean
-  overload: piine.Float3.op_Equality*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: piine.Float3.op_Inequality(piine.Float3,System.Numerics.Vector3)
-  commentId: M:piine.Float3.op_Inequality(piine.Float3,System.Numerics.Vector3)
-  id: op_Inequality(piine.Float3,System.Numerics.Vector3)
-  parent: piine.Float3
-  langs:
-  - csharp
-  - vb
-  name: Inequality(Float3, Vector3)
-  nameWithType: Float3.Inequality(Float3, Vector3)
-  fullName: piine.Float3.Inequality(piine.Float3, System.Numerics.Vector3)
-  type: Operator
-  source:
-    remote:
-      path: src/Float3.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: op_Inequality
-    path: src/Float3.cs
-    startLine: 151
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static bool operator !=(Float3 a, Vector3 b)
-    parameters:
-    - id: a
-      type: piine.Float3
-    - id: b
-      type: System.Numerics.Vector3
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Operator <>(a As Float3, b As Vector3) As Boolean
-  overload: piine.Float3.op_Inequality*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: piine.Float3.op_Addition(piine.Float3,piine.Float3)
   commentId: M:piine.Float3.op_Addition(piine.Float3,piine.Float3)
   id: op_Addition(piine.Float3,piine.Float3)
@@ -1309,12 +1225,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
-    path: src/Float3.cs
-    startLine: 159
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 127
   assemblies:
   - piine
   namespace: piine
@@ -1348,12 +1264,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
-    path: src/Float3.cs
-    startLine: 164
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 129
   assemblies:
   - piine
   namespace: piine
@@ -1387,12 +1303,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
-    path: src/Float3.cs
-    startLine: 169
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 131
   assemblies:
   - piine
   namespace: piine
@@ -1424,12 +1340,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
-    path: src/Float3.cs
-    startLine: 174
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 133
   assemblies:
   - piine
   namespace: piine
@@ -1463,12 +1379,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_Division
-    path: src/Float3.cs
-    startLine: 179
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 135
   assemblies:
   - piine
   namespace: piine
@@ -1502,12 +1418,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
-    path: src/Float3.cs
-    startLine: 184
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 137
   assemblies:
   - piine
   namespace: piine
@@ -1541,12 +1457,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
-    path: src/Float3.cs
-    startLine: 186
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 139
   assemblies:
   - piine
   namespace: piine
@@ -1580,12 +1496,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
-    path: src/Float3.cs
-    startLine: 188
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 141
   assemblies:
   - piine
   namespace: piine
@@ -1619,12 +1535,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
-    path: src/Float3.cs
-    startLine: 190
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 143
   assemblies:
   - piine
   namespace: piine
@@ -1645,6 +1561,41 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: piine.Float3.ToString
+  commentId: M:piine.Float3.ToString
+  id: ToString
+  parent: piine.Float3
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Float3.ToString()
+  fullName: piine.Float3.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Float/Float3.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 145
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Float3.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 - uid: piine.Float3.Equals(piine.Float3)
   commentId: M:piine.Float3.Equals(piine.Float3)
   id: Equals(piine.Float3)
@@ -1658,12 +1609,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Equals
-    path: src/Float3.cs
-    startLine: 192
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 147
   assemblies:
   - piine
   namespace: piine
@@ -1695,12 +1646,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Float3.cs
+      path: src/Vector Types/Float/Float3.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Equals
-    path: src/Float3.cs
-    startLine: 194
+    path: src/Vector Types/Float/Float3.cs
+    startLine: 149
   assemblies:
   - piine
   namespace: piine
@@ -1792,37 +1743,6 @@ references:
     name: GetHashCode
     nameWithType: ValueType.GetHashCode
     fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.ValueType.ToString
-  commentId: M:System.ValueType.ToString
-  parent: System.ValueType
-  isExternal: true
-  name: ToString()
-  nameWithType: ValueType.ToString()
-  fullName: System.ValueType.ToString()
-  spec.csharp:
-  - uid: System.ValueType.ToString
-    name: ToString
-    nameWithType: ValueType.ToString
-    fullName: System.ValueType.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.ValueType.ToString
-    name: ToString
-    nameWithType: ValueType.ToString
-    fullName: System.ValueType.ToString
     isExternal: true
   - name: (
     nameWithType: (
@@ -2072,29 +1992,6 @@ references:
   name: UnitZ
   nameWithType: Float3.UnitZ
   fullName: piine.Float3.UnitZ
-- uid: System.Single*
-  isExternal: true
-  name: Single*
-  nameWithType: Single*
-  fullName: System.Single*
-  spec.csharp:
-  - uid: System.Single
-    name: Single
-    nameWithType: Single
-    fullName: System.Single
-    isExternal: true
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
-  spec.vb:
-  - uid: System.Single
-    name: Single
-    nameWithType: Single
-    fullName: System.Single
-    isExternal: true
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -2153,16 +2050,16 @@ references:
   name: SetUnsafe
   nameWithType: Float3.SetUnsafe
   fullName: piine.Float3.SetUnsafe
-- uid: piine.Float3.Normalize*
-  commentId: Overload:piine.Float3.Normalize
-  name: Normalize
-  nameWithType: Float3.Normalize
-  fullName: piine.Float3.Normalize
 - uid: piine.Float3.CalculateVolume*
   commentId: Overload:piine.Float3.CalculateVolume
   name: CalculateVolume
   nameWithType: Float3.CalculateVolume
   fullName: piine.Float3.CalculateVolume
+- uid: piine.Float3.Normalize*
+  commentId: Overload:piine.Float3.Normalize
+  name: Normalize
+  nameWithType: Float3.Normalize
+  fullName: piine.Float3.Normalize
 - uid: piine.Float3.Absolute*
   commentId: Overload:piine.Float3.Absolute
   name: Absolute
@@ -2186,19 +2083,25 @@ references:
   nameWithType.vb: Float3.Narrowing
   fullName.vb: piine.Float3.Narrowing
   name.vb: Narrowing
-- uid: System.Numerics.Vector3
-  commentId: T:System.Numerics.Vector3
-  parent: System.Numerics
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
   isExternal: true
   name: Vector3
   nameWithType: Vector3
-  fullName: System.Numerics.Vector3
-- uid: System.Numerics
-  commentId: N:System.Numerics
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
   isExternal: true
-  name: System.Numerics
-  nameWithType: System.Numerics
-  fullName: System.Numerics
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
 - uid: piine.Float3.op_Implicit*
   commentId: Overload:piine.Float3.op_Implicit
   name: Implicit
@@ -2345,6 +2248,49 @@ references:
   name: LessThanOrEqual
   nameWithType: Float3.LessThanOrEqual
   fullName: piine.Float3.LessThanOrEqual
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Float3.ToString*
+  commentId: Overload:piine.Float3.ToString
+  name: ToString
+  nameWithType: Float3.ToString
+  fullName: piine.Float3.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: piine.Float3.Equals*
   commentId: Overload:piine.Float3.Equals
   name: Equals

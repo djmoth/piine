@@ -26,11 +26,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedVoxelGrid
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 11
   assemblies:
   - piine
@@ -44,9 +44,7 @@ items:
       description: Unmanaged Type of voxels
     content.vb: >-
       Public Class UnmanagedVoxelGrid(Of T As Structure)
-
           Inherits VoxelGrid(Of T)
-
           Implements IVoxelVolume(Of T), IDisposable
   inheritance:
   - System.Object
@@ -93,11 +91,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Width
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 15
   assemblies:
   - piine
@@ -133,11 +131,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Height
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 16
   assemblies:
   - piine
@@ -173,11 +171,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Depth
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 17
   assemblies:
   - piine
@@ -213,11 +211,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 19
   assemblies:
   - piine
@@ -252,11 +250,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 28
   assemblies:
   - piine
@@ -292,11 +290,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxelUnsafe
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 43
   assemblies:
   - piine
@@ -333,11 +331,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 45
   assemblies:
   - piine
@@ -373,11 +371,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxelUnsafe
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 59
   assemblies:
   - piine
@@ -413,11 +411,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Finalize
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 61
   assemblies:
   - piine
@@ -445,11 +443,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Dispose
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 63
   assemblies:
   - piine
@@ -479,11 +477,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Dispose
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 72
   assemblies:
   - piine
@@ -518,11 +516,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/UnmanagedVoxelGrid.cs
+      path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
-    path: src/Voxels/UnmanagedVoxelGrid.cs
+    path: src/Voxels/Volumes/UnmanagedVoxelGrid.cs
     startLine: 81
   assemblies:
   - piine

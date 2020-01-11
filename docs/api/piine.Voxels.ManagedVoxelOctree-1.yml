@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: ManagedVoxelOctree
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 6
   assemblies:
   - piine
@@ -35,9 +35,7 @@ items:
     - id: T
     content.vb: >-
       Public Class ManagedVoxelOctree(Of T)
-
           Inherits VoxelOctree(Of T)
-
           Implements IVoxelVolume(Of T)
   inheritance:
   - System.Object
@@ -79,11 +77,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: Size
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 10
   assemblies:
   - piine
@@ -119,11 +117,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: MaxSubdivisions
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 11
   assemblies:
   - piine
@@ -156,11 +154,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: IsEmpty
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 12
   assemblies:
   - piine
@@ -193,11 +191,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 14
   assemblies:
   - piine
@@ -228,11 +226,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: SetVoxel
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 24
   assemblies:
   - piine
@@ -268,11 +266,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Voxels/ManagedVoxelOctree.cs
+      path: src/Voxels/Volumes/ManagedVoxelOctree.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
     id: GetVoxel
-    path: src/Voxels/ManagedVoxelOctree.cs
+    path: src/Voxels/Volumes/ManagedVoxelOctree.cs
     startLine: 44
   assemblies:
   - piine

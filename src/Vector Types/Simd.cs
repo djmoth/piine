@@ -8,6 +8,8 @@ namespace piine
     {
         public static unsafe Int3 Sum (Span<Int3> vectors)
         {
+            throw new NotImplementedException ();
+
             fixed (Int3* vectorPtr = vectors)
             {
                 Vector<int> result = Unsafe.ReadUnaligned<Vector<int>> (vectorPtr);
@@ -20,7 +22,7 @@ namespace piine
                     result += vector;
                 }
 
-                return new Int3 (result);
+                return new Int3 (0);
 
                 /*int fullVectorsInSIMD = Vector<int>.Count / Size; //The number of IntVector3's that fit in one Vector<int>
                 int simdLength = fullVectorsInSIMD * Size; //Number of ints that fit in fullVectorsInSIMD
