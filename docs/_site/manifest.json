@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Int3Tests.html",
-          "hash": "KZavfBFEG/i5l+4mZzwlag=="
+          "hash": "wneN8HVD1rdi4EiRhozxMQ=="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedArrayTests.html",
-          "hash": "ijavwfWB2dyBdyJm4W9iGg=="
+          "hash": "vBC1fh3RVRZRotCiDqrHIw=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedListTests.html",
-          "hash": "vLD8/GdA5MfyzY+OEvcaLQ=="
+          "hash": "g39V8JAXeetDEyTMrolbgg=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.html",
-          "hash": "tz2LWNfD1zdLAD/5ul6E9Q=="
+          "hash": "+iKO+gK6zmY6mCxr8DJq5A=="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.html",
-          "hash": "hij36okvO9d5tM9A1Mjjwg=="
+          "hash": "dnVMqQQ6Owx7X3+CZUlwDg=="
         }
       },
       "is_incremental": true,
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Double2.html",
-          "hash": "Z/HSfeGAV7HfuDhAd3KLZQ=="
+          "hash": "eHvol2ZsDPgwOBY31NDHgA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float2.html",
-          "hash": "v576GekQkXwMKzqEDsbaow=="
+          "hash": "j+rzuO3S7kcN5LVHLulcwQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float3.html",
-          "hash": "h1tgYV+PC+FmV4TIb4n4Uw=="
+          "hash": "M5MvcUqGiqeFg3jnCTSiEA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float4.html",
-          "hash": "Rcbc8n0rqRjWODN8upTt+g=="
+          "hash": "vkwd+T7BDM+V3rvSd/5W4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.Color32.html",
-          "hash": "lEW5yPR/k4gNx0ifr4kYyA=="
+          "hash": "TfRBSjArXXxKdYQ2gUKWaA=="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.Voxels.NaiveVoxelMesher.html",
-          "hash": "LPrs6giVwUmrwsQnNfbQ6Q=="
+          "hash": "vw9ZDebnWvDysu+obgMvZw=="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.Voxels.html",
-          "hash": "SN9eIJLFucszeldXfRCBlg=="
+          "hash": "7TNBvijHO14mQhfS/3sKfQ=="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.html",
-          "hash": "i8c/FkXMY4D7ZizyXQ5A/g=="
+          "hash": "/dECAK4RDcGrwSGqJ+PbkQ=="
         }
       },
       "is_incremental": true,
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int2.html",
-          "hash": "RNA5G56Gumng692Ouphjfg=="
+          "hash": "KabfFYDXOPoScDWIolwaZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int3.html",
-          "hash": "0hp19ztdwkjlXGnFJCbiZA=="
+          "hash": "0ghBx30pWc4aKfcAFjRUaQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int4.html",
-          "hash": "4g4xEH/JiVwK59BiA0XiSw=="
+          "hash": "d+0IPnD5pnVmHYh5pAiq4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.Unmanaged.html",
-          "hash": "ooEk3wp91xEitlH/LQwV7g=="
+          "hash": "15zuBa7au6h1SSGylzKZxA=="
         }
       },
       "is_incremental": true,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.Enumerator.html",
-          "hash": "vd670UNq8Oo8oLUTbVCUAQ=="
+          "hash": "ReCNNXlXUulCC5uaY2btnA=="
         }
       },
       "is_incremental": true,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.html",
-          "hash": "vmb8D/PcBHhB/0/8XKR/ag=="
+          "hash": "DsmBBh7daEzFF9klwPz6zA=="
         }
       },
       "is_incremental": true,
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.Enumerator.html",
-          "hash": "+tcUrgesG1zmbpaS/Gc/Hg=="
+          "hash": "LV9KW+p8d6OOK/CSzA+N6Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.html",
-          "hash": "wzPeiwqqASgSQWC88iN27g=="
+          "hash": "zO10FO3p/uLanZNr8qRdzw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.html",
-          "hash": "2P5RXKw33X1CTgG4z1wLcg=="
+          "hash": "eNR9qaxhsIA2DyJAHX48pg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Piine.html",
-          "hash": "VYTO/3BzAs4ZzeAwRTc2cA=="
+          "hash": "2yqT60Qr8c3HG9e5MBqKSA=="
         }
       },
       "is_incremental": true,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Procedural.OpenSimplexNoise.html",
-          "hash": "n8XK8e7/3mUOTvtXKatb/w=="
+          "hash": "1Vtna4ZnY8/L0Q2IiPnH7Q=="
         }
       },
       "is_incremental": true,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Procedural.html",
-          "hash": "WDC6DZMRmh0rrAGKnsPgIA=="
+          "hash": "Pi7xdH0PZnyNtFMAKu5ROg=="
         }
       },
       "is_incremental": true,
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Simd.html",
-          "hash": "MNmKsty3G6KzgWqsDBNxDQ=="
+          "hash": "6lAFiqI81WkQWh69GV+Ouw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.IVoxel.html",
-          "hash": "b0M8oEdEkdCkSGCDHrtQaw=="
+          "hash": "AQAt3jXKkZe8mVY8jJ7AwA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.IVoxelVolume-1.html",
-          "hash": "n7DSmy5c9p70aVp+YccLqg=="
+          "hash": "dOFgheEdnxI4iPo7v4dMOg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.ManagedVoxelGrid-1.html",
-          "hash": "shcicAxLhHhd/XkMTDC7ug=="
+          "hash": "YQUqI4Y5xYF27ZD+Wj0c/w=="
         }
       },
       "is_incremental": true,
@@ -357,10 +357,22 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.ManagedVoxelOctree-1.html",
-          "hash": "/3VtMOzv6DtsGZajyVcObA=="
+          "hash": "IseNgev1gqXRV/Dqp05vsQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Voxels.TempVoxelGrid-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Voxels.TempVoxelGrid-1.html",
+          "hash": "+iVnvsx9+sz0WJ8eRFG7xA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.UnmanagedVoxelGrid-1.html",
-          "hash": "Zg4YimL9E6rFGDHcQfGd0w=="
+          "hash": "es/6aK8cg3AS+mGpXrygdw=="
         }
       },
       "is_incremental": true,
@@ -381,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.VoxelGrid-1.html",
-          "hash": "2aszlFS93/dFv3ARSGSwdg=="
+          "hash": "eUR7rx4WjyTcjgt0vb6/MA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.VoxelOctree-1.html",
-          "hash": "gsaiO1dkZ2LyL8hAe9g51g=="
+          "hash": "uOJUlv360nbZaWw/PY5y8Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Voxels.html",
-          "hash": "iUOlZnVsdUx43p15HDGPYg=="
+          "hash": "QzyG3bCpUVJ/H+x+XYb10g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.html",
-          "hash": "yhIGHIQ36LNVzNp0UeKmEQ=="
+          "hash": "Hwd+5y4bBSzpV2Yr0GHwhw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/tests.Voxels.VoxelVolumeTests.html",
-          "hash": "jaTAjZ0ub80gNekkJmFblw=="
+          "hash": "dS/MN3iQ9DCng0nIErBYbg=="
         }
       },
       "is_incremental": true,
@@ -441,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/tests.Voxels.html",
-          "hash": "Uz1xIOlBZsOGFcBmQ2K79w=="
+          "hash": "GZg5HbD/RdBY6E/QZnudZQ=="
         }
       },
       "is_incremental": true,
@@ -467,8 +479,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 37,
-          "skipped_file_count": 31
+          "total_file_count": 38,
+          "skipped_file_count": 36
         }
       }
     },

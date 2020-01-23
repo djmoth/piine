@@ -25,7 +25,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Enumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 290
+    startLine: 295
   assemblies:
   - piine
   namespace: piine.Memory
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Current
     path: src/Memory/UnmanagedList.cs
-    startLine: 293
+    startLine: 298
   assemblies:
   - piine
   namespace: piine.Memory
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerator.Current
     path: src/Memory/UnmanagedList.cs
-    startLine: 294
+    startLine: 299
   assemblies:
   - piine
   namespace: piine.Memory
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 298
+    startLine: 303
   assemblies:
   - piine
   namespace: piine.Memory
@@ -186,7 +186,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: MoveNext
     path: src/Memory/UnmanagedList.cs
-    startLine: 304
+    startLine: 309
   assemblies:
   - piine
   namespace: piine.Memory
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Reset
     path: src/Memory/UnmanagedList.cs
-    startLine: 311
+    startLine: 316
   assemblies:
   - piine
   namespace: piine.Memory
@@ -256,7 +256,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 316
+    startLine: 321
   assemblies:
   - piine
   namespace: piine.Memory

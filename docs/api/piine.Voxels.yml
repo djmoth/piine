@@ -8,6 +8,7 @@ items:
   - piine.Voxels.IVoxelVolume`1
   - piine.Voxels.ManagedVoxelGrid`1
   - piine.Voxels.ManagedVoxelOctree`1
+  - piine.Voxels.TempVoxelGrid`1
   - piine.Voxels.UnmanagedVoxelGrid`1
   - piine.Voxels.VoxelGrid`1
   - piine.Voxels.VoxelOctree`1
@@ -125,6 +126,42 @@ references:
     name: ManagedVoxelOctree
     nameWithType: ManagedVoxelOctree
     fullName: piine.Voxels.ManagedVoxelOctree
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Voxels.TempVoxelGrid`1
+  commentId: T:piine.Voxels.TempVoxelGrid`1
+  name: TempVoxelGrid<T>
+  nameWithType: TempVoxelGrid<T>
+  fullName: piine.Voxels.TempVoxelGrid<T>
+  nameWithType.vb: TempVoxelGrid(Of T)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T)
+  name.vb: TempVoxelGrid(Of T)
+  spec.csharp:
+  - uid: piine.Voxels.TempVoxelGrid`1
+    name: TempVoxelGrid
+    nameWithType: TempVoxelGrid
+    fullName: piine.Voxels.TempVoxelGrid
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Voxels.TempVoxelGrid`1
+    name: TempVoxelGrid
+    nameWithType: TempVoxelGrid
+    fullName: piine.Voxels.TempVoxelGrid
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '

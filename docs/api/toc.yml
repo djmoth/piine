@@ -66,6 +66,9 @@
   - uid: piine.Voxels.ManagedVoxelOctree`1
     name: ManagedVoxelOctree<T>
     name.vb: ManagedVoxelOctree(Of T)
+  - uid: piine.Voxels.TempVoxelGrid`1
+    name: TempVoxelGrid<T>
+    name.vb: TempVoxelGrid(Of T)
   - uid: piine.Voxels.UnmanagedVoxelGrid`1
     name: UnmanagedVoxelGrid<T>
     name.vb: UnmanagedVoxelGrid(Of T)

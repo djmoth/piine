@@ -18,6 +18,7 @@ items:
   - piine.Memory.UnmanagedList`1.Dispose(System.Boolean)
   - piine.Memory.UnmanagedList`1.Finalize
   - piine.Memory.UnmanagedList`1.GetEnumerator
+  - piine.Memory.UnmanagedList`1.GetInternalPointer
   - piine.Memory.UnmanagedList`1.IndexOf(`0)
   - piine.Memory.UnmanagedList`1.Insert(System.Int32,`0)
   - piine.Memory.UnmanagedList`1.Item(System.Int32)
@@ -199,6 +200,57 @@ items:
   - Public
   - ReadOnly
   fullName.vb: piine.Memory.UnmanagedList(Of T).Allocated
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer
+  commentId: P:piine.Memory.UnmanagedList`1.GetInternalPointer
+  id: GetInternalPointer
+  parent: piine.Memory.UnmanagedList`1
+  langs:
+  - csharp
+  - vb
+  name: GetInternalPointer
+  nameWithType: UnmanagedList<T>.GetInternalPointer
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
+  type: Property
+  source:
+    remote:
+      path: src/Memory/UnmanagedList.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetInternalPointer
+    path: src/Memory/UnmanagedList.cs
+    startLine: 35
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nReturn the underlying pointer for the list. Be mindful when working with this.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public T*GetInternalPointer { get; }
+    parameters: []
+    return:
+      type: '{T}*'
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public ReadOnly Property GetInternalPointer As T
+  overload: piine.Memory.UnmanagedList`1.GetInternalPointer*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
 - uid: piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   commentId: P:piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   id: System#Collections#Generic#ICollection{T}#IsReadOnly
@@ -218,7 +270,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedList.cs
-    startLine: 35
+    startLine: 40
   assemblies:
   - piine
   namespace: piine.Memory
@@ -258,7 +310,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedList.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - piine
   namespace: piine.Memory
@@ -303,7 +355,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - piine
   namespace: piine.Memory
@@ -335,7 +387,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 65
+    startLine: 70
   assemblies:
   - piine
   namespace: piine.Memory
@@ -370,7 +422,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Add
     path: src/Memory/UnmanagedList.cs
-    startLine: 102
+    startLine: 107
   assemblies:
   - piine
   namespace: piine.Memory
@@ -410,7 +462,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Insert
     path: src/Memory/UnmanagedList.cs
-    startLine: 118
+    startLine: 123
   assemblies:
   - piine
   namespace: piine.Memory
@@ -453,7 +505,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/UnmanagedList.cs
-    startLine: 140
+    startLine: 145
   assemblies:
   - piine
   namespace: piine.Memory
@@ -496,7 +548,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: RemoveAt
     path: src/Memory/UnmanagedList.cs
-    startLine: 163
+    startLine: 168
   assemblies:
   - piine
   namespace: piine.Memory
@@ -536,7 +588,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TrimExcess
     path: src/Memory/UnmanagedList.cs
-    startLine: 183
+    startLine: 188
   assemblies:
   - piine
   namespace: piine.Memory
@@ -570,7 +622,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedList.cs
-    startLine: 196
+    startLine: 201
   assemblies:
   - piine
   namespace: piine.Memory
@@ -606,7 +658,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedList.cs
-    startLine: 203
+    startLine: 208
   assemblies:
   - piine
   namespace: piine.Memory
@@ -645,7 +697,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedList.cs
-    startLine: 221
+    startLine: 226
   assemblies:
   - piine
   namespace: piine.Memory
@@ -688,7 +740,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedList.cs
-    startLine: 234
+    startLine: 239
   assemblies:
   - piine
   namespace: piine.Memory
@@ -728,7 +780,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 253
+    startLine: 258
   assemblies:
   - piine
   namespace: piine.Memory
@@ -763,7 +815,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 260
+    startLine: 265
   assemblies:
   - piine
   namespace: piine.Memory
@@ -797,7 +849,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 262
+    startLine: 267
   assemblies:
   - piine
   namespace: piine.Memory
@@ -830,7 +882,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedList.cs
-    startLine: 269
+    startLine: 274
   assemblies:
   - piine
   namespace: piine.Memory
@@ -862,7 +914,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 271
+    startLine: 276
   assemblies:
   - piine
   namespace: piine.Memory
@@ -896,7 +948,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 280
+    startLine: 285
   assemblies:
   - piine
   namespace: piine.Memory
@@ -1530,6 +1582,32 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer*
+  commentId: Overload:piine.Memory.UnmanagedList`1.GetInternalPointer
+  name: GetInternalPointer
+  nameWithType: UnmanagedList<T>.GetInternalPointer
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
+- uid: '{T}*'
+  isExternal: true
+  name: T*
+  nameWithType: T*
+  fullName: T*
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
 - uid: piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly*
   commentId: Overload:piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   name: ICollection<T>.IsReadOnly

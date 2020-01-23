@@ -31,6 +31,11 @@ namespace piine.Memory
         /// </summary>
         public bool Allocated { get; private set; } = true;
         /// <summary>
+        /// Return the underlying pointer for the list. Be mindful when working with this.
+        /// </summary>
+        [CLSCompliant (false)]
+        public T* GetInternalPointer => array;
+        /// <summary>
         /// Always false
         /// </summary>
         bool ICollection<T>.IsReadOnly => false;

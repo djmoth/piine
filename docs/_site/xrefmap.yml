@@ -4620,6 +4620,23 @@ references:
   fullName.vb: piine.Memory.UnmanagedList(Of T).GetEnumerator
   nameWithType: UnmanagedList<T>.GetEnumerator
   nameWithType.vb: UnmanagedList(Of T).GetEnumerator
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer
+  name: GetInternalPointer
+  href: docs/api/piine.Memory.UnmanagedList-1.html#piine_Memory_UnmanagedList_1_GetInternalPointer
+  commentId: P:piine.Memory.UnmanagedList`1.GetInternalPointer
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
+  nameWithType: UnmanagedList<T>.GetInternalPointer
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer*
+  name: GetInternalPointer
+  href: docs/api/piine.Memory.UnmanagedList-1.html#piine_Memory_UnmanagedList_1_GetInternalPointer_
+  commentId: Overload:piine.Memory.UnmanagedList`1.GetInternalPointer
+  isSpec: "True"
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
+  nameWithType: UnmanagedList<T>.GetInternalPointer
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
 - uid: piine.Memory.UnmanagedList`1.IndexOf(`0)
   name: IndexOf(T)
   href: docs/api/piine.Memory.UnmanagedList-1.html#piine_Memory_UnmanagedList_1_IndexOf__0_
@@ -5260,6 +5277,212 @@ references:
   fullName.vb: piine.Voxels.ManagedVoxelOctree(Of T).Size
   nameWithType: ManagedVoxelOctree<T>.Size
   nameWithType.vb: ManagedVoxelOctree(Of T).Size
+- uid: piine.Voxels.TempVoxelGrid`1
+  name: TempVoxelGrid<T>
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html
+  commentId: T:piine.Voxels.TempVoxelGrid`1
+  name.vb: TempVoxelGrid(Of T)
+  fullName: piine.Voxels.TempVoxelGrid<T>
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T)
+  nameWithType: TempVoxelGrid<T>
+  nameWithType.vb: TempVoxelGrid(Of T)
+- uid: piine.Voxels.TempVoxelGrid`1.#ctor(System.Span{`0},piine.Int3)
+  name: TempVoxelGrid(Span<T>, Int3)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1__ctor_System_Span__0__piine_Int3_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.#ctor(System.Span{`0},piine.Int3)
+  name.vb: TempVoxelGrid(Span(Of T), Int3)
+  fullName: piine.Voxels.TempVoxelGrid<T>.TempVoxelGrid(System.Span<T>, piine.Int3)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).TempVoxelGrid(System.Span(Of T), piine.Int3)
+  nameWithType: TempVoxelGrid<T>.TempVoxelGrid(Span<T>, Int3)
+  nameWithType.vb: TempVoxelGrid(Of T).TempVoxelGrid(Span(Of T), Int3)
+- uid: piine.Voxels.TempVoxelGrid`1.#ctor*
+  name: TempVoxelGrid
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1__ctor_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.#ctor
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.TempVoxelGrid
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).TempVoxelGrid
+  nameWithType: TempVoxelGrid<T>.TempVoxelGrid
+  nameWithType.vb: TempVoxelGrid(Of T).TempVoxelGrid
+- uid: piine.Voxels.TempVoxelGrid`1.CalculateIndex(piine.Int3)
+  name: CalculateIndex(Int3)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_CalculateIndex_piine_Int3_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.CalculateIndex(piine.Int3)
+  fullName: piine.Voxels.TempVoxelGrid<T>.CalculateIndex(piine.Int3)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).CalculateIndex(piine.Int3)
+  nameWithType: TempVoxelGrid<T>.CalculateIndex(Int3)
+  nameWithType.vb: TempVoxelGrid(Of T).CalculateIndex(Int3)
+- uid: piine.Voxels.TempVoxelGrid`1.CalculateIndex*
+  name: CalculateIndex
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_CalculateIndex_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.CalculateIndex
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.CalculateIndex
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).CalculateIndex
+  nameWithType: TempVoxelGrid<T>.CalculateIndex
+  nameWithType.vb: TempVoxelGrid(Of T).CalculateIndex
+- uid: piine.Voxels.TempVoxelGrid`1.Depth
+  name: Depth
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Depth
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Depth
+  fullName: piine.Voxels.TempVoxelGrid<T>.Depth
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Depth
+  nameWithType: TempVoxelGrid<T>.Depth
+  nameWithType.vb: TempVoxelGrid(Of T).Depth
+- uid: piine.Voxels.TempVoxelGrid`1.Depth*
+  name: Depth
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Depth_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Depth
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Depth
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Depth
+  nameWithType: TempVoxelGrid<T>.Depth
+  nameWithType.vb: TempVoxelGrid(Of T).Depth
+- uid: piine.Voxels.TempVoxelGrid`1.Dimensions
+  name: Dimensions
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Dimensions
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Dimensions
+  fullName: piine.Voxels.TempVoxelGrid<T>.Dimensions
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Dimensions
+  nameWithType: TempVoxelGrid<T>.Dimensions
+  nameWithType.vb: TempVoxelGrid(Of T).Dimensions
+- uid: piine.Voxels.TempVoxelGrid`1.Dimensions*
+  name: Dimensions
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Dimensions_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Dimensions
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Dimensions
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Dimensions
+  nameWithType: TempVoxelGrid<T>.Dimensions
+  nameWithType.vb: TempVoxelGrid(Of T).Dimensions
+- uid: piine.Voxels.TempVoxelGrid`1.GetVoxel(piine.Int3)
+  name: GetVoxel(Int3)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_GetVoxel_piine_Int3_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.GetVoxel(piine.Int3)
+  fullName: piine.Voxels.TempVoxelGrid<T>.GetVoxel(piine.Int3)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).GetVoxel(piine.Int3)
+  nameWithType: TempVoxelGrid<T>.GetVoxel(Int3)
+  nameWithType.vb: TempVoxelGrid(Of T).GetVoxel(Int3)
+- uid: piine.Voxels.TempVoxelGrid`1.GetVoxel(System.Int32)
+  name: GetVoxel(Int32)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_GetVoxel_System_Int32_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.GetVoxel(System.Int32)
+  fullName: piine.Voxels.TempVoxelGrid<T>.GetVoxel(System.Int32)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).GetVoxel(System.Int32)
+  nameWithType: TempVoxelGrid<T>.GetVoxel(Int32)
+  nameWithType.vb: TempVoxelGrid(Of T).GetVoxel(Int32)
+- uid: piine.Voxels.TempVoxelGrid`1.GetVoxel*
+  name: GetVoxel
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_GetVoxel_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.GetVoxel
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.GetVoxel
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).GetVoxel
+  nameWithType: TempVoxelGrid<T>.GetVoxel
+  nameWithType.vb: TempVoxelGrid(Of T).GetVoxel
+- uid: piine.Voxels.TempVoxelGrid`1.Height
+  name: Height
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Height
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Height
+  fullName: piine.Voxels.TempVoxelGrid<T>.Height
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Height
+  nameWithType: TempVoxelGrid<T>.Height
+  nameWithType.vb: TempVoxelGrid(Of T).Height
+- uid: piine.Voxels.TempVoxelGrid`1.Height*
+  name: Height
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Height_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Height
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Height
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Height
+  nameWithType: TempVoxelGrid<T>.Height
+  nameWithType.vb: TempVoxelGrid(Of T).Height
+- uid: piine.Voxels.TempVoxelGrid`1.Item(piine.Int3)
+  name: Item[Int3]
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Item_piine_Int3_
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Item(piine.Int3)
+  name.vb: Item(Int3)
+  fullName: piine.Voxels.TempVoxelGrid<T>.Item[piine.Int3]
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Item(piine.Int3)
+  nameWithType: TempVoxelGrid<T>.Item[Int3]
+  nameWithType.vb: TempVoxelGrid(Of T).Item(Int3)
+- uid: piine.Voxels.TempVoxelGrid`1.Item(System.Int32)
+  name: Item[Int32]
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Item_System_Int32_
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: piine.Voxels.TempVoxelGrid<T>.Item[System.Int32]
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Item(System.Int32)
+  nameWithType: TempVoxelGrid<T>.Item[Int32]
+  nameWithType.vb: TempVoxelGrid(Of T).Item(Int32)
+- uid: piine.Voxels.TempVoxelGrid`1.Item*
+  name: Item
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Item_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Item
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Item
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Item
+  nameWithType: TempVoxelGrid<T>.Item
+  nameWithType.vb: TempVoxelGrid(Of T).Item
+- uid: piine.Voxels.TempVoxelGrid`1.SetVoxel(piine.Int3,`0)
+  name: SetVoxel(Int3, T)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_SetVoxel_piine_Int3__0_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.SetVoxel(piine.Int3,`0)
+  fullName: piine.Voxels.TempVoxelGrid<T>.SetVoxel(piine.Int3, T)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).SetVoxel(piine.Int3, T)
+  nameWithType: TempVoxelGrid<T>.SetVoxel(Int3, T)
+  nameWithType.vb: TempVoxelGrid(Of T).SetVoxel(Int3, T)
+- uid: piine.Voxels.TempVoxelGrid`1.SetVoxel(System.Int32,`0)
+  name: SetVoxel(Int32, T)
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_SetVoxel_System_Int32__0_
+  commentId: M:piine.Voxels.TempVoxelGrid`1.SetVoxel(System.Int32,`0)
+  fullName: piine.Voxels.TempVoxelGrid<T>.SetVoxel(System.Int32, T)
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).SetVoxel(System.Int32, T)
+  nameWithType: TempVoxelGrid<T>.SetVoxel(Int32, T)
+  nameWithType.vb: TempVoxelGrid(Of T).SetVoxel(Int32, T)
+- uid: piine.Voxels.TempVoxelGrid`1.SetVoxel*
+  name: SetVoxel
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_SetVoxel_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.SetVoxel
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.SetVoxel
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).SetVoxel
+  nameWithType: TempVoxelGrid<T>.SetVoxel
+  nameWithType.vb: TempVoxelGrid(Of T).SetVoxel
+- uid: piine.Voxels.TempVoxelGrid`1.Volume
+  name: Volume
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Volume
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Volume
+  fullName: piine.Voxels.TempVoxelGrid<T>.Volume
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Volume
+  nameWithType: TempVoxelGrid<T>.Volume
+  nameWithType.vb: TempVoxelGrid(Of T).Volume
+- uid: piine.Voxels.TempVoxelGrid`1.Volume*
+  name: Volume
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Volume_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Volume
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Volume
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Volume
+  nameWithType: TempVoxelGrid<T>.Volume
+  nameWithType.vb: TempVoxelGrid(Of T).Volume
+- uid: piine.Voxels.TempVoxelGrid`1.Width
+  name: Width
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Width
+  commentId: P:piine.Voxels.TempVoxelGrid`1.Width
+  fullName: piine.Voxels.TempVoxelGrid<T>.Width
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Width
+  nameWithType: TempVoxelGrid<T>.Width
+  nameWithType.vb: TempVoxelGrid(Of T).Width
+- uid: piine.Voxels.TempVoxelGrid`1.Width*
+  name: Width
+  href: docs/api/piine.Voxels.TempVoxelGrid-1.html#piine_Voxels_TempVoxelGrid_1_Width_
+  commentId: Overload:piine.Voxels.TempVoxelGrid`1.Width
+  isSpec: "True"
+  fullName: piine.Voxels.TempVoxelGrid<T>.Width
+  fullName.vb: piine.Voxels.TempVoxelGrid(Of T).Width
+  nameWithType: TempVoxelGrid<T>.Width
+  nameWithType.vb: TempVoxelGrid(Of T).Width
 - uid: piine.Voxels.UnmanagedVoxelGrid`1
   name: UnmanagedVoxelGrid<T>
   href: docs/api/piine.Voxels.UnmanagedVoxelGrid-1.html
