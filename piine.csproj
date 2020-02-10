@@ -64,10 +64,4 @@
     <None Include="src\Ray.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.2f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

@@ -77,6 +77,7 @@ items:
       [CLSCompliant(false)]
 
       public static T*AllocMemory<T>(long length)
+
           where T : struct
     parameters:
     - id: length
@@ -137,6 +138,7 @@ items:
       [CLSCompliant(false)]
 
       public static void FreeMemory<T>(T*memory, long length)
+
           where T : struct
     parameters:
     - id: memory
@@ -196,6 +198,7 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, long currentLength, long newLength)
+
           where T : struct
     parameters:
     - id: memory
@@ -254,6 +257,7 @@ items:
   syntax:
     content: >-
       public static Span<T> AllocSpan<T>(int length)
+
           where T : struct
     parameters:
     - id: length
@@ -298,6 +302,7 @@ items:
   syntax:
     content: >-
       public static void FreeSpan<T>(Span<T> span)
+
           where T : struct
     parameters:
     - id: span

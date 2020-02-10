@@ -11,11 +11,13 @@ namespace piine.Memory
     /// <typeparam name="T">The unmanaged type that the array will contain</typeparam>
     public unsafe class UnmanagedArray<T> : IList<T>, IDisposable where T : unmanaged
     {
+        private T* array;
+
         /// <summary>
         /// Get the underlying pointer. Be mindful when working with this.
         /// </summary>
         [CLSCompliant (false)]
-        public T* ArrayPointer { get; }
+        public T* ArrayPointer => array;
         /// <summary>
         /// Size of the array. The same as Count
         /// </summary>
@@ -25,13 +27,13 @@ namespace piine.Memory
         /// </summary>
         public int Count => Length;
         /// <summary>
-        /// Set to false when the object is disposed
+        /// Set to <see langword="false"/> when the <see cref="UnmanagedArray{T}"/> is disposed
         /// </summary>
-        public bool Allocated { get; private set; } = true;
+        public bool Allocated => array != null;
         /// <summary>
         /// Always false
         /// </summary>
-        public bool IsReadOnly => false;
+        bool ICollection<T>.IsReadOnly => false;
 
         /// <summary>
         /// Access an element in the UnmanagedArray. Performs bounds checking.
@@ -46,7 +48,7 @@ namespace piine.Memory
                 if (index < 0 || index >= Length)
                     throw new ArgumentOutOfRangeException (nameof (index));
 
-                return ArrayPointer[index];
+                return array[index];
             }
             set
             {
@@ -55,7 +57,7 @@ namespace piine.Memory
                 if (index < 0 || index >= Length)
                     throw new ArgumentOutOfRangeException (nameof (index));
 
-                ArrayPointer[index] = value;
+                array[index] = value;
             }
         }
 
@@ -65,12 +67,12 @@ namespace piine.Memory
         /// <param name="size">Size of the new array in elements of T</param>
         public UnmanagedArray (int size)
         {
-            ArrayPointer = Unmanaged.AllocMemory<T> (size);
+            array = Unmanaged.AllocMemory<T> (size);
             Length = size;
 
             for (int i = 0; i < Length; i++)
             {
-                ArrayPointer[i] = default;
+                array[i] = default;
             }
         }
 
@@ -79,18 +81,10 @@ namespace piine.Memory
         /// </summary>
         /// <param name="size">Size of the new array</param>
         /// <param name="fillWithDefaultValues">"Zero-out" the array with the default value of T. The array may otherwise contain garbage data.</param>
-        public UnmanagedArray (int size, bool fillWithDefaultValues)
+        public UnmanagedArray (int size, bool fillWithDefault)
         {
-            ArrayPointer = Unmanaged.AllocMemory<T> (size);
+            array = Unmanaged.AllocMemory<T> (size, fillWithDefault);
             Length = size;
-
-            if (fillWithDefaultValues)
-            {
-                for (int i = 0; i < Length; i++)
-                {
-                    ArrayPointer[i] = default;
-                }
-            }
         }
 
         /// <summary>
@@ -100,7 +94,7 @@ namespace piine.Memory
         public UnmanagedArray (Span<T> span)
         {
             Length = span.Length;
-            ArrayPointer = Unmanaged.AllocMemory<T> (Length);
+            array = Unmanaged.AllocMemory<T> (Length);
             //Copy to new array
             span.CopyTo (GetSpan ());
         }
@@ -122,7 +116,7 @@ namespace piine.Memory
 
             for (int i = 0; i < Length; i++)
             {
-                if (Compare (item, ArrayPointer[i]))
+                if (Compare (item, array[i]))
                     return i;
             }
 
@@ -138,7 +132,7 @@ namespace piine.Memory
 
             for (int i = 0; i < Length; i++)
             {
-                ArrayPointer[i] = default;
+                array[i] = default;
             }
         }
 
@@ -148,7 +142,7 @@ namespace piine.Memory
 
             for (int i = 0; i < Length; i++)
             {
-                if (Compare (item, ArrayPointer[i]))
+                if (Compare (item, array[i]))
                     return true;
             }
 
@@ -170,7 +164,7 @@ namespace piine.Memory
 
             for (int i = 0; i < Length; i++)
             {
-                destination[destinationIndex + i] = ArrayPointer[i];
+                destination[destinationIndex + i] = array[i];
             }
         }
 
@@ -188,7 +182,7 @@ namespace piine.Memory
                 throw new ArgumentException ("Not enough space in destination array");
 
             int lengthInBytes = Length * sizeof (T);
-            Buffer.MemoryCopy (ArrayPointer, destination.ArrayPointer, destination.Length, lengthInBytes);
+            Buffer.MemoryCopy (array, destination.array, destination.Length, lengthInBytes);
         }
 
         public void CopyTo (Span<T> destination)
@@ -201,7 +195,7 @@ namespace piine.Memory
         /// <summary>
         /// Get a Span that points to this array
         /// </summary>
-        public Span<T> GetSpan () => new Span<T> (ArrayPointer, Length);
+        public Span<T> GetSpan () => new Span<T> (array, Length);
 
         public Enumerator GetEnumerator ()
         {
@@ -229,29 +223,27 @@ namespace piine.Memory
 
         ~UnmanagedArray () => Dispose (false);
 
+        /// <summary>
+        /// Free the unmanaged memory. The array will be unusable afterwards   
+        /// </summary>
         public void Dispose ()
         {
             Dispose (true);
             GC.SuppressFinalize (this);
         }
-
-        /// <summary>
-        /// Free the unmanaged memory. The array will be unusable afterwards
-        /// </summary>
+    
         protected virtual void Dispose (bool disposing)
         {
             if (!Allocated)
                 return;
 
-            Unmanaged.FreeMemory (ArrayPointer, Length);
-                
-            Allocated = false;
+            Unmanaged.FreeMemory (ref array, Length);
         }
 
         public struct Enumerator : IEnumerator<T>
         {
             private readonly UnmanagedArray<T> array;
-            public T Current => array.ArrayPointer[position];
+            public T Current => array.array[position];
             object IEnumerator.Current => Current;
 
             private int position;

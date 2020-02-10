@@ -37,6 +37,7 @@ items:
     - id: T
     content.vb: >-
       Public MustInherit Class VoxelOctree(Of T)
+
           Implements IVoxelVolume(Of T)
   inheritance:
   - System.Object

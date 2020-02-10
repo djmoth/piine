@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.XorShift
+  commentId: T:piine.XorShift
+  id: XorShift
+  parent: piine
+  children:
+  - piine.XorShift.#ctor(System.Int32)
+  - piine.XorShift.Next
+  - piine.XorShift.Next(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: XorShift
+  nameWithType: XorShift
+  fullName: piine.XorShift
+  type: Struct
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: XorShift
+    path: src/XorShift.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public struct XorShift
+    content.vb: Public Structure XorShift
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.XorShift.#ctor(System.Int32)
+  commentId: M:piine.XorShift.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: XorShift(Int32)
+  nameWithType: XorShift.XorShift(Int32)
+  fullName: piine.XorShift.XorShift(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/XorShift.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public XorShift(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+    content.vb: Public Sub New(seed As Integer)
+  overload: piine.XorShift.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.XorShift.Next
+  commentId: M:piine.XorShift.Next
+  id: Next
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Next()
+  nameWithType: XorShift.Next()
+  fullName: piine.XorShift.Next()
+  type: Method
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Next
+    path: src/XorShift.cs
+    startLine: 15
+  assemblies:
+  - piine
+  namespace: piine
+  summary: "\nCalculates a new random number in the range [Int32.MinValue; Int32.MaxValue]\n"
+  example: []
+  syntax:
+    content: public int Next()
+    return:
+      type: System.Int32
+    content.vb: Public Function Next As Integer
+  overload: piine.XorShift.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.XorShift.Next(System.Int32,System.Int32)
+  commentId: M:piine.XorShift.Next(System.Int32,System.Int32)
+  id: Next(System.Int32,System.Int32)
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Next(Int32, Int32)
+  nameWithType: XorShift.Next(Int32, Int32)
+  fullName: piine.XorShift.Next(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Next
+    path: src/XorShift.cs
+    startLine: 28
+  assemblies:
+  - piine
+  namespace: piine
+  summary: "\nCalculates a new random number in the range [<code data-dev-comment-type=\"paramref\" class=\"paramref\">min</code>; <code data-dev-comment-type=\"paramref\" class=\"paramref\">max</code>]\n"
+  example: []
+  syntax:
+    content: public int Next(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: Inclusive lower bound
+    - id: max
+      type: System.Int32
+      description: Inclusive upper bound
+    return:
+      type: System.Int32
+    content.vb: Public Function Next(min As Integer, max As Integer) As Integer
+  overload: piine.XorShift.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.XorShift.#ctor*
+  commentId: Overload:piine.XorShift.#ctor
+  name: XorShift
+  nameWithType: XorShift.XorShift
+  fullName: piine.XorShift.XorShift
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.XorShift.Next*
+  commentId: Overload:piine.XorShift.Next
+  name: Next
+  nameWithType: XorShift.Next
+  fullName: piine.XorShift.Next

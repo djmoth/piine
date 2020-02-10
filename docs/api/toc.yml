@@ -20,6 +20,8 @@
     name: Piine
   - uid: piine.Simd
     name: Simd
+  - uid: piine.XorShift
+    name: XorShift
 - uid: piine.Graphics
   name: piine.Graphics
   items:

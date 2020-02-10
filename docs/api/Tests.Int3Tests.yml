@@ -7,7 +7,6 @@ items:
   children:
   - Tests.Int3Tests.TestAdd
   - Tests.Int3Tests.TestAddPerformanceNoSIMD
-  - Tests.Int3Tests.TestAddPerformanceSIMD
   - Tests.Int3Tests.TestTupleCast
   langs:
   - csharp
@@ -133,53 +132,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Tests.Int3Tests.TestAddPerformanceSIMD
-  commentId: M:Tests.Int3Tests.TestAddPerformanceSIMD
-  id: TestAddPerformanceSIMD
-  parent: Tests.Int3Tests
-  langs:
-  - csharp
-  - vb
-  name: TestAddPerformanceSIMD()
-  nameWithType: Int3Tests.TestAddPerformanceSIMD()
-  fullName: Tests.Int3Tests.TestAddPerformanceSIMD()
-  type: Method
-  source:
-    remote:
-      path: tests/Int3Tests.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: TestAddPerformanceSIMD
-    path: tests/Int3Tests.cs
-    startLine: 39
-  assemblies:
-  - tests
-  namespace: Tests
-  syntax:
-    content: >-
-      [Test]
-
-      [Explicit]
-
-      public void TestAddPerformanceSIMD()
-    content.vb: >-
-      <Test>
-
-      <Explicit>
-
-      Public Sub TestAddPerformanceSIMD
-  overload: Tests.Int3Tests.TestAddPerformanceSIMD*
-  attributes:
-  - type: NUnit.Framework.TestAttribute
-    ctor: NUnit.Framework.TestAttribute.#ctor
-    arguments: []
-  - type: NUnit.Framework.ExplicitAttribute
-    ctor: NUnit.Framework.ExplicitAttribute.#ctor
-    arguments: []
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: Tests.Int3Tests.TestTupleCast
   commentId: M:Tests.Int3Tests.TestTupleCast
   id: TestTupleCast
@@ -198,7 +150,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestTupleCast
     path: tests/Int3Tests.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - tests
   namespace: Tests
@@ -528,11 +480,6 @@ references:
   name: TestAddPerformanceNoSIMD
   nameWithType: Int3Tests.TestAddPerformanceNoSIMD
   fullName: Tests.Int3Tests.TestAddPerformanceNoSIMD
-- uid: Tests.Int3Tests.TestAddPerformanceSIMD*
-  commentId: Overload:Tests.Int3Tests.TestAddPerformanceSIMD
-  name: TestAddPerformanceSIMD
-  nameWithType: Int3Tests.TestAddPerformanceSIMD
-  fullName: Tests.Int3Tests.TestAddPerformanceSIMD
 - uid: Tests.Int3Tests.TestTupleCast*
   commentId: Overload:Tests.Int3Tests.TestTupleCast
   name: TestTupleCast

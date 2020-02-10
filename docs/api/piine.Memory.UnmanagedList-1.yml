@@ -55,6 +55,7 @@ items:
       description: The unmanaged type that the list will contain
     content.vb: >-
       Public Class UnmanagedList(Of T As Structure)
+
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object

@@ -27,7 +27,7 @@ namespace piine.Memory
         /// </summary>
         public int Capacity { get => capacity; set => SetCapacity (value); }
         /// <summary>
-        /// Set to false when the object is disposed
+        /// Set to <see langword="false"/> when the <see cref="UnmanagedList{T}"/> is disposed
         /// </summary>
         public bool Allocated { get; private set; } = true;
         /// <summary>
@@ -274,21 +274,21 @@ namespace piine.Memory
 
         ~UnmanagedList () => Dispose (false);
 
+        /// <summary>
+        /// Free the unmanaged memory. The list will not be usable afterwards
+        /// </summary>
         public void Dispose ()
         {
             Dispose (true);
             GC.SuppressFinalize (this);
         }
-
-        /// <summary>
-        /// Free the unmanaged memory. The list will not be usable afterwards
-        /// </summary>
+      
         protected virtual void Dispose (bool disposing)
         {
             if (!Allocated)
                 return;
 
-            Unmanaged.FreeMemory (array, capacity);
+            Unmanaged.FreeMemory (ref array, capacity);
 
             Allocated = false;
         }

@@ -6053,6 +6053,44 @@ references:
   fullName.vb: piine.Voxels.VoxelOctree(Of T).Width
   nameWithType: VoxelOctree<T>.Width
   nameWithType.vb: VoxelOctree(Of T).Width
+- uid: piine.XorShift
+  name: XorShift
+  href: docs/api/piine.XorShift.html
+  commentId: T:piine.XorShift
+  fullName: piine.XorShift
+  nameWithType: XorShift
+- uid: piine.XorShift.#ctor(System.Int32)
+  name: XorShift(Int32)
+  href: docs/api/piine.XorShift.html#piine_XorShift__ctor_System_Int32_
+  commentId: M:piine.XorShift.#ctor(System.Int32)
+  fullName: piine.XorShift.XorShift(System.Int32)
+  nameWithType: XorShift.XorShift(Int32)
+- uid: piine.XorShift.#ctor*
+  name: XorShift
+  href: docs/api/piine.XorShift.html#piine_XorShift__ctor_
+  commentId: Overload:piine.XorShift.#ctor
+  isSpec: "True"
+  fullName: piine.XorShift.XorShift
+  nameWithType: XorShift.XorShift
+- uid: piine.XorShift.Next
+  name: Next()
+  href: docs/api/piine.XorShift.html#piine_XorShift_Next
+  commentId: M:piine.XorShift.Next
+  fullName: piine.XorShift.Next()
+  nameWithType: XorShift.Next()
+- uid: piine.XorShift.Next(System.Int32,System.Int32)
+  name: Next(Int32, Int32)
+  href: docs/api/piine.XorShift.html#piine_XorShift_Next_System_Int32_System_Int32_
+  commentId: M:piine.XorShift.Next(System.Int32,System.Int32)
+  fullName: piine.XorShift.Next(System.Int32, System.Int32)
+  nameWithType: XorShift.Next(Int32, Int32)
+- uid: piine.XorShift.Next*
+  name: Next
+  href: docs/api/piine.XorShift.html#piine_XorShift_Next_
+  commentId: Overload:piine.XorShift.Next
+  isSpec: "True"
+  fullName: piine.XorShift.Next
+  nameWithType: XorShift.Next
 - uid: Tests
   name: Tests
   href: docs/api/Tests.html
@@ -6091,19 +6129,6 @@ references:
   isSpec: "True"
   fullName: Tests.Int3Tests.TestAddPerformanceNoSIMD
   nameWithType: Int3Tests.TestAddPerformanceNoSIMD
-- uid: Tests.Int3Tests.TestAddPerformanceSIMD
-  name: TestAddPerformanceSIMD()
-  href: docs/api/Tests.Int3Tests.html#Tests_Int3Tests_TestAddPerformanceSIMD
-  commentId: M:Tests.Int3Tests.TestAddPerformanceSIMD
-  fullName: Tests.Int3Tests.TestAddPerformanceSIMD()
-  nameWithType: Int3Tests.TestAddPerformanceSIMD()
-- uid: Tests.Int3Tests.TestAddPerformanceSIMD*
-  name: TestAddPerformanceSIMD
-  href: docs/api/Tests.Int3Tests.html#Tests_Int3Tests_TestAddPerformanceSIMD_
-  commentId: Overload:Tests.Int3Tests.TestAddPerformanceSIMD
-  isSpec: "True"
-  fullName: Tests.Int3Tests.TestAddPerformanceSIMD
-  nameWithType: Int3Tests.TestAddPerformanceSIMD
 - uid: Tests.Int3Tests.TestTupleCast
   name: TestTupleCast()
   href: docs/api/Tests.Int3Tests.html#Tests_Int3Tests_TestTupleCast

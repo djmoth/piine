@@ -13,6 +13,7 @@ items:
   - piine.Int4
   - piine.Piine
   - piine.Simd
+  - piine.XorShift
   langs:
   - csharp
   - vb
@@ -75,6 +76,11 @@ references:
   name: Simd
   nameWithType: Simd
   fullName: piine.Simd
+- uid: piine.XorShift
+  commentId: T:piine.XorShift
+  name: XorShift
+  nameWithType: XorShift
+  fullName: piine.XorShift
 - uid: piine
   commentId: N:piine
   name: piine

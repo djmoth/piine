@@ -58,6 +58,7 @@ items:
       description: The unmanaged type that the array will contain
     content.vb: >-
       Public Class UnmanagedArray(Of T As Structure)
+
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object

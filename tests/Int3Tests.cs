@@ -37,6 +37,7 @@ namespace Tests
             Assert.Pass ("No SIMD: Time = " + sw.Elapsed.TotalMilliseconds + " ms, result = " + result.ToString ());
         }
 
+        /*
         [Test]
         [Explicit]
         public unsafe void TestAddPerformanceSIMD ()
@@ -55,7 +56,7 @@ namespace Tests
             sw.Stop ();
 
             Assert.Pass ("SIMD (" + Vector.IsHardwareAccelerated + "): Time = " + sw.Elapsed.TotalMilliseconds + " ms, result = " + result.ToString () + ", Sizeof (IntVector3) = " + sizeof (Int3));
-        }
+        }*/
 
         [Test]
         public void TestTupleCast ()

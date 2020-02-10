@@ -44,7 +44,9 @@ items:
       description: Unmanaged Type of voxels
     content.vb: >-
       Public Class UnmanagedVoxelGrid(Of T As Structure)
+
           Inherits VoxelGrid(Of T)
+
           Implements IVoxelVolume(Of T), IDisposable
   inheritance:
   - System.Object

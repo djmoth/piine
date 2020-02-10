@@ -33,7 +33,7 @@ namespace piine.Voxels
             if (index < 0 || index >= Volume)
                 throw new ArgumentOutOfRangeException (nameof (index));
 
-            voxels.ArrayPointer[index] = data;
+            voxels.array[index] = data;
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace piine.Voxels
         /// </summary>
         /// <param name="index">Index of the voxel to set. You must ensure this is in the range [0;Volume[</param>
         /// <param name="data">Data to write to the voxel</param>
-        public void SetVoxelUnsafe (int index, T data) => voxels.ArrayPointer[index] = data;
+        public void SetVoxelUnsafe (int index, T data) => voxels.array[index] = data;
 
         public override T GetVoxel (int index)
         {
@@ -50,14 +50,14 @@ namespace piine.Voxels
             if (index < 0 || index >= Volume)
                 throw new ArgumentOutOfRangeException (nameof (index));
 
-            return voxels.ArrayPointer[index];
+            return voxels.array[index];
         }
 
         /// <summary>
         /// Gets a voxel without doing any bounds checking.
         /// </summary>
         /// <param name="index">Index of the voxel to get. You must ensure this is in the range [0;Volume[</param>
-        public T GetVoxelUnsafe (int index) => voxels.ArrayPointer[index];
+        public T GetVoxelUnsafe (int index) => voxels.array[index];
 
         ~UnmanagedVoxelGrid () => Dispose (false);
 
@@ -87,7 +87,7 @@ namespace piine.Voxels
 
             for (int i = 0; i < Volume; i++)
             {
-                hash ^= voxels.ArrayPointer[i].GetHashCode ();
+                hash ^= voxels.array[i].GetHashCode ();
                 hash *= prime;
             }
 

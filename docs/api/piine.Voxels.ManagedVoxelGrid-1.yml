@@ -38,7 +38,9 @@ items:
       description: Type of voxels
     content.vb: >-
       Public Class ManagedVoxelGrid(Of T)
+
           Inherits VoxelGrid(Of T)
+
           Implements IVoxelVolume(Of T)
   inheritance:
   - System.Object
