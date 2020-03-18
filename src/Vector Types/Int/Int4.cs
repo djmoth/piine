@@ -104,7 +104,7 @@ namespace piine
 
         public static implicit operator Vector4 (Int4 iv) => new Vector4 (iv.x, iv.y, iv.z, iv.w);
 
-        public static implicit operator Int4 (Vector4 iv) => new Int4 ((int)iv.x, (int)iv.y, (int)iv.z, (int)iv.w);
+        public static implicit operator Int4 (Vector4 iv) => new Int4 ((int)iv.X, (int)iv.Y, (int)iv.Z, (int)iv.W);
 
         public static implicit operator Int4 ((int x, int y, int z, int w) v) => new Int4 (v.x, v.y, v.z, v.w);
 

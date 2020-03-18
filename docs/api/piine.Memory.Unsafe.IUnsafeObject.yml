@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Memory.Unsafe.IUnsafeObject
+  commentId: T:piine.Memory.Unsafe.IUnsafeObject
+  id: IUnsafeObject
+  parent: piine.Memory.Unsafe
+  children:
+  - piine.Memory.Unsafe.IUnsafeObject.Alloc
+  - piine.Memory.Unsafe.IUnsafeObject.Free
+  - piine.Memory.Unsafe.IUnsafeObject.Size
+  langs:
+  - csharp
+  - vb
+  name: IUnsafeObject
+  nameWithType: IUnsafeObject
+  fullName: piine.Memory.Unsafe.IUnsafeObject
+  type: Interface
+  source:
+    remote:
+      path: src/Memory/Unsafe/IUnsafeObject.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: IUnsafeObject
+    path: src/Memory/Unsafe/IUnsafeObject.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine.Memory.Unsafe
+  syntax:
+    content: public interface IUnsafeObject
+    content.vb: Public Interface IUnsafeObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: piine.Memory.Unsafe.IUnsafeObject.Size
+  commentId: P:piine.Memory.Unsafe.IUnsafeObject.Size
+  id: Size
+  parent: piine.Memory.Unsafe.IUnsafeObject
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: IUnsafeObject.Size
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Size
+  type: Property
+  source:
+    remote:
+      path: src/Memory/Unsafe/IUnsafeObject.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Size
+    path: src/Memory/Unsafe/IUnsafeObject.cs
+    startLine: 8
+  assemblies:
+  - piine
+  namespace: piine.Memory.Unsafe
+  syntax:
+    content: int Size { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Size As Integer
+  overload: piine.Memory.Unsafe.IUnsafeObject.Size*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: piine.Memory.Unsafe.IUnsafeObject.Alloc
+  commentId: M:piine.Memory.Unsafe.IUnsafeObject.Alloc
+  id: Alloc
+  parent: piine.Memory.Unsafe.IUnsafeObject
+  langs:
+  - csharp
+  - vb
+  name: Alloc()
+  nameWithType: IUnsafeObject.Alloc()
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Alloc()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unsafe/IUnsafeObject.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Alloc
+    path: src/Memory/Unsafe/IUnsafeObject.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine.Memory.Unsafe
+  syntax:
+    content: void Alloc()
+    content.vb: Sub Alloc
+  overload: piine.Memory.Unsafe.IUnsafeObject.Alloc*
+- uid: piine.Memory.Unsafe.IUnsafeObject.Free
+  commentId: M:piine.Memory.Unsafe.IUnsafeObject.Free
+  id: Free
+  parent: piine.Memory.Unsafe.IUnsafeObject
+  langs:
+  - csharp
+  - vb
+  name: Free()
+  nameWithType: IUnsafeObject.Free()
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Free()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unsafe/IUnsafeObject.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Free
+    path: src/Memory/Unsafe/IUnsafeObject.cs
+    startLine: 11
+  assemblies:
+  - piine
+  namespace: piine.Memory.Unsafe
+  syntax:
+    content: void Free()
+    content.vb: Sub Free
+  overload: piine.Memory.Unsafe.IUnsafeObject.Free*
+references:
+- uid: piine.Memory.Unsafe
+  commentId: N:piine.Memory.Unsafe
+  name: piine.Memory.Unsafe
+  nameWithType: piine.Memory.Unsafe
+  fullName: piine.Memory.Unsafe
+- uid: piine.Memory.Unsafe.IUnsafeObject.Size*
+  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Size
+  name: Size
+  nameWithType: IUnsafeObject.Size
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Size
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Memory.Unsafe.IUnsafeObject.Alloc*
+  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Alloc
+  name: Alloc
+  nameWithType: IUnsafeObject.Alloc
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Alloc
+- uid: piine.Memory.Unsafe.IUnsafeObject.Free*
+  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Free
+  name: Free
+  nameWithType: IUnsafeObject.Free
+  fullName: piine.Memory.Unsafe.IUnsafeObject.Free

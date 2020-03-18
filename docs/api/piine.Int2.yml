@@ -12,6 +12,7 @@ items:
   - piine.Int2.Distance(piine.Int2,piine.Int2)
   - piine.Int2.Equals(piine.Int2)
   - piine.Int2.Equals(System.Object)
+  - piine.Int2.GetHashCode
   - piine.Int2.GetUnsafe(System.Int32)
   - piine.Int2.Item(System.Int32)
   - piine.Int2.Length
@@ -22,8 +23,8 @@ items:
   - piine.Int2.op_Division(piine.Int2,System.Single)
   - piine.Int2.op_Equality(piine.Int2,piine.Int2)
   - piine.Int2.op_Explicit(piine.Float2)~piine.Int2
-  - piine.Int2.op_Explicit(piine.Int2)~UnityEngine.Vector2
-  - piine.Int2.op_Explicit(UnityEngine.Vector2)~piine.Int2
+  - piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
+  - piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
   - piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
   - piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
   - piine.Int2.op_Implicit(piine.Int2)~System.ValueTuple{System.Int32,System.Int32}
@@ -56,7 +57,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Int2
     path: src/Vector Types/Int/Int2.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - piine
   namespace: piine
@@ -64,12 +65,10 @@ items:
     content: 'public struct Int2 : IEquatable<Int2>'
     content.vb: >-
       Public Structure Int2
-
           Implements IEquatable(Of Int2)
   implements:
   - System.IEquatable{piine.Int2}
   inheritedMembers:
-  - System.ValueType.GetHashCode
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -97,7 +96,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Int/Int2.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - piine
   namespace: piine
@@ -130,7 +129,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Int/Int2.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - piine
   namespace: piine
@@ -167,7 +166,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Int/Int2.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - piine
   namespace: piine
@@ -204,7 +203,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Int/Int2.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - piine
   namespace: piine
@@ -241,7 +240,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Int/Int2.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - piine
   namespace: piine
@@ -278,7 +277,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Int/Int2.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - piine
   namespace: piine
@@ -309,7 +308,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Int/Int2.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - piine
   namespace: piine
@@ -340,16 +339,16 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Int/Int2.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public int Length { get; }
+    content: public float Length { get; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public ReadOnly Property Length As Integer
+      type: System.Single
+    content.vb: Public ReadOnly Property Length As Single
   overload: piine.Int2.Length*
   modifiers.csharp:
   - public
@@ -375,7 +374,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Int/Int2.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - piine
   namespace: piine
@@ -410,7 +409,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int2.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - piine
   namespace: piine
@@ -445,7 +444,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int2.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - piine
   namespace: piine
@@ -478,7 +477,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Int/Int2.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - piine
   namespace: piine
@@ -518,7 +517,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetUnsafe
     path: src/Vector Types/Int/Int2.cs
-    startLine: 64
+    startLine: 63
   assemblies:
   - piine
   namespace: piine
@@ -553,7 +552,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: SetUnsafe
     path: src/Vector Types/Int/Int2.cs
-    startLine: 66
+    startLine: 65
   assemblies:
   - piine
   namespace: piine
@@ -588,7 +587,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CalculateArea
     path: src/Vector Types/Int/Int2.cs
-    startLine: 68
+    startLine: 67
   assemblies:
   - piine
   namespace: piine
@@ -620,7 +619,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Normalize
     path: src/Vector Types/Int/Int2.cs
-    startLine: 70
+    startLine: 69
   assemblies:
   - piine
   namespace: piine
@@ -657,7 +656,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Int/Int2.cs
-    startLine: 84
+    startLine: 83
   assemblies:
   - piine
   namespace: piine
@@ -694,20 +693,20 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Int/Int2.cs
-    startLine: 86
+    startLine: 85
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static int Distance(Int2 a, Int2 b)
+    content: public static float Distance(Int2 a, Int2 b)
     parameters:
     - id: a
       type: piine.Int2
     - id: b
       type: piine.Int2
     return:
-      type: System.Int32
-    content.vb: Public Shared Function Distance(a As Int2, b As Int2) As Integer
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Int2, b As Int2) As Single
   overload: piine.Int2.Distance*
   modifiers.csharp:
   - public
@@ -733,7 +732,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int2.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - piine
   namespace: piine
@@ -755,16 +754,16 @@ items:
   - Shared
   fullName.vb: piine.Int2.Narrowing(piine.Float2 to piine.Int2)
   name.vb: Narrowing(Float2 to Int2)
-- uid: piine.Int2.op_Explicit(piine.Int2)~UnityEngine.Vector2
-  commentId: M:piine.Int2.op_Explicit(piine.Int2)~UnityEngine.Vector2
-  id: op_Explicit(piine.Int2)~UnityEngine.Vector2
+- uid: piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
+  commentId: M:piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
+  id: op_Explicit(piine.Int2)~System.Numerics.Vector2
   parent: piine.Int2
   langs:
   - csharp
   - vb
   name: Explicit(Int2 to Vector2)
   nameWithType: Int2.Explicit(Int2 to Vector2)
-  fullName: piine.Int2.Explicit(piine.Int2 to UnityEngine.Vector2)
+  fullName: piine.Int2.Explicit(piine.Int2 to System.Numerics.Vector2)
   type: Operator
   source:
     remote:
@@ -773,7 +772,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int2.cs
-    startLine: 90
+    startLine: 89
   assemblies:
   - piine
   namespace: piine
@@ -783,7 +782,7 @@ items:
     - id: v
       type: piine.Int2
     return:
-      type: UnityEngine.Vector2
+      type: System.Numerics.Vector2
     content.vb: Public Shared Narrowing Operator CType(v As Int2) As Vector2
   overload: piine.Int2.op_Explicit*
   nameWithType.vb: Int2.Narrowing(Int2 to Vector2)
@@ -793,18 +792,18 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int2.Narrowing(piine.Int2 to UnityEngine.Vector2)
+  fullName.vb: piine.Int2.Narrowing(piine.Int2 to System.Numerics.Vector2)
   name.vb: Narrowing(Int2 to Vector2)
-- uid: piine.Int2.op_Explicit(UnityEngine.Vector2)~piine.Int2
-  commentId: M:piine.Int2.op_Explicit(UnityEngine.Vector2)~piine.Int2
-  id: op_Explicit(UnityEngine.Vector2)~piine.Int2
+- uid: piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
+  id: op_Explicit(System.Numerics.Vector2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
   name: Explicit(Vector2 to Int2)
   nameWithType: Int2.Explicit(Vector2 to Int2)
-  fullName: piine.Int2.Explicit(UnityEngine.Vector2 to piine.Int2)
+  fullName: piine.Int2.Explicit(System.Numerics.Vector2 to piine.Int2)
   type: Operator
   source:
     remote:
@@ -813,7 +812,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int2.cs
-    startLine: 92
+    startLine: 91
   assemblies:
   - piine
   namespace: piine
@@ -821,7 +820,7 @@ items:
     content: public static explicit operator Int2(Vector2 v)
     parameters:
     - id: v
-      type: UnityEngine.Vector2
+      type: System.Numerics.Vector2
     return:
       type: piine.Int2
     content.vb: Public Shared Narrowing Operator CType(v As Vector2) As Int2
@@ -833,7 +832,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int2.Narrowing(UnityEngine.Vector2 to piine.Int2)
+  fullName.vb: piine.Int2.Narrowing(System.Numerics.Vector2 to piine.Int2)
   name.vb: Narrowing(Vector2 to Int2)
 - uid: piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
   commentId: M:piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
@@ -853,7 +852,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int2.cs
-    startLine: 94
+    startLine: 93
   assemblies:
   - piine
   namespace: piine
@@ -893,7 +892,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int2.cs
-    startLine: 96
+    startLine: 95
   assemblies:
   - piine
   namespace: piine
@@ -933,7 +932,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Int/Int2.cs
-    startLine: 98
+    startLine: 97
   assemblies:
   - piine
   namespace: piine
@@ -972,7 +971,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Int/Int2.cs
-    startLine: 100
+    startLine: 99
   assemblies:
   - piine
   namespace: piine
@@ -1011,7 +1010,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Int/Int2.cs
-    startLine: 102
+    startLine: 101
   assemblies:
   - piine
   namespace: piine
@@ -1050,7 +1049,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Int/Int2.cs
-    startLine: 104
+    startLine: 103
   assemblies:
   - piine
   namespace: piine
@@ -1089,7 +1088,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Int/Int2.cs
-    startLine: 106
+    startLine: 105
   assemblies:
   - piine
   namespace: piine
@@ -1126,7 +1125,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Int/Int2.cs
-    startLine: 108
+    startLine: 107
   assemblies:
   - piine
   namespace: piine
@@ -1165,7 +1164,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Int/Int2.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - piine
   namespace: piine
@@ -1204,7 +1203,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Int/Int2.cs
-    startLine: 112
+    startLine: 111
   assemblies:
   - piine
   namespace: piine
@@ -1243,7 +1242,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Int/Int2.cs
-    startLine: 114
+    startLine: 113
   assemblies:
   - piine
   namespace: piine
@@ -1282,7 +1281,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Int/Int2.cs
-    startLine: 116
+    startLine: 115
   assemblies:
   - piine
   namespace: piine
@@ -1321,7 +1320,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Int/Int2.cs
-    startLine: 118
+    startLine: 117
   assemblies:
   - piine
   namespace: piine
@@ -1342,6 +1341,41 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: piine.Int2.GetHashCode
+  commentId: M:piine.Int2.GetHashCode
+  id: GetHashCode
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Int2.GetHashCode()
+  fullName: piine.Int2.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Int/Int2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Vector Types/Int/Int2.cs
+    startLine: 119
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Int2.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 - uid: piine.Int2.ToString
   commentId: M:piine.Int2.ToString
   id: ToString
@@ -1360,7 +1394,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Int/Int2.cs
-    startLine: 120
+    startLine: 121
   assemblies:
   - piine
   namespace: piine
@@ -1395,7 +1429,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int2.cs
-    startLine: 122
+    startLine: 123
   assemblies:
   - piine
   namespace: piine
@@ -1432,7 +1466,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int2.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - piine
   namespace: piine
@@ -1497,37 +1531,6 @@ references:
     name: Int2
     nameWithType: Int2
     fullName: piine.Int2
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
-  spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -1721,13 +1724,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
-  isExternal: true
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1773,6 +1769,13 @@ references:
   name: Length
   nameWithType: Int2.Length
   fullName: piine.Int2.Length
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: piine.Int2.LengthSquared*
   commentId: Overload:piine.Int2.LengthSquared
   name: LengthSquared
@@ -1832,19 +1835,19 @@ references:
   name: Float2
   nameWithType: Float2
   fullName: piine.Float2
-- uid: UnityEngine.Vector2
-  commentId: T:UnityEngine.Vector2
-  parent: UnityEngine
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
   isExternal: true
   name: Vector2
   nameWithType: Vector2
-  fullName: UnityEngine.Vector2
-- uid: UnityEngine
-  commentId: N:UnityEngine
+  fullName: System.Numerics.Vector2
+- uid: System.Numerics
+  commentId: N:System.Numerics
   isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
 - uid: piine.Int2.op_Implicit*
   commentId: Overload:piine.Int2.op_Implicit
   name: Implicit
@@ -1955,13 +1958,6 @@ references:
   name: Division
   nameWithType: Int2.Division
   fullName: piine.Int2.Division
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
 - uid: piine.Int2.op_GreaterThan*
   commentId: Overload:piine.Int2.op_GreaterThan
   name: GreaterThan
@@ -1982,6 +1978,49 @@ references:
   name: LessThanOrEqual
   nameWithType: Int2.LessThanOrEqual
   fullName: piine.Int2.LessThanOrEqual
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Int2.GetHashCode*
+  commentId: Overload:piine.Int2.GetHashCode
+  name: GetHashCode
+  nameWithType: Int2.GetHashCode
+  fullName: piine.Int2.GetHashCode
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType

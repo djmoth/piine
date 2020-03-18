@@ -24,10 +24,10 @@ items:
   - piine.Int4.op_Explicit(piine.Float4)~piine.Int4
   - piine.Int4.op_GreaterThan(piine.Int4,piine.Int4)
   - piine.Int4.op_GreaterThanOrEqual(piine.Int4,piine.Int4)
+  - piine.Int4.op_Implicit(piine.Int4)~System.Numerics.Vector4
   - piine.Int4.op_Implicit(piine.Int4)~System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
-  - piine.Int4.op_Implicit(piine.Int4)~UnityEngine.Vector4
+  - piine.Int4.op_Implicit(System.Numerics.Vector4)~piine.Int4
   - piine.Int4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Int4
-  - piine.Int4.op_Implicit(UnityEngine.Vector4)~piine.Int4
   - piine.Int4.op_Inequality(piine.Int4,piine.Int4)
   - piine.Int4.op_LessThan(piine.Int4,piine.Int4)
   - piine.Int4.op_LessThanOrEqual(piine.Int4,piine.Int4)
@@ -59,7 +59,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Int4
     path: src/Vector Types/Int/Int4.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - piine
   namespace: piine
@@ -67,7 +67,6 @@ items:
     content: 'public struct Int4 : IEquatable<Int4>'
     content.vb: >-
       Public Structure Int4
-
           Implements IEquatable(Of Int4)
   implements:
   - System.IEquatable{piine.Int4}
@@ -99,7 +98,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Int/Int4.cs
-    startLine: 11
+    startLine: 10
   assemblies:
   - piine
   namespace: piine
@@ -132,7 +131,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Int/Int4.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - piine
   namespace: piine
@@ -169,7 +168,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Int/Int4.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - piine
   namespace: piine
@@ -206,7 +205,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Int/Int4.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - piine
   namespace: piine
@@ -243,7 +242,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Int/Int4.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - piine
   namespace: piine
@@ -280,7 +279,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitZ
     path: src/Vector Types/Int/Int4.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - piine
   namespace: piine
@@ -317,7 +316,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitW
     path: src/Vector Types/Int/Int4.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - piine
   namespace: piine
@@ -354,7 +353,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Int/Int4.cs
-    startLine: 31
+    startLine: 30
   assemblies:
   - piine
   namespace: piine
@@ -385,7 +384,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Int/Int4.cs
-    startLine: 33
+    startLine: 32
   assemblies:
   - piine
   namespace: piine
@@ -416,7 +415,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: z
     path: src/Vector Types/Int/Int4.cs
-    startLine: 35
+    startLine: 34
   assemblies:
   - piine
   namespace: piine
@@ -447,7 +446,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: w
     path: src/Vector Types/Int/Int4.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - piine
   namespace: piine
@@ -478,7 +477,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Int/Int4.cs
-    startLine: 39
+    startLine: 38
   assemblies:
   - piine
   namespace: piine
@@ -513,7 +512,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Int/Int4.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - piine
   namespace: piine
@@ -548,7 +547,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int4.cs
-    startLine: 43
+    startLine: 42
   assemblies:
   - piine
   namespace: piine
@@ -587,7 +586,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int4.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - piine
   namespace: piine
@@ -620,7 +619,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Int/Int4.cs
-    startLine: 59
+    startLine: 58
   assemblies:
   - piine
   namespace: piine
@@ -660,7 +659,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CalculateVolume
     path: src/Vector Types/Int/Int4.cs
-    startLine: 77
+    startLine: 76
   assemblies:
   - piine
   namespace: piine
@@ -692,7 +691,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Normalize
     path: src/Vector Types/Int/Int4.cs
-    startLine: 79
+    startLine: 78
   assemblies:
   - piine
   namespace: piine
@@ -729,7 +728,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Int/Int4.cs
-    startLine: 93
+    startLine: 92
   assemblies:
   - piine
   namespace: piine
@@ -766,7 +765,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Int/Int4.cs
-    startLine: 98
+    startLine: 97
   assemblies:
   - piine
   namespace: piine
@@ -805,7 +804,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int4.cs
-    startLine: 103
+    startLine: 102
   assemblies:
   - piine
   namespace: piine
@@ -827,16 +826,16 @@ items:
   - Shared
   fullName.vb: piine.Int4.Narrowing(piine.Float4 to piine.Int4)
   name.vb: Narrowing(Float4 to Int4)
-- uid: piine.Int4.op_Implicit(piine.Int4)~UnityEngine.Vector4
-  commentId: M:piine.Int4.op_Implicit(piine.Int4)~UnityEngine.Vector4
-  id: op_Implicit(piine.Int4)~UnityEngine.Vector4
+- uid: piine.Int4.op_Implicit(piine.Int4)~System.Numerics.Vector4
+  commentId: M:piine.Int4.op_Implicit(piine.Int4)~System.Numerics.Vector4
+  id: op_Implicit(piine.Int4)~System.Numerics.Vector4
   parent: piine.Int4
   langs:
   - csharp
   - vb
   name: Implicit(Int4 to Vector4)
   nameWithType: Int4.Implicit(Int4 to Vector4)
-  fullName: piine.Int4.Implicit(piine.Int4 to UnityEngine.Vector4)
+  fullName: piine.Int4.Implicit(piine.Int4 to System.Numerics.Vector4)
   type: Operator
   source:
     remote:
@@ -845,7 +844,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int4.cs
-    startLine: 105
+    startLine: 104
   assemblies:
   - piine
   namespace: piine
@@ -855,7 +854,7 @@ items:
     - id: iv
       type: piine.Int4
     return:
-      type: UnityEngine.Vector4
+      type: System.Numerics.Vector4
     content.vb: Public Shared Widening Operator CType(iv As Int4) As Vector4
   overload: piine.Int4.op_Implicit*
   nameWithType.vb: Int4.Widening(Int4 to Vector4)
@@ -865,18 +864,18 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int4.Widening(piine.Int4 to UnityEngine.Vector4)
+  fullName.vb: piine.Int4.Widening(piine.Int4 to System.Numerics.Vector4)
   name.vb: Widening(Int4 to Vector4)
-- uid: piine.Int4.op_Implicit(UnityEngine.Vector4)~piine.Int4
-  commentId: M:piine.Int4.op_Implicit(UnityEngine.Vector4)~piine.Int4
-  id: op_Implicit(UnityEngine.Vector4)~piine.Int4
+- uid: piine.Int4.op_Implicit(System.Numerics.Vector4)~piine.Int4
+  commentId: M:piine.Int4.op_Implicit(System.Numerics.Vector4)~piine.Int4
+  id: op_Implicit(System.Numerics.Vector4)~piine.Int4
   parent: piine.Int4
   langs:
   - csharp
   - vb
   name: Implicit(Vector4 to Int4)
   nameWithType: Int4.Implicit(Vector4 to Int4)
-  fullName: piine.Int4.Implicit(UnityEngine.Vector4 to piine.Int4)
+  fullName: piine.Int4.Implicit(System.Numerics.Vector4 to piine.Int4)
   type: Operator
   source:
     remote:
@@ -885,7 +884,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int4.cs
-    startLine: 107
+    startLine: 106
   assemblies:
   - piine
   namespace: piine
@@ -893,7 +892,7 @@ items:
     content: public static implicit operator Int4(Vector4 iv)
     parameters:
     - id: iv
-      type: UnityEngine.Vector4
+      type: System.Numerics.Vector4
     return:
       type: piine.Int4
     content.vb: Public Shared Widening Operator CType(iv As Vector4) As Int4
@@ -905,7 +904,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int4.Widening(UnityEngine.Vector4 to piine.Int4)
+  fullName.vb: piine.Int4.Widening(System.Numerics.Vector4 to piine.Int4)
   name.vb: Widening(Vector4 to Int4)
 - uid: piine.Int4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Int4
   commentId: M:piine.Int4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Int4
@@ -925,7 +924,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int4.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - piine
   namespace: piine
@@ -965,7 +964,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int4.cs
-    startLine: 111
+    startLine: 110
   assemblies:
   - piine
   namespace: piine
@@ -1005,7 +1004,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Int/Int4.cs
-    startLine: 113
+    startLine: 112
   assemblies:
   - piine
   namespace: piine
@@ -1044,7 +1043,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Int/Int4.cs
-    startLine: 115
+    startLine: 114
   assemblies:
   - piine
   namespace: piine
@@ -1083,7 +1082,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Int/Int4.cs
-    startLine: 117
+    startLine: 116
   assemblies:
   - piine
   namespace: piine
@@ -1122,7 +1121,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Int/Int4.cs
-    startLine: 119
+    startLine: 118
   assemblies:
   - piine
   namespace: piine
@@ -1161,7 +1160,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Int/Int4.cs
-    startLine: 121
+    startLine: 120
   assemblies:
   - piine
   namespace: piine
@@ -1198,7 +1197,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Int/Int4.cs
-    startLine: 123
+    startLine: 122
   assemblies:
   - piine
   namespace: piine
@@ -1237,7 +1236,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Int/Int4.cs
-    startLine: 125
+    startLine: 124
   assemblies:
   - piine
   namespace: piine
@@ -1276,7 +1275,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Int/Int4.cs
-    startLine: 127
+    startLine: 126
   assemblies:
   - piine
   namespace: piine
@@ -1315,7 +1314,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Int/Int4.cs
-    startLine: 129
+    startLine: 128
   assemblies:
   - piine
   namespace: piine
@@ -1354,7 +1353,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Int/Int4.cs
-    startLine: 131
+    startLine: 130
   assemblies:
   - piine
   namespace: piine
@@ -1393,7 +1392,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Int/Int4.cs
-    startLine: 133
+    startLine: 132
   assemblies:
   - piine
   namespace: piine
@@ -1432,7 +1431,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Int/Int4.cs
-    startLine: 135
+    startLine: 134
   assemblies:
   - piine
   namespace: piine
@@ -1467,7 +1466,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Vector Types/Int/Int4.cs
-    startLine: 137
+    startLine: 136
   assemblies:
   - piine
   namespace: piine
@@ -1502,7 +1501,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int4.cs
-    startLine: 139
+    startLine: 138
   assemblies:
   - piine
   namespace: piine
@@ -1539,7 +1538,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int4.cs
-    startLine: 141
+    startLine: 140
   assemblies:
   - piine
   namespace: piine
@@ -1916,19 +1915,19 @@ references:
   nameWithType.vb: Int4.Widening
   fullName.vb: piine.Int4.Widening
   name.vb: Widening
-- uid: UnityEngine.Vector4
-  commentId: T:UnityEngine.Vector4
-  parent: UnityEngine
+- uid: System.Numerics.Vector4
+  commentId: T:System.Numerics.Vector4
+  parent: System.Numerics
   isExternal: true
   name: Vector4
   nameWithType: Vector4
-  fullName: UnityEngine.Vector4
-- uid: UnityEngine
-  commentId: N:UnityEngine
+  fullName: System.Numerics.Vector4
+- uid: System.Numerics
+  commentId: N:System.Numerics
   isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
 - uid: System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
   commentId: T:System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
   parent: System

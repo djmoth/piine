@@ -10,6 +10,7 @@
     <Company>Emjada</Company>
     <Copyright>Copyright (C) Emjada</Copyright>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,6 +20,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,13 +30,6 @@
     <EmbeddedResource Remove="tests\**" />
     <None Remove="Demo\**" />
     <None Remove="tests\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="src\Ray.cs" />
-    <Compile Remove="src\Voxels\VoxelObject.cs" />
-    <Compile Remove="src\Voxels\VoxelRaytracer.cs" />
-    <Compile Remove="src\Voxels\VoxelScene.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,17 +46,10 @@
 
   <ItemGroup>
     <Folder Include="src\2D\" />
-    <Folder Include="src\Vector Types\Byte\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="src\Voxels\VoxelObject.cs" />
-    <None Include="src\Voxels\VoxelRaytracer.cs" />
-    <None Include="src\Voxels\VoxelScene.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="src\Ray.cs" />
-  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;E:\Game Development\Operation Kreaos\Assets\Libraries\&quot;" />
+  </Target>
 
 </Project>

@@ -5,11 +5,17 @@ items:
   id: Unmanaged
   parent: piine.Memory
   children:
-  - piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
+  - piine.Memory.Unmanaged.AllocMemory``1(System.Int32,System.Boolean)
+  - piine.Memory.Unmanaged.AllocMemory``1(System.Int64,System.Boolean)
   - piine.Memory.Unmanaged.AllocSpan``1(System.Int32)
-  - piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
+  - piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int32)
+  - piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int64)
   - piine.Memory.Unmanaged.FreeSpan``1(System.Span{``0})
+  - piine.Memory.Unmanaged.MemoryCopy``1(``0*,``0*,System.Int64,System.Int64)
+  - piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int32,System.Int32)
   - piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
+  - piine.Memory.Unmanaged.SetMemory``1(``0*,System.Int32,``0)
+  - piine.Memory.Unmanaged.ZeroMemory``1(``0*,System.Int32)
   langs:
   - csharp
   - vb
@@ -24,10 +30,12 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Unmanaged
     path: src/Memory/Unmanaged.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - piine
   namespace: piine.Memory
+  summary: "\nInterface for working with unmanaged memory.\n"
+  example: []
   syntax:
     content: public static class Unmanaged
     content.vb: Public Module Unmanaged
@@ -48,16 +56,16 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
-  commentId: M:piine.Memory.Unmanaged.AllocMemory``1(System.Int64)
-  id: AllocMemory``1(System.Int64)
+- uid: piine.Memory.Unmanaged.AllocMemory``1(System.Int64,System.Boolean)
+  commentId: M:piine.Memory.Unmanaged.AllocMemory``1(System.Int64,System.Boolean)
+  id: AllocMemory``1(System.Int64,System.Boolean)
   parent: piine.Memory.Unmanaged
   langs:
   - csharp
   - vb
-  name: AllocMemory<T>(Int64)
-  nameWithType: Unmanaged.AllocMemory<T>(Int64)
-  fullName: piine.Memory.Unmanaged.AllocMemory<T>(System.Int64)
+  name: AllocMemory<T>(Int64, Boolean)
+  nameWithType: Unmanaged.AllocMemory<T>(Int64, Boolean)
+  fullName: piine.Memory.Unmanaged.AllocMemory<T>(System.Int64, System.Boolean)
   type: Method
   source:
     remote:
@@ -66,33 +74,35 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 14
+    startLine: 18
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nAllocate unmanaged memory. Also informs the GC of the added memory pressure.\n"
+  summary: "\nAllocate unmanaged memory. Also informs the GC of the added memory pressure. The content is zero-filled depending on the value of <code data-dev-comment-type=\"paramref\" class=\"paramref\">fillWithDefault</code>.\n"
   example: []
   syntax:
     content: >-
       [CLSCompliant(false)]
 
-      public static T*AllocMemory<T>(long length)
-
+      public static T*AllocMemory<T>(long length, bool fillWithDefault = false)
           where T : struct
     parameters:
     - id: length
       type: System.Int64
-      description: Number of elements to allocate.
+      description: ''
+    - id: fillWithDefault
+      type: System.Boolean
+      description: If true, fills all the buffers with <code>default (T)</code>
     typeParameters:
     - id: T
-      description: Unmanaged Type to allocate for.
+      description: ''
     return:
       type: '{T}*'
       description: ''
     content.vb: >-
       <CLSCompliant(False)>
 
-      Public Shared Function AllocMemory(Of T As Structure)(length As Long) As T
+      Public Shared Function AllocMemory(Of T As Structure)(length As Long, fillWithDefault As Boolean = False) As T
   overload: piine.Memory.Unmanaged.AllocMemory*
   attributes:
   - type: System.CLSCompliantAttribute
@@ -100,25 +110,88 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: Unmanaged.AllocMemory(Of T)(Int64)
+  nameWithType.vb: Unmanaged.AllocMemory(Of T)(Int64, Boolean)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Memory.Unmanaged.AllocMemory(Of T)(System.Int64)
-  name.vb: AllocMemory(Of T)(Int64)
-- uid: piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
-  commentId: M:piine.Memory.Unmanaged.FreeMemory``1(``0*,System.Int64)
-  id: FreeMemory``1(``0*,System.Int64)
+  fullName.vb: piine.Memory.Unmanaged.AllocMemory(Of T)(System.Int64, System.Boolean)
+  name.vb: AllocMemory(Of T)(Int64, Boolean)
+- uid: piine.Memory.Unmanaged.AllocMemory``1(System.Int32,System.Boolean)
+  commentId: M:piine.Memory.Unmanaged.AllocMemory``1(System.Int32,System.Boolean)
+  id: AllocMemory``1(System.Int32,System.Boolean)
   parent: piine.Memory.Unmanaged
   langs:
   - csharp
   - vb
-  name: FreeMemory<T>(T*, Int64)
-  nameWithType: Unmanaged.FreeMemory<T>(T*, Int64)
-  fullName: piine.Memory.Unmanaged.FreeMemory<T>(T*, System.Int64)
+  name: AllocMemory<T>(Int32, Boolean)
+  nameWithType: Unmanaged.AllocMemory<T>(Int32, Boolean)
+  fullName: piine.Memory.Unmanaged.AllocMemory<T>(System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: AllocMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 47
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nAllocate unmanaged memory. Also informs the GC of the added memory pressure. The content is zero-filled depending on the value of <code data-dev-comment-type=\"paramref\" class=\"paramref\">fillWithDefault</code>.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static T*AllocMemory<T>(int length, bool fillWithDefault = false)
+          where T : struct
+    parameters:
+    - id: length
+      type: System.Int32
+      description: ''
+    - id: fillWithDefault
+      type: System.Boolean
+      description: If true, fills all the buffers with <code>default (T)</code>
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}*'
+      description: ''
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Function AllocMemory(Of T As Structure)(length As Integer, fillWithDefault As Boolean = False) As T
+  overload: piine.Memory.Unmanaged.AllocMemory*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.AllocMemory(Of T)(Int32, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.AllocMemory(Of T)(System.Int32, System.Boolean)
+  name.vb: AllocMemory(Of T)(Int32, Boolean)
+- uid: piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int64)
+  commentId: M:piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int64)
+  id: FreeMemory``1(``0*@,System.Int64)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: FreeMemory<T>(ref T*, Int64)
+  nameWithType: Unmanaged.FreeMemory<T>(ref T*, Int64)
+  fullName: piine.Memory.Unmanaged.FreeMemory<T>(ref T*, System.Int64)
   type: Method
   source:
     remote:
@@ -127,7 +200,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FreeMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 28
+    startLine: 55
   assemblies:
   - piine
   namespace: piine.Memory
@@ -137,13 +210,12 @@ items:
     content: >-
       [CLSCompliant(false)]
 
-      public static void FreeMemory<T>(T*memory, long length)
-
+      public static void FreeMemory<T>(ref T*memory, long length)
           where T : struct
     parameters:
     - id: memory
       type: '{T}*'
-      description: Pointer to memory
+      description: Pointer to memory. The pointer is set to <code>null</code> afterwards
     - id: length
       type: System.Int64
       description: Number of elements to free
@@ -152,7 +224,7 @@ items:
     content.vb: >-
       <CLSCompliant(False)>
 
-      Public Shared Sub FreeMemory(Of T As Structure)(memory As T *, length As Long)
+      Public Shared Sub FreeMemory(Of T As Structure)(ByRef memory As T *, length As Long)
   overload: piine.Memory.Unmanaged.FreeMemory*
   attributes:
   - type: System.CLSCompliantAttribute
@@ -160,15 +232,74 @@ items:
     arguments:
     - type: System.Boolean
       value: false
-  nameWithType.vb: Unmanaged.FreeMemory(Of T)(T*, Int64)
+  nameWithType.vb: Unmanaged.FreeMemory(Of T)(ByRef T*, Int64)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Memory.Unmanaged.FreeMemory(Of T)(T*, System.Int64)
-  name.vb: FreeMemory(Of T)(T*, Int64)
+  fullName.vb: piine.Memory.Unmanaged.FreeMemory(Of T)(ByRef T*, System.Int64)
+  name.vb: FreeMemory(Of T)(ByRef T*, Int64)
+- uid: piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int32)
+  commentId: M:piine.Memory.Unmanaged.FreeMemory``1(``0*@,System.Int32)
+  id: FreeMemory``1(``0*@,System.Int32)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: FreeMemory<T>(ref T*, Int32)
+  nameWithType: Unmanaged.FreeMemory<T>(ref T*, Int32)
+  fullName: piine.Memory.Unmanaged.FreeMemory<T>(ref T*, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: FreeMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 76
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFree unmanaged memory. Also informs the GC of the relieved memory pressure.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static void FreeMemory<T>(ref T*memory, int length)
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory. The pointer is set to <code>null</code> afterwards
+    - id: length
+      type: System.Int32
+      description: Number of elements to free
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Sub FreeMemory(Of T As Structure)(ByRef memory As T *, length As Integer)
+  overload: piine.Memory.Unmanaged.FreeMemory*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.FreeMemory(Of T)(ByRef T*, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.FreeMemory(Of T)(ByRef T*, System.Int32)
+  name.vb: FreeMemory(Of T)(ByRef T*, Int32)
 - uid: piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
   commentId: M:piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int64,System.Int64)
   id: ReAllocMemory``1(``0*@,System.Int64,System.Int64)
@@ -187,7 +318,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ReAllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 44
+    startLine: 86
   assemblies:
   - piine
   namespace: piine.Memory
@@ -198,7 +329,6 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, long currentLength, long newLength)
-
           where T : struct
     parameters:
     - id: memory
@@ -232,6 +362,252 @@ items:
   - Shared
   fullName.vb: piine.Memory.Unmanaged.ReAllocMemory(Of T)(ByRef T*, System.Int64, System.Int64)
   name.vb: ReAllocMemory(Of T)(ByRef T*, Int64, Int64)
+- uid: piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int32,System.Int32)
+  commentId: M:piine.Memory.Unmanaged.ReAllocMemory``1(``0*@,System.Int32,System.Int32)
+  id: ReAllocMemory``1(``0*@,System.Int32,System.Int32)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: ReAllocMemory<T>(ref T*, Int32, Int32)
+  nameWithType: Unmanaged.ReAllocMemory<T>(ref T*, Int32, Int32)
+  fullName: piine.Memory.Unmanaged.ReAllocMemory<T>(ref T*, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ReAllocMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 116
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nResizes already allocated memory\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static void ReAllocMemory<T>(ref T*memory, int currentLength, int newLength)
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory
+    - id: currentLength
+      type: System.Int32
+      description: Current number of elements
+    - id: newLength
+      type: System.Int32
+      description: New number of elements
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Sub ReAllocMemory(Of T As Structure)(ByRef memory As T *, currentLength As Integer, newLength As Integer)
+  overload: piine.Memory.Unmanaged.ReAllocMemory*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.ReAllocMemory(Of T)(ByRef T*, Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.ReAllocMemory(Of T)(ByRef T*, System.Int32, System.Int32)
+  name.vb: ReAllocMemory(Of T)(ByRef T*, Int32, Int32)
+- uid: piine.Memory.Unmanaged.SetMemory``1(``0*,System.Int32,``0)
+  commentId: M:piine.Memory.Unmanaged.SetMemory``1(``0*,System.Int32,``0)
+  id: SetMemory``1(``0*,System.Int32,``0)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: SetMemory<T>(T*, Int32, T)
+  nameWithType: Unmanaged.SetMemory<T>(T*, Int32, T)
+  fullName: piine.Memory.Unmanaged.SetMemory<T>(T*, System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 125
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFills memory with a value\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static void SetMemory<T>(T*memory, int length, T data)
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory
+    - id: length
+      type: System.Int32
+      description: Number of elements
+    - id: data
+      type: '{T}'
+      description: Value to fill with
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Sub SetMemory(Of T As Structure)(memory As T *, length As Integer, data As T)
+  overload: piine.Memory.Unmanaged.SetMemory*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.SetMemory(Of T)(T*, Int32, T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.SetMemory(Of T)(T*, System.Int32, T)
+  name.vb: SetMemory(Of T)(T*, Int32, T)
+- uid: piine.Memory.Unmanaged.ZeroMemory``1(``0*,System.Int32)
+  commentId: M:piine.Memory.Unmanaged.ZeroMemory``1(``0*,System.Int32)
+  id: ZeroMemory``1(``0*,System.Int32)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: ZeroMemory<T>(T*, Int32)
+  nameWithType: Unmanaged.ZeroMemory<T>(T*, Int32)
+  fullName: piine.Memory.Unmanaged.ZeroMemory<T>(T*, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ZeroMemory
+    path: src/Memory/Unmanaged.cs
+    startLine: 196
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nFills memory with <code>default (T)</code>\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static void ZeroMemory<T>(T*memory, int length)
+          where T : struct
+    parameters:
+    - id: memory
+      type: '{T}*'
+      description: Pointer to memory
+    - id: length
+      type: System.Int32
+      description: Number of elements
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Sub ZeroMemory(Of T As Structure)(memory As T *, length As Integer)
+  overload: piine.Memory.Unmanaged.ZeroMemory*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.ZeroMemory(Of T)(T*, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.ZeroMemory(Of T)(T*, System.Int32)
+  name.vb: ZeroMemory(Of T)(T*, Int32)
+- uid: piine.Memory.Unmanaged.MemoryCopy``1(``0*,``0*,System.Int64,System.Int64)
+  commentId: M:piine.Memory.Unmanaged.MemoryCopy``1(``0*,``0*,System.Int64,System.Int64)
+  id: MemoryCopy``1(``0*,``0*,System.Int64,System.Int64)
+  parent: piine.Memory.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: MemoryCopy<T>(T*, T*, Int64, Int64)
+  nameWithType: Unmanaged.MemoryCopy<T>(T*, T*, Int64, Int64)
+  fullName: piine.Memory.Unmanaged.MemoryCopy<T>(T*, T*, System.Int64, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/Unmanaged.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: MemoryCopy
+    path: src/Memory/Unmanaged.cs
+    startLine: 226
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nWrapper for <code>Buffer.MemoryCopy</code>. Copies in elements instead of bytes.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static void MemoryCopy<T>(T*source, T*destination, long destinationLength, long elementsToCopy)
+          where T : struct
+    parameters:
+    - id: source
+      type: '{T}*'
+    - id: destination
+      type: '{T}*'
+    - id: destinationLength
+      type: System.Int64
+      description: Number of elements at <code data-dev-comment-type="paramref" class="paramref">destination</code>
+    - id: elementsToCopy
+      type: System.Int64
+      description: Number of elements to copy
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Sub MemoryCopy(Of T As Structure)(source As T *, destination As T *, destinationLength As Long, elementsToCopy As Long)
+  overload: piine.Memory.Unmanaged.MemoryCopy*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Unmanaged.MemoryCopy(Of T)(T*, T*, Int64, Int64)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.Unmanaged.MemoryCopy(Of T)(T*, T*, System.Int64, System.Int64)
+  name.vb: MemoryCopy(Of T)(T*, T*, Int64, Int64)
 - uid: piine.Memory.Unmanaged.AllocSpan``1(System.Int32)
   commentId: M:piine.Memory.Unmanaged.AllocSpan``1(System.Int32)
   id: AllocSpan``1(System.Int32)
@@ -250,14 +626,13 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocSpan
     path: src/Memory/Unmanaged.cs
-    startLine: 60
+    startLine: 229
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
     content: >-
       public static Span<T> AllocSpan<T>(int length)
-
           where T : struct
     parameters:
     - id: length
@@ -295,14 +670,13 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FreeSpan
     path: src/Memory/Unmanaged.cs
-    startLine: 61
+    startLine: 230
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
     content: >-
       public static void FreeSpan<T>(Span<T> span)
-
           where T : struct
     parameters:
     - id: span
@@ -630,6 +1004,13 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: '{T}*'
   isExternal: true
   name: T*
@@ -649,6 +1030,13 @@ references:
   - name: '*'
     nameWithType: '*'
     fullName: '*'
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: piine.Memory.Unmanaged.FreeMemory*
   commentId: Overload:piine.Memory.Unmanaged.FreeMemory
   name: FreeMemory
@@ -659,18 +1047,36 @@ references:
   name: ReAllocMemory
   nameWithType: Unmanaged.ReAllocMemory
   fullName: piine.Memory.Unmanaged.ReAllocMemory
+- uid: piine.Memory.Unmanaged.SetMemory*
+  commentId: Overload:piine.Memory.Unmanaged.SetMemory
+  name: SetMemory
+  nameWithType: Unmanaged.SetMemory
+  fullName: piine.Memory.Unmanaged.SetMemory
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: piine.Memory.Unmanaged.ZeroMemory*
+  commentId: Overload:piine.Memory.Unmanaged.ZeroMemory
+  name: ZeroMemory
+  nameWithType: Unmanaged.ZeroMemory
+  fullName: piine.Memory.Unmanaged.ZeroMemory
+- uid: piine.Memory.Unmanaged.MemoryCopy*
+  commentId: Overload:piine.Memory.Unmanaged.MemoryCopy
+  name: MemoryCopy
+  nameWithType: Unmanaged.MemoryCopy
+  fullName: piine.Memory.Unmanaged.MemoryCopy
 - uid: piine.Memory.Unmanaged.AllocSpan*
   commentId: Overload:piine.Memory.Unmanaged.AllocSpan
   name: AllocSpan
   nameWithType: Unmanaged.AllocSpan
   fullName: piine.Memory.Unmanaged.AllocSpan
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
 - uid: System.Span{{T}}
   commentId: T:System.Span{``0}
   parent: System

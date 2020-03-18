@@ -6,8 +6,12 @@ items:
   parent: piine
   children:
   - piine.XorShift.#ctor(System.Int32)
+  - piine.XorShift.Equals(System.Object)
+  - piine.XorShift.GetHashCode
   - piine.XorShift.Next
   - piine.XorShift.Next(System.Int32,System.Int32)
+  - piine.XorShift.op_Equality(piine.XorShift,piine.XorShift)
+  - piine.XorShift.op_Inequality(piine.XorShift,piine.XorShift)
   langs:
   - csharp
   - vb
@@ -22,16 +26,16 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XorShift
     path: src/XorShift.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - piine
   namespace: piine
+  summary: "\nA simple Pseudo-Random Number Generator, derived from George Marsaglia&apos;s work\n"
+  example: []
   syntax:
     content: public struct XorShift
     content.vb: Public Structure XorShift
   inheritedMembers:
-  - System.ValueType.Equals(System.Object)
-  - System.ValueType.GetHashCode
   - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
@@ -60,7 +64,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/XorShift.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - piine
   namespace: piine
@@ -93,7 +97,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
-    startLine: 15
+    startLine: 24
   assemblies:
   - piine
   namespace: piine
@@ -127,7 +131,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
-    startLine: 28
+    startLine: 37
   assemblies:
   - piine
   namespace: piine
@@ -150,84 +154,163 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: piine.XorShift.GetHashCode
+  commentId: M:piine.XorShift.GetHashCode
+  id: GetHashCode
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: XorShift.GetHashCode()
+  fullName: piine.XorShift.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/XorShift.cs
+    startLine: 45
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.XorShift.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.XorShift.op_Equality(piine.XorShift,piine.XorShift)
+  commentId: M:piine.XorShift.op_Equality(piine.XorShift,piine.XorShift)
+  id: op_Equality(piine.XorShift,piine.XorShift)
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Equality(XorShift, XorShift)
+  nameWithType: XorShift.Equality(XorShift, XorShift)
+  fullName: piine.XorShift.Equality(piine.XorShift, piine.XorShift)
+  type: Operator
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/XorShift.cs
+    startLine: 47
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(XorShift left, XorShift right)
+    parameters:
+    - id: left
+      type: piine.XorShift
+    - id: right
+      type: piine.XorShift
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As XorShift, right As XorShift) As Boolean
+  overload: piine.XorShift.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.XorShift.op_Inequality(piine.XorShift,piine.XorShift)
+  commentId: M:piine.XorShift.op_Inequality(piine.XorShift,piine.XorShift)
+  id: op_Inequality(piine.XorShift,piine.XorShift)
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Inequality(XorShift, XorShift)
+  nameWithType: XorShift.Inequality(XorShift, XorShift)
+  fullName: piine.XorShift.Inequality(piine.XorShift, piine.XorShift)
+  type: Operator
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/XorShift.cs
+    startLine: 49
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(XorShift left, XorShift right)
+    parameters:
+    - id: left
+      type: piine.XorShift
+    - id: right
+      type: piine.XorShift
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As XorShift, right As XorShift) As Boolean
+  overload: piine.XorShift.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.XorShift.Equals(System.Object)
+  commentId: M:piine.XorShift.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: XorShift.Equals(Object)
+  fullName: piine.XorShift.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/XorShift.cs
+    startLine: 51
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.XorShift.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 references:
 - uid: piine
   commentId: N:piine
   name: piine
   nameWithType: piine
   fullName: piine
-- uid: System.ValueType.Equals(System.Object)
-  commentId: M:System.ValueType.Equals(System.Object)
-  parent: System.ValueType
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: ValueType.Equals(Object)
-  fullName: System.ValueType.Equals(System.Object)
-  spec.csharp:
-  - uid: System.ValueType.Equals(System.Object)
-    name: Equals
-    nameWithType: ValueType.Equals
-    fullName: System.ValueType.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.ValueType.Equals(System.Object)
-    name: Equals
-    nameWithType: ValueType.Equals
-    fullName: System.ValueType.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
-  spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
@@ -441,3 +524,108 @@ references:
   name: Next
   nameWithType: XorShift.Next
   fullName: piine.XorShift.Next
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.XorShift.GetHashCode*
+  commentId: Overload:piine.XorShift.GetHashCode
+  name: GetHashCode
+  nameWithType: XorShift.GetHashCode
+  fullName: piine.XorShift.GetHashCode
+- uid: piine.XorShift.op_Equality*
+  commentId: Overload:piine.XorShift.op_Equality
+  name: Equality
+  nameWithType: XorShift.Equality
+  fullName: piine.XorShift.Equality
+- uid: piine.XorShift
+  commentId: T:piine.XorShift
+  parent: piine
+  name: XorShift
+  nameWithType: XorShift
+  fullName: piine.XorShift
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.XorShift.op_Inequality*
+  commentId: Overload:piine.XorShift.op_Inequality
+  name: Inequality
+  nameWithType: XorShift.Inequality
+  fullName: piine.XorShift.Inequality
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.XorShift.Equals*
+  commentId: Overload:piine.XorShift.Equals
+  name: Equals
+  nameWithType: XorShift.Equals
+  fullName: piine.XorShift.Equals

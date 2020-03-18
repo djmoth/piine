@@ -4,9 +4,14 @@ items:
   commentId: N:piine.Memory
   id: piine.Memory
   children:
+  - piine.Memory.FixedBufferPool`1
+  - piine.Memory.GlobalObjects
+  - piine.Memory.ObjectPool`1
   - piine.Memory.Unmanaged
   - piine.Memory.UnmanagedArray`1
   - piine.Memory.UnmanagedArray`1.Enumerator
+  - piine.Memory.UnmanagedBuffer`1
+  - piine.Memory.UnmanagedDictionary`2
   - piine.Memory.UnmanagedList`1
   - piine.Memory.UnmanagedList`1.Enumerator
   langs:
@@ -19,6 +24,83 @@ items:
   assemblies:
   - piine
 references:
+- uid: piine.Memory.FixedBufferPool`1
+  commentId: T:piine.Memory.FixedBufferPool`1
+  name: FixedBufferPool<T>
+  nameWithType: FixedBufferPool<T>
+  fullName: piine.Memory.FixedBufferPool<T>
+  nameWithType.vb: FixedBufferPool(Of T)
+  fullName.vb: piine.Memory.FixedBufferPool(Of T)
+  name.vb: FixedBufferPool(Of T)
+  spec.csharp:
+  - uid: piine.Memory.FixedBufferPool`1
+    name: FixedBufferPool
+    nameWithType: FixedBufferPool
+    fullName: piine.Memory.FixedBufferPool
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.FixedBufferPool`1
+    name: FixedBufferPool
+    nameWithType: FixedBufferPool
+    fullName: piine.Memory.FixedBufferPool
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.GlobalObjects
+  commentId: T:piine.Memory.GlobalObjects
+  name: GlobalObjects
+  nameWithType: GlobalObjects
+  fullName: piine.Memory.GlobalObjects
+- uid: piine.Memory.ObjectPool`1
+  commentId: T:piine.Memory.ObjectPool`1
+  name: ObjectPool<T>
+  nameWithType: ObjectPool<T>
+  fullName: piine.Memory.ObjectPool<T>
+  nameWithType.vb: ObjectPool(Of T)
+  fullName.vb: piine.Memory.ObjectPool(Of T)
+  name.vb: ObjectPool(Of T)
+  spec.csharp:
+  - uid: piine.Memory.ObjectPool`1
+    name: ObjectPool
+    nameWithType: ObjectPool
+    fullName: piine.Memory.ObjectPool
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.ObjectPool`1
+    name: ObjectPool
+    nameWithType: ObjectPool
+    fullName: piine.Memory.ObjectPool
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: piine.Memory.Unmanaged
   commentId: T:piine.Memory.Unmanaged
   name: Unmanaged
@@ -89,6 +171,91 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedBuffer`1
+  commentId: T:piine.Memory.UnmanagedBuffer`1
+  parent: piine.Memory
+  name: UnmanagedBuffer<T>
+  nameWithType: UnmanagedBuffer<T>
+  fullName: piine.Memory.UnmanagedBuffer<T>
+  nameWithType.vb: UnmanagedBuffer(Of T)
+  fullName.vb: piine.Memory.UnmanagedBuffer(Of T)
+  name.vb: UnmanagedBuffer(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedBuffer`1
+    name: UnmanagedBuffer
+    nameWithType: UnmanagedBuffer
+    fullName: piine.Memory.UnmanagedBuffer
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedBuffer`1
+    name: UnmanagedBuffer
+    nameWithType: UnmanagedBuffer
+    fullName: piine.Memory.UnmanagedBuffer
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedDictionary`2
+  commentId: T:piine.Memory.UnmanagedDictionary`2
+  name: UnmanagedDictionary<TKey, TValue>
+  nameWithType: UnmanagedDictionary<TKey, TValue>
+  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>
+  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue)
+  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue)
+  name.vb: UnmanagedDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedDictionary`2
+    name: UnmanagedDictionary
+    nameWithType: UnmanagedDictionary
+    fullName: piine.Memory.UnmanagedDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedDictionary`2
+    name: UnmanagedDictionary
+    nameWithType: UnmanagedDictionary
+    fullName: piine.Memory.UnmanagedDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
   - name: )
     nameWithType: )
     fullName: )

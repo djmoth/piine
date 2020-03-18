@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct UnmanagedBuffer&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct UnmanagedBuffer&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="piine.html" title="piine" class="">piine</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="piine.Byte2.html" title="Byte2" class="">Byte2</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Byte3.html" title="Byte3" class="">Byte3</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Byte4.html" title="Byte4" class="">Byte4</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Double2.html" title="Double2" class="">Double2</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Float2.html" title="Float2" class="">Float2</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Float3.html" title="Float3" class="">Float3</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Float4.html" title="Float4" class="">Float4</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Int2.html" title="Int2" class="">Int2</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Int3.html" title="Int3" class="">Int3</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Int4.html" title="Int4" class="">Int4</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Piine.html" title="Piine" class="">Piine</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Simd.html" title="Simd" class="">Simd</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.XorShift.html" title="XorShift" class="">XorShift</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="piine.Graphics.html" title="piine.Graphics" class="">piine.Graphics</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="piine.Graphics.Color32.html" title="Color32" class="">Color32</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="piine.Memory.html" title="piine.Memory" class="">piine.Memory</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="piine.Memory.FixedBufferPool-1.html" title="FixedBufferPool&lt;T&gt;" class="">FixedBufferPool&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.GlobalObjects.html" title="GlobalObjects" class="">GlobalObjects</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.ObjectPool-1.html" title="ObjectPool&lt;T&gt;" class="">ObjectPool&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.Unmanaged.html" title="Unmanaged" class="">Unmanaged</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedArray-1.html" title="UnmanagedArray&lt;T&gt;" class="">UnmanagedArray&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedArray-1.Enumerator.html" title="UnmanagedArray&lt;T&gt;.Enumerator" class="">UnmanagedArray&lt;T&gt;.Enumerator</a>
+                          </li>
+                          <li class="active">
+                            <a href="piine.Memory.UnmanagedBuffer-1.html" title="UnmanagedBuffer&lt;T&gt;" class="active">UnmanagedBuffer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedDictionary-2.html" title="UnmanagedDictionary&lt;TKey, TValue&gt;" class="">UnmanagedDictionary&lt;TKey, TValue&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedList-1.html" title="UnmanagedList&lt;T&gt;" class="">UnmanagedList&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedList-1.Enumerator.html" title="UnmanagedList&lt;T&gt;.Enumerator" class="">UnmanagedList&lt;T&gt;.Enumerator</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="piine.Memory.Unsafe.html" title="piine.Memory.Unsafe" class="">piine.Memory.Unsafe</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="piine.Memory.Unsafe.IUnsafeObject.html" title="IUnsafeObject" class="">IUnsafeObject</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="piine.Procedural.html" title="piine.Procedural" class="">piine.Procedural</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="piine.Procedural.OpenSimplexNoise.html" title="OpenSimplexNoise" class="">OpenSimplexNoise</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Tests.html" title="Tests" class="">Tests</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Tests.Int3Tests.html" title="Int3Tests" class="">Int3Tests</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Tests.Memory.html" title="Tests.Memory" class="">Tests.Memory</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Tests.Memory.FixedBufferPoolTests.html" title="FixedBufferPoolTests" class="">FixedBufferPoolTests</a>
+                          </li>
+                          <li class="">
+                            <a href="Tests.Memory.UnmanagedArrayTests.html" title="UnmanagedArrayTests" class="">UnmanagedArrayTests</a>
+                          </li>
+                          <li class="">
+                            <a href="Tests.Memory.UnmanagedListTests.html" title="UnmanagedListTests" class="">UnmanagedListTests</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="piine.Memory.UnmanagedBuffer`1">
+  
+  
+  <h1 id="piine_Memory_UnmanagedBuffer_1" data-uid="piine.Memory.UnmanagedBuffer`1" class="text-break">Struct UnmanagedBuffer&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Points to a buffer stored in unmanaged memory.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="piine.Memory.html">piine.Memory</a></h6>
+  <h6><strong>Assembly</strong>: piine.dll</h6>
+  <h5 id="piine_Memory_UnmanagedBuffer_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct UnmanagedBuffer&lt;T&gt; : IEquatable&lt;UnmanagedBuffer&lt;T&gt;&gt; where T : struct</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1__ctor__0__System_Int64_.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.%23ctor(%600*%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L40">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1__ctor_" data-uid="piine.Memory.UnmanagedBuffer`1.#ctor*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1__ctor__0__System_Int64_" data-uid="piine.Memory.UnmanagedBuffer`1.#ctor(`0*,System.Int64)">UnmanagedBuffer(T*, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public UnmanagedBuffer(T*pointer, long length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">pointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1__ctor_System_IntPtr_System_Int64_.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.%23ctor(System.IntPtr%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L47">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1__ctor_" data-uid="piine.Memory.UnmanagedBuffer`1.#ctor*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1__ctor_System_IntPtr_System_Int64_" data-uid="piine.Memory.UnmanagedBuffer`1.#ctor(System.IntPtr,System.Int64)">UnmanagedBuffer(IntPtr, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnmanagedBuffer(IntPtr pointer, long length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_Allocated.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.Allocated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L16">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_Allocated_" data-uid="piine.Memory.UnmanagedBuffer`1.Allocated*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_Allocated" data-uid="piine.Memory.UnmanagedBuffer`1.Allocated">Allocated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Allocated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_Item_System_Int64_.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.Item(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L18">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_Item_" data-uid="piine.Memory.UnmanagedBuffer`1.Item*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_Item_System_Int64_" data-uid="piine.Memory.UnmanagedBuffer`1.Item(System.Int64)">Item[Int64]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[long index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_Length.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L15">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_Length_" data-uid="piine.Memory.UnmanagedBuffer`1.Length*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_Length" data-uid="piine.Memory.UnmanagedBuffer`1.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_Equals_piine_Memory_UnmanagedBuffer__0__.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.Equals(piine.Memory.UnmanagedBuffer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L78">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_Equals_" data-uid="piine.Memory.UnmanagedBuffer`1.Equals*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_Equals_piine_Memory_UnmanagedBuffer__0__" data-uid="piine.Memory.UnmanagedBuffer`1.Equals(piine.Memory.UnmanagedBuffer{`0})">Equals(UnmanagedBuffer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(UnmanagedBuffer&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L68">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_Equals_" data-uid="piine.Memory.UnmanagedBuffer`1.Equals*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_Equals_System_Object_" data-uid="piine.Memory.UnmanagedBuffer`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_GetHashCode.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L66">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_GetHashCode_" data-uid="piine.Memory.UnmanagedBuffer`1.GetHashCode*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_GetHashCode" data-uid="piine.Memory.UnmanagedBuffer`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_GetPointer.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.GetPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L53">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_GetPointer_" data-uid="piine.Memory.UnmanagedBuffer`1.GetPointer*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_GetPointer" data-uid="piine.Memory.UnmanagedBuffer`1.GetPointer">GetPointer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public T*GetPointer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_op_Equality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.op_Equality(piine.Memory.UnmanagedBuffer%7B%600%7D%2Cpiine.Memory.UnmanagedBuffer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L62">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_op_Equality_" data-uid="piine.Memory.UnmanagedBuffer`1.op_Equality*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_op_Equality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__" data-uid="piine.Memory.UnmanagedBuffer`1.op_Equality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})">Equality(UnmanagedBuffer&lt;T&gt;, UnmanagedBuffer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(UnmanagedBuffer&lt;T&gt; left, UnmanagedBuffer&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1_op_Inequality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601.op_Inequality(piine.Memory.UnmanagedBuffer%7B%600%7D%2Cpiine.Memory.UnmanagedBuffer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L64">View Source</a>
+  </span>
+  <a id="piine_Memory_UnmanagedBuffer_1_op_Inequality_" data-uid="piine.Memory.UnmanagedBuffer`1.op_Inequality*"></a>
+  <h4 id="piine_Memory_UnmanagedBuffer_1_op_Inequality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__" data-uid="piine.Memory.UnmanagedBuffer`1.op_Inequality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})">Inequality(UnmanagedBuffer&lt;T&gt;, UnmanagedBuffer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(UnmanagedBuffer&lt;T&gt; left, UnmanagedBuffer&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="piine.Memory.UnmanagedBuffer-1.html">UnmanagedBuffer</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Memory_UnmanagedBuffer_1.md&amp;value=---%0Auid%3A%20piine.Memory.UnmanagedBuffer%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/djmoth/piine/blob/master/src/Memory/UnmanagedBuffer.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

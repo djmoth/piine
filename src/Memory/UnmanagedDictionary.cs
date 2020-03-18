@@ -67,6 +67,8 @@ namespace piine.Memory
             if (Count > bucketSize * RESIZE_THRESHOLD)
                 ResizeBucket (bucketSize * 2);
 
+            Count++;
+
             BucketSlot* slot = GetBucketSlot (key);
 
             slot->Add (key, value);
@@ -81,6 +83,8 @@ namespace piine.Memory
 
             if (Count > bucketSize * RESIZE_THRESHOLD)
                 ResizeBucket (bucketSize * 2);
+
+            Count++;
 
             BucketSlot* slot = GetBucketSlot (key);
 
@@ -126,7 +130,7 @@ namespace piine.Memory
         private BucketSlot* GetBucketSlot (TKey key)
         {
             uint hash = (uint)key.GetHashCode ();
-            return bucket + (hash & (bucketSize - 1)); //Efficient modulo
+            return bucket + ((int)hash & (bucketSize - 1)); //Efficient modulo
         }
 
         private void ResizeBucket (int newSize)

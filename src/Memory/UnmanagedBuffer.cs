@@ -5,16 +5,15 @@ using System.Text;
 namespace piine.Memory
 {
     /// <summary>
-    /// A buffer stored in unmanaged memory. Be mindful when working with this type, as memory leaks can occur easily. For a safe alternative, use <see cref="UnmanagedArray{T}"/>
+    /// Points to a buffer stored in unmanaged memory.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public unsafe struct UnmanagedBuffer<T> where T : unmanaged
+    public unsafe struct UnmanagedBuffer<T> : IEquatable<UnmanagedBuffer<T>> where T : unmanaged
     {
         private T* pointer;
 
-        [CLSCompliant (false)]
-        public T* Pointer => pointer;
         public long Length { get; }
+        public bool Allocated => pointer != null;
 
         public T this[long index]
         {
@@ -38,12 +37,6 @@ namespace piine.Memory
             }
         }
 
-        public UnmanagedBuffer (long length, bool fillWithDefault = false)
-        {
-            pointer = Unmanaged.AllocMemory<T> (length); //AllocMemory checks if length is more than 0
-            Length = length;
-        }
-
         [CLSCompliant (false)]
         public UnmanagedBuffer (T* pointer, long length)
         {
@@ -51,6 +44,37 @@ namespace piine.Memory
             Length = length;
         }
 
-        public void Free () => Unmanaged.FreeMemory (ref pointer, Length);
+        public UnmanagedBuffer (IntPtr pointer, long length)
+        {
+            this.pointer = (T*)pointer;
+            Length = length;
+        }
+
+        [CLSCompliant (false)]
+        public T* GetPointer ()
+        {
+            if (!Allocated)
+                throw new InvalidOperationException ("Buffer is not allocated");
+
+            return pointer;
+        }
+
+        public static bool operator == (UnmanagedBuffer<T> left, UnmanagedBuffer<T> right) => left.pointer == right.pointer && left.Length == right.Length;
+
+        public static bool operator != (UnmanagedBuffer<T> left, UnmanagedBuffer<T> right) => left.pointer != right.pointer || left.Length != right.Length;
+
+        public override int GetHashCode () => (int)pointer;
+
+        public override bool Equals (object obj)
+        {
+            UnmanagedBuffer<T> ? v = obj as UnmanagedBuffer<T>?;
+
+            if (v != null)
+                return v == this;
+            else
+                return false;
+        }
+
+        public bool Equals (UnmanagedBuffer<T> other) => this == other;
     }
 }

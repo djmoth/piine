@@ -27,7 +27,7 @@ namespace piine
         [FieldOffset (4)]
         public int y;
 
-        public int Length => (int)Math.Sqrt (LengthSquared);
+        public float Length => (float)Math.Sqrt (LengthSquared);
 
         public int LengthSquared => (x * x) + (y * y);
 
@@ -72,9 +72,9 @@ namespace piine
             if (v == Zero)
                 return Zero;
 
-            int oldMagnitude = v.Length;
-            v.x = v.x / oldMagnitude;
-            v.y = v.y / oldMagnitude;
+            float oldMagnitude = v.Length;
+            v.x = (int)(v.x / oldMagnitude);
+            v.y = (int)(v.y / oldMagnitude);
 
             return v;
         }
@@ -83,13 +83,13 @@ namespace piine
 
         public static Int2 Absolute (Int2 v) => new Int2 (Math.Abs (v.x), Math.Abs (v.y));
 
-        public static int Distance (Int2 a, Int2 b) =>  (a - b).Length;
+        public static float Distance (Int2 a, Int2 b) =>  (a - b).Length;
 
         public static explicit operator Int2 (Float2 v) => new Int2 ((int)v.x, (int)v.y);
 
         public static explicit operator Vector2 (Int2 v) => new Vector2 (v.x, v.y);
 
-        public static explicit operator Int2 (Vector2 v) => new Int2 ((int)v.x, (int)v.y);
+        public static explicit operator Int2 (Vector2 v) => new Int2 ((int)v.X, (int)v.Y);
 
         public static implicit operator Int2 ((int x, int y) v) => new Int2 (v.x, v.y);
 
@@ -116,6 +116,8 @@ namespace piine
         public static bool operator >= (Int2 a, Int2 b) => a.x >= b.x && a.y >= b.y;
 
         public static bool operator <= (Int2 a, Int2 b) => a.x <= b.x && a.y <= b.y;
+
+        public override int GetHashCode () => (x* 73856093) ^ (y* 19349663);
 
         public override string ToString () => "(" + x + ", " + y + ")";
 

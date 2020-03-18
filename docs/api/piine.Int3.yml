@@ -23,8 +23,8 @@ items:
   - piine.Int3.op_Division(piine.Int3,System.Single)
   - piine.Int3.op_Equality(piine.Int3,piine.Int3)
   - piine.Int3.op_Explicit(piine.Float3)~piine.Int3
-  - piine.Int3.op_Explicit(piine.Int3)~UnityEngine.Vector3
-  - piine.Int3.op_Explicit(UnityEngine.Vector3)~piine.Int3
+  - piine.Int3.op_Explicit(piine.Int3)~System.Numerics.Vector3
+  - piine.Int3.op_Explicit(System.Numerics.Vector3)~piine.Int3
   - piine.Int3.op_GreaterThan(piine.Int3,piine.Int3)
   - piine.Int3.op_GreaterThanOrEqual(piine.Int3,piine.Int3)
   - piine.Int3.op_Implicit(piine.Int3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
@@ -61,7 +61,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Int3
     path: src/Vector Types/Int/Int3.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - piine
   namespace: piine
@@ -69,7 +69,6 @@ items:
     content: 'public struct Int3 : IEquatable<Int3>'
     content.vb: >-
       Public Structure Int3
-
           Implements IEquatable(Of Int3)
   implements:
   - System.IEquatable{piine.Int3}
@@ -101,7 +100,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Int/Int3.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - piine
   namespace: piine
@@ -134,7 +133,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Int/Int3.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - piine
   namespace: piine
@@ -171,7 +170,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Int/Int3.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - piine
   namespace: piine
@@ -208,7 +207,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Int/Int3.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - piine
   namespace: piine
@@ -245,7 +244,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Int/Int3.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - piine
   namespace: piine
@@ -282,7 +281,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitZ
     path: src/Vector Types/Int/Int3.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - piine
   namespace: piine
@@ -319,7 +318,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Int/Int3.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - piine
   namespace: piine
@@ -350,7 +349,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Int/Int3.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - piine
   namespace: piine
@@ -381,7 +380,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: z
     path: src/Vector Types/Int/Int3.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - piine
   namespace: piine
@@ -412,7 +411,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XY
     path: src/Vector Types/Int/Int3.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - piine
   namespace: piine
@@ -447,7 +446,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XZ
     path: src/Vector Types/Int/Int3.cs
-    startLine: 35
+    startLine: 34
   assemblies:
   - piine
   namespace: piine
@@ -482,7 +481,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: YZ
     path: src/Vector Types/Int/Int3.cs
-    startLine: 36
+    startLine: 35
   assemblies:
   - piine
   namespace: piine
@@ -517,7 +516,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Int/Int3.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - piine
   namespace: piine
@@ -552,7 +551,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Int/Int3.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - piine
   namespace: piine
@@ -587,7 +586,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int3.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - piine
   namespace: piine
@@ -624,7 +623,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Int/Int3.cs
-    startLine: 49
+    startLine: 48
   assemblies:
   - piine
   namespace: piine
@@ -657,7 +656,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Int/Int3.cs
-    startLine: 56
+    startLine: 55
   assemblies:
   - piine
   namespace: piine
@@ -697,7 +696,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CalculateVolume
     path: src/Vector Types/Int/Int3.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - piine
   namespace: piine
@@ -729,7 +728,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Normalize
     path: src/Vector Types/Int/Int3.cs
-    startLine: 76
+    startLine: 75
   assemblies:
   - piine
   namespace: piine
@@ -766,7 +765,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Int/Int3.cs
-    startLine: 89
+    startLine: 88
   assemblies:
   - piine
   namespace: piine
@@ -803,7 +802,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Int/Int3.cs
-    startLine: 91
+    startLine: 90
   assemblies:
   - piine
   namespace: piine
@@ -842,7 +841,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Cross
     path: src/Vector Types/Int/Int3.cs
-    startLine: 93
+    startLine: 92
   assemblies:
   - piine
   namespace: piine
@@ -881,7 +880,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int3.cs
-    startLine: 103
+    startLine: 102
   assemblies:
   - piine
   namespace: piine
@@ -903,16 +902,16 @@ items:
   - Shared
   fullName.vb: piine.Int3.Narrowing(piine.Float3 to piine.Int3)
   name.vb: Narrowing(Float3 to Int3)
-- uid: piine.Int3.op_Explicit(piine.Int3)~UnityEngine.Vector3
-  commentId: M:piine.Int3.op_Explicit(piine.Int3)~UnityEngine.Vector3
-  id: op_Explicit(piine.Int3)~UnityEngine.Vector3
+- uid: piine.Int3.op_Explicit(piine.Int3)~System.Numerics.Vector3
+  commentId: M:piine.Int3.op_Explicit(piine.Int3)~System.Numerics.Vector3
+  id: op_Explicit(piine.Int3)~System.Numerics.Vector3
   parent: piine.Int3
   langs:
   - csharp
   - vb
   name: Explicit(Int3 to Vector3)
   nameWithType: Int3.Explicit(Int3 to Vector3)
-  fullName: piine.Int3.Explicit(piine.Int3 to UnityEngine.Vector3)
+  fullName: piine.Int3.Explicit(piine.Int3 to System.Numerics.Vector3)
   type: Operator
   source:
     remote:
@@ -921,7 +920,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int3.cs
-    startLine: 105
+    startLine: 104
   assemblies:
   - piine
   namespace: piine
@@ -931,7 +930,7 @@ items:
     - id: v
       type: piine.Int3
     return:
-      type: UnityEngine.Vector3
+      type: System.Numerics.Vector3
     content.vb: Public Shared Narrowing Operator CType(v As Int3) As Vector3
   overload: piine.Int3.op_Explicit*
   nameWithType.vb: Int3.Narrowing(Int3 to Vector3)
@@ -941,18 +940,18 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int3.Narrowing(piine.Int3 to UnityEngine.Vector3)
+  fullName.vb: piine.Int3.Narrowing(piine.Int3 to System.Numerics.Vector3)
   name.vb: Narrowing(Int3 to Vector3)
-- uid: piine.Int3.op_Explicit(UnityEngine.Vector3)~piine.Int3
-  commentId: M:piine.Int3.op_Explicit(UnityEngine.Vector3)~piine.Int3
-  id: op_Explicit(UnityEngine.Vector3)~piine.Int3
+- uid: piine.Int3.op_Explicit(System.Numerics.Vector3)~piine.Int3
+  commentId: M:piine.Int3.op_Explicit(System.Numerics.Vector3)~piine.Int3
+  id: op_Explicit(System.Numerics.Vector3)~piine.Int3
   parent: piine.Int3
   langs:
   - csharp
   - vb
   name: Explicit(Vector3 to Int3)
   nameWithType: Int3.Explicit(Vector3 to Int3)
-  fullName: piine.Int3.Explicit(UnityEngine.Vector3 to piine.Int3)
+  fullName: piine.Int3.Explicit(System.Numerics.Vector3 to piine.Int3)
   type: Operator
   source:
     remote:
@@ -961,7 +960,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Int/Int3.cs
-    startLine: 107
+    startLine: 106
   assemblies:
   - piine
   namespace: piine
@@ -969,7 +968,7 @@ items:
     content: public static explicit operator Int3(Vector3 v)
     parameters:
     - id: v
-      type: UnityEngine.Vector3
+      type: System.Numerics.Vector3
     return:
       type: piine.Int3
     content.vb: Public Shared Narrowing Operator CType(v As Vector3) As Int3
@@ -981,7 +980,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int3.Narrowing(UnityEngine.Vector3 to piine.Int3)
+  fullName.vb: piine.Int3.Narrowing(System.Numerics.Vector3 to piine.Int3)
   name.vb: Narrowing(Vector3 to Int3)
 - uid: piine.Int3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Int3
   commentId: M:piine.Int3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Int3
@@ -1001,7 +1000,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int3.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - piine
   namespace: piine
@@ -1041,7 +1040,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Int/Int3.cs
-    startLine: 111
+    startLine: 110
   assemblies:
   - piine
   namespace: piine
@@ -1081,7 +1080,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Int/Int3.cs
-    startLine: 113
+    startLine: 112
   assemblies:
   - piine
   namespace: piine
@@ -1120,7 +1119,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Int/Int3.cs
-    startLine: 115
+    startLine: 114
   assemblies:
   - piine
   namespace: piine
@@ -1159,7 +1158,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Int/Int3.cs
-    startLine: 117
+    startLine: 116
   assemblies:
   - piine
   namespace: piine
@@ -1198,7 +1197,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Int/Int3.cs
-    startLine: 119
+    startLine: 118
   assemblies:
   - piine
   namespace: piine
@@ -1237,7 +1236,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Int/Int3.cs
-    startLine: 121
+    startLine: 120
   assemblies:
   - piine
   namespace: piine
@@ -1274,7 +1273,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Int/Int3.cs
-    startLine: 123
+    startLine: 122
   assemblies:
   - piine
   namespace: piine
@@ -1313,7 +1312,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Int/Int3.cs
-    startLine: 125
+    startLine: 124
   assemblies:
   - piine
   namespace: piine
@@ -1352,7 +1351,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Int/Int3.cs
-    startLine: 127
+    startLine: 126
   assemblies:
   - piine
   namespace: piine
@@ -1391,7 +1390,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Int/Int3.cs
-    startLine: 129
+    startLine: 128
   assemblies:
   - piine
   namespace: piine
@@ -1430,7 +1429,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Int/Int3.cs
-    startLine: 131
+    startLine: 130
   assemblies:
   - piine
   namespace: piine
@@ -1469,7 +1468,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Int/Int3.cs
-    startLine: 133
+    startLine: 132
   assemblies:
   - piine
   namespace: piine
@@ -1508,7 +1507,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Int/Int3.cs
-    startLine: 135
+    startLine: 134
   assemblies:
   - piine
   namespace: piine
@@ -1543,7 +1542,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Vector Types/Int/Int3.cs
-    startLine: 137
+    startLine: 136
   assemblies:
   - piine
   namespace: piine
@@ -1578,7 +1577,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int3.cs
-    startLine: 139
+    startLine: 138
   assemblies:
   - piine
   namespace: piine
@@ -1615,7 +1614,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Int/Int3.cs
-    startLine: 141
+    startLine: 140
   assemblies:
   - piine
   namespace: piine
@@ -2005,19 +2004,19 @@ references:
   name: Float3
   nameWithType: Float3
   fullName: piine.Float3
-- uid: UnityEngine.Vector3
-  commentId: T:UnityEngine.Vector3
-  parent: UnityEngine
+- uid: System.Numerics.Vector3
+  commentId: T:System.Numerics.Vector3
+  parent: System.Numerics
   isExternal: true
   name: Vector3
   nameWithType: Vector3
-  fullName: UnityEngine.Vector3
-- uid: UnityEngine
-  commentId: N:UnityEngine
+  fullName: System.Numerics.Vector3
+- uid: System.Numerics
+  commentId: N:System.Numerics
   isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
 - uid: piine.Int3.op_Implicit*
   commentId: Overload:piine.Int3.op_Implicit
   name: Implicit

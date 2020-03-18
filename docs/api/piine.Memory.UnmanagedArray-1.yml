@@ -5,11 +5,9 @@ items:
   id: UnmanagedArray`1
   parent: piine.Memory
   children:
-  - piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
   - piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
   - piine.Memory.UnmanagedArray`1.#ctor(System.Span{`0})
   - piine.Memory.UnmanagedArray`1.Allocated
-  - piine.Memory.UnmanagedArray`1.ArrayPointer
   - piine.Memory.UnmanagedArray`1.Clear
   - piine.Memory.UnmanagedArray`1.Contains(`0)
   - piine.Memory.UnmanagedArray`1.CopyTo(`0[],System.Int32)
@@ -20,12 +18,13 @@ items:
   - piine.Memory.UnmanagedArray`1.Dispose(System.Boolean)
   - piine.Memory.UnmanagedArray`1.Finalize
   - piine.Memory.UnmanagedArray`1.GetEnumerator
+  - piine.Memory.UnmanagedArray`1.GetInternalPointer
   - piine.Memory.UnmanagedArray`1.GetSpan
   - piine.Memory.UnmanagedArray`1.IndexOf(`0)
-  - piine.Memory.UnmanagedArray`1.IsReadOnly
   - piine.Memory.UnmanagedArray`1.Item(System.Int32)
   - piine.Memory.UnmanagedArray`1.Length
   - piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   - piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
   - piine.Memory.UnmanagedArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
   - piine.Memory.UnmanagedArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
@@ -58,7 +57,6 @@ items:
       description: The unmanaged type that the array will contain
     content.vb: >-
       Public Class UnmanagedArray(Of T As Structure)
-
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -85,57 +83,6 @@ items:
   - Class
   fullName.vb: piine.Memory.UnmanagedArray(Of T)
   name.vb: UnmanagedArray(Of T)
-- uid: piine.Memory.UnmanagedArray`1.ArrayPointer
-  commentId: P:piine.Memory.UnmanagedArray`1.ArrayPointer
-  id: ArrayPointer
-  parent: piine.Memory.UnmanagedArray`1
-  langs:
-  - csharp
-  - vb
-  name: ArrayPointer
-  nameWithType: UnmanagedArray<T>.ArrayPointer
-  fullName: piine.Memory.UnmanagedArray<T>.ArrayPointer
-  type: Property
-  source:
-    remote:
-      path: src/Memory/UnmanagedArray.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: ArrayPointer
-    path: src/Memory/UnmanagedArray.cs
-    startLine: 16
-  assemblies:
-  - piine
-  namespace: piine.Memory
-  summary: "\nGet the underlying pointer. Be mindful when working with this.\n"
-  example: []
-  syntax:
-    content: >-
-      [CLSCompliant(false)]
-
-      public T*ArrayPointer { get; }
-    parameters: []
-    return:
-      type: '{T}*'
-    content.vb: >-
-      <CLSCompliant(False)>
-
-      Public ReadOnly Property ArrayPointer As T
-  overload: piine.Memory.UnmanagedArray`1.ArrayPointer*
-  attributes:
-  - type: System.CLSCompliantAttribute
-    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
-    arguments:
-    - type: System.Boolean
-      value: false
-  nameWithType.vb: UnmanagedArray(Of T).ArrayPointer
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-  fullName.vb: piine.Memory.UnmanagedArray(Of T).ArrayPointer
 - uid: piine.Memory.UnmanagedArray`1.Length
   commentId: P:piine.Memory.UnmanagedArray`1.Length
   id: Length
@@ -154,7 +101,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Memory/UnmanagedArray.cs
-    startLine: 21
+    startLine: 18
   assemblies:
   - piine
   namespace: piine.Memory
@@ -193,7 +140,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Count
     path: src/Memory/UnmanagedArray.cs
-    startLine: 25
+    startLine: 22
   assemblies:
   - piine
   namespace: piine.Memory
@@ -234,11 +181,11 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedArray.cs
-    startLine: 29
+    startLine: 26
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nSet to false when the object is disposed\n"
+  summary: "\nSet to <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref> when the <xref href=\"piine.Memory.UnmanagedArray%601\" data-throw-if-not-resolved=\"false\"></xref> is disposed\n"
   example: []
   syntax:
     content: public bool Allocated { get; }
@@ -255,47 +202,47 @@ items:
   - Public
   - ReadOnly
   fullName.vb: piine.Memory.UnmanagedArray(Of T).Allocated
-- uid: piine.Memory.UnmanagedArray`1.IsReadOnly
-  commentId: P:piine.Memory.UnmanagedArray`1.IsReadOnly
-  id: IsReadOnly
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  isEii: true
   parent: piine.Memory.UnmanagedArray`1
   langs:
   - csharp
   - vb
-  name: IsReadOnly
-  nameWithType: UnmanagedArray<T>.IsReadOnly
-  fullName: piine.Memory.UnmanagedArray<T>.IsReadOnly
+  name: ICollection<T>.IsReadOnly
+  nameWithType: UnmanagedArray<T>.ICollection<T>.IsReadOnly
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
   type: Property
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
       branch: master
       repo: https://github.com/djmoth/piine.git
-    id: IsReadOnly
+    id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedArray.cs
-    startLine: 33
+    startLine: 30
   assemblies:
   - piine
   namespace: piine.Memory
   summary: "\nAlways false\n"
   example: []
   syntax:
-    content: public bool IsReadOnly { get; }
+    content: bool ICollection<T>.IsReadOnly { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsReadOnly As Boolean
-  overload: piine.Memory.UnmanagedArray`1.IsReadOnly*
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+  overload: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly*
   implements:
   - System.Collections.Generic.ICollection{{T}}.IsReadOnly
-  nameWithType.vb: UnmanagedArray(Of T).IsReadOnly
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
   modifiers.csharp:
-  - public
   - get
   modifiers.vb:
-  - Public
   - ReadOnly
-  fullName.vb: piine.Memory.UnmanagedArray(Of T).IsReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
 - uid: piine.Memory.UnmanagedArray`1.Item(System.Int32)
   commentId: P:piine.Memory.UnmanagedArray`1.Item(System.Int32)
   id: Item(System.Int32)
@@ -314,7 +261,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedArray.cs
-    startLine: 39
+    startLine: 36
   assemblies:
   - piine
   namespace: piine.Memory
@@ -341,44 +288,6 @@ items:
   - Public
   fullName.vb: piine.Memory.UnmanagedArray(Of T).Item(System.Int32)
   name.vb: Item(Int32)
-- uid: piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
-  commentId: M:piine.Memory.UnmanagedArray`1.#ctor(System.Int32)
-  id: '#ctor(System.Int32)'
-  parent: piine.Memory.UnmanagedArray`1
-  langs:
-  - csharp
-  - vb
-  name: UnmanagedArray(Int32)
-  nameWithType: UnmanagedArray<T>.UnmanagedArray(Int32)
-  fullName: piine.Memory.UnmanagedArray<T>.UnmanagedArray(System.Int32)
-  type: Constructor
-  source:
-    remote:
-      path: src/Memory/UnmanagedArray.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: .ctor
-    path: src/Memory/UnmanagedArray.cs
-    startLine: 65
-  assemblies:
-  - piine
-  namespace: piine.Memory
-  summary: "\nAllocate a new UnmanagedArray.\n"
-  example: []
-  syntax:
-    content: public UnmanagedArray(int size)
-    parameters:
-    - id: size
-      type: System.Int32
-      description: Size of the new array in elements of T
-    content.vb: Public Sub New(size As Integer)
-  overload: piine.Memory.UnmanagedArray`1.#ctor*
-  nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray(Int32)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray(System.Int32)
 - uid: piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
   commentId: M:piine.Memory.UnmanagedArray`1.#ctor(System.Int32,System.Boolean)
   id: '#ctor(System.Int32,System.Boolean)'
@@ -397,22 +306,21 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
-    startLine: 81
+    startLine: 63
   assemblies:
   - piine
   namespace: piine.Memory
   summary: "\nAllocate a new UnmanagedArray.\n"
   example: []
   syntax:
-    content: public UnmanagedArray(int size, bool fillWithDefaultValues)
+    content: public UnmanagedArray(int size, bool fillWithDefault = false)
     parameters:
     - id: size
       type: System.Int32
       description: Size of the new array
-    - id: fillWithDefaultValues
+    - id: fillWithDefault
       type: System.Boolean
-      description: '&quot;Zero-out&quot; the array with the default value of T. The array may otherwise contain garbage data.'
-    content.vb: Public Sub New(size As Integer, fillWithDefaultValues As Boolean)
+    content.vb: Public Sub New(size As Integer, fillWithDefault As Boolean = False)
   overload: piine.Memory.UnmanagedArray`1.#ctor*
   nameWithType.vb: UnmanagedArray(Of T).UnmanagedArray(Int32, Boolean)
   modifiers.csharp:
@@ -438,7 +346,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
-    startLine: 99
+    startLine: 73
   assemblies:
   - piine
   namespace: piine.Memory
@@ -459,6 +367,54 @@ items:
   - Public
   fullName.vb: piine.Memory.UnmanagedArray(Of T).UnmanagedArray(System.Span(Of T))
   name.vb: UnmanagedArray(Span(Of T))
+- uid: piine.Memory.UnmanagedArray`1.GetInternalPointer
+  commentId: M:piine.Memory.UnmanagedArray`1.GetInternalPointer
+  id: GetInternalPointer
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: GetInternalPointer()
+  nameWithType: UnmanagedArray<T>.GetInternalPointer()
+  fullName: piine.Memory.UnmanagedArray<T>.GetInternalPointer()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetInternalPointer
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 84
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nGet the underlying pointer. Be mindful when working with this.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public T*GetInternalPointer()
+    return:
+      type: '{T}*'
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetInternalPointer As T
+  overload: piine.Memory.UnmanagedArray`1.GetInternalPointer*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: UnmanagedArray(Of T).GetInternalPointer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetInternalPointer()
 - uid: piine.Memory.UnmanagedArray`1.IndexOf(`0)
   commentId: M:piine.Memory.UnmanagedArray`1.IndexOf(`0)
   id: IndexOf(`0)
@@ -477,7 +433,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedArray.cs
-    startLine: 118
+    startLine: 103
   assemblies:
   - piine
   namespace: piine.Memory
@@ -520,7 +476,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedArray.cs
-    startLine: 134
+    startLine: 119
   assemblies:
   - piine
   namespace: piine.Memory
@@ -556,7 +512,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedArray.cs
-    startLine: 144
+    startLine: 129
   assemblies:
   - piine
   namespace: piine.Memory
@@ -595,7 +551,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 157
+    startLine: 142
   assemblies:
   - piine
   namespace: piine.Memory
@@ -635,7 +591,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 176
+    startLine: 161
   assemblies:
   - piine
   namespace: piine.Memory
@@ -673,7 +629,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 193
+    startLine: 178
   assemblies:
   - piine
   namespace: piine.Memory
@@ -709,7 +665,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetSpan
     path: src/Memory/UnmanagedArray.cs
-    startLine: 203
+    startLine: 188
   assemblies:
   - piine
   namespace: piine.Memory
@@ -745,7 +701,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 205
+    startLine: 190
   assemblies:
   - piine
   namespace: piine.Memory
@@ -780,7 +736,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 212
+    startLine: 197
   assemblies:
   - piine
   namespace: piine.Memory
@@ -814,7 +770,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 214
+    startLine: 199
   assemblies:
   - piine
   namespace: piine.Memory
@@ -848,7 +804,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.Insert
     path: src/Memory/UnmanagedArray.cs
-    startLine: 221
+    startLine: 206
   assemblies:
   - piine
   namespace: piine.Memory
@@ -885,7 +841,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.RemoveAt
     path: src/Memory/UnmanagedArray.cs
-    startLine: 223
+    startLine: 208
   assemblies:
   - piine
   namespace: piine.Memory
@@ -920,7 +876,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Add
     path: src/Memory/UnmanagedArray.cs
-    startLine: 225
+    startLine: 210
   assemblies:
   - piine
   namespace: piine.Memory
@@ -955,7 +911,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Remove
     path: src/Memory/UnmanagedArray.cs
-    startLine: 227
+    startLine: 212
   assemblies:
   - piine
   namespace: piine.Memory
@@ -991,7 +947,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedArray.cs
-    startLine: 229
+    startLine: 214
   assemblies:
   - piine
   namespace: piine.Memory
@@ -1023,10 +979,12 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
-    startLine: 231
+    startLine: 219
   assemblies:
   - piine
   namespace: piine.Memory
+  summary: "\nFree the unmanaged memory. The array will be unusable afterwards   \n"
+  example: []
   syntax:
     content: public void Dispose()
     content.vb: Public Sub Dispose
@@ -1057,12 +1015,10 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
-    startLine: 240
+    startLine: 225
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nFree the unmanaged memory. The array will be unusable afterwards\n"
-  example: []
   syntax:
     content: protected virtual void Dispose(bool disposing)
     parameters:
@@ -1639,32 +1595,6 @@ references:
   name: System.Collections
   nameWithType: System.Collections
   fullName: System.Collections
-- uid: piine.Memory.UnmanagedArray`1.ArrayPointer*
-  commentId: Overload:piine.Memory.UnmanagedArray`1.ArrayPointer
-  name: ArrayPointer
-  nameWithType: UnmanagedArray<T>.ArrayPointer
-  fullName: piine.Memory.UnmanagedArray<T>.ArrayPointer
-  nameWithType.vb: UnmanagedArray(Of T).ArrayPointer
-  fullName.vb: piine.Memory.UnmanagedArray(Of T).ArrayPointer
-- uid: '{T}*'
-  isExternal: true
-  name: T*
-  nameWithType: T*
-  fullName: T*
-  spec.csharp:
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
-  spec.vb:
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
 - uid: piine.Memory.UnmanagedArray`1.Length*
   commentId: Overload:piine.Memory.UnmanagedArray`1.Length
   name: Length
@@ -1703,6 +1633,43 @@ references:
   fullName: System.Collections.Generic.ICollection<T>.Count
   nameWithType.vb: ICollection(Of T).Count
   fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: piine.Memory.UnmanagedArray`1
+  commentId: T:piine.Memory.UnmanagedArray`1
+  parent: piine.Memory
+  name: UnmanagedArray<T>
+  nameWithType: UnmanagedArray<T>
+  fullName: piine.Memory.UnmanagedArray<T>
+  nameWithType.vb: UnmanagedArray(Of T)
+  fullName.vb: piine.Memory.UnmanagedArray(Of T)
+  name.vb: UnmanagedArray(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedArray`1
+    name: UnmanagedArray
+    nameWithType: UnmanagedArray
+    fullName: piine.Memory.UnmanagedArray
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: piine.Memory.UnmanagedArray`1.Allocated*
   commentId: Overload:piine.Memory.UnmanagedArray`1.Allocated
   name: Allocated
@@ -1717,13 +1684,14 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: piine.Memory.UnmanagedArray`1.IsReadOnly*
-  commentId: Overload:piine.Memory.UnmanagedArray`1.IsReadOnly
-  name: IsReadOnly
-  nameWithType: UnmanagedArray<T>.IsReadOnly
-  fullName: piine.Memory.UnmanagedArray<T>.IsReadOnly
-  nameWithType.vb: UnmanagedArray(Of T).IsReadOnly
-  fullName.vb: piine.Memory.UnmanagedArray(Of T).IsReadOnly
+- uid: piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  name: ICollection<T>.IsReadOnly
+  nameWithType: UnmanagedArray<T>.ICollection<T>.IsReadOnly
+  fullName: piine.Memory.UnmanagedArray<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
 - uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
   commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
   parent: System.Collections.Generic.ICollection{{T}}
@@ -1931,6 +1899,32 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: piine.Memory.UnmanagedArray`1.GetInternalPointer*
+  commentId: Overload:piine.Memory.UnmanagedArray`1.GetInternalPointer
+  name: GetInternalPointer
+  nameWithType: UnmanagedArray<T>.GetInternalPointer
+  fullName: piine.Memory.UnmanagedArray<T>.GetInternalPointer
+  nameWithType.vb: UnmanagedArray(Of T).GetInternalPointer
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).GetInternalPointer
+- uid: '{T}*'
+  isExternal: true
+  name: T*
+  nameWithType: T*
+  fullName: T*
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
 - uid: piine.Memory.UnmanagedArray`1.IndexOf*
   commentId: Overload:piine.Memory.UnmanagedArray`1.IndexOf
   name: IndexOf
@@ -2320,43 +2314,6 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: piine.Memory.UnmanagedArray`1
-  commentId: T:piine.Memory.UnmanagedArray`1
-  parent: piine.Memory
-  name: UnmanagedArray<T>
-  nameWithType: UnmanagedArray<T>
-  fullName: piine.Memory.UnmanagedArray<T>
-  nameWithType.vb: UnmanagedArray(Of T)
-  fullName.vb: piine.Memory.UnmanagedArray(Of T)
-  name.vb: UnmanagedArray(Of T)
-  spec.csharp:
-  - uid: piine.Memory.UnmanagedArray`1
-    name: UnmanagedArray
-    nameWithType: UnmanagedArray
-    fullName: piine.Memory.UnmanagedArray
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: piine.Memory.UnmanagedArray`1
-    name: UnmanagedArray
-    nameWithType: UnmanagedArray
-    fullName: piine.Memory.UnmanagedArray
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
   - name: )
     nameWithType: )
     fullName: )

@@ -104,7 +104,7 @@ namespace piine
 
         public static explicit operator Vector3 (Int3 v) => new Vector3 (v.x, v.y, v.z);
 
-        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
+        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
 
         public static implicit operator Int3 ((int x, int y, int z) v) => new Int3 (v.x, v.y, v.z);
 

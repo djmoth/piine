@@ -1012,19 +1012,10 @@
       },
       "piine/1.0.0": {
         "dependencies": {
-          "System.Memory": "4.5.3",
-          "UnityEngine": "0.0.0.0"
+          "System.Memory": "4.5.3"
         },
         "runtime": {
           "piine.dll": {}
-        }
-      },
-      "UnityEngine.Reference/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
         }
       }
     }
@@ -1548,11 +1539,6 @@
     },
     "piine/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEngine.Reference/0.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

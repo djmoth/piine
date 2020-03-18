@@ -9,7 +9,19 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Int3Tests.html",
-          "hash": "boaL1N0D/JsiT2NWS2Uo9g=="
+          "hash": "GYvjqmEz6wdJwS95z1KVgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Tests.Memory.FixedBufferPoolTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/Tests.Memory.FixedBufferPoolTests.html",
+          "hash": "3KY368NFrgWhoSP1Q0FwWg=="
         }
       },
       "is_incremental": true,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedArrayTests.html",
-          "hash": "CG2ETDdCtSW8Udhvp6SzBg=="
+          "hash": "PYqcO6XkwoSOTpYSHDvdNQ=="
         }
       },
       "is_incremental": true,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedListTests.html",
-          "hash": "Fz4Mx76FSisjesi+OaM43w=="
+          "hash": "DV071Eon4Ldf7qXmqxwuEQ=="
         }
       },
       "is_incremental": true,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.html",
-          "hash": "LXdsH9M912ebLBJWuP1IPA=="
+          "hash": "jrlP4woNKIv3PgIyTur3yw=="
         }
       },
       "is_incremental": true,
@@ -57,7 +69,43 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.html",
-          "hash": "Qd+W9QLZVS/0LUkxyNgYyg=="
+          "hash": "4sJSsC2/s9KwUG7ba3y4EQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Byte2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Byte2.html",
+          "hash": "9imrKzJlyy1EaGXytr1hWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Byte3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Byte3.html",
+          "hash": "tHeIKWm493cN9L1uYOW5xg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Byte4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Byte4.html",
+          "hash": "vJ6Zfv20OxE9ehHNatbgEQ=="
         }
       },
       "is_incremental": true,
@@ -69,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Double2.html",
-          "hash": "k8m750jTikV4y9HLzmRNhQ=="
+          "hash": "ioOH6hpYorKmgCZyk+cCwA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float2.html",
-          "hash": "1NHQj6DTXSxlMaVrOB3p2Q=="
+          "hash": "3FvtIlZHALqI/eIkkbwyIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float3.html",
-          "hash": "l6li5NSQDVxxdnfy6NF9Gw=="
+          "hash": "ULNBV+gP5NS2TLD+g5qx3g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float4.html",
-          "hash": "FJXll7fPxbPRr5qBsJWY0Q=="
+          "hash": "Bahw06EFjAMREH+w0taTJw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,31 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.Color32.html",
-          "hash": "j+YuZyGrQqwiKkbDt8lTaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Graphics.Voxels.NaiveVoxelMesher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Graphics.Voxels.NaiveVoxelMesher.html",
-          "hash": "BmYqzhgAcvvocJYvKWf7qA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Graphics.Voxels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Graphics.Voxels.html",
-          "hash": "OGIOvdmvQu8EFtCXeJKZEg=="
+          "hash": "PSrRRj1XUvPrStpKYjOYKw=="
         }
       },
       "is_incremental": true,
@@ -153,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.html",
-          "hash": "/upZ/H80zDjYcH2DExHzlw=="
+          "hash": "lTQ80srojNnY78QCyxubow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int2.html",
-          "hash": "QPltP1UhOJI4IfWCA3VDVA=="
+          "hash": "rWli7+GfQR3nrc43RNutGA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int3.html",
-          "hash": "50nt27qJXSN8F2sbPpxs8Q=="
+          "hash": "ScHQN8t2vJ7TR4haZG2GiQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +213,46 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int4.html",
-          "hash": "oETkqDNMsMp3g0n5zHPkIw=="
+          "hash": "WuL5uM9fK/DOmcI+etLnZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.FixedBufferPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.FixedBufferPool-1.html",
+          "hash": "uZ+e97s44TTC9BcOPfbP2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.GlobalObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.GlobalObjects.html",
+          "hash": "y8zCb81Xn5QhExz2a4ClSg=="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.ObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.ObjectPool-1.html",
+          "hash": "WSZ5x9AwCLPoELmntheayg=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.Unmanaged.html",
-          "hash": "GdMfL5Lurl2r5swvnECIxw=="
+          "hash": "QM7RctJ83FPX6c3enOkymA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.Enumerator.html",
-          "hash": "CKJZFkTwZeVskLSroTYONg=="
+          "hash": "AObDwCYghhN58rNkTAesqQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +285,34 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.html",
-          "hash": "zdZ5ECMgaLNZnwBMINhV2w=="
+          "hash": "QwQsQ3WqIPzajjZS8dOVOg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.UnmanagedBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.UnmanagedBuffer-1.html",
+          "hash": "qwo9WisxNdQzOA/EF0XGrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.UnmanagedDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.UnmanagedDictionary-2.html",
+          "hash": "JHBvl6zB0k91fkuMylT5ZA=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.Enumerator.html",
-          "hash": "HlCKMrZYfgoymGUTXkMn+Q=="
+          "hash": "7ssQavSGPY2KxInvdBYYKQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +333,34 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.html",
-          "hash": "smJ8+5pUi24W5LpD+b5n+g=="
+          "hash": "OFlb/eETQOfB0fmzzxZn0A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.Unsafe.IUnsafeObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.Unsafe.IUnsafeObject.html",
+          "hash": "i1iPmarer+e1DbN1LFZU+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/piine.Memory.Unsafe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/piine.Memory.Unsafe.html",
+          "hash": "8LltCfUchcHJoNWiqudr3A=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.html",
-          "hash": "8WMC8M4PdfzzKtvB5HwztA=="
+          "hash": "oKj56ZAiRoD75A4CKm87cA=="
         }
       },
       "is_incremental": false,
@@ -273,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Piine.html",
-          "hash": "mKqjRb1rHyEuCKLzAXYT9g=="
+          "hash": "TZYLWXf/zaldh8FqKnlFzA=="
         }
       },
       "is_incremental": true,
@@ -285,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Procedural.OpenSimplexNoise.html",
-          "hash": "Bkoo1Uxw+PY2CquRAsu0IQ=="
+          "hash": "+8rqEGthXkCKfjmlRF7f6A=="
         }
       },
       "is_incremental": true,
@@ -297,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Procedural.html",
-          "hash": "UHIf+Cb5zrUxxelSI5d6sQ=="
+          "hash": "dfVtNr/fk/BEEjUNspNOzA=="
         }
       },
       "is_incremental": true,
@@ -309,118 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Simd.html",
-          "hash": "7UrES6Ld3fyxAw9C2DPX8A=="
+          "hash": "Nkj5Kt5cnVwnDsaEDBMM6w=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.IVoxel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.IVoxel.html",
-          "hash": "VB7vw+/mYfSvbKU7dMq5TA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.IVoxelVolume-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.IVoxelVolume-1.html",
-          "hash": "NlL3eJo39YDUftPJWy+7WA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.ManagedVoxelGrid-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.ManagedVoxelGrid-1.html",
-          "hash": "O0BaZRVrR+5BohxAjyGDgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.ManagedVoxelOctree-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.ManagedVoxelOctree-1.html",
-          "hash": "aXIxcUW/pBVdDOatJ+cnjA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.TempVoxelGrid-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.TempVoxelGrid-1.html",
-          "hash": "siuWGyeF+THsz1TiF9NzlA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.UnmanagedVoxelGrid-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.UnmanagedVoxelGrid-1.html",
-          "hash": "01l4DU+ezyImY0fkFZN/3w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.VoxelGrid-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.VoxelGrid-1.html",
-          "hash": "LYbZgNz2mu5taASttBfutw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.VoxelOctree-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.VoxelOctree-1.html",
-          "hash": "2McQ+OGKG5p9WB3gAQrk4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/piine.Voxels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/piine.Voxels.html",
-          "hash": "5n+5HybCF5K03ZvM2cpKzQ=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.XorShift.html",
-          "hash": "fk8j31Pa/OpDpoR1RL1IwA=="
+          "hash": "9el8kthv1kHOpfbKcXf9OQ=="
         }
       },
       "is_incremental": true,
@@ -441,31 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.html",
-          "hash": "THcQMz94F7AD8kqdj2qXNw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/tests.Voxels.VoxelVolumeTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/tests.Voxels.VoxelVolumeTests.html",
-          "hash": "tuxj58a44P26NOXgI3PScA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/tests.Voxels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/api/tests.Voxels.html",
-          "hash": "fCMbXqayDPeM3JMT3FNtMw=="
+          "hash": "STm4F5eS5ZegAHfoO3sA8Q=="
         }
       },
       "is_incremental": true,
@@ -491,8 +467,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 39,
-          "skipped_file_count": 21
+          "total_file_count": 37,
+          "skipped_file_count": 36
         }
       }
     },

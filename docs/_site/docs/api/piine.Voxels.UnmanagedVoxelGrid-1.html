@@ -133,6 +133,12 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="piine.Memory.FixedBufferPool-1.html" title="FixedBufferPool&lt;T&gt;" class="">FixedBufferPool&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.ObjectPool-1.html" title="ObjectPool&lt;T&gt;" class="">ObjectPool&lt;T&gt;</a>
+                          </li>
+                          <li class="">
                             <a href="piine.Memory.Unmanaged.html" title="Unmanaged" class="">Unmanaged</a>
                           </li>
                           <li class="">
@@ -140,6 +146,12 @@
                           </li>
                           <li class="">
                             <a href="piine.Memory.UnmanagedArray-1.Enumerator.html" title="UnmanagedArray&lt;T&gt;.Enumerator" class="">UnmanagedArray&lt;T&gt;.Enumerator</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedBuffer-1.html" title="UnmanagedBuffer&lt;T&gt;" class="">UnmanagedBuffer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.UnmanagedDictionary-2.html" title="UnmanagedDictionary&lt;TKey, TValue&gt;" class="">UnmanagedDictionary&lt;TKey, TValue&gt;</a>
                           </li>
                           <li class="">
                             <a href="piine.Memory.UnmanagedList-1.html" title="UnmanagedList&lt;T&gt;" class="">UnmanagedList&lt;T&gt;</a>
@@ -202,6 +214,9 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="Tests.Memory.FixedBufferPoolTests.html" title="FixedBufferPoolTests" class="">FixedBufferPoolTests</a>
+                          </li>
+                          <li class="">
                             <a href="Tests.Memory.UnmanagedArrayTests.html" title="UnmanagedArrayTests" class="">UnmanagedArrayTests</a>
                           </li>
                           <li class="">
@@ -216,6 +231,9 @@
                           <li class="">
                             <a href="tests.Voxels.VoxelVolumeTests.html" title="VoxelVolumeTests" class="">VoxelVolumeTests</a>
                           </li>
+                          <li class="">
+                            <a href="tests.Voxels.VoxelVolumeTests.Voxel.html" title="VoxelVolumeTests.Voxel" class="">VoxelVolumeTests.Voxel</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -229,7 +247,7 @@
   
   <h1 id="piine_Voxels_UnmanagedVoxelGrid_1" data-uid="piine.Voxels.UnmanagedVoxelGrid`1" class="text-break">Class UnmanagedVoxelGrid&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>A VoxelGrid where voxel data is stored in an unmanaged array.</p>
+  <div class="markdown level0 summary"><p>A VoxelGrid where voxel data is stored in an unmanaged memory.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -282,6 +300,9 @@
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
       <span class="xref">System.Object.GetType()</span>
     </div>
     <div>
@@ -323,7 +344,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1__ctor_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L20">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L22">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1__ctor_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.#ctor*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1__ctor_System_Int32_System_Int32_System_Int32_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.#ctor(System.Int32,System.Int32,System.Int32)">UnmanagedVoxelGrid(Int32, Int32, Int32)</h4>
@@ -364,10 +385,40 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Allocated.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Allocated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L16">View Source</a>
+  </span>
+  <a id="piine_Voxels_UnmanagedVoxelGrid_1_Allocated_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Allocated*"></a>
+  <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Allocated" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Allocated">Allocated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Allocated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Depth.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Depth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L18">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L20">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Depth_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Depth*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Depth" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Depth">Depth</h4>
@@ -399,7 +450,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Height.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L17">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L19">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Height_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Height*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Height" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Height">Height</h4>
@@ -431,7 +482,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Width.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L16">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L18">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Width_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Width*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Width" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Width">Width</h4>
@@ -465,7 +516,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Dispose.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L64">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L66">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Dispose_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Dispose*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Dispose" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Dispose">Dispose()</h4>
@@ -480,7 +531,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L73">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L75">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Dispose_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Dispose*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Dispose_System_Boolean_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -513,7 +564,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_Finalize.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L62">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L64">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_Finalize_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Finalize*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_Finalize" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.Finalize">Finalize()</h4>
@@ -525,42 +576,10 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_GetHashCode.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L82">View Source</a>
-  </span>
-  <a id="piine_Voxels_UnmanagedVoxelGrid_1_GetHashCode_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetHashCode*"></a>
-  <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_GetHashCode" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_GetVoxel_System_Int32_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.GetVoxel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L46">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L48">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_GetVoxel_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetVoxel*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_GetVoxel_System_Int32_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetVoxel(System.Int32)">GetVoxel(Int32)</h4>
@@ -609,7 +628,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_GetVoxelUnsafe_System_Int32_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.GetVoxelUnsafe(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L60">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L62">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_GetVoxelUnsafe_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetVoxelUnsafe*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_GetVoxelUnsafe_System_Int32_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.GetVoxelUnsafe(System.Int32)">GetVoxelUnsafe(Int32)</h4>
@@ -658,7 +677,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_SetVoxel_System_Int32__0_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.SetVoxel(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L29">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L31">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_SetVoxel_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.SetVoxel*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_SetVoxel_System_Int32__0_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.SetVoxel(System.Int32,`0)">SetVoxel(Int32, T)</h4>
@@ -697,7 +716,7 @@
     <a href="https://github.com/djmoth/piine/new/master/apiSpec/new?filename=piine_Voxels_UnmanagedVoxelGrid_1_SetVoxelUnsafe_System_Int32__0_.md&amp;value=---%0Auid%3A%20piine.Voxels.UnmanagedVoxelGrid%601.SetVoxelUnsafe(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L44">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/master/src/Voxels/Volumes/UnmanagedVoxelGrid.cs/#L46">View Source</a>
   </span>
   <a id="piine_Voxels_UnmanagedVoxelGrid_1_SetVoxelUnsafe_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.SetVoxelUnsafe*"></a>
   <h4 id="piine_Voxels_UnmanagedVoxelGrid_1_SetVoxelUnsafe_System_Int32__0_" data-uid="piine.Voxels.UnmanagedVoxelGrid`1.SetVoxelUnsafe(System.Int32,`0)">SetVoxelUnsafe(Int32, T)</h4>

@@ -48,7 +48,6 @@ items:
     content: 'public struct Color32 : IEquatable<Color32>'
     content.vb: >-
       Public Structure Color32
-
           Implements IEquatable(Of Color32)
   implements:
   - System.IEquatable{piine.Graphics.Color32}

@@ -55,7 +55,6 @@ items:
       description: The unmanaged type that the list will contain
     content.vb: >-
       Public Class UnmanagedList(Of T As Structure)
-
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -184,7 +183,7 @@ items:
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nSet to false when the object is disposed\n"
+  summary: "\nSet to <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref> when the <xref href=\"piine.Memory.UnmanagedList%601\" data-throw-if-not-resolved=\"false\"></xref> is disposed\n"
   example: []
   syntax:
     content: public bool Allocated { get; }
@@ -201,57 +200,6 @@ items:
   - Public
   - ReadOnly
   fullName.vb: piine.Memory.UnmanagedList(Of T).Allocated
-- uid: piine.Memory.UnmanagedList`1.GetInternalPointer
-  commentId: P:piine.Memory.UnmanagedList`1.GetInternalPointer
-  id: GetInternalPointer
-  parent: piine.Memory.UnmanagedList`1
-  langs:
-  - csharp
-  - vb
-  name: GetInternalPointer
-  nameWithType: UnmanagedList<T>.GetInternalPointer
-  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
-  type: Property
-  source:
-    remote:
-      path: src/Memory/UnmanagedList.cs
-      branch: master
-      repo: https://github.com/djmoth/piine.git
-    id: GetInternalPointer
-    path: src/Memory/UnmanagedList.cs
-    startLine: 35
-  assemblies:
-  - piine
-  namespace: piine.Memory
-  summary: "\nReturn the underlying pointer for the list. Be mindful when working with this.\n"
-  example: []
-  syntax:
-    content: >-
-      [CLSCompliant(false)]
-
-      public T*GetInternalPointer { get; }
-    parameters: []
-    return:
-      type: '{T}*'
-    content.vb: >-
-      <CLSCompliant(False)>
-
-      Public ReadOnly Property GetInternalPointer As T
-  overload: piine.Memory.UnmanagedList`1.GetInternalPointer*
-  attributes:
-  - type: System.CLSCompliantAttribute
-    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
-    arguments:
-    - type: System.Boolean
-      value: false
-  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
 - uid: piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   commentId: P:piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   id: System#Collections#Generic#ICollection{T}#IsReadOnly
@@ -271,7 +219,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedList.cs
-    startLine: 40
+    startLine: 35
   assemblies:
   - piine
   namespace: piine.Memory
@@ -311,7 +259,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedList.cs
-    startLine: 46
+    startLine: 41
   assemblies:
   - piine
   namespace: piine.Memory
@@ -356,7 +304,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 68
+    startLine: 63
   assemblies:
   - piine
   namespace: piine.Memory
@@ -388,7 +336,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 70
+    startLine: 65
   assemblies:
   - piine
   namespace: piine.Memory
@@ -405,6 +353,54 @@ items:
   modifiers.vb:
   - Public
   fullName.vb: piine.Memory.UnmanagedList(Of T).UnmanagedList(System.Int32)
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer
+  commentId: M:piine.Memory.UnmanagedList`1.GetInternalPointer
+  id: GetInternalPointer
+  parent: piine.Memory.UnmanagedList`1
+  langs:
+  - csharp
+  - vb
+  name: GetInternalPointer()
+  nameWithType: UnmanagedList<T>.GetInternalPointer()
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedList.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetInternalPointer
+    path: src/Memory/UnmanagedList.cs
+    startLine: 101
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  summary: "\nGet the underlying pointer. Be mindful when working with this.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public T*GetInternalPointer()
+    return:
+      type: '{T}*'
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetInternalPointer As T
+  overload: piine.Memory.UnmanagedList`1.GetInternalPointer*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer()
 - uid: piine.Memory.UnmanagedList`1.Add(`0)
   commentId: M:piine.Memory.UnmanagedList`1.Add(`0)
   id: Add(`0)
@@ -423,7 +419,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Add
     path: src/Memory/UnmanagedList.cs
-    startLine: 107
+    startLine: 113
   assemblies:
   - piine
   namespace: piine.Memory
@@ -463,7 +459,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Insert
     path: src/Memory/UnmanagedList.cs
-    startLine: 123
+    startLine: 129
   assemblies:
   - piine
   namespace: piine.Memory
@@ -506,7 +502,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/UnmanagedList.cs
-    startLine: 145
+    startLine: 151
   assemblies:
   - piine
   namespace: piine.Memory
@@ -549,7 +545,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: RemoveAt
     path: src/Memory/UnmanagedList.cs
-    startLine: 168
+    startLine: 174
   assemblies:
   - piine
   namespace: piine.Memory
@@ -589,7 +585,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TrimExcess
     path: src/Memory/UnmanagedList.cs
-    startLine: 188
+    startLine: 194
   assemblies:
   - piine
   namespace: piine.Memory
@@ -623,7 +619,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedList.cs
-    startLine: 201
+    startLine: 207
   assemblies:
   - piine
   namespace: piine.Memory
@@ -659,7 +655,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedList.cs
-    startLine: 208
+    startLine: 214
   assemblies:
   - piine
   namespace: piine.Memory
@@ -698,7 +694,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedList.cs
-    startLine: 226
+    startLine: 232
   assemblies:
   - piine
   namespace: piine.Memory
@@ -741,7 +737,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedList.cs
-    startLine: 239
+    startLine: 245
   assemblies:
   - piine
   namespace: piine.Memory
@@ -781,7 +777,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 258
+    startLine: 264
   assemblies:
   - piine
   namespace: piine.Memory
@@ -816,7 +812,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 265
+    startLine: 271
   assemblies:
   - piine
   namespace: piine.Memory
@@ -850,7 +846,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 267
+    startLine: 273
   assemblies:
   - piine
   namespace: piine.Memory
@@ -883,7 +879,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedList.cs
-    startLine: 274
+    startLine: 280
   assemblies:
   - piine
   namespace: piine.Memory
@@ -915,10 +911,12 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 276
+    startLine: 285
   assemblies:
   - piine
   namespace: piine.Memory
+  summary: "\nFree the unmanaged memory. The list will not be usable afterwards\n"
+  example: []
   syntax:
     content: public void Dispose()
     content.vb: Public Sub Dispose
@@ -949,12 +947,10 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 285
+    startLine: 291
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nFree the unmanaged memory. The list will not be usable afterwards\n"
-  example: []
   syntax:
     content: protected virtual void Dispose(bool disposing)
     parameters:
@@ -1569,6 +1565,43 @@ references:
   fullName: piine.Memory.UnmanagedList<T>.Capacity
   nameWithType.vb: UnmanagedList(Of T).Capacity
   fullName.vb: piine.Memory.UnmanagedList(Of T).Capacity
+- uid: piine.Memory.UnmanagedList`1
+  commentId: T:piine.Memory.UnmanagedList`1
+  parent: piine.Memory
+  name: UnmanagedList<T>
+  nameWithType: UnmanagedList<T>
+  fullName: piine.Memory.UnmanagedList<T>
+  nameWithType.vb: UnmanagedList(Of T)
+  fullName.vb: piine.Memory.UnmanagedList(Of T)
+  name.vb: UnmanagedList(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedList`1
+    name: UnmanagedList
+    nameWithType: UnmanagedList
+    fullName: piine.Memory.UnmanagedList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedList`1
+    name: UnmanagedList
+    nameWithType: UnmanagedList
+    fullName: piine.Memory.UnmanagedList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: piine.Memory.UnmanagedList`1.Allocated*
   commentId: Overload:piine.Memory.UnmanagedList`1.Allocated
   name: Allocated
@@ -1583,32 +1616,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: piine.Memory.UnmanagedList`1.GetInternalPointer*
-  commentId: Overload:piine.Memory.UnmanagedList`1.GetInternalPointer
-  name: GetInternalPointer
-  nameWithType: UnmanagedList<T>.GetInternalPointer
-  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
-  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
-  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
-- uid: '{T}*'
-  isExternal: true
-  name: T*
-  nameWithType: T*
-  fullName: T*
-  spec.csharp:
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
-  spec.vb:
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '*'
-    nameWithType: '*'
-    fullName: '*'
 - uid: piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly*
   commentId: Overload:piine.Memory.UnmanagedList`1.System#Collections#Generic#ICollection{T}#IsReadOnly
   name: ICollection<T>.IsReadOnly
@@ -1745,6 +1752,32 @@ references:
   fullName: piine.Memory.UnmanagedList<T>.UnmanagedList
   nameWithType.vb: UnmanagedList(Of T).UnmanagedList
   fullName.vb: piine.Memory.UnmanagedList(Of T).UnmanagedList
+- uid: piine.Memory.UnmanagedList`1.GetInternalPointer*
+  commentId: Overload:piine.Memory.UnmanagedList`1.GetInternalPointer
+  name: GetInternalPointer
+  nameWithType: UnmanagedList<T>.GetInternalPointer
+  fullName: piine.Memory.UnmanagedList<T>.GetInternalPointer
+  nameWithType.vb: UnmanagedList(Of T).GetInternalPointer
+  fullName.vb: piine.Memory.UnmanagedList(Of T).GetInternalPointer
+- uid: '{T}*'
+  isExternal: true
+  name: T*
+  nameWithType: T*
+  fullName: T*
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '*'
+    nameWithType: '*'
+    fullName: '*'
 - uid: piine.Memory.UnmanagedList`1.Add*
   commentId: Overload:piine.Memory.UnmanagedList`1.Add
   name: Add

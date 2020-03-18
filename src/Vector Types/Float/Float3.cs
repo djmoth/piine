@@ -90,15 +90,9 @@ namespace piine
             return v;
         }
 
-        public static Float3 Absolute (Float3 v)
-        {
-            return new Float3 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z));
-        }
+        public static Float3 Absolute (Float3 v) => new Float3 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z));
 
-        public static float Distance (Float3 a, Float3 b)
-        {
-            return (a - b).Length;
-        }
+        public static float Distance (Float3 a, Float3 b) => (a - b).Length;
 
         public static Float3 Cross (Float3 a, Float3 b)
         {
@@ -106,15 +100,16 @@ namespace piine
             r.x = a.y * b.z - a.z * b.y;
             r.y = a.x * b.z - a.z * b.x;
             r.z = a.y * b.x - a.x * b.y;
-
             return r;
         }
+
+        public static float Dot (Float3 a, Float3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
         public static explicit operator Float3 (Int3 v) => new Float3 (v.x, v.y, v.z);
 
         public static explicit operator Vector3 (Float3 v) => new Vector3 (v.x, v.y, v.z);
 
-        public static explicit operator Float3 (Vector3 v) => new Float3 (v.x, v.y, v.z);
+        public static explicit operator Float3 (Vector3 v) => new Float3 (v.X, v.Y, v.Z);
 
         public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
 

@@ -14,11 +14,6 @@ namespace piine.Memory
         private T* array;
 
         /// <summary>
-        /// Get the underlying pointer. Be mindful when working with this.
-        /// </summary>
-        [CLSCompliant (false)]
-        public T* ArrayPointer => array;
-        /// <summary>
         /// Size of the array. The same as Count
         /// </summary>
         public int Length { get; }
@@ -64,24 +59,9 @@ namespace piine.Memory
         /// <summary>
         /// Allocate a new UnmanagedArray.
         /// </summary>
-        /// <param name="size">Size of the new array in elements of T</param>
-        public UnmanagedArray (int size)
-        {
-            array = Unmanaged.AllocMemory<T> (size);
-            Length = size;
-
-            for (int i = 0; i < Length; i++)
-            {
-                array[i] = default;
-            }
-        }
-
-        /// <summary>
-        /// Allocate a new UnmanagedArray.
-        /// </summary>
         /// <param name="size">Size of the new array</param>
         /// <param name="fillWithDefaultValues">"Zero-out" the array with the default value of T. The array may otherwise contain garbage data.</param>
-        public UnmanagedArray (int size, bool fillWithDefault)
+        public UnmanagedArray (int size, bool fillWithDefault = false)
         {
             array = Unmanaged.AllocMemory<T> (size, fillWithDefault);
             Length = size;
@@ -97,6 +77,17 @@ namespace piine.Memory
             array = Unmanaged.AllocMemory<T> (Length);
             //Copy to new array
             span.CopyTo (GetSpan ());
+        }
+
+        /// <summary>
+        /// Get the underlying pointer. Be mindful when working with this.
+        /// </summary>
+        [CLSCompliant (false)]
+        public T* GetInternalPointer ()
+        {
+            CheckIfAllocated ();
+
+            return array;
         }
 
         private void CheckIfAllocated ()

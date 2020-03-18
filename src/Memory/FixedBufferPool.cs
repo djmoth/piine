@@ -44,6 +44,12 @@ namespace piine.Memory
             freeBuffers = Unmanaged.AllocMemory<ulong> (freeBuffersLength, true);
         }
 
+        private void CheckIfAllocated ()
+        {
+            if (!Allocated)
+                throw new ObjectDisposedException (nameof (FixedBufferPool<T>));
+        }
+
         /// <summary>
         /// Allocates a new buffer from the pool.
         /// </summary>
@@ -52,6 +58,8 @@ namespace piine.Memory
         [CLSCompliant (false)]
         public T* Allocate (bool fillWithDefault)
         {
+            CheckIfAllocated ();
+
             if (AllocatedBufferCount == PoolSize)
                 return null;
 
@@ -70,12 +78,22 @@ namespace piine.Memory
                             {
                                 if (((b[j] >> k) & 1) == 0) //Found a free buffer
                                 {
-                                    AllocatedBufferCount++;
-
                                     b[j] |= (byte)(1 << k); //Mark the buffer as occupied by setting the corresponding bit HIGH
 
                                     int bufferIndex = (i * 64) + (j * 8) + k;
-                                    return buffers + (bufferIndex * BufferSize);
+
+                                    T* buffer = buffers + (bufferIndex * BufferSize);
+                                    AllocatedBufferCount++;
+
+                                    if (fillWithDefault)    
+                                    {
+                                        for (int e = 0; e < BufferSize; e++)
+                                        {
+                                            buffer[e] = default;
+                                        }
+                                    }
+
+                                    return buffer;
                                 }
                             }
                         }
@@ -93,6 +111,8 @@ namespace piine.Memory
         [CLSCompliant (false)]
         public void Free (ref T* buffer)
         {
+            CheckIfAllocated ();
+
             int bufferIndex = (int)(buffer - buffers) / BufferSize;
             int freeBufferPartIndex = Math.DivRem (bufferIndex, 64, out int localPartIndex); //The index of the ulong that the state of the buffer is stored in
 

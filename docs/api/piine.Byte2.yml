@@ -1,0 +1,2203 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Byte2
+  commentId: T:piine.Byte2
+  id: Byte2
+  parent: piine
+  children:
+  - piine.Byte2.#ctor(System.Byte)
+  - piine.Byte2.#ctor(System.Byte,System.Byte)
+  - piine.Byte2.Absolute(piine.Byte2)
+  - piine.Byte2.AsUInt16
+  - piine.Byte2.CalculateArea
+  - piine.Byte2.Distance(piine.Byte2,piine.Byte2)
+  - piine.Byte2.Equals(piine.Byte2)
+  - piine.Byte2.Equals(System.Object)
+  - piine.Byte2.GetHashCode
+  - piine.Byte2.GetUnsafe(System.Int32)
+  - piine.Byte2.Item(System.Int32)
+  - piine.Byte2.Length
+  - piine.Byte2.LengthSquared
+  - piine.Byte2.One
+  - piine.Byte2.op_Addition(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_Division(piine.Byte2,System.Single)
+  - piine.Byte2.op_Equality(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_Explicit(piine.Byte2)~System.Numerics.Vector2
+  - piine.Byte2.op_Explicit(piine.Float2)~piine.Byte2
+  - piine.Byte2.op_Explicit(System.Numerics.Vector2)~piine.Byte2
+  - piine.Byte2.op_GreaterThan(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_GreaterThanOrEqual(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_Implicit(piine.Byte2)~System.ValueTuple{System.Byte,System.Byte}
+  - piine.Byte2.op_Implicit(System.ValueTuple{System.Byte,System.Byte})~piine.Byte2
+  - piine.Byte2.op_Inequality(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_LessThan(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_LessThanOrEqual(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_Multiply(piine.Byte2,System.Byte)
+  - piine.Byte2.op_Subtraction(piine.Byte2,piine.Byte2)
+  - piine.Byte2.op_UnaryNegation(piine.Byte2)
+  - piine.Byte2.SetUnsafe(System.Int32,System.Byte)
+  - piine.Byte2.Size
+  - piine.Byte2.ToString
+  - piine.Byte2.UnitX
+  - piine.Byte2.UnitY
+  - piine.Byte2.x
+  - piine.Byte2.y
+  - piine.Byte2.Zero
+  langs:
+  - csharp
+  - vb
+  name: Byte2
+  nameWithType: Byte2
+  fullName: piine.Byte2
+  type: Struct
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Byte2
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: 'public struct Byte2 : IEquatable<Byte2>'
+    content.vb: >-
+      Public Structure Byte2
+          Implements IEquatable(Of Byte2)
+  implements:
+  - System.IEquatable{piine.Byte2}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Byte2.Size
+  commentId: F:piine.Byte2.Size
+  id: Size
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Byte2.Size
+  fullName: piine.Byte2.Size
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Size
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 9
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const int Size = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const Size As Integer = 2
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Byte2.Zero
+  commentId: P:piine.Byte2.Zero
+  id: Zero
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Byte2.Zero
+  fullName: piine.Byte2.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Zero
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 16
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 Zero { get; }
+    parameters: []
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared ReadOnly Property Zero As Byte2
+  overload: piine.Byte2.Zero*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Byte2.One
+  commentId: P:piine.Byte2.One
+  id: One
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Byte2.One
+  fullName: piine.Byte2.One
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: One
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 17
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 One { get; }
+    parameters: []
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared ReadOnly Property One As Byte2
+  overload: piine.Byte2.One*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Byte2.UnitX
+  commentId: P:piine.Byte2.UnitX
+  id: UnitX
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: UnitX
+  nameWithType: Byte2.UnitX
+  fullName: piine.Byte2.UnitX
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitX
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 18
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 UnitX { get; }
+    parameters: []
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared ReadOnly Property UnitX As Byte2
+  overload: piine.Byte2.UnitX*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Byte2.UnitY
+  commentId: P:piine.Byte2.UnitY
+  id: UnitY
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: UnitY
+  nameWithType: Byte2.UnitY
+  fullName: piine.Byte2.UnitY
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: UnitY
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 19
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 UnitY { get; }
+    parameters: []
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared ReadOnly Property UnitY As Byte2
+  overload: piine.Byte2.UnitY*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Byte2.x
+  commentId: F:piine.Byte2.x
+  id: x
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Byte2.x
+  fullName: piine.Byte2.x
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: x
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 26
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public byte x
+    return:
+      type: System.Byte
+    content.vb: Public x As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.y
+  commentId: F:piine.Byte2.y
+  id: y
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Byte2.y
+  fullName: piine.Byte2.y
+  type: Field
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: y
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 28
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public byte y
+    return:
+      type: System.Byte
+    content.vb: Public y As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.Length
+  commentId: P:piine.Byte2.Length
+  id: Length
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: Byte2.Length
+  fullName: piine.Byte2.Length
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 33
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float Length { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Length As Single
+  overload: piine.Byte2.Length*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Byte2.LengthSquared
+  commentId: P:piine.Byte2.LengthSquared
+  id: LengthSquared
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared
+  nameWithType: Byte2.LengthSquared
+  fullName: piine.Byte2.LengthSquared
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: LengthSquared
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 35
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int LengthSquared { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LengthSquared As Integer
+  overload: piine.Byte2.LengthSquared*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Byte2.AsUInt16
+  commentId: P:piine.Byte2.AsUInt16
+  id: AsUInt16
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: AsUInt16
+  nameWithType: Byte2.AsUInt16
+  fullName: piine.Byte2.AsUInt16
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: AsUInt16
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 37
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public ushort AsUInt16 { get; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public ReadOnly Property AsUInt16 As UShort
+  overload: piine.Byte2.AsUInt16*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Byte2.#ctor(System.Byte,System.Byte)
+  commentId: M:piine.Byte2.#ctor(System.Byte,System.Byte)
+  id: '#ctor(System.Byte,System.Byte)'
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Byte2(Byte, Byte)
+  nameWithType: Byte2.Byte2(Byte, Byte)
+  fullName: piine.Byte2.Byte2(System.Byte, System.Byte)
+  type: Constructor
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 39
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Byte2(byte x, byte y)
+    parameters:
+    - id: x
+      type: System.Byte
+    - id: y
+      type: System.Byte
+    content.vb: Public Sub New(x As Byte, y As Byte)
+  overload: piine.Byte2.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.#ctor(System.Byte)
+  commentId: M:piine.Byte2.#ctor(System.Byte)
+  id: '#ctor(System.Byte)'
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Byte2(Byte)
+  nameWithType: Byte2.Byte2(Byte)
+  fullName: piine.Byte2.Byte2(System.Byte)
+  type: Constructor
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 46
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Byte2(byte all)
+    parameters:
+    - id: all
+      type: System.Byte
+    content.vb: Public Sub New(all As Byte)
+  overload: piine.Byte2.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.Item(System.Int32)
+  commentId: P:piine.Byte2.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Byte2.Item[Int32]
+  fullName: piine.Byte2.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 53
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public byte this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Byte
+    content.vb: Public Property Item(index As Integer) As Byte
+  overload: piine.Byte2.Item*
+  nameWithType.vb: Byte2.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Byte2.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Byte2.GetUnsafe(System.Int32)
+  commentId: M:piine.Byte2.GetUnsafe(System.Int32)
+  id: GetUnsafe(System.Int32)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: GetUnsafe(Int32)
+  nameWithType: Byte2.GetUnsafe(Int32)
+  fullName: piine.Byte2.GetUnsafe(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetUnsafe
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 71
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public byte GetUnsafe(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Byte
+    content.vb: Public Function GetUnsafe(index As Integer) As Byte
+  overload: piine.Byte2.GetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.SetUnsafe(System.Int32,System.Byte)
+  commentId: M:piine.Byte2.SetUnsafe(System.Int32,System.Byte)
+  id: SetUnsafe(System.Int32,System.Byte)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: SetUnsafe(Int32, Byte)
+  nameWithType: Byte2.SetUnsafe(Int32, Byte)
+  fullName: piine.Byte2.SetUnsafe(System.Int32, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: SetUnsafe
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 73
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void SetUnsafe(int index, byte value)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: System.Byte
+    content.vb: Public Sub SetUnsafe(index As Integer, value As Byte)
+  overload: piine.Byte2.SetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.CalculateArea
+  commentId: M:piine.Byte2.CalculateArea
+  id: CalculateArea
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: CalculateArea()
+  nameWithType: Byte2.CalculateArea()
+  fullName: piine.Byte2.CalculateArea()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: CalculateArea
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 75
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int CalculateArea()
+    return:
+      type: System.Int32
+    content.vb: Public Function CalculateArea As Integer
+  overload: piine.Byte2.CalculateArea*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.Absolute(piine.Byte2)
+  commentId: M:piine.Byte2.Absolute(piine.Byte2)
+  id: Absolute(piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Absolute(Byte2)
+  nameWithType: Byte2.Absolute(Byte2)
+  fullName: piine.Byte2.Absolute(piine.Byte2)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Absolute
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 77
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 Absolute(Byte2 v)
+    parameters:
+    - id: v
+      type: piine.Byte2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Function Absolute(v As Byte2) As Byte2
+  overload: piine.Byte2.Absolute*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.Distance(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.Distance(piine.Byte2,piine.Byte2)
+  id: Distance(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Distance(Byte2, Byte2)
+  nameWithType: Byte2.Distance(Byte2, Byte2)
+  fullName: piine.Byte2.Distance(piine.Byte2, piine.Byte2)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Distance
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 79
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static float Distance(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Byte2, b As Byte2) As Single
+  overload: piine.Byte2.Distance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Explicit(piine.Float2)~piine.Byte2
+  commentId: M:piine.Byte2.op_Explicit(piine.Float2)~piine.Byte2
+  id: op_Explicit(piine.Float2)~piine.Byte2
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Float2 to Byte2)
+  nameWithType: Byte2.Explicit(Float2 to Byte2)
+  fullName: piine.Byte2.Explicit(piine.Float2 to piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 81
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Byte2(Float2 v)
+    parameters:
+    - id: v
+      type: piine.Float2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Narrowing Operator CType(v As Float2) As Byte2
+  overload: piine.Byte2.op_Explicit*
+  nameWithType.vb: Byte2.Narrowing(Float2 to Byte2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Byte2.Narrowing(piine.Float2 to piine.Byte2)
+  name.vb: Narrowing(Float2 to Byte2)
+- uid: piine.Byte2.op_Explicit(piine.Byte2)~System.Numerics.Vector2
+  commentId: M:piine.Byte2.op_Explicit(piine.Byte2)~System.Numerics.Vector2
+  id: op_Explicit(piine.Byte2)~System.Numerics.Vector2
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Byte2 to Vector2)
+  nameWithType: Byte2.Explicit(Byte2 to Vector2)
+  fullName: piine.Byte2.Explicit(piine.Byte2 to System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 83
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Vector2(Byte2 v)
+    parameters:
+    - id: v
+      type: piine.Byte2
+    return:
+      type: System.Numerics.Vector2
+    content.vb: Public Shared Narrowing Operator CType(v As Byte2) As Vector2
+  overload: piine.Byte2.op_Explicit*
+  nameWithType.vb: Byte2.Narrowing(Byte2 to Vector2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Byte2.Narrowing(piine.Byte2 to System.Numerics.Vector2)
+  name.vb: Narrowing(Byte2 to Vector2)
+- uid: piine.Byte2.op_Explicit(System.Numerics.Vector2)~piine.Byte2
+  commentId: M:piine.Byte2.op_Explicit(System.Numerics.Vector2)~piine.Byte2
+  id: op_Explicit(System.Numerics.Vector2)~piine.Byte2
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Vector2 to Byte2)
+  nameWithType: Byte2.Explicit(Vector2 to Byte2)
+  fullName: piine.Byte2.Explicit(System.Numerics.Vector2 to piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 85
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Byte2(Vector2 v)
+    parameters:
+    - id: v
+      type: System.Numerics.Vector2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Narrowing Operator CType(v As Vector2) As Byte2
+  overload: piine.Byte2.op_Explicit*
+  nameWithType.vb: Byte2.Narrowing(Vector2 to Byte2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Byte2.Narrowing(System.Numerics.Vector2 to piine.Byte2)
+  name.vb: Narrowing(Vector2 to Byte2)
+- uid: piine.Byte2.op_Implicit(System.ValueTuple{System.Byte,System.Byte})~piine.Byte2
+  commentId: M:piine.Byte2.op_Implicit(System.ValueTuple{System.Byte,System.Byte})~piine.Byte2
+  id: op_Implicit(System.ValueTuple{System.Byte,System.Byte})~piine.Byte2
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Implicit((Byte x, Byte y) to Byte2)
+  nameWithType: Byte2.Implicit((Byte x, Byte y) to Byte2)
+  fullName: piine.Byte2.Implicit(System.ValueTuple<System.Byte, System.Byte> to piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 87
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Byte2((byte x, byte y)v)
+    parameters:
+    - id: v
+      type: System.ValueTuple{System.Byte,System.Byte}
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Widening Operator CType(v As(x As Byte, y As Byte)) As Byte2
+  overload: piine.Byte2.op_Implicit*
+  nameWithType.vb: Byte2.Widening((x As Byte, y As Byte) to Byte2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Byte2.Widening(System.ValueTuple(Of System.Byte, System.Byte) to piine.Byte2)
+  name.vb: Widening((x As Byte, y As Byte) to Byte2)
+- uid: piine.Byte2.op_Implicit(piine.Byte2)~System.ValueTuple{System.Byte,System.Byte}
+  commentId: M:piine.Byte2.op_Implicit(piine.Byte2)~System.ValueTuple{System.Byte,System.Byte}
+  id: op_Implicit(piine.Byte2)~System.ValueTuple{System.Byte,System.Byte}
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Byte2 to (Byte, Byte))
+  nameWithType: Byte2.Implicit(Byte2 to (Byte, Byte))
+  fullName: piine.Byte2.Implicit(piine.Byte2 to System.ValueTuple<System.Byte, System.Byte>)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 89
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator (byte, byte)(Byte2 v)
+    parameters:
+    - id: v
+      type: piine.Byte2
+    return:
+      type: System.ValueTuple{System.Byte,System.Byte}
+    content.vb: Public Shared Widening Operator CType(v As Byte2) As(Byte, Byte)
+  overload: piine.Byte2.op_Implicit*
+  nameWithType.vb: Byte2.Widening(Byte2 to (Byte, Byte))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Byte2.Widening(piine.Byte2 to System.ValueTuple(Of System.Byte, System.Byte))
+  name.vb: Widening(Byte2 to (Byte, Byte))
+- uid: piine.Byte2.op_Equality(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_Equality(piine.Byte2,piine.Byte2)
+  id: op_Equality(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Equality(Byte2, Byte2)
+  nameWithType: Byte2.Equality(Byte2, Byte2)
+  fullName: piine.Byte2.Equality(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 91
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Inequality(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_Inequality(piine.Byte2,piine.Byte2)
+  id: op_Inequality(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Byte2, Byte2)
+  nameWithType: Byte2.Inequality(Byte2, Byte2)
+  fullName: piine.Byte2.Inequality(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 93
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Addition(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_Addition(piine.Byte2,piine.Byte2)
+  id: op_Addition(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Addition(Byte2, Byte2)
+  nameWithType: Byte2.Addition(Byte2, Byte2)
+  fullName: piine.Byte2.Addition(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 95
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 operator +(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Operator +(a As Byte2, b As Byte2) As Byte2
+  overload: piine.Byte2.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Subtraction(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_Subtraction(piine.Byte2,piine.Byte2)
+  id: op_Subtraction(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Byte2, Byte2)
+  nameWithType: Byte2.Subtraction(Byte2, Byte2)
+  fullName: piine.Byte2.Subtraction(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 97
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 operator -(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Operator -(a As Byte2, b As Byte2) As Byte2
+  overload: piine.Byte2.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_UnaryNegation(piine.Byte2)
+  commentId: M:piine.Byte2.op_UnaryNegation(piine.Byte2)
+  id: op_UnaryNegation(piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: UnaryNegation(Byte2)
+  nameWithType: Byte2.UnaryNegation(Byte2)
+  fullName: piine.Byte2.UnaryNegation(piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_UnaryNegation
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 99
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 operator -(Byte2 v)
+    parameters:
+    - id: v
+      type: piine.Byte2
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Operator -(v As Byte2) As Byte2
+  overload: piine.Byte2.op_UnaryNegation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Multiply(piine.Byte2,System.Byte)
+  commentId: M:piine.Byte2.op_Multiply(piine.Byte2,System.Byte)
+  id: op_Multiply(piine.Byte2,System.Byte)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Byte2, Byte)
+  nameWithType: Byte2.Multiply(Byte2, Byte)
+  fullName: piine.Byte2.Multiply(piine.Byte2, System.Byte)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 101
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 operator *(Byte2 a, byte b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: System.Byte
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Operator *(a As Byte2, b As Byte) As Byte2
+  overload: piine.Byte2.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_Division(piine.Byte2,System.Single)
+  commentId: M:piine.Byte2.op_Division(piine.Byte2,System.Single)
+  id: op_Division(piine.Byte2,System.Single)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Division(Byte2, Single)
+  nameWithType: Byte2.Division(Byte2, Single)
+  fullName: piine.Byte2.Division(piine.Byte2, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 103
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Byte2 operator /(Byte2 a, float b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Byte2
+    content.vb: Public Shared Operator /(a As Byte2, b As Single) As Byte2
+  overload: piine.Byte2.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_GreaterThan(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_GreaterThan(piine.Byte2,piine.Byte2)
+  id: op_GreaterThan(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan(Byte2, Byte2)
+  nameWithType: Byte2.GreaterThan(Byte2, Byte2)
+  fullName: piine.Byte2.GreaterThan(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThan
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 105
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator>(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator>(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_GreaterThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_LessThan(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_LessThan(piine.Byte2,piine.Byte2)
+  id: op_LessThan(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: LessThan(Byte2, Byte2)
+  nameWithType: Byte2.LessThan(Byte2, Byte2)
+  fullName: piine.Byte2.LessThan(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThan
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 107
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_LessThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_GreaterThanOrEqual(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_GreaterThanOrEqual(piine.Byte2,piine.Byte2)
+  id: op_GreaterThanOrEqual(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual(Byte2, Byte2)
+  nameWithType: Byte2.GreaterThanOrEqual(Byte2, Byte2)
+  fullName: piine.Byte2.GreaterThanOrEqual(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThanOrEqual
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 109
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator >=(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_GreaterThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.op_LessThanOrEqual(piine.Byte2,piine.Byte2)
+  commentId: M:piine.Byte2.op_LessThanOrEqual(piine.Byte2,piine.Byte2)
+  id: op_LessThanOrEqual(piine.Byte2,piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual(Byte2, Byte2)
+  nameWithType: Byte2.LessThanOrEqual(Byte2, Byte2)
+  fullName: piine.Byte2.LessThanOrEqual(piine.Byte2, piine.Byte2)
+  type: Operator
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThanOrEqual
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 111
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <=(Byte2 a, Byte2 b)
+    parameters:
+    - id: a
+      type: piine.Byte2
+    - id: b
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(a As Byte2, b As Byte2) As Boolean
+  overload: piine.Byte2.op_LessThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Byte2.GetHashCode
+  commentId: M:piine.Byte2.GetHashCode
+  id: GetHashCode
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Byte2.GetHashCode()
+  fullName: piine.Byte2.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 113
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Byte2.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Byte2.ToString
+  commentId: M:piine.Byte2.ToString
+  id: ToString
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Byte2.ToString()
+  fullName: piine.Byte2.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 115
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Byte2.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Byte2.Equals(piine.Byte2)
+  commentId: M:piine.Byte2.Equals(piine.Byte2)
+  id: Equals(piine.Byte2)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Equals(Byte2)
+  nameWithType: Byte2.Equals(Byte2)
+  fullName: piine.Byte2.Equals(piine.Byte2)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 117
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Byte2 other)
+    parameters:
+    - id: other
+      type: piine.Byte2
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Byte2) As Boolean
+  overload: piine.Byte2.Equals*
+  implements:
+  - System.IEquatable{piine.Byte2}.Equals(piine.Byte2)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Byte2.Equals(System.Object)
+  commentId: M:piine.Byte2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Byte2
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Byte2.Equals(Object)
+  fullName: piine.Byte2.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Vector Types/Byte/Byte2.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Vector Types/Byte/Byte2.cs
+    startLine: 119
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Byte2.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.IEquatable{piine.Byte2}
+  commentId: T:System.IEquatable{piine.Byte2}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Byte2>
+  nameWithType: IEquatable<Byte2>
+  fullName: System.IEquatable<piine.Byte2>
+  nameWithType.vb: IEquatable(Of Byte2)
+  fullName.vb: System.IEquatable(Of piine.Byte2)
+  name.vb: IEquatable(Of Byte2)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Byte2
+    name: Byte2
+    nameWithType: Byte2
+    fullName: piine.Byte2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Byte2
+    name: Byte2
+    nameWithType: Byte2
+    fullName: piine.Byte2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Byte2.Zero*
+  commentId: Overload:piine.Byte2.Zero
+  name: Zero
+  nameWithType: Byte2.Zero
+  fullName: piine.Byte2.Zero
+- uid: piine.Byte2
+  commentId: T:piine.Byte2
+  parent: piine
+  name: Byte2
+  nameWithType: Byte2
+  fullName: piine.Byte2
+- uid: piine.Byte2.One*
+  commentId: Overload:piine.Byte2.One
+  name: One
+  nameWithType: Byte2.One
+  fullName: piine.Byte2.One
+- uid: piine.Byte2.UnitX*
+  commentId: Overload:piine.Byte2.UnitX
+  name: UnitX
+  nameWithType: Byte2.UnitX
+  fullName: piine.Byte2.UnitX
+- uid: piine.Byte2.UnitY*
+  commentId: Overload:piine.Byte2.UnitY
+  name: UnitY
+  nameWithType: Byte2.UnitY
+  fullName: piine.Byte2.UnitY
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: piine.Byte2.Length*
+  commentId: Overload:piine.Byte2.Length
+  name: Length
+  nameWithType: Byte2.Length
+  fullName: piine.Byte2.Length
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: piine.Byte2.LengthSquared*
+  commentId: Overload:piine.Byte2.LengthSquared
+  name: LengthSquared
+  nameWithType: Byte2.LengthSquared
+  fullName: piine.Byte2.LengthSquared
+- uid: piine.Byte2.AsUInt16*
+  commentId: Overload:piine.Byte2.AsUInt16
+  name: AsUInt16
+  nameWithType: Byte2.AsUInt16
+  fullName: piine.Byte2.AsUInt16
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: piine.Byte2.#ctor*
+  commentId: Overload:piine.Byte2.#ctor
+  name: Byte2
+  nameWithType: Byte2.Byte2
+  fullName: piine.Byte2.Byte2
+- uid: piine.Byte2.Item*
+  commentId: Overload:piine.Byte2.Item
+  name: Item
+  nameWithType: Byte2.Item
+  fullName: piine.Byte2.Item
+- uid: piine.Byte2.GetUnsafe*
+  commentId: Overload:piine.Byte2.GetUnsafe
+  name: GetUnsafe
+  nameWithType: Byte2.GetUnsafe
+  fullName: piine.Byte2.GetUnsafe
+- uid: piine.Byte2.SetUnsafe*
+  commentId: Overload:piine.Byte2.SetUnsafe
+  name: SetUnsafe
+  nameWithType: Byte2.SetUnsafe
+  fullName: piine.Byte2.SetUnsafe
+- uid: piine.Byte2.CalculateArea*
+  commentId: Overload:piine.Byte2.CalculateArea
+  name: CalculateArea
+  nameWithType: Byte2.CalculateArea
+  fullName: piine.Byte2.CalculateArea
+- uid: piine.Byte2.Absolute*
+  commentId: Overload:piine.Byte2.Absolute
+  name: Absolute
+  nameWithType: Byte2.Absolute
+  fullName: piine.Byte2.Absolute
+- uid: piine.Byte2.Distance*
+  commentId: Overload:piine.Byte2.Distance
+  name: Distance
+  nameWithType: Byte2.Distance
+  fullName: piine.Byte2.Distance
+- uid: piine.Byte2.op_Explicit*
+  commentId: Overload:piine.Byte2.op_Explicit
+  name: Explicit
+  nameWithType: Byte2.Explicit
+  fullName: piine.Byte2.Explicit
+  nameWithType.vb: Byte2.Narrowing
+  fullName.vb: piine.Byte2.Narrowing
+  name.vb: Narrowing
+- uid: piine.Float2
+  commentId: T:piine.Float2
+  parent: piine
+  name: Float2
+  nameWithType: Float2
+  fullName: piine.Float2
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: System.Numerics.Vector2
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: piine.Byte2.op_Implicit*
+  commentId: Overload:piine.Byte2.op_Implicit
+  name: Implicit
+  nameWithType: Byte2.Implicit
+  fullName: piine.Byte2.Implicit
+  nameWithType.vb: Byte2.Widening
+  fullName.vb: piine.Byte2.Widening
+  name.vb: Widening
+- uid: System.ValueTuple{System.Byte,System.Byte}
+  commentId: T:System.ValueTuple{System.Byte,System.Byte}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Byte, Byte>
+  nameWithType: ValueTuple<Byte, Byte>
+  fullName: System.ValueTuple<System.Byte, System.Byte>
+  nameWithType.vb: ValueTuple(Of Byte, Byte)
+  fullName.vb: System.ValueTuple(Of System.Byte, System.Byte)
+  name.vb: ValueTuple(Of Byte, Byte)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Byte2.op_Equality*
+  commentId: Overload:piine.Byte2.op_Equality
+  name: Equality
+  nameWithType: Byte2.Equality
+  fullName: piine.Byte2.Equality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Byte2.op_Inequality*
+  commentId: Overload:piine.Byte2.op_Inequality
+  name: Inequality
+  nameWithType: Byte2.Inequality
+  fullName: piine.Byte2.Inequality
+- uid: piine.Byte2.op_Addition*
+  commentId: Overload:piine.Byte2.op_Addition
+  name: Addition
+  nameWithType: Byte2.Addition
+  fullName: piine.Byte2.Addition
+- uid: piine.Byte2.op_Subtraction*
+  commentId: Overload:piine.Byte2.op_Subtraction
+  name: Subtraction
+  nameWithType: Byte2.Subtraction
+  fullName: piine.Byte2.Subtraction
+- uid: piine.Byte2.op_UnaryNegation*
+  commentId: Overload:piine.Byte2.op_UnaryNegation
+  name: UnaryNegation
+  nameWithType: Byte2.UnaryNegation
+  fullName: piine.Byte2.UnaryNegation
+- uid: piine.Byte2.op_Multiply*
+  commentId: Overload:piine.Byte2.op_Multiply
+  name: Multiply
+  nameWithType: Byte2.Multiply
+  fullName: piine.Byte2.Multiply
+- uid: piine.Byte2.op_Division*
+  commentId: Overload:piine.Byte2.op_Division
+  name: Division
+  nameWithType: Byte2.Division
+  fullName: piine.Byte2.Division
+- uid: piine.Byte2.op_GreaterThan*
+  commentId: Overload:piine.Byte2.op_GreaterThan
+  name: GreaterThan
+  nameWithType: Byte2.GreaterThan
+  fullName: piine.Byte2.GreaterThan
+- uid: piine.Byte2.op_LessThan*
+  commentId: Overload:piine.Byte2.op_LessThan
+  name: LessThan
+  nameWithType: Byte2.LessThan
+  fullName: piine.Byte2.LessThan
+- uid: piine.Byte2.op_GreaterThanOrEqual*
+  commentId: Overload:piine.Byte2.op_GreaterThanOrEqual
+  name: GreaterThanOrEqual
+  nameWithType: Byte2.GreaterThanOrEqual
+  fullName: piine.Byte2.GreaterThanOrEqual
+- uid: piine.Byte2.op_LessThanOrEqual*
+  commentId: Overload:piine.Byte2.op_LessThanOrEqual
+  name: LessThanOrEqual
+  nameWithType: Byte2.LessThanOrEqual
+  fullName: piine.Byte2.LessThanOrEqual
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Byte2.GetHashCode*
+  commentId: Overload:piine.Byte2.GetHashCode
+  name: GetHashCode
+  nameWithType: Byte2.GetHashCode
+  fullName: piine.Byte2.GetHashCode
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Byte2.ToString*
+  commentId: Overload:piine.Byte2.ToString
+  name: ToString
+  nameWithType: Byte2.ToString
+  fullName: piine.Byte2.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: piine.Byte2.Equals*
+  commentId: Overload:piine.Byte2.Equals
+  name: Equals
+  nameWithType: Byte2.Equals
+  fullName: piine.Byte2.Equals
+- uid: System.IEquatable{piine.Byte2}.Equals(piine.Byte2)
+  commentId: M:System.IEquatable{piine.Byte2}.Equals(piine.Byte2)
+  parent: System.IEquatable{piine.Byte2}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Byte2)
+  nameWithType: IEquatable<Byte2>.Equals(Byte2)
+  fullName: System.IEquatable<piine.Byte2>.Equals(piine.Byte2)
+  nameWithType.vb: IEquatable(Of Byte2).Equals(Byte2)
+  fullName.vb: System.IEquatable(Of piine.Byte2).Equals(piine.Byte2)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Byte2>.Equals
+    fullName: System.IEquatable<piine.Byte2>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Byte2
+    name: Byte2
+    nameWithType: Byte2
+    fullName: piine.Byte2
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Byte2).Equals
+    fullName: System.IEquatable(Of piine.Byte2).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Byte2
+    name: Byte2
+    nameWithType: Byte2
+    fullName: piine.Byte2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

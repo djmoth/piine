@@ -4,6 +4,7 @@ items:
   commentId: N:Tests.Memory
   id: Tests.Memory
   children:
+  - Tests.Memory.FixedBufferPoolTests
   - Tests.Memory.UnmanagedArrayTests
   - Tests.Memory.UnmanagedListTests
   langs:
@@ -16,6 +17,11 @@ items:
   assemblies:
   - tests
 references:
+- uid: Tests.Memory.FixedBufferPoolTests
+  commentId: T:Tests.Memory.FixedBufferPoolTests
+  name: FixedBufferPoolTests
+  nameWithType: FixedBufferPoolTests
+  fullName: Tests.Memory.FixedBufferPoolTests
 - uid: Tests.Memory.UnmanagedArrayTests
   commentId: T:Tests.Memory.UnmanagedArrayTests
   name: UnmanagedArrayTests

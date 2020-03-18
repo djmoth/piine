@@ -2,6 +2,8 @@
 using NUnit.Framework;
 using piine;
 using piine.Voxels;
+using piine.Memory;
+using System.Runtime.InteropServices;
 
 namespace tests.Voxels
 {    
@@ -32,6 +34,22 @@ namespace tests.Voxels
         public void HashCodeTest ()
         {
 
+        }
+
+        [Test]
+        public unsafe void TestVoxelStructSize ()
+        {
+            Voxel* voxels = Unmanaged.AllocMemory<Voxel> (4096);
+
+            Assert.IsTrue ((long)(voxels + 1) - (long)voxels == 1); //Check if the difference between the first and second element is 1 byte
+
+            Assert.Pass (((long)(voxels + 4096) - (long)voxels).ToString () + "   " + ((long)voxels).ToString () + "   " + ((long)(voxels + 4095)).ToString ());
+        }
+
+        [StructLayout (LayoutKind.Sequential, Size = 1)]
+        public struct Voxel
+        {
+            public byte value;
         }
     }
 }

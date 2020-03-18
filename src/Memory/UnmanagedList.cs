@@ -29,12 +29,7 @@ namespace piine.Memory
         /// <summary>
         /// Set to <see langword="false"/> when the <see cref="UnmanagedList{T}"/> is disposed
         /// </summary>
-        public bool Allocated { get; private set; } = true;
-        /// <summary>
-        /// Return the underlying pointer for the list. Be mindful when working with this.
-        /// </summary>
-        [CLSCompliant (false)]
-        public T* GetInternalPointer => array;
+        public bool Allocated => array != null;
         /// <summary>
         /// Always false
         /// </summary>
@@ -100,6 +95,17 @@ namespace piine.Memory
 
         //Use MemoryCopy to quickly copy elements
         private void MoveElements (int from, int count, int to) => Buffer.MemoryCopy (array + from, array + to, capacity * sizeof (T), count * sizeof (T));
+
+        /// <summary>
+        /// Get the underlying pointer. Be mindful when working with this.
+        /// </summary>
+        [CLSCompliant (false)]
+        public T* GetInternalPointer ()
+        {
+            CheckIfAllocated ();
+
+            return array;
+        }
 
         /// <summary>
         /// Add a new item to the end of the list. Will double the Capacity if there is not enough space.
@@ -289,8 +295,6 @@ namespace piine.Memory
                 return;
 
             Unmanaged.FreeMemory (ref array, capacity);
-
-            Allocated = false;
         }
 
         public struct Enumerator : IEnumerator<T>

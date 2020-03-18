@@ -92,11 +92,13 @@ namespace piine
 
         public static float Distance (Float2 a, Float2 b) => (a - b).Length;
 
+        public static float Dot (Float2 a, Float2 b) => a.x * b.x + a.y * b.y;
+
         public static explicit operator Float2 (Int2 v) => new Float2 (v.x, v.y);
 
         public static explicit operator Vector2 (Float2 v) => new Vector2 (v.x, v.y);
 
-        public static explicit operator Float2 (Vector2 v) => new Float2 (v.x, v.y);
+        public static explicit operator Float2 (Vector2 v) => new Float2 (v.X, v.Y);
 
         public static implicit operator Float2 ((float x, float y) v) => new Float2 (v.x, v.y);
 

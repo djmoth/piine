@@ -93,31 +93,17 @@ namespace piine
             return v / oldMagnitude;
         }
 
-        public static Float4 Absolute (Float4 v)
-        {
-            return new Float4 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z), Math.Abs (v.w));
-        }
+        public static Float4 Absolute (Float4 v) => new Float4 (Math.Abs (v.x), Math.Abs (v.y), Math.Abs (v.z), Math.Abs (v.w));
 
-        public static float Distance (Float4 a, Float4 b)
-        {
-            return (a - b).Length;
-        }
+        public static float Distance (Float4 a, Float4 b) => (a - b).Length;
 
-        public static Float4 Cross (Float4 a, Float4 b)
-        {
-            Float4 r = new Float4 ();
-            r.x = a.y * b.z - a.z * b.y;
-            r.y = a.x * b.z - a.z * b.x;
-            r.z = a.y * b.x - a.x * b.y;
-
-            return r;
-        }
+        public static float Dot (Float4 a, Float4 b) => a.x * b.x + a.y * b.y + a.z * b.z + a.w * b.w;
 
         public static explicit operator Float4 (Int4 v) => new Float4 (v.x, v.y, v.z, v.w);
 
         public static explicit operator Vector4 (Float4 v) => new Vector4 (v.x, v.y, v.z, v.w);
 
-        public static explicit operator Float4 (Vector4 v) => new Float4 (v.x, v.y, v.z, v.w);
+        public static explicit operator Float4 (Vector4 v) => new Float4 (v.X, v.Y, v.Z, v.W);
 
         public static implicit operator Float4 ((float x, float y, float z, float w) v) => new Float4 (v.x, v.y, v.z, v.w);
 

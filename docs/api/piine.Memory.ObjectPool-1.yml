@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Memory.ObjectPool`1
+  commentId: T:piine.Memory.ObjectPool`1
+  id: ObjectPool`1
+  parent: piine.Memory
+  children:
+  - piine.Memory.ObjectPool`1.GetObject
+  - piine.Memory.ObjectPool`1.ReturnObject(`0)
+  langs:
+  - csharp
+  - vb
+  name: ObjectPool<T>
+  nameWithType: ObjectPool<T>
+  fullName: piine.Memory.ObjectPool<T>
+  type: Class
+  source:
+    remote:
+      path: src/Memory/ObjectPool.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ObjectPool
+    path: src/Memory/ObjectPool.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: >-
+      public static class ObjectPool<T>
+          where T : new()
+    typeParameters:
+    - id: T
+    content.vb: Public Module ObjectPool(Of T As New)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: ObjectPool(Of T)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+  fullName.vb: piine.Memory.ObjectPool(Of T)
+  name.vb: ObjectPool(Of T)
+- uid: piine.Memory.ObjectPool`1.GetObject
+  commentId: M:piine.Memory.ObjectPool`1.GetObject
+  id: GetObject
+  parent: piine.Memory.ObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: GetObject()
+  nameWithType: ObjectPool<T>.GetObject()
+  fullName: piine.Memory.ObjectPool<T>.GetObject()
+  type: Method
+  source:
+    remote:
+      path: src/Memory/ObjectPool.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: GetObject
+    path: src/Memory/ObjectPool.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public static T GetObject()
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetObject As T
+  overload: piine.Memory.ObjectPool`1.GetObject*
+  nameWithType.vb: ObjectPool(Of T).GetObject()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.ObjectPool(Of T).GetObject()
+- uid: piine.Memory.ObjectPool`1.ReturnObject(`0)
+  commentId: M:piine.Memory.ObjectPool`1.ReturnObject(`0)
+  id: ReturnObject(`0)
+  parent: piine.Memory.ObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: ReturnObject(T)
+  nameWithType: ObjectPool<T>.ReturnObject(T)
+  fullName: piine.Memory.ObjectPool<T>.ReturnObject(T)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/ObjectPool.cs
+      branch: master
+      repo: https://github.com/djmoth/piine.git
+    id: ReturnObject
+    path: src/Memory/ObjectPool.cs
+    startLine: 21
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public static void ReturnObject(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    content.vb: Public Shared Sub ReturnObject(obj As T)
+  overload: piine.Memory.ObjectPool`1.ReturnObject*
+  nameWithType.vb: ObjectPool(Of T).ReturnObject(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Memory.ObjectPool(Of T).ReturnObject(T)
+references:
+- uid: piine.Memory
+  commentId: N:piine.Memory
+  name: piine.Memory
+  nameWithType: piine.Memory
+  fullName: piine.Memory
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: piine.Memory.ObjectPool`1.GetObject*
+  commentId: Overload:piine.Memory.ObjectPool`1.GetObject
+  name: GetObject
+  nameWithType: ObjectPool<T>.GetObject
+  fullName: piine.Memory.ObjectPool<T>.GetObject
+  nameWithType.vb: ObjectPool(Of T).GetObject
+  fullName.vb: piine.Memory.ObjectPool(Of T).GetObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: piine.Memory.ObjectPool`1.ReturnObject*
+  commentId: Overload:piine.Memory.ObjectPool`1.ReturnObject
+  name: ReturnObject
+  nameWithType: ObjectPool<T>.ReturnObject
+  fullName: piine.Memory.ObjectPool<T>.ReturnObject
+  nameWithType.vb: ObjectPool(Of T).ReturnObject
+  fullName.vb: piine.Memory.ObjectPool(Of T).ReturnObject

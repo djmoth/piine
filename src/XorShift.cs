@@ -11,7 +11,13 @@ namespace piine
     {
         private int state;
 
-        public XorShift (int seed) => state = seed;
+        public XorShift (int seed)
+        {
+            if (seed == 0)
+                state = (int)DateTime.Now.ToBinary ();
+            else
+                state = seed;
+        }
 
         /// <summary>
         /// Calculates a new random number in the range [Int32.MinValue; Int32.MaxValue]
@@ -36,5 +42,21 @@ namespace piine
         }
 
         private static int Mod (int n, int modulus) =>  (n % modulus + modulus) % modulus;
+
+        public override int GetHashCode () => state;
+
+        public static bool operator == (XorShift left, XorShift right) => left.state == right.state;
+
+        public static bool operator != (XorShift left, XorShift right) => left.state != right.state;
+
+        public override bool Equals (object obj)
+        {
+            XorShift? v = obj as XorShift?;
+
+            if (v != null)
+                return v == this;
+            else
+                return false;
+        }
     }
 }

@@ -4,6 +4,9 @@ items:
   commentId: N:piine
   id: piine
   children:
+  - piine.Byte2
+  - piine.Byte3
+  - piine.Byte4
   - piine.Double2
   - piine.Float2
   - piine.Float3
@@ -29,6 +32,24 @@ references:
   name: Piine
   nameWithType: Piine
   fullName: piine.Piine
+- uid: piine.Byte2
+  commentId: T:piine.Byte2
+  parent: piine
+  name: Byte2
+  nameWithType: Byte2
+  fullName: piine.Byte2
+- uid: piine.Byte3
+  commentId: T:piine.Byte3
+  parent: piine
+  name: Byte3
+  nameWithType: Byte3
+  fullName: piine.Byte3
+- uid: piine.Byte4
+  commentId: T:piine.Byte4
+  parent: piine
+  name: Byte4
+  nameWithType: Byte4
+  fullName: piine.Byte4
 - uid: piine.Double2
   commentId: T:piine.Double2
   parent: piine
@@ -78,6 +99,7 @@ references:
   fullName: piine.Simd
 - uid: piine.XorShift
   commentId: T:piine.XorShift
+  parent: piine
   name: XorShift
   nameWithType: XorShift
   fullName: piine.XorShift
