@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: OpenSimplexNoise
     path: src/Procedural/OpenSimplexNoise.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Procedural/OpenSimplexNoise.cs
@@ -97,7 +97,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Procedural/OpenSimplexNoise.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Evaluate
     path: src/Procedural/OpenSimplexNoise.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Evaluate
     path: src/Procedural/OpenSimplexNoise.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: src/Procedural/OpenSimplexNoise.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Evaluate
     path: src/Procedural/OpenSimplexNoise.cs

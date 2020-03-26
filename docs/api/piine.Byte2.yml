@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Byte2
     path: src/Vector Types/Byte/Byte2.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Byte/Byte2.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Byte/Byte2.cs
@@ -162,7 +162,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Byte/Byte2.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Byte/Byte2.cs
@@ -236,7 +236,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Byte/Byte2.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Byte/Byte2.cs
@@ -304,7 +304,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Byte/Byte2.cs
@@ -335,7 +335,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Byte/Byte2.cs
@@ -370,7 +370,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Byte/Byte2.cs
@@ -405,7 +405,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: AsUInt16
     path: src/Vector Types/Byte/Byte2.cs
@@ -440,7 +440,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Byte/Byte2.cs
@@ -475,7 +475,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Byte/Byte2.cs
@@ -508,7 +508,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Byte/Byte2.cs
@@ -548,7 +548,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetUnsafe
     path: src/Vector Types/Byte/Byte2.cs
@@ -583,7 +583,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: SetUnsafe
     path: src/Vector Types/Byte/Byte2.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: CalculateArea
     path: src/Vector Types/Byte/Byte2.cs
@@ -650,7 +650,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Byte/Byte2.cs
@@ -687,7 +687,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Byte/Byte2.cs
@@ -726,7 +726,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte2.cs
@@ -766,7 +766,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte2.cs
@@ -806,7 +806,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte2.cs
@@ -846,7 +846,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Byte/Byte2.cs
@@ -886,7 +886,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Byte/Byte2.cs
@@ -926,7 +926,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Byte/Byte2.cs
@@ -965,7 +965,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Byte/Byte2.cs
@@ -1004,7 +1004,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Byte/Byte2.cs
@@ -1043,7 +1043,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Byte/Byte2.cs
@@ -1082,7 +1082,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Byte/Byte2.cs
@@ -1119,7 +1119,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Byte/Byte2.cs
@@ -1158,7 +1158,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Byte/Byte2.cs
@@ -1197,7 +1197,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Byte/Byte2.cs
@@ -1236,7 +1236,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Byte/Byte2.cs
@@ -1275,7 +1275,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Byte/Byte2.cs
@@ -1314,7 +1314,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Byte/Byte2.cs
@@ -1353,7 +1353,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Vector Types/Byte/Byte2.cs
@@ -1388,7 +1388,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Byte/Byte2.cs
@@ -1423,7 +1423,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Byte/Byte2.cs
@@ -1460,7 +1460,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte2.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Byte/Byte2.cs

@@ -34,7 +34,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Color32
     path: src/Graphics/Color32.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: r
     path: src/Graphics/Color32.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: g
     path: src/Graphics/Color32.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: b
     path: src/Graphics/Color32.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: a
     path: src/Graphics/Color32.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: AsInt32
     path: src/Graphics/Color32.cs
@@ -236,7 +236,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
@@ -281,7 +281,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
@@ -323,7 +323,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Graphics/Color32.cs
@@ -359,7 +359,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Graphics/Color32.cs
@@ -398,7 +398,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Graphics/Color32.cs
@@ -437,7 +437,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Graphics/Color32.cs
@@ -474,7 +474,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Graphics/Color32.cs
@@ -512,7 +512,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Graphics/Color32.cs
@@ -547,7 +547,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Graphics/Color32.cs
@@ -582,7 +582,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Black
     path: src/Graphics/Color32.cs
@@ -619,7 +619,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: White
     path: src/Graphics/Color32.cs
@@ -656,7 +656,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Red
     path: src/Graphics/Color32.cs
@@ -693,7 +693,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Green
     path: src/Graphics/Color32.cs
@@ -730,7 +730,7 @@ items:
   source:
     remote:
       path: src/Graphics/Color32.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Blue
     path: src/Graphics/Color32.cs

@@ -59,19 +59,8 @@ namespace piine.Memory
 
         public void Add (TKey key, TValue value)
         {
-            CheckIfAllocated ();
-
-            if (ContainsKey (key))
+            if (!TryAdd (key, value))
                 throw new ArgumentException ("An element with the same key already exists", nameof (key));
-
-            if (Count > bucketSize * RESIZE_THRESHOLD)
-                ResizeBucket (bucketSize * 2);
-
-            Count++;
-
-            BucketSlot* slot = GetBucketSlot (key);
-
-            slot->Add (key, value);
         }
 
         public bool TryAdd (TKey key, TValue value)
@@ -232,7 +221,7 @@ namespace piine.Memory
 
             public void Deallocate ()
             {
-                if (nodes != null)
+                if (SlotSize != 0)
                     Unmanaged.FreeMemory (ref nodes, SlotSize);
             }
 
@@ -324,6 +313,9 @@ namespace piine.Memory
             public HashNode* GetNode (TKey key)
             {
                 HashNode* node = FirstNode;
+
+                if (node == null)
+                    return null;
 
                 while (true)
                 {

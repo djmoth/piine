@@ -49,7 +49,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;E:\Game Development\Operation Kreaos\Assets\Libraries\&quot;" />
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;E:\Game Development\Operation Kreaos\Assets\Libraries\&quot;&#xD;&#xA;copy &quot;$(TargetPath)&quot; &quot;E:\Game Development\Operation Kreaos Server\Libraries\&quot;" />
   </Target>
 
 </Project>

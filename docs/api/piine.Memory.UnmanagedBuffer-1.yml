@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedBuffer
     path: src/Memory/UnmanagedBuffer.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Memory/UnmanagedBuffer.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedBuffer.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedBuffer.cs
@@ -188,7 +188,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedBuffer.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedBuffer.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetPointer
     path: src/Memory/UnmanagedBuffer.cs
@@ -320,7 +320,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Memory/UnmanagedBuffer.cs
@@ -362,7 +362,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Memory/UnmanagedBuffer.cs
@@ -404,7 +404,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Memory/UnmanagedBuffer.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Memory/UnmanagedBuffer.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedBuffer.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Memory/UnmanagedBuffer.cs

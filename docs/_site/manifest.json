@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Int3Tests.html",
-          "hash": "GYvjqmEz6wdJwS95z1KVgw=="
+          "hash": "iSM62zBE5R4fRf8SnT7ViQ=="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.FixedBufferPoolTests.html",
-          "hash": "3KY368NFrgWhoSP1Q0FwWg=="
+          "hash": "UR/74Te8vYCxls49ap3qJg=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedArrayTests.html",
-          "hash": "PYqcO6XkwoSOTpYSHDvdNQ=="
+          "hash": "h1pAonn9BxIZSFN8mdIa4w=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/Tests.Memory.UnmanagedListTests.html",
-          "hash": "DV071Eon4Ldf7qXmqxwuEQ=="
+          "hash": "Rmr5hXsyY2MpI5Hz9CXYtw=="
         }
       },
       "is_incremental": true,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Byte2.html",
-          "hash": "9imrKzJlyy1EaGXytr1hWQ=="
+          "hash": "E9epfKaihlqbALXj6WY/WQ=="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Byte3.html",
-          "hash": "tHeIKWm493cN9L1uYOW5xg=="
+          "hash": "RXaayaGOp6I3bF14S87r5A=="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Byte4.html",
-          "hash": "vJ6Zfv20OxE9ehHNatbgEQ=="
+          "hash": "iR+qK+/4SH6HGH8CHwRroA=="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Double2.html",
-          "hash": "ioOH6hpYorKmgCZyk+cCwA=="
+          "hash": "iE+dgDroAMDWT4IBxZLF/w=="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float2.html",
-          "hash": "3FvtIlZHALqI/eIkkbwyIw=="
+          "hash": "EFu+MbJO0BtpcOKG5WiZOA=="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float3.html",
-          "hash": "ULNBV+gP5NS2TLD+g5qx3g=="
+          "hash": "JncQ5CgtjmJsvQPuKh7H9A=="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Float4.html",
-          "hash": "Bahw06EFjAMREH+w0taTJw=="
+          "hash": "Q2HdPlGuALfWFCAdnSTvZg=="
         }
       },
       "is_incremental": true,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Graphics.Color32.html",
-          "hash": "PSrRRj1XUvPrStpKYjOYKw=="
+          "hash": "OES1q6s43DXnnJPzIbXHoA=="
         }
       },
       "is_incremental": true,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int2.html",
-          "hash": "rWli7+GfQR3nrc43RNutGA=="
+          "hash": "ckoxCufHHYTFlfJcBNOlXQ=="
         }
       },
       "is_incremental": true,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int3.html",
-          "hash": "ScHQN8t2vJ7TR4haZG2GiQ=="
+          "hash": "JBmV2Sa3OztZMMCPoZqfNQ=="
         }
       },
       "is_incremental": true,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Int4.html",
-          "hash": "WuL5uM9fK/DOmcI+etLnZQ=="
+          "hash": "DrhJ0iYtf9N+PUXDjt/DWg=="
         }
       },
       "is_incremental": true,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.FixedBufferPool-1.html",
-          "hash": "uZ+e97s44TTC9BcOPfbP2g=="
+          "hash": "RdIUje5eLXD1NDLTSTFDgQ=="
         }
       },
       "is_incremental": true,
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.GlobalObjects.html",
-          "hash": "y8zCb81Xn5QhExz2a4ClSg=="
+          "hash": "VVjJHOg0Eq4oj569eFRRbg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.ObjectPool-1.html",
-          "hash": "WSZ5x9AwCLPoELmntheayg=="
+          "hash": "EoVYn2Z5OY70A6IG2TQNZQ=="
         }
       },
       "is_incremental": true,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.Unmanaged.html",
-          "hash": "QM7RctJ83FPX6c3enOkymA=="
+          "hash": "Q9zGTeoWIq/Y888ym9F+Eg=="
         }
       },
       "is_incremental": true,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.Enumerator.html",
-          "hash": "AObDwCYghhN58rNkTAesqQ=="
+          "hash": "IidMYZuShvtITsHEsQ+Emg=="
         }
       },
       "is_incremental": true,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedArray-1.html",
-          "hash": "QwQsQ3WqIPzajjZS8dOVOg=="
+          "hash": "y5/6vBzLBRCUw+XRvhObvA=="
         }
       },
       "is_incremental": true,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedBuffer-1.html",
-          "hash": "qwo9WisxNdQzOA/EF0XGrA=="
+          "hash": "3poR5kxx3siu2gBQ1B1MZg=="
         }
       },
       "is_incremental": true,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedDictionary-2.html",
-          "hash": "JHBvl6zB0k91fkuMylT5ZA=="
+          "hash": "pECMt+n0xd/UTwKRGK1Z9Q=="
         }
       },
       "is_incremental": true,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.Enumerator.html",
-          "hash": "7ssQavSGPY2KxInvdBYYKQ=="
+          "hash": "VJUFZFx8IX4Z/ULhehw7Yw=="
         }
       },
       "is_incremental": true,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.UnmanagedList-1.html",
-          "hash": "OFlb/eETQOfB0fmzzxZn0A=="
+          "hash": "udYfzZxk40QU9TJRBgTDzA=="
         }
       },
       "is_incremental": true,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Memory.Unsafe.IUnsafeObject.html",
-          "hash": "i1iPmarer+e1DbN1LFZU+w=="
+          "hash": "bwRxHIA5sKgKP/tAakPajg=="
         }
       },
       "is_incremental": true,
@@ -372,7 +372,7 @@
           "hash": "oKj56ZAiRoD75A4CKm87cA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Piine.html",
-          "hash": "TZYLWXf/zaldh8FqKnlFzA=="
+          "hash": "W3WI7wjlwFtCITQWUj11xg=="
         }
       },
       "is_incremental": true,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Procedural.OpenSimplexNoise.html",
-          "hash": "+8rqEGthXkCKfjmlRF7f6A=="
+          "hash": "hgIaQMeCszbGMtPa8vQCog=="
         }
       },
       "is_incremental": true,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.Simd.html",
-          "hash": "Nkj5Kt5cnVwnDsaEDBMM6w=="
+          "hash": "jnWemDntoZqXkbAMIUPmJw=="
         }
       },
       "is_incremental": true,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/api/piine.XorShift.html",
-          "hash": "9el8kthv1kHOpfbKcXf9OQ=="
+          "hash": "Wf98k/kVv+/e9To9mqxPfA=="
         }
       },
       "is_incremental": true,
@@ -468,7 +468,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 37,
-          "skipped_file_count": 36
+          "skipped_file_count": 37
         }
       }
     },

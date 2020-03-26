@@ -105,9 +105,9 @@ namespace piine
 
         public static implicit operator Byte4 (Vector4 iv) => new Byte4 ((byte)iv.X, (byte)iv.Y, (byte)iv.Z, (byte)iv.W);
 
-        public static implicit operator Byte4 ((int x, int y, int z, int w) v) => new Byte4 ((byte)v.x, (byte)v.y, (byte)v.z, (byte)v.w);
+        public static implicit operator Byte4 ((byte x, byte y, byte z, byte w) v) => new Byte4 (v.x, v.y, v.z, v.w);
 
-        public static implicit operator (int, int, int, int) (Byte4 v) => (v.x, v.y, v.z, v.w);
+        public static implicit operator (byte, byte, byte, byte) (Byte4 v) => (v.x, v.y, v.z, v.w);
 
         public static bool operator == (Byte4 a, Byte4 b) => a.x == b.x && a.y == b.y && a.z == b.z && a.w == b.w;
 

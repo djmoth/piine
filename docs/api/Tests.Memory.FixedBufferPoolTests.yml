@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: tests/Memory/FixedBufferPoolTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: FixedBufferPoolTests
     path: tests/Memory/FixedBufferPoolTests.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: tests/Memory/FixedBufferPoolTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestConstructor
     path: tests/Memory/FixedBufferPoolTests.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: tests/Memory/FixedBufferPoolTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAllocation
     path: tests/Memory/FixedBufferPoolTests.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: tests/Memory/FixedBufferPoolTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestDeallocation
     path: tests/Memory/FixedBufferPoolTests.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: tests/Memory/FixedBufferPoolTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAllocationMemory
     path: tests/Memory/FixedBufferPoolTests.cs

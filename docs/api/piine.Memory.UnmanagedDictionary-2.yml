@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedDictionary
     path: src/Memory/UnmanagedDictionary.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Count
     path: src/Memory/UnmanagedDictionary.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedDictionary.cs
@@ -152,7 +152,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedDictionary.cs
@@ -192,7 +192,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedDictionary.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Add
     path: src/Memory/UnmanagedDictionary.cs
@@ -261,11 +261,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TryAdd
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 76
+    startLine: 65
   assemblies:
   - piine
   namespace: piine.Memory
@@ -300,11 +300,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 97
+    startLine: 86
   assemblies:
   - piine
   namespace: piine.Memory
@@ -337,11 +337,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: ContainsKey
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 106
+    startLine: 95
   assemblies:
   - piine
   namespace: piine.Memory
@@ -374,11 +374,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TryGetValue
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 113
+    startLine: 102
   assemblies:
   - piine
   namespace: piine.Memory
@@ -414,11 +414,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 173
+    startLine: 162
   assemblies:
   - piine
   namespace: piine.Memory
@@ -446,11 +446,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 175
+    startLine: 164
   assemblies:
   - piine
   namespace: piine.Memory
@@ -480,11 +480,11 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedDictionary.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedDictionary.cs
-    startLine: 184
+    startLine: 173
   assemblies:
   - piine
   namespace: piine.Memory

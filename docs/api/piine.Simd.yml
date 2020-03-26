@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Simd.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Simd
     path: src/Vector Types/Simd.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Simd.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Sum
     path: src/Vector Types/Simd.cs

@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedListTests
     path: tests/Memory/UnmanagedListTests.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestCreateNew
     path: tests/Memory/UnmanagedListTests.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAdd
     path: tests/Memory/UnmanagedListTests.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestInsert
     path: tests/Memory/UnmanagedListTests.cs
@@ -188,7 +188,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestInsertAtMaxCapacity
     path: tests/Memory/UnmanagedListTests.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestRemove
     path: tests/Memory/UnmanagedListTests.cs
@@ -268,7 +268,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestRemoveAt
     path: tests/Memory/UnmanagedListTests.cs
@@ -308,7 +308,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestOutOfRangeAccess
     path: tests/Memory/UnmanagedListTests.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAccess
     path: tests/Memory/UnmanagedListTests.cs
@@ -388,7 +388,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestDispose
     path: tests/Memory/UnmanagedListTests.cs
@@ -428,7 +428,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestIndexOf
     path: tests/Memory/UnmanagedListTests.cs
@@ -468,7 +468,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestForeach
     path: tests/Memory/UnmanagedListTests.cs
@@ -508,7 +508,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedListTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetRandomizedlist
     path: tests/Memory/UnmanagedListTests.cs

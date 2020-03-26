@@ -26,8 +26,8 @@ items:
   - piine.Byte3.op_Explicit(System.Numerics.Vector3)~piine.Byte3
   - piine.Byte3.op_GreaterThan(piine.Byte3,piine.Byte3)
   - piine.Byte3.op_GreaterThanOrEqual(piine.Byte3,piine.Byte3)
-  - piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  - piine.Byte3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
+  - piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  - piine.Byte3.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
   - piine.Byte3.op_Inequality(piine.Byte3,piine.Byte3)
   - piine.Byte3.op_LessThan(piine.Byte3,piine.Byte3)
   - piine.Byte3.op_LessThanOrEqual(piine.Byte3,piine.Byte3)
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Byte3
     path: src/Vector Types/Byte/Byte3.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Byte/Byte3.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Byte/Byte3.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Byte/Byte3.cs
@@ -202,7 +202,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Byte/Byte3.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Byte/Byte3.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitZ
     path: src/Vector Types/Byte/Byte3.cs
@@ -313,7 +313,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Byte/Byte3.cs
@@ -344,7 +344,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Byte/Byte3.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: z
     path: src/Vector Types/Byte/Byte3.cs
@@ -406,7 +406,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: XY
     path: src/Vector Types/Byte/Byte3.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: XZ
     path: src/Vector Types/Byte/Byte3.cs
@@ -476,7 +476,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: YZ
     path: src/Vector Types/Byte/Byte3.cs
@@ -511,7 +511,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Byte/Byte3.cs
@@ -546,7 +546,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Byte/Byte3.cs
@@ -581,7 +581,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Byte/Byte3.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Byte/Byte3.cs
@@ -651,7 +651,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Byte/Byte3.cs
@@ -691,7 +691,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: CalculateVolume
     path: src/Vector Types/Byte/Byte3.cs
@@ -723,7 +723,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Normalize
     path: src/Vector Types/Byte/Byte3.cs
@@ -760,7 +760,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Byte/Byte3.cs
@@ -797,7 +797,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Byte/Byte3.cs
@@ -836,7 +836,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte3.cs
@@ -876,7 +876,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte3.cs
@@ -916,7 +916,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Byte/Byte3.cs
@@ -942,21 +942,21 @@ items:
   - Shared
   fullName.vb: piine.Byte3.Narrowing(System.Numerics.Vector3 to piine.Byte3)
   name.vb: Narrowing(Vector3 to Byte3)
-- uid: piine.Byte3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
-  commentId: M:piine.Byte3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
-  id: op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
+- uid: piine.Byte3.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
+  commentId: M:piine.Byte3.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
+  id: op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
   parent: piine.Byte3
   langs:
   - csharp
   - vb
-  name: Implicit((Int32 x, Int32 y, Int32 z) to Byte3)
-  nameWithType: Byte3.Implicit((Int32 x, Int32 y, Int32 z) to Byte3)
-  fullName: piine.Byte3.Implicit(System.ValueTuple<System.Int32, System.Int32, System.Int32> to piine.Byte3)
+  name: Implicit((Byte x, Byte y, Byte z) to Byte3)
+  nameWithType: Byte3.Implicit((Byte x, Byte y, Byte z) to Byte3)
+  fullName: piine.Byte3.Implicit(System.ValueTuple<System.Byte, System.Byte, System.Byte> to piine.Byte3)
   type: Operator
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Byte/Byte3.cs
@@ -965,38 +965,38 @@ items:
   - piine
   namespace: piine
   syntax:
-    content: public static implicit operator Byte3((int x, int y, int z)v)
+    content: public static implicit operator Byte3((byte x, byte y, byte z)v)
     parameters:
     - id: v
-      type: System.ValueTuple{System.Int32,System.Int32,System.Int32}
+      type: System.ValueTuple{System.Byte,System.Byte,System.Byte}
     return:
       type: piine.Byte3
-    content.vb: Public Shared Widening Operator CType(v As(x As Integer, y As Integer, z As Integer)) As Byte3
+    content.vb: Public Shared Widening Operator CType(v As(x As Byte, y As Byte, z As Byte)) As Byte3
   overload: piine.Byte3.op_Implicit*
-  nameWithType.vb: Byte3.Widening((x As Int32, y As Int32, z As Int32) to Byte3)
+  nameWithType.vb: Byte3.Widening((x As Byte, y As Byte, z As Byte) to Byte3)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Byte3.Widening(System.ValueTuple(Of System.Int32, System.Int32, System.Int32) to piine.Byte3)
-  name.vb: Widening((x As Int32, y As Int32, z As Int32) to Byte3)
-- uid: piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  commentId: M:piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  id: op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
+  fullName.vb: piine.Byte3.Widening(System.ValueTuple(Of System.Byte, System.Byte, System.Byte) to piine.Byte3)
+  name.vb: Widening((x As Byte, y As Byte, z As Byte) to Byte3)
+- uid: piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  commentId: M:piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  id: op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
   parent: piine.Byte3
   langs:
   - csharp
   - vb
-  name: Implicit(Byte3 to (Int32, Int32, Int32))
-  nameWithType: Byte3.Implicit(Byte3 to (Int32, Int32, Int32))
-  fullName: piine.Byte3.Implicit(piine.Byte3 to System.ValueTuple<System.Int32, System.Int32, System.Int32>)
+  name: Implicit(Byte3 to (Byte, Byte, Byte))
+  nameWithType: Byte3.Implicit(Byte3 to (Byte, Byte, Byte))
+  fullName: piine.Byte3.Implicit(piine.Byte3 to System.ValueTuple<System.Byte, System.Byte, System.Byte>)
   type: Operator
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Byte/Byte3.cs
@@ -1005,23 +1005,23 @@ items:
   - piine
   namespace: piine
   syntax:
-    content: public static implicit operator (int, int, int)(Byte3 v)
+    content: public static implicit operator (byte, byte, byte)(Byte3 v)
     parameters:
     - id: v
       type: piine.Byte3
     return:
-      type: System.ValueTuple{System.Int32,System.Int32,System.Int32}
-    content.vb: Public Shared Widening Operator CType(v As Byte3) As(Integer, Integer, Integer)
+      type: System.ValueTuple{System.Byte,System.Byte,System.Byte}
+    content.vb: Public Shared Widening Operator CType(v As Byte3) As(Byte, Byte, Byte)
   overload: piine.Byte3.op_Implicit*
-  nameWithType.vb: Byte3.Widening(Byte3 to (Int32, Int32, Int32))
+  nameWithType.vb: Byte3.Widening(Byte3 to (Byte, Byte, Byte))
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Byte3.Widening(piine.Byte3 to System.ValueTuple(Of System.Int32, System.Int32, System.Int32))
-  name.vb: Widening(Byte3 to (Int32, Int32, Int32))
+  fullName.vb: piine.Byte3.Widening(piine.Byte3 to System.ValueTuple(Of System.Byte, System.Byte, System.Byte))
+  name.vb: Widening(Byte3 to (Byte, Byte, Byte))
 - uid: piine.Byte3.op_Equality(piine.Byte3,piine.Byte3)
   commentId: M:piine.Byte3.op_Equality(piine.Byte3,piine.Byte3)
   id: op_Equality(piine.Byte3,piine.Byte3)
@@ -1036,7 +1036,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Byte/Byte3.cs
@@ -1075,7 +1075,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Byte/Byte3.cs
@@ -1114,7 +1114,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Byte/Byte3.cs
@@ -1153,7 +1153,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Byte/Byte3.cs
@@ -1192,7 +1192,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Byte/Byte3.cs
@@ -1229,7 +1229,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Byte/Byte3.cs
@@ -1268,7 +1268,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Byte/Byte3.cs
@@ -1307,7 +1307,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Byte/Byte3.cs
@@ -1346,7 +1346,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Byte/Byte3.cs
@@ -1385,7 +1385,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Byte/Byte3.cs
@@ -1424,7 +1424,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Byte/Byte3.cs
@@ -1463,7 +1463,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Byte/Byte3.cs
@@ -1498,7 +1498,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/Vector Types/Byte/Byte3.cs
@@ -1533,7 +1533,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Byte/Byte3.cs
@@ -1570,7 +1570,7 @@ items:
   source:
     remote:
       path: src/Vector Types/Byte/Byte3.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Byte/Byte3.cs
@@ -1987,16 +1987,16 @@ references:
   nameWithType.vb: Byte3.Widening
   fullName.vb: piine.Byte3.Widening
   name.vb: Widening
-- uid: System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  commentId: T:System.ValueTuple{System.Int32,System.Int32,System.Int32}
+- uid: System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  commentId: T:System.ValueTuple{System.Byte,System.Byte,System.Byte}
   parent: System
   isExternal: true
-  name: ValueTuple<Int32, Int32, Int32>
-  nameWithType: ValueTuple<Int32, Int32, Int32>
-  fullName: System.ValueTuple<System.Int32, System.Int32, System.Int32>
-  nameWithType.vb: ValueTuple(Of Int32, Int32, Int32)
-  fullName.vb: System.ValueTuple(Of System.Int32, System.Int32, System.Int32)
-  name.vb: ValueTuple(Of Int32, Int32, Int32)
+  name: ValueTuple<Byte, Byte, Byte>
+  nameWithType: ValueTuple<Byte, Byte, Byte>
+  fullName: System.ValueTuple<System.Byte, System.Byte, System.Byte>
+  nameWithType.vb: ValueTuple(Of Byte, Byte, Byte)
+  fullName.vb: System.ValueTuple(Of System.Byte, System.Byte, System.Byte)
+  name.vb: ValueTuple(Of Byte, Byte, Byte)
   spec.csharp:
   - uid: System.ValueTuple`3
     name: ValueTuple
@@ -2006,26 +2006,26 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -2039,26 +2039,26 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
     isExternal: true
   - name: )
     nameWithType: )

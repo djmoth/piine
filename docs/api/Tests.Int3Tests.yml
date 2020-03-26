@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: tests/Int3Tests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Int3Tests
     path: tests/Int3Tests.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: tests/Int3Tests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAdd
     path: tests/Int3Tests.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: tests/Int3Tests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAddPerformanceNoSIMD
     path: tests/Int3Tests.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: tests/Int3Tests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestTupleCast
     path: tests/Int3Tests.cs

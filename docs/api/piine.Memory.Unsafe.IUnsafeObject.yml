@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: src/Memory/Unsafe/IUnsafeObject.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: IUnsafeObject
     path: src/Memory/Unsafe/IUnsafeObject.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: src/Memory/Unsafe/IUnsafeObject.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Memory/Unsafe/IUnsafeObject.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: src/Memory/Unsafe/IUnsafeObject.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Alloc
     path: src/Memory/Unsafe/IUnsafeObject.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: src/Memory/Unsafe/IUnsafeObject.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Free
     path: src/Memory/Unsafe/IUnsafeObject.cs

@@ -190,7 +190,7 @@ namespace piine.Memory
         }    
 
         /// <summary>
-        /// Tries to trim unused memeory by reallocating the internal array to match Count. Will not do anything if the Count is more than 90% of Capacity.
+        /// Tries to trim unused memory by reallocating the internal array to match Count. Will not do anything if the Count is more than 90% of Capacity.
         /// </summary>
         public void TrimExcess ()
         {

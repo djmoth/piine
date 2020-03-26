@@ -6,6 +6,8 @@
     <IsPackable>false</IsPackable>
 
     <LangVersion>8.0</LangVersion>
+
+    <RootNamespace>Tests</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -15,10 +17,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Voxels\VoxelVolumeTests.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="nunit" Version="3.12.0" />
@@ -32,10 +30,6 @@
 
   <ItemGroup>
     <Folder Include="Graphics\Voxels\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Voxels\VoxelVolumeTests.cs" />
   </ItemGroup>
 
 </Project>

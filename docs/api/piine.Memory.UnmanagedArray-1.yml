@@ -40,7 +40,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedArray
     path: src/Memory/UnmanagedArray.cs
@@ -97,7 +97,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Memory/UnmanagedArray.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Count
     path: src/Memory/UnmanagedArray.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedArray.cs
@@ -217,7 +217,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedArray.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedArray.cs
@@ -302,7 +302,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
@@ -342,7 +342,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetInternalPointer
     path: src/Memory/UnmanagedArray.cs
@@ -429,7 +429,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedArray.cs
@@ -472,7 +472,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedArray.cs
@@ -508,7 +508,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedArray.cs
@@ -547,7 +547,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
@@ -587,7 +587,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
@@ -625,7 +625,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
@@ -661,7 +661,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetSpan
     path: src/Memory/UnmanagedArray.cs
@@ -697,7 +697,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedArray.cs
@@ -732,7 +732,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
@@ -766,7 +766,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
@@ -800,7 +800,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.Insert
     path: src/Memory/UnmanagedArray.cs
@@ -837,7 +837,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.RemoveAt
     path: src/Memory/UnmanagedArray.cs
@@ -872,7 +872,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Add
     path: src/Memory/UnmanagedArray.cs
@@ -907,7 +907,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Remove
     path: src/Memory/UnmanagedArray.cs
@@ -943,7 +943,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedArray.cs
@@ -975,7 +975,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
@@ -1011,7 +1011,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedArray.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/Memory/GlobalObjects.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GlobalObjects
     path: src/Memory/GlobalObjects.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: src/Memory/GlobalObjects.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Set
     path: src/Memory/GlobalObjects.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: src/Memory/GlobalObjects.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Get
     path: src/Memory/GlobalObjects.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: src/Memory/GlobalObjects.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/GlobalObjects.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: src/Memory/GlobalObjects.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: HasValue
     path: src/Memory/GlobalObjects.cs

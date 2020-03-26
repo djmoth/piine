@@ -741,24 +741,24 @@ references:
   isSpec: "True"
   fullName: piine.Byte3.GreaterThanOrEqual
   nameWithType: Byte3.GreaterThanOrEqual
-- uid: piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  name: Implicit(Byte3 to (Int32, Int32, Int32))
-  href: docs/api/piine.Byte3.html#piine_Byte3_op_Implicit_piine_Byte3__System_ValueTuple_System_Int32_System_Int32_System_Int32_
-  commentId: M:piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Int32,System.Int32,System.Int32}
-  name.vb: Widening(Byte3 to (Int32, Int32, Int32))
-  fullName: piine.Byte3.Implicit(piine.Byte3 to System.ValueTuple<System.Int32, System.Int32, System.Int32>)
-  fullName.vb: piine.Byte3.Widening(piine.Byte3 to System.ValueTuple(Of System.Int32, System.Int32, System.Int32))
-  nameWithType: Byte3.Implicit(Byte3 to (Int32, Int32, Int32))
-  nameWithType.vb: Byte3.Widening(Byte3 to (Int32, Int32, Int32))
-- uid: piine.Byte3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
-  name: Implicit((Int32 x, Int32 y, Int32 z) to Byte3)
-  href: docs/api/piine.Byte3.html#piine_Byte3_op_Implicit_System_ValueTuple_System_Int32_System_Int32_System_Int32___piine_Byte3
-  commentId: M:piine.Byte3.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32})~piine.Byte3
-  name.vb: Widening((x As Int32, y As Int32, z As Int32) to Byte3)
-  fullName: piine.Byte3.Implicit(System.ValueTuple<System.Int32, System.Int32, System.Int32> to piine.Byte3)
-  fullName.vb: piine.Byte3.Widening(System.ValueTuple(Of System.Int32, System.Int32, System.Int32) to piine.Byte3)
-  nameWithType: Byte3.Implicit((Int32 x, Int32 y, Int32 z) to Byte3)
-  nameWithType.vb: Byte3.Widening((x As Int32, y As Int32, z As Int32) to Byte3)
+- uid: piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  name: Implicit(Byte3 to (Byte, Byte, Byte))
+  href: docs/api/piine.Byte3.html#piine_Byte3_op_Implicit_piine_Byte3__System_ValueTuple_System_Byte_System_Byte_System_Byte_
+  commentId: M:piine.Byte3.op_Implicit(piine.Byte3)~System.ValueTuple{System.Byte,System.Byte,System.Byte}
+  name.vb: Widening(Byte3 to (Byte, Byte, Byte))
+  fullName: piine.Byte3.Implicit(piine.Byte3 to System.ValueTuple<System.Byte, System.Byte, System.Byte>)
+  fullName.vb: piine.Byte3.Widening(piine.Byte3 to System.ValueTuple(Of System.Byte, System.Byte, System.Byte))
+  nameWithType: Byte3.Implicit(Byte3 to (Byte, Byte, Byte))
+  nameWithType.vb: Byte3.Widening(Byte3 to (Byte, Byte, Byte))
+- uid: piine.Byte3.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
+  name: Implicit((Byte x, Byte y, Byte z) to Byte3)
+  href: docs/api/piine.Byte3.html#piine_Byte3_op_Implicit_System_ValueTuple_System_Byte_System_Byte_System_Byte___piine_Byte3
+  commentId: M:piine.Byte3.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte})~piine.Byte3
+  name.vb: Widening((x As Byte, y As Byte, z As Byte) to Byte3)
+  fullName: piine.Byte3.Implicit(System.ValueTuple<System.Byte, System.Byte, System.Byte> to piine.Byte3)
+  fullName.vb: piine.Byte3.Widening(System.ValueTuple(Of System.Byte, System.Byte, System.Byte) to piine.Byte3)
+  nameWithType: Byte3.Implicit((Byte x, Byte y, Byte z) to Byte3)
+  nameWithType.vb: Byte3.Widening((x As Byte, y As Byte, z As Byte) to Byte3)
 - uid: piine.Byte3.op_Implicit*
   name: Implicit
   href: docs/api/piine.Byte3.html#piine_Byte3_op_Implicit_
@@ -1232,15 +1232,15 @@ references:
   fullName.vb: piine.Byte4.Widening(piine.Byte4 to System.Numerics.Vector4)
   nameWithType: Byte4.Implicit(Byte4 to Vector4)
   nameWithType.vb: Byte4.Widening(Byte4 to Vector4)
-- uid: piine.Byte4.op_Implicit(piine.Byte4)~System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
-  name: Implicit(Byte4 to (Int32, Int32, Int32, Int32))
-  href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_piine_Byte4__System_ValueTuple_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:piine.Byte4.op_Implicit(piine.Byte4)~System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32}
-  name.vb: Widening(Byte4 to (Int32, Int32, Int32, Int32))
-  fullName: piine.Byte4.Implicit(piine.Byte4 to System.ValueTuple<System.Int32, System.Int32, System.Int32, System.Int32>)
-  fullName.vb: piine.Byte4.Widening(piine.Byte4 to System.ValueTuple(Of System.Int32, System.Int32, System.Int32, System.Int32))
-  nameWithType: Byte4.Implicit(Byte4 to (Int32, Int32, Int32, Int32))
-  nameWithType.vb: Byte4.Widening(Byte4 to (Int32, Int32, Int32, Int32))
+- uid: piine.Byte4.op_Implicit(piine.Byte4)~System.ValueTuple{System.Byte,System.Byte,System.Byte,System.Byte}
+  name: Implicit(Byte4 to (Byte, Byte, Byte, Byte))
+  href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_piine_Byte4__System_ValueTuple_System_Byte_System_Byte_System_Byte_System_Byte_
+  commentId: M:piine.Byte4.op_Implicit(piine.Byte4)~System.ValueTuple{System.Byte,System.Byte,System.Byte,System.Byte}
+  name.vb: Widening(Byte4 to (Byte, Byte, Byte, Byte))
+  fullName: piine.Byte4.Implicit(piine.Byte4 to System.ValueTuple<System.Byte, System.Byte, System.Byte, System.Byte>)
+  fullName.vb: piine.Byte4.Widening(piine.Byte4 to System.ValueTuple(Of System.Byte, System.Byte, System.Byte, System.Byte))
+  nameWithType: Byte4.Implicit(Byte4 to (Byte, Byte, Byte, Byte))
+  nameWithType.vb: Byte4.Widening(Byte4 to (Byte, Byte, Byte, Byte))
 - uid: piine.Byte4.op_Implicit(System.Numerics.Vector4)~piine.Byte4
   name: Implicit(Vector4 to Byte4)
   href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_System_Numerics_Vector4__piine_Byte4
@@ -1250,15 +1250,15 @@ references:
   fullName.vb: piine.Byte4.Widening(System.Numerics.Vector4 to piine.Byte4)
   nameWithType: Byte4.Implicit(Vector4 to Byte4)
   nameWithType.vb: Byte4.Widening(Vector4 to Byte4)
-- uid: piine.Byte4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Byte4
-  name: Implicit((Int32 x, Int32 y, Int32 z, Int32 w) to Byte4)
-  href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_System_ValueTuple_System_Int32_System_Int32_System_Int32_System_Int32___piine_Byte4
-  commentId: M:piine.Byte4.op_Implicit(System.ValueTuple{System.Int32,System.Int32,System.Int32,System.Int32})~piine.Byte4
-  name.vb: Widening((x As Int32, y As Int32, z As Int32, w As Int32) to Byte4)
-  fullName: piine.Byte4.Implicit(System.ValueTuple<System.Int32, System.Int32, System.Int32, System.Int32> to piine.Byte4)
-  fullName.vb: piine.Byte4.Widening(System.ValueTuple(Of System.Int32, System.Int32, System.Int32, System.Int32) to piine.Byte4)
-  nameWithType: Byte4.Implicit((Int32 x, Int32 y, Int32 z, Int32 w) to Byte4)
-  nameWithType.vb: Byte4.Widening((x As Int32, y As Int32, z As Int32, w As Int32) to Byte4)
+- uid: piine.Byte4.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte,System.Byte})~piine.Byte4
+  name: Implicit((Byte x, Byte y, Byte z, Byte w) to Byte4)
+  href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_System_ValueTuple_System_Byte_System_Byte_System_Byte_System_Byte___piine_Byte4
+  commentId: M:piine.Byte4.op_Implicit(System.ValueTuple{System.Byte,System.Byte,System.Byte,System.Byte})~piine.Byte4
+  name.vb: Widening((x As Byte, y As Byte, z As Byte, w As Byte) to Byte4)
+  fullName: piine.Byte4.Implicit(System.ValueTuple<System.Byte, System.Byte, System.Byte, System.Byte> to piine.Byte4)
+  fullName.vb: piine.Byte4.Widening(System.ValueTuple(Of System.Byte, System.Byte, System.Byte, System.Byte) to piine.Byte4)
+  nameWithType: Byte4.Implicit((Byte x, Byte y, Byte z, Byte w) to Byte4)
+  nameWithType.vb: Byte4.Widening((x As Byte, y As Byte, z As Byte, w As Byte) to Byte4)
 - uid: piine.Byte4.op_Implicit*
   name: Implicit
   href: docs/api/piine.Byte4.html#piine_Byte4_op_Implicit_

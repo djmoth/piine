@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Enumerator
     path: src/Memory/UnmanagedList.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Current
     path: src/Memory/UnmanagedList.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerator.Current
     path: src/Memory/UnmanagedList.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: MoveNext
     path: src/Memory/UnmanagedList.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Reset
     path: src/Memory/UnmanagedList.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: src/Memory/UnmanagedList.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs

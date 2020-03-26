@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: XorShift
     path: src/XorShift.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/XorShift.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
@@ -127,7 +127,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/XorShift.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/XorShift.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/XorShift.cs
@@ -281,7 +281,7 @@ items:
   source:
     remote:
       path: src/XorShift.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/XorShift.cs

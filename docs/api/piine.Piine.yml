@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: src/Piine.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Piine
     path: src/Piine.cs

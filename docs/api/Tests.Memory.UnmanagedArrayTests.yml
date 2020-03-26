@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedArrayTests
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestCreateNew
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -103,7 +103,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestCreateFromSpan
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAccess
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestDispose
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -223,7 +223,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestIndexOf
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -263,7 +263,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestForeach
     path: tests/Memory/UnmanagedArrayTests.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: tests/Memory/UnmanagedArrayTests.cs
-      branch: master
+      branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetRandomizedArray
     path: tests/Memory/UnmanagedArrayTests.cs
