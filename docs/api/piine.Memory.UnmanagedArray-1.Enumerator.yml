@@ -25,7 +25,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Enumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 233
+    startLine: 232
   assemblies:
   - piine
   namespace: piine.Memory
@@ -33,6 +33,7 @@ items:
     content: 'public struct Enumerator : IEnumerator<T>, IEnumerator, IDisposable'
     content.vb: >-
       Public Structure Enumerator
+
           Implements IEnumerator(Of T), IEnumerator, IDisposable
   implements:
   - System.Collections.Generic.IEnumerator{{T}}
@@ -72,7 +73,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Current
     path: src/Memory/UnmanagedArray.cs
-    startLine: 236
+    startLine: 235
   assemblies:
   - piine
   namespace: piine.Memory
@@ -112,7 +113,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerator.Current
     path: src/Memory/UnmanagedArray.cs
-    startLine: 237
+    startLine: 236
   assemblies:
   - piine
   namespace: piine.Memory
@@ -150,7 +151,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
-    startLine: 241
+    startLine: 240
   assemblies:
   - piine
   namespace: piine.Memory
@@ -186,7 +187,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: MoveNext
     path: src/Memory/UnmanagedArray.cs
-    startLine: 247
+    startLine: 246
   assemblies:
   - piine
   namespace: piine.Memory
@@ -222,7 +223,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Reset
     path: src/Memory/UnmanagedArray.cs
-    startLine: 254
+    startLine: 253
   assemblies:
   - piine
   namespace: piine.Memory
@@ -256,7 +257,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
-    startLine: 259
+    startLine: 258
   assemblies:
   - piine
   namespace: piine.Memory

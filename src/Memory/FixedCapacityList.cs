@@ -4,6 +4,10 @@ using System.Text;
 
 namespace piine.Memory
 {
+    /*
+     * The FixedCapacityList is used to wrap around an existing array or buffer using Span<T>, to use as a list. If you want a temporary list, and you know that the count will never
+     * exceed a specific number, then you can for example wrap the FixedCapacityList around memory allocated with stackalloc.
+     */
     public ref struct FixedCapacityList<T>
     {
         private Span<T> array;

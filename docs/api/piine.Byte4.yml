@@ -68,6 +68,7 @@ items:
     content: 'public struct Byte4 : IEquatable<Byte4>'
     content.vb: >-
       Public Structure Byte4
+
           Implements IEquatable(Of Byte4)
   implements:
   - System.IEquatable{piine.Byte4}

@@ -10,7 +10,7 @@ namespace Tests.Memory
         public void TestCreateNew ()
         {
             //With default values (zero-ed out)
-            using (UnmanagedArray<int> array = new UnmanagedArray<int> (50))
+            using (UnmanagedArray<int> array = new UnmanagedArray<int> (50, true))
             {
                 for (int i = 0; i < array.Length; i++)
                 {
@@ -64,7 +64,7 @@ namespace Tests.Memory
 
             array.Dispose ();
 
-            Assert.Throws<InvalidOperationException> (() => array[0] = 10, "Should throw InvalidOperationException");
+            Assert.Throws<ObjectDisposedException> (() => array[0] = 10, "Should throw ObjectDisposedException");
         }
 
         [Test]

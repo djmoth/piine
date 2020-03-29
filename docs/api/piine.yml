@@ -14,7 +14,6 @@ items:
   - piine.Int2
   - piine.Int3
   - piine.Int4
-  - piine.Piine
   - piine.Simd
   - piine.XorShift
   langs:
@@ -27,11 +26,6 @@ items:
   assemblies:
   - piine
 references:
-- uid: piine.Piine
-  commentId: T:piine.Piine
-  name: Piine
-  nameWithType: Piine
-  fullName: piine.Piine
 - uid: piine.Byte2
   commentId: T:piine.Byte2
   parent: piine

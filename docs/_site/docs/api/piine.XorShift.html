@@ -109,9 +109,6 @@
                             <a href="piine.Int4.html" title="Int4" class="">Int4</a>
                           </li>
                           <li class="">
-                            <a href="piine.Piine.html" title="Piine" class="">Piine</a>
-                          </li>
-                          <li class="">
                             <a href="piine.Simd.html" title="Simd" class="">Simd</a>
                           </li>
                           <li class="active">
@@ -136,6 +133,12 @@
                             <a href="piine.Memory.FixedBufferPool-1.html" title="FixedBufferPool&lt;T&gt;" class="">FixedBufferPool&lt;T&gt;</a>
                           </li>
                           <li class="">
+                            <a href="piine.Memory.FixedCapacityList-1.html" title="FixedCapacityList&lt;T&gt;" class="">FixedCapacityList&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="piine.Memory.FixedCapacityList-1.Enumerator.html" title="FixedCapacityList&lt;T&gt;.Enumerator" class="">FixedCapacityList&lt;T&gt;.Enumerator</a>
+                          </li>
+                          <li class="">
                             <a href="piine.Memory.GlobalObjects.html" title="GlobalObjects" class="">GlobalObjects</a>
                           </li>
                           <li class="">
@@ -151,34 +154,10 @@
                             <a href="piine.Memory.UnmanagedArray-1.Enumerator.html" title="UnmanagedArray&lt;T&gt;.Enumerator" class="">UnmanagedArray&lt;T&gt;.Enumerator</a>
                           </li>
                           <li class="">
-                            <a href="piine.Memory.UnmanagedBuffer-1.html" title="UnmanagedBuffer&lt;T&gt;" class="">UnmanagedBuffer&lt;T&gt;</a>
-                          </li>
-                          <li class="">
-                            <a href="piine.Memory.UnmanagedDictionary-2.html" title="UnmanagedDictionary&lt;TKey, TValue&gt;" class="">UnmanagedDictionary&lt;TKey, TValue&gt;</a>
-                          </li>
-                          <li class="">
                             <a href="piine.Memory.UnmanagedList-1.html" title="UnmanagedList&lt;T&gt;" class="">UnmanagedList&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="piine.Memory.UnmanagedList-1.Enumerator.html" title="UnmanagedList&lt;T&gt;.Enumerator" class="">UnmanagedList&lt;T&gt;.Enumerator</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="piine.Memory.Unsafe.html" title="piine.Memory.Unsafe" class="">piine.Memory.Unsafe</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="piine.Memory.Unsafe.IUnsafeObject.html" title="IUnsafeObject" class="">IUnsafeObject</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="piine.Procedural.html" title="piine.Procedural" class="">piine.Procedural</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="piine.Procedural.OpenSimplexNoise.html" title="OpenSimplexNoise" class="">OpenSimplexNoise</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -217,9 +196,13 @@
   
   <h1 id="piine_XorShift" data-uid="piine.XorShift" class="text-break">Struct XorShift
   </h1>
-  <div class="markdown level0 summary"><p>A simple Pseudo-Random Number Generator, derived from George Marsaglia's work</p>
+  <div class="markdown level0 summary"><p>A simple Pseudo-Random Number Generator, derived from George Marsaglia's work. Does not work if seed is not specified.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="piine.XorShift.html">XorShift</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -239,7 +222,7 @@
   <h6><strong>Assembly</strong>: piine.dll</h6>
   <h5 id="piine_XorShift_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct XorShift</code></pre>
+    <pre><code class="lang-csharp hljs">public struct XorShift : IEquatable&lt;XorShift&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -248,11 +231,12 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20piine.XorShift.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L14">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L16">View Source</a>
   </span>
   <a id="piine_XorShift__ctor_" data-uid="piine.XorShift.#ctor*"></a>
   <h4 id="piine_XorShift__ctor_System_Int32_" data-uid="piine.XorShift.#ctor(System.Int32)">XorShift(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize the RNG, if seed is 0, the current time is used a seed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,10 +263,57 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_Equals_piine_XorShift_.md&amp;value=---%0Auid%3A%20piine.XorShift.Equals(piine.XorShift)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L54">View Source</a>
+  </span>
+  <a id="piine_XorShift_Equals_" data-uid="piine.XorShift.Equals*"></a>
+  <h4 id="piine_XorShift_Equals_piine_XorShift_" data-uid="piine.XorShift.Equals(piine.XorShift)">Equals(XorShift)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(XorShift other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="piine.XorShift.html">XorShift</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_Equals_System_Object_.md&amp;value=---%0Auid%3A%20piine.XorShift.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L52">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L56">View Source</a>
   </span>
   <a id="piine_XorShift_Equals_" data-uid="piine.XorShift.Equals*"></a>
   <h4 id="piine_XorShift_Equals_System_Object_" data-uid="piine.XorShift.Equals(System.Object)">Equals(Object)</h4>
@@ -331,7 +362,7 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_GetHashCode.md&amp;value=---%0Auid%3A%20piine.XorShift.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L46">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L48">View Source</a>
   </span>
   <a id="piine_XorShift_GetHashCode_" data-uid="piine.XorShift.GetHashCode*"></a>
   <h4 id="piine_XorShift_GetHashCode" data-uid="piine.XorShift.GetHashCode">GetHashCode()</h4>
@@ -363,7 +394,7 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_Next.md&amp;value=---%0Auid%3A%20piine.XorShift.Next%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L25">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L27">View Source</a>
   </span>
   <a id="piine_XorShift_Next_" data-uid="piine.XorShift.Next*"></a>
   <h4 id="piine_XorShift_Next" data-uid="piine.XorShift.Next">Next()</h4>
@@ -394,7 +425,7 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_Next_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20piine.XorShift.Next(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L38">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L40">View Source</a>
   </span>
   <a id="piine_XorShift_Next_" data-uid="piine.XorShift.Next*"></a>
   <h4 id="piine_XorShift_Next_System_Int32_System_Int32_" data-uid="piine.XorShift.Next(System.Int32,System.Int32)">Next(Int32, Int32)</h4>
@@ -451,7 +482,7 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_op_Equality_piine_XorShift_piine_XorShift_.md&amp;value=---%0Auid%3A%20piine.XorShift.op_Equality(piine.XorShift%2Cpiine.XorShift)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L48">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L50">View Source</a>
   </span>
   <a id="piine_XorShift_op_Equality_" data-uid="piine.XorShift.op_Equality*"></a>
   <h4 id="piine_XorShift_op_Equality_piine_XorShift_piine_XorShift_" data-uid="piine.XorShift.op_Equality(piine.XorShift,piine.XorShift)">Equality(XorShift, XorShift)</h4>
@@ -503,7 +534,7 @@
     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift_op_Inequality_piine_XorShift_piine_XorShift_.md&amp;value=---%0Auid%3A%20piine.XorShift.op_Inequality(piine.XorShift%2Cpiine.XorShift)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L50">View Source</a>
+    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L52">View Source</a>
   </span>
   <a id="piine_XorShift_op_Inequality_" data-uid="piine.XorShift.op_Inequality*"></a>
   <h4 id="piine_XorShift_op_Inequality_piine_XorShift_piine_XorShift_" data-uid="piine.XorShift.op_Inequality(piine.XorShift,piine.XorShift)">Inequality(XorShift, XorShift)</h4>
@@ -550,6 +581,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           
@@ -561,7 +596,7 @@
                     <a href="https://github.com/djmoth/piine/new/dev/apiSpec/new?filename=piine_XorShift.md&amp;value=---%0Auid%3A%20piine.XorShift%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/djmoth/piine/blob/dev/src/XorShift.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

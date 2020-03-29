@@ -55,6 +55,7 @@ items:
       description: The unmanaged type that the list will contain
     content.vb: >-
       Public Class UnmanagedList(Of T As Structure)
+
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -589,7 +590,7 @@ items:
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nTries to trim unused memeory by reallocating the internal array to match Count. Will not do anything if the Count is more than 90% of Capacity.\n"
+  summary: "\nTries to trim unused memory by reallocating the internal array to match Count. Will not do anything if the Count is more than 90% of Capacity.\n"
   example: []
   syntax:
     content: public void TrimExcess()

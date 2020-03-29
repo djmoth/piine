@@ -4,6 +4,9 @@ using System.Text;
 
 namespace piine.Memory
 {
+    /*
+     * GlobalObjects provides a global registry for storing named objects. 
+     */
     public static class GlobalObjects
     {
         private static Dictionary<string, object> objects = new Dictionary<string, object> ();

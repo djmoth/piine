@@ -5,7 +5,10 @@ using System.Text;
 
 namespace piine.Memory
 {
-    
+    /*
+     * The FixedBufferPool provides a pool for storing a fixed number of buffers all of the same size. If you often need a buffer of one specific size, you can use the FixedBufferPool
+     * instead of allocating new memory each time you need a new buffer. The FixedBufferPool allocates a memory pool the size of PoolSize * BufferSize * sizeof (T).
+     */
     public unsafe class FixedBufferPool<T> : IDisposable where T : unmanaged
     {
         private T* buffers;

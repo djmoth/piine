@@ -22,8 +22,6 @@
     name: Int3
   - uid: piine.Int4
     name: Int4
-  - uid: piine.Piine
-    name: Piine
   - uid: piine.Simd
     name: Simd
   - uid: piine.XorShift
@@ -39,6 +37,12 @@
   - uid: piine.Memory.FixedBufferPool`1
     name: FixedBufferPool<T>
     name.vb: FixedBufferPool(Of T)
+  - uid: piine.Memory.FixedCapacityList`1
+    name: FixedCapacityList<T>
+    name.vb: FixedCapacityList(Of T)
+  - uid: piine.Memory.FixedCapacityList`1.Enumerator
+    name: FixedCapacityList<T>.Enumerator
+    name.vb: FixedCapacityList(Of T).Enumerator
   - uid: piine.Memory.GlobalObjects
     name: GlobalObjects
   - uid: piine.Memory.ObjectPool`1
@@ -52,28 +56,12 @@
   - uid: piine.Memory.UnmanagedArray`1.Enumerator
     name: UnmanagedArray<T>.Enumerator
     name.vb: UnmanagedArray(Of T).Enumerator
-  - uid: piine.Memory.UnmanagedBuffer`1
-    name: UnmanagedBuffer<T>
-    name.vb: UnmanagedBuffer(Of T)
-  - uid: piine.Memory.UnmanagedDictionary`2
-    name: UnmanagedDictionary<TKey, TValue>
-    name.vb: UnmanagedDictionary(Of TKey, TValue)
   - uid: piine.Memory.UnmanagedList`1
     name: UnmanagedList<T>
     name.vb: UnmanagedList(Of T)
   - uid: piine.Memory.UnmanagedList`1.Enumerator
     name: UnmanagedList<T>.Enumerator
     name.vb: UnmanagedList(Of T).Enumerator
-- uid: piine.Memory.Unsafe
-  name: piine.Memory.Unsafe
-  items:
-  - uid: piine.Memory.Unsafe.IUnsafeObject
-    name: IUnsafeObject
-- uid: piine.Procedural
-  name: piine.Procedural
-  items:
-  - uid: piine.Procedural.OpenSimplexNoise
-    name: OpenSimplexNoise
 - uid: Tests
   name: Tests
   items:

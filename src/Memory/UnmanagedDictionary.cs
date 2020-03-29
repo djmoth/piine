@@ -1,6 +1,10 @@
-﻿using System;
+﻿/*
+
+The UnmanagedDictionary class is an unfinished attempt at creating a dictionary/hashmap in unmanaged code.
+You can try and finish it if you are up for it. I think the foundation is done, the code just doesn't work correctly.
+
+using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace piine.Memory
 {
@@ -343,3 +347,4 @@ namespace piine.Memory
         }
     }
 }
+*/

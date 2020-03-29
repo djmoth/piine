@@ -63,7 +63,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Float3
     path: src/Vector Types/Float/Float3.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - piine
   namespace: piine
@@ -71,6 +71,7 @@ items:
     content: 'public struct Float3 : IEquatable<Float3>'
     content.vb: >-
       Public Structure Float3
+
           Implements IEquatable(Of Float3)
   implements:
   - System.IEquatable{piine.Float3}
@@ -103,7 +104,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Size
     path: src/Vector Types/Float/Float3.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - piine
   namespace: piine
@@ -136,7 +137,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Zero
     path: src/Vector Types/Float/Float3.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - piine
   namespace: piine
@@ -173,7 +174,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: One
     path: src/Vector Types/Float/Float3.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - piine
   namespace: piine
@@ -210,7 +211,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitX
     path: src/Vector Types/Float/Float3.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - piine
   namespace: piine
@@ -247,7 +248,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitY
     path: src/Vector Types/Float/Float3.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - piine
   namespace: piine
@@ -284,7 +285,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnitZ
     path: src/Vector Types/Float/Float3.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - piine
   namespace: piine
@@ -321,7 +322,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: x
     path: src/Vector Types/Float/Float3.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - piine
   namespace: piine
@@ -352,7 +353,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: y
     path: src/Vector Types/Float/Float3.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - piine
   namespace: piine
@@ -383,7 +384,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: z
     path: src/Vector Types/Float/Float3.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - piine
   namespace: piine
@@ -414,7 +415,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XY
     path: src/Vector Types/Float/Float3.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - piine
   namespace: piine
@@ -449,7 +450,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XZ
     path: src/Vector Types/Float/Float3.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - piine
   namespace: piine
@@ -484,7 +485,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: YZ
     path: src/Vector Types/Float/Float3.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - piine
   namespace: piine
@@ -519,7 +520,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Vector Types/Float/Float3.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - piine
   namespace: piine
@@ -554,7 +555,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: LengthSquared
     path: src/Vector Types/Float/Float3.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - piine
   namespace: piine
@@ -589,7 +590,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Float/Float3.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - piine
   namespace: piine
@@ -626,7 +627,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Vector Types/Float/Float3.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - piine
   namespace: piine
@@ -659,7 +660,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Vector Types/Float/Float3.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - piine
   namespace: piine
@@ -699,7 +700,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetUnsafe
     path: src/Vector Types/Float/Float3.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - piine
   namespace: piine
@@ -734,7 +735,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: SetUnsafe
     path: src/Vector Types/Float/Float3.cs
-    startLine: 75
+    startLine: 76
   assemblies:
   - piine
   namespace: piine
@@ -769,7 +770,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CalculateVolume
     path: src/Vector Types/Float/Float3.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - piine
   namespace: piine
@@ -801,7 +802,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Normalize
     path: src/Vector Types/Float/Float3.cs
-    startLine: 79
+    startLine: 80
   assemblies:
   - piine
   namespace: piine
@@ -838,7 +839,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Absolute
     path: src/Vector Types/Float/Float3.cs
-    startLine: 92
+    startLine: 93
   assemblies:
   - piine
   namespace: piine
@@ -875,7 +876,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Distance
     path: src/Vector Types/Float/Float3.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - piine
   namespace: piine
@@ -914,7 +915,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Cross
     path: src/Vector Types/Float/Float3.cs
-    startLine: 96
+    startLine: 97
   assemblies:
   - piine
   namespace: piine
@@ -953,7 +954,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dot
     path: src/Vector Types/Float/Float3.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - piine
   namespace: piine
@@ -992,7 +993,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Float/Float3.cs
-    startLine: 107
+    startLine: 108
   assemblies:
   - piine
   namespace: piine
@@ -1032,7 +1033,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Float/Float3.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - piine
   namespace: piine
@@ -1072,7 +1073,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Explicit
     path: src/Vector Types/Float/Float3.cs
-    startLine: 111
+    startLine: 112
   assemblies:
   - piine
   namespace: piine
@@ -1112,7 +1113,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Float/Float3.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - piine
   namespace: piine
@@ -1152,7 +1153,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
     path: src/Vector Types/Float/Float3.cs
-    startLine: 115
+    startLine: 116
   assemblies:
   - piine
   namespace: piine
@@ -1192,7 +1193,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/Vector Types/Float/Float3.cs
-    startLine: 117
+    startLine: 118
   assemblies:
   - piine
   namespace: piine
@@ -1231,7 +1232,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/Vector Types/Float/Float3.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - piine
   namespace: piine
@@ -1270,7 +1271,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Addition
     path: src/Vector Types/Float/Float3.cs
-    startLine: 121
+    startLine: 122
   assemblies:
   - piine
   namespace: piine
@@ -1309,7 +1310,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Subtraction
     path: src/Vector Types/Float/Float3.cs
-    startLine: 123
+    startLine: 132
   assemblies:
   - piine
   namespace: piine
@@ -1348,7 +1349,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_UnaryNegation
     path: src/Vector Types/Float/Float3.cs
-    startLine: 125
+    startLine: 134
   assemblies:
   - piine
   namespace: piine
@@ -1385,7 +1386,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Multiply
     path: src/Vector Types/Float/Float3.cs
-    startLine: 127
+    startLine: 136
   assemblies:
   - piine
   namespace: piine
@@ -1424,7 +1425,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Division
     path: src/Vector Types/Float/Float3.cs
-    startLine: 129
+    startLine: 138
   assemblies:
   - piine
   namespace: piine
@@ -1463,7 +1464,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThan
     path: src/Vector Types/Float/Float3.cs
-    startLine: 131
+    startLine: 140
   assemblies:
   - piine
   namespace: piine
@@ -1502,7 +1503,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThan
     path: src/Vector Types/Float/Float3.cs
-    startLine: 133
+    startLine: 142
   assemblies:
   - piine
   namespace: piine
@@ -1541,7 +1542,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_GreaterThanOrEqual
     path: src/Vector Types/Float/Float3.cs
-    startLine: 135
+    startLine: 144
   assemblies:
   - piine
   namespace: piine
@@ -1580,7 +1581,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_LessThanOrEqual
     path: src/Vector Types/Float/Float3.cs
-    startLine: 137
+    startLine: 146
   assemblies:
   - piine
   namespace: piine
@@ -1619,7 +1620,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ToString
     path: src/Vector Types/Float/Float3.cs
-    startLine: 139
+    startLine: 148
   assemblies:
   - piine
   namespace: piine
@@ -1654,7 +1655,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Float/Float3.cs
-    startLine: 141
+    startLine: 150
   assemblies:
   - piine
   namespace: piine
@@ -1691,7 +1692,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/Vector Types/Float/Float3.cs
-    startLine: 143
+    startLine: 152
   assemblies:
   - piine
   namespace: piine

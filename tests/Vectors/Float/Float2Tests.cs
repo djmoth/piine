@@ -9,17 +9,17 @@ namespace tests
     class Float2Tests
     {
         [Test]
-        void TestCtor ()
+        public void TestCtor ()
         {
             Float2 f = new Float2 (-0.5f, 2);
             Assert.IsTrue (f.x == -0.5f && f.y == 2);
 
             Float2 f2 = new Float2 (10);
-            Assert.IsTrue (f.x == 10 && f.y == 10);
+            Assert.IsTrue (f2.x == 10 && f2.y == 10);
         }
 
         [Test]
-        void TestIndexer ()
+        public void TestIndexer ()
         {
             Float2 f = new Float2 (5f, -7.21f);
 
@@ -35,7 +35,7 @@ namespace tests
         }
 
         [Test]
-        void TestNormalize ()
+        public void TestNormalize ()
         {
             Float2 f = new Float2 (10, -5);
             f = Float2.Normalize (f);
@@ -46,12 +46,12 @@ namespace tests
         }
 
         [Test]
-        void TestEquals ()
+        public void TestEquals ()
         {
             Assert.IsTrue (new Float2 (3, 8) == new Float2 (3, 8));
         }
 
         [Test]
-        void TestNotEquals () => Assert.IsTrue (new Float2 (3, 8) != new Float2 (8, 3));
+        public void TestNotEquals () => Assert.IsTrue (new Float2 (3, 8) != new Float2 (8, 3));
     }
 }

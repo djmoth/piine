@@ -1,16 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace piine
 {
     /// <summary>
-    /// A simple Pseudo-Random Number Generator, derived from George Marsaglia's work
+    /// A simple Pseudo-Random Number Generator, derived from George Marsaglia's work. Does not work if seed is not specified.
     /// </summary>
-    public struct XorShift
+    public struct XorShift : IEquatable<XorShift>
     {
         private int state;
 
+        /// <summary>
+        /// Initialize the RNG, if seed is 0, the current time is used a seed
+        /// </summary>
+        /// <param name="seed"></param>
         public XorShift (int seed)
         {
             if (seed == 0)
@@ -48,6 +50,8 @@ namespace piine
         public static bool operator == (XorShift left, XorShift right) => left.state == right.state;
 
         public static bool operator != (XorShift left, XorShift right) => left.state != right.state;
+
+        public bool Equals (XorShift other) => this == other;
 
         public override bool Equals (object obj)
         {

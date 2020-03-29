@@ -63,31 +63,33 @@ namespace Tests.Memory
         [Test]
         public unsafe void TestZeroMemoryPerformance ()
         {
-            byte* stuff = stackalloc byte[4096];
+            byte* stuff = stackalloc byte[1000000];
 
             XorShift rng = new XorShift (0);
 
-            for (int i = 0; i < 4096; i++)
+            Unmanaged.ZeroMemory (stuff, 1000000); //Yes
+
+            for (int i = 0; i < 1000000; i++)
             {
                 stuff[i] = (byte)rng.Next ();
             }
 
             Stopwatch sw = Stopwatch.StartNew ();
 
-            Unmanaged.ZeroMemory (stuff, 4096);
+            Unmanaged.ZeroMemory (stuff, 1000000);
 
             sw.Stop ();
 
             double ms = sw.Elapsed.TotalMilliseconds;
 
-            for (int i = 0; i < 4096; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 stuff[i] = (byte)rng.Next ();
             }
 
             sw.Restart ();
 
-            for (int i = 0; i < 4096; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 stuff[i] = 0;
             }

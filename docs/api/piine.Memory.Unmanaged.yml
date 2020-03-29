@@ -30,7 +30,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Unmanaged
     path: src/Memory/Unmanaged.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - piine
   namespace: piine.Memory
@@ -74,7 +74,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - piine
   namespace: piine.Memory
@@ -85,6 +85,7 @@ items:
       [CLSCompliant(false)]
 
       public static T*AllocMemory<T>(long length, bool fillWithDefault = false)
+
           where T : struct
     parameters:
     - id: length
@@ -137,7 +138,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - piine
   namespace: piine.Memory
@@ -148,6 +149,7 @@ items:
       [CLSCompliant(false)]
 
       public static T*AllocMemory<T>(int length, bool fillWithDefault = false)
+
           where T : struct
     parameters:
     - id: length
@@ -200,7 +202,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FreeMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 55
+    startLine: 54
   assemblies:
   - piine
   namespace: piine.Memory
@@ -211,6 +213,7 @@ items:
       [CLSCompliant(false)]
 
       public static void FreeMemory<T>(ref T*memory, long length)
+
           where T : struct
     parameters:
     - id: memory
@@ -259,7 +262,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FreeMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 76
+    startLine: 75
   assemblies:
   - piine
   namespace: piine.Memory
@@ -270,6 +273,7 @@ items:
       [CLSCompliant(false)]
 
       public static void FreeMemory<T>(ref T*memory, int length)
+
           where T : struct
     parameters:
     - id: memory
@@ -318,7 +322,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ReAllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 86
+    startLine: 85
   assemblies:
   - piine
   namespace: piine.Memory
@@ -329,6 +333,7 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, long currentLength, long newLength)
+
           where T : struct
     parameters:
     - id: memory
@@ -380,7 +385,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ReAllocMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 116
+    startLine: 115
   assemblies:
   - piine
   namespace: piine.Memory
@@ -391,6 +396,7 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, int currentLength, int newLength)
+
           where T : struct
     parameters:
     - id: memory
@@ -442,7 +448,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: SetMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 125
+    startLine: 124
   assemblies:
   - piine
   namespace: piine.Memory
@@ -453,6 +459,7 @@ items:
       [CLSCompliant(false)]
 
       public static void SetMemory<T>(T*memory, int length, T data)
+
           where T : struct
     parameters:
     - id: memory
@@ -504,7 +511,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ZeroMemory
     path: src/Memory/Unmanaged.cs
-    startLine: 196
+    startLine: 195
   assemblies:
   - piine
   namespace: piine.Memory
@@ -515,6 +522,7 @@ items:
       [CLSCompliant(false)]
 
       public static void ZeroMemory<T>(T*memory, int length)
+
           where T : struct
     parameters:
     - id: memory
@@ -563,7 +571,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: MemoryCopy
     path: src/Memory/Unmanaged.cs
-    startLine: 226
+    startLine: 225
   assemblies:
   - piine
   namespace: piine.Memory
@@ -574,6 +582,7 @@ items:
       [CLSCompliant(false)]
 
       public static void MemoryCopy<T>(T*source, T*destination, long destinationLength, long elementsToCopy)
+
           where T : struct
     parameters:
     - id: source
@@ -626,13 +635,14 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocSpan
     path: src/Memory/Unmanaged.cs
-    startLine: 229
+    startLine: 228
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
     content: >-
       public static Span<T> AllocSpan<T>(int length)
+
           where T : struct
     parameters:
     - id: length
@@ -670,13 +680,14 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FreeSpan
     path: src/Memory/Unmanaged.cs
-    startLine: 230
+    startLine: 229
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
     content: >-
       public static void FreeSpan<T>(Span<T> span)
+
           where T : struct
     parameters:
     - id: span
@@ -1078,7 +1089,7 @@ references:
   nameWithType: Unmanaged.AllocSpan
   fullName: piine.Memory.Unmanaged.AllocSpan
 - uid: System.Span{{T}}
-  commentId: T:System.Span{``0}
+  commentId: T:System.Span{`0}
   parent: System
   definition: System.Span`1
   name: Span<T>

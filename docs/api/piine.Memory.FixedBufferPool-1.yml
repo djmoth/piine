@@ -29,7 +29,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: FixedBufferPool
     path: src/Memory/FixedBufferPool.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - piine
   namespace: piine.Memory
@@ -39,6 +39,7 @@ items:
     - id: T
     content.vb: >-
       Public Class FixedBufferPool(Of T As Structure)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -79,7 +80,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: PoolSize
     path: src/Memory/FixedBufferPool.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - piine
   namespace: piine.Memory
@@ -118,7 +119,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: BufferSize
     path: src/Memory/FixedBufferPool.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - piine
   namespace: piine.Memory
@@ -157,7 +158,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: AllocatedBufferCount
     path: src/Memory/FixedBufferPool.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - piine
   namespace: piine.Memory
@@ -196,7 +197,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/FixedBufferPool.cs
-    startLine: 29
+    startLine: 32
   assemblies:
   - piine
   namespace: piine.Memory
@@ -235,7 +236,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/FixedBufferPool.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - piine
   namespace: piine.Memory
@@ -276,7 +277,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Allocate
     path: src/Memory/FixedBufferPool.cs
-    startLine: 57
+    startLine: 60
   assemblies:
   - piine
   namespace: piine.Memory
@@ -329,7 +330,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Free
     path: src/Memory/FixedBufferPool.cs
-    startLine: 110
+    startLine: 113
   assemblies:
   - piine
   namespace: piine.Memory
@@ -380,7 +381,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/FixedBufferPool.cs
-    startLine: 130
+    startLine: 133
   assemblies:
   - piine
   namespace: piine.Memory
@@ -412,7 +413,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/FixedBufferPool.cs
-    startLine: 135
+    startLine: 138
   assemblies:
   - piine
   namespace: piine.Memory
@@ -448,7 +449,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/FixedBufferPool.cs
-    startLine: 141
+    startLine: 144
   assemblies:
   - piine
   namespace: piine.Memory

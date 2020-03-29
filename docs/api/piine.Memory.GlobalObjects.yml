@@ -23,7 +23,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GlobalObjects
     path: src/Memory/GlobalObjects.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - piine
   namespace: piine.Memory
@@ -65,7 +65,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Set
     path: src/Memory/GlobalObjects.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - piine
   namespace: piine.Memory
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Get
     path: src/Memory/GlobalObjects.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - piine
   namespace: piine.Memory
@@ -144,7 +144,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/GlobalObjects.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - piine
   namespace: piine.Memory
@@ -181,7 +181,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: HasValue
     path: src/Memory/GlobalObjects.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - piine
   namespace: piine.Memory

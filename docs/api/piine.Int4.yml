@@ -67,6 +67,7 @@ items:
     content: 'public struct Int4 : IEquatable<Int4>'
     content.vb: >-
       Public Structure Int4
+
           Implements IEquatable(Of Int4)
   implements:
   - System.IEquatable{piine.Int4}

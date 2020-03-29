@@ -109,9 +109,9 @@ namespace piine
 
         public static implicit operator (byte, byte, byte, byte) (Byte4 v) => (v.x, v.y, v.z, v.w);
 
-        public static bool operator == (Byte4 a, Byte4 b) => a.x == b.x && a.y == b.y && a.z == b.z && a.w == b.w;
+        public static bool operator == (Byte4 a, Byte4 b) => a.uintValue == b.uintValue;
 
-        public static bool operator != (Byte4 a, Byte4 b) => a.x != b.x || a.y != b.y || a.z != b.z || a.w != b.w;
+        public static bool operator != (Byte4 a, Byte4 b) => a.uintValue != b.uintValue;
 
         public unsafe static Byte4 operator + (Byte4 a, Byte4 b) => new Byte4 ((byte)(a.x + b.x), (byte)(a.y + b.y), (byte)(a.z + b.z), (byte)(a.w + b.w));
 

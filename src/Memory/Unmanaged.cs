@@ -4,6 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace piine.Memory
 {
+    /*
+     * The Unmanaged class provides methods to easily allocate and free unmanaged memory, though Marshal.AllocHGlobal & Marshal.FreeHGlobal.
+     * All the methods also report allocated memory to the GC.
+     */
     /// <summary>
     /// Interface for working with unmanaged memory.
     /// </summary>
@@ -28,12 +32,7 @@ namespace piine.Memory
             GC.AddMemoryPressure (bytesToAlloc);
 
             if (fillWithDefault)
-            {
-                for (long i = 0; i < length; i++)
-                {
-                    memory[i] = default;
-                }
-            }
+                ZeroMemory (memory, (int)length);
 
             return memory;
         }

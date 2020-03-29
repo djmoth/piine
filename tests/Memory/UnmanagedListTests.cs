@@ -137,8 +137,8 @@ namespace Tests.Memory
                     list.Add (i);
                 }
 
-                Assert.Throws<IndexOutOfRangeException> (() => list[-1] = 123);
-                Assert.Throws<IndexOutOfRangeException> (() => list[list.Count] = 123);
+                Assert.Throws<ArgumentOutOfRangeException> (() => list[-1] = 123);
+                Assert.Throws<ArgumentOutOfRangeException> (() => list[list.Count] = 123);
                 Assert.Throws<ArgumentOutOfRangeException> (() => list.RemoveAt (-1));
             }
         }
@@ -169,7 +169,7 @@ namespace Tests.Memory
 
             list.Dispose ();
 
-            Assert.Throws<InvalidOperationException> (() => list[0] = 10, "Should throw InvalidOperationException");
+            Assert.Throws<ObjectDisposedException> (() => list[0] = 10, "Should throw ObjectDisposedException");
         }
 
         [Test]

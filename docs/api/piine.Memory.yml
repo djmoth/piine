@@ -5,13 +5,13 @@ items:
   id: piine.Memory
   children:
   - piine.Memory.FixedBufferPool`1
+  - piine.Memory.FixedCapacityList`1
+  - piine.Memory.FixedCapacityList`1.Enumerator
   - piine.Memory.GlobalObjects
   - piine.Memory.ObjectPool`1
   - piine.Memory.Unmanaged
   - piine.Memory.UnmanagedArray`1
   - piine.Memory.UnmanagedArray`1.Enumerator
-  - piine.Memory.UnmanagedBuffer`1
-  - piine.Memory.UnmanagedDictionary`2
   - piine.Memory.UnmanagedList`1
   - piine.Memory.UnmanagedList`1.Enumerator
   langs:
@@ -57,6 +57,74 @@ references:
   - name: T
     nameWithType: T
     fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.FixedCapacityList`1
+  commentId: T:piine.Memory.FixedCapacityList`1
+  parent: piine.Memory
+  name: FixedCapacityList<T>
+  nameWithType: FixedCapacityList<T>
+  fullName: piine.Memory.FixedCapacityList<T>
+  nameWithType.vb: FixedCapacityList(Of T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T)
+  name.vb: FixedCapacityList(Of T)
+  spec.csharp:
+  - uid: piine.Memory.FixedCapacityList`1
+    name: FixedCapacityList
+    nameWithType: FixedCapacityList
+    fullName: piine.Memory.FixedCapacityList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.FixedCapacityList`1
+    name: FixedCapacityList
+    nameWithType: FixedCapacityList
+    fullName: piine.Memory.FixedCapacityList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.FixedCapacityList`1.Enumerator
+  commentId: T:piine.Memory.FixedCapacityList`1.Enumerator
+  parent: piine.Memory
+  name: FixedCapacityList.Enumerator<>
+  nameWithType: FixedCapacityList.Enumerator<>
+  fullName: piine.Memory.FixedCapacityList.Enumerator<>
+  nameWithType.vb: FixedCapacityList.Enumerator(Of )
+  fullName.vb: piine.Memory.FixedCapacityList.Enumerator(Of )
+  name.vb: FixedCapacityList.Enumerator(Of )
+  spec.csharp:
+  - uid: piine.Memory.FixedCapacityList`1.Enumerator
+    name: FixedCapacityList.Enumerator
+    nameWithType: FixedCapacityList.Enumerator
+    fullName: piine.Memory.FixedCapacityList.Enumerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.FixedCapacityList`1.Enumerator
+    name: FixedCapacityList.Enumerator
+    nameWithType: FixedCapacityList.Enumerator
+    fullName: piine.Memory.FixedCapacityList.Enumerator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
   - name: )
     nameWithType: )
     fullName: )
@@ -171,91 +239,6 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: piine.Memory.UnmanagedBuffer`1
-  commentId: T:piine.Memory.UnmanagedBuffer`1
-  parent: piine.Memory
-  name: UnmanagedBuffer<T>
-  nameWithType: UnmanagedBuffer<T>
-  fullName: piine.Memory.UnmanagedBuffer<T>
-  nameWithType.vb: UnmanagedBuffer(Of T)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T)
-  name.vb: UnmanagedBuffer(Of T)
-  spec.csharp:
-  - uid: piine.Memory.UnmanagedBuffer`1
-    name: UnmanagedBuffer
-    nameWithType: UnmanagedBuffer
-    fullName: piine.Memory.UnmanagedBuffer
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: piine.Memory.UnmanagedBuffer`1
-    name: UnmanagedBuffer
-    nameWithType: UnmanagedBuffer
-    fullName: piine.Memory.UnmanagedBuffer
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: piine.Memory.UnmanagedDictionary`2
-  commentId: T:piine.Memory.UnmanagedDictionary`2
-  name: UnmanagedDictionary<TKey, TValue>
-  nameWithType: UnmanagedDictionary<TKey, TValue>
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue)
-  name.vb: UnmanagedDictionary(Of TKey, TValue)
-  spec.csharp:
-  - uid: piine.Memory.UnmanagedDictionary`2
-    name: UnmanagedDictionary
-    nameWithType: UnmanagedDictionary
-    fullName: piine.Memory.UnmanagedDictionary
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: piine.Memory.UnmanagedDictionary`2
-    name: UnmanagedDictionary
-    nameWithType: UnmanagedDictionary
-    fullName: piine.Memory.UnmanagedDictionary
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
   - name: )
     nameWithType: )
     fullName: )

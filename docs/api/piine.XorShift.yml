@@ -6,6 +6,7 @@ items:
   parent: piine
   children:
   - piine.XorShift.#ctor(System.Int32)
+  - piine.XorShift.Equals(piine.XorShift)
   - piine.XorShift.Equals(System.Object)
   - piine.XorShift.GetHashCode
   - piine.XorShift.Next
@@ -26,15 +27,20 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: XorShift
     path: src/XorShift.cs
-    startLine: 9
+    startLine: 7
   assemblies:
   - piine
   namespace: piine
-  summary: "\nA simple Pseudo-Random Number Generator, derived from George Marsaglia&apos;s work\n"
+  summary: "\nA simple Pseudo-Random Number Generator, derived from George Marsaglia&apos;s work. Does not work if seed is not specified.\n"
   example: []
   syntax:
-    content: public struct XorShift
-    content.vb: Public Structure XorShift
+    content: 'public struct XorShift : IEquatable<XorShift>'
+    content.vb: >-
+      Public Structure XorShift
+
+          Implements IEquatable(Of XorShift)
+  implements:
+  - System.IEquatable{piine.XorShift}
   inheritedMembers:
   - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
@@ -64,15 +70,18 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/XorShift.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - piine
   namespace: piine
+  summary: "\nInitialize the RNG, if seed is 0, the current time is used a seed\n"
+  example: []
   syntax:
     content: public XorShift(int seed)
     parameters:
     - id: seed
       type: System.Int32
+      description: ''
     content.vb: Public Sub New(seed As Integer)
   overload: piine.XorShift.#ctor*
   modifiers.csharp:
@@ -97,7 +106,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - piine
   namespace: piine
@@ -131,7 +140,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Next
     path: src/XorShift.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - piine
   namespace: piine
@@ -172,7 +181,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetHashCode
     path: src/XorShift.cs
-    startLine: 45
+    startLine: 47
   assemblies:
   - piine
   namespace: piine
@@ -207,7 +216,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Equality
     path: src/XorShift.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - piine
   namespace: piine
@@ -246,7 +255,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: op_Inequality
     path: src/XorShift.cs
-    startLine: 49
+    startLine: 51
   assemblies:
   - piine
   namespace: piine
@@ -267,6 +276,43 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: piine.XorShift.Equals(piine.XorShift)
+  commentId: M:piine.XorShift.Equals(piine.XorShift)
+  id: Equals(piine.XorShift)
+  parent: piine.XorShift
+  langs:
+  - csharp
+  - vb
+  name: Equals(XorShift)
+  nameWithType: XorShift.Equals(XorShift)
+  fullName: piine.XorShift.Equals(piine.XorShift)
+  type: Method
+  source:
+    remote:
+      path: src/XorShift.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/XorShift.cs
+    startLine: 53
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(XorShift other)
+    parameters:
+    - id: other
+      type: piine.XorShift
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As XorShift) As Boolean
+  overload: piine.XorShift.Equals*
+  implements:
+  - System.IEquatable{piine.XorShift}.Equals(piine.XorShift)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: piine.XorShift.Equals(System.Object)
   commentId: M:piine.XorShift.Equals(System.Object)
   id: Equals(System.Object)
@@ -285,7 +331,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Equals
     path: src/XorShift.cs
-    startLine: 51
+    startLine: 55
   assemblies:
   - piine
   namespace: piine
@@ -311,6 +357,48 @@ references:
   name: piine
   nameWithType: piine
   fullName: piine
+- uid: System.IEquatable{piine.XorShift}
+  commentId: T:System.IEquatable{piine.XorShift}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<XorShift>
+  nameWithType: IEquatable<XorShift>
+  fullName: System.IEquatable<piine.XorShift>
+  nameWithType.vb: IEquatable(Of XorShift)
+  fullName.vb: System.IEquatable(Of piine.XorShift)
+  name.vb: IEquatable(Of XorShift)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.XorShift
+    name: XorShift
+    nameWithType: XorShift
+    fullName: piine.XorShift
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.XorShift
+    name: XorShift
+    nameWithType: XorShift
+    fullName: piine.XorShift
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
@@ -487,6 +575,51 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -501,12 +634,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: piine.XorShift.#ctor*
   commentId: Overload:piine.XorShift.#ctor
   name: XorShift
@@ -583,6 +710,90 @@ references:
   name: Inequality
   nameWithType: XorShift.Inequality
   fullName: piine.XorShift.Inequality
+- uid: piine.XorShift.Equals*
+  commentId: Overload:piine.XorShift.Equals
+  name: Equals
+  nameWithType: XorShift.Equals
+  fullName: piine.XorShift.Equals
+- uid: System.IEquatable{piine.XorShift}.Equals(piine.XorShift)
+  commentId: M:System.IEquatable{piine.XorShift}.Equals(piine.XorShift)
+  parent: System.IEquatable{piine.XorShift}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(XorShift)
+  nameWithType: IEquatable<XorShift>.Equals(XorShift)
+  fullName: System.IEquatable<piine.XorShift>.Equals(piine.XorShift)
+  nameWithType.vb: IEquatable(Of XorShift).Equals(XorShift)
+  fullName.vb: System.IEquatable(Of piine.XorShift).Equals(piine.XorShift)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<XorShift>.Equals
+    fullName: System.IEquatable<piine.XorShift>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.XorShift
+    name: XorShift
+    nameWithType: XorShift
+    fullName: piine.XorShift
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of XorShift).Equals
+    fullName: System.IEquatable(Of piine.XorShift).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.XorShift
+    name: XorShift
+    nameWithType: XorShift
+    fullName: piine.XorShift
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
   parent: System.ValueType
@@ -624,8 +835,3 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: piine.XorShift.Equals*
-  commentId: Overload:piine.XorShift.Equals
-  name: Equals
-  nameWithType: XorShift.Equals
-  fullName: piine.XorShift.Equals

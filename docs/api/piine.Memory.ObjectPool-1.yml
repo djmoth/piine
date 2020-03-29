@@ -21,13 +21,14 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ObjectPool
     path: src/Memory/ObjectPool.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
     content: >-
       public static class ObjectPool<T>
+
           where T : new()
     typeParameters:
     - id: T
@@ -70,7 +71,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetObject
     path: src/Memory/ObjectPool.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - piine
   namespace: piine.Memory
@@ -106,7 +107,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: ReturnObject
     path: src/Memory/ObjectPool.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - piine
   namespace: piine.Memory

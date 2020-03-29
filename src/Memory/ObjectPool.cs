@@ -4,6 +4,9 @@ using System.Text;
 
 namespace piine.Memory
 {
+    /*
+     * A global ObjectPool for storing objects of one specific type. Used for temporary objects only for short durations. 
+     */
     public static class ObjectPool<T> where T : new ()
     {
         private static readonly Stack<T> pool = new Stack<T> (8);

@@ -5322,6 +5322,334 @@ references:
   fullName.vb: piine.Memory.FixedBufferPool(Of T).PoolSize
   nameWithType: FixedBufferPool<T>.PoolSize
   nameWithType.vb: FixedBufferPool(Of T).PoolSize
+- uid: piine.Memory.FixedCapacityList`1
+  name: FixedCapacityList<T>
+  href: docs/api/piine.Memory.FixedCapacityList-1.html
+  commentId: T:piine.Memory.FixedCapacityList`1
+  name.vb: FixedCapacityList(Of T)
+  fullName: piine.Memory.FixedCapacityList<T>
+  fullName.vb: piine.Memory.FixedCapacityList(Of T)
+  nameWithType: FixedCapacityList<T>
+  nameWithType.vb: FixedCapacityList(Of T)
+- uid: piine.Memory.FixedCapacityList`1.#ctor(System.Span{`0},System.Int32)
+  name: FixedCapacityList(Span<T>, Int32)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1__ctor_System_Span__0__System_Int32_
+  commentId: M:piine.Memory.FixedCapacityList`1.#ctor(System.Span{`0},System.Int32)
+  name.vb: FixedCapacityList(Span(Of T), Int32)
+  fullName: piine.Memory.FixedCapacityList<T>.FixedCapacityList(System.Span<T>, System.Int32)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).FixedCapacityList(System.Span(Of T), System.Int32)
+  nameWithType: FixedCapacityList<T>.FixedCapacityList(Span<T>, Int32)
+  nameWithType.vb: FixedCapacityList(Of T).FixedCapacityList(Span(Of T), Int32)
+- uid: piine.Memory.FixedCapacityList`1.#ctor*
+  name: FixedCapacityList
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1__ctor_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.#ctor
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.FixedCapacityList
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).FixedCapacityList
+  nameWithType: FixedCapacityList<T>.FixedCapacityList
+  nameWithType.vb: FixedCapacityList(Of T).FixedCapacityList
+- uid: piine.Memory.FixedCapacityList`1.Add(`0)
+  name: Add(T)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Add__0_
+  commentId: M:piine.Memory.FixedCapacityList`1.Add(`0)
+  fullName: piine.Memory.FixedCapacityList<T>.Add(T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Add(T)
+  nameWithType: FixedCapacityList<T>.Add(T)
+  nameWithType.vb: FixedCapacityList(Of T).Add(T)
+- uid: piine.Memory.FixedCapacityList`1.Add*
+  name: Add
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Add_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Add
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Add
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Add
+  nameWithType: FixedCapacityList<T>.Add
+  nameWithType.vb: FixedCapacityList(Of T).Add
+- uid: piine.Memory.FixedCapacityList`1.Capacity
+  name: Capacity
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Capacity
+  commentId: P:piine.Memory.FixedCapacityList`1.Capacity
+  fullName: piine.Memory.FixedCapacityList<T>.Capacity
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Capacity
+  nameWithType: FixedCapacityList<T>.Capacity
+  nameWithType.vb: FixedCapacityList(Of T).Capacity
+- uid: piine.Memory.FixedCapacityList`1.Capacity*
+  name: Capacity
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Capacity_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Capacity
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Capacity
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Capacity
+  nameWithType: FixedCapacityList<T>.Capacity
+  nameWithType.vb: FixedCapacityList(Of T).Capacity
+- uid: piine.Memory.FixedCapacityList`1.Clear
+  name: Clear()
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Clear
+  commentId: M:piine.Memory.FixedCapacityList`1.Clear
+  fullName: piine.Memory.FixedCapacityList<T>.Clear()
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Clear()
+  nameWithType: FixedCapacityList<T>.Clear()
+  nameWithType.vb: FixedCapacityList(Of T).Clear()
+- uid: piine.Memory.FixedCapacityList`1.Clear*
+  name: Clear
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Clear_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Clear
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Clear
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Clear
+  nameWithType: FixedCapacityList<T>.Clear
+  nameWithType.vb: FixedCapacityList(Of T).Clear
+- uid: piine.Memory.FixedCapacityList`1.Contains(`0)
+  name: Contains(T)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Contains__0_
+  commentId: M:piine.Memory.FixedCapacityList`1.Contains(`0)
+  fullName: piine.Memory.FixedCapacityList<T>.Contains(T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Contains(T)
+  nameWithType: FixedCapacityList<T>.Contains(T)
+  nameWithType.vb: FixedCapacityList(Of T).Contains(T)
+- uid: piine.Memory.FixedCapacityList`1.Contains*
+  name: Contains
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Contains_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Contains
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Contains
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Contains
+  nameWithType: FixedCapacityList<T>.Contains
+  nameWithType.vb: FixedCapacityList(Of T).Contains
+- uid: piine.Memory.FixedCapacityList`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_CopyTo__0___System_Int32_
+  commentId: M:piine.Memory.FixedCapacityList`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: piine.Memory.FixedCapacityList<T>.CopyTo(T[], System.Int32)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).CopyTo(T(), System.Int32)
+  nameWithType: FixedCapacityList<T>.CopyTo(T[], Int32)
+  nameWithType.vb: FixedCapacityList(Of T).CopyTo(T(), Int32)
+- uid: piine.Memory.FixedCapacityList`1.CopyTo*
+  name: CopyTo
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_CopyTo_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.CopyTo
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.CopyTo
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).CopyTo
+  nameWithType: FixedCapacityList<T>.CopyTo
+  nameWithType.vb: FixedCapacityList(Of T).CopyTo
+- uid: piine.Memory.FixedCapacityList`1.Count
+  name: Count
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Count
+  commentId: P:piine.Memory.FixedCapacityList`1.Count
+  fullName: piine.Memory.FixedCapacityList<T>.Count
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Count
+  nameWithType: FixedCapacityList<T>.Count
+  nameWithType.vb: FixedCapacityList(Of T).Count
+- uid: piine.Memory.FixedCapacityList`1.Count*
+  name: Count
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Count_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Count
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Count
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Count
+  nameWithType: FixedCapacityList<T>.Count
+  nameWithType.vb: FixedCapacityList(Of T).Count
+- uid: piine.Memory.FixedCapacityList`1.Enumerator
+  name: FixedCapacityList<T>.Enumerator
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html
+  commentId: T:piine.Memory.FixedCapacityList`1.Enumerator
+  name.vb: FixedCapacityList(Of T).Enumerator
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator
+  nameWithType: FixedCapacityList<T>.Enumerator
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.#ctor(piine.Memory.FixedCapacityList{`0})
+  name: Enumerator(FixedCapacityList<T>)
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator__ctor_piine_Memory_FixedCapacityList__0__
+  commentId: M:piine.Memory.FixedCapacityList`1.Enumerator.#ctor(piine.Memory.FixedCapacityList{`0})
+  name.vb: Enumerator(FixedCapacityList(Of T))
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Enumerator(piine.Memory.FixedCapacityList<T>)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Enumerator(piine.Memory.FixedCapacityList(Of T))
+  nameWithType: FixedCapacityList<T>.Enumerator.Enumerator(FixedCapacityList<T>)
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Enumerator(FixedCapacityList(Of T))
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.#ctor*
+  name: Enumerator
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator__ctor_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Enumerator.#ctor
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Enumerator
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Enumerator
+  nameWithType: FixedCapacityList<T>.Enumerator.Enumerator
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Enumerator
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.Current
+  name: Current
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_Current
+  commentId: P:piine.Memory.FixedCapacityList`1.Enumerator.Current
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Current
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Current
+  nameWithType: FixedCapacityList<T>.Enumerator.Current
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Current
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.Current*
+  name: Current
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_Current_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Enumerator.Current
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Current
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Current
+  nameWithType: FixedCapacityList<T>.Enumerator.Current
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Current
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.MoveNext
+  name: MoveNext()
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_MoveNext
+  commentId: M:piine.Memory.FixedCapacityList`1.Enumerator.MoveNext
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.MoveNext()
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.MoveNext()
+  nameWithType: FixedCapacityList<T>.Enumerator.MoveNext()
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.MoveNext()
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.MoveNext*
+  name: MoveNext
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_MoveNext_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Enumerator.MoveNext
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.MoveNext
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.MoveNext
+  nameWithType: FixedCapacityList<T>.Enumerator.MoveNext
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.MoveNext
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.Reset
+  name: Reset()
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_Reset
+  commentId: M:piine.Memory.FixedCapacityList`1.Enumerator.Reset
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Reset()
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Reset()
+  nameWithType: FixedCapacityList<T>.Enumerator.Reset()
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Reset()
+- uid: piine.Memory.FixedCapacityList`1.Enumerator.Reset*
+  name: Reset
+  href: docs/api/piine.Memory.FixedCapacityList-1.Enumerator.html#piine_Memory_FixedCapacityList_1_Enumerator_Reset_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Enumerator.Reset
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Enumerator.Reset
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Enumerator.Reset
+  nameWithType: FixedCapacityList<T>.Enumerator.Reset
+  nameWithType.vb: FixedCapacityList(Of T).Enumerator.Reset
+- uid: piine.Memory.FixedCapacityList`1.GetEnumerator
+  name: GetEnumerator()
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_GetEnumerator
+  commentId: M:piine.Memory.FixedCapacityList`1.GetEnumerator
+  fullName: piine.Memory.FixedCapacityList<T>.GetEnumerator()
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).GetEnumerator()
+  nameWithType: FixedCapacityList<T>.GetEnumerator()
+  nameWithType.vb: FixedCapacityList(Of T).GetEnumerator()
+- uid: piine.Memory.FixedCapacityList`1.GetEnumerator*
+  name: GetEnumerator
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_GetEnumerator_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.GetEnumerator
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.GetEnumerator
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).GetEnumerator
+  nameWithType: FixedCapacityList<T>.GetEnumerator
+  nameWithType.vb: FixedCapacityList(Of T).GetEnumerator
+- uid: piine.Memory.FixedCapacityList`1.GetSpan
+  name: GetSpan()
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_GetSpan
+  commentId: M:piine.Memory.FixedCapacityList`1.GetSpan
+  fullName: piine.Memory.FixedCapacityList<T>.GetSpan()
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).GetSpan()
+  nameWithType: FixedCapacityList<T>.GetSpan()
+  nameWithType.vb: FixedCapacityList(Of T).GetSpan()
+- uid: piine.Memory.FixedCapacityList`1.GetSpan*
+  name: GetSpan
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_GetSpan_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.GetSpan
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.GetSpan
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).GetSpan
+  nameWithType: FixedCapacityList<T>.GetSpan
+  nameWithType.vb: FixedCapacityList(Of T).GetSpan
+- uid: piine.Memory.FixedCapacityList`1.IndexOf(`0)
+  name: IndexOf(T)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_IndexOf__0_
+  commentId: M:piine.Memory.FixedCapacityList`1.IndexOf(`0)
+  fullName: piine.Memory.FixedCapacityList<T>.IndexOf(T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).IndexOf(T)
+  nameWithType: FixedCapacityList<T>.IndexOf(T)
+  nameWithType.vb: FixedCapacityList(Of T).IndexOf(T)
+- uid: piine.Memory.FixedCapacityList`1.IndexOf*
+  name: IndexOf
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_IndexOf_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.IndexOf
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.IndexOf
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).IndexOf
+  nameWithType: FixedCapacityList<T>.IndexOf
+  nameWithType.vb: FixedCapacityList(Of T).IndexOf
+- uid: piine.Memory.FixedCapacityList`1.Insert(System.Int32,`0)
+  name: Insert(Int32, T)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Insert_System_Int32__0_
+  commentId: M:piine.Memory.FixedCapacityList`1.Insert(System.Int32,`0)
+  fullName: piine.Memory.FixedCapacityList<T>.Insert(System.Int32, T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Insert(System.Int32, T)
+  nameWithType: FixedCapacityList<T>.Insert(Int32, T)
+  nameWithType.vb: FixedCapacityList(Of T).Insert(Int32, T)
+- uid: piine.Memory.FixedCapacityList`1.Insert*
+  name: Insert
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Insert_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Insert
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Insert
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Insert
+  nameWithType: FixedCapacityList<T>.Insert
+  nameWithType.vb: FixedCapacityList(Of T).Insert
+- uid: piine.Memory.FixedCapacityList`1.Item(System.Int32)
+  name: Item[Int32]
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Item_System_Int32_
+  commentId: P:piine.Memory.FixedCapacityList`1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: piine.Memory.FixedCapacityList<T>.Item[System.Int32]
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Item(System.Int32)
+  nameWithType: FixedCapacityList<T>.Item[Int32]
+  nameWithType.vb: FixedCapacityList(Of T).Item(Int32)
+- uid: piine.Memory.FixedCapacityList`1.Item*
+  name: Item
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Item_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Item
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Item
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Item
+  nameWithType: FixedCapacityList<T>.Item
+  nameWithType.vb: FixedCapacityList(Of T).Item
+- uid: piine.Memory.FixedCapacityList`1.Remove(`0)
+  name: Remove(T)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Remove__0_
+  commentId: M:piine.Memory.FixedCapacityList`1.Remove(`0)
+  fullName: piine.Memory.FixedCapacityList<T>.Remove(T)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Remove(T)
+  nameWithType: FixedCapacityList<T>.Remove(T)
+  nameWithType.vb: FixedCapacityList(Of T).Remove(T)
+- uid: piine.Memory.FixedCapacityList`1.Remove*
+  name: Remove
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_Remove_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.Remove
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.Remove
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).Remove
+  nameWithType: FixedCapacityList<T>.Remove
+  nameWithType.vb: FixedCapacityList(Of T).Remove
+- uid: piine.Memory.FixedCapacityList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_RemoveAt_System_Int32_
+  commentId: M:piine.Memory.FixedCapacityList`1.RemoveAt(System.Int32)
+  fullName: piine.Memory.FixedCapacityList<T>.RemoveAt(System.Int32)
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).RemoveAt(System.Int32)
+  nameWithType: FixedCapacityList<T>.RemoveAt(Int32)
+  nameWithType.vb: FixedCapacityList(Of T).RemoveAt(Int32)
+- uid: piine.Memory.FixedCapacityList`1.RemoveAt*
+  name: RemoveAt
+  href: docs/api/piine.Memory.FixedCapacityList-1.html#piine_Memory_FixedCapacityList_1_RemoveAt_
+  commentId: Overload:piine.Memory.FixedCapacityList`1.RemoveAt
+  isSpec: "True"
+  fullName: piine.Memory.FixedCapacityList<T>.RemoveAt
+  fullName.vb: piine.Memory.FixedCapacityList(Of T).RemoveAt
+  nameWithType: FixedCapacityList<T>.RemoveAt
+  nameWithType.vb: FixedCapacityList(Of T).RemoveAt
 - uid: piine.Memory.GlobalObjects
   name: GlobalObjects
   href: docs/api/piine.Memory.GlobalObjects.html
@@ -6118,394 +6446,6 @@ references:
   fullName.vb: piine.Memory.UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator
   nameWithType: UnmanagedArray<T>.IEnumerable.GetEnumerator
   nameWithType.vb: UnmanagedArray(Of T).System.Collections.IEnumerable.GetEnumerator
-- uid: piine.Memory.UnmanagedBuffer`1
-  name: UnmanagedBuffer<T>
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html
-  commentId: T:piine.Memory.UnmanagedBuffer`1
-  name.vb: UnmanagedBuffer(Of T)
-  fullName: piine.Memory.UnmanagedBuffer<T>
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T)
-  nameWithType: UnmanagedBuffer<T>
-  nameWithType.vb: UnmanagedBuffer(Of T)
-- uid: piine.Memory.UnmanagedBuffer`1.#ctor(`0*,System.Int64)
-  name: UnmanagedBuffer(T*, Int64)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1__ctor__0__System_Int64_
-  commentId: M:piine.Memory.UnmanagedBuffer`1.#ctor(`0*,System.Int64)
-  fullName: piine.Memory.UnmanagedBuffer<T>.UnmanagedBuffer(T*, System.Int64)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).UnmanagedBuffer(T*, System.Int64)
-  nameWithType: UnmanagedBuffer<T>.UnmanagedBuffer(T*, Int64)
-  nameWithType.vb: UnmanagedBuffer(Of T).UnmanagedBuffer(T*, Int64)
-- uid: piine.Memory.UnmanagedBuffer`1.#ctor(System.IntPtr,System.Int64)
-  name: UnmanagedBuffer(IntPtr, Int64)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1__ctor_System_IntPtr_System_Int64_
-  commentId: M:piine.Memory.UnmanagedBuffer`1.#ctor(System.IntPtr,System.Int64)
-  fullName: piine.Memory.UnmanagedBuffer<T>.UnmanagedBuffer(System.IntPtr, System.Int64)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).UnmanagedBuffer(System.IntPtr, System.Int64)
-  nameWithType: UnmanagedBuffer<T>.UnmanagedBuffer(IntPtr, Int64)
-  nameWithType.vb: UnmanagedBuffer(Of T).UnmanagedBuffer(IntPtr, Int64)
-- uid: piine.Memory.UnmanagedBuffer`1.#ctor*
-  name: UnmanagedBuffer
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1__ctor_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.#ctor
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.UnmanagedBuffer
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).UnmanagedBuffer
-  nameWithType: UnmanagedBuffer<T>.UnmanagedBuffer
-  nameWithType.vb: UnmanagedBuffer(Of T).UnmanagedBuffer
-- uid: piine.Memory.UnmanagedBuffer`1.Allocated
-  name: Allocated
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Allocated
-  commentId: P:piine.Memory.UnmanagedBuffer`1.Allocated
-  fullName: piine.Memory.UnmanagedBuffer<T>.Allocated
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Allocated
-  nameWithType: UnmanagedBuffer<T>.Allocated
-  nameWithType.vb: UnmanagedBuffer(Of T).Allocated
-- uid: piine.Memory.UnmanagedBuffer`1.Allocated*
-  name: Allocated
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Allocated_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.Allocated
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Allocated
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Allocated
-  nameWithType: UnmanagedBuffer<T>.Allocated
-  nameWithType.vb: UnmanagedBuffer(Of T).Allocated
-- uid: piine.Memory.UnmanagedBuffer`1.Equals(piine.Memory.UnmanagedBuffer{`0})
-  name: Equals(UnmanagedBuffer<T>)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Equals_piine_Memory_UnmanagedBuffer__0__
-  commentId: M:piine.Memory.UnmanagedBuffer`1.Equals(piine.Memory.UnmanagedBuffer{`0})
-  name.vb: Equals(UnmanagedBuffer(Of T))
-  fullName: piine.Memory.UnmanagedBuffer<T>.Equals(piine.Memory.UnmanagedBuffer<T>)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Equals(piine.Memory.UnmanagedBuffer(Of T))
-  nameWithType: UnmanagedBuffer<T>.Equals(UnmanagedBuffer<T>)
-  nameWithType.vb: UnmanagedBuffer(Of T).Equals(UnmanagedBuffer(Of T))
-- uid: piine.Memory.UnmanagedBuffer`1.Equals(System.Object)
-  name: Equals(Object)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Equals_System_Object_
-  commentId: M:piine.Memory.UnmanagedBuffer`1.Equals(System.Object)
-  fullName: piine.Memory.UnmanagedBuffer<T>.Equals(System.Object)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Equals(System.Object)
-  nameWithType: UnmanagedBuffer<T>.Equals(Object)
-  nameWithType.vb: UnmanagedBuffer(Of T).Equals(Object)
-- uid: piine.Memory.UnmanagedBuffer`1.Equals*
-  name: Equals
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Equals_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.Equals
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Equals
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Equals
-  nameWithType: UnmanagedBuffer<T>.Equals
-  nameWithType.vb: UnmanagedBuffer(Of T).Equals
-- uid: piine.Memory.UnmanagedBuffer`1.GetHashCode
-  name: GetHashCode()
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_GetHashCode
-  commentId: M:piine.Memory.UnmanagedBuffer`1.GetHashCode
-  fullName: piine.Memory.UnmanagedBuffer<T>.GetHashCode()
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).GetHashCode()
-  nameWithType: UnmanagedBuffer<T>.GetHashCode()
-  nameWithType.vb: UnmanagedBuffer(Of T).GetHashCode()
-- uid: piine.Memory.UnmanagedBuffer`1.GetHashCode*
-  name: GetHashCode
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_GetHashCode_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.GetHashCode
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.GetHashCode
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).GetHashCode
-  nameWithType: UnmanagedBuffer<T>.GetHashCode
-  nameWithType.vb: UnmanagedBuffer(Of T).GetHashCode
-- uid: piine.Memory.UnmanagedBuffer`1.GetPointer
-  name: GetPointer()
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_GetPointer
-  commentId: M:piine.Memory.UnmanagedBuffer`1.GetPointer
-  fullName: piine.Memory.UnmanagedBuffer<T>.GetPointer()
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).GetPointer()
-  nameWithType: UnmanagedBuffer<T>.GetPointer()
-  nameWithType.vb: UnmanagedBuffer(Of T).GetPointer()
-- uid: piine.Memory.UnmanagedBuffer`1.GetPointer*
-  name: GetPointer
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_GetPointer_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.GetPointer
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.GetPointer
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).GetPointer
-  nameWithType: UnmanagedBuffer<T>.GetPointer
-  nameWithType.vb: UnmanagedBuffer(Of T).GetPointer
-- uid: piine.Memory.UnmanagedBuffer`1.Item(System.Int64)
-  name: Item[Int64]
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Item_System_Int64_
-  commentId: P:piine.Memory.UnmanagedBuffer`1.Item(System.Int64)
-  name.vb: Item(Int64)
-  fullName: piine.Memory.UnmanagedBuffer<T>.Item[System.Int64]
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Item(System.Int64)
-  nameWithType: UnmanagedBuffer<T>.Item[Int64]
-  nameWithType.vb: UnmanagedBuffer(Of T).Item(Int64)
-- uid: piine.Memory.UnmanagedBuffer`1.Item*
-  name: Item
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Item_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.Item
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Item
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Item
-  nameWithType: UnmanagedBuffer<T>.Item
-  nameWithType.vb: UnmanagedBuffer(Of T).Item
-- uid: piine.Memory.UnmanagedBuffer`1.Length
-  name: Length
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Length
-  commentId: P:piine.Memory.UnmanagedBuffer`1.Length
-  fullName: piine.Memory.UnmanagedBuffer<T>.Length
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Length
-  nameWithType: UnmanagedBuffer<T>.Length
-  nameWithType.vb: UnmanagedBuffer(Of T).Length
-- uid: piine.Memory.UnmanagedBuffer`1.Length*
-  name: Length
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_Length_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.Length
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Length
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Length
-  nameWithType: UnmanagedBuffer<T>.Length
-  nameWithType.vb: UnmanagedBuffer(Of T).Length
-- uid: piine.Memory.UnmanagedBuffer`1.op_Equality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})
-  name: Equality(UnmanagedBuffer<T>, UnmanagedBuffer<T>)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_op_Equality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__
-  commentId: M:piine.Memory.UnmanagedBuffer`1.op_Equality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})
-  name.vb: Equality(UnmanagedBuffer(Of T), UnmanagedBuffer(Of T))
-  fullName: piine.Memory.UnmanagedBuffer<T>.Equality(piine.Memory.UnmanagedBuffer<T>, piine.Memory.UnmanagedBuffer<T>)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Equality(piine.Memory.UnmanagedBuffer(Of T), piine.Memory.UnmanagedBuffer(Of T))
-  nameWithType: UnmanagedBuffer<T>.Equality(UnmanagedBuffer<T>, UnmanagedBuffer<T>)
-  nameWithType.vb: UnmanagedBuffer(Of T).Equality(UnmanagedBuffer(Of T), UnmanagedBuffer(Of T))
-- uid: piine.Memory.UnmanagedBuffer`1.op_Equality*
-  name: Equality
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_op_Equality_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.op_Equality
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Equality
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Equality
-  nameWithType: UnmanagedBuffer<T>.Equality
-  nameWithType.vb: UnmanagedBuffer(Of T).Equality
-- uid: piine.Memory.UnmanagedBuffer`1.op_Inequality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})
-  name: Inequality(UnmanagedBuffer<T>, UnmanagedBuffer<T>)
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_op_Inequality_piine_Memory_UnmanagedBuffer__0__piine_Memory_UnmanagedBuffer__0__
-  commentId: M:piine.Memory.UnmanagedBuffer`1.op_Inequality(piine.Memory.UnmanagedBuffer{`0},piine.Memory.UnmanagedBuffer{`0})
-  name.vb: Inequality(UnmanagedBuffer(Of T), UnmanagedBuffer(Of T))
-  fullName: piine.Memory.UnmanagedBuffer<T>.Inequality(piine.Memory.UnmanagedBuffer<T>, piine.Memory.UnmanagedBuffer<T>)
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Inequality(piine.Memory.UnmanagedBuffer(Of T), piine.Memory.UnmanagedBuffer(Of T))
-  nameWithType: UnmanagedBuffer<T>.Inequality(UnmanagedBuffer<T>, UnmanagedBuffer<T>)
-  nameWithType.vb: UnmanagedBuffer(Of T).Inequality(UnmanagedBuffer(Of T), UnmanagedBuffer(Of T))
-- uid: piine.Memory.UnmanagedBuffer`1.op_Inequality*
-  name: Inequality
-  href: docs/api/piine.Memory.UnmanagedBuffer-1.html#piine_Memory_UnmanagedBuffer_1_op_Inequality_
-  commentId: Overload:piine.Memory.UnmanagedBuffer`1.op_Inequality
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedBuffer<T>.Inequality
-  fullName.vb: piine.Memory.UnmanagedBuffer(Of T).Inequality
-  nameWithType: UnmanagedBuffer<T>.Inequality
-  nameWithType.vb: UnmanagedBuffer(Of T).Inequality
-- uid: piine.Memory.UnmanagedDictionary`2
-  name: UnmanagedDictionary<TKey, TValue>
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html
-  commentId: T:piine.Memory.UnmanagedDictionary`2
-  name.vb: UnmanagedDictionary(Of TKey, TValue)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue)
-  nameWithType: UnmanagedDictionary<TKey, TValue>
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue)
-- uid: piine.Memory.UnmanagedDictionary`2.#ctor
-  name: UnmanagedDictionary()
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2__ctor
-  commentId: M:piine.Memory.UnmanagedDictionary`2.#ctor
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.UnmanagedDictionary()
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).UnmanagedDictionary()
-  nameWithType: UnmanagedDictionary<TKey, TValue>.UnmanagedDictionary()
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).UnmanagedDictionary()
-- uid: piine.Memory.UnmanagedDictionary`2.#ctor*
-  name: UnmanagedDictionary
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2__ctor_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.#ctor
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.UnmanagedDictionary
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).UnmanagedDictionary
-  nameWithType: UnmanagedDictionary<TKey, TValue>.UnmanagedDictionary
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).UnmanagedDictionary
-- uid: piine.Memory.UnmanagedDictionary`2.Add(`0,`1)
-  name: Add(TKey, TValue)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Add__0__1_
-  commentId: M:piine.Memory.UnmanagedDictionary`2.Add(`0,`1)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Add(TKey, TValue)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Add(TKey, TValue)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Add(TKey, TValue)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Add(TKey, TValue)
-- uid: piine.Memory.UnmanagedDictionary`2.Add*
-  name: Add
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Add_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Add
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Add
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Add
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Add
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Add
-- uid: piine.Memory.UnmanagedDictionary`2.Allocated
-  name: Allocated
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Allocated
-  commentId: P:piine.Memory.UnmanagedDictionary`2.Allocated
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Allocated
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Allocated
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Allocated
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Allocated
-- uid: piine.Memory.UnmanagedDictionary`2.Allocated*
-  name: Allocated
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Allocated_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Allocated
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Allocated
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Allocated
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Allocated
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Allocated
-- uid: piine.Memory.UnmanagedDictionary`2.ContainsKey(`0)
-  name: ContainsKey(TKey)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_ContainsKey__0_
-  commentId: M:piine.Memory.UnmanagedDictionary`2.ContainsKey(`0)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.ContainsKey(TKey)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).ContainsKey(TKey)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.ContainsKey(TKey)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).ContainsKey(TKey)
-- uid: piine.Memory.UnmanagedDictionary`2.ContainsKey*
-  name: ContainsKey
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_ContainsKey_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.ContainsKey
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.ContainsKey
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).ContainsKey
-  nameWithType: UnmanagedDictionary<TKey, TValue>.ContainsKey
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).ContainsKey
-- uid: piine.Memory.UnmanagedDictionary`2.Count
-  name: Count
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Count
-  commentId: P:piine.Memory.UnmanagedDictionary`2.Count
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Count
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Count
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Count
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Count
-- uid: piine.Memory.UnmanagedDictionary`2.Count*
-  name: Count
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Count_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Count
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Count
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Count
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Count
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Count
-- uid: piine.Memory.UnmanagedDictionary`2.Dispose
-  name: Dispose()
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Dispose
-  commentId: M:piine.Memory.UnmanagedDictionary`2.Dispose
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Dispose()
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Dispose()
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Dispose()
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Dispose()
-- uid: piine.Memory.UnmanagedDictionary`2.Dispose(System.Boolean)
-  name: Dispose(Boolean)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Dispose_System_Boolean_
-  commentId: M:piine.Memory.UnmanagedDictionary`2.Dispose(System.Boolean)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Dispose(System.Boolean)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Dispose(System.Boolean)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Dispose(Boolean)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Dispose(Boolean)
-- uid: piine.Memory.UnmanagedDictionary`2.Dispose*
-  name: Dispose
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Dispose_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Dispose
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Dispose
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Dispose
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Dispose
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Dispose
-- uid: piine.Memory.UnmanagedDictionary`2.Finalize
-  name: Finalize()
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Finalize
-  commentId: M:piine.Memory.UnmanagedDictionary`2.Finalize
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Finalize()
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Finalize()
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Finalize()
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Finalize()
-- uid: piine.Memory.UnmanagedDictionary`2.Finalize*
-  name: Finalize
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Finalize_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Finalize
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Finalize
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Finalize
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Finalize
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Finalize
-- uid: piine.Memory.UnmanagedDictionary`2.Item(`0)
-  name: Item[TKey]
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Item__0_
-  commentId: P:piine.Memory.UnmanagedDictionary`2.Item(`0)
-  name.vb: Item(TKey)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Item[TKey]
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Item(TKey)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Item[TKey]
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Item(TKey)
-- uid: piine.Memory.UnmanagedDictionary`2.Item*
-  name: Item
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Item_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Item
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Item
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Item
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Item
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Item
-- uid: piine.Memory.UnmanagedDictionary`2.Remove(`0)
-  name: Remove(TKey)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Remove__0_
-  commentId: M:piine.Memory.UnmanagedDictionary`2.Remove(`0)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Remove(TKey)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Remove(TKey)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Remove(TKey)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Remove(TKey)
-- uid: piine.Memory.UnmanagedDictionary`2.Remove*
-  name: Remove
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_Remove_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.Remove
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.Remove
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).Remove
-  nameWithType: UnmanagedDictionary<TKey, TValue>.Remove
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).Remove
-- uid: piine.Memory.UnmanagedDictionary`2.TryAdd(`0,`1)
-  name: TryAdd(TKey, TValue)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_TryAdd__0__1_
-  commentId: M:piine.Memory.UnmanagedDictionary`2.TryAdd(`0,`1)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.TryAdd(TKey, TValue)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).TryAdd(TKey, TValue)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.TryAdd(TKey, TValue)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).TryAdd(TKey, TValue)
-- uid: piine.Memory.UnmanagedDictionary`2.TryAdd*
-  name: TryAdd
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_TryAdd_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.TryAdd
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.TryAdd
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).TryAdd
-  nameWithType: UnmanagedDictionary<TKey, TValue>.TryAdd
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).TryAdd
-- uid: piine.Memory.UnmanagedDictionary`2.TryGetValue(`0,`1@)
-  name: TryGetValue(TKey, out TValue)
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_TryGetValue__0__1__
-  commentId: M:piine.Memory.UnmanagedDictionary`2.TryGetValue(`0,`1@)
-  name.vb: TryGetValue(TKey, ByRef TValue)
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
-  nameWithType: UnmanagedDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
-- uid: piine.Memory.UnmanagedDictionary`2.TryGetValue*
-  name: TryGetValue
-  href: docs/api/piine.Memory.UnmanagedDictionary-2.html#piine_Memory_UnmanagedDictionary_2_TryGetValue_
-  commentId: Overload:piine.Memory.UnmanagedDictionary`2.TryGetValue
-  isSpec: "True"
-  fullName: piine.Memory.UnmanagedDictionary<TKey, TValue>.TryGetValue
-  fullName.vb: piine.Memory.UnmanagedDictionary(Of TKey, TValue).TryGetValue
-  nameWithType: UnmanagedDictionary<TKey, TValue>.TryGetValue
-  nameWithType.vb: UnmanagedDictionary(Of TKey, TValue).TryGetValue
 - uid: piine.Memory.UnmanagedList`1
   name: UnmanagedList<T>
   href: docs/api/piine.Memory.UnmanagedList-1.html
@@ -7010,144 +6950,12 @@ references:
   fullName.vb: piine.Memory.UnmanagedList(Of T).TrimExcess
   nameWithType: UnmanagedList<T>.TrimExcess
   nameWithType.vb: UnmanagedList(Of T).TrimExcess
-- uid: piine.Memory.Unsafe
-  name: piine.Memory.Unsafe
-  href: docs/api/piine.Memory.Unsafe.html
-  commentId: N:piine.Memory.Unsafe
-  fullName: piine.Memory.Unsafe
-  nameWithType: piine.Memory.Unsafe
-- uid: piine.Memory.Unsafe.IUnsafeObject
-  name: IUnsafeObject
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html
-  commentId: T:piine.Memory.Unsafe.IUnsafeObject
-  fullName: piine.Memory.Unsafe.IUnsafeObject
-  nameWithType: IUnsafeObject
-- uid: piine.Memory.Unsafe.IUnsafeObject.Alloc
-  name: Alloc()
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Alloc
-  commentId: M:piine.Memory.Unsafe.IUnsafeObject.Alloc
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Alloc()
-  nameWithType: IUnsafeObject.Alloc()
-- uid: piine.Memory.Unsafe.IUnsafeObject.Alloc*
-  name: Alloc
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Alloc_
-  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Alloc
-  isSpec: "True"
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Alloc
-  nameWithType: IUnsafeObject.Alloc
-- uid: piine.Memory.Unsafe.IUnsafeObject.Free
-  name: Free()
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Free
-  commentId: M:piine.Memory.Unsafe.IUnsafeObject.Free
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Free()
-  nameWithType: IUnsafeObject.Free()
-- uid: piine.Memory.Unsafe.IUnsafeObject.Free*
-  name: Free
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Free_
-  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Free
-  isSpec: "True"
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Free
-  nameWithType: IUnsafeObject.Free
-- uid: piine.Memory.Unsafe.IUnsafeObject.Size
-  name: Size
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Size
-  commentId: P:piine.Memory.Unsafe.IUnsafeObject.Size
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Size
-  nameWithType: IUnsafeObject.Size
-- uid: piine.Memory.Unsafe.IUnsafeObject.Size*
-  name: Size
-  href: docs/api/piine.Memory.Unsafe.IUnsafeObject.html#piine_Memory_Unsafe_IUnsafeObject_Size_
-  commentId: Overload:piine.Memory.Unsafe.IUnsafeObject.Size
-  isSpec: "True"
-  fullName: piine.Memory.Unsafe.IUnsafeObject.Size
-  nameWithType: IUnsafeObject.Size
-- uid: piine.Piine
-  name: Piine
-  href: docs/api/piine.Piine.html
-  commentId: T:piine.Piine
-  fullName: piine.Piine
-  nameWithType: Piine
-- uid: piine.Procedural
-  name: piine.Procedural
-  href: docs/api/piine.Procedural.html
-  commentId: N:piine.Procedural
-  fullName: piine.Procedural
-  nameWithType: piine.Procedural
-- uid: piine.Procedural.OpenSimplexNoise
-  name: OpenSimplexNoise
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html
-  commentId: T:piine.Procedural.OpenSimplexNoise
-  fullName: piine.Procedural.OpenSimplexNoise
-  nameWithType: OpenSimplexNoise
-- uid: piine.Procedural.OpenSimplexNoise.#ctor(System.Int16[])
-  name: OpenSimplexNoise(Int16[])
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise__ctor_System_Int16___
-  commentId: M:piine.Procedural.OpenSimplexNoise.#ctor(System.Int16[])
-  name.vb: OpenSimplexNoise(Int16())
-  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int16[])
-  fullName.vb: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int16())
-  nameWithType: OpenSimplexNoise.OpenSimplexNoise(Int16[])
-  nameWithType.vb: OpenSimplexNoise.OpenSimplexNoise(Int16())
-- uid: piine.Procedural.OpenSimplexNoise.#ctor(System.Int64)
-  name: OpenSimplexNoise(Int64)
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise__ctor_System_Int64_
-  commentId: M:piine.Procedural.OpenSimplexNoise.#ctor(System.Int64)
-  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise(System.Int64)
-  nameWithType: OpenSimplexNoise.OpenSimplexNoise(Int64)
-- uid: piine.Procedural.OpenSimplexNoise.#ctor*
-  name: OpenSimplexNoise
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise__ctor_
-  commentId: Overload:piine.Procedural.OpenSimplexNoise.#ctor
-  isSpec: "True"
-  fullName: piine.Procedural.OpenSimplexNoise.OpenSimplexNoise
-  nameWithType: OpenSimplexNoise.OpenSimplexNoise
-- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double)
-  name: Evaluate(Double, Double)
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise_Evaluate_System_Double_System_Double_
-  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double)
-  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double)
-  nameWithType: OpenSimplexNoise.Evaluate(Double, Double)
-- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double)
-  name: Evaluate(Double, Double, Double)
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise_Evaluate_System_Double_System_Double_System_Double_
-  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double)
-  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double, System.Double)
-  nameWithType: OpenSimplexNoise.Evaluate(Double, Double, Double)
-- uid: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double,System.Double)
-  name: Evaluate(Double, Double, Double, Double)
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise_Evaluate_System_Double_System_Double_System_Double_System_Double_
-  commentId: M:piine.Procedural.OpenSimplexNoise.Evaluate(System.Double,System.Double,System.Double,System.Double)
-  fullName: piine.Procedural.OpenSimplexNoise.Evaluate(System.Double, System.Double, System.Double, System.Double)
-  nameWithType: OpenSimplexNoise.Evaluate(Double, Double, Double, Double)
-- uid: piine.Procedural.OpenSimplexNoise.Evaluate*
-  name: Evaluate
-  href: docs/api/piine.Procedural.OpenSimplexNoise.html#piine_Procedural_OpenSimplexNoise_Evaluate_
-  commentId: Overload:piine.Procedural.OpenSimplexNoise.Evaluate
-  isSpec: "True"
-  fullName: piine.Procedural.OpenSimplexNoise.Evaluate
-  nameWithType: OpenSimplexNoise.Evaluate
 - uid: piine.Simd
   name: Simd
   href: docs/api/piine.Simd.html
   commentId: T:piine.Simd
   fullName: piine.Simd
   nameWithType: Simd
-- uid: piine.Simd.Sum(System.Span{piine.Int3})
-  name: Sum(Span<Int3>)
-  href: docs/api/piine.Simd.html#piine_Simd_Sum_System_Span_piine_Int3__
-  commentId: M:piine.Simd.Sum(System.Span{piine.Int3})
-  name.vb: Sum(Span(Of Int3))
-  fullName: piine.Simd.Sum(System.Span<piine.Int3>)
-  fullName.vb: piine.Simd.Sum(System.Span(Of piine.Int3))
-  nameWithType: Simd.Sum(Span<Int3>)
-  nameWithType.vb: Simd.Sum(Span(Of Int3))
-- uid: piine.Simd.Sum*
-  name: Sum
-  href: docs/api/piine.Simd.html#piine_Simd_Sum_
-  commentId: Overload:piine.Simd.Sum
-  isSpec: "True"
-  fullName: piine.Simd.Sum
-  nameWithType: Simd.Sum
 - uid: piine.XorShift
   name: XorShift
   href: docs/api/piine.XorShift.html
@@ -7167,6 +6975,12 @@ references:
   isSpec: "True"
   fullName: piine.XorShift.XorShift
   nameWithType: XorShift.XorShift
+- uid: piine.XorShift.Equals(piine.XorShift)
+  name: Equals(XorShift)
+  href: docs/api/piine.XorShift.html#piine_XorShift_Equals_piine_XorShift_
+  commentId: M:piine.XorShift.Equals(piine.XorShift)
+  fullName: piine.XorShift.Equals(piine.XorShift)
+  nameWithType: XorShift.Equals(XorShift)
 - uid: piine.XorShift.Equals(System.Object)
   name: Equals(Object)
   href: docs/api/piine.XorShift.html#piine_XorShift_Equals_System_Object_

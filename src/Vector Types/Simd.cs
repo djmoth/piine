@@ -6,7 +6,7 @@ namespace piine
 {
     public static class Simd
     {
-        public static unsafe Int3 Sum (Span<Int3> vectors)
+        /*public static unsafe Int3 Sum (Span<Int3> vectors)
         {
             throw new NotImplementedException ();
 
@@ -47,8 +47,8 @@ namespace piine
                     wideResult += tempVector;
                 }
 
-                return new IntVector3 (wideResult);*/
+                return new IntVector3 (wideResult);
             }
-        }
+        }*/
     }
 }
