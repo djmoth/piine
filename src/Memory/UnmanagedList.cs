@@ -15,9 +15,8 @@ namespace piine.Memory
         private const float TRIM_EXCESS_IGNORE_THRESHOLD = 0.9f; //TrimExcess will not do anything if the List if filled over this percentage.
 
         private T* array; //Internal pointer to unmanaged memory
-        private int capacity; //Size of unmanaged memory (in sizeof (T))
+        private int capacity; //Size of array (in sizeof (T))
         
-
         /// <summary>
         /// Number of elements in the list
         /// </summary>

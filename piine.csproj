@@ -34,6 +34,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="src\Vector Types\Templates\Type2.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Type2.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="docfx.console" Version="2.45.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -43,6 +51,38 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="src\Vector Types\Templates\Type2.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Type2.tt</DependentUpon>
+    </Compile>
+    <Compile Update="src\Vector Types\Templates\Type3.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Type3.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="src\Vector Types\Templates\Type2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Type2.cs</LastGenOutput>
+    </None>
+    <None Update="src\Vector Types\Templates\Type3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Type3.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Vector Types\Double\" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -1,0 +1,215 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<# (string, string, int)[] types = 
+{ 
+("float", "Float", 4), 
+("double", "Double", 8), 
+("int", "Int", 4), 
+("uint", "UInt", 4), 
+("byte", "Byte", 1), 
+("sbyte", "SByte", 1), 
+("short", "Short", 2), 
+("ushort", "UShort", 2), 
+("long", "Long", 8), 
+("ulong", "ULong", 8) 
+}; #>
+
+using System;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace piine
+{
+	<# foreach ((string dataType, string capitalizedDataType, int memorySize) in types) 
+	{
+	string typeName = capitalizedDataType + "3";
+	string typeName2D = capitalizedDataType + "2";
+
+	int yOffset = memorySize;
+	int zOffset = memorySize * 2;
+
+	string floatType = (dataType != "double" && dataType != "long" && dataType != "ulong") ? "float" : "double";
+	string scalarType = (dataType == "float" || dataType == "double" || dataType == "long" || dataType == "ulong" || dataType == "uint") ? dataType : "int";
+	#>
+
+    [StructLayout (LayoutKind.Explicit, Size = <#=memorySize * 3#>)]
+    public unsafe struct <#=typeName#> : IEquatable<<#=typeName#>>
+    {
+        public const int Size = 3;
+
+        private static readonly <#=typeName#> zero = new <#=typeName#> (0);
+        private static readonly <#=typeName#> one = new <#=typeName#> (1);
+        private static readonly <#=typeName#> unitX = new <#=typeName#> (1, 0, 0);
+        private static readonly <#=typeName#> unitY = new <#=typeName#> (0, 1, 0);
+        private static readonly <#=typeName#> unitZ = new <#=typeName#> (0, 0, 1);
+
+        public static ref readonly <#=typeName#> Zero => ref zero;
+        public static ref readonly <#=typeName#> One => ref one;
+        public static ref readonly <#=typeName#> UnitX => ref unitX;
+        public static ref readonly <#=typeName#> UnitY => ref unitY;
+        public static ref readonly <#=typeName#> UnitZ => ref unitZ;
+
+        [FieldOffset (0)]
+        private fixed <#=dataType#> components[Size];
+
+        [FieldOffset (0)]
+        public <#=dataType#> x;
+        [FieldOffset (<#=yOffset#>)]
+        public <#=dataType#> y;
+        [FieldOffset (<#=zOffset#>)]
+        public <#=dataType#> z;
+
+        public <#=typeName2D#> XY => new <#=typeName2D#> (x, y);
+        public <#=typeName2D#> XZ => new <#=typeName2D#> (x, z);
+        public <#=typeName2D#> YZ => new <#=typeName2D#> (y, z);
+
+        public <#=typeName#> (<#=dataType#> x, <#=dataType#> y, <#=dataType#> z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public <#=typeName#> (<#=dataType#> all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
+        public <#=dataType#> this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+
+                return components[index];
+            }
+            set
+            {
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-2, index was " + index);
+
+                components[index] = value;
+            }
+        }
+
+        public <#=dataType#> GetUnsafe (int index) => components[index];
+
+        public void SetUnsafe (int index, <#=dataType#> value) => components[index] = value;
+
+        public static <#=typeName#> Normalize (<#=typeName#> v)
+        {
+            if (v == Zero)
+                return Zero;
+
+            <#=floatType#> oldMagnitude = v.Length ();
+            v.x = (<#=dataType#>)(v.x / oldMagnitude);
+            v.y = (<#=dataType#>)(v.y / oldMagnitude);
+            v.z = (<#=dataType#>)(v.z / oldMagnitude);
+
+            return v;
+        }
+        public static <#=typeName#> Absolute (<#=typeName#> v) => new <#=typeName#> ((<#=dataType#>)Math.Abs ((<#=floatType#>)v.x), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.y), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.z));
+
+        public static <#=floatType#> Distance (<#=typeName#> a, <#=typeName#> b) => (a - b).Length ();
+
+        public static <#=typeName#> Cross (<#=typeName#> a, <#=typeName#> b)
+        {
+            <#=typeName#> r = new <#=typeName#> ();
+            r.x = (<#=dataType#>)(a.y * b.z - a.z * b.y);
+            r.y = (<#=dataType#>)(a.x * b.z - a.z * b.x);
+            r.z = (<#=dataType#>)(a.y * b.x - a.x * b.y);
+            return r;
+        }
+
+        public static <#=floatType#> Dot (<#=typeName#> a, <#=typeName#> b) => a.x * b.x + a.y * b.y + a.z * b.z;
+
+		public <#=scalarType#> Sum () => x + y + z;
+
+		public <#=scalarType#> Volume () => x * y * z;
+
+		public <#=floatType#> Length () => (<#=floatType#>)Math.Sqrt (LengthSquared ());
+
+        public <#=floatType#> LengthSquared () => ((<#=floatType#>)x * x) + ((<#=floatType#>)y * y) + ((<#=floatType#>)z * z);
+
+		public bool Contains (<#=dataType#> value) => x == value || y == value || z == value;
+
+        public static explicit operator Vector3 (<#=typeName#> v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator <#=typeName#> (Vector3 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y, (<#=dataType#>)v.Z);
+
+        public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y, <#=dataType#> z) v) => new <#=typeName#> (v.x, v.y, v.z);
+
+        public static implicit operator (<#=dataType#>, <#=dataType#>, <#=dataType#>) (<#=typeName#> v) => (v.x, v.y, v.z);
+
+        public static bool operator == (<#=typeName#> a, <#=typeName#> b) => a.x == b.x && a.y == b.y && a.z == b.z;
+
+        public static bool operator != (<#=typeName#> a, <#=typeName#> b) => a.x != b.x || a.y != b.y || a.z != b.z;
+
+        public unsafe static <#=typeName#> operator + (<#=typeName#> a, <#=typeName#> b) => new <#=typeName#> ((<#=dataType#>)(a.x + b.x), (<#=dataType#>)(a.y + b.y), (<#=dataType#>)(a.z + b.z));
+
+        public static <#=typeName#> operator - (<#=typeName#> a, <#=typeName#> b) => new <#=typeName#> ((<#=dataType#>)(a.x - b.x), (<#=dataType#>)(a.y - b.y), (<#=dataType#>)(a.z - b.z));
+
+		<# if (!new string[] { "byte", "ushort", "uint", "ulong" }.Contains (dataType)) { #>
+public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((<#=dataType#>)-v.x, (<#=dataType#>)-v.y, (<#=dataType#>)-v.z);
+		<# } #>
+
+        public static <#=typeName#> operator * (<#=typeName#> a, <#=floatType#> b) => new <#=typeName#> ((<#=dataType#>)(a.x * b), (<#=dataType#>)(a.y * b), (<#=dataType#>)(a.z * b));
+
+        public static <#=typeName#> operator / (<#=typeName#> a, <#=floatType#> b) => new <#=typeName#> ((<#=dataType#>)(a.x / b), (<#=dataType#>)(a.y / b), (<#=dataType#>)(a.z / b));
+
+        public static bool operator > (<#=typeName#> a, <#=typeName#> b) => a.x > b.x && a.y > b.y && a.z > b.z;
+
+        public static bool operator < (<#=typeName#> a, <#=typeName#> b) => a.x < b.x && a.y < b.y && a.z < b.z;
+
+        public static bool operator >= (<#=typeName#> a, <#=typeName#> b) => a.x >= b.x && a.y >= b.y && a.z >= b.z;
+
+        public static bool operator <= (<#=typeName#> a, <#=typeName#> b) => a.x <= b.x && a.y <= b.y && a.z <= b.z;
+
+		public void Deconstruct (out <#=dataType#> x, out <#=dataType#> y, out <#=dataType#> z)
+		{
+			x = this.x;
+			y = this.y;
+			z = this.z;
+		}
+
+        public override string ToString () => "(" + x + ", " + y + ", " + z + ")";
+
+        public bool Equals (<#=typeName#> other) => this == other;
+
+        public override bool Equals (object obj)
+        {
+            <#=typeName#>? v = obj as <#=typeName#>?;
+
+            if (v != null)
+                return v == this;
+            else
+                return false;
+        }
+
+		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
+
+		//Conversion to other vectors
+		<# foreach ((string otherDataType, string otherCapitalizedDataType, int otherMemorySize) in types) 
+		{
+			if (otherDataType.Equals (dataType))
+				continue;
+
+			string otherTypeName = otherCapitalizedDataType + "3";
+			string conversion = (otherMemorySize < memorySize ? "implicit" : "explicit");
+		#>
+
+		//<#=otherTypeName#>
+		public static <#=conversion#> operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y, (<#=dataType#>)v.z);
+
+<# } #>
+	}
+	<# } #>
+}

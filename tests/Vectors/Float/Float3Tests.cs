@@ -62,6 +62,8 @@ namespace Tests
 
             TestFloat3Math ();
             TestVector3Math ();
+
+            //(float x, float y, float z) = new Float3 (2, 3, 4);
             
 
             double float3Time = TestFloat3Math ();
@@ -74,6 +76,9 @@ namespace Tests
         private unsafe double TestFloat3Math ()
         {
             const int fLength = 1_000;
+
+            Double3 d = new Double3 (2, 4, 5);
+            Float3 v = (Float3)d;
 
             Float3* f = stackalloc Float3[fLength];
 
