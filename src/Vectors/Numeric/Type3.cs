@@ -1,4 +1,4 @@
-﻿
+﻿ 
 using System;
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 namespace piine
 {
 	
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 12)]
     public unsafe struct Float3 : IEquatable<Float3>
     {
@@ -24,6 +25,7 @@ namespace piine
         public static ref readonly Float3 UnitY => ref unitY;
         public static ref readonly Float3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed float components[Size];
 
@@ -33,26 +35,13 @@ namespace piine
         public float y;
         [FieldOffset (8)]
         public float z;
+		#pragma warning restore CA1051
 
         public Float2 XY => new Float2 (x, y);
         public Float2 XZ => new Float2 (x, z);
         public Float2 YZ => new Float2 (y, z);
 
-        public Float3 (float x, float y, float z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Float3 (float all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public float this[int index]
+		public float this[int index]
         {
             get
             {
@@ -70,22 +59,36 @@ namespace piine
             }
         }
 
+        public Float3 (float x, float y, float z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Float3 (float all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public float GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, float value) => components[index] = value;
 
         public static Float3 Normalize (Float3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (float)(v.x / oldMagnitude);
-            v.y = (float)(v.y / oldMagnitude);
-            v.z = (float)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Float3 Absolute (Float3 v) => new Float3 ((float)Math.Abs ((float)v.x), (float)Math.Abs ((float)v.y), (float)Math.Abs ((float)v.z));
 
         public static float Distance (Float3 a, Float3 b) => (a - b).Length ();
@@ -101,6 +104,8 @@ namespace piine
 
         public static float Dot (Float3 a, Float3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Float3 Reverse (Float3 v) => new Float3 (v.z, v.y, v.x);
+
 		public float Sum () => x + y + z;
 
 		public float Volume () => x * y * z;
@@ -109,15 +114,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (float value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Float3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Float3 (Vector3 v) => new Float3 ((float)v.X, (float)v.Y, (float)v.Z);
-
-        public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
-
-        public static implicit operator (float, float, float) (Float3 v) => (v.x, v.y, v.z);
+		public bool Contains (float value) => x == value || y == value || z == value;	
 
         public static bool operator == (Float3 a, Float3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -165,44 +162,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Float3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Float3 (Vector3 v) => new Float3 ((float)v.X, (float)v.Y, (float)v.Z);
+
+		//Tuple
+        public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
+
+        public static implicit operator (float, float, float) (Float3 v) => (v.x, v.y, v.z);
+
 		
 		//Double3
 		public static explicit operator Float3 (Double3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
-
 		//Int3
 		public static explicit operator Float3 (Int3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
-
 
 		//UInt3
 		public static explicit operator Float3 (UInt3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
-
 		//Byte3
 		public static implicit operator Float3 (Byte3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
-
 
 		//SByte3
 		public static implicit operator Float3 (SByte3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
-
 		//Short3
 		public static implicit operator Float3 (Short3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
-
 
 		//UShort3
 		public static implicit operator Float3 (UShort3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
-
 		//Long3
 		public static explicit operator Float3 (Long3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
-
 		//ULong3
 		public static explicit operator Float3 (ULong3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
-
 	}
-	
+
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 24)]
     public unsafe struct Double3 : IEquatable<Double3>
     {
@@ -220,6 +219,7 @@ namespace piine
         public static ref readonly Double3 UnitY => ref unitY;
         public static ref readonly Double3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed double components[Size];
 
@@ -229,26 +229,13 @@ namespace piine
         public double y;
         [FieldOffset (16)]
         public double z;
+		#pragma warning restore CA1051
 
         public Double2 XY => new Double2 (x, y);
         public Double2 XZ => new Double2 (x, z);
         public Double2 YZ => new Double2 (y, z);
 
-        public Double3 (double x, double y, double z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Double3 (double all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public double this[int index]
+		public double this[int index]
         {
             get
             {
@@ -266,22 +253,36 @@ namespace piine
             }
         }
 
+        public Double3 (double x, double y, double z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Double3 (double all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public double GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, double value) => components[index] = value;
 
         public static Double3 Normalize (Double3 v)
         {
-            if (v == Zero)
-                return Zero;
+            double length = v.LengthSquared ();
 
-            double oldMagnitude = v.Length ();
-            v.x = (double)(v.x / oldMagnitude);
-            v.y = (double)(v.y / oldMagnitude);
-            v.z = (double)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (double)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Double3 Absolute (Double3 v) => new Double3 ((double)Math.Abs ((double)v.x), (double)Math.Abs ((double)v.y), (double)Math.Abs ((double)v.z));
 
         public static double Distance (Double3 a, Double3 b) => (a - b).Length ();
@@ -297,6 +298,8 @@ namespace piine
 
         public static double Dot (Double3 a, Double3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Double3 Reverse (Double3 v) => new Double3 (v.z, v.y, v.x);
+
 		public double Sum () => x + y + z;
 
 		public double Volume () => x * y * z;
@@ -305,15 +308,7 @@ namespace piine
 
         public double LengthSquared () => ((double)x * x) + ((double)y * y) + ((double)z * z);
 
-		public bool Contains (double value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Double3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Double3 (Vector3 v) => new Double3 ((double)v.X, (double)v.Y, (double)v.Z);
-
-        public static implicit operator Double3 ((double x, double y, double z) v) => new Double3 (v.x, v.y, v.z);
-
-        public static implicit operator (double, double, double) (Double3 v) => (v.x, v.y, v.z);
+		public bool Contains (double value) => x == value || y == value || z == value;	
 
         public static bool operator == (Double3 a, Double3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -361,44 +356,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Double3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Double3 (Vector3 v) => new Double3 ((double)v.X, (double)v.Y, (double)v.Z);
+
+		//Tuple
+        public static implicit operator Double3 ((double x, double y, double z) v) => new Double3 (v.x, v.y, v.z);
+
+        public static implicit operator (double, double, double) (Double3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static implicit operator Double3 (Float3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
-
 		//Int3
 		public static implicit operator Double3 (Int3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
-
 
 		//UInt3
 		public static implicit operator Double3 (UInt3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
-
 		//Byte3
 		public static implicit operator Double3 (Byte3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
-
 
 		//SByte3
 		public static implicit operator Double3 (SByte3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
-
 		//Short3
 		public static implicit operator Double3 (Short3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
-
 
 		//UShort3
 		public static implicit operator Double3 (UShort3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
-
 		//Long3
 		public static explicit operator Double3 (Long3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
-
 		//ULong3
 		public static explicit operator Double3 (ULong3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
-
 	}
-	
+
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 12)]
     public unsafe struct Int3 : IEquatable<Int3>
     {
@@ -416,6 +413,7 @@ namespace piine
         public static ref readonly Int3 UnitY => ref unitY;
         public static ref readonly Int3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed int components[Size];
 
@@ -425,26 +423,13 @@ namespace piine
         public int y;
         [FieldOffset (8)]
         public int z;
+		#pragma warning restore CA1051
 
         public Int2 XY => new Int2 (x, y);
         public Int2 XZ => new Int2 (x, z);
         public Int2 YZ => new Int2 (y, z);
 
-        public Int3 (int x, int y, int z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Int3 (int all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public int this[int index]
+		public int this[int index]
         {
             get
             {
@@ -462,22 +447,36 @@ namespace piine
             }
         }
 
+        public Int3 (int x, int y, int z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Int3 (int all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public int GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, int value) => components[index] = value;
 
         public static Int3 Normalize (Int3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (int)(v.x / oldMagnitude);
-            v.y = (int)(v.y / oldMagnitude);
-            v.z = (int)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Int3 Absolute (Int3 v) => new Int3 ((int)Math.Abs ((float)v.x), (int)Math.Abs ((float)v.y), (int)Math.Abs ((float)v.z));
 
         public static float Distance (Int3 a, Int3 b) => (a - b).Length ();
@@ -493,6 +492,8 @@ namespace piine
 
         public static float Dot (Int3 a, Int3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Int3 Reverse (Int3 v) => new Int3 (v.z, v.y, v.x);
+
 		public int Sum () => x + y + z;
 
 		public int Volume () => x * y * z;
@@ -501,15 +502,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (int value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Int3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
-
-        public static implicit operator Int3 ((int x, int y, int z) v) => new Int3 (v.x, v.y, v.z);
-
-        public static implicit operator (int, int, int) (Int3 v) => (v.x, v.y, v.z);
+		public bool Contains (int value) => x == value || y == value || z == value;	
 
         public static bool operator == (Int3 a, Int3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -557,44 +550,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Int3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
+
+		//Tuple
+        public static implicit operator Int3 ((int x, int y, int z) v) => new Int3 (v.x, v.y, v.z);
+
+        public static implicit operator (int, int, int) (Int3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator Int3 (Float3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
-
 		//Double3
 		public static explicit operator Int3 (Double3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
-
 
 		//UInt3
 		public static explicit operator Int3 (UInt3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
-
 		//Byte3
 		public static implicit operator Int3 (Byte3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
-
 
 		//SByte3
 		public static implicit operator Int3 (SByte3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
-
 		//Short3
 		public static implicit operator Int3 (Short3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
-
 
 		//UShort3
 		public static implicit operator Int3 (UShort3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
-
 		//Long3
 		public static explicit operator Int3 (Long3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
 
-
 		//ULong3
 		public static explicit operator Int3 (ULong3 v) => new Int3 ((int)v.x, (int)v.y, (int)v.z);
-
 	}
-	
+
+	[CLSCompliant (false)]
     [StructLayout (LayoutKind.Explicit, Size = 12)]
     public unsafe struct UInt3 : IEquatable<UInt3>
     {
@@ -612,6 +607,7 @@ namespace piine
         public static ref readonly UInt3 UnitY => ref unitY;
         public static ref readonly UInt3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed uint components[Size];
 
@@ -621,26 +617,13 @@ namespace piine
         public uint y;
         [FieldOffset (8)]
         public uint z;
+		#pragma warning restore CA1051
 
         public UInt2 XY => new UInt2 (x, y);
         public UInt2 XZ => new UInt2 (x, z);
         public UInt2 YZ => new UInt2 (y, z);
 
-        public UInt3 (uint x, uint y, uint z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public UInt3 (uint all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public uint this[int index]
+		public uint this[int index]
         {
             get
             {
@@ -658,22 +641,36 @@ namespace piine
             }
         }
 
+        public UInt3 (uint x, uint y, uint z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public UInt3 (uint all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public uint GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, uint value) => components[index] = value;
 
         public static UInt3 Normalize (UInt3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (uint)(v.x / oldMagnitude);
-            v.y = (uint)(v.y / oldMagnitude);
-            v.z = (uint)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static UInt3 Absolute (UInt3 v) => new UInt3 ((uint)Math.Abs ((float)v.x), (uint)Math.Abs ((float)v.y), (uint)Math.Abs ((float)v.z));
 
         public static float Distance (UInt3 a, UInt3 b) => (a - b).Length ();
@@ -689,6 +686,8 @@ namespace piine
 
         public static float Dot (UInt3 a, UInt3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static UInt3 Reverse (UInt3 v) => new UInt3 (v.z, v.y, v.x);
+
 		public uint Sum () => x + y + z;
 
 		public uint Volume () => x * y * z;
@@ -697,15 +696,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (uint value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (UInt3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator UInt3 (Vector3 v) => new UInt3 ((uint)v.X, (uint)v.Y, (uint)v.Z);
-
-        public static implicit operator UInt3 ((uint x, uint y, uint z) v) => new UInt3 (v.x, v.y, v.z);
-
-        public static implicit operator (uint, uint, uint) (UInt3 v) => (v.x, v.y, v.z);
+		public bool Contains (uint value) => x == value || y == value || z == value;	
 
         public static bool operator == (UInt3 a, UInt3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -752,44 +743,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (UInt3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator UInt3 (Vector3 v) => new UInt3 ((uint)v.X, (uint)v.Y, (uint)v.Z);
+
+		//Tuple
+        public static implicit operator UInt3 ((uint x, uint y, uint z) v) => new UInt3 (v.x, v.y, v.z);
+
+        public static implicit operator (uint, uint, uint) (UInt3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator UInt3 (Float3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
 
-
 		//Double3
 		public static explicit operator UInt3 (Double3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
-
 
 		//Int3
 		public static explicit operator UInt3 (Int3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
 
-
 		//Byte3
 		public static implicit operator UInt3 (Byte3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
-
 
 		//SByte3
 		public static implicit operator UInt3 (SByte3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
 
-
 		//Short3
 		public static implicit operator UInt3 (Short3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
-
 
 		//UShort3
 		public static implicit operator UInt3 (UShort3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
 
-
 		//Long3
 		public static explicit operator UInt3 (Long3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
 
-
 		//ULong3
 		public static explicit operator UInt3 (ULong3 v) => new UInt3 ((uint)v.x, (uint)v.y, (uint)v.z);
-
 	}
-	
+
+	[CLSCompliant (false)]
     [StructLayout (LayoutKind.Explicit, Size = 3)]
     public unsafe struct Byte3 : IEquatable<Byte3>
     {
@@ -807,6 +800,7 @@ namespace piine
         public static ref readonly Byte3 UnitY => ref unitY;
         public static ref readonly Byte3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed byte components[Size];
 
@@ -816,26 +810,13 @@ namespace piine
         public byte y;
         [FieldOffset (2)]
         public byte z;
+		#pragma warning restore CA1051
 
         public Byte2 XY => new Byte2 (x, y);
         public Byte2 XZ => new Byte2 (x, z);
         public Byte2 YZ => new Byte2 (y, z);
 
-        public Byte3 (byte x, byte y, byte z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Byte3 (byte all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public byte this[int index]
+		public byte this[int index]
         {
             get
             {
@@ -853,22 +834,36 @@ namespace piine
             }
         }
 
+        public Byte3 (byte x, byte y, byte z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Byte3 (byte all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public byte GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, byte value) => components[index] = value;
 
         public static Byte3 Normalize (Byte3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (byte)(v.x / oldMagnitude);
-            v.y = (byte)(v.y / oldMagnitude);
-            v.z = (byte)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Byte3 Absolute (Byte3 v) => new Byte3 ((byte)Math.Abs ((float)v.x), (byte)Math.Abs ((float)v.y), (byte)Math.Abs ((float)v.z));
 
         public static float Distance (Byte3 a, Byte3 b) => (a - b).Length ();
@@ -884,6 +879,8 @@ namespace piine
 
         public static float Dot (Byte3 a, Byte3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Byte3 Reverse (Byte3 v) => new Byte3 (v.z, v.y, v.x);
+
 		public int Sum () => x + y + z;
 
 		public int Volume () => x * y * z;
@@ -892,15 +889,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (byte value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Byte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Byte3 (Vector3 v) => new Byte3 ((byte)v.X, (byte)v.Y, (byte)v.Z);
-
-        public static implicit operator Byte3 ((byte x, byte y, byte z) v) => new Byte3 (v.x, v.y, v.z);
-
-        public static implicit operator (byte, byte, byte) (Byte3 v) => (v.x, v.y, v.z);
+		public bool Contains (byte value) => x == value || y == value || z == value;	
 
         public static bool operator == (Byte3 a, Byte3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -947,44 +936,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Byte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Byte3 (Vector3 v) => new Byte3 ((byte)v.X, (byte)v.Y, (byte)v.Z);
+
+		//Tuple
+        public static implicit operator Byte3 ((byte x, byte y, byte z) v) => new Byte3 (v.x, v.y, v.z);
+
+        public static implicit operator (byte, byte, byte) (Byte3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator Byte3 (Float3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
 
-
 		//Double3
 		public static explicit operator Byte3 (Double3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
-
 
 		//Int3
 		public static explicit operator Byte3 (Int3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
 
-
 		//UInt3
 		public static explicit operator Byte3 (UInt3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
-
 
 		//SByte3
 		public static explicit operator Byte3 (SByte3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
 
-
 		//Short3
 		public static explicit operator Byte3 (Short3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
-
 
 		//UShort3
 		public static explicit operator Byte3 (UShort3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
 
-
 		//Long3
 		public static explicit operator Byte3 (Long3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
 
-
 		//ULong3
 		public static explicit operator Byte3 (ULong3 v) => new Byte3 ((byte)v.x, (byte)v.y, (byte)v.z);
-
 	}
-	
+
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 3)]
     public unsafe struct SByte3 : IEquatable<SByte3>
     {
@@ -1002,6 +993,7 @@ namespace piine
         public static ref readonly SByte3 UnitY => ref unitY;
         public static ref readonly SByte3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed sbyte components[Size];
 
@@ -1011,26 +1003,13 @@ namespace piine
         public sbyte y;
         [FieldOffset (2)]
         public sbyte z;
+		#pragma warning restore CA1051
 
         public SByte2 XY => new SByte2 (x, y);
         public SByte2 XZ => new SByte2 (x, z);
         public SByte2 YZ => new SByte2 (y, z);
 
-        public SByte3 (sbyte x, sbyte y, sbyte z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public SByte3 (sbyte all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public sbyte this[int index]
+		public sbyte this[int index]
         {
             get
             {
@@ -1048,22 +1027,36 @@ namespace piine
             }
         }
 
+        public SByte3 (sbyte x, sbyte y, sbyte z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public SByte3 (sbyte all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public sbyte GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, sbyte value) => components[index] = value;
 
         public static SByte3 Normalize (SByte3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (sbyte)(v.x / oldMagnitude);
-            v.y = (sbyte)(v.y / oldMagnitude);
-            v.z = (sbyte)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static SByte3 Absolute (SByte3 v) => new SByte3 ((sbyte)Math.Abs ((float)v.x), (sbyte)Math.Abs ((float)v.y), (sbyte)Math.Abs ((float)v.z));
 
         public static float Distance (SByte3 a, SByte3 b) => (a - b).Length ();
@@ -1079,6 +1072,8 @@ namespace piine
 
         public static float Dot (SByte3 a, SByte3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static SByte3 Reverse (SByte3 v) => new SByte3 (v.z, v.y, v.x);
+
 		public int Sum () => x + y + z;
 
 		public int Volume () => x * y * z;
@@ -1087,15 +1082,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (sbyte value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (SByte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator SByte3 (Vector3 v) => new SByte3 ((sbyte)v.X, (sbyte)v.Y, (sbyte)v.Z);
-
-        public static implicit operator SByte3 ((sbyte x, sbyte y, sbyte z) v) => new SByte3 (v.x, v.y, v.z);
-
-        public static implicit operator (sbyte, sbyte, sbyte) (SByte3 v) => (v.x, v.y, v.z);
+		public bool Contains (sbyte value) => x == value || y == value || z == value;	
 
         public static bool operator == (SByte3 a, SByte3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -1143,44 +1130,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (SByte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator SByte3 (Vector3 v) => new SByte3 ((sbyte)v.X, (sbyte)v.Y, (sbyte)v.Z);
+
+		//Tuple
+        public static implicit operator SByte3 ((sbyte x, sbyte y, sbyte z) v) => new SByte3 (v.x, v.y, v.z);
+
+        public static implicit operator (sbyte, sbyte, sbyte) (SByte3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator SByte3 (Float3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
 
-
 		//Double3
 		public static explicit operator SByte3 (Double3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
-
 
 		//Int3
 		public static explicit operator SByte3 (Int3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
 
-
 		//UInt3
 		public static explicit operator SByte3 (UInt3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
-
 
 		//Byte3
 		public static explicit operator SByte3 (Byte3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
 
-
 		//Short3
 		public static explicit operator SByte3 (Short3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
-
 
 		//UShort3
 		public static explicit operator SByte3 (UShort3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
 
-
 		//Long3
 		public static explicit operator SByte3 (Long3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
 
-
 		//ULong3
 		public static explicit operator SByte3 (ULong3 v) => new SByte3 ((sbyte)v.x, (sbyte)v.y, (sbyte)v.z);
-
 	}
-	
+
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 6)]
     public unsafe struct Short3 : IEquatable<Short3>
     {
@@ -1198,6 +1187,7 @@ namespace piine
         public static ref readonly Short3 UnitY => ref unitY;
         public static ref readonly Short3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed short components[Size];
 
@@ -1207,26 +1197,13 @@ namespace piine
         public short y;
         [FieldOffset (4)]
         public short z;
+		#pragma warning restore CA1051
 
         public Short2 XY => new Short2 (x, y);
         public Short2 XZ => new Short2 (x, z);
         public Short2 YZ => new Short2 (y, z);
 
-        public Short3 (short x, short y, short z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Short3 (short all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public short this[int index]
+		public short this[int index]
         {
             get
             {
@@ -1244,22 +1221,36 @@ namespace piine
             }
         }
 
+        public Short3 (short x, short y, short z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Short3 (short all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public short GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, short value) => components[index] = value;
 
         public static Short3 Normalize (Short3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (short)(v.x / oldMagnitude);
-            v.y = (short)(v.y / oldMagnitude);
-            v.z = (short)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Short3 Absolute (Short3 v) => new Short3 ((short)Math.Abs ((float)v.x), (short)Math.Abs ((float)v.y), (short)Math.Abs ((float)v.z));
 
         public static float Distance (Short3 a, Short3 b) => (a - b).Length ();
@@ -1275,6 +1266,8 @@ namespace piine
 
         public static float Dot (Short3 a, Short3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Short3 Reverse (Short3 v) => new Short3 (v.z, v.y, v.x);
+
 		public int Sum () => x + y + z;
 
 		public int Volume () => x * y * z;
@@ -1283,15 +1276,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (short value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Short3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Short3 (Vector3 v) => new Short3 ((short)v.X, (short)v.Y, (short)v.Z);
-
-        public static implicit operator Short3 ((short x, short y, short z) v) => new Short3 (v.x, v.y, v.z);
-
-        public static implicit operator (short, short, short) (Short3 v) => (v.x, v.y, v.z);
+		public bool Contains (short value) => x == value || y == value || z == value;	
 
         public static bool operator == (Short3 a, Short3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -1339,44 +1324,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Short3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Short3 (Vector3 v) => new Short3 ((short)v.X, (short)v.Y, (short)v.Z);
+
+		//Tuple
+        public static implicit operator Short3 ((short x, short y, short z) v) => new Short3 (v.x, v.y, v.z);
+
+        public static implicit operator (short, short, short) (Short3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator Short3 (Float3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
 
-
 		//Double3
 		public static explicit operator Short3 (Double3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
-
 
 		//Int3
 		public static explicit operator Short3 (Int3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
 
-
 		//UInt3
 		public static explicit operator Short3 (UInt3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
-
 
 		//Byte3
 		public static implicit operator Short3 (Byte3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
 
-
 		//SByte3
 		public static implicit operator Short3 (SByte3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
-
 
 		//UShort3
 		public static explicit operator Short3 (UShort3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
 
-
 		//Long3
 		public static explicit operator Short3 (Long3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
 
-
 		//ULong3
 		public static explicit operator Short3 (ULong3 v) => new Short3 ((short)v.x, (short)v.y, (short)v.z);
-
 	}
-	
+
+	[CLSCompliant (false)]
     [StructLayout (LayoutKind.Explicit, Size = 6)]
     public unsafe struct UShort3 : IEquatable<UShort3>
     {
@@ -1394,6 +1381,7 @@ namespace piine
         public static ref readonly UShort3 UnitY => ref unitY;
         public static ref readonly UShort3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed ushort components[Size];
 
@@ -1403,26 +1391,13 @@ namespace piine
         public ushort y;
         [FieldOffset (4)]
         public ushort z;
+		#pragma warning restore CA1051
 
         public UShort2 XY => new UShort2 (x, y);
         public UShort2 XZ => new UShort2 (x, z);
         public UShort2 YZ => new UShort2 (y, z);
 
-        public UShort3 (ushort x, ushort y, ushort z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public UShort3 (ushort all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public ushort this[int index]
+		public ushort this[int index]
         {
             get
             {
@@ -1440,22 +1415,36 @@ namespace piine
             }
         }
 
+        public UShort3 (ushort x, ushort y, ushort z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public UShort3 (ushort all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public ushort GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, ushort value) => components[index] = value;
 
         public static UShort3 Normalize (UShort3 v)
         {
-            if (v == Zero)
-                return Zero;
+            float length = v.LengthSquared ();
 
-            float oldMagnitude = v.Length ();
-            v.x = (ushort)(v.x / oldMagnitude);
-            v.y = (ushort)(v.y / oldMagnitude);
-            v.z = (ushort)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (float)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static UShort3 Absolute (UShort3 v) => new UShort3 ((ushort)Math.Abs ((float)v.x), (ushort)Math.Abs ((float)v.y), (ushort)Math.Abs ((float)v.z));
 
         public static float Distance (UShort3 a, UShort3 b) => (a - b).Length ();
@@ -1471,6 +1460,8 @@ namespace piine
 
         public static float Dot (UShort3 a, UShort3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static UShort3 Reverse (UShort3 v) => new UShort3 (v.z, v.y, v.x);
+
 		public int Sum () => x + y + z;
 
 		public int Volume () => x * y * z;
@@ -1479,15 +1470,7 @@ namespace piine
 
         public float LengthSquared () => ((float)x * x) + ((float)y * y) + ((float)z * z);
 
-		public bool Contains (ushort value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (UShort3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator UShort3 (Vector3 v) => new UShort3 ((ushort)v.X, (ushort)v.Y, (ushort)v.Z);
-
-        public static implicit operator UShort3 ((ushort x, ushort y, ushort z) v) => new UShort3 (v.x, v.y, v.z);
-
-        public static implicit operator (ushort, ushort, ushort) (UShort3 v) => (v.x, v.y, v.z);
+		public bool Contains (ushort value) => x == value || y == value || z == value;	
 
         public static bool operator == (UShort3 a, UShort3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -1534,44 +1517,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (UShort3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator UShort3 (Vector3 v) => new UShort3 ((ushort)v.X, (ushort)v.Y, (ushort)v.Z);
+
+		//Tuple
+        public static implicit operator UShort3 ((ushort x, ushort y, ushort z) v) => new UShort3 (v.x, v.y, v.z);
+
+        public static implicit operator (ushort, ushort, ushort) (UShort3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static explicit operator UShort3 (Float3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
 
-
 		//Double3
 		public static explicit operator UShort3 (Double3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
-
 
 		//Int3
 		public static explicit operator UShort3 (Int3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
 
-
 		//UInt3
 		public static explicit operator UShort3 (UInt3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
-
 
 		//Byte3
 		public static implicit operator UShort3 (Byte3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
 
-
 		//SByte3
 		public static implicit operator UShort3 (SByte3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
-
 
 		//Short3
 		public static explicit operator UShort3 (Short3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
 
-
 		//Long3
 		public static explicit operator UShort3 (Long3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
 
-
 		//ULong3
 		public static explicit operator UShort3 (ULong3 v) => new UShort3 ((ushort)v.x, (ushort)v.y, (ushort)v.z);
-
 	}
-	
+
+	[CLSCompliant (true)]
     [StructLayout (LayoutKind.Explicit, Size = 24)]
     public unsafe struct Long3 : IEquatable<Long3>
     {
@@ -1589,6 +1574,7 @@ namespace piine
         public static ref readonly Long3 UnitY => ref unitY;
         public static ref readonly Long3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed long components[Size];
 
@@ -1598,26 +1584,13 @@ namespace piine
         public long y;
         [FieldOffset (16)]
         public long z;
+		#pragma warning restore CA1051
 
         public Long2 XY => new Long2 (x, y);
         public Long2 XZ => new Long2 (x, z);
         public Long2 YZ => new Long2 (y, z);
 
-        public Long3 (long x, long y, long z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public Long3 (long all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public long this[int index]
+		public long this[int index]
         {
             get
             {
@@ -1635,22 +1608,36 @@ namespace piine
             }
         }
 
+        public Long3 (long x, long y, long z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public Long3 (long all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public long GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, long value) => components[index] = value;
 
         public static Long3 Normalize (Long3 v)
         {
-            if (v == Zero)
-                return Zero;
+            double length = v.LengthSquared ();
 
-            double oldMagnitude = v.Length ();
-            v.x = (long)(v.x / oldMagnitude);
-            v.y = (long)(v.y / oldMagnitude);
-            v.z = (long)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (double)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static Long3 Absolute (Long3 v) => new Long3 ((long)Math.Abs ((double)v.x), (long)Math.Abs ((double)v.y), (long)Math.Abs ((double)v.z));
 
         public static double Distance (Long3 a, Long3 b) => (a - b).Length ();
@@ -1666,6 +1653,8 @@ namespace piine
 
         public static double Dot (Long3 a, Long3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static Long3 Reverse (Long3 v) => new Long3 (v.z, v.y, v.x);
+
 		public long Sum () => x + y + z;
 
 		public long Volume () => x * y * z;
@@ -1674,15 +1663,7 @@ namespace piine
 
         public double LengthSquared () => ((double)x * x) + ((double)y * y) + ((double)z * z);
 
-		public bool Contains (long value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (Long3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Long3 (Vector3 v) => new Long3 ((long)v.X, (long)v.Y, (long)v.Z);
-
-        public static implicit operator Long3 ((long x, long y, long z) v) => new Long3 (v.x, v.y, v.z);
-
-        public static implicit operator (long, long, long) (Long3 v) => (v.x, v.y, v.z);
+		public bool Contains (long value) => x == value || y == value || z == value;	
 
         public static bool operator == (Long3 a, Long3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -1730,44 +1711,46 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (Long3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator Long3 (Vector3 v) => new Long3 ((long)v.X, (long)v.Y, (long)v.Z);
+
+		//Tuple
+        public static implicit operator Long3 ((long x, long y, long z) v) => new Long3 (v.x, v.y, v.z);
+
+        public static implicit operator (long, long, long) (Long3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static implicit operator Long3 (Float3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
 
-
 		//Double3
 		public static explicit operator Long3 (Double3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
-
 
 		//Int3
 		public static implicit operator Long3 (Int3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
 
-
 		//UInt3
 		public static implicit operator Long3 (UInt3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
-
 
 		//Byte3
 		public static implicit operator Long3 (Byte3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
 
-
 		//SByte3
 		public static implicit operator Long3 (SByte3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
-
 
 		//Short3
 		public static implicit operator Long3 (Short3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
 
-
 		//UShort3
 		public static implicit operator Long3 (UShort3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
 
-
 		//ULong3
 		public static explicit operator Long3 (ULong3 v) => new Long3 ((long)v.x, (long)v.y, (long)v.z);
-
 	}
-	
+
+	[CLSCompliant (false)]
     [StructLayout (LayoutKind.Explicit, Size = 24)]
     public unsafe struct ULong3 : IEquatable<ULong3>
     {
@@ -1785,6 +1768,7 @@ namespace piine
         public static ref readonly ULong3 UnitY => ref unitY;
         public static ref readonly ULong3 UnitZ => ref unitZ;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed ulong components[Size];
 
@@ -1794,26 +1778,13 @@ namespace piine
         public ulong y;
         [FieldOffset (16)]
         public ulong z;
+		#pragma warning restore CA1051
 
         public ULong2 XY => new ULong2 (x, y);
         public ULong2 XZ => new ULong2 (x, z);
         public ULong2 YZ => new ULong2 (y, z);
 
-        public ULong3 (ulong x, ulong y, ulong z)
-        {
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        public ULong3 (ulong all)
-        {
-            x = all;
-            y = all;
-            z = all;
-        }
-
-        public ulong this[int index]
+		public ulong this[int index]
         {
             get
             {
@@ -1831,22 +1802,36 @@ namespace piine
             }
         }
 
+        public ULong3 (ulong x, ulong y, ulong z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public ULong3 (ulong all)
+        {
+            x = all;
+            y = all;
+            z = all;
+        }
+
         public ulong GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, ulong value) => components[index] = value;
 
         public static ULong3 Normalize (ULong3 v)
         {
-            if (v == Zero)
-                return Zero;
+            double length = v.LengthSquared ();
 
-            double oldMagnitude = v.Length ();
-            v.x = (ulong)(v.x / oldMagnitude);
-            v.y = (ulong)(v.y / oldMagnitude);
-            v.z = (ulong)(v.z / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (double)Math.Sqrt (length);
+
+            return v / length;
         }
+
         public static ULong3 Absolute (ULong3 v) => new ULong3 ((ulong)Math.Abs ((double)v.x), (ulong)Math.Abs ((double)v.y), (ulong)Math.Abs ((double)v.z));
 
         public static double Distance (ULong3 a, ULong3 b) => (a - b).Length ();
@@ -1862,6 +1847,8 @@ namespace piine
 
         public static double Dot (ULong3 a, ULong3 b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
+		public static ULong3 Reverse (ULong3 v) => new ULong3 (v.z, v.y, v.x);
+
 		public ulong Sum () => x + y + z;
 
 		public ulong Volume () => x * y * z;
@@ -1870,15 +1857,7 @@ namespace piine
 
         public double LengthSquared () => ((double)x * x) + ((double)y * y) + ((double)z * z);
 
-		public bool Contains (ulong value) => x == value || y == value || z == value;
-
-        public static explicit operator Vector3 (ULong3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator ULong3 (Vector3 v) => new ULong3 ((ulong)v.X, (ulong)v.Y, (ulong)v.Z);
-
-        public static implicit operator ULong3 ((ulong x, ulong y, ulong z) v) => new ULong3 (v.x, v.y, v.z);
-
-        public static implicit operator (ulong, ulong, ulong) (ULong3 v) => (v.x, v.y, v.z);
+		public bool Contains (ulong value) => x == value || y == value || z == value;	
 
         public static bool operator == (ULong3 a, ULong3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
 
@@ -1925,41 +1904,42 @@ namespace piine
 		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791);
 
 		//Conversion to other vectors
+		//Vector3
+		public static explicit operator Vector3 (ULong3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+
+        public static explicit operator ULong3 (Vector3 v) => new ULong3 ((ulong)v.X, (ulong)v.Y, (ulong)v.Z);
+
+		//Tuple
+        public static implicit operator ULong3 ((ulong x, ulong y, ulong z) v) => new ULong3 (v.x, v.y, v.z);
+
+        public static implicit operator (ulong, ulong, ulong) (ULong3 v) => (v.x, v.y, v.z);
+
 		
 		//Float3
 		public static implicit operator ULong3 (Float3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
 
-
 		//Double3
 		public static explicit operator ULong3 (Double3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
-
 
 		//Int3
 		public static implicit operator ULong3 (Int3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
 
-
 		//UInt3
 		public static implicit operator ULong3 (UInt3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
-
 
 		//Byte3
 		public static implicit operator ULong3 (Byte3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
 
-
 		//SByte3
 		public static implicit operator ULong3 (SByte3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
-
 
 		//Short3
 		public static implicit operator ULong3 (Short3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
 
-
 		//UShort3
 		public static implicit operator ULong3 (UShort3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
 
-
 		//Long3
 		public static explicit operator ULong3 (Long3 v) => new ULong3 ((ulong)v.x, (ulong)v.y, (ulong)v.z);
-
 	}
-	}
+}

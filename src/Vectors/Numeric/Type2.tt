@@ -16,8 +16,8 @@
 ("ushort", "UShort", 2), 
 ("long", "Long", 8), 
 ("ulong", "ULong", 8) 
-}; #>
-
+}; 
+#>
 using System;
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -30,8 +30,11 @@ namespace piine
 	string typeName = capitalizedDataType + "2";
 	string floatType = (dataType != "double" && dataType != "long" && dataType != "ulong") ? "float" : "double";
 	string scalarType = (dataType == "float" || dataType == "double" || dataType == "long" || dataType == "ulong" || dataType == "uint") ? dataType : "int";
+
+	bool isUnsigned = new string[] { "byte", "ushort", "uint", "ulong" }.Contains (dataType);
 	#>
 
+	[CLSCompliant (<#=(!isUnsigned).ToString ().ToLower ()#>)]
     [StructLayout (LayoutKind.Explicit, Size = <#=memorySize * 2#>)]
     public unsafe struct <#=typeName#> : IEquatable<<#=typeName#>>
     {
@@ -47,29 +50,17 @@ namespace piine
         public static ref readonly <#=typeName#> UnitX => ref unitX;
         public static ref readonly <#=typeName#> UnitY => ref unitY;
 
+		#pragma warning disable CA1051
         [FieldOffset (0)]
         private fixed <#=dataType#> components[Size];
 
         [FieldOffset (0)]
         public <#=dataType#> x;
         [FieldOffset (<#=memorySize#>)]
-        public <#=dataType#> y;  
+        public <#=dataType#> y;
+		#pragma warning restore CA1051
 
-		public <#=scalarType#> Area => x * y;
-
-        public <#=typeName#> (<#=dataType#> x, <#=dataType#> y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
-        public <#=typeName#> (<#=dataType#> all)
-        {
-            x = all;
-            y = all;
-        }
-
-        public <#=dataType#> this[int index]
+		public <#=dataType#> this[int index]
         {
             get
             {
@@ -87,20 +78,32 @@ namespace piine
             }
         }
 
+        public <#=typeName#> (<#=dataType#> x, <#=dataType#> y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public <#=typeName#> (<#=dataType#> all)
+        {
+            x = all;
+            y = all;
+        }   
+
         public <#=dataType#> GetUnsafe (int index) => components[index];
 
         public void SetUnsafe (int index, <#=dataType#> value) => components[index] = value;
 
         public static <#=typeName#> Normalize (<#=typeName#> v)
         {
-            if (v == Zero)
-                return Zero;
+            <#=floatType#> length = v.LengthSquared ();
 
-            <#=floatType#> oldMagnitude = v.Length ();
-            v.x = (<#=dataType#>)(v.x / oldMagnitude);
-            v.y = (<#=dataType#>)(v.y / oldMagnitude);
+			if (length == 0)
+				return Zero;
 
-            return v;
+			length = (<#=floatType#>)Math.Sqrt (length);
+
+            return v / length;
         }
 
         public static <#=typeName#> Absolute (<#=typeName#> v) => new <#=typeName#> ((<#=dataType#>)Math.Abs ((<#=floatType#>)v.x), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.y));
@@ -109,21 +112,17 @@ namespace piine
 
         public static <#=floatType#> Dot (<#=typeName#> a, <#=typeName#> b) => a.x * b.x + a.y * b.y;
 
+		public static <#=typeName#> Reverse (<#=typeName#> v) => new <#=typeName#> (v.y, v.x);
+
 		public <#=scalarType#> Sum () => x + y;
 
 		public <#=floatType#> Length () => (<#=floatType#>)Math.Sqrt (LengthSquared ());
 
         public <#=floatType#> LengthSquared () => ((<#=floatType#>)x * x) + ((<#=floatType#>)y * y);
 
+		public <#=scalarType#> Area () => x * y;
+
 		public bool Contains (<#=dataType#> value) => x == value || y == value;
-
-        public static explicit operator Vector2 (<#=typeName#> v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator <#=typeName#> (Vector2 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y);
-
-        public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y) v) => new <#=typeName#> (v.x, v.y);
-
-        public static implicit operator (<#=dataType#>, <#=dataType#>) (<#=typeName#> v) => (v.x, v.y);
 
         public static bool operator == (<#=typeName#> a, <#=typeName#> b) => a.x == b.x && a.y == b.y;
 
@@ -170,6 +169,15 @@ public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((
         }
 
 		//Conversion to other vectors
+		//Vector2
+		public static explicit operator Vector2 (<#=typeName#> v) => new Vector2 ((float)v.x, (float)v.y);
+
+        public static explicit operator <#=typeName#> (Vector2 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y);
+
+		//Tuple
+        public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y) v) => new <#=typeName#> (v.x, v.y);
+
+        public static implicit operator (<#=dataType#>, <#=dataType#>) (<#=typeName#> v) => (v.x, v.y);
 		<# foreach ((string otherDataType, string otherCapitalizedDataType, _) in types) 
 		{
 			if (otherDataType.Equals (dataType))
@@ -179,9 +187,8 @@ public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((
 		#>
 
 		//<#=otherTypeName#>
-public static explicit operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y);
-
-		<# } #>
+		public static explicit operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y);
+<# } #>
     }
-	<# } #>
+<# } #>
 }

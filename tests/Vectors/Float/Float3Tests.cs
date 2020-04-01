@@ -42,7 +42,7 @@ namespace Tests
             Float3 f = new Float3 (10, -5, 4);
             f = Float3.Normalize (f);
 
-            float length = f.Length;
+            float length = f.Length ();
 
             Assert.IsTrue (length > 0.999f && length <= 1.001f);
         }
@@ -76,9 +76,6 @@ namespace Tests
         private unsafe double TestFloat3Math ()
         {
             const int fLength = 1_000;
-
-            Double3 d = new Double3 (2, 4, 5);
-            Float3 v = (Float3)d;
 
             Float3* f = stackalloc Float3[fLength];
 

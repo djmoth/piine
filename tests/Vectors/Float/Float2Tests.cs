@@ -40,7 +40,7 @@ namespace tests
             Float2 f = new Float2 (10, -5);
             f = Float2.Normalize (f);
 
-            float length = f.Length;
+            float length = f.Length ();
 
             Assert.IsTrue (length > 0.999f && length <= 1.001f);
         }

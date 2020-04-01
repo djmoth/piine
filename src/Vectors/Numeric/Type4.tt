@@ -1,0 +1,238 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<# (string, string, int)[] types = 
+{ 
+("float", "Float", 4), 
+("double", "Double", 8), 
+("int", "Int", 4), 
+("uint", "UInt", 4), 
+("byte", "Byte", 1), 
+("sbyte", "SByte", 1), 
+("short", "Short", 2), 
+("ushort", "UShort", 2), 
+("long", "Long", 8), 
+("ulong", "ULong", 8) 
+}; 
+#>
+using System;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace piine
+{
+	<# foreach ((string dataType, string capitalizedDataType, int memorySize) in types) 
+	{
+	string typeName = capitalizedDataType + "4";
+	string typeName3D = capitalizedDataType + "3";
+	string typeName2D = capitalizedDataType + "2";
+
+	int yOffset = memorySize;
+	int zOffset = memorySize * 2;
+	int wOffset = memorySize * 3;
+
+	string floatType = (dataType != "double" && dataType != "long" && dataType != "ulong") ? "float" : "double";
+	string scalarType = (dataType == "float" || dataType == "double" || dataType == "long" || dataType == "ulong" || dataType == "uint") ? dataType : "int";
+
+	bool isUnsigned = new string[] { "byte", "ushort", "uint", "ulong" }.Contains (dataType);
+	#>
+
+	[CLSCompliant (<#=(!isUnsigned).ToString ().ToLower ()#>)]
+    [StructLayout (LayoutKind.Explicit, Size = <#=memorySize * 4#>)]
+    public unsafe struct <#=typeName#> : IEquatable<<#=typeName#>>
+    {
+        public const int Size = 4;
+
+        private static readonly <#=typeName#> zero = new <#=typeName#> (0);
+        private static readonly <#=typeName#> one = new <#=typeName#> (1);
+        private static readonly <#=typeName#> unitX = new <#=typeName#> (1, 0, 0, 0);
+        private static readonly <#=typeName#> unitY = new <#=typeName#> (0, 1, 0, 0);
+        private static readonly <#=typeName#> unitZ = new <#=typeName#> (0, 0, 1, 0);
+		private static readonly <#=typeName#> unitW = new <#=typeName#> (0, 0, 0, 1);
+
+        public static ref readonly <#=typeName#> Zero => ref zero;
+        public static ref readonly <#=typeName#> One => ref one;
+        public static ref readonly <#=typeName#> UnitX => ref unitX;
+        public static ref readonly <#=typeName#> UnitY => ref unitY;
+        public static ref readonly <#=typeName#> UnitZ => ref unitZ;
+		public static ref readonly <#=typeName#> UnitW => ref unitW;
+
+        [FieldOffset (0)]
+        private fixed <#=dataType#> components[Size];
+
+		#pragma warning disable CA1051
+        [FieldOffset (0)]
+        public <#=dataType#> x;
+        [FieldOffset (<#=yOffset#>)]
+        public <#=dataType#> y;
+        [FieldOffset (<#=zOffset#>)]
+        public <#=dataType#> z;
+		[FieldOffset (<#=wOffset#>)]
+		public <#=dataType#> w;
+		#pragma warning restore CA1051
+
+        public <#=typeName2D#> XY => new <#=typeName2D#> (x, y);
+        public <#=typeName2D#> XZ => new <#=typeName2D#> (x, z);
+        public <#=typeName2D#> YZ => new <#=typeName2D#> (y, z);
+		
+		public <#=typeName3D#> XYZ => new <#=typeName3D#> (x, y, z);
+		public <#=typeName3D#> XZY => new <#=typeName3D#> (x, z, y);
+		public <#=typeName3D#> YXZ => new <#=typeName3D#> (y, x, z);
+		public <#=typeName3D#> YZX => new <#=typeName3D#> (y, z, x);
+		public <#=typeName3D#> ZXY => new <#=typeName3D#> (z, x, y);
+		public <#=typeName3D#> ZYX => new <#=typeName3D#> (z, y, x);
+
+		public <#=dataType#> this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-3, index was " + index);
+
+                return components[index];
+            }
+            set
+            {
+                if (index < 0 || index >= Size)
+                    throw new ArgumentOutOfRangeException ("Index must be in the range 0-3, index was " + index);
+
+                components[index] = value;
+            }
+        }
+
+        public <#=typeName#> (<#=dataType#> x, <#=dataType#> y, <#=dataType#> z, <#=dataType#> w)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+			this.w = w;
+        }
+
+		public <#=typeName#> (<#=typeName2D#> leftPart, <#=typeName2D#> rightPart)
+		{
+			this.x = leftPart.x;
+			this.y = leftPart.y;
+			this.z = rightPart.x;
+			this.w = rightPart.y;
+		}
+
+        public <#=typeName#> (<#=dataType#> all)
+        {
+            x = all;
+            y = all;
+            z = all;
+			w = all;
+        }  
+
+        public <#=dataType#> GetUnsafe (int index) => components[index];
+
+        public void SetUnsafe (int index, <#=dataType#> value) => components[index] = value;
+
+        public static <#=typeName#> Normalize (<#=typeName#> v)
+        {
+            <#=floatType#> length = v.LengthSquared ();
+
+			if (length == 0)
+				return Zero;
+
+			length = (<#=floatType#>)Math.Sqrt (length);
+
+            return v / length;
+        }
+
+        public static <#=typeName#> Absolute (<#=typeName#> v) => new <#=typeName#> ((<#=dataType#>)Math.Abs ((<#=floatType#>)v.x), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.y), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.z), (<#=dataType#>)Math.Abs ((<#=floatType#>)v.w));
+
+        public static <#=floatType#> Distance (<#=typeName#> a, <#=typeName#> b) => (a - b).Length ();
+
+        public static <#=floatType#> Dot (<#=typeName#> a, <#=typeName#> b) => a.x * b.x + a.y * b.y + a.z * b.z + a.w * b.w;
+
+		public static <#=typeName#> Reverse (<#=typeName#> v) => new <#=typeName#> (v.w, v.z, v.y, v.x);
+
+		public <#=scalarType#> Sum () => x + y + z + w;
+
+		public <#=scalarType#> Volume () => x * y * z * w;
+
+		public <#=floatType#> Length () => (<#=floatType#>)Math.Sqrt (LengthSquared ());
+
+        public <#=floatType#> LengthSquared () => ((<#=floatType#>)x * x) + ((<#=floatType#>)y * y) + ((<#=floatType#>)z * z) + ((<#=floatType#>)w * w);
+
+		public bool Contains (<#=dataType#> value) => x == value || y == value || z == value || w == value;
+
+        public static bool operator == (<#=typeName#> a, <#=typeName#> b) => a.x == b.x && a.y == b.y && a.z == b.z && a.w == b.w;
+
+        public static bool operator != (<#=typeName#> a, <#=typeName#> b) => a.x != b.x || a.y != b.y || a.z != b.z || a.w != b.w;
+
+        public unsafe static <#=typeName#> operator + (<#=typeName#> a, <#=typeName#> b) => new <#=typeName#> ((<#=dataType#>)(a.x + b.x), (<#=dataType#>)(a.y + b.y), (<#=dataType#>)(a.z + b.z), (<#=dataType#>)(a.w + b.w));
+
+        public static <#=typeName#> operator - (<#=typeName#> a, <#=typeName#> b) => new <#=typeName#> ((<#=dataType#>)(a.x - b.x), (<#=dataType#>)(a.y - b.y), (<#=dataType#>)(a.z - b.z), (<#=dataType#>)(a.w - b.w));
+
+		<# if (!isUnsigned) { #>
+public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((<#=dataType#>)-v.x, (<#=dataType#>)-v.y, (<#=dataType#>)-v.z, (<#=dataType#>)-v.w);
+		<# } #>
+
+        public static <#=typeName#> operator * (<#=typeName#> a, <#=floatType#> b) => new <#=typeName#> ((<#=dataType#>)(a.x * b), (<#=dataType#>)(a.y * b), (<#=dataType#>)(a.z * b), (<#=dataType#>)(a.w * b));
+
+        public static <#=typeName#> operator / (<#=typeName#> a, <#=floatType#> b) => new <#=typeName#> ((<#=dataType#>)(a.x / b), (<#=dataType#>)(a.y / b), (<#=dataType#>)(a.z / b), (<#=dataType#>)(a.w / b));
+
+        public static bool operator > (<#=typeName#> a, <#=typeName#> b) => a.x > b.x && a.y > b.y && a.z > b.z && a.w > b.w;
+
+        public static bool operator < (<#=typeName#> a, <#=typeName#> b) => a.x < b.x && a.y < b.y && a.z < b.z && a.w < b.w;
+
+        public static bool operator >= (<#=typeName#> a, <#=typeName#> b) => a.x >= b.x && a.y >= b.y && a.z >= b.z && a.w >= b.w;
+
+        public static bool operator <= (<#=typeName#> a, <#=typeName#> b) => a.x <= b.x && a.y <= b.y && a.z <= b.z && a.w <= b.w;
+
+		public void Deconstruct (out <#=dataType#> x, out <#=dataType#> y, out <#=dataType#> z, out <#=dataType#> w)
+		{
+			x = this.x;
+			y = this.y;
+			z = this.z;
+			w = this.w;
+		}
+
+        public override string ToString () => "(" + x + ", " + y + ", " + z + ", " + w + ")";
+
+        public bool Equals (<#=typeName#> other) => this == other;
+
+        public override bool Equals (object obj)
+        {
+            <#=typeName#>? v = obj as <#=typeName#>?;
+
+            if (v != null)
+                return v == this;
+            else
+                return false;
+        }
+
+		public override int GetHashCode () => (int)(x * 73856093) ^ (int)(y * 19349663) ^ (int)(z * 83492791) ^ (int)(w * 39916801);
+
+		//Conversion to other vectors
+		//Vector4
+		public static explicit operator Vector4 (<#=typeName#> v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+
+        public static explicit operator <#=typeName#> (Vector4 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y, (<#=dataType#>)v.Z, (<#=dataType#>)v.W);
+
+		//Tuple
+		public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y, <#=dataType#> z, <#=dataType#> w) v) => new <#=typeName#> (v.x, v.y, v.z, v.w);
+
+        public static implicit operator (<#=dataType#>, <#=dataType#>, <#=dataType#>, <#=dataType#>) (<#=typeName#> v) => (v.x, v.y, v.z, v.w);
+
+		<# foreach ((string otherDataType, string otherCapitalizedDataType, int otherMemorySize) in types) 
+		{
+			if (otherDataType.Equals (dataType))
+				continue;
+
+			string otherTypeName = otherCapitalizedDataType + "4";
+			string conversion = (otherMemorySize < memorySize ? "implicit" : "explicit");
+		#>
+
+		//<#=otherTypeName#>
+		public static <#=conversion#> operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y, (<#=dataType#>)v.z, (<#=dataType#>)v.w);
+<# } #>
+	}
+<# } #>
+}
