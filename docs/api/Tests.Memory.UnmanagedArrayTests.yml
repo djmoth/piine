@@ -12,6 +12,7 @@ items:
   - Tests.Memory.UnmanagedArrayTests.TestDispose
   - Tests.Memory.UnmanagedArrayTests.TestForeach
   - Tests.Memory.UnmanagedArrayTests.TestIndexOf
+  - Tests.Memory.UnmanagedArrayTests.TestTrackAlloc
   langs:
   - csharp
   - vb
@@ -26,7 +27,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedArrayTests
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -67,7 +68,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestCreateNew
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -107,7 +108,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestCreateFromSpan
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -147,7 +148,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestAccess
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -187,7 +188,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestDispose
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -201,6 +202,46 @@ items:
 
       Public Sub TestDispose
   overload: Tests.Memory.UnmanagedArrayTests.TestDispose*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.Memory.UnmanagedArrayTests.TestTrackAlloc
+  commentId: M:Tests.Memory.UnmanagedArrayTests.TestTrackAlloc
+  id: TestTrackAlloc
+  parent: Tests.Memory.UnmanagedArrayTests
+  langs:
+  - csharp
+  - vb
+  name: TestTrackAlloc()
+  nameWithType: UnmanagedArrayTests.TestTrackAlloc()
+  fullName: Tests.Memory.UnmanagedArrayTests.TestTrackAlloc()
+  type: Method
+  source:
+    remote:
+      path: tests/Memory/UnmanagedArrayTests.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: TestTrackAlloc
+    path: tests/Memory/UnmanagedArrayTests.cs
+    startLine: 70
+  assemblies:
+  - tests
+  namespace: Tests.Memory
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestTrackAlloc()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestTrackAlloc
+  overload: Tests.Memory.UnmanagedArrayTests.TestTrackAlloc*
   attributes:
   - type: NUnit.Framework.TestAttribute
     ctor: NUnit.Framework.TestAttribute.#ctor
@@ -227,7 +268,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestIndexOf
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 69
+    startLine: 89
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -267,7 +308,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TestForeach
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 82
+    startLine: 102
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -307,7 +348,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetRandomizedArray
     path: tests/Memory/UnmanagedArrayTests.cs
-    startLine: 104
+    startLine: 124
   assemblies:
   - tests
   namespace: Tests.Memory
@@ -642,6 +683,11 @@ references:
   name: TestDispose
   nameWithType: UnmanagedArrayTests.TestDispose
   fullName: Tests.Memory.UnmanagedArrayTests.TestDispose
+- uid: Tests.Memory.UnmanagedArrayTests.TestTrackAlloc*
+  commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestTrackAlloc
+  name: TestTrackAlloc
+  nameWithType: UnmanagedArrayTests.TestTrackAlloc
+  fullName: Tests.Memory.UnmanagedArrayTests.TestTrackAlloc
 - uid: Tests.Memory.UnmanagedArrayTests.TestIndexOf*
   commentId: Overload:Tests.Memory.UnmanagedArrayTests.TestIndexOf
   name: TestIndexOf

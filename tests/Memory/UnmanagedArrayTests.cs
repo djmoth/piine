@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using NUnit.Framework;
 using piine.Memory;
 
@@ -65,6 +66,25 @@ namespace Tests.Memory
             array.Dispose ();
 
             Assert.Throws<ObjectDisposedException> (() => array[0] = 10, "Should throw ObjectDisposedException");
+        }
+
+        [Test]
+        public void TestTrackAlloc ()
+        {
+            WeakReference<UnmanagedArray<int>> weakRef;
+
+            Action alloc = () =>
+            {
+                UnmanagedArray<int> array = GetRandomizedArray (50);
+
+                weakRef = new WeakReference<UnmanagedArray<int>> (array, true);
+            };
+
+            alloc ();
+
+            GC.Collect (GC.MaxGeneration, GCCollectionMode.Forced, true);
+
+            GC.WaitForPendingFinalizers ();
         }
 
         [Test]

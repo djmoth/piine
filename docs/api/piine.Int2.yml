@@ -8,11 +8,13 @@ items:
   - piine.Int2.#ctor(System.Int32)
   - piine.Int2.#ctor(System.Int32,System.Int32)
   - piine.Int2.Absolute(piine.Int2)
-  - piine.Int2.CalculateArea
+  - piine.Int2.Area
+  - piine.Int2.Contains(System.Int32)
+  - piine.Int2.Deconstruct(System.Int32@,System.Int32@)
   - piine.Int2.Distance(piine.Int2,piine.Int2)
+  - piine.Int2.Dot(piine.Int2,piine.Int2)
   - piine.Int2.Equals(piine.Int2)
   - piine.Int2.Equals(System.Object)
-  - piine.Int2.GetHashCode
   - piine.Int2.GetUnsafe(System.Int32)
   - piine.Int2.Item(System.Int32)
   - piine.Int2.Length
@@ -22,21 +24,31 @@ items:
   - piine.Int2.op_Addition(piine.Int2,piine.Int2)
   - piine.Int2.op_Division(piine.Int2,System.Single)
   - piine.Int2.op_Equality(piine.Int2,piine.Int2)
+  - piine.Int2.op_Explicit(piine.Double2)~piine.Int2
   - piine.Int2.op_Explicit(piine.Float2)~piine.Int2
-  - piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
-  - piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
+  - piine.Int2.op_Explicit(piine.Long2)~piine.Int2
+  - piine.Int2.op_Explicit(piine.UInt2)~piine.Int2
+  - piine.Int2.op_Explicit(piine.ULong2)~piine.Int2
   - piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
   - piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  - piine.Int2.op_Implicit(piine.Byte2)~piine.Int2
+  - piine.Int2.op_Implicit(piine.Int2)~System.Numerics.Vector2
   - piine.Int2.op_Implicit(piine.Int2)~System.ValueTuple{System.Int32,System.Int32}
+  - piine.Int2.op_Implicit(piine.SByte2)~piine.Int2
+  - piine.Int2.op_Implicit(piine.Short2)~piine.Int2
+  - piine.Int2.op_Implicit(piine.UShort2)~piine.Int2
+  - piine.Int2.op_Implicit(System.Numerics.Vector2)~piine.Int2
   - piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
   - piine.Int2.op_Inequality(piine.Int2,piine.Int2)
   - piine.Int2.op_LessThan(piine.Int2,piine.Int2)
   - piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
-  - piine.Int2.op_Multiply(piine.Int2,System.Int32)
+  - piine.Int2.op_Multiply(piine.Int2,System.Single)
   - piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
   - piine.Int2.op_UnaryNegation(piine.Int2)
+  - piine.Int2.Reverse(piine.Int2)
   - piine.Int2.SetUnsafe(System.Int32,System.Int32)
   - piine.Int2.Size
+  - piine.Int2.Sum
   - piine.Int2.ToString
   - piine.Int2.UnitX
   - piine.Int2.UnitY
@@ -52,27 +64,38 @@ items:
   type: Struct
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Int2
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 6
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 348
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: 'public struct Int2 : IEquatable<Int2>'
-    content.vb: >-
-      Public Structure Int2
+    content: >-
+      [CLSCompliant(true)]
 
+      public struct Int2 : IEquatable<Int2>
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Structure Int2
           Implements IEquatable(Of Int2)
   implements:
   - System.IEquatable{piine.Int2}
   inheritedMembers:
+  - System.ValueType.GetHashCode
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
   modifiers.csharp:
   - public
   - struct
@@ -92,12 +115,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Size
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 9
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 352
   assemblies:
   - piine
   namespace: piine
@@ -125,12 +148,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Zero
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 16
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 359
   assemblies:
   - piine
   namespace: piine
@@ -162,12 +185,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: One
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 17
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 360
   assemblies:
   - piine
   namespace: piine
@@ -199,12 +222,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitX
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 18
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 361
   assemblies:
   - piine
   namespace: piine
@@ -236,12 +259,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: UnitY
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 19
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 362
   assemblies:
   - piine
   namespace: piine
@@ -273,12 +296,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: x
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 25
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 369
   assemblies:
   - piine
   namespace: piine
@@ -304,12 +327,12 @@ items:
   type: Field
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: y
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 27
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 371
   assemblies:
   - piine
   namespace: piine
@@ -322,76 +345,46 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: piine.Int2.Length
-  commentId: P:piine.Int2.Length
-  id: Length
+- uid: piine.Int2.Item(System.Int32)
+  commentId: P:piine.Int2.Item(System.Int32)
+  id: Item(System.Int32)
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Length
-  nameWithType: Int2.Length
-  fullName: piine.Int2.Length
+  name: Item[Int32]
+  nameWithType: Int2.Item[Int32]
+  fullName: piine.Int2.Item[System.Int32]
   type: Property
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: Length
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 29
+    id: this[]
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 374
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public float Length { get; }
-    parameters: []
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly Property Length As Single
-  overload: piine.Int2.Length*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: piine.Int2.LengthSquared
-  commentId: P:piine.Int2.LengthSquared
-  id: LengthSquared
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: LengthSquared
-  nameWithType: Int2.LengthSquared
-  fullName: piine.Int2.LengthSquared
-  type: Property
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: LengthSquared
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 31
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public int LengthSquared { get; }
-    parameters: []
+    content: public int this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property LengthSquared As Integer
-  overload: piine.Int2.LengthSquared*
+    content.vb: Public Property Item(index As Integer) As Integer
+  overload: piine.Int2.Item*
+  nameWithType.vb: Int2.Item(Int32)
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
+  fullName.vb: piine.Int2.Item(System.Int32)
+  name.vb: Item(Int32)
 - uid: piine.Int2.#ctor(System.Int32,System.Int32)
   commentId: M:piine.Int2.#ctor(System.Int32,System.Int32)
   id: '#ctor(System.Int32,System.Int32)'
@@ -405,12 +398,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 33
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 392
   assemblies:
   - piine
   namespace: piine
@@ -440,12 +433,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: .ctor
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 39
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 398
   assemblies:
   - piine
   namespace: piine
@@ -460,46 +453,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: piine.Int2.Item(System.Int32)
-  commentId: P:piine.Int2.Item(System.Int32)
-  id: Item(System.Int32)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: Item[Int32]
-  nameWithType: Int2.Item[Int32]
-  fullName: piine.Int2.Item[System.Int32]
-  type: Property
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: this[]
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 45
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public int this[int index] { get; set; }
-    parameters:
-    - id: index
-      type: System.Int32
-    return:
-      type: System.Int32
-    content.vb: Public Property Item(index As Integer) As Integer
-  overload: piine.Int2.Item*
-  nameWithType.vb: Int2.Item(Int32)
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  fullName.vb: piine.Int2.Item(System.Int32)
-  name.vb: Item(Int32)
 - uid: piine.Int2.GetUnsafe(System.Int32)
   commentId: M:piine.Int2.GetUnsafe(System.Int32)
   id: GetUnsafe(System.Int32)
@@ -513,12 +466,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: GetUnsafe
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 63
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 404
   assemblies:
   - piine
   namespace: piine
@@ -548,12 +501,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: SetUnsafe
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 65
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 406
   assemblies:
   - piine
   namespace: piine
@@ -566,38 +519,6 @@ items:
       type: System.Int32
     content.vb: Public Sub SetUnsafe(index As Integer, value As Integer)
   overload: piine.Int2.SetUnsafe*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: piine.Int2.CalculateArea
-  commentId: M:piine.Int2.CalculateArea
-  id: CalculateArea
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: CalculateArea()
-  nameWithType: Int2.CalculateArea()
-  fullName: piine.Int2.CalculateArea()
-  type: Method
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: CalculateArea
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 67
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public int CalculateArea()
-    return:
-      type: System.Int32
-    content.vb: Public Function CalculateArea As Integer
-  overload: piine.Int2.CalculateArea*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -615,12 +536,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Normalize
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 69
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 408
   assemblies:
   - piine
   namespace: piine
@@ -652,12 +573,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Absolute
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 83
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 420
   assemblies:
   - piine
   namespace: piine
@@ -689,12 +610,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Distance
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 85
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 422
   assemblies:
   - piine
   namespace: piine
@@ -715,126 +636,900 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_Explicit(piine.Float2)~piine.Int2
-  commentId: M:piine.Int2.op_Explicit(piine.Float2)~piine.Int2
-  id: op_Explicit(piine.Float2)~piine.Int2
+- uid: piine.Int2.Dot(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.Dot(piine.Int2,piine.Int2)
+  id: Dot(piine.Int2,piine.Int2)
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Explicit(Float2 to Int2)
-  nameWithType: Int2.Explicit(Float2 to Int2)
-  fullName: piine.Int2.Explicit(piine.Float2 to piine.Int2)
-  type: Operator
+  name: Dot(Int2, Int2)
+  nameWithType: Int2.Dot(Int2, Int2)
+  fullName: piine.Int2.Dot(piine.Int2, piine.Int2)
+  type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Explicit
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 87
+    id: Dot
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 424
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static explicit operator Int2(Float2 v)
+    content: public static float Dot(Int2 a, Int2 b)
     parameters:
-    - id: v
-      type: piine.Float2
-    return:
+    - id: a
       type: piine.Int2
-    content.vb: Public Shared Narrowing Operator CType(v As Float2) As Int2
-  overload: piine.Int2.op_Explicit*
-  nameWithType.vb: Int2.Narrowing(Float2 to Int2)
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(a As Int2, b As Int2) As Single
+  overload: piine.Int2.Dot*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int2.Narrowing(piine.Float2 to piine.Int2)
-  name.vb: Narrowing(Float2 to Int2)
-- uid: piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
-  commentId: M:piine.Int2.op_Explicit(piine.Int2)~System.Numerics.Vector2
-  id: op_Explicit(piine.Int2)~System.Numerics.Vector2
+- uid: piine.Int2.Reverse(piine.Int2)
+  commentId: M:piine.Int2.Reverse(piine.Int2)
+  id: Reverse(piine.Int2)
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Explicit(Int2 to Vector2)
-  nameWithType: Int2.Explicit(Int2 to Vector2)
-  fullName: piine.Int2.Explicit(piine.Int2 to System.Numerics.Vector2)
-  type: Operator
+  name: Reverse(Int2)
+  nameWithType: Int2.Reverse(Int2)
+  fullName: piine.Int2.Reverse(piine.Int2)
+  type: Method
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Explicit
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 89
+    id: Reverse
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 426
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static explicit operator Vector2(Int2 v)
+    content: public static Int2 Reverse(Int2 v)
+    parameters:
+    - id: v
+      type: piine.Int2
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Function Reverse(v As Int2) As Int2
+  overload: piine.Int2.Reverse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.Sum
+  commentId: M:piine.Int2.Sum
+  id: Sum
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Sum()
+  nameWithType: Int2.Sum()
+  fullName: piine.Int2.Sum()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Sum
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 428
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int Sum()
+    return:
+      type: System.Int32
+    content.vb: Public Function Sum As Integer
+  overload: piine.Int2.Sum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.Length
+  commentId: M:piine.Int2.Length
+  id: Length
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Length()
+  nameWithType: Int2.Length()
+  fullName: piine.Int2.Length()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 430
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float Length()
+    return:
+      type: System.Single
+    content.vb: Public Function Length As Single
+  overload: piine.Int2.Length*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.LengthSquared
+  commentId: M:piine.Int2.LengthSquared
+  id: LengthSquared
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared()
+  nameWithType: Int2.LengthSquared()
+  fullName: piine.Int2.LengthSquared()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: LengthSquared
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 432
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float LengthSquared()
+    return:
+      type: System.Single
+    content.vb: Public Function LengthSquared As Single
+  overload: piine.Int2.LengthSquared*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.Area
+  commentId: M:piine.Int2.Area
+  id: Area
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Area()
+  nameWithType: Int2.Area()
+  fullName: piine.Int2.Area()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Area
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 434
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int Area()
+    return:
+      type: System.Int32
+    content.vb: Public Function Area As Integer
+  overload: piine.Int2.Area*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.Contains(System.Int32)
+  commentId: M:piine.Int2.Contains(System.Int32)
+  id: Contains(System.Int32)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Contains(Int32)
+  nameWithType: Int2.Contains(Int32)
+  fullName: piine.Int2.Contains(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Contains
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 436
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Contains(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(value As Integer) As Boolean
+  overload: piine.Int2.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.op_Equality(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_Equality(piine.Int2,piine.Int2)
+  id: op_Equality(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Equality(Int2, Int2)
+  nameWithType: Int2.Equality(Int2, Int2)
+  fullName: piine.Int2.Equality(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 438
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_Inequality(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_Inequality(piine.Int2,piine.Int2)
+  id: op_Inequality(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Int2, Int2)
+  nameWithType: Int2.Inequality(Int2, Int2)
+  fullName: piine.Int2.Inequality(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 440
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_Addition(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_Addition(piine.Int2,piine.Int2)
+  id: op_Addition(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Addition(Int2, Int2)
+  nameWithType: Int2.Addition(Int2, Int2)
+  fullName: piine.Int2.Addition(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 442
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int2 operator +(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Operator +(a As Int2, b As Int2) As Int2
+  overload: piine.Int2.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
+  id: op_Subtraction(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Int2, Int2)
+  nameWithType: Int2.Subtraction(Int2, Int2)
+  fullName: piine.Int2.Subtraction(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 444
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int2 operator -(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Operator -(a As Int2, b As Int2) As Int2
+  overload: piine.Int2.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_UnaryNegation(piine.Int2)
+  commentId: M:piine.Int2.op_UnaryNegation(piine.Int2)
+  id: op_UnaryNegation(piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: UnaryNegation(Int2)
+  nameWithType: Int2.UnaryNegation(Int2)
+  fullName: piine.Int2.UnaryNegation(piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_UnaryNegation
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 446
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int2 operator -(Int2 v)
+    parameters:
+    - id: v
+      type: piine.Int2
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Operator -(v As Int2) As Int2
+  overload: piine.Int2.op_UnaryNegation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_Multiply(piine.Int2,System.Single)
+  commentId: M:piine.Int2.op_Multiply(piine.Int2,System.Single)
+  id: op_Multiply(piine.Int2,System.Single)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Int2, Single)
+  nameWithType: Int2.Multiply(Int2, Single)
+  fullName: piine.Int2.Multiply(piine.Int2, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 448
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int2 operator *(Int2 a, float b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Operator *(a As Int2, b As Single) As Int2
+  overload: piine.Int2.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_Division(piine.Int2,System.Single)
+  commentId: M:piine.Int2.op_Division(piine.Int2,System.Single)
+  id: op_Division(piine.Int2,System.Single)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Division(Int2, Single)
+  nameWithType: Int2.Division(Int2, Single)
+  fullName: piine.Int2.Division(piine.Int2, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 450
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Int2 operator /(Int2 a, float b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Int2
+    content.vb: Public Shared Operator /(a As Int2, b As Single) As Int2
+  overload: piine.Int2.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
+  id: op_GreaterThan(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan(Int2, Int2)
+  nameWithType: Int2.GreaterThan(Int2, Int2)
+  fullName: piine.Int2.GreaterThan(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThan
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 452
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator>(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator>(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_GreaterThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_LessThan(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_LessThan(piine.Int2,piine.Int2)
+  id: op_LessThan(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: LessThan(Int2, Int2)
+  nameWithType: Int2.LessThan(Int2, Int2)
+  fullName: piine.Int2.LessThan(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThan
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 454
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_LessThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  id: op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual(Int2, Int2)
+  nameWithType: Int2.GreaterThanOrEqual(Int2, Int2)
+  fullName: piine.Int2.GreaterThanOrEqual(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThanOrEqual
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 456
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator >=(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_GreaterThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
+  commentId: M:piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
+  id: op_LessThanOrEqual(piine.Int2,piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual(Int2, Int2)
+  nameWithType: Int2.LessThanOrEqual(Int2, Int2)
+  fullName: piine.Int2.LessThanOrEqual(piine.Int2, piine.Int2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThanOrEqual
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 458
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <=(Int2 a, Int2 b)
+    parameters:
+    - id: a
+      type: piine.Int2
+    - id: b
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(a As Int2, b As Int2) As Boolean
+  overload: piine.Int2.op_LessThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Int2.Deconstruct(System.Int32@,System.Int32@)
+  commentId: M:piine.Int2.Deconstruct(System.Int32@,System.Int32@)
+  id: Deconstruct(System.Int32@,System.Int32@)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out Int32, out Int32)
+  nameWithType: Int2.Deconstruct(out Int32, out Int32)
+  fullName: piine.Int2.Deconstruct(out System.Int32, out System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Deconstruct
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 460
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void Deconstruct(out int x, out int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    content.vb: Public Sub Deconstruct(ByRef x As Integer, ByRef y As Integer)
+  overload: piine.Int2.Deconstruct*
+  nameWithType.vb: Int2.Deconstruct(ByRef Int32, ByRef Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Int2.Deconstruct(ByRef System.Int32, ByRef System.Int32)
+  name.vb: Deconstruct(ByRef Int32, ByRef Int32)
+- uid: piine.Int2.ToString
+  commentId: M:piine.Int2.ToString
+  id: ToString
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Int2.ToString()
+  fullName: piine.Int2.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 466
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Int2.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Int2.Equals(piine.Int2)
+  commentId: M:piine.Int2.Equals(piine.Int2)
+  id: Equals(piine.Int2)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Equals(Int2)
+  nameWithType: Int2.Equals(Int2)
+  fullName: piine.Int2.Equals(piine.Int2)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 468
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Int2 other)
+    parameters:
+    - id: other
+      type: piine.Int2
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Int2) As Boolean
+  overload: piine.Int2.Equals*
+  implements:
+  - System.IEquatable{piine.Int2}.Equals(piine.Int2)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Int2.Equals(System.Object)
+  commentId: M:piine.Int2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Int2.Equals(Object)
+  fullName: piine.Int2.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 470
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Int2.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Int2.op_Implicit(piine.Int2)~System.Numerics.Vector2
+  commentId: M:piine.Int2.op_Implicit(piine.Int2)~System.Numerics.Vector2
+  id: op_Implicit(piine.Int2)~System.Numerics.Vector2
+  parent: piine.Int2
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Int2 to Vector2)
+  nameWithType: Int2.Implicit(Int2 to Vector2)
+  fullName: piine.Int2.Implicit(piine.Int2 to System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type2.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 482
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Vector2(Int2 v)
     parameters:
     - id: v
       type: piine.Int2
     return:
       type: System.Numerics.Vector2
-    content.vb: Public Shared Narrowing Operator CType(v As Int2) As Vector2
-  overload: piine.Int2.op_Explicit*
-  nameWithType.vb: Int2.Narrowing(Int2 to Vector2)
+    content.vb: Public Shared Widening Operator CType(v As Int2) As Vector2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(Int2 to Vector2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int2.Narrowing(piine.Int2 to System.Numerics.Vector2)
-  name.vb: Narrowing(Int2 to Vector2)
-- uid: piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
-  commentId: M:piine.Int2.op_Explicit(System.Numerics.Vector2)~piine.Int2
-  id: op_Explicit(System.Numerics.Vector2)~piine.Int2
+  fullName.vb: piine.Int2.Widening(piine.Int2 to System.Numerics.Vector2)
+  name.vb: Widening(Int2 to Vector2)
+- uid: piine.Int2.op_Implicit(System.Numerics.Vector2)~piine.Int2
+  commentId: M:piine.Int2.op_Implicit(System.Numerics.Vector2)~piine.Int2
+  id: op_Implicit(System.Numerics.Vector2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Explicit(Vector2 to Int2)
-  nameWithType: Int2.Explicit(Vector2 to Int2)
-  fullName: piine.Int2.Explicit(System.Numerics.Vector2 to piine.Int2)
+  name: Implicit(Vector2 to Int2)
+  nameWithType: Int2.Implicit(Vector2 to Int2)
+  fullName: piine.Int2.Implicit(System.Numerics.Vector2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Explicit
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 91
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 483
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static explicit operator Int2(Vector2 v)
+    content: public static implicit operator Int2(Vector2 v)
     parameters:
     - id: v
       type: System.Numerics.Vector2
     return:
       type: piine.Int2
-    content.vb: Public Shared Narrowing Operator CType(v As Vector2) As Int2
-  overload: piine.Int2.op_Explicit*
-  nameWithType.vb: Int2.Narrowing(Vector2 to Int2)
+    content.vb: Public Shared Widening Operator CType(v As Vector2) As Int2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(Vector2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: piine.Int2.Narrowing(System.Numerics.Vector2 to piine.Int2)
-  name.vb: Narrowing(Vector2 to Int2)
+  fullName.vb: piine.Int2.Widening(System.Numerics.Vector2 to piine.Int2)
+  name.vb: Widening(Vector2 to Int2)
 - uid: piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
   commentId: M:piine.Int2.op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
   id: op_Implicit(System.ValueTuple{System.Int32,System.Int32})~piine.Int2
@@ -848,12 +1543,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 93
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 486
   assemblies:
   - piine
   namespace: piine
@@ -888,12 +1583,12 @@ items:
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: op_Implicit
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 95
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 488
   assemblies:
   - piine
   namespace: piine
@@ -915,578 +1610,366 @@ items:
   - Shared
   fullName.vb: piine.Int2.Widening(piine.Int2 to System.ValueTuple(Of System.Int32, System.Int32))
   name.vb: Widening(Int2 to (Int32, Int32))
-- uid: piine.Int2.op_Equality(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_Equality(piine.Int2,piine.Int2)
-  id: op_Equality(piine.Int2,piine.Int2)
+- uid: piine.Int2.op_Explicit(piine.Float2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(piine.Float2)~piine.Int2
+  id: op_Explicit(piine.Float2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Equality(Int2, Int2)
-  nameWithType: Int2.Equality(Int2, Int2)
-  fullName: piine.Int2.Equality(piine.Int2, piine.Int2)
+  name: Explicit(Float2 to Int2)
+  nameWithType: Int2.Explicit(Float2 to Int2)
+  fullName: piine.Int2.Explicit(piine.Float2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Equality
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 97
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 491
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static bool operator ==(Int2 a, Int2 b)
-    parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Operator =(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_Equality*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: piine.Int2.op_Inequality(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_Inequality(piine.Int2,piine.Int2)
-  id: op_Inequality(piine.Int2,piine.Int2)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: Inequality(Int2, Int2)
-  nameWithType: Int2.Inequality(Int2, Int2)
-  fullName: piine.Int2.Inequality(piine.Int2, piine.Int2)
-  type: Operator
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: op_Inequality
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 99
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static bool operator !=(Int2 a, Int2 b)
-    parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Operator <>(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_Inequality*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: piine.Int2.op_Addition(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_Addition(piine.Int2,piine.Int2)
-  id: op_Addition(piine.Int2,piine.Int2)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: Addition(Int2, Int2)
-  nameWithType: Int2.Addition(Int2, Int2)
-  fullName: piine.Int2.Addition(piine.Int2, piine.Int2)
-  type: Operator
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: op_Addition
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 101
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static Int2 operator +(Int2 a, Int2 b)
-    parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
-    return:
-      type: piine.Int2
-    content.vb: Public Shared Operator +(a As Int2, b As Int2) As Int2
-  overload: piine.Int2.op_Addition*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_Subtraction(piine.Int2,piine.Int2)
-  id: op_Subtraction(piine.Int2,piine.Int2)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: Subtraction(Int2, Int2)
-  nameWithType: Int2.Subtraction(Int2, Int2)
-  fullName: piine.Int2.Subtraction(piine.Int2, piine.Int2)
-  type: Operator
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: op_Subtraction
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 103
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static Int2 operator -(Int2 a, Int2 b)
-    parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
-    return:
-      type: piine.Int2
-    content.vb: Public Shared Operator -(a As Int2, b As Int2) As Int2
-  overload: piine.Int2.op_Subtraction*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-- uid: piine.Int2.op_UnaryNegation(piine.Int2)
-  commentId: M:piine.Int2.op_UnaryNegation(piine.Int2)
-  id: op_UnaryNegation(piine.Int2)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: UnaryNegation(Int2)
-  nameWithType: Int2.UnaryNegation(Int2)
-  fullName: piine.Int2.UnaryNegation(piine.Int2)
-  type: Operator
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: op_UnaryNegation
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 105
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public static Int2 operator -(Int2 v)
+    content: public static explicit operator Int2(Float2 v)
     parameters:
     - id: v
-      type: piine.Int2
+      type: piine.Float2
     return:
       type: piine.Int2
-    content.vb: Public Shared Operator -(v As Int2) As Int2
-  overload: piine.Int2.op_UnaryNegation*
+    content.vb: Public Shared Narrowing Operator CType(v As Float2) As Int2
+  overload: piine.Int2.op_Explicit*
+  nameWithType.vb: Int2.Narrowing(Float2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_Multiply(piine.Int2,System.Int32)
-  commentId: M:piine.Int2.op_Multiply(piine.Int2,System.Int32)
-  id: op_Multiply(piine.Int2,System.Int32)
+  fullName.vb: piine.Int2.Narrowing(piine.Float2 to piine.Int2)
+  name.vb: Narrowing(Float2 to Int2)
+- uid: piine.Int2.op_Explicit(piine.Double2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(piine.Double2)~piine.Int2
+  id: op_Explicit(piine.Double2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Multiply(Int2, Int32)
-  nameWithType: Int2.Multiply(Int2, Int32)
-  fullName: piine.Int2.Multiply(piine.Int2, System.Int32)
+  name: Explicit(Double2 to Int2)
+  nameWithType: Int2.Explicit(Double2 to Int2)
+  fullName: piine.Int2.Explicit(piine.Double2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Multiply
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 107
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 494
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static Int2 operator *(Int2 a, int b)
+    content: public static explicit operator Int2(Double2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: System.Int32
+    - id: v
+      type: piine.Double2
     return:
       type: piine.Int2
-    content.vb: Public Shared Operator *(a As Int2, b As Integer) As Int2
-  overload: piine.Int2.op_Multiply*
+    content.vb: Public Shared Narrowing Operator CType(v As Double2) As Int2
+  overload: piine.Int2.op_Explicit*
+  nameWithType.vb: Int2.Narrowing(Double2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_Division(piine.Int2,System.Single)
-  commentId: M:piine.Int2.op_Division(piine.Int2,System.Single)
-  id: op_Division(piine.Int2,System.Single)
+  fullName.vb: piine.Int2.Narrowing(piine.Double2 to piine.Int2)
+  name.vb: Narrowing(Double2 to Int2)
+- uid: piine.Int2.op_Explicit(piine.UInt2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(piine.UInt2)~piine.Int2
+  id: op_Explicit(piine.UInt2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Division(Int2, Single)
-  nameWithType: Int2.Division(Int2, Single)
-  fullName: piine.Int2.Division(piine.Int2, System.Single)
+  name: Explicit(UInt2 to Int2)
+  nameWithType: Int2.Explicit(UInt2 to Int2)
+  fullName: piine.Int2.Explicit(piine.UInt2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_Division
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 109
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 497
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static Int2 operator /(Int2 a, float b)
+    content: public static explicit operator Int2(UInt2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: System.Single
+    - id: v
+      type: piine.UInt2
     return:
       type: piine.Int2
-    content.vb: Public Shared Operator /(a As Int2, b As Single) As Int2
-  overload: piine.Int2.op_Division*
+    content.vb: Public Shared Narrowing Operator CType(v As UInt2) As Int2
+  overload: piine.Int2.op_Explicit*
+  nameWithType.vb: Int2.Narrowing(UInt2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_GreaterThan(piine.Int2,piine.Int2)
-  id: op_GreaterThan(piine.Int2,piine.Int2)
+  fullName.vb: piine.Int2.Narrowing(piine.UInt2 to piine.Int2)
+  name.vb: Narrowing(UInt2 to Int2)
+- uid: piine.Int2.op_Implicit(piine.Byte2)~piine.Int2
+  commentId: M:piine.Int2.op_Implicit(piine.Byte2)~piine.Int2
+  id: op_Implicit(piine.Byte2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: GreaterThan(Int2, Int2)
-  nameWithType: Int2.GreaterThan(Int2, Int2)
-  fullName: piine.Int2.GreaterThan(piine.Int2, piine.Int2)
+  name: Implicit(Byte2 to Int2)
+  nameWithType: Int2.Implicit(Byte2 to Int2)
+  fullName: piine.Int2.Implicit(piine.Byte2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_GreaterThan
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 111
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 500
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static bool operator>(Int2 a, Int2 b)
+    content: public static implicit operator Int2(Byte2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
+    - id: v
+      type: piine.Byte2
     return:
-      type: System.Boolean
-    content.vb: Public Shared Operator>(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_GreaterThan*
+      type: piine.Int2
+    content.vb: Public Shared Widening Operator CType(v As Byte2) As Int2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(Byte2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_LessThan(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_LessThan(piine.Int2,piine.Int2)
-  id: op_LessThan(piine.Int2,piine.Int2)
+  fullName.vb: piine.Int2.Widening(piine.Byte2 to piine.Int2)
+  name.vb: Widening(Byte2 to Int2)
+- uid: piine.Int2.op_Implicit(piine.SByte2)~piine.Int2
+  commentId: M:piine.Int2.op_Implicit(piine.SByte2)~piine.Int2
+  id: op_Implicit(piine.SByte2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: LessThan(Int2, Int2)
-  nameWithType: Int2.LessThan(Int2, Int2)
-  fullName: piine.Int2.LessThan(piine.Int2, piine.Int2)
+  name: Implicit(SByte2 to Int2)
+  nameWithType: Int2.Implicit(SByte2 to Int2)
+  fullName: piine.Int2.Implicit(piine.SByte2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_LessThan
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 113
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 503
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static bool operator <(Int2 a, Int2 b)
+    content: public static implicit operator Int2(SByte2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
+    - id: v
+      type: piine.SByte2
     return:
-      type: System.Boolean
-    content.vb: Public Shared Operator <(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_LessThan*
+      type: piine.Int2
+    content.vb: Public Shared Widening Operator CType(v As SByte2) As Int2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(SByte2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_GreaterThanOrEqual(piine.Int2,piine.Int2)
-  id: op_GreaterThanOrEqual(piine.Int2,piine.Int2)
+  fullName.vb: piine.Int2.Widening(piine.SByte2 to piine.Int2)
+  name.vb: Widening(SByte2 to Int2)
+- uid: piine.Int2.op_Implicit(piine.Short2)~piine.Int2
+  commentId: M:piine.Int2.op_Implicit(piine.Short2)~piine.Int2
+  id: op_Implicit(piine.Short2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: GreaterThanOrEqual(Int2, Int2)
-  nameWithType: Int2.GreaterThanOrEqual(Int2, Int2)
-  fullName: piine.Int2.GreaterThanOrEqual(piine.Int2, piine.Int2)
+  name: Implicit(Short2 to Int2)
+  nameWithType: Int2.Implicit(Short2 to Int2)
+  fullName: piine.Int2.Implicit(piine.Short2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_GreaterThanOrEqual
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 115
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 506
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static bool operator >=(Int2 a, Int2 b)
+    content: public static implicit operator Int2(Short2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
+    - id: v
+      type: piine.Short2
     return:
-      type: System.Boolean
-    content.vb: Public Shared Operator >=(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_GreaterThanOrEqual*
+      type: piine.Int2
+    content.vb: Public Shared Widening Operator CType(v As Short2) As Int2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(Short2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
-  commentId: M:piine.Int2.op_LessThanOrEqual(piine.Int2,piine.Int2)
-  id: op_LessThanOrEqual(piine.Int2,piine.Int2)
+  fullName.vb: piine.Int2.Widening(piine.Short2 to piine.Int2)
+  name.vb: Widening(Short2 to Int2)
+- uid: piine.Int2.op_Implicit(piine.UShort2)~piine.Int2
+  commentId: M:piine.Int2.op_Implicit(piine.UShort2)~piine.Int2
+  id: op_Implicit(piine.UShort2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: LessThanOrEqual(Int2, Int2)
-  nameWithType: Int2.LessThanOrEqual(Int2, Int2)
-  fullName: piine.Int2.LessThanOrEqual(piine.Int2, piine.Int2)
+  name: Implicit(UShort2 to Int2)
+  nameWithType: Int2.Implicit(UShort2 to Int2)
+  fullName: piine.Int2.Implicit(piine.UShort2 to piine.Int2)
   type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: op_LessThanOrEqual
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 117
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 509
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public static bool operator <=(Int2 a, Int2 b)
+    content: public static implicit operator Int2(UShort2 v)
     parameters:
-    - id: a
-      type: piine.Int2
-    - id: b
-      type: piine.Int2
+    - id: v
+      type: piine.UShort2
     return:
-      type: System.Boolean
-    content.vb: Public Shared Operator <=(a As Int2, b As Int2) As Boolean
-  overload: piine.Int2.op_LessThanOrEqual*
+      type: piine.Int2
+    content.vb: Public Shared Widening Operator CType(v As UShort2) As Int2
+  overload: piine.Int2.op_Implicit*
+  nameWithType.vb: Int2.Widening(UShort2 to Int2)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: piine.Int2.GetHashCode
-  commentId: M:piine.Int2.GetHashCode
-  id: GetHashCode
+  fullName.vb: piine.Int2.Widening(piine.UShort2 to piine.Int2)
+  name.vb: Widening(UShort2 to Int2)
+- uid: piine.Int2.op_Explicit(piine.Long2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(piine.Long2)~piine.Int2
+  id: op_Explicit(piine.Long2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: GetHashCode()
-  nameWithType: Int2.GetHashCode()
-  fullName: piine.Int2.GetHashCode()
-  type: Method
+  name: Explicit(Long2 to Int2)
+  nameWithType: Int2.Explicit(Long2 to Int2)
+  fullName: piine.Int2.Explicit(piine.Long2 to piine.Int2)
+  type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: GetHashCode
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 119
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 512
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public override int GetHashCode()
-    return:
-      type: System.Int32
-    content.vb: Public Overrides Function GetHashCode As Integer
-  overridden: System.ValueType.GetHashCode
-  overload: piine.Int2.GetHashCode*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: piine.Int2.ToString
-  commentId: M:piine.Int2.ToString
-  id: ToString
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: Int2.ToString()
-  fullName: piine.Int2.ToString()
-  type: Method
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: ToString
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 121
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-    content.vb: Public Overrides Function ToString As String
-  overridden: System.ValueType.ToString
-  overload: piine.Int2.ToString*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: piine.Int2.Equals(piine.Int2)
-  commentId: M:piine.Int2.Equals(piine.Int2)
-  id: Equals(piine.Int2)
-  parent: piine.Int2
-  langs:
-  - csharp
-  - vb
-  name: Equals(Int2)
-  nameWithType: Int2.Equals(Int2)
-  fullName: piine.Int2.Equals(piine.Int2)
-  type: Method
-  source:
-    remote:
-      path: src/Vector Types/Int/Int2.cs
-      branch: dev
-      repo: https://github.com/djmoth/piine.git
-    id: Equals
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 123
-  assemblies:
-  - piine
-  namespace: piine
-  syntax:
-    content: public bool Equals(Int2 other)
+    content: public static explicit operator Int2(Long2 v)
     parameters:
-    - id: other
+    - id: v
+      type: piine.Long2
+    return:
       type: piine.Int2
-    return:
-      type: System.Boolean
-    content.vb: Public Function Equals(other As Int2) As Boolean
-  overload: piine.Int2.Equals*
-  implements:
-  - System.IEquatable{piine.Int2}.Equals(piine.Int2)
+    content.vb: Public Shared Narrowing Operator CType(v As Long2) As Int2
+  overload: piine.Int2.op_Explicit*
+  nameWithType.vb: Int2.Narrowing(Long2 to Int2)
   modifiers.csharp:
   - public
+  - static
   modifiers.vb:
   - Public
-- uid: piine.Int2.Equals(System.Object)
-  commentId: M:piine.Int2.Equals(System.Object)
-  id: Equals(System.Object)
+  - Shared
+  fullName.vb: piine.Int2.Narrowing(piine.Long2 to piine.Int2)
+  name.vb: Narrowing(Long2 to Int2)
+- uid: piine.Int2.op_Explicit(piine.ULong2)~piine.Int2
+  commentId: M:piine.Int2.op_Explicit(piine.ULong2)~piine.Int2
+  id: op_Explicit(piine.ULong2)~piine.Int2
   parent: piine.Int2
   langs:
   - csharp
   - vb
-  name: Equals(Object)
-  nameWithType: Int2.Equals(Object)
-  fullName: piine.Int2.Equals(System.Object)
-  type: Method
+  name: Explicit(ULong2 to Int2)
+  nameWithType: Int2.Explicit(ULong2 to Int2)
+  fullName: piine.Int2.Explicit(piine.ULong2 to piine.Int2)
+  type: Operator
   source:
     remote:
-      path: src/Vector Types/Int/Int2.cs
+      path: src/Numerics/Vectors/Type2.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
-    id: Equals
-    path: src/Vector Types/Int/Int2.cs
-    startLine: 125
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type2.cs
+    startLine: 515
   assemblies:
   - piine
   namespace: piine
   syntax:
-    content: public override bool Equals(object obj)
+    content: public static explicit operator Int2(ULong2 v)
     parameters:
-    - id: obj
-      type: System.Object
+    - id: v
+      type: piine.ULong2
     return:
-      type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
-  overridden: System.ValueType.Equals(System.Object)
-  overload: piine.Int2.Equals*
+      type: piine.Int2
+    content.vb: Public Shared Narrowing Operator CType(v As ULong2) As Int2
+  overload: piine.Int2.op_Explicit*
+  nameWithType.vb: Int2.Narrowing(ULong2 to Int2)
   modifiers.csharp:
   - public
-  - override
+  - static
   modifiers.vb:
   - Public
-  - Overrides
+  - Shared
+  fullName.vb: piine.Int2.Narrowing(piine.ULong2 to piine.Int2)
+  name.vb: Narrowing(ULong2 to Int2)
 references:
 - uid: piine
   commentId: N:piine
@@ -1532,6 +2015,37 @@ references:
     name: Int2
     nameWithType: Int2
     fullName: piine.Int2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -1725,6 +2239,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1765,33 +2286,16 @@ references:
   name: UnitY
   nameWithType: Int2.UnitY
   fullName: piine.Int2.UnitY
-- uid: piine.Int2.Length*
-  commentId: Overload:piine.Int2.Length
-  name: Length
-  nameWithType: Int2.Length
-  fullName: piine.Int2.Length
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: piine.Int2.LengthSquared*
-  commentId: Overload:piine.Int2.LengthSquared
-  name: LengthSquared
-  nameWithType: Int2.LengthSquared
-  fullName: piine.Int2.LengthSquared
-- uid: piine.Int2.#ctor*
-  commentId: Overload:piine.Int2.#ctor
-  name: Int2
-  nameWithType: Int2.Int2
-  fullName: piine.Int2.Int2
 - uid: piine.Int2.Item*
   commentId: Overload:piine.Int2.Item
   name: Item
   nameWithType: Int2.Item
   fullName: piine.Int2.Item
+- uid: piine.Int2.#ctor*
+  commentId: Overload:piine.Int2.#ctor
+  name: Int2
+  nameWithType: Int2.Int2
+  fullName: piine.Int2.Int2
 - uid: piine.Int2.GetUnsafe*
   commentId: Overload:piine.Int2.GetUnsafe
   name: GetUnsafe
@@ -1802,11 +2306,6 @@ references:
   name: SetUnsafe
   nameWithType: Int2.SetUnsafe
   fullName: piine.Int2.SetUnsafe
-- uid: piine.Int2.CalculateArea*
-  commentId: Overload:piine.Int2.CalculateArea
-  name: CalculateArea
-  nameWithType: Int2.CalculateArea
-  fullName: piine.Int2.CalculateArea
 - uid: piine.Int2.Normalize*
   commentId: Overload:piine.Int2.Normalize
   name: Normalize
@@ -1822,106 +2321,48 @@ references:
   name: Distance
   nameWithType: Int2.Distance
   fullName: piine.Int2.Distance
-- uid: piine.Int2.op_Explicit*
-  commentId: Overload:piine.Int2.op_Explicit
-  name: Explicit
-  nameWithType: Int2.Explicit
-  fullName: piine.Int2.Explicit
-  nameWithType.vb: Int2.Narrowing
-  fullName.vb: piine.Int2.Narrowing
-  name.vb: Narrowing
-- uid: piine.Float2
-  commentId: T:piine.Float2
-  parent: piine
-  name: Float2
-  nameWithType: Float2
-  fullName: piine.Float2
-- uid: System.Numerics.Vector2
-  commentId: T:System.Numerics.Vector2
-  parent: System.Numerics
-  isExternal: true
-  name: Vector2
-  nameWithType: Vector2
-  fullName: System.Numerics.Vector2
-- uid: System.Numerics
-  commentId: N:System.Numerics
-  isExternal: true
-  name: System.Numerics
-  nameWithType: System.Numerics
-  fullName: System.Numerics
-- uid: piine.Int2.op_Implicit*
-  commentId: Overload:piine.Int2.op_Implicit
-  name: Implicit
-  nameWithType: Int2.Implicit
-  fullName: piine.Int2.Implicit
-  nameWithType.vb: Int2.Widening
-  fullName.vb: piine.Int2.Widening
-  name.vb: Widening
-- uid: System.ValueTuple{System.Int32,System.Int32}
-  commentId: T:System.ValueTuple{System.Int32,System.Int32}
+- uid: System.Single
+  commentId: T:System.Single
   parent: System
   isExternal: true
-  name: ValueTuple<Int32, Int32>
-  nameWithType: ValueTuple<Int32, Int32>
-  fullName: System.ValueTuple<System.Int32, System.Int32>
-  nameWithType.vb: ValueTuple(Of Int32, Int32)
-  fullName.vb: System.ValueTuple(Of System.Int32, System.Int32)
-  name.vb: ValueTuple(Of Int32, Int32)
-  spec.csharp:
-  - uid: System.ValueTuple`2
-    name: ValueTuple
-    nameWithType: ValueTuple
-    fullName: System.ValueTuple
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.ValueTuple`2
-    name: ValueTuple
-    nameWithType: ValueTuple
-    fullName: System.ValueTuple
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: piine.Int2.op_Equality*
-  commentId: Overload:piine.Int2.op_Equality
-  name: Equality
-  nameWithType: Int2.Equality
-  fullName: piine.Int2.Equality
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: piine.Int2.Dot*
+  commentId: Overload:piine.Int2.Dot
+  name: Dot
+  nameWithType: Int2.Dot
+  fullName: piine.Int2.Dot
+- uid: piine.Int2.Reverse*
+  commentId: Overload:piine.Int2.Reverse
+  name: Reverse
+  nameWithType: Int2.Reverse
+  fullName: piine.Int2.Reverse
+- uid: piine.Int2.Sum*
+  commentId: Overload:piine.Int2.Sum
+  name: Sum
+  nameWithType: Int2.Sum
+  fullName: piine.Int2.Sum
+- uid: piine.Int2.Length*
+  commentId: Overload:piine.Int2.Length
+  name: Length
+  nameWithType: Int2.Length
+  fullName: piine.Int2.Length
+- uid: piine.Int2.LengthSquared*
+  commentId: Overload:piine.Int2.LengthSquared
+  name: LengthSquared
+  nameWithType: Int2.LengthSquared
+  fullName: piine.Int2.LengthSquared
+- uid: piine.Int2.Area*
+  commentId: Overload:piine.Int2.Area
+  name: Area
+  nameWithType: Int2.Area
+  fullName: piine.Int2.Area
+- uid: piine.Int2.Contains*
+  commentId: Overload:piine.Int2.Contains
+  name: Contains
+  nameWithType: Int2.Contains
+  fullName: piine.Int2.Contains
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1929,6 +2370,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: piine.Int2.op_Equality*
+  commentId: Overload:piine.Int2.op_Equality
+  name: Equality
+  nameWithType: Int2.Equality
+  fullName: piine.Int2.Equality
 - uid: piine.Int2.op_Inequality*
   commentId: Overload:piine.Int2.op_Inequality
   name: Inequality
@@ -1979,49 +2425,11 @@ references:
   name: LessThanOrEqual
   nameWithType: Int2.LessThanOrEqual
   fullName: piine.Int2.LessThanOrEqual
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
-  spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    nameWithType: ValueType.GetHashCode
-    fullName: System.ValueType.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: piine.Int2.GetHashCode*
-  commentId: Overload:piine.Int2.GetHashCode
-  name: GetHashCode
-  nameWithType: Int2.GetHashCode
-  fullName: piine.Int2.GetHashCode
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
-  isExternal: true
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType
+- uid: piine.Int2.Deconstruct*
+  commentId: Overload:piine.Int2.Deconstruct
+  name: Deconstruct
+  nameWithType: Int2.Deconstruct
+  fullName: piine.Int2.Deconstruct
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
@@ -2190,3 +2598,146 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: piine.Int2.op_Implicit*
+  commentId: Overload:piine.Int2.op_Implicit
+  name: Implicit
+  nameWithType: Int2.Implicit
+  fullName: piine.Int2.Implicit
+  nameWithType.vb: Int2.Widening
+  fullName.vb: piine.Int2.Widening
+  name.vb: Widening
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: System.Numerics.Vector2
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: System.ValueTuple{System.Int32,System.Int32}
+  commentId: T:System.ValueTuple{System.Int32,System.Int32}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Int32, Int32>
+  nameWithType: ValueTuple<Int32, Int32>
+  fullName: System.ValueTuple<System.Int32, System.Int32>
+  nameWithType.vb: ValueTuple(Of Int32, Int32)
+  fullName.vb: System.ValueTuple(Of System.Int32, System.Int32)
+  name.vb: ValueTuple(Of Int32, Int32)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Int2.op_Explicit*
+  commentId: Overload:piine.Int2.op_Explicit
+  name: Explicit
+  nameWithType: Int2.Explicit
+  fullName: piine.Int2.Explicit
+  nameWithType.vb: Int2.Narrowing
+  fullName.vb: piine.Int2.Narrowing
+  name.vb: Narrowing
+- uid: piine.Float2
+  commentId: T:piine.Float2
+  parent: piine
+  name: Float2
+  nameWithType: Float2
+  fullName: piine.Float2
+- uid: piine.Double2
+  commentId: T:piine.Double2
+  parent: piine
+  name: Double2
+  nameWithType: Double2
+  fullName: piine.Double2
+- uid: piine.UInt2
+  commentId: T:piine.UInt2
+  parent: piine
+  name: UInt2
+  nameWithType: UInt2
+  fullName: piine.UInt2
+- uid: piine.Byte2
+  commentId: T:piine.Byte2
+  parent: piine
+  name: Byte2
+  nameWithType: Byte2
+  fullName: piine.Byte2
+- uid: piine.SByte2
+  commentId: T:piine.SByte2
+  parent: piine
+  name: SByte2
+  nameWithType: SByte2
+  fullName: piine.SByte2
+- uid: piine.Short2
+  commentId: T:piine.Short2
+  parent: piine
+  name: Short2
+  nameWithType: Short2
+  fullName: piine.Short2
+- uid: piine.UShort2
+  commentId: T:piine.UShort2
+  parent: piine
+  name: UShort2
+  nameWithType: UShort2
+  fullName: piine.UShort2
+- uid: piine.Long2
+  commentId: T:piine.Long2
+  parent: piine
+  name: Long2
+  nameWithType: Long2
+  fullName: piine.Long2
+- uid: piine.ULong2
+  commentId: T:piine.ULong2
+  parent: piine
+  name: ULong2
+  nameWithType: ULong2
+  fullName: piine.ULong2

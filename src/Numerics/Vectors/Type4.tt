@@ -212,9 +212,10 @@ public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (<#=typeName#> v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
-        public static explicit operator <#=typeName#> (Vector4 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y, (<#=dataType#>)v.Z, (<#=dataType#>)v.W);
+<# string toV4 = dataType == "double" ? "explicit" : "implicit"; #>
+		public static <#=toV4#> operator Vector4 (<#=typeName#> v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+<# string fromV4 = memorySize < 4 || isUnsigned ? "explicit" : "implicit"; #>
+        public static <#=fromV4#> operator <#=typeName#> (Vector4 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y, (<#=dataType#>)v.Z, (<#=dataType#>)v.W);
 
 		//Tuple
 		public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y, <#=dataType#> z, <#=dataType#> w) v) => new <#=typeName#> (v.x, v.y, v.z, v.w);
@@ -227,7 +228,18 @@ public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((
 				continue;
 
 			string otherTypeName = otherCapitalizedDataType + "4";
-			string conversion = (otherMemorySize < memorySize ? "implicit" : "explicit");
+			
+			bool isImplicit;
+
+			if (dataType == "float")
+				isImplicit = otherDataType != "double";				
+			else if (dataType == "double")
+				isImplicit = true;
+			else
+				isImplicit = otherMemorySize < memorySize;
+
+
+			string conversion = isImplicit ? "implicit" : "explicit";
 		#>
 
 		//<#=otherTypeName#>

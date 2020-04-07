@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics;
 
 namespace piine.Memory
 {
@@ -16,7 +17,11 @@ namespace piine.Memory
 
         private T* array; //Internal pointer to unmanaged memory
         private int capacity; //Size of array (in sizeof (T))
-        
+
+#if TRACK_ALLOC
+        private StackTrace allocationPoint;
+#endif
+
         /// <summary>
         /// Number of elements in the list
         /// </summary>
@@ -72,6 +77,10 @@ namespace piine.Memory
             this.capacity = capacity;
 
             array = Unmanaged.AllocMemory<T> (capacity);
+
+#if TRACK_ALLOC
+            allocationPoint = new StackTrace ();
+#endif
         }
 
         private void CheckIfAllocated ()
@@ -242,7 +251,9 @@ namespace piine.Memory
             return -1;
         }
 
-        public void CopyTo (T[] destination, int destinationIndex)
+        public void CopyTo (T[] destination, int destinationIndex) => CopyTo (destination, destinationIndex);
+
+        public void CopyTo (Span<T> destination, int destinationIndex)
         {
             CheckIfAllocated ();
 
@@ -288,12 +299,21 @@ namespace piine.Memory
             GC.SuppressFinalize (this);
         }
       
-        protected virtual void Dispose (bool disposing)
+        protected virtual void Dispose (bool fromDispose)
         {
             if (!Allocated)
                 return;
 
             Unmanaged.FreeMemory (ref array, capacity);
+
+            if (!fromDispose)
+            {
+#if TRACK_ALLOC
+                Trace.WriteLine (nameof (UnmanagedArray<T>) + " was disposed from Finalizer. You may have forgotten to call Dispose. The object was allocated here: " + allocationPoint.ToString ());
+#else
+                Trace.WriteLine (nameof (UnmanagedArray<T>) + " was disposed from Finalizer. You may have forgotten to call Dispose. Compile with symbol TRACK_ALLOC to keep track of where in your code unmanaged memory is allocated.");
+#endif
+            }
         }
 
         public struct Enumerator : IEnumerator<T>

@@ -13,6 +13,7 @@ items:
   - piine.Memory.UnmanagedArray`1.CopyTo(`0[],System.Int32)
   - piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
   - piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0})
+  - piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0},System.Int32)
   - piine.Memory.UnmanagedArray`1.Count
   - piine.Memory.UnmanagedArray`1.Dispose
   - piine.Memory.UnmanagedArray`1.Dispose(System.Boolean)
@@ -44,7 +45,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedArray
     path: src/Memory/UnmanagedArray.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - piine
   namespace: piine.Memory
@@ -57,7 +58,6 @@ items:
       description: The unmanaged type that the array will contain
     content.vb: >-
       Public Class UnmanagedArray(Of T As Structure)
-
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Length
     path: src/Memory/UnmanagedArray.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - piine
   namespace: piine.Memory
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Count
     path: src/Memory/UnmanagedArray.cs
-    startLine: 21
+    startLine: 26
   assemblies:
   - piine
   namespace: piine.Memory
@@ -182,7 +182,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedArray.cs
-    startLine: 25
+    startLine: 30
   assemblies:
   - piine
   namespace: piine.Memory
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedArray.cs
-    startLine: 29
+    startLine: 34
   assemblies:
   - piine
   namespace: piine.Memory
@@ -262,7 +262,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedArray.cs
-    startLine: 35
+    startLine: 40
   assemblies:
   - piine
   namespace: piine.Memory
@@ -307,7 +307,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
-    startLine: 62
+    startLine: 67
   assemblies:
   - piine
   namespace: piine.Memory
@@ -347,11 +347,11 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedArray.cs
-    startLine: 72
+    startLine: 81
   assemblies:
   - piine
   namespace: piine.Memory
-  summary: "\nAllocate a new UnmanagedArray from a Span The contents of the span are copied to the new UnmanagedArray.\n"
+  summary: "\nAllocate a new UnmanagedArray from a Span. The contents of the span are copied to the new UnmanagedArray.\n"
   example: []
   syntax:
     content: public UnmanagedArray(Span<T> span)
@@ -386,7 +386,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetInternalPointer
     path: src/Memory/UnmanagedArray.cs
-    startLine: 83
+    startLine: 92
   assemblies:
   - piine
   namespace: piine.Memory
@@ -434,7 +434,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedArray.cs
-    startLine: 102
+    startLine: 111
   assemblies:
   - piine
   namespace: piine.Memory
@@ -477,7 +477,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedArray.cs
-    startLine: 118
+    startLine: 127
   assemblies:
   - piine
   namespace: piine.Memory
@@ -513,7 +513,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedArray.cs
-    startLine: 128
+    startLine: 137
   assemblies:
   - piine
   namespace: piine.Memory
@@ -552,7 +552,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 141
+    startLine: 150
   assemblies:
   - piine
   namespace: piine.Memory
@@ -574,6 +574,44 @@ items:
   - Public
   fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo(T(), System.Int32)
   name.vb: CopyTo(T(), Int32)
+- uid: piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0},System.Int32)
+  commentId: M:piine.Memory.UnmanagedArray`1.CopyTo(System.Span{`0},System.Int32)
+  id: CopyTo(System.Span{`0},System.Int32)
+  parent: piine.Memory.UnmanagedArray`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Span<T>, Int32)
+  nameWithType: UnmanagedArray<T>.CopyTo(Span<T>, Int32)
+  fullName: piine.Memory.UnmanagedArray<T>.CopyTo(System.Span<T>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedArray.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: CopyTo
+    path: src/Memory/UnmanagedArray.cs
+    startLine: 152
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void CopyTo(Span<T> destination, int destinationIndex)
+    parameters:
+    - id: destination
+      type: System.Span{{T}}
+    - id: destinationIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(destination As Span(Of T), destinationIndex As Integer)
+  overload: piine.Memory.UnmanagedArray`1.CopyTo*
+  nameWithType.vb: UnmanagedArray(Of T).CopyTo(Span(Of T), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedArray(Of T).CopyTo(System.Span(Of T), System.Int32)
+  name.vb: CopyTo(Span(Of T), Int32)
 - uid: piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
   commentId: M:piine.Memory.UnmanagedArray`1.CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
   id: CopyTo(piine.Memory.UnmanagedArray{`0},System.Int32)
@@ -592,7 +630,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 160
+    startLine: 171
   assemblies:
   - piine
   namespace: piine.Memory
@@ -630,7 +668,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedArray.cs
-    startLine: 177
+    startLine: 188
   assemblies:
   - piine
   namespace: piine.Memory
@@ -666,7 +704,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetSpan
     path: src/Memory/UnmanagedArray.cs
-    startLine: 187
+    startLine: 198
   assemblies:
   - piine
   namespace: piine.Memory
@@ -702,7 +740,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 189
+    startLine: 200
   assemblies:
   - piine
   namespace: piine.Memory
@@ -737,7 +775,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 196
+    startLine: 207
   assemblies:
   - piine
   namespace: piine.Memory
@@ -771,7 +809,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedArray.cs
-    startLine: 198
+    startLine: 209
   assemblies:
   - piine
   namespace: piine.Memory
@@ -805,7 +843,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.Insert
     path: src/Memory/UnmanagedArray.cs
-    startLine: 205
+    startLine: 216
   assemblies:
   - piine
   namespace: piine.Memory
@@ -842,7 +880,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IList<T>.RemoveAt
     path: src/Memory/UnmanagedArray.cs
-    startLine: 207
+    startLine: 218
   assemblies:
   - piine
   namespace: piine.Memory
@@ -877,7 +915,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Add
     path: src/Memory/UnmanagedArray.cs
-    startLine: 209
+    startLine: 220
   assemblies:
   - piine
   namespace: piine.Memory
@@ -912,7 +950,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.Remove
     path: src/Memory/UnmanagedArray.cs
-    startLine: 211
+    startLine: 222
   assemblies:
   - piine
   namespace: piine.Memory
@@ -948,7 +986,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedArray.cs
-    startLine: 213
+    startLine: 224
   assemblies:
   - piine
   namespace: piine.Memory
@@ -980,7 +1018,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
-    startLine: 218
+    startLine: 229
   assemblies:
   - piine
   namespace: piine.Memory
@@ -1016,16 +1054,16 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedArray.cs
-    startLine: 224
+    startLine: 235
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
-    content: protected virtual void Dispose(bool disposing)
+    content: protected virtual void Dispose(bool fromDispose)
     parameters:
-    - id: disposing
+    - id: fromDispose
       type: System.Boolean
-    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    content.vb: Protected Overridable Sub Dispose(fromDispose As Boolean)
   overload: piine.Memory.UnmanagedArray`1.Dispose*
   nameWithType.vb: UnmanagedArray(Of T).Dispose(Boolean)
   modifiers.csharp:

@@ -10,6 +10,14 @@
     name: Byte4
   - uid: piine.Double2
     name: Double2
+  - uid: piine.Double3
+    name: Double3
+  - uid: piine.Double4
+    name: Double4
+  - uid: piine.Fixed16
+    name: Fixed16
+  - uid: piine.Fixed8
+    name: Fixed8
   - uid: piine.Float2
     name: Float2
   - uid: piine.Float3
@@ -22,15 +30,46 @@
     name: Int3
   - uid: piine.Int4
     name: Int4
+  - uid: piine.Long2
+    name: Long2
+  - uid: piine.Long3
+    name: Long3
+  - uid: piine.Long4
+    name: Long4
+  - uid: piine.SByte2
+    name: SByte2
+  - uid: piine.SByte3
+    name: SByte3
+  - uid: piine.SByte4
+    name: SByte4
+  - uid: piine.Short2
+    name: Short2
+  - uid: piine.Short3
+    name: Short3
+  - uid: piine.Short4
+    name: Short4
   - uid: piine.Simd
     name: Simd
+  - uid: piine.UInt2
+    name: UInt2
+  - uid: piine.UInt3
+    name: UInt3
+  - uid: piine.UInt4
+    name: UInt4
+  - uid: piine.ULong2
+    name: ULong2
+  - uid: piine.ULong3
+    name: ULong3
+  - uid: piine.ULong4
+    name: ULong4
+  - uid: piine.UShort2
+    name: UShort2
+  - uid: piine.UShort3
+    name: UShort3
+  - uid: piine.UShort4
+    name: UShort4
   - uid: piine.XorShift
     name: XorShift
-- uid: piine.Graphics
-  name: piine.Graphics
-  items:
-  - uid: piine.Graphics.Color32
-    name: Color32
 - uid: piine.Memory
   name: piine.Memory
   items:
@@ -62,6 +101,12 @@
   - uid: piine.Memory.UnmanagedList`1.Enumerator
     name: UnmanagedList<T>.Enumerator
     name.vb: UnmanagedList(Of T).Enumerator
+  - uid: piine.Memory.UnmanagedStack`1
+    name: UnmanagedStack<T>
+    name.vb: UnmanagedStack(Of T)
+  - uid: piine.Memory.UnmanagedStack`1.Enumerator
+    name: UnmanagedStack<T>.Enumerator
+    name.vb: UnmanagedStack(Of T).Enumerator
 - uid: Tests
   name: Tests
   items:

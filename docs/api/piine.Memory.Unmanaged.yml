@@ -85,7 +85,6 @@ items:
       [CLSCompliant(false)]
 
       public static T*AllocMemory<T>(long length, bool fillWithDefault = false)
-
           where T : struct
     parameters:
     - id: length
@@ -149,7 +148,6 @@ items:
       [CLSCompliant(false)]
 
       public static T*AllocMemory<T>(int length, bool fillWithDefault = false)
-
           where T : struct
     parameters:
     - id: length
@@ -213,7 +211,6 @@ items:
       [CLSCompliant(false)]
 
       public static void FreeMemory<T>(ref T*memory, long length)
-
           where T : struct
     parameters:
     - id: memory
@@ -273,7 +270,6 @@ items:
       [CLSCompliant(false)]
 
       public static void FreeMemory<T>(ref T*memory, int length)
-
           where T : struct
     parameters:
     - id: memory
@@ -333,7 +329,6 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, long currentLength, long newLength)
-
           where T : struct
     parameters:
     - id: memory
@@ -396,7 +391,6 @@ items:
       [CLSCompliant(false)]
 
       public static void ReAllocMemory<T>(ref T*memory, int currentLength, int newLength)
-
           where T : struct
     parameters:
     - id: memory
@@ -459,7 +453,6 @@ items:
       [CLSCompliant(false)]
 
       public static void SetMemory<T>(T*memory, int length, T data)
-
           where T : struct
     parameters:
     - id: memory
@@ -522,7 +515,6 @@ items:
       [CLSCompliant(false)]
 
       public static void ZeroMemory<T>(T*memory, int length)
-
           where T : struct
     parameters:
     - id: memory
@@ -582,7 +574,6 @@ items:
       [CLSCompliant(false)]
 
       public static void MemoryCopy<T>(T*source, T*destination, long destinationLength, long elementsToCopy)
-
           where T : struct
     parameters:
     - id: source
@@ -642,7 +633,6 @@ items:
   syntax:
     content: >-
       public static Span<T> AllocSpan<T>(int length)
-
           where T : struct
     parameters:
     - id: length
@@ -687,7 +677,6 @@ items:
   syntax:
     content: >-
       public static void FreeSpan<T>(Span<T> span)
-
           where T : struct
     parameters:
     - id: span

@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: tests/Int3Tests.cs
+      path: tests/Vectors/Int/Int3Tests.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Int3Tests
-    path: tests/Int3Tests.cs
+    path: tests/Vectors/Int/Int3Tests.cs
     startLine: 8
   assemblies:
   - tests
@@ -58,11 +58,11 @@ items:
   type: Method
   source:
     remote:
-      path: tests/Int3Tests.cs
+      path: tests/Vectors/Int/Int3Tests.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAdd
-    path: tests/Int3Tests.cs
+    path: tests/Vectors/Int/Int3Tests.cs
     startLine: 10
   assemblies:
   - tests
@@ -98,11 +98,11 @@ items:
   type: Method
   source:
     remote:
-      path: tests/Int3Tests.cs
+      path: tests/Vectors/Int/Int3Tests.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestAddPerformanceNoSIMD
-    path: tests/Int3Tests.cs
+    path: tests/Vectors/Int/Int3Tests.cs
     startLine: 21
   assemblies:
   - tests
@@ -145,11 +145,11 @@ items:
   type: Method
   source:
     remote:
-      path: tests/Int3Tests.cs
+      path: tests/Vectors/Int/Int3Tests.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: TestTupleCast
-    path: tests/Int3Tests.cs
+    path: tests/Vectors/Int/Int3Tests.cs
     startLine: 60
   assemblies:
   - tests

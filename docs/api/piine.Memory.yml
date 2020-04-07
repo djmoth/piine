@@ -14,6 +14,8 @@ items:
   - piine.Memory.UnmanagedArray`1.Enumerator
   - piine.Memory.UnmanagedList`1
   - piine.Memory.UnmanagedList`1.Enumerator
+  - piine.Memory.UnmanagedStack`1
+  - piine.Memory.UnmanagedStack`1.Enumerator
   langs:
   - csharp
   - vb
@@ -304,6 +306,74 @@ references:
     name: UnmanagedList.Enumerator
     nameWithType: UnmanagedList.Enumerator
     fullName: piine.Memory.UnmanagedList.Enumerator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedStack`1
+  commentId: T:piine.Memory.UnmanagedStack`1
+  parent: piine.Memory
+  name: UnmanagedStack<T>
+  nameWithType: UnmanagedStack<T>
+  fullName: piine.Memory.UnmanagedStack<T>
+  nameWithType.vb: UnmanagedStack(Of T)
+  fullName.vb: piine.Memory.UnmanagedStack(Of T)
+  name.vb: UnmanagedStack(Of T)
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedStack`1
+    name: UnmanagedStack
+    nameWithType: UnmanagedStack
+    fullName: piine.Memory.UnmanagedStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedStack`1
+    name: UnmanagedStack
+    nameWithType: UnmanagedStack
+    fullName: piine.Memory.UnmanagedStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Memory.UnmanagedStack`1.Enumerator
+  commentId: T:piine.Memory.UnmanagedStack`1.Enumerator
+  parent: piine.Memory
+  name: UnmanagedStack.Enumerator<>
+  nameWithType: UnmanagedStack.Enumerator<>
+  fullName: piine.Memory.UnmanagedStack.Enumerator<>
+  nameWithType.vb: UnmanagedStack.Enumerator(Of )
+  fullName.vb: piine.Memory.UnmanagedStack.Enumerator(Of )
+  name.vb: UnmanagedStack.Enumerator(Of )
+  spec.csharp:
+  - uid: piine.Memory.UnmanagedStack`1.Enumerator
+    name: UnmanagedStack.Enumerator
+    nameWithType: UnmanagedStack.Enumerator
+    fullName: piine.Memory.UnmanagedStack.Enumerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: piine.Memory.UnmanagedStack`1.Enumerator
+    name: UnmanagedStack.Enumerator
+    nameWithType: UnmanagedStack.Enumerator
+    fullName: piine.Memory.UnmanagedStack.Enumerator
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '

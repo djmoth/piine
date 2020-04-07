@@ -37,7 +37,6 @@ items:
     content: 'public struct XorShift : IEquatable<XorShift>'
     content.vb: >-
       Public Structure XorShift
-
           Implements IEquatable(Of XorShift)
   implements:
   - System.IEquatable{piine.XorShift}

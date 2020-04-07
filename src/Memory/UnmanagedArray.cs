@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics;
 
 namespace piine.Memory
 {
@@ -11,6 +12,10 @@ namespace piine.Memory
     public unsafe class UnmanagedArray<T> : IList<T>, IDisposable where T : unmanaged
     {
         private T* array;
+
+#if TRACK_ALLOC
+        private StackTrace allocationPoint;
+#endif
 
         /// <summary>
         /// Size of the array. The same as Count
@@ -64,10 +69,14 @@ namespace piine.Memory
         {
             array = Unmanaged.AllocMemory<T> (size, fillWithDefault);
             Length = size;
+
+#if TRACK_ALLOC
+            allocationPoint = new StackTrace ();
+#endif
         }
 
         /// <summary>
-        /// Allocate a new UnmanagedArray from a Span The contents of the span are copied to the new UnmanagedArray.
+        /// Allocate a new UnmanagedArray from a Span. The contents of the span are copied to the new UnmanagedArray.
         /// </summary>
         /// <param name="span">Span to copy from</param>
         public UnmanagedArray (Span<T> span)
@@ -139,7 +148,9 @@ namespace piine.Memory
             return false;
         }
 
-        public void CopyTo (T[] destination, int destinationIndex)
+        public void CopyTo (T[] destination, int destinationIndex) => CopyTo (destination, destinationIndex);
+
+        public void CopyTo (Span<T> destination, int destinationIndex)
         {
             CheckIfAllocated ();
 
@@ -222,12 +233,21 @@ namespace piine.Memory
             GC.SuppressFinalize (this);
         }
     
-        protected virtual void Dispose (bool disposing)
+        protected virtual void Dispose (bool fromDispose)
         {
             if (!Allocated)
                 return;
 
             Unmanaged.FreeMemory (ref array, Length);
+
+            if (!fromDispose)
+            {
+#if TRACK_ALLOC
+                Trace.WriteLine (nameof (UnmanagedArray<T>) + " was disposed from Finalizer. You may have forgotten to call Dispose. The object was allocated here: " + allocationPoint.ToString ());
+#else
+                Trace.WriteLine (nameof (UnmanagedArray<T>) + " was disposed from Finalizer. You may have forgotten to call Dispose. Compile with symbol TRACK_ALLOC to keep track of where in your code unmanaged memory is allocated.");
+#endif
+            }
         }
 
         public struct Enumerator : IEnumerator<T>

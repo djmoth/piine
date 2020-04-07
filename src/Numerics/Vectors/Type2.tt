@@ -170,24 +170,37 @@ public static <#=typeName#> operator - (<#=typeName#> v) => new <#=typeName#> ((
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (<#=typeName#> v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator <#=typeName#> (Vector2 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y);
+<# string toV2 = dataType == "double" ? "explicit" : "implicit"; #>
+		public static <#=toV2#> operator Vector2 (<#=typeName#> v) => new Vector2 ((float)v.x, (float)v.y);
+<# string fromV2 = memorySize < 4 || isUnsigned ? "explicit" : "implicit"; #>
+        public static <#=fromV2#> operator <#=typeName#> (Vector2 v) => new <#=typeName#> ((<#=dataType#>)v.X, (<#=dataType#>)v.Y);
 
 		//Tuple
         public static implicit operator <#=typeName#> ((<#=dataType#> x, <#=dataType#> y) v) => new <#=typeName#> (v.x, v.y);
 
         public static implicit operator (<#=dataType#>, <#=dataType#>) (<#=typeName#> v) => (v.x, v.y);
-		<# foreach ((string otherDataType, string otherCapitalizedDataType, _) in types) 
+		<# foreach ((string otherDataType, string otherCapitalizedDataType, int otherMemorySize) in types) 
 		{
 			if (otherDataType.Equals (dataType))
 				continue;
 
 			string otherTypeName = otherCapitalizedDataType + "2";
+
+			bool isImplicit;
+
+			if (dataType == "float")
+				isImplicit = otherDataType != "double";				
+			else if (dataType == "double")
+				isImplicit = true;
+			else
+				isImplicit = otherMemorySize < memorySize;
+
+
+			string conversion = isImplicit ? "implicit" : "explicit";
 		#>
 
 		//<#=otherTypeName#>
-		public static explicit operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y);
+		public static <#=conversion#> operator <#=typeName#> (<#=otherTypeName#> v) => new <#=typeName#> ((<#=dataType#>)v.x, (<#=dataType#>)v.y);
 <# } #>
     }
 <# } #>

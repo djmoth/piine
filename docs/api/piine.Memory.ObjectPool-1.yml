@@ -28,7 +28,6 @@ items:
   syntax:
     content: >-
       public static class ObjectPool<T>
-
           where T : new()
     typeParameters:
     - id: T

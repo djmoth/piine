@@ -1,0 +1,1457 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Fixed16
+  commentId: T:piine.Fixed16
+  id: Fixed16
+  parent: piine
+  children:
+  - piine.Fixed16.#ctor(System.Int32)
+  - piine.Fixed16.#ctor(System.Single)
+  - piine.Fixed16.Equals(piine.Fixed16)
+  - piine.Fixed16.Equals(System.Object)
+  - piine.Fixed16.FromRawValue(System.Int16)
+  - piine.Fixed16.GetHashCode
+  - piine.Fixed16.MaxValue
+  - piine.Fixed16.MinFraction
+  - piine.Fixed16.MinValue
+  - piine.Fixed16.op_Addition(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.op_Division(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.op_Equality(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.op_Explicit(piine.Fixed16)~System.Int32
+  - piine.Fixed16.op_Implicit(piine.Fixed16)~System.Single
+  - piine.Fixed16.op_Implicit(System.Int32)~piine.Fixed16
+  - piine.Fixed16.op_Implicit(System.Single)~piine.Fixed16
+  - piine.Fixed16.op_Inequality(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.op_Multiply(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.op_Multiply(piine.Fixed16,System.Int32)
+  - piine.Fixed16.op_Subtraction(piine.Fixed16,piine.Fixed16)
+  - piine.Fixed16.Precision
+  - piine.Fixed16.raw
+  - piine.Fixed16.ToString
+  langs:
+  - csharp
+  - vb
+  name: Fixed16
+  nameWithType: Fixed16
+  fullName: piine.Fixed16
+  type: Struct
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Fixed16
+    path: src/Numerics/Fixed16.cs
+    startLine: 6
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: 'public struct Fixed16 : IEquatable<Fixed16>'
+    content.vb: >-
+      Public Structure Fixed16
+          Implements IEquatable(Of Fixed16)
+  implements:
+  - System.IEquatable{piine.Fixed16}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Fixed16.Precision
+  commentId: F:piine.Fixed16.Precision
+  id: Precision
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Precision
+  nameWithType: Fixed16.Precision
+  fullName: piine.Fixed16.Precision
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Precision
+    path: src/Numerics/Fixed16.cs
+    startLine: 10
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const int Precision = 64
+    return:
+      type: System.Int32
+    content.vb: Public Const Precision As Integer = 64
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Fixed16.MinFraction
+  commentId: F:piine.Fixed16.MinFraction
+  id: MinFraction
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: MinFraction
+  nameWithType: Fixed16.MinFraction
+  fullName: piine.Fixed16.MinFraction
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: MinFraction
+    path: src/Numerics/Fixed16.cs
+    startLine: 12
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const float MinFraction = 0.015625F
+    return:
+      type: System.Single
+    content.vb: Public Const MinFraction As Single = 0.015625F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Fixed16.MaxValue
+  commentId: F:piine.Fixed16.MaxValue
+  id: MaxValue
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: Fixed16.MaxValue
+  fullName: piine.Fixed16.MaxValue
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: MaxValue
+    path: src/Numerics/Fixed16.cs
+    startLine: 13
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const float MaxValue = 511.984375F
+    return:
+      type: System.Single
+    content.vb: Public Const MaxValue As Single = 511.984375F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Fixed16.MinValue
+  commentId: F:piine.Fixed16.MinValue
+  id: MinValue
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: Fixed16.MinValue
+  fullName: piine.Fixed16.MinValue
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: MinValue
+    path: src/Numerics/Fixed16.cs
+    startLine: 14
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const float MinValue = -512F
+    return:
+      type: System.Single
+    content.vb: Public Const MinValue As Single = -512F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Fixed16.raw
+  commentId: F:piine.Fixed16.raw
+  id: raw
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: raw
+  nameWithType: Fixed16.raw
+  fullName: piine.Fixed16.raw
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: raw
+    path: src/Numerics/Fixed16.cs
+    startLine: 16
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public readonly short raw
+    return:
+      type: System.Int16
+    content.vb: Public ReadOnly raw As Short
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Fixed16.#ctor(System.Single)
+  commentId: M:piine.Fixed16.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Fixed16(Single)
+  nameWithType: Fixed16.Fixed16(Single)
+  fullName: piine.Fixed16.Fixed16(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Fixed16.cs
+    startLine: 18
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Fixed16(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Sub New(value As Single)
+  overload: piine.Fixed16.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Fixed16.#ctor(System.Int32)
+  commentId: M:piine.Fixed16.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Fixed16(Int32)
+  nameWithType: Fixed16.Fixed16(Int32)
+  fullName: piine.Fixed16.Fixed16(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Fixed16.cs
+    startLine: 19
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Fixed16(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub New(value As Integer)
+  overload: piine.Fixed16.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Fixed16.FromRawValue(System.Int16)
+  commentId: M:piine.Fixed16.FromRawValue(System.Int16)
+  id: FromRawValue(System.Int16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: FromRawValue(Int16)
+  nameWithType: Fixed16.FromRawValue(Int16)
+  fullName: piine.Fixed16.FromRawValue(System.Int16)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: FromRawValue
+    path: src/Numerics/Fixed16.cs
+    startLine: 23
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 FromRawValue(short rawValue)
+    parameters:
+    - id: rawValue
+      type: System.Int16
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Function FromRawValue(rawValue As Short) As Fixed16
+  overload: piine.Fixed16.FromRawValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Implicit(System.Single)~piine.Fixed16
+  commentId: M:piine.Fixed16.op_Implicit(System.Single)~piine.Fixed16
+  id: op_Implicit(System.Single)~piine.Fixed16
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Single to Fixed16)
+  nameWithType: Fixed16.Implicit(Single to Fixed16)
+  fullName: piine.Fixed16.Implicit(System.Single to piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Fixed16.cs
+    startLine: 25
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Fixed16(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Widening Operator CType(value As Single) As Fixed16
+  overload: piine.Fixed16.op_Implicit*
+  nameWithType.vb: Fixed16.Widening(Single to Fixed16)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Fixed16.Widening(System.Single to piine.Fixed16)
+  name.vb: Widening(Single to Fixed16)
+- uid: piine.Fixed16.op_Implicit(piine.Fixed16)~System.Single
+  commentId: M:piine.Fixed16.op_Implicit(piine.Fixed16)~System.Single
+  id: op_Implicit(piine.Fixed16)~System.Single
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Fixed16 to Single)
+  nameWithType: Fixed16.Implicit(Fixed16 to Single)
+  fullName: piine.Fixed16.Implicit(piine.Fixed16 to System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Fixed16.cs
+    startLine: 27
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator float (Fixed16 value)
+    parameters:
+    - id: value
+      type: piine.Fixed16
+    return:
+      type: System.Single
+    content.vb: Public Shared Widening Operator CType(value As Fixed16) As Single
+  overload: piine.Fixed16.op_Implicit*
+  nameWithType.vb: Fixed16.Widening(Fixed16 to Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Fixed16.Widening(piine.Fixed16 to System.Single)
+  name.vb: Widening(Fixed16 to Single)
+- uid: piine.Fixed16.op_Implicit(System.Int32)~piine.Fixed16
+  commentId: M:piine.Fixed16.op_Implicit(System.Int32)~piine.Fixed16
+  id: op_Implicit(System.Int32)~piine.Fixed16
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Int32 to Fixed16)
+  nameWithType: Fixed16.Implicit(Int32 to Fixed16)
+  fullName: piine.Fixed16.Implicit(System.Int32 to piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Fixed16.cs
+    startLine: 29
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Fixed16(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Widening Operator CType(value As Integer) As Fixed16
+  overload: piine.Fixed16.op_Implicit*
+  nameWithType.vb: Fixed16.Widening(Int32 to Fixed16)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Fixed16.Widening(System.Int32 to piine.Fixed16)
+  name.vb: Widening(Int32 to Fixed16)
+- uid: piine.Fixed16.op_Explicit(piine.Fixed16)~System.Int32
+  commentId: M:piine.Fixed16.op_Explicit(piine.Fixed16)~System.Int32
+  id: op_Explicit(piine.Fixed16)~System.Int32
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Fixed16 to Int32)
+  nameWithType: Fixed16.Explicit(Fixed16 to Int32)
+  fullName: piine.Fixed16.Explicit(piine.Fixed16 to System.Int32)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Fixed16.cs
+    startLine: 31
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator int (Fixed16 value)
+    parameters:
+    - id: value
+      type: piine.Fixed16
+    return:
+      type: System.Int32
+    content.vb: Public Shared Narrowing Operator CType(value As Fixed16) As Integer
+  overload: piine.Fixed16.op_Explicit*
+  nameWithType.vb: Fixed16.Narrowing(Fixed16 to Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Fixed16.Narrowing(piine.Fixed16 to System.Int32)
+  name.vb: Narrowing(Fixed16 to Int32)
+- uid: piine.Fixed16.op_Addition(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Addition(piine.Fixed16,piine.Fixed16)
+  id: op_Addition(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Addition(Fixed16, Fixed16)
+  nameWithType: Fixed16.Addition(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Addition(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Numerics/Fixed16.cs
+    startLine: 33
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 operator +(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Operator +(a As Fixed16, b As Fixed16) As Fixed16
+  overload: piine.Fixed16.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Subtraction(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Subtraction(piine.Fixed16,piine.Fixed16)
+  id: op_Subtraction(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Fixed16, Fixed16)
+  nameWithType: Fixed16.Subtraction(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Subtraction(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Numerics/Fixed16.cs
+    startLine: 34
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 operator -(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Operator -(a As Fixed16, b As Fixed16) As Fixed16
+  overload: piine.Fixed16.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Multiply(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Multiply(piine.Fixed16,piine.Fixed16)
+  id: op_Multiply(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Fixed16, Fixed16)
+  nameWithType: Fixed16.Multiply(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Multiply(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Numerics/Fixed16.cs
+    startLine: 35
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 operator *(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Operator *(a As Fixed16, b As Fixed16) As Fixed16
+  overload: piine.Fixed16.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Multiply(piine.Fixed16,System.Int32)
+  commentId: M:piine.Fixed16.op_Multiply(piine.Fixed16,System.Int32)
+  id: op_Multiply(piine.Fixed16,System.Int32)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Fixed16, Int32)
+  nameWithType: Fixed16.Multiply(Fixed16, Int32)
+  fullName: piine.Fixed16.Multiply(piine.Fixed16, System.Int32)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Numerics/Fixed16.cs
+    startLine: 36
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 operator *(Fixed16 a, int b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: System.Int32
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Operator *(a As Fixed16, b As Integer) As Fixed16
+  overload: piine.Fixed16.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Division(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Division(piine.Fixed16,piine.Fixed16)
+  id: op_Division(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Division(Fixed16, Fixed16)
+  nameWithType: Fixed16.Division(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Division(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Numerics/Fixed16.cs
+    startLine: 37
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Fixed16 operator /(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: piine.Fixed16
+    content.vb: Public Shared Operator /(a As Fixed16, b As Fixed16) As Fixed16
+  overload: piine.Fixed16.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Equality(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Equality(piine.Fixed16,piine.Fixed16)
+  id: op_Equality(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Equality(Fixed16, Fixed16)
+  nameWithType: Fixed16.Equality(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Equality(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Numerics/Fixed16.cs
+    startLine: 39
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Fixed16, b As Fixed16) As Boolean
+  overload: piine.Fixed16.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.op_Inequality(piine.Fixed16,piine.Fixed16)
+  commentId: M:piine.Fixed16.op_Inequality(piine.Fixed16,piine.Fixed16)
+  id: op_Inequality(piine.Fixed16,piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Fixed16, Fixed16)
+  nameWithType: Fixed16.Inequality(Fixed16, Fixed16)
+  fullName: piine.Fixed16.Inequality(piine.Fixed16, piine.Fixed16)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Numerics/Fixed16.cs
+    startLine: 40
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Fixed16 a, Fixed16 b)
+    parameters:
+    - id: a
+      type: piine.Fixed16
+    - id: b
+      type: piine.Fixed16
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Fixed16, b As Fixed16) As Boolean
+  overload: piine.Fixed16.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Fixed16.Equals(piine.Fixed16)
+  commentId: M:piine.Fixed16.Equals(piine.Fixed16)
+  id: Equals(piine.Fixed16)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Equals(Fixed16)
+  nameWithType: Fixed16.Equals(Fixed16)
+  fullName: piine.Fixed16.Equals(piine.Fixed16)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Fixed16.cs
+    startLine: 42
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Fixed16 other)
+    parameters:
+    - id: other
+      type: piine.Fixed16
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Fixed16) As Boolean
+  overload: piine.Fixed16.Equals*
+  implements:
+  - System.IEquatable{piine.Fixed16}.Equals(piine.Fixed16)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Fixed16.Equals(System.Object)
+  commentId: M:piine.Fixed16.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Fixed16.Equals(Object)
+  fullName: piine.Fixed16.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Fixed16.cs
+    startLine: 44
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Fixed16.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Fixed16.GetHashCode
+  commentId: M:piine.Fixed16.GetHashCode
+  id: GetHashCode
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Fixed16.GetHashCode()
+  fullName: piine.Fixed16.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Numerics/Fixed16.cs
+    startLine: 46
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Fixed16.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Fixed16.ToString
+  commentId: M:piine.Fixed16.ToString
+  id: ToString
+  parent: piine.Fixed16
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Fixed16.ToString()
+  fullName: piine.Fixed16.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Fixed16.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Numerics/Fixed16.cs
+    startLine: 48
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Fixed16.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.IEquatable{piine.Fixed16}
+  commentId: T:System.IEquatable{piine.Fixed16}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Fixed16>
+  nameWithType: IEquatable<Fixed16>
+  fullName: System.IEquatable<piine.Fixed16>
+  nameWithType.vb: IEquatable(Of Fixed16)
+  fullName.vb: System.IEquatable(Of piine.Fixed16)
+  name.vb: IEquatable(Of Fixed16)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Fixed16
+    name: Fixed16
+    nameWithType: Fixed16
+    fullName: piine.Fixed16
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Fixed16
+    name: Fixed16
+    nameWithType: Fixed16
+    fullName: piine.Fixed16
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: piine.Fixed16.#ctor*
+  commentId: Overload:piine.Fixed16.#ctor
+  name: Fixed16
+  nameWithType: Fixed16.Fixed16
+  fullName: piine.Fixed16.Fixed16
+- uid: piine.Fixed16.FromRawValue*
+  commentId: Overload:piine.Fixed16.FromRawValue
+  name: FromRawValue
+  nameWithType: Fixed16.FromRawValue
+  fullName: piine.Fixed16.FromRawValue
+- uid: piine.Fixed16
+  commentId: T:piine.Fixed16
+  parent: piine
+  name: Fixed16
+  nameWithType: Fixed16
+  fullName: piine.Fixed16
+- uid: piine.Fixed16.op_Implicit*
+  commentId: Overload:piine.Fixed16.op_Implicit
+  name: Implicit
+  nameWithType: Fixed16.Implicit
+  fullName: piine.Fixed16.Implicit
+  nameWithType.vb: Fixed16.Widening
+  fullName.vb: piine.Fixed16.Widening
+  name.vb: Widening
+- uid: piine.Fixed16.op_Explicit*
+  commentId: Overload:piine.Fixed16.op_Explicit
+  name: Explicit
+  nameWithType: Fixed16.Explicit
+  fullName: piine.Fixed16.Explicit
+  nameWithType.vb: Fixed16.Narrowing
+  fullName.vb: piine.Fixed16.Narrowing
+  name.vb: Narrowing
+- uid: piine.Fixed16.op_Addition*
+  commentId: Overload:piine.Fixed16.op_Addition
+  name: Addition
+  nameWithType: Fixed16.Addition
+  fullName: piine.Fixed16.Addition
+- uid: piine.Fixed16.op_Subtraction*
+  commentId: Overload:piine.Fixed16.op_Subtraction
+  name: Subtraction
+  nameWithType: Fixed16.Subtraction
+  fullName: piine.Fixed16.Subtraction
+- uid: piine.Fixed16.op_Multiply*
+  commentId: Overload:piine.Fixed16.op_Multiply
+  name: Multiply
+  nameWithType: Fixed16.Multiply
+  fullName: piine.Fixed16.Multiply
+- uid: piine.Fixed16.op_Division*
+  commentId: Overload:piine.Fixed16.op_Division
+  name: Division
+  nameWithType: Fixed16.Division
+  fullName: piine.Fixed16.Division
+- uid: piine.Fixed16.op_Equality*
+  commentId: Overload:piine.Fixed16.op_Equality
+  name: Equality
+  nameWithType: Fixed16.Equality
+  fullName: piine.Fixed16.Equality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Fixed16.op_Inequality*
+  commentId: Overload:piine.Fixed16.op_Inequality
+  name: Inequality
+  nameWithType: Fixed16.Inequality
+  fullName: piine.Fixed16.Inequality
+- uid: piine.Fixed16.Equals*
+  commentId: Overload:piine.Fixed16.Equals
+  name: Equals
+  nameWithType: Fixed16.Equals
+  fullName: piine.Fixed16.Equals
+- uid: System.IEquatable{piine.Fixed16}.Equals(piine.Fixed16)
+  commentId: M:System.IEquatable{piine.Fixed16}.Equals(piine.Fixed16)
+  parent: System.IEquatable{piine.Fixed16}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Fixed16)
+  nameWithType: IEquatable<Fixed16>.Equals(Fixed16)
+  fullName: System.IEquatable<piine.Fixed16>.Equals(piine.Fixed16)
+  nameWithType.vb: IEquatable(Of Fixed16).Equals(Fixed16)
+  fullName.vb: System.IEquatable(Of piine.Fixed16).Equals(piine.Fixed16)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Fixed16>.Equals
+    fullName: System.IEquatable<piine.Fixed16>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Fixed16
+    name: Fixed16
+    nameWithType: Fixed16
+    fullName: piine.Fixed16
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Fixed16).Equals
+    fullName: System.IEquatable(Of piine.Fixed16).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Fixed16
+    name: Fixed16
+    nameWithType: Fixed16
+    fullName: piine.Fixed16
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Fixed16.GetHashCode*
+  commentId: Overload:piine.Fixed16.GetHashCode
+  name: GetHashCode
+  nameWithType: Fixed16.GetHashCode
+  fullName: piine.Fixed16.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Fixed16.ToString*
+  commentId: Overload:piine.Fixed16.ToString
+  name: ToString
+  nameWithType: Fixed16.ToString
+  fullName: piine.Fixed16.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

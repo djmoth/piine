@@ -16,12 +16,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DocumentationFile></DocumentationFile>
+    <DefineConstants></DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <OutputPath></OutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants></DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,12 +36,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="src\Vectors\Numeric\Type2.cs">
+    <None Include="src\Numerics\Vectors\Type2.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Type2.tt</DependentUpon>
     </None>
-    <None Include="src\Vectors\Numeric\Type4.cs">
+    <None Include="src\Numerics\Vectors\Type4.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Type4.tt</DependentUpon>
@@ -63,17 +65,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="src\Vectors\Numeric\Type2.cs">
+    <Compile Update="src\Numerics\Vectors\Type2.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Type2.tt</DependentUpon>
     </Compile>
-    <Compile Update="src\Vectors\Numeric\Type3.cs">
+    <Compile Update="src\Numerics\Vectors\Type3.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Type3.tt</DependentUpon>
     </Compile>
-    <Compile Update="src\Vectors\Numeric\Type4.cs">
+    <Compile Update="src\Numerics\Vectors\Type4.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Type4.tt</DependentUpon>
@@ -81,15 +83,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="src\Vectors\Numeric\Type2.tt">
+    <None Update="src\Numerics\Vectors\Type2.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Type2.cs</LastGenOutput>
     </None>
-    <None Update="src\Vectors\Numeric\Type3.tt">
+    <None Update="src\Numerics\Vectors\Type3.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Type3.cs</LastGenOutput>
     </None>
-    <None Update="src\Vectors\Numeric\Type4.tt">
+    <None Update="src\Numerics\Vectors\Type4.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Type4.cs</LastGenOutput>
     </None>

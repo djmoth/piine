@@ -13,6 +13,7 @@ items:
   - piine.Memory.UnmanagedList`1.Clear
   - piine.Memory.UnmanagedList`1.Contains(`0)
   - piine.Memory.UnmanagedList`1.CopyTo(`0[],System.Int32)
+  - piine.Memory.UnmanagedList`1.CopyTo(System.Span{`0},System.Int32)
   - piine.Memory.UnmanagedList`1.Count
   - piine.Memory.UnmanagedList`1.Dispose
   - piine.Memory.UnmanagedList`1.Dispose(System.Boolean)
@@ -42,7 +43,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: UnmanagedList
     path: src/Memory/UnmanagedList.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - piine
   namespace: piine.Memory
@@ -55,7 +56,6 @@ items:
       description: The unmanaged type that the list will contain
     content.vb: >-
       Public Class UnmanagedList(Of T As Structure)
-
           Implements IList(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable, IDisposable
   inheritance:
   - System.Object
@@ -100,7 +100,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Count
     path: src/Memory/UnmanagedList.cs
-    startLine: 23
+    startLine: 27
   assemblies:
   - piine
   namespace: piine.Memory
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Capacity
     path: src/Memory/UnmanagedList.cs
-    startLine: 27
+    startLine: 31
   assemblies:
   - piine
   namespace: piine.Memory
@@ -180,7 +180,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Allocated
     path: src/Memory/UnmanagedList.cs
-    startLine: 31
+    startLine: 35
   assemblies:
   - piine
   namespace: piine.Memory
@@ -220,7 +220,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.ICollection<T>.IsReadOnly
     path: src/Memory/UnmanagedList.cs
-    startLine: 35
+    startLine: 39
   assemblies:
   - piine
   namespace: piine.Memory
@@ -260,7 +260,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: this[]
     path: src/Memory/UnmanagedList.cs
-    startLine: 41
+    startLine: 45
   assemblies:
   - piine
   namespace: piine.Memory
@@ -305,7 +305,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 63
+    startLine: 67
   assemblies:
   - piine
   namespace: piine.Memory
@@ -337,7 +337,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: .ctor
     path: src/Memory/UnmanagedList.cs
-    startLine: 65
+    startLine: 69
   assemblies:
   - piine
   namespace: piine.Memory
@@ -372,7 +372,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetInternalPointer
     path: src/Memory/UnmanagedList.cs
-    startLine: 101
+    startLine: 109
   assemblies:
   - piine
   namespace: piine.Memory
@@ -420,7 +420,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Add
     path: src/Memory/UnmanagedList.cs
-    startLine: 113
+    startLine: 121
   assemblies:
   - piine
   namespace: piine.Memory
@@ -460,7 +460,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Insert
     path: src/Memory/UnmanagedList.cs
-    startLine: 129
+    startLine: 137
   assemblies:
   - piine
   namespace: piine.Memory
@@ -503,7 +503,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Remove
     path: src/Memory/UnmanagedList.cs
-    startLine: 151
+    startLine: 159
   assemblies:
   - piine
   namespace: piine.Memory
@@ -546,7 +546,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: RemoveAt
     path: src/Memory/UnmanagedList.cs
-    startLine: 174
+    startLine: 182
   assemblies:
   - piine
   namespace: piine.Memory
@@ -586,7 +586,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: TrimExcess
     path: src/Memory/UnmanagedList.cs
-    startLine: 194
+    startLine: 202
   assemblies:
   - piine
   namespace: piine.Memory
@@ -620,7 +620,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Clear
     path: src/Memory/UnmanagedList.cs
-    startLine: 207
+    startLine: 215
   assemblies:
   - piine
   namespace: piine.Memory
@@ -656,7 +656,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Contains
     path: src/Memory/UnmanagedList.cs
-    startLine: 214
+    startLine: 222
   assemblies:
   - piine
   namespace: piine.Memory
@@ -695,7 +695,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: IndexOf
     path: src/Memory/UnmanagedList.cs
-    startLine: 232
+    startLine: 240
   assemblies:
   - piine
   namespace: piine.Memory
@@ -738,7 +738,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: CopyTo
     path: src/Memory/UnmanagedList.cs
-    startLine: 245
+    startLine: 253
   assemblies:
   - piine
   namespace: piine.Memory
@@ -760,6 +760,44 @@ items:
   - Public
   fullName.vb: piine.Memory.UnmanagedList(Of T).CopyTo(T(), System.Int32)
   name.vb: CopyTo(T(), Int32)
+- uid: piine.Memory.UnmanagedList`1.CopyTo(System.Span{`0},System.Int32)
+  commentId: M:piine.Memory.UnmanagedList`1.CopyTo(System.Span{`0},System.Int32)
+  id: CopyTo(System.Span{`0},System.Int32)
+  parent: piine.Memory.UnmanagedList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Span<T>, Int32)
+  nameWithType: UnmanagedList<T>.CopyTo(Span<T>, Int32)
+  fullName: piine.Memory.UnmanagedList<T>.CopyTo(System.Span<T>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Memory/UnmanagedList.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: CopyTo
+    path: src/Memory/UnmanagedList.cs
+    startLine: 255
+  assemblies:
+  - piine
+  namespace: piine.Memory
+  syntax:
+    content: public void CopyTo(Span<T> destination, int destinationIndex)
+    parameters:
+    - id: destination
+      type: System.Span{{T}}
+    - id: destinationIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(destination As Span(Of T), destinationIndex As Integer)
+  overload: piine.Memory.UnmanagedList`1.CopyTo*
+  nameWithType.vb: UnmanagedList(Of T).CopyTo(Span(Of T), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Memory.UnmanagedList(Of T).CopyTo(System.Span(Of T), System.Int32)
+  name.vb: CopyTo(Span(Of T), Int32)
 - uid: piine.Memory.UnmanagedList`1.GetEnumerator
   commentId: M:piine.Memory.UnmanagedList`1.GetEnumerator
   id: GetEnumerator
@@ -778,7 +816,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 264
+    startLine: 274
   assemblies:
   - piine
   namespace: piine.Memory
@@ -813,7 +851,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 271
+    startLine: 281
   assemblies:
   - piine
   namespace: piine.Memory
@@ -847,7 +885,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: System.Collections.IEnumerable.GetEnumerator
     path: src/Memory/UnmanagedList.cs
-    startLine: 273
+    startLine: 283
   assemblies:
   - piine
   namespace: piine.Memory
@@ -880,7 +918,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Finalize
     path: src/Memory/UnmanagedList.cs
-    startLine: 280
+    startLine: 290
   assemblies:
   - piine
   namespace: piine.Memory
@@ -912,7 +950,7 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 285
+    startLine: 295
   assemblies:
   - piine
   namespace: piine.Memory
@@ -948,16 +986,16 @@ items:
       repo: https://github.com/djmoth/piine.git
     id: Dispose
     path: src/Memory/UnmanagedList.cs
-    startLine: 291
+    startLine: 301
   assemblies:
   - piine
   namespace: piine.Memory
   syntax:
-    content: protected virtual void Dispose(bool disposing)
+    content: protected virtual void Dispose(bool fromDispose)
     parameters:
-    - id: disposing
+    - id: fromDispose
       type: System.Boolean
-    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    content.vb: Protected Overridable Sub Dispose(fromDispose As Boolean)
   overload: piine.Memory.UnmanagedList`1.Dispose*
   nameWithType.vb: UnmanagedList(Of T).Dispose(Boolean)
   modifiers.csharp:
@@ -2551,6 +2589,85 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Span{{T}}
+  commentId: T:System.Span{`0}
+  parent: System
+  definition: System.Span`1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    nameWithType: Span
+    fullName: System.Span
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )

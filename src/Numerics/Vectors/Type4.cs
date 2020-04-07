@@ -14,7 +14,7 @@ namespace piine
 
         private static readonly Float4 zero = new Float4 (0);
         private static readonly Float4 one = new Float4 (1);
-        private static readonly Float4 unitX = new Float4 (1, 0, 0, 0); 
+        private static readonly Float4 unitX = new Float4 (1, 0, 0, 0);
         private static readonly Float4 unitY = new Float4 (0, 1, 0, 0);
         private static readonly Float4 unitZ = new Float4 (0, 0, 1, 0);
 		private static readonly Float4 unitW = new Float4 (0, 0, 0, 1);
@@ -175,9 +175,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (Float4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
-        public static explicit operator Float4 (Vector4 v) => new Float4 ((float)v.X, (float)v.Y, (float)v.Z, (float)v.W);
+		public static implicit operator Vector4 (Float4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+        public static implicit operator Float4 (Vector4 v) => new Float4 ((float)v.X, (float)v.Y, (float)v.Z, (float)v.W);
 
 		//Tuple
 		public static implicit operator Float4 ((float x, float y, float z, float w) v) => new Float4 (v.x, v.y, v.z, v.w);
@@ -189,10 +188,10 @@ namespace piine
 		public static explicit operator Float4 (Double4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 
 		//Int4
-		public static explicit operator Float4 (Int4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+		public static implicit operator Float4 (Int4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 
 		//UInt4
-		public static explicit operator Float4 (UInt4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+		public static implicit operator Float4 (UInt4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 
 		//Byte4
 		public static implicit operator Float4 (Byte4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
@@ -207,10 +206,10 @@ namespace piine
 		public static implicit operator Float4 (UShort4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 
 		//Long4
-		public static explicit operator Float4 (Long4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+		public static implicit operator Float4 (Long4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 
 		//ULong4
-		public static explicit operator Float4 (ULong4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+		public static implicit operator Float4 (ULong4 v) => new Float4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
 	}
 
 	[CLSCompliant (true)]
@@ -383,8 +382,7 @@ namespace piine
 		//Conversion to other vectors
 		//Vector4
 		public static explicit operator Vector4 (Double4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
-        public static explicit operator Double4 (Vector4 v) => new Double4 ((double)v.X, (double)v.Y, (double)v.Z, (double)v.W);
+        public static implicit operator Double4 (Vector4 v) => new Double4 ((double)v.X, (double)v.Y, (double)v.Z, (double)v.W);
 
 		//Tuple
 		public static implicit operator Double4 ((double x, double y, double z, double w) v) => new Double4 (v.x, v.y, v.z, v.w);
@@ -414,10 +412,10 @@ namespace piine
 		public static implicit operator Double4 (UShort4 v) => new Double4 ((double)v.x, (double)v.y, (double)v.z, (double)v.w);
 
 		//Long4
-		public static explicit operator Double4 (Long4 v) => new Double4 ((double)v.x, (double)v.y, (double)v.z, (double)v.w);
+		public static implicit operator Double4 (Long4 v) => new Double4 ((double)v.x, (double)v.y, (double)v.z, (double)v.w);
 
 		//ULong4
-		public static explicit operator Double4 (ULong4 v) => new Double4 ((double)v.x, (double)v.y, (double)v.z, (double)v.w);
+		public static implicit operator Double4 (ULong4 v) => new Double4 ((double)v.x, (double)v.y, (double)v.z, (double)v.w);
 	}
 
 	[CLSCompliant (true)]
@@ -589,9 +587,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (Int4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
-        public static explicit operator Int4 (Vector4 v) => new Int4 ((int)v.X, (int)v.Y, (int)v.Z, (int)v.W);
+		public static implicit operator Vector4 (Int4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+        public static implicit operator Int4 (Vector4 v) => new Int4 ((int)v.X, (int)v.Y, (int)v.Z, (int)v.W);
 
 		//Tuple
 		public static implicit operator Int4 ((int x, int y, int z, int w) v) => new Int4 (v.x, v.y, v.z, v.w);
@@ -795,8 +792,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (UInt4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (UInt4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator UInt4 (Vector4 v) => new UInt4 ((uint)v.X, (uint)v.Y, (uint)v.Z, (uint)v.W);
 
 		//Tuple
@@ -1001,8 +997,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (Byte4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (Byte4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator Byte4 (Vector4 v) => new Byte4 ((byte)v.X, (byte)v.Y, (byte)v.Z, (byte)v.W);
 
 		//Tuple
@@ -1208,8 +1203,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (SByte4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (SByte4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator SByte4 (Vector4 v) => new SByte4 ((sbyte)v.X, (sbyte)v.Y, (sbyte)v.Z, (sbyte)v.W);
 
 		//Tuple
@@ -1415,8 +1409,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (Short4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (Short4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator Short4 (Vector4 v) => new Short4 ((short)v.X, (short)v.Y, (short)v.Z, (short)v.W);
 
 		//Tuple
@@ -1621,8 +1614,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (UShort4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (UShort4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator UShort4 (Vector4 v) => new UShort4 ((ushort)v.X, (ushort)v.Y, (ushort)v.Z, (ushort)v.W);
 
 		//Tuple
@@ -1828,9 +1820,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (Long4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
-        public static explicit operator Long4 (Vector4 v) => new Long4 ((long)v.X, (long)v.Y, (long)v.Z, (long)v.W);
+		public static implicit operator Vector4 (Long4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
+        public static implicit operator Long4 (Vector4 v) => new Long4 ((long)v.X, (long)v.Y, (long)v.Z, (long)v.W);
 
 		//Tuple
 		public static implicit operator Long4 ((long x, long y, long z, long w) v) => new Long4 (v.x, v.y, v.z, v.w);
@@ -2034,8 +2025,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector4
-		public static explicit operator Vector4 (ULong4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
-
+		public static implicit operator Vector4 (ULong4 v) => new Vector4 ((float)v.x, (float)v.y, (float)v.z, (float)v.w);
         public static explicit operator ULong4 (Vector4 v) => new ULong4 ((ulong)v.X, (ulong)v.Y, (ulong)v.Z, (ulong)v.W);
 
 		//Tuple

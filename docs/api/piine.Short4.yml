@@ -1,0 +1,3397 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Short4
+  commentId: T:piine.Short4
+  id: Short4
+  parent: piine
+  children:
+  - piine.Short4.#ctor(piine.Short2,piine.Short2)
+  - piine.Short4.#ctor(System.Int16)
+  - piine.Short4.#ctor(System.Int16,System.Int16,System.Int16,System.Int16)
+  - piine.Short4.Absolute(piine.Short4)
+  - piine.Short4.Contains(System.Int16)
+  - piine.Short4.Deconstruct(System.Int16@,System.Int16@,System.Int16@,System.Int16@)
+  - piine.Short4.Distance(piine.Short4,piine.Short4)
+  - piine.Short4.Dot(piine.Short4,piine.Short4)
+  - piine.Short4.Equals(piine.Short4)
+  - piine.Short4.Equals(System.Object)
+  - piine.Short4.GetHashCode
+  - piine.Short4.GetUnsafe(System.Int32)
+  - piine.Short4.Item(System.Int32)
+  - piine.Short4.Length
+  - piine.Short4.LengthSquared
+  - piine.Short4.Normalize(piine.Short4)
+  - piine.Short4.One
+  - piine.Short4.op_Addition(piine.Short4,piine.Short4)
+  - piine.Short4.op_Division(piine.Short4,System.Single)
+  - piine.Short4.op_Equality(piine.Short4,piine.Short4)
+  - piine.Short4.op_Explicit(piine.Double4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.Float4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.Int4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.Long4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.UInt4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.ULong4)~piine.Short4
+  - piine.Short4.op_Explicit(piine.UShort4)~piine.Short4
+  - piine.Short4.op_Explicit(System.Numerics.Vector4)~piine.Short4
+  - piine.Short4.op_GreaterThan(piine.Short4,piine.Short4)
+  - piine.Short4.op_GreaterThanOrEqual(piine.Short4,piine.Short4)
+  - piine.Short4.op_Implicit(piine.Byte4)~piine.Short4
+  - piine.Short4.op_Implicit(piine.SByte4)~piine.Short4
+  - piine.Short4.op_Implicit(piine.Short4)~System.Numerics.Vector4
+  - piine.Short4.op_Implicit(piine.Short4)~System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  - piine.Short4.op_Implicit(System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16})~piine.Short4
+  - piine.Short4.op_Inequality(piine.Short4,piine.Short4)
+  - piine.Short4.op_LessThan(piine.Short4,piine.Short4)
+  - piine.Short4.op_LessThanOrEqual(piine.Short4,piine.Short4)
+  - piine.Short4.op_Multiply(piine.Short4,System.Single)
+  - piine.Short4.op_Subtraction(piine.Short4,piine.Short4)
+  - piine.Short4.op_UnaryNegation(piine.Short4)
+  - piine.Short4.Reverse(piine.Short4)
+  - piine.Short4.SetUnsafe(System.Int32,System.Int16)
+  - piine.Short4.Size
+  - piine.Short4.Sum
+  - piine.Short4.ToString
+  - piine.Short4.UnitW
+  - piine.Short4.UnitX
+  - piine.Short4.UnitY
+  - piine.Short4.UnitZ
+  - piine.Short4.Volume
+  - piine.Short4.w
+  - piine.Short4.x
+  - piine.Short4.XY
+  - piine.Short4.XYZ
+  - piine.Short4.XZ
+  - piine.Short4.XZY
+  - piine.Short4.y
+  - piine.Short4.YXZ
+  - piine.Short4.YZ
+  - piine.Short4.YZX
+  - piine.Short4.z
+  - piine.Short4.Zero
+  - piine.Short4.ZXY
+  - piine.Short4.ZYX
+  langs:
+  - csharp
+  - vb
+  name: Short4
+  nameWithType: Short4
+  fullName: piine.Short4
+  type: Struct
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Short4
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1242
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public struct Short4 : IEquatable<Short4>
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Structure Short4
+          Implements IEquatable(Of Short4)
+  implements:
+  - System.IEquatable{piine.Short4}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Short4.Size
+  commentId: F:piine.Short4.Size
+  id: Size
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Short4.Size
+  fullName: piine.Short4.Size
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Size
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1246
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const int Size = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const Size As Integer = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Short4.Zero
+  commentId: P:piine.Short4.Zero
+  id: Zero
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Short4.Zero
+  fullName: piine.Short4.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Zero
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1255
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 Zero { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property Zero As Short4
+  overload: piine.Short4.Zero*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.One
+  commentId: P:piine.Short4.One
+  id: One
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Short4.One
+  fullName: piine.Short4.One
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: One
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1256
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 One { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property One As Short4
+  overload: piine.Short4.One*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.UnitX
+  commentId: P:piine.Short4.UnitX
+  id: UnitX
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: UnitX
+  nameWithType: Short4.UnitX
+  fullName: piine.Short4.UnitX
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitX
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1257
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 UnitX { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property UnitX As Short4
+  overload: piine.Short4.UnitX*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.UnitY
+  commentId: P:piine.Short4.UnitY
+  id: UnitY
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: UnitY
+  nameWithType: Short4.UnitY
+  fullName: piine.Short4.UnitY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitY
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1258
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 UnitY { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property UnitY As Short4
+  overload: piine.Short4.UnitY*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.UnitZ
+  commentId: P:piine.Short4.UnitZ
+  id: UnitZ
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: UnitZ
+  nameWithType: Short4.UnitZ
+  fullName: piine.Short4.UnitZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitZ
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1259
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 UnitZ { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property UnitZ As Short4
+  overload: piine.Short4.UnitZ*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.UnitW
+  commentId: P:piine.Short4.UnitW
+  id: UnitW
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: UnitW
+  nameWithType: Short4.UnitW
+  fullName: piine.Short4.UnitW
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitW
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1260
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 UnitW { get; }
+    parameters: []
+    return:
+      type: piine.Short4
+    content.vb: Public Shared ReadOnly Property UnitW As Short4
+  overload: piine.Short4.UnitW*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Short4.x
+  commentId: F:piine.Short4.x
+  id: x
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Short4.x
+  fullName: piine.Short4.x
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: x
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1267
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short x
+    return:
+      type: System.Int16
+    content.vb: Public x As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.y
+  commentId: F:piine.Short4.y
+  id: y
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Short4.y
+  fullName: piine.Short4.y
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: y
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1269
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short y
+    return:
+      type: System.Int16
+    content.vb: Public y As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.z
+  commentId: F:piine.Short4.z
+  id: z
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: Short4.z
+  fullName: piine.Short4.z
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: z
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1271
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short z
+    return:
+      type: System.Int16
+    content.vb: Public z As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.w
+  commentId: F:piine.Short4.w
+  id: w
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: w
+  nameWithType: Short4.w
+  fullName: piine.Short4.w
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: w
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1273
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short w
+    return:
+      type: System.Int16
+    content.vb: Public w As Short
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.XY
+  commentId: P:piine.Short4.XY
+  id: XY
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: XY
+  nameWithType: Short4.XY
+  fullName: piine.Short4.XY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XY
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1276
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short2 XY { get; }
+    parameters: []
+    return:
+      type: piine.Short2
+    content.vb: Public ReadOnly Property XY As Short2
+  overload: piine.Short4.XY*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.XZ
+  commentId: P:piine.Short4.XZ
+  id: XZ
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: XZ
+  nameWithType: Short4.XZ
+  fullName: piine.Short4.XZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XZ
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1277
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short2 XZ { get; }
+    parameters: []
+    return:
+      type: piine.Short2
+    content.vb: Public ReadOnly Property XZ As Short2
+  overload: piine.Short4.XZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.YZ
+  commentId: P:piine.Short4.YZ
+  id: YZ
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: YZ
+  nameWithType: Short4.YZ
+  fullName: piine.Short4.YZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: YZ
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1278
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short2 YZ { get; }
+    parameters: []
+    return:
+      type: piine.Short2
+    content.vb: Public ReadOnly Property YZ As Short2
+  overload: piine.Short4.YZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.XYZ
+  commentId: P:piine.Short4.XYZ
+  id: XYZ
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: XYZ
+  nameWithType: Short4.XYZ
+  fullName: piine.Short4.XYZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XYZ
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1280
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 XYZ { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property XYZ As Short3
+  overload: piine.Short4.XYZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.XZY
+  commentId: P:piine.Short4.XZY
+  id: XZY
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: XZY
+  nameWithType: Short4.XZY
+  fullName: piine.Short4.XZY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XZY
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1281
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 XZY { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property XZY As Short3
+  overload: piine.Short4.XZY*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.YXZ
+  commentId: P:piine.Short4.YXZ
+  id: YXZ
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: YXZ
+  nameWithType: Short4.YXZ
+  fullName: piine.Short4.YXZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: YXZ
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1282
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 YXZ { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property YXZ As Short3
+  overload: piine.Short4.YXZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.YZX
+  commentId: P:piine.Short4.YZX
+  id: YZX
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: YZX
+  nameWithType: Short4.YZX
+  fullName: piine.Short4.YZX
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: YZX
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1283
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 YZX { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property YZX As Short3
+  overload: piine.Short4.YZX*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.ZXY
+  commentId: P:piine.Short4.ZXY
+  id: ZXY
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: ZXY
+  nameWithType: Short4.ZXY
+  fullName: piine.Short4.ZXY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ZXY
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1284
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 ZXY { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property ZXY As Short3
+  overload: piine.Short4.ZXY*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.ZYX
+  commentId: P:piine.Short4.ZYX
+  id: ZYX
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: ZYX
+  nameWithType: Short4.ZYX
+  fullName: piine.Short4.ZYX
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ZYX
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1285
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short3 ZYX { get; }
+    parameters: []
+    return:
+      type: piine.Short3
+    content.vb: Public ReadOnly Property ZYX As Short3
+  overload: piine.Short4.ZYX*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Short4.Item(System.Int32)
+  commentId: P:piine.Short4.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Short4.Item[Int32]
+  fullName: piine.Short4.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1287
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int16
+    content.vb: Public Property Item(index As Integer) As Short
+  overload: piine.Short4.Item*
+  nameWithType.vb: Short4.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Short4.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Short4.#ctor(System.Int16,System.Int16,System.Int16,System.Int16)
+  commentId: M:piine.Short4.#ctor(System.Int16,System.Int16,System.Int16,System.Int16)
+  id: '#ctor(System.Int16,System.Int16,System.Int16,System.Int16)'
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Short4(Int16, Int16, Int16, Int16)
+  nameWithType: Short4.Short4(Int16, Int16, Int16, Int16)
+  fullName: piine.Short4.Short4(System.Int16, System.Int16, System.Int16, System.Int16)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1305
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short4(short x, short y, short z, short w)
+    parameters:
+    - id: x
+      type: System.Int16
+    - id: y
+      type: System.Int16
+    - id: z
+      type: System.Int16
+    - id: w
+      type: System.Int16
+    content.vb: Public Sub New(x As Short, y As Short, z As Short, w As Short)
+  overload: piine.Short4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.#ctor(piine.Short2,piine.Short2)
+  commentId: M:piine.Short4.#ctor(piine.Short2,piine.Short2)
+  id: '#ctor(piine.Short2,piine.Short2)'
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Short4(Short2, Short2)
+  nameWithType: Short4.Short4(Short2, Short2)
+  fullName: piine.Short4.Short4(piine.Short2, piine.Short2)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1313
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short4(Short2 leftPart, Short2 rightPart)
+    parameters:
+    - id: leftPart
+      type: piine.Short2
+    - id: rightPart
+      type: piine.Short2
+    content.vb: Public Sub New(leftPart As Short2, rightPart As Short2)
+  overload: piine.Short4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.#ctor(System.Int16)
+  commentId: M:piine.Short4.#ctor(System.Int16)
+  id: '#ctor(System.Int16)'
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Short4(Int16)
+  nameWithType: Short4.Short4(Int16)
+  fullName: piine.Short4.Short4(System.Int16)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1321
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Short4(short all)
+    parameters:
+    - id: all
+      type: System.Int16
+    content.vb: Public Sub New(all As Short)
+  overload: piine.Short4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.GetUnsafe(System.Int32)
+  commentId: M:piine.Short4.GetUnsafe(System.Int32)
+  id: GetUnsafe(System.Int32)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: GetUnsafe(Int32)
+  nameWithType: Short4.GetUnsafe(Int32)
+  fullName: piine.Short4.GetUnsafe(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: GetUnsafe
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1329
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public short GetUnsafe(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int16
+    content.vb: Public Function GetUnsafe(index As Integer) As Short
+  overload: piine.Short4.GetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.SetUnsafe(System.Int32,System.Int16)
+  commentId: M:piine.Short4.SetUnsafe(System.Int32,System.Int16)
+  id: SetUnsafe(System.Int32,System.Int16)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: SetUnsafe(Int32, Int16)
+  nameWithType: Short4.SetUnsafe(Int32, Int16)
+  fullName: piine.Short4.SetUnsafe(System.Int32, System.Int16)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: SetUnsafe
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1331
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void SetUnsafe(int index, short value)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: System.Int16
+    content.vb: Public Sub SetUnsafe(index As Integer, value As Short)
+  overload: piine.Short4.SetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.Normalize(piine.Short4)
+  commentId: M:piine.Short4.Normalize(piine.Short4)
+  id: Normalize(piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Short4)
+  nameWithType: Short4.Normalize(Short4)
+  fullName: piine.Short4.Normalize(piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Normalize
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1333
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 Normalize(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Function Normalize(v As Short4) As Short4
+  overload: piine.Short4.Normalize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Absolute(piine.Short4)
+  commentId: M:piine.Short4.Absolute(piine.Short4)
+  id: Absolute(piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Absolute(Short4)
+  nameWithType: Short4.Absolute(Short4)
+  fullName: piine.Short4.Absolute(piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Absolute
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1345
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 Absolute(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Function Absolute(v As Short4) As Short4
+  overload: piine.Short4.Absolute*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Distance(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.Distance(piine.Short4,piine.Short4)
+  id: Distance(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Distance(Short4, Short4)
+  nameWithType: Short4.Distance(Short4, Short4)
+  fullName: piine.Short4.Distance(piine.Short4, piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Distance
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1347
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static float Distance(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Short4, b As Short4) As Single
+  overload: piine.Short4.Distance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Dot(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.Dot(piine.Short4,piine.Short4)
+  id: Dot(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Dot(Short4, Short4)
+  nameWithType: Short4.Dot(Short4, Short4)
+  fullName: piine.Short4.Dot(piine.Short4, piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Dot
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1349
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static float Dot(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(a As Short4, b As Short4) As Single
+  overload: piine.Short4.Dot*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Reverse(piine.Short4)
+  commentId: M:piine.Short4.Reverse(piine.Short4)
+  id: Reverse(piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Reverse(Short4)
+  nameWithType: Short4.Reverse(Short4)
+  fullName: piine.Short4.Reverse(piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Reverse
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1351
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 Reverse(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Function Reverse(v As Short4) As Short4
+  overload: piine.Short4.Reverse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Sum
+  commentId: M:piine.Short4.Sum
+  id: Sum
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Sum()
+  nameWithType: Short4.Sum()
+  fullName: piine.Short4.Sum()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Sum
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1353
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int Sum()
+    return:
+      type: System.Int32
+    content.vb: Public Function Sum As Integer
+  overload: piine.Short4.Sum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.Volume
+  commentId: M:piine.Short4.Volume
+  id: Volume
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Volume()
+  nameWithType: Short4.Volume()
+  fullName: piine.Short4.Volume()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Volume
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1355
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public int Volume()
+    return:
+      type: System.Int32
+    content.vb: Public Function Volume As Integer
+  overload: piine.Short4.Volume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.Length
+  commentId: M:piine.Short4.Length
+  id: Length
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Length()
+  nameWithType: Short4.Length()
+  fullName: piine.Short4.Length()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1357
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float Length()
+    return:
+      type: System.Single
+    content.vb: Public Function Length As Single
+  overload: piine.Short4.Length*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.LengthSquared
+  commentId: M:piine.Short4.LengthSquared
+  id: LengthSquared
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared()
+  nameWithType: Short4.LengthSquared()
+  fullName: piine.Short4.LengthSquared()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: LengthSquared
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1359
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public float LengthSquared()
+    return:
+      type: System.Single
+    content.vb: Public Function LengthSquared As Single
+  overload: piine.Short4.LengthSquared*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.Contains(System.Int16)
+  commentId: M:piine.Short4.Contains(System.Int16)
+  id: Contains(System.Int16)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Contains(Int16)
+  nameWithType: Short4.Contains(Int16)
+  fullName: piine.Short4.Contains(System.Int16)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Contains
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1361
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Contains(short value)
+    parameters:
+    - id: value
+      type: System.Int16
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(value As Short) As Boolean
+  overload: piine.Short4.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.op_Equality(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_Equality(piine.Short4,piine.Short4)
+  id: op_Equality(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Equality(Short4, Short4)
+  nameWithType: Short4.Equality(Short4, Short4)
+  fullName: piine.Short4.Equality(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1363
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_Inequality(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_Inequality(piine.Short4,piine.Short4)
+  id: op_Inequality(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Short4, Short4)
+  nameWithType: Short4.Inequality(Short4, Short4)
+  fullName: piine.Short4.Inequality(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1365
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_Addition(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_Addition(piine.Short4,piine.Short4)
+  id: op_Addition(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Addition(Short4, Short4)
+  nameWithType: Short4.Addition(Short4, Short4)
+  fullName: piine.Short4.Addition(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1367
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 operator +(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Operator +(a As Short4, b As Short4) As Short4
+  overload: piine.Short4.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_Subtraction(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_Subtraction(piine.Short4,piine.Short4)
+  id: op_Subtraction(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Short4, Short4)
+  nameWithType: Short4.Subtraction(Short4, Short4)
+  fullName: piine.Short4.Subtraction(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1369
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 operator -(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Operator -(a As Short4, b As Short4) As Short4
+  overload: piine.Short4.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_UnaryNegation(piine.Short4)
+  commentId: M:piine.Short4.op_UnaryNegation(piine.Short4)
+  id: op_UnaryNegation(piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: UnaryNegation(Short4)
+  nameWithType: Short4.UnaryNegation(Short4)
+  fullName: piine.Short4.UnaryNegation(piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_UnaryNegation
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1371
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 operator -(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Operator -(v As Short4) As Short4
+  overload: piine.Short4.op_UnaryNegation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_Multiply(piine.Short4,System.Single)
+  commentId: M:piine.Short4.op_Multiply(piine.Short4,System.Single)
+  id: op_Multiply(piine.Short4,System.Single)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Short4, Single)
+  nameWithType: Short4.Multiply(Short4, Single)
+  fullName: piine.Short4.Multiply(piine.Short4, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1373
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 operator *(Short4 a, float b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Operator *(a As Short4, b As Single) As Short4
+  overload: piine.Short4.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_Division(piine.Short4,System.Single)
+  commentId: M:piine.Short4.op_Division(piine.Short4,System.Single)
+  id: op_Division(piine.Short4,System.Single)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Division(Short4, Single)
+  nameWithType: Short4.Division(Short4, Single)
+  fullName: piine.Short4.Division(piine.Short4, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1375
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Short4 operator /(Short4 a, float b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: System.Single
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Operator /(a As Short4, b As Single) As Short4
+  overload: piine.Short4.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_GreaterThan(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_GreaterThan(piine.Short4,piine.Short4)
+  id: op_GreaterThan(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan(Short4, Short4)
+  nameWithType: Short4.GreaterThan(Short4, Short4)
+  fullName: piine.Short4.GreaterThan(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThan
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1377
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator>(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator>(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_GreaterThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_LessThan(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_LessThan(piine.Short4,piine.Short4)
+  id: op_LessThan(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: LessThan(Short4, Short4)
+  nameWithType: Short4.LessThan(Short4, Short4)
+  fullName: piine.Short4.LessThan(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThan
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1379
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_LessThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_GreaterThanOrEqual(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_GreaterThanOrEqual(piine.Short4,piine.Short4)
+  id: op_GreaterThanOrEqual(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual(Short4, Short4)
+  nameWithType: Short4.GreaterThanOrEqual(Short4, Short4)
+  fullName: piine.Short4.GreaterThanOrEqual(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThanOrEqual
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1381
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator >=(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_GreaterThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.op_LessThanOrEqual(piine.Short4,piine.Short4)
+  commentId: M:piine.Short4.op_LessThanOrEqual(piine.Short4,piine.Short4)
+  id: op_LessThanOrEqual(piine.Short4,piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual(Short4, Short4)
+  nameWithType: Short4.LessThanOrEqual(Short4, Short4)
+  fullName: piine.Short4.LessThanOrEqual(piine.Short4, piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThanOrEqual
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1383
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <=(Short4 a, Short4 b)
+    parameters:
+    - id: a
+      type: piine.Short4
+    - id: b
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(a As Short4, b As Short4) As Boolean
+  overload: piine.Short4.op_LessThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Short4.Deconstruct(System.Int16@,System.Int16@,System.Int16@,System.Int16@)
+  commentId: M:piine.Short4.Deconstruct(System.Int16@,System.Int16@,System.Int16@,System.Int16@)
+  id: Deconstruct(System.Int16@,System.Int16@,System.Int16@,System.Int16@)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out Int16, out Int16, out Int16, out Int16)
+  nameWithType: Short4.Deconstruct(out Int16, out Int16, out Int16, out Int16)
+  fullName: piine.Short4.Deconstruct(out System.Int16, out System.Int16, out System.Int16, out System.Int16)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Deconstruct
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1385
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void Deconstruct(out short x, out short y, out short z, out short w)
+    parameters:
+    - id: x
+      type: System.Int16
+    - id: y
+      type: System.Int16
+    - id: z
+      type: System.Int16
+    - id: w
+      type: System.Int16
+    content.vb: Public Sub Deconstruct(ByRef x As Short, ByRef y As Short, ByRef z As Short, ByRef w As Short)
+  overload: piine.Short4.Deconstruct*
+  nameWithType.vb: Short4.Deconstruct(ByRef Int16, ByRef Int16, ByRef Int16, ByRef Int16)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Short4.Deconstruct(ByRef System.Int16, ByRef System.Int16, ByRef System.Int16, ByRef System.Int16)
+  name.vb: Deconstruct(ByRef Int16, ByRef Int16, ByRef Int16, ByRef Int16)
+- uid: piine.Short4.ToString
+  commentId: M:piine.Short4.ToString
+  id: ToString
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Short4.ToString()
+  fullName: piine.Short4.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1393
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Short4.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Short4.Equals(piine.Short4)
+  commentId: M:piine.Short4.Equals(piine.Short4)
+  id: Equals(piine.Short4)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Equals(Short4)
+  nameWithType: Short4.Equals(Short4)
+  fullName: piine.Short4.Equals(piine.Short4)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1395
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Short4 other)
+    parameters:
+    - id: other
+      type: piine.Short4
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Short4) As Boolean
+  overload: piine.Short4.Equals*
+  implements:
+  - System.IEquatable{piine.Short4}.Equals(piine.Short4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Short4.Equals(System.Object)
+  commentId: M:piine.Short4.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Short4.Equals(Object)
+  fullName: piine.Short4.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1397
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Short4.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Short4.GetHashCode
+  commentId: M:piine.Short4.GetHashCode
+  id: GetHashCode
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Short4.GetHashCode()
+  fullName: piine.Short4.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1407
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Short4.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Short4.op_Implicit(piine.Short4)~System.Numerics.Vector4
+  commentId: M:piine.Short4.op_Implicit(piine.Short4)~System.Numerics.Vector4
+  id: op_Implicit(piine.Short4)~System.Numerics.Vector4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Short4 to Vector4)
+  nameWithType: Short4.Implicit(Short4 to Vector4)
+  fullName: piine.Short4.Implicit(piine.Short4 to System.Numerics.Vector4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1411
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Vector4(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: System.Numerics.Vector4
+    content.vb: Public Shared Widening Operator CType(v As Short4) As Vector4
+  overload: piine.Short4.op_Implicit*
+  nameWithType.vb: Short4.Widening(Short4 to Vector4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Widening(piine.Short4 to System.Numerics.Vector4)
+  name.vb: Widening(Short4 to Vector4)
+- uid: piine.Short4.op_Explicit(System.Numerics.Vector4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(System.Numerics.Vector4)~piine.Short4
+  id: op_Explicit(System.Numerics.Vector4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Vector4 to Short4)
+  nameWithType: Short4.Explicit(Vector4 to Short4)
+  fullName: piine.Short4.Explicit(System.Numerics.Vector4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1412
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(Vector4 v)
+    parameters:
+    - id: v
+      type: System.Numerics.Vector4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As Vector4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(Vector4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(System.Numerics.Vector4 to piine.Short4)
+  name.vb: Narrowing(Vector4 to Short4)
+- uid: piine.Short4.op_Implicit(System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16})~piine.Short4
+  commentId: M:piine.Short4.op_Implicit(System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16})~piine.Short4
+  id: op_Implicit(System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16})~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Implicit((Int16 x, Int16 y, Int16 z, Int16 w) to Short4)
+  nameWithType: Short4.Implicit((Int16 x, Int16 y, Int16 z, Int16 w) to Short4)
+  fullName: piine.Short4.Implicit(System.ValueTuple<System.Int16, System.Int16, System.Int16, System.Int16> to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1415
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Short4((short x, short y, short z, short w)v)
+    parameters:
+    - id: v
+      type: System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Widening Operator CType(v As(x As Short, y As Short, z As Short, w As Short)) As Short4
+  overload: piine.Short4.op_Implicit*
+  nameWithType.vb: Short4.Widening((x As Int16, y As Int16, z As Int16, w As Int16) to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Widening(System.ValueTuple(Of System.Int16, System.Int16, System.Int16, System.Int16) to piine.Short4)
+  name.vb: Widening((x As Int16, y As Int16, z As Int16, w As Int16) to Short4)
+- uid: piine.Short4.op_Implicit(piine.Short4)~System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  commentId: M:piine.Short4.op_Implicit(piine.Short4)~System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  id: op_Implicit(piine.Short4)~System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Short4 to (Int16, Int16, Int16, Int16))
+  nameWithType: Short4.Implicit(Short4 to (Int16, Int16, Int16, Int16))
+  fullName: piine.Short4.Implicit(piine.Short4 to System.ValueTuple<System.Int16, System.Int16, System.Int16, System.Int16>)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1417
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator (short, short, short, short)(Short4 v)
+    parameters:
+    - id: v
+      type: piine.Short4
+    return:
+      type: System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+    content.vb: Public Shared Widening Operator CType(v As Short4) As(Short, Short, Short, Short)
+  overload: piine.Short4.op_Implicit*
+  nameWithType.vb: Short4.Widening(Short4 to (Int16, Int16, Int16, Int16))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Widening(piine.Short4 to System.ValueTuple(Of System.Int16, System.Int16, System.Int16, System.Int16))
+  name.vb: Widening(Short4 to (Int16, Int16, Int16, Int16))
+- uid: piine.Short4.op_Explicit(piine.Float4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.Float4)~piine.Short4
+  id: op_Explicit(piine.Float4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Float4 to Short4)
+  nameWithType: Short4.Explicit(Float4 to Short4)
+  fullName: piine.Short4.Explicit(piine.Float4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1421
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(Float4 v)
+    parameters:
+    - id: v
+      type: piine.Float4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As Float4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(Float4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.Float4 to piine.Short4)
+  name.vb: Narrowing(Float4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.Double4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.Double4)~piine.Short4
+  id: op_Explicit(piine.Double4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Double4 to Short4)
+  nameWithType: Short4.Explicit(Double4 to Short4)
+  fullName: piine.Short4.Explicit(piine.Double4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1424
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(Double4 v)
+    parameters:
+    - id: v
+      type: piine.Double4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As Double4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(Double4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.Double4 to piine.Short4)
+  name.vb: Narrowing(Double4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.Int4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.Int4)~piine.Short4
+  id: op_Explicit(piine.Int4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Int4 to Short4)
+  nameWithType: Short4.Explicit(Int4 to Short4)
+  fullName: piine.Short4.Explicit(piine.Int4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1427
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(Int4 v)
+    parameters:
+    - id: v
+      type: piine.Int4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As Int4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(Int4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.Int4 to piine.Short4)
+  name.vb: Narrowing(Int4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.UInt4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.UInt4)~piine.Short4
+  id: op_Explicit(piine.UInt4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(UInt4 to Short4)
+  nameWithType: Short4.Explicit(UInt4 to Short4)
+  fullName: piine.Short4.Explicit(piine.UInt4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1430
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(UInt4 v)
+    parameters:
+    - id: v
+      type: piine.UInt4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As UInt4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(UInt4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.UInt4 to piine.Short4)
+  name.vb: Narrowing(UInt4 to Short4)
+- uid: piine.Short4.op_Implicit(piine.Byte4)~piine.Short4
+  commentId: M:piine.Short4.op_Implicit(piine.Byte4)~piine.Short4
+  id: op_Implicit(piine.Byte4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Byte4 to Short4)
+  nameWithType: Short4.Implicit(Byte4 to Short4)
+  fullName: piine.Short4.Implicit(piine.Byte4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1433
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Short4(Byte4 v)
+    parameters:
+    - id: v
+      type: piine.Byte4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Widening Operator CType(v As Byte4) As Short4
+  overload: piine.Short4.op_Implicit*
+  nameWithType.vb: Short4.Widening(Byte4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Widening(piine.Byte4 to piine.Short4)
+  name.vb: Widening(Byte4 to Short4)
+- uid: piine.Short4.op_Implicit(piine.SByte4)~piine.Short4
+  commentId: M:piine.Short4.op_Implicit(piine.SByte4)~piine.Short4
+  id: op_Implicit(piine.SByte4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Implicit(SByte4 to Short4)
+  nameWithType: Short4.Implicit(SByte4 to Short4)
+  fullName: piine.Short4.Implicit(piine.SByte4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1436
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Short4(SByte4 v)
+    parameters:
+    - id: v
+      type: piine.SByte4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Widening Operator CType(v As SByte4) As Short4
+  overload: piine.Short4.op_Implicit*
+  nameWithType.vb: Short4.Widening(SByte4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Widening(piine.SByte4 to piine.Short4)
+  name.vb: Widening(SByte4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.UShort4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.UShort4)~piine.Short4
+  id: op_Explicit(piine.UShort4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(UShort4 to Short4)
+  nameWithType: Short4.Explicit(UShort4 to Short4)
+  fullName: piine.Short4.Explicit(piine.UShort4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1439
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(UShort4 v)
+    parameters:
+    - id: v
+      type: piine.UShort4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As UShort4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(UShort4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.UShort4 to piine.Short4)
+  name.vb: Narrowing(UShort4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.Long4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.Long4)~piine.Short4
+  id: op_Explicit(piine.Long4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Long4 to Short4)
+  nameWithType: Short4.Explicit(Long4 to Short4)
+  fullName: piine.Short4.Explicit(piine.Long4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1442
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(Long4 v)
+    parameters:
+    - id: v
+      type: piine.Long4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As Long4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(Long4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.Long4 to piine.Short4)
+  name.vb: Narrowing(Long4 to Short4)
+- uid: piine.Short4.op_Explicit(piine.ULong4)~piine.Short4
+  commentId: M:piine.Short4.op_Explicit(piine.ULong4)~piine.Short4
+  id: op_Explicit(piine.ULong4)~piine.Short4
+  parent: piine.Short4
+  langs:
+  - csharp
+  - vb
+  name: Explicit(ULong4 to Short4)
+  nameWithType: Short4.Explicit(ULong4 to Short4)
+  fullName: piine.Short4.Explicit(piine.ULong4 to piine.Short4)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type4.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type4.cs
+    startLine: 1445
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Short4(ULong4 v)
+    parameters:
+    - id: v
+      type: piine.ULong4
+    return:
+      type: piine.Short4
+    content.vb: Public Shared Narrowing Operator CType(v As ULong4) As Short4
+  overload: piine.Short4.op_Explicit*
+  nameWithType.vb: Short4.Narrowing(ULong4 to Short4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Short4.Narrowing(piine.ULong4 to piine.Short4)
+  name.vb: Narrowing(ULong4 to Short4)
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.IEquatable{piine.Short4}
+  commentId: T:System.IEquatable{piine.Short4}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Short4>
+  nameWithType: IEquatable<Short4>
+  fullName: System.IEquatable<piine.Short4>
+  nameWithType.vb: IEquatable(Of Short4)
+  fullName.vb: System.IEquatable(Of piine.Short4)
+  name.vb: IEquatable(Of Short4)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Short4
+    name: Short4
+    nameWithType: Short4
+    fullName: piine.Short4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Short4
+    name: Short4
+    nameWithType: Short4
+    fullName: piine.Short4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Short4.Zero*
+  commentId: Overload:piine.Short4.Zero
+  name: Zero
+  nameWithType: Short4.Zero
+  fullName: piine.Short4.Zero
+- uid: piine.Short4
+  commentId: T:piine.Short4
+  parent: piine
+  name: Short4
+  nameWithType: Short4
+  fullName: piine.Short4
+- uid: piine.Short4.One*
+  commentId: Overload:piine.Short4.One
+  name: One
+  nameWithType: Short4.One
+  fullName: piine.Short4.One
+- uid: piine.Short4.UnitX*
+  commentId: Overload:piine.Short4.UnitX
+  name: UnitX
+  nameWithType: Short4.UnitX
+  fullName: piine.Short4.UnitX
+- uid: piine.Short4.UnitY*
+  commentId: Overload:piine.Short4.UnitY
+  name: UnitY
+  nameWithType: Short4.UnitY
+  fullName: piine.Short4.UnitY
+- uid: piine.Short4.UnitZ*
+  commentId: Overload:piine.Short4.UnitZ
+  name: UnitZ
+  nameWithType: Short4.UnitZ
+  fullName: piine.Short4.UnitZ
+- uid: piine.Short4.UnitW*
+  commentId: Overload:piine.Short4.UnitW
+  name: UnitW
+  nameWithType: Short4.UnitW
+  fullName: piine.Short4.UnitW
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: piine.Short4.XY*
+  commentId: Overload:piine.Short4.XY
+  name: XY
+  nameWithType: Short4.XY
+  fullName: piine.Short4.XY
+- uid: piine.Short2
+  commentId: T:piine.Short2
+  parent: piine
+  name: Short2
+  nameWithType: Short2
+  fullName: piine.Short2
+- uid: piine.Short4.XZ*
+  commentId: Overload:piine.Short4.XZ
+  name: XZ
+  nameWithType: Short4.XZ
+  fullName: piine.Short4.XZ
+- uid: piine.Short4.YZ*
+  commentId: Overload:piine.Short4.YZ
+  name: YZ
+  nameWithType: Short4.YZ
+  fullName: piine.Short4.YZ
+- uid: piine.Short4.XYZ*
+  commentId: Overload:piine.Short4.XYZ
+  name: XYZ
+  nameWithType: Short4.XYZ
+  fullName: piine.Short4.XYZ
+- uid: piine.Short3
+  commentId: T:piine.Short3
+  parent: piine
+  name: Short3
+  nameWithType: Short3
+  fullName: piine.Short3
+- uid: piine.Short4.XZY*
+  commentId: Overload:piine.Short4.XZY
+  name: XZY
+  nameWithType: Short4.XZY
+  fullName: piine.Short4.XZY
+- uid: piine.Short4.YXZ*
+  commentId: Overload:piine.Short4.YXZ
+  name: YXZ
+  nameWithType: Short4.YXZ
+  fullName: piine.Short4.YXZ
+- uid: piine.Short4.YZX*
+  commentId: Overload:piine.Short4.YZX
+  name: YZX
+  nameWithType: Short4.YZX
+  fullName: piine.Short4.YZX
+- uid: piine.Short4.ZXY*
+  commentId: Overload:piine.Short4.ZXY
+  name: ZXY
+  nameWithType: Short4.ZXY
+  fullName: piine.Short4.ZXY
+- uid: piine.Short4.ZYX*
+  commentId: Overload:piine.Short4.ZYX
+  name: ZYX
+  nameWithType: Short4.ZYX
+  fullName: piine.Short4.ZYX
+- uid: piine.Short4.Item*
+  commentId: Overload:piine.Short4.Item
+  name: Item
+  nameWithType: Short4.Item
+  fullName: piine.Short4.Item
+- uid: piine.Short4.#ctor*
+  commentId: Overload:piine.Short4.#ctor
+  name: Short4
+  nameWithType: Short4.Short4
+  fullName: piine.Short4.Short4
+- uid: piine.Short4.GetUnsafe*
+  commentId: Overload:piine.Short4.GetUnsafe
+  name: GetUnsafe
+  nameWithType: Short4.GetUnsafe
+  fullName: piine.Short4.GetUnsafe
+- uid: piine.Short4.SetUnsafe*
+  commentId: Overload:piine.Short4.SetUnsafe
+  name: SetUnsafe
+  nameWithType: Short4.SetUnsafe
+  fullName: piine.Short4.SetUnsafe
+- uid: piine.Short4.Normalize*
+  commentId: Overload:piine.Short4.Normalize
+  name: Normalize
+  nameWithType: Short4.Normalize
+  fullName: piine.Short4.Normalize
+- uid: piine.Short4.Absolute*
+  commentId: Overload:piine.Short4.Absolute
+  name: Absolute
+  nameWithType: Short4.Absolute
+  fullName: piine.Short4.Absolute
+- uid: piine.Short4.Distance*
+  commentId: Overload:piine.Short4.Distance
+  name: Distance
+  nameWithType: Short4.Distance
+  fullName: piine.Short4.Distance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: piine.Short4.Dot*
+  commentId: Overload:piine.Short4.Dot
+  name: Dot
+  nameWithType: Short4.Dot
+  fullName: piine.Short4.Dot
+- uid: piine.Short4.Reverse*
+  commentId: Overload:piine.Short4.Reverse
+  name: Reverse
+  nameWithType: Short4.Reverse
+  fullName: piine.Short4.Reverse
+- uid: piine.Short4.Sum*
+  commentId: Overload:piine.Short4.Sum
+  name: Sum
+  nameWithType: Short4.Sum
+  fullName: piine.Short4.Sum
+- uid: piine.Short4.Volume*
+  commentId: Overload:piine.Short4.Volume
+  name: Volume
+  nameWithType: Short4.Volume
+  fullName: piine.Short4.Volume
+- uid: piine.Short4.Length*
+  commentId: Overload:piine.Short4.Length
+  name: Length
+  nameWithType: Short4.Length
+  fullName: piine.Short4.Length
+- uid: piine.Short4.LengthSquared*
+  commentId: Overload:piine.Short4.LengthSquared
+  name: LengthSquared
+  nameWithType: Short4.LengthSquared
+  fullName: piine.Short4.LengthSquared
+- uid: piine.Short4.Contains*
+  commentId: Overload:piine.Short4.Contains
+  name: Contains
+  nameWithType: Short4.Contains
+  fullName: piine.Short4.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Short4.op_Equality*
+  commentId: Overload:piine.Short4.op_Equality
+  name: Equality
+  nameWithType: Short4.Equality
+  fullName: piine.Short4.Equality
+- uid: piine.Short4.op_Inequality*
+  commentId: Overload:piine.Short4.op_Inequality
+  name: Inequality
+  nameWithType: Short4.Inequality
+  fullName: piine.Short4.Inequality
+- uid: piine.Short4.op_Addition*
+  commentId: Overload:piine.Short4.op_Addition
+  name: Addition
+  nameWithType: Short4.Addition
+  fullName: piine.Short4.Addition
+- uid: piine.Short4.op_Subtraction*
+  commentId: Overload:piine.Short4.op_Subtraction
+  name: Subtraction
+  nameWithType: Short4.Subtraction
+  fullName: piine.Short4.Subtraction
+- uid: piine.Short4.op_UnaryNegation*
+  commentId: Overload:piine.Short4.op_UnaryNegation
+  name: UnaryNegation
+  nameWithType: Short4.UnaryNegation
+  fullName: piine.Short4.UnaryNegation
+- uid: piine.Short4.op_Multiply*
+  commentId: Overload:piine.Short4.op_Multiply
+  name: Multiply
+  nameWithType: Short4.Multiply
+  fullName: piine.Short4.Multiply
+- uid: piine.Short4.op_Division*
+  commentId: Overload:piine.Short4.op_Division
+  name: Division
+  nameWithType: Short4.Division
+  fullName: piine.Short4.Division
+- uid: piine.Short4.op_GreaterThan*
+  commentId: Overload:piine.Short4.op_GreaterThan
+  name: GreaterThan
+  nameWithType: Short4.GreaterThan
+  fullName: piine.Short4.GreaterThan
+- uid: piine.Short4.op_LessThan*
+  commentId: Overload:piine.Short4.op_LessThan
+  name: LessThan
+  nameWithType: Short4.LessThan
+  fullName: piine.Short4.LessThan
+- uid: piine.Short4.op_GreaterThanOrEqual*
+  commentId: Overload:piine.Short4.op_GreaterThanOrEqual
+  name: GreaterThanOrEqual
+  nameWithType: Short4.GreaterThanOrEqual
+  fullName: piine.Short4.GreaterThanOrEqual
+- uid: piine.Short4.op_LessThanOrEqual*
+  commentId: Overload:piine.Short4.op_LessThanOrEqual
+  name: LessThanOrEqual
+  nameWithType: Short4.LessThanOrEqual
+  fullName: piine.Short4.LessThanOrEqual
+- uid: piine.Short4.Deconstruct*
+  commentId: Overload:piine.Short4.Deconstruct
+  name: Deconstruct
+  nameWithType: Short4.Deconstruct
+  fullName: piine.Short4.Deconstruct
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Short4.ToString*
+  commentId: Overload:piine.Short4.ToString
+  name: ToString
+  nameWithType: Short4.ToString
+  fullName: piine.Short4.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: piine.Short4.Equals*
+  commentId: Overload:piine.Short4.Equals
+  name: Equals
+  nameWithType: Short4.Equals
+  fullName: piine.Short4.Equals
+- uid: System.IEquatable{piine.Short4}.Equals(piine.Short4)
+  commentId: M:System.IEquatable{piine.Short4}.Equals(piine.Short4)
+  parent: System.IEquatable{piine.Short4}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Short4)
+  nameWithType: IEquatable<Short4>.Equals(Short4)
+  fullName: System.IEquatable<piine.Short4>.Equals(piine.Short4)
+  nameWithType.vb: IEquatable(Of Short4).Equals(Short4)
+  fullName.vb: System.IEquatable(Of piine.Short4).Equals(piine.Short4)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Short4>.Equals
+    fullName: System.IEquatable<piine.Short4>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Short4
+    name: Short4
+    nameWithType: Short4
+    fullName: piine.Short4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Short4).Equals
+    fullName: System.IEquatable(Of piine.Short4).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Short4
+    name: Short4
+    nameWithType: Short4
+    fullName: piine.Short4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Short4.GetHashCode*
+  commentId: Overload:piine.Short4.GetHashCode
+  name: GetHashCode
+  nameWithType: Short4.GetHashCode
+  fullName: piine.Short4.GetHashCode
+- uid: piine.Short4.op_Implicit*
+  commentId: Overload:piine.Short4.op_Implicit
+  name: Implicit
+  nameWithType: Short4.Implicit
+  fullName: piine.Short4.Implicit
+  nameWithType.vb: Short4.Widening
+  fullName.vb: piine.Short4.Widening
+  name.vb: Widening
+- uid: System.Numerics.Vector4
+  commentId: T:System.Numerics.Vector4
+  parent: System.Numerics
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: System.Numerics.Vector4
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: piine.Short4.op_Explicit*
+  commentId: Overload:piine.Short4.op_Explicit
+  name: Explicit
+  nameWithType: Short4.Explicit
+  fullName: piine.Short4.Explicit
+  nameWithType.vb: Short4.Narrowing
+  fullName.vb: piine.Short4.Narrowing
+  name.vb: Narrowing
+- uid: System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  commentId: T:System.ValueTuple{System.Int16,System.Int16,System.Int16,System.Int16}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Int16, Int16, Int16, Int16>
+  nameWithType: ValueTuple<Int16, Int16, Int16, Int16>
+  fullName: System.ValueTuple<System.Int16, System.Int16, System.Int16, System.Int16>
+  nameWithType.vb: ValueTuple(Of Int16, Int16, Int16, Int16)
+  fullName.vb: System.ValueTuple(Of System.Int16, System.Int16, System.Int16, System.Int16)
+  name.vb: ValueTuple(Of Int16, Int16, Int16, Int16)
+  spec.csharp:
+  - uid: System.ValueTuple`4
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`4
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int16
+    name: Int16
+    nameWithType: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Float4
+  commentId: T:piine.Float4
+  parent: piine
+  name: Float4
+  nameWithType: Float4
+  fullName: piine.Float4
+- uid: piine.Double4
+  commentId: T:piine.Double4
+  parent: piine
+  name: Double4
+  nameWithType: Double4
+  fullName: piine.Double4
+- uid: piine.Int4
+  commentId: T:piine.Int4
+  parent: piine
+  name: Int4
+  nameWithType: Int4
+  fullName: piine.Int4
+- uid: piine.UInt4
+  commentId: T:piine.UInt4
+  parent: piine
+  name: UInt4
+  nameWithType: UInt4
+  fullName: piine.UInt4
+- uid: piine.Byte4
+  commentId: T:piine.Byte4
+  parent: piine
+  name: Byte4
+  nameWithType: Byte4
+  fullName: piine.Byte4
+- uid: piine.SByte4
+  commentId: T:piine.SByte4
+  parent: piine
+  name: SByte4
+  nameWithType: SByte4
+  fullName: piine.SByte4
+- uid: piine.UShort4
+  commentId: T:piine.UShort4
+  parent: piine
+  name: UShort4
+  nameWithType: UShort4
+  fullName: piine.UShort4
+- uid: piine.Long4
+  commentId: T:piine.Long4
+  parent: piine
+  name: Long4
+  nameWithType: Long4
+  fullName: piine.Long4
+- uid: piine.ULong4
+  commentId: T:piine.ULong4
+  parent: piine
+  name: ULong4
+  nameWithType: ULong4
+  fullName: piine.ULong4

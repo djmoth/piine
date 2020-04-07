@@ -163,9 +163,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (Float3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Float3 (Vector3 v) => new Float3 ((float)v.X, (float)v.Y, (float)v.Z);
+		public static implicit operator Vector3 (Float3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+        public static implicit operator Float3 (Vector3 v) => new Float3 ((float)v.X, (float)v.Y, (float)v.Z);
 
 		//Tuple
         public static implicit operator Float3 ((float x, float y, float z) v) => new Float3 (v.x, v.y, v.z);
@@ -177,10 +176,10 @@ namespace piine
 		public static explicit operator Float3 (Double3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
 		//Int3
-		public static explicit operator Float3 (Int3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
+		public static implicit operator Float3 (Int3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
 		//UInt3
-		public static explicit operator Float3 (UInt3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
+		public static implicit operator Float3 (UInt3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
 		//Byte3
 		public static implicit operator Float3 (Byte3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
@@ -195,10 +194,10 @@ namespace piine
 		public static implicit operator Float3 (UShort3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
 		//Long3
-		public static explicit operator Float3 (Long3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
+		public static implicit operator Float3 (Long3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 
 		//ULong3
-		public static explicit operator Float3 (ULong3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
+		public static implicit operator Float3 (ULong3 v) => new Float3 ((float)v.x, (float)v.y, (float)v.z);
 	}
 
 	[CLSCompliant (true)]
@@ -358,8 +357,7 @@ namespace piine
 		//Conversion to other vectors
 		//Vector3
 		public static explicit operator Vector3 (Double3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Double3 (Vector3 v) => new Double3 ((double)v.X, (double)v.Y, (double)v.Z);
+        public static implicit operator Double3 (Vector3 v) => new Double3 ((double)v.X, (double)v.Y, (double)v.Z);
 
 		//Tuple
         public static implicit operator Double3 ((double x, double y, double z) v) => new Double3 (v.x, v.y, v.z);
@@ -389,10 +387,10 @@ namespace piine
 		public static implicit operator Double3 (UShort3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
 		//Long3
-		public static explicit operator Double3 (Long3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
+		public static implicit operator Double3 (Long3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 
 		//ULong3
-		public static explicit operator Double3 (ULong3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
+		public static implicit operator Double3 (ULong3 v) => new Double3 ((double)v.x, (double)v.y, (double)v.z);
 	}
 
 	[CLSCompliant (true)]
@@ -551,9 +549,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (Int3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
+		public static implicit operator Vector3 (Int3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+        public static implicit operator Int3 (Vector3 v) => new Int3 ((int)v.X, (int)v.Y, (int)v.Z);
 
 		//Tuple
         public static implicit operator Int3 ((int x, int y, int z) v) => new Int3 (v.x, v.y, v.z);
@@ -744,8 +741,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (UInt3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (UInt3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator UInt3 (Vector3 v) => new UInt3 ((uint)v.X, (uint)v.Y, (uint)v.Z);
 
 		//Tuple
@@ -937,8 +933,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (Byte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (Byte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator Byte3 (Vector3 v) => new Byte3 ((byte)v.X, (byte)v.Y, (byte)v.Z);
 
 		//Tuple
@@ -1131,8 +1126,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (SByte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (SByte3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator SByte3 (Vector3 v) => new SByte3 ((sbyte)v.X, (sbyte)v.Y, (sbyte)v.Z);
 
 		//Tuple
@@ -1325,8 +1319,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (Short3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (Short3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator Short3 (Vector3 v) => new Short3 ((short)v.X, (short)v.Y, (short)v.Z);
 
 		//Tuple
@@ -1518,8 +1511,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (UShort3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (UShort3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator UShort3 (Vector3 v) => new UShort3 ((ushort)v.X, (ushort)v.Y, (ushort)v.Z);
 
 		//Tuple
@@ -1712,9 +1704,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (Long3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
-        public static explicit operator Long3 (Vector3 v) => new Long3 ((long)v.X, (long)v.Y, (long)v.Z);
+		public static implicit operator Vector3 (Long3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
+        public static implicit operator Long3 (Vector3 v) => new Long3 ((long)v.X, (long)v.Y, (long)v.Z);
 
 		//Tuple
         public static implicit operator Long3 ((long x, long y, long z) v) => new Long3 (v.x, v.y, v.z);
@@ -1905,8 +1896,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector3
-		public static explicit operator Vector3 (ULong3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
-
+		public static implicit operator Vector3 (ULong3 v) => new Vector3 ((float)v.x, (float)v.y, (float)v.z);
         public static explicit operator ULong3 (Vector3 v) => new ULong3 ((ulong)v.X, (ulong)v.Y, (ulong)v.Z);
 
 		//Tuple

@@ -8,13 +8,35 @@ items:
   - piine.Byte3
   - piine.Byte4
   - piine.Double2
+  - piine.Double3
+  - piine.Double4
+  - piine.Fixed16
+  - piine.Fixed8
   - piine.Float2
   - piine.Float3
   - piine.Float4
   - piine.Int2
   - piine.Int3
   - piine.Int4
+  - piine.Long2
+  - piine.Long3
+  - piine.Long4
+  - piine.SByte2
+  - piine.SByte3
+  - piine.SByte4
+  - piine.Short2
+  - piine.Short3
+  - piine.Short4
   - piine.Simd
+  - piine.UInt2
+  - piine.UInt3
+  - piine.UInt4
+  - piine.ULong2
+  - piine.ULong3
+  - piine.ULong4
+  - piine.UShort2
+  - piine.UShort3
+  - piine.UShort4
   - piine.XorShift
   langs:
   - csharp
@@ -26,71 +48,203 @@ items:
   assemblies:
   - piine
 references:
-- uid: piine.Byte2
-  commentId: T:piine.Byte2
+- uid: piine.Fixed16
+  commentId: T:piine.Fixed16
   parent: piine
-  name: Byte2
-  nameWithType: Byte2
-  fullName: piine.Byte2
-- uid: piine.Byte3
-  commentId: T:piine.Byte3
+  name: Fixed16
+  nameWithType: Fixed16
+  fullName: piine.Fixed16
+- uid: piine.Fixed8
+  commentId: T:piine.Fixed8
   parent: piine
-  name: Byte3
-  nameWithType: Byte3
-  fullName: piine.Byte3
-- uid: piine.Byte4
-  commentId: T:piine.Byte4
-  parent: piine
-  name: Byte4
-  nameWithType: Byte4
-  fullName: piine.Byte4
-- uid: piine.Double2
-  commentId: T:piine.Double2
-  parent: piine
-  name: Double2
-  nameWithType: Double2
-  fullName: piine.Double2
+  name: Fixed8
+  nameWithType: Fixed8
+  fullName: piine.Fixed8
+- uid: piine.Simd
+  commentId: T:piine.Simd
+  name: Simd
+  nameWithType: Simd
+  fullName: piine.Simd
 - uid: piine.Float2
   commentId: T:piine.Float2
   parent: piine
   name: Float2
   nameWithType: Float2
   fullName: piine.Float2
-- uid: piine.Float3
-  commentId: T:piine.Float3
+- uid: piine.Double2
+  commentId: T:piine.Double2
   parent: piine
-  name: Float3
-  nameWithType: Float3
-  fullName: piine.Float3
-- uid: piine.Float4
-  commentId: T:piine.Float4
-  parent: piine
-  name: Float4
-  nameWithType: Float4
-  fullName: piine.Float4
+  name: Double2
+  nameWithType: Double2
+  fullName: piine.Double2
 - uid: piine.Int2
   commentId: T:piine.Int2
   parent: piine
   name: Int2
   nameWithType: Int2
   fullName: piine.Int2
+- uid: piine.UInt2
+  commentId: T:piine.UInt2
+  parent: piine
+  name: UInt2
+  nameWithType: UInt2
+  fullName: piine.UInt2
+- uid: piine.Byte2
+  commentId: T:piine.Byte2
+  parent: piine
+  name: Byte2
+  nameWithType: Byte2
+  fullName: piine.Byte2
+- uid: piine.SByte2
+  commentId: T:piine.SByte2
+  parent: piine
+  name: SByte2
+  nameWithType: SByte2
+  fullName: piine.SByte2
+- uid: piine.Short2
+  commentId: T:piine.Short2
+  parent: piine
+  name: Short2
+  nameWithType: Short2
+  fullName: piine.Short2
+- uid: piine.UShort2
+  commentId: T:piine.UShort2
+  parent: piine
+  name: UShort2
+  nameWithType: UShort2
+  fullName: piine.UShort2
+- uid: piine.Long2
+  commentId: T:piine.Long2
+  parent: piine
+  name: Long2
+  nameWithType: Long2
+  fullName: piine.Long2
+- uid: piine.ULong2
+  commentId: T:piine.ULong2
+  parent: piine
+  name: ULong2
+  nameWithType: ULong2
+  fullName: piine.ULong2
+- uid: piine.Float3
+  commentId: T:piine.Float3
+  parent: piine
+  name: Float3
+  nameWithType: Float3
+  fullName: piine.Float3
+- uid: piine.Double3
+  commentId: T:piine.Double3
+  parent: piine
+  name: Double3
+  nameWithType: Double3
+  fullName: piine.Double3
 - uid: piine.Int3
   commentId: T:piine.Int3
   parent: piine
   name: Int3
   nameWithType: Int3
   fullName: piine.Int3
+- uid: piine.UInt3
+  commentId: T:piine.UInt3
+  parent: piine
+  name: UInt3
+  nameWithType: UInt3
+  fullName: piine.UInt3
+- uid: piine.Byte3
+  commentId: T:piine.Byte3
+  parent: piine
+  name: Byte3
+  nameWithType: Byte3
+  fullName: piine.Byte3
+- uid: piine.SByte3
+  commentId: T:piine.SByte3
+  parent: piine
+  name: SByte3
+  nameWithType: SByte3
+  fullName: piine.SByte3
+- uid: piine.Short3
+  commentId: T:piine.Short3
+  parent: piine
+  name: Short3
+  nameWithType: Short3
+  fullName: piine.Short3
+- uid: piine.UShort3
+  commentId: T:piine.UShort3
+  parent: piine
+  name: UShort3
+  nameWithType: UShort3
+  fullName: piine.UShort3
+- uid: piine.Long3
+  commentId: T:piine.Long3
+  parent: piine
+  name: Long3
+  nameWithType: Long3
+  fullName: piine.Long3
+- uid: piine.ULong3
+  commentId: T:piine.ULong3
+  parent: piine
+  name: ULong3
+  nameWithType: ULong3
+  fullName: piine.ULong3
+- uid: piine.Float4
+  commentId: T:piine.Float4
+  parent: piine
+  name: Float4
+  nameWithType: Float4
+  fullName: piine.Float4
+- uid: piine.Double4
+  commentId: T:piine.Double4
+  parent: piine
+  name: Double4
+  nameWithType: Double4
+  fullName: piine.Double4
 - uid: piine.Int4
   commentId: T:piine.Int4
   parent: piine
   name: Int4
   nameWithType: Int4
   fullName: piine.Int4
-- uid: piine.Simd
-  commentId: T:piine.Simd
-  name: Simd
-  nameWithType: Simd
-  fullName: piine.Simd
+- uid: piine.UInt4
+  commentId: T:piine.UInt4
+  parent: piine
+  name: UInt4
+  nameWithType: UInt4
+  fullName: piine.UInt4
+- uid: piine.Byte4
+  commentId: T:piine.Byte4
+  parent: piine
+  name: Byte4
+  nameWithType: Byte4
+  fullName: piine.Byte4
+- uid: piine.SByte4
+  commentId: T:piine.SByte4
+  parent: piine
+  name: SByte4
+  nameWithType: SByte4
+  fullName: piine.SByte4
+- uid: piine.Short4
+  commentId: T:piine.Short4
+  parent: piine
+  name: Short4
+  nameWithType: Short4
+  fullName: piine.Short4
+- uid: piine.UShort4
+  commentId: T:piine.UShort4
+  parent: piine
+  name: UShort4
+  nameWithType: UShort4
+  fullName: piine.UShort4
+- uid: piine.Long4
+  commentId: T:piine.Long4
+  parent: piine
+  name: Long4
+  nameWithType: Long4
+  fullName: piine.Long4
+- uid: piine.ULong4
+  commentId: T:piine.ULong4
+  parent: piine
+  name: ULong4
+  nameWithType: ULong4
+  fullName: piine.ULong4
 - uid: piine.XorShift
   commentId: T:piine.XorShift
   parent: piine

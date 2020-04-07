@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Vector Types/Simd.cs
+      path: src/Numerics/Vectors/Simd.cs
       branch: dev
       repo: https://github.com/djmoth/piine.git
     id: Simd
-    path: src/Vector Types/Simd.cs
+    path: src/Numerics/Vectors/Simd.cs
     startLine: 6
   assemblies:
   - piine

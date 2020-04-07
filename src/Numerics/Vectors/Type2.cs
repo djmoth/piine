@@ -140,9 +140,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (Float2 v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator Float2 (Vector2 v) => new Float2 ((float)v.X, (float)v.Y);
+		public static implicit operator Vector2 (Float2 v) => new Vector2 ((float)v.x, (float)v.y);
+        public static implicit operator Float2 (Vector2 v) => new Float2 ((float)v.X, (float)v.Y);
 
 		//Tuple
         public static implicit operator Float2 ((float x, float y) v) => new Float2 (v.x, v.y);
@@ -153,28 +152,28 @@ namespace piine
 		public static explicit operator Float2 (Double2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//Int2
-		public static explicit operator Float2 (Int2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (Int2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//UInt2
-		public static explicit operator Float2 (UInt2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (UInt2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//Byte2
-		public static explicit operator Float2 (Byte2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (Byte2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//SByte2
-		public static explicit operator Float2 (SByte2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (SByte2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//Short2
-		public static explicit operator Float2 (Short2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (Short2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//UShort2
-		public static explicit operator Float2 (UShort2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (UShort2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//Long2
-		public static explicit operator Float2 (Long2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (Long2 v) => new Float2 ((float)v.x, (float)v.y);
 
 		//ULong2
-		public static explicit operator Float2 (ULong2 v) => new Float2 ((float)v.x, (float)v.y);
+		public static implicit operator Float2 (ULong2 v) => new Float2 ((float)v.x, (float)v.y);
     }
 
 	[CLSCompliant (true)]
@@ -312,8 +311,7 @@ namespace piine
 		//Conversion to other vectors
 		//Vector2
 		public static explicit operator Vector2 (Double2 v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator Double2 (Vector2 v) => new Double2 ((double)v.X, (double)v.Y);
+        public static implicit operator Double2 (Vector2 v) => new Double2 ((double)v.X, (double)v.Y);
 
 		//Tuple
         public static implicit operator Double2 ((double x, double y) v) => new Double2 (v.x, v.y);
@@ -321,31 +319,31 @@ namespace piine
         public static implicit operator (double, double) (Double2 v) => (v.x, v.y);
 		
 		//Float2
-		public static explicit operator Double2 (Float2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (Float2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//Int2
-		public static explicit operator Double2 (Int2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (Int2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//UInt2
-		public static explicit operator Double2 (UInt2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (UInt2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//Byte2
-		public static explicit operator Double2 (Byte2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (Byte2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//SByte2
-		public static explicit operator Double2 (SByte2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (SByte2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//Short2
-		public static explicit operator Double2 (Short2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (Short2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//UShort2
-		public static explicit operator Double2 (UShort2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (UShort2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//Long2
-		public static explicit operator Double2 (Long2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (Long2 v) => new Double2 ((double)v.x, (double)v.y);
 
 		//ULong2
-		public static explicit operator Double2 (ULong2 v) => new Double2 ((double)v.x, (double)v.y);
+		public static implicit operator Double2 (ULong2 v) => new Double2 ((double)v.x, (double)v.y);
     }
 
 	[CLSCompliant (true)]
@@ -482,9 +480,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (Int2 v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator Int2 (Vector2 v) => new Int2 ((int)v.X, (int)v.Y);
+		public static implicit operator Vector2 (Int2 v) => new Vector2 ((float)v.x, (float)v.y);
+        public static implicit operator Int2 (Vector2 v) => new Int2 ((int)v.X, (int)v.Y);
 
 		//Tuple
         public static implicit operator Int2 ((int x, int y) v) => new Int2 (v.x, v.y);
@@ -501,16 +498,16 @@ namespace piine
 		public static explicit operator Int2 (UInt2 v) => new Int2 ((int)v.x, (int)v.y);
 
 		//Byte2
-		public static explicit operator Int2 (Byte2 v) => new Int2 ((int)v.x, (int)v.y);
+		public static implicit operator Int2 (Byte2 v) => new Int2 ((int)v.x, (int)v.y);
 
 		//SByte2
-		public static explicit operator Int2 (SByte2 v) => new Int2 ((int)v.x, (int)v.y);
+		public static implicit operator Int2 (SByte2 v) => new Int2 ((int)v.x, (int)v.y);
 
 		//Short2
-		public static explicit operator Int2 (Short2 v) => new Int2 ((int)v.x, (int)v.y);
+		public static implicit operator Int2 (Short2 v) => new Int2 ((int)v.x, (int)v.y);
 
 		//UShort2
-		public static explicit operator Int2 (UShort2 v) => new Int2 ((int)v.x, (int)v.y);
+		public static implicit operator Int2 (UShort2 v) => new Int2 ((int)v.x, (int)v.y);
 
 		//Long2
 		public static explicit operator Int2 (Long2 v) => new Int2 ((int)v.x, (int)v.y);
@@ -652,8 +649,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (UInt2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (UInt2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator UInt2 (Vector2 v) => new UInt2 ((uint)v.X, (uint)v.Y);
 
 		//Tuple
@@ -671,16 +667,16 @@ namespace piine
 		public static explicit operator UInt2 (Int2 v) => new UInt2 ((uint)v.x, (uint)v.y);
 
 		//Byte2
-		public static explicit operator UInt2 (Byte2 v) => new UInt2 ((uint)v.x, (uint)v.y);
+		public static implicit operator UInt2 (Byte2 v) => new UInt2 ((uint)v.x, (uint)v.y);
 
 		//SByte2
-		public static explicit operator UInt2 (SByte2 v) => new UInt2 ((uint)v.x, (uint)v.y);
+		public static implicit operator UInt2 (SByte2 v) => new UInt2 ((uint)v.x, (uint)v.y);
 
 		//Short2
-		public static explicit operator UInt2 (Short2 v) => new UInt2 ((uint)v.x, (uint)v.y);
+		public static implicit operator UInt2 (Short2 v) => new UInt2 ((uint)v.x, (uint)v.y);
 
 		//UShort2
-		public static explicit operator UInt2 (UShort2 v) => new UInt2 ((uint)v.x, (uint)v.y);
+		public static implicit operator UInt2 (UShort2 v) => new UInt2 ((uint)v.x, (uint)v.y);
 
 		//Long2
 		public static explicit operator UInt2 (Long2 v) => new UInt2 ((uint)v.x, (uint)v.y);
@@ -822,8 +818,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (Byte2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (Byte2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator Byte2 (Vector2 v) => new Byte2 ((byte)v.X, (byte)v.Y);
 
 		//Tuple
@@ -993,8 +988,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (SByte2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (SByte2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator SByte2 (Vector2 v) => new SByte2 ((sbyte)v.X, (sbyte)v.Y);
 
 		//Tuple
@@ -1164,8 +1158,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (Short2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (Short2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator Short2 (Vector2 v) => new Short2 ((short)v.X, (short)v.Y);
 
 		//Tuple
@@ -1186,10 +1179,10 @@ namespace piine
 		public static explicit operator Short2 (UInt2 v) => new Short2 ((short)v.x, (short)v.y);
 
 		//Byte2
-		public static explicit operator Short2 (Byte2 v) => new Short2 ((short)v.x, (short)v.y);
+		public static implicit operator Short2 (Byte2 v) => new Short2 ((short)v.x, (short)v.y);
 
 		//SByte2
-		public static explicit operator Short2 (SByte2 v) => new Short2 ((short)v.x, (short)v.y);
+		public static implicit operator Short2 (SByte2 v) => new Short2 ((short)v.x, (short)v.y);
 
 		//UShort2
 		public static explicit operator Short2 (UShort2 v) => new Short2 ((short)v.x, (short)v.y);
@@ -1334,8 +1327,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (UShort2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (UShort2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator UShort2 (Vector2 v) => new UShort2 ((ushort)v.X, (ushort)v.Y);
 
 		//Tuple
@@ -1356,10 +1348,10 @@ namespace piine
 		public static explicit operator UShort2 (UInt2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
 
 		//Byte2
-		public static explicit operator UShort2 (Byte2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
+		public static implicit operator UShort2 (Byte2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
 
 		//SByte2
-		public static explicit operator UShort2 (SByte2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
+		public static implicit operator UShort2 (SByte2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
 
 		//Short2
 		public static explicit operator UShort2 (Short2 v) => new UShort2 ((ushort)v.x, (ushort)v.y);
@@ -1505,9 +1497,8 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (Long2 v) => new Vector2 ((float)v.x, (float)v.y);
-
-        public static explicit operator Long2 (Vector2 v) => new Long2 ((long)v.X, (long)v.Y);
+		public static implicit operator Vector2 (Long2 v) => new Vector2 ((float)v.x, (float)v.y);
+        public static implicit operator Long2 (Vector2 v) => new Long2 ((long)v.X, (long)v.Y);
 
 		//Tuple
         public static implicit operator Long2 ((long x, long y) v) => new Long2 (v.x, v.y);
@@ -1515,28 +1506,28 @@ namespace piine
         public static implicit operator (long, long) (Long2 v) => (v.x, v.y);
 		
 		//Float2
-		public static explicit operator Long2 (Float2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (Float2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//Double2
 		public static explicit operator Long2 (Double2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//Int2
-		public static explicit operator Long2 (Int2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (Int2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//UInt2
-		public static explicit operator Long2 (UInt2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (UInt2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//Byte2
-		public static explicit operator Long2 (Byte2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (Byte2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//SByte2
-		public static explicit operator Long2 (SByte2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (SByte2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//Short2
-		public static explicit operator Long2 (Short2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (Short2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//UShort2
-		public static explicit operator Long2 (UShort2 v) => new Long2 ((long)v.x, (long)v.y);
+		public static implicit operator Long2 (UShort2 v) => new Long2 ((long)v.x, (long)v.y);
 
 		//ULong2
 		public static explicit operator Long2 (ULong2 v) => new Long2 ((long)v.x, (long)v.y);
@@ -1675,8 +1666,7 @@ namespace piine
 
 		//Conversion to other vectors
 		//Vector2
-		public static explicit operator Vector2 (ULong2 v) => new Vector2 ((float)v.x, (float)v.y);
-
+		public static implicit operator Vector2 (ULong2 v) => new Vector2 ((float)v.x, (float)v.y);
         public static explicit operator ULong2 (Vector2 v) => new ULong2 ((ulong)v.X, (ulong)v.Y);
 
 		//Tuple
@@ -1685,28 +1675,28 @@ namespace piine
         public static implicit operator (ulong, ulong) (ULong2 v) => (v.x, v.y);
 		
 		//Float2
-		public static explicit operator ULong2 (Float2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (Float2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//Double2
 		public static explicit operator ULong2 (Double2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//Int2
-		public static explicit operator ULong2 (Int2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (Int2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//UInt2
-		public static explicit operator ULong2 (UInt2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (UInt2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//Byte2
-		public static explicit operator ULong2 (Byte2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (Byte2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//SByte2
-		public static explicit operator ULong2 (SByte2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (SByte2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//Short2
-		public static explicit operator ULong2 (Short2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (Short2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//UShort2
-		public static explicit operator ULong2 (UShort2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
+		public static implicit operator ULong2 (UShort2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);
 
 		//Long2
 		public static explicit operator ULong2 (Long2 v) => new ULong2 ((ulong)v.x, (ulong)v.y);

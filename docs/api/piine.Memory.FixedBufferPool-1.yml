@@ -39,7 +39,6 @@ items:
     - id: T
     content.vb: >-
       Public Class FixedBufferPool(Of T As Structure)
-
           Implements IDisposable
   inheritance:
   - System.Object

@@ -1,0 +1,3052 @@
+### YamlMime:ManagedReference
+items:
+- uid: piine.Double3
+  commentId: T:piine.Double3
+  id: Double3
+  parent: piine
+  children:
+  - piine.Double3.#ctor(System.Double)
+  - piine.Double3.#ctor(System.Double,System.Double,System.Double)
+  - piine.Double3.Absolute(piine.Double3)
+  - piine.Double3.Contains(System.Double)
+  - piine.Double3.Cross(piine.Double3,piine.Double3)
+  - piine.Double3.Deconstruct(System.Double@,System.Double@,System.Double@)
+  - piine.Double3.Distance(piine.Double3,piine.Double3)
+  - piine.Double3.Dot(piine.Double3,piine.Double3)
+  - piine.Double3.Equals(piine.Double3)
+  - piine.Double3.Equals(System.Object)
+  - piine.Double3.GetHashCode
+  - piine.Double3.GetUnsafe(System.Int32)
+  - piine.Double3.Item(System.Int32)
+  - piine.Double3.Length
+  - piine.Double3.LengthSquared
+  - piine.Double3.Normalize(piine.Double3)
+  - piine.Double3.One
+  - piine.Double3.op_Addition(piine.Double3,piine.Double3)
+  - piine.Double3.op_Division(piine.Double3,System.Double)
+  - piine.Double3.op_Equality(piine.Double3,piine.Double3)
+  - piine.Double3.op_Explicit(piine.Double3)~System.Numerics.Vector3
+  - piine.Double3.op_GreaterThan(piine.Double3,piine.Double3)
+  - piine.Double3.op_GreaterThanOrEqual(piine.Double3,piine.Double3)
+  - piine.Double3.op_Implicit(piine.Byte3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.Double3)~System.ValueTuple{System.Double,System.Double,System.Double}
+  - piine.Double3.op_Implicit(piine.Float3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.Int3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.Long3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.SByte3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.Short3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.UInt3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.ULong3)~piine.Double3
+  - piine.Double3.op_Implicit(piine.UShort3)~piine.Double3
+  - piine.Double3.op_Implicit(System.Numerics.Vector3)~piine.Double3
+  - piine.Double3.op_Implicit(System.ValueTuple{System.Double,System.Double,System.Double})~piine.Double3
+  - piine.Double3.op_Inequality(piine.Double3,piine.Double3)
+  - piine.Double3.op_LessThan(piine.Double3,piine.Double3)
+  - piine.Double3.op_LessThanOrEqual(piine.Double3,piine.Double3)
+  - piine.Double3.op_Multiply(piine.Double3,System.Double)
+  - piine.Double3.op_Subtraction(piine.Double3,piine.Double3)
+  - piine.Double3.op_UnaryNegation(piine.Double3)
+  - piine.Double3.Reverse(piine.Double3)
+  - piine.Double3.SetUnsafe(System.Int32,System.Double)
+  - piine.Double3.Size
+  - piine.Double3.Sum
+  - piine.Double3.ToString
+  - piine.Double3.UnitX
+  - piine.Double3.UnitY
+  - piine.Double3.UnitZ
+  - piine.Double3.Volume
+  - piine.Double3.x
+  - piine.Double3.XY
+  - piine.Double3.XZ
+  - piine.Double3.y
+  - piine.Double3.YZ
+  - piine.Double3.z
+  - piine.Double3.Zero
+  langs:
+  - csharp
+  - vb
+  name: Double3
+  nameWithType: Double3
+  fullName: piine.Double3
+  type: Struct
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Double3
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 202
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public struct Double3 : IEquatable<Double3>
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Structure Double3
+          Implements IEquatable(Of Double3)
+  implements:
+  - System.IEquatable{piine.Double3}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: piine.Double3.Size
+  commentId: F:piine.Double3.Size
+  id: Size
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Double3.Size
+  fullName: piine.Double3.Size
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Size
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 206
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public const int Size = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const Size As Integer = 3
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: piine.Double3.Zero
+  commentId: P:piine.Double3.Zero
+  id: Zero
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Double3.Zero
+  fullName: piine.Double3.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Zero
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 214
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 Zero { get; }
+    parameters: []
+    return:
+      type: piine.Double3
+    content.vb: Public Shared ReadOnly Property Zero As Double3
+  overload: piine.Double3.Zero*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Double3.One
+  commentId: P:piine.Double3.One
+  id: One
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Double3.One
+  fullName: piine.Double3.One
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: One
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 215
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 One { get; }
+    parameters: []
+    return:
+      type: piine.Double3
+    content.vb: Public Shared ReadOnly Property One As Double3
+  overload: piine.Double3.One*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Double3.UnitX
+  commentId: P:piine.Double3.UnitX
+  id: UnitX
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: UnitX
+  nameWithType: Double3.UnitX
+  fullName: piine.Double3.UnitX
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitX
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 216
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 UnitX { get; }
+    parameters: []
+    return:
+      type: piine.Double3
+    content.vb: Public Shared ReadOnly Property UnitX As Double3
+  overload: piine.Double3.UnitX*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Double3.UnitY
+  commentId: P:piine.Double3.UnitY
+  id: UnitY
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: UnitY
+  nameWithType: Double3.UnitY
+  fullName: piine.Double3.UnitY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitY
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 217
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 UnitY { get; }
+    parameters: []
+    return:
+      type: piine.Double3
+    content.vb: Public Shared ReadOnly Property UnitY As Double3
+  overload: piine.Double3.UnitY*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Double3.UnitZ
+  commentId: P:piine.Double3.UnitZ
+  id: UnitZ
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: UnitZ
+  nameWithType: Double3.UnitZ
+  fullName: piine.Double3.UnitZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: UnitZ
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 218
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 UnitZ { get; }
+    parameters: []
+    return:
+      type: piine.Double3
+    content.vb: Public Shared ReadOnly Property UnitZ As Double3
+  overload: piine.Double3.UnitZ*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: piine.Double3.x
+  commentId: F:piine.Double3.x
+  id: x
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Double3.x
+  fullName: piine.Double3.x
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: x
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 225
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double x
+    return:
+      type: System.Double
+    content.vb: Public x As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.y
+  commentId: F:piine.Double3.y
+  id: y
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Double3.y
+  fullName: piine.Double3.y
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: y
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 227
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double y
+    return:
+      type: System.Double
+    content.vb: Public y As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.z
+  commentId: F:piine.Double3.z
+  id: z
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: Double3.z
+  fullName: piine.Double3.z
+  type: Field
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: z
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 229
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double z
+    return:
+      type: System.Double
+    content.vb: Public z As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.XY
+  commentId: P:piine.Double3.XY
+  id: XY
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: XY
+  nameWithType: Double3.XY
+  fullName: piine.Double3.XY
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XY
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 232
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Double2 XY { get; }
+    parameters: []
+    return:
+      type: piine.Double2
+    content.vb: Public ReadOnly Property XY As Double2
+  overload: piine.Double3.XY*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Double3.XZ
+  commentId: P:piine.Double3.XZ
+  id: XZ
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: XZ
+  nameWithType: Double3.XZ
+  fullName: piine.Double3.XZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: XZ
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 233
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Double2 XZ { get; }
+    parameters: []
+    return:
+      type: piine.Double2
+    content.vb: Public ReadOnly Property XZ As Double2
+  overload: piine.Double3.XZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Double3.YZ
+  commentId: P:piine.Double3.YZ
+  id: YZ
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: YZ
+  nameWithType: Double3.YZ
+  fullName: piine.Double3.YZ
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: YZ
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 234
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Double2 YZ { get; }
+    parameters: []
+    return:
+      type: piine.Double2
+    content.vb: Public ReadOnly Property YZ As Double2
+  overload: piine.Double3.YZ*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: piine.Double3.Item(System.Int32)
+  commentId: P:piine.Double3.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Double3.Item[Int32]
+  fullName: piine.Double3.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: this[]
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 236
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Public Property Item(index As Integer) As Double
+  overload: piine.Double3.Item*
+  nameWithType.vb: Double3.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Double3.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: piine.Double3.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:piine.Double3.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Double3(Double, Double, Double)
+  nameWithType: Double3.Double3(Double, Double, Double)
+  fullName: piine.Double3.Double3(System.Double, System.Double, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 254
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Double3(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    content.vb: Public Sub New(x As Double, y As Double, z As Double)
+  overload: piine.Double3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.#ctor(System.Double)
+  commentId: M:piine.Double3.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Double3(Double)
+  nameWithType: Double3.Double3(Double)
+  fullName: piine.Double3.Double3(System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: .ctor
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 261
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public Double3(double all)
+    parameters:
+    - id: all
+      type: System.Double
+    content.vb: Public Sub New(all As Double)
+  overload: piine.Double3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.GetUnsafe(System.Int32)
+  commentId: M:piine.Double3.GetUnsafe(System.Int32)
+  id: GetUnsafe(System.Int32)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: GetUnsafe(Int32)
+  nameWithType: Double3.GetUnsafe(Int32)
+  fullName: piine.Double3.GetUnsafe(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: GetUnsafe
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 268
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double GetUnsafe(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Public Function GetUnsafe(index As Integer) As Double
+  overload: piine.Double3.GetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.SetUnsafe(System.Int32,System.Double)
+  commentId: M:piine.Double3.SetUnsafe(System.Int32,System.Double)
+  id: SetUnsafe(System.Int32,System.Double)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: SetUnsafe(Int32, Double)
+  nameWithType: Double3.SetUnsafe(Int32, Double)
+  fullName: piine.Double3.SetUnsafe(System.Int32, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: SetUnsafe
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 270
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void SetUnsafe(int index, double value)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: System.Double
+    content.vb: Public Sub SetUnsafe(index As Integer, value As Double)
+  overload: piine.Double3.SetUnsafe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.Normalize(piine.Double3)
+  commentId: M:piine.Double3.Normalize(piine.Double3)
+  id: Normalize(piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Double3)
+  nameWithType: Double3.Normalize(Double3)
+  fullName: piine.Double3.Normalize(piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Normalize
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 272
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 Normalize(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Function Normalize(v As Double3) As Double3
+  overload: piine.Double3.Normalize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Absolute(piine.Double3)
+  commentId: M:piine.Double3.Absolute(piine.Double3)
+  id: Absolute(piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Absolute(Double3)
+  nameWithType: Double3.Absolute(Double3)
+  fullName: piine.Double3.Absolute(piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Absolute
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 284
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 Absolute(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Function Absolute(v As Double3) As Double3
+  overload: piine.Double3.Absolute*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Distance(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.Distance(piine.Double3,piine.Double3)
+  id: Distance(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Distance(Double3, Double3)
+  nameWithType: Double3.Distance(Double3, Double3)
+  fullName: piine.Double3.Distance(piine.Double3, piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Distance
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 286
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static double Distance(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Double
+    content.vb: Public Shared Function Distance(a As Double3, b As Double3) As Double
+  overload: piine.Double3.Distance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Cross(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.Cross(piine.Double3,piine.Double3)
+  id: Cross(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Cross(Double3, Double3)
+  nameWithType: Double3.Cross(Double3, Double3)
+  fullName: piine.Double3.Cross(piine.Double3, piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Cross
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 288
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 Cross(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Function Cross(a As Double3, b As Double3) As Double3
+  overload: piine.Double3.Cross*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Dot(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.Dot(piine.Double3,piine.Double3)
+  id: Dot(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Dot(Double3, Double3)
+  nameWithType: Double3.Dot(Double3, Double3)
+  fullName: piine.Double3.Dot(piine.Double3, piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Dot
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 297
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static double Dot(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Double
+    content.vb: Public Shared Function Dot(a As Double3, b As Double3) As Double
+  overload: piine.Double3.Dot*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Reverse(piine.Double3)
+  commentId: M:piine.Double3.Reverse(piine.Double3)
+  id: Reverse(piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Reverse(Double3)
+  nameWithType: Double3.Reverse(Double3)
+  fullName: piine.Double3.Reverse(piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Reverse
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 299
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 Reverse(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Function Reverse(v As Double3) As Double3
+  overload: piine.Double3.Reverse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Sum
+  commentId: M:piine.Double3.Sum
+  id: Sum
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Sum()
+  nameWithType: Double3.Sum()
+  fullName: piine.Double3.Sum()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Sum
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 301
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double Sum()
+    return:
+      type: System.Double
+    content.vb: Public Function Sum As Double
+  overload: piine.Double3.Sum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.Volume
+  commentId: M:piine.Double3.Volume
+  id: Volume
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Volume()
+  nameWithType: Double3.Volume()
+  fullName: piine.Double3.Volume()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Volume
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 303
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double Volume()
+    return:
+      type: System.Double
+    content.vb: Public Function Volume As Double
+  overload: piine.Double3.Volume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.Length
+  commentId: M:piine.Double3.Length
+  id: Length
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Length()
+  nameWithType: Double3.Length()
+  fullName: piine.Double3.Length()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Length
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 305
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double Length()
+    return:
+      type: System.Double
+    content.vb: Public Function Length As Double
+  overload: piine.Double3.Length*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.LengthSquared
+  commentId: M:piine.Double3.LengthSquared
+  id: LengthSquared
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared()
+  nameWithType: Double3.LengthSquared()
+  fullName: piine.Double3.LengthSquared()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: LengthSquared
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 307
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public double LengthSquared()
+    return:
+      type: System.Double
+    content.vb: Public Function LengthSquared As Double
+  overload: piine.Double3.LengthSquared*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.Contains(System.Double)
+  commentId: M:piine.Double3.Contains(System.Double)
+  id: Contains(System.Double)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Contains(Double)
+  nameWithType: Double3.Contains(Double)
+  fullName: piine.Double3.Contains(System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Contains
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 309
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Contains(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(value As Double) As Boolean
+  overload: piine.Double3.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.op_Equality(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_Equality(piine.Double3,piine.Double3)
+  id: op_Equality(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Equality(Double3, Double3)
+  nameWithType: Double3.Equality(Double3, Double3)
+  fullName: piine.Double3.Equality(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Equality
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 311
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator ==(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_Inequality(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_Inequality(piine.Double3,piine.Double3)
+  id: op_Inequality(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Double3, Double3)
+  nameWithType: Double3.Inequality(Double3, Double3)
+  fullName: piine.Double3.Inequality(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Inequality
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 313
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator !=(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_Addition(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_Addition(piine.Double3,piine.Double3)
+  id: op_Addition(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Addition(Double3, Double3)
+  nameWithType: Double3.Addition(Double3, Double3)
+  fullName: piine.Double3.Addition(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Addition
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 315
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 operator +(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Operator +(a As Double3, b As Double3) As Double3
+  overload: piine.Double3.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_Subtraction(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_Subtraction(piine.Double3,piine.Double3)
+  id: op_Subtraction(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Double3, Double3)
+  nameWithType: Double3.Subtraction(Double3, Double3)
+  fullName: piine.Double3.Subtraction(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Subtraction
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 317
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 operator -(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Operator -(a As Double3, b As Double3) As Double3
+  overload: piine.Double3.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_UnaryNegation(piine.Double3)
+  commentId: M:piine.Double3.op_UnaryNegation(piine.Double3)
+  id: op_UnaryNegation(piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: UnaryNegation(Double3)
+  nameWithType: Double3.UnaryNegation(Double3)
+  fullName: piine.Double3.UnaryNegation(piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_UnaryNegation
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 319
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 operator -(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Operator -(v As Double3) As Double3
+  overload: piine.Double3.op_UnaryNegation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_Multiply(piine.Double3,System.Double)
+  commentId: M:piine.Double3.op_Multiply(piine.Double3,System.Double)
+  id: op_Multiply(piine.Double3,System.Double)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Double3, Double)
+  nameWithType: Double3.Multiply(Double3, Double)
+  fullName: piine.Double3.Multiply(piine.Double3, System.Double)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Multiply
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 321
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 operator *(Double3 a, double b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: System.Double
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Operator *(a As Double3, b As Double) As Double3
+  overload: piine.Double3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_Division(piine.Double3,System.Double)
+  commentId: M:piine.Double3.op_Division(piine.Double3,System.Double)
+  id: op_Division(piine.Double3,System.Double)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Division(Double3, Double)
+  nameWithType: Double3.Division(Double3, Double)
+  fullName: piine.Double3.Division(piine.Double3, System.Double)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Division
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 323
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static Double3 operator /(Double3 a, double b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: System.Double
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Operator /(a As Double3, b As Double) As Double3
+  overload: piine.Double3.op_Division*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_GreaterThan(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_GreaterThan(piine.Double3,piine.Double3)
+  id: op_GreaterThan(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan(Double3, Double3)
+  nameWithType: Double3.GreaterThan(Double3, Double3)
+  fullName: piine.Double3.GreaterThan(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThan
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 325
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator>(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator>(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_GreaterThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_LessThan(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_LessThan(piine.Double3,piine.Double3)
+  id: op_LessThan(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: LessThan(Double3, Double3)
+  nameWithType: Double3.LessThan(Double3, Double3)
+  fullName: piine.Double3.LessThan(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThan
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 327
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_LessThan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_GreaterThanOrEqual(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_GreaterThanOrEqual(piine.Double3,piine.Double3)
+  id: op_GreaterThanOrEqual(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual(Double3, Double3)
+  nameWithType: Double3.GreaterThanOrEqual(Double3, Double3)
+  fullName: piine.Double3.GreaterThanOrEqual(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_GreaterThanOrEqual
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 329
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator >=(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_GreaterThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.op_LessThanOrEqual(piine.Double3,piine.Double3)
+  commentId: M:piine.Double3.op_LessThanOrEqual(piine.Double3,piine.Double3)
+  id: op_LessThanOrEqual(piine.Double3,piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual(Double3, Double3)
+  nameWithType: Double3.LessThanOrEqual(Double3, Double3)
+  fullName: piine.Double3.LessThanOrEqual(piine.Double3, piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_LessThanOrEqual
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 331
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static bool operator <=(Double3 a, Double3 b)
+    parameters:
+    - id: a
+      type: piine.Double3
+    - id: b
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(a As Double3, b As Double3) As Boolean
+  overload: piine.Double3.op_LessThanOrEqual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: piine.Double3.Deconstruct(System.Double@,System.Double@,System.Double@)
+  commentId: M:piine.Double3.Deconstruct(System.Double@,System.Double@,System.Double@)
+  id: Deconstruct(System.Double@,System.Double@,System.Double@)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out Double, out Double, out Double)
+  nameWithType: Double3.Deconstruct(out Double, out Double, out Double)
+  fullName: piine.Double3.Deconstruct(out System.Double, out System.Double, out System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Deconstruct
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 333
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public void Deconstruct(out double x, out double y, out double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    content.vb: Public Sub Deconstruct(ByRef x As Double, ByRef y As Double, ByRef z As Double)
+  overload: piine.Double3.Deconstruct*
+  nameWithType.vb: Double3.Deconstruct(ByRef Double, ByRef Double, ByRef Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: piine.Double3.Deconstruct(ByRef System.Double, ByRef System.Double, ByRef System.Double)
+  name.vb: Deconstruct(ByRef Double, ByRef Double, ByRef Double)
+- uid: piine.Double3.ToString
+  commentId: M:piine.Double3.ToString
+  id: ToString
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Double3.ToString()
+  fullName: piine.Double3.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: ToString
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 340
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: piine.Double3.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Double3.Equals(piine.Double3)
+  commentId: M:piine.Double3.Equals(piine.Double3)
+  id: Equals(piine.Double3)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Equals(Double3)
+  nameWithType: Double3.Equals(Double3)
+  fullName: piine.Double3.Equals(piine.Double3)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 342
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public bool Equals(Double3 other)
+    parameters:
+    - id: other
+      type: piine.Double3
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Double3) As Boolean
+  overload: piine.Double3.Equals*
+  implements:
+  - System.IEquatable{piine.Double3}.Equals(piine.Double3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: piine.Double3.Equals(System.Object)
+  commentId: M:piine.Double3.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Double3.Equals(Object)
+  fullName: piine.Double3.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: Equals
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 344
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: piine.Double3.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Double3.GetHashCode
+  commentId: M:piine.Double3.GetHashCode
+  id: GetHashCode
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Double3.GetHashCode()
+  fullName: piine.Double3.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: GetHashCode
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 354
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: piine.Double3.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: piine.Double3.op_Explicit(piine.Double3)~System.Numerics.Vector3
+  commentId: M:piine.Double3.op_Explicit(piine.Double3)~System.Numerics.Vector3
+  id: op_Explicit(piine.Double3)~System.Numerics.Vector3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Explicit(Double3 to Vector3)
+  nameWithType: Double3.Explicit(Double3 to Vector3)
+  fullName: piine.Double3.Explicit(piine.Double3 to System.Numerics.Vector3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Explicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 358
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static explicit operator Vector3(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: System.Numerics.Vector3
+    content.vb: Public Shared Narrowing Operator CType(v As Double3) As Vector3
+  overload: piine.Double3.op_Explicit*
+  nameWithType.vb: Double3.Narrowing(Double3 to Vector3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Narrowing(piine.Double3 to System.Numerics.Vector3)
+  name.vb: Narrowing(Double3 to Vector3)
+- uid: piine.Double3.op_Implicit(System.Numerics.Vector3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(System.Numerics.Vector3)~piine.Double3
+  id: op_Implicit(System.Numerics.Vector3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Vector3 to Double3)
+  nameWithType: Double3.Implicit(Vector3 to Double3)
+  fullName: piine.Double3.Implicit(System.Numerics.Vector3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 359
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Vector3 v)
+    parameters:
+    - id: v
+      type: System.Numerics.Vector3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Vector3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Vector3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(System.Numerics.Vector3 to piine.Double3)
+  name.vb: Widening(Vector3 to Double3)
+- uid: piine.Double3.op_Implicit(System.ValueTuple{System.Double,System.Double,System.Double})~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(System.ValueTuple{System.Double,System.Double,System.Double})~piine.Double3
+  id: op_Implicit(System.ValueTuple{System.Double,System.Double,System.Double})~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit((Double x, Double y, Double z) to Double3)
+  nameWithType: Double3.Implicit((Double x, Double y, Double z) to Double3)
+  fullName: piine.Double3.Implicit(System.ValueTuple<System.Double, System.Double, System.Double> to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 362
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3((double x, double y, double z)v)
+    parameters:
+    - id: v
+      type: System.ValueTuple{System.Double,System.Double,System.Double}
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As(x As Double, y As Double, z As Double)) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening((x As Double, y As Double, z As Double) to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(System.ValueTuple(Of System.Double, System.Double, System.Double) to piine.Double3)
+  name.vb: Widening((x As Double, y As Double, z As Double) to Double3)
+- uid: piine.Double3.op_Implicit(piine.Double3)~System.ValueTuple{System.Double,System.Double,System.Double}
+  commentId: M:piine.Double3.op_Implicit(piine.Double3)~System.ValueTuple{System.Double,System.Double,System.Double}
+  id: op_Implicit(piine.Double3)~System.ValueTuple{System.Double,System.Double,System.Double}
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Double3 to (Double, Double, Double))
+  nameWithType: Double3.Implicit(Double3 to (Double, Double, Double))
+  fullName: piine.Double3.Implicit(piine.Double3 to System.ValueTuple<System.Double, System.Double, System.Double>)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 364
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator (double, double, double)(Double3 v)
+    parameters:
+    - id: v
+      type: piine.Double3
+    return:
+      type: System.ValueTuple{System.Double,System.Double,System.Double}
+    content.vb: Public Shared Widening Operator CType(v As Double3) As(Double, Double, Double)
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Double3 to (Double, Double, Double))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Double3 to System.ValueTuple(Of System.Double, System.Double, System.Double))
+  name.vb: Widening(Double3 to (Double, Double, Double))
+- uid: piine.Double3.op_Implicit(piine.Float3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.Float3)~piine.Double3
+  id: op_Implicit(piine.Float3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Float3 to Double3)
+  nameWithType: Double3.Implicit(Float3 to Double3)
+  fullName: piine.Double3.Implicit(piine.Float3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 368
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Float3 v)
+    parameters:
+    - id: v
+      type: piine.Float3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Float3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Float3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Float3 to piine.Double3)
+  name.vb: Widening(Float3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.Int3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.Int3)~piine.Double3
+  id: op_Implicit(piine.Int3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Int3 to Double3)
+  nameWithType: Double3.Implicit(Int3 to Double3)
+  fullName: piine.Double3.Implicit(piine.Int3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 371
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Int3 v)
+    parameters:
+    - id: v
+      type: piine.Int3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Int3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Int3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Int3 to piine.Double3)
+  name.vb: Widening(Int3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.UInt3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.UInt3)~piine.Double3
+  id: op_Implicit(piine.UInt3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(UInt3 to Double3)
+  nameWithType: Double3.Implicit(UInt3 to Double3)
+  fullName: piine.Double3.Implicit(piine.UInt3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 374
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(UInt3 v)
+    parameters:
+    - id: v
+      type: piine.UInt3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As UInt3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(UInt3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.UInt3 to piine.Double3)
+  name.vb: Widening(UInt3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.Byte3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.Byte3)~piine.Double3
+  id: op_Implicit(piine.Byte3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Byte3 to Double3)
+  nameWithType: Double3.Implicit(Byte3 to Double3)
+  fullName: piine.Double3.Implicit(piine.Byte3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 377
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Byte3 v)
+    parameters:
+    - id: v
+      type: piine.Byte3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Byte3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Byte3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Byte3 to piine.Double3)
+  name.vb: Widening(Byte3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.SByte3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.SByte3)~piine.Double3
+  id: op_Implicit(piine.SByte3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(SByte3 to Double3)
+  nameWithType: Double3.Implicit(SByte3 to Double3)
+  fullName: piine.Double3.Implicit(piine.SByte3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 380
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(SByte3 v)
+    parameters:
+    - id: v
+      type: piine.SByte3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As SByte3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(SByte3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.SByte3 to piine.Double3)
+  name.vb: Widening(SByte3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.Short3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.Short3)~piine.Double3
+  id: op_Implicit(piine.Short3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Short3 to Double3)
+  nameWithType: Double3.Implicit(Short3 to Double3)
+  fullName: piine.Double3.Implicit(piine.Short3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 383
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Short3 v)
+    parameters:
+    - id: v
+      type: piine.Short3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Short3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Short3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Short3 to piine.Double3)
+  name.vb: Widening(Short3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.UShort3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.UShort3)~piine.Double3
+  id: op_Implicit(piine.UShort3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(UShort3 to Double3)
+  nameWithType: Double3.Implicit(UShort3 to Double3)
+  fullName: piine.Double3.Implicit(piine.UShort3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 386
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(UShort3 v)
+    parameters:
+    - id: v
+      type: piine.UShort3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As UShort3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(UShort3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.UShort3 to piine.Double3)
+  name.vb: Widening(UShort3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.Long3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.Long3)~piine.Double3
+  id: op_Implicit(piine.Long3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Long3 to Double3)
+  nameWithType: Double3.Implicit(Long3 to Double3)
+  fullName: piine.Double3.Implicit(piine.Long3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 389
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(Long3 v)
+    parameters:
+    - id: v
+      type: piine.Long3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As Long3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(Long3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.Long3 to piine.Double3)
+  name.vb: Widening(Long3 to Double3)
+- uid: piine.Double3.op_Implicit(piine.ULong3)~piine.Double3
+  commentId: M:piine.Double3.op_Implicit(piine.ULong3)~piine.Double3
+  id: op_Implicit(piine.ULong3)~piine.Double3
+  parent: piine.Double3
+  langs:
+  - csharp
+  - vb
+  name: Implicit(ULong3 to Double3)
+  nameWithType: Double3.Implicit(ULong3 to Double3)
+  fullName: piine.Double3.Implicit(piine.ULong3 to piine.Double3)
+  type: Operator
+  source:
+    remote:
+      path: src/Numerics/Vectors/Type3.cs
+      branch: dev
+      repo: https://github.com/djmoth/piine.git
+    id: op_Implicit
+    path: src/Numerics/Vectors/Type3.cs
+    startLine: 392
+  assemblies:
+  - piine
+  namespace: piine
+  syntax:
+    content: public static implicit operator Double3(ULong3 v)
+    parameters:
+    - id: v
+      type: piine.ULong3
+    return:
+      type: piine.Double3
+    content.vb: Public Shared Widening Operator CType(v As ULong3) As Double3
+  overload: piine.Double3.op_Implicit*
+  nameWithType.vb: Double3.Widening(ULong3 to Double3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: piine.Double3.Widening(piine.ULong3 to piine.Double3)
+  name.vb: Widening(ULong3 to Double3)
+references:
+- uid: piine
+  commentId: N:piine
+  name: piine
+  nameWithType: piine
+  fullName: piine
+- uid: System.IEquatable{piine.Double3}
+  commentId: T:System.IEquatable{piine.Double3}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Double3>
+  nameWithType: IEquatable<Double3>
+  fullName: System.IEquatable<piine.Double3>
+  nameWithType.vb: IEquatable(Of Double3)
+  fullName.vb: System.IEquatable(Of piine.Double3)
+  name.vb: IEquatable(Of Double3)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: piine.Double3
+    name: Double3
+    nameWithType: Double3
+    fullName: piine.Double3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: piine.Double3
+    name: Double3
+    nameWithType: Double3
+    fullName: piine.Double3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: piine.Double3.Zero*
+  commentId: Overload:piine.Double3.Zero
+  name: Zero
+  nameWithType: Double3.Zero
+  fullName: piine.Double3.Zero
+- uid: piine.Double3
+  commentId: T:piine.Double3
+  parent: piine
+  name: Double3
+  nameWithType: Double3
+  fullName: piine.Double3
+- uid: piine.Double3.One*
+  commentId: Overload:piine.Double3.One
+  name: One
+  nameWithType: Double3.One
+  fullName: piine.Double3.One
+- uid: piine.Double3.UnitX*
+  commentId: Overload:piine.Double3.UnitX
+  name: UnitX
+  nameWithType: Double3.UnitX
+  fullName: piine.Double3.UnitX
+- uid: piine.Double3.UnitY*
+  commentId: Overload:piine.Double3.UnitY
+  name: UnitY
+  nameWithType: Double3.UnitY
+  fullName: piine.Double3.UnitY
+- uid: piine.Double3.UnitZ*
+  commentId: Overload:piine.Double3.UnitZ
+  name: UnitZ
+  nameWithType: Double3.UnitZ
+  fullName: piine.Double3.UnitZ
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: piine.Double3.XY*
+  commentId: Overload:piine.Double3.XY
+  name: XY
+  nameWithType: Double3.XY
+  fullName: piine.Double3.XY
+- uid: piine.Double2
+  commentId: T:piine.Double2
+  parent: piine
+  name: Double2
+  nameWithType: Double2
+  fullName: piine.Double2
+- uid: piine.Double3.XZ*
+  commentId: Overload:piine.Double3.XZ
+  name: XZ
+  nameWithType: Double3.XZ
+  fullName: piine.Double3.XZ
+- uid: piine.Double3.YZ*
+  commentId: Overload:piine.Double3.YZ
+  name: YZ
+  nameWithType: Double3.YZ
+  fullName: piine.Double3.YZ
+- uid: piine.Double3.Item*
+  commentId: Overload:piine.Double3.Item
+  name: Item
+  nameWithType: Double3.Item
+  fullName: piine.Double3.Item
+- uid: piine.Double3.#ctor*
+  commentId: Overload:piine.Double3.#ctor
+  name: Double3
+  nameWithType: Double3.Double3
+  fullName: piine.Double3.Double3
+- uid: piine.Double3.GetUnsafe*
+  commentId: Overload:piine.Double3.GetUnsafe
+  name: GetUnsafe
+  nameWithType: Double3.GetUnsafe
+  fullName: piine.Double3.GetUnsafe
+- uid: piine.Double3.SetUnsafe*
+  commentId: Overload:piine.Double3.SetUnsafe
+  name: SetUnsafe
+  nameWithType: Double3.SetUnsafe
+  fullName: piine.Double3.SetUnsafe
+- uid: piine.Double3.Normalize*
+  commentId: Overload:piine.Double3.Normalize
+  name: Normalize
+  nameWithType: Double3.Normalize
+  fullName: piine.Double3.Normalize
+- uid: piine.Double3.Absolute*
+  commentId: Overload:piine.Double3.Absolute
+  name: Absolute
+  nameWithType: Double3.Absolute
+  fullName: piine.Double3.Absolute
+- uid: piine.Double3.Distance*
+  commentId: Overload:piine.Double3.Distance
+  name: Distance
+  nameWithType: Double3.Distance
+  fullName: piine.Double3.Distance
+- uid: piine.Double3.Cross*
+  commentId: Overload:piine.Double3.Cross
+  name: Cross
+  nameWithType: Double3.Cross
+  fullName: piine.Double3.Cross
+- uid: piine.Double3.Dot*
+  commentId: Overload:piine.Double3.Dot
+  name: Dot
+  nameWithType: Double3.Dot
+  fullName: piine.Double3.Dot
+- uid: piine.Double3.Reverse*
+  commentId: Overload:piine.Double3.Reverse
+  name: Reverse
+  nameWithType: Double3.Reverse
+  fullName: piine.Double3.Reverse
+- uid: piine.Double3.Sum*
+  commentId: Overload:piine.Double3.Sum
+  name: Sum
+  nameWithType: Double3.Sum
+  fullName: piine.Double3.Sum
+- uid: piine.Double3.Volume*
+  commentId: Overload:piine.Double3.Volume
+  name: Volume
+  nameWithType: Double3.Volume
+  fullName: piine.Double3.Volume
+- uid: piine.Double3.Length*
+  commentId: Overload:piine.Double3.Length
+  name: Length
+  nameWithType: Double3.Length
+  fullName: piine.Double3.Length
+- uid: piine.Double3.LengthSquared*
+  commentId: Overload:piine.Double3.LengthSquared
+  name: LengthSquared
+  nameWithType: Double3.LengthSquared
+  fullName: piine.Double3.LengthSquared
+- uid: piine.Double3.Contains*
+  commentId: Overload:piine.Double3.Contains
+  name: Contains
+  nameWithType: Double3.Contains
+  fullName: piine.Double3.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: piine.Double3.op_Equality*
+  commentId: Overload:piine.Double3.op_Equality
+  name: Equality
+  nameWithType: Double3.Equality
+  fullName: piine.Double3.Equality
+- uid: piine.Double3.op_Inequality*
+  commentId: Overload:piine.Double3.op_Inequality
+  name: Inequality
+  nameWithType: Double3.Inequality
+  fullName: piine.Double3.Inequality
+- uid: piine.Double3.op_Addition*
+  commentId: Overload:piine.Double3.op_Addition
+  name: Addition
+  nameWithType: Double3.Addition
+  fullName: piine.Double3.Addition
+- uid: piine.Double3.op_Subtraction*
+  commentId: Overload:piine.Double3.op_Subtraction
+  name: Subtraction
+  nameWithType: Double3.Subtraction
+  fullName: piine.Double3.Subtraction
+- uid: piine.Double3.op_UnaryNegation*
+  commentId: Overload:piine.Double3.op_UnaryNegation
+  name: UnaryNegation
+  nameWithType: Double3.UnaryNegation
+  fullName: piine.Double3.UnaryNegation
+- uid: piine.Double3.op_Multiply*
+  commentId: Overload:piine.Double3.op_Multiply
+  name: Multiply
+  nameWithType: Double3.Multiply
+  fullName: piine.Double3.Multiply
+- uid: piine.Double3.op_Division*
+  commentId: Overload:piine.Double3.op_Division
+  name: Division
+  nameWithType: Double3.Division
+  fullName: piine.Double3.Division
+- uid: piine.Double3.op_GreaterThan*
+  commentId: Overload:piine.Double3.op_GreaterThan
+  name: GreaterThan
+  nameWithType: Double3.GreaterThan
+  fullName: piine.Double3.GreaterThan
+- uid: piine.Double3.op_LessThan*
+  commentId: Overload:piine.Double3.op_LessThan
+  name: LessThan
+  nameWithType: Double3.LessThan
+  fullName: piine.Double3.LessThan
+- uid: piine.Double3.op_GreaterThanOrEqual*
+  commentId: Overload:piine.Double3.op_GreaterThanOrEqual
+  name: GreaterThanOrEqual
+  nameWithType: Double3.GreaterThanOrEqual
+  fullName: piine.Double3.GreaterThanOrEqual
+- uid: piine.Double3.op_LessThanOrEqual*
+  commentId: Overload:piine.Double3.op_LessThanOrEqual
+  name: LessThanOrEqual
+  nameWithType: Double3.LessThanOrEqual
+  fullName: piine.Double3.LessThanOrEqual
+- uid: piine.Double3.Deconstruct*
+  commentId: Overload:piine.Double3.Deconstruct
+  name: Deconstruct
+  nameWithType: Double3.Deconstruct
+  fullName: piine.Double3.Deconstruct
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Double3.ToString*
+  commentId: Overload:piine.Double3.ToString
+  name: ToString
+  nameWithType: Double3.ToString
+  fullName: piine.Double3.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: piine.Double3.Equals*
+  commentId: Overload:piine.Double3.Equals
+  name: Equals
+  nameWithType: Double3.Equals
+  fullName: piine.Double3.Equals
+- uid: System.IEquatable{piine.Double3}.Equals(piine.Double3)
+  commentId: M:System.IEquatable{piine.Double3}.Equals(piine.Double3)
+  parent: System.IEquatable{piine.Double3}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Double3)
+  nameWithType: IEquatable<Double3>.Equals(Double3)
+  fullName: System.IEquatable<piine.Double3>.Equals(piine.Double3)
+  nameWithType.vb: IEquatable(Of Double3).Equals(Double3)
+  fullName.vb: System.IEquatable(Of piine.Double3).Equals(piine.Double3)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Double3>.Equals
+    fullName: System.IEquatable<piine.Double3>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Double3
+    name: Double3
+    nameWithType: Double3
+    fullName: piine.Double3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Double3).Equals
+    fullName: System.IEquatable(Of piine.Double3).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: piine.Double3
+    name: Double3
+    nameWithType: Double3
+    fullName: piine.Double3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Double3.GetHashCode*
+  commentId: Overload:piine.Double3.GetHashCode
+  name: GetHashCode
+  nameWithType: Double3.GetHashCode
+  fullName: piine.Double3.GetHashCode
+- uid: piine.Double3.op_Explicit*
+  commentId: Overload:piine.Double3.op_Explicit
+  name: Explicit
+  nameWithType: Double3.Explicit
+  fullName: piine.Double3.Explicit
+  nameWithType.vb: Double3.Narrowing
+  fullName.vb: piine.Double3.Narrowing
+  name.vb: Narrowing
+- uid: System.Numerics.Vector3
+  commentId: T:System.Numerics.Vector3
+  parent: System.Numerics
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: System.Numerics.Vector3
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: piine.Double3.op_Implicit*
+  commentId: Overload:piine.Double3.op_Implicit
+  name: Implicit
+  nameWithType: Double3.Implicit
+  fullName: piine.Double3.Implicit
+  nameWithType.vb: Double3.Widening
+  fullName.vb: piine.Double3.Widening
+  name.vb: Widening
+- uid: System.ValueTuple{System.Double,System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double,System.Double}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Double, Double, Double>
+  nameWithType: ValueTuple<Double, Double, Double>
+  fullName: System.ValueTuple<System.Double, System.Double, System.Double>
+  nameWithType.vb: ValueTuple(Of Double, Double, Double)
+  fullName.vb: System.ValueTuple(Of System.Double, System.Double, System.Double)
+  name.vb: ValueTuple(Of Double, Double, Double)
+  spec.csharp:
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: piine.Float3
+  commentId: T:piine.Float3
+  parent: piine
+  name: Float3
+  nameWithType: Float3
+  fullName: piine.Float3
+- uid: piine.Int3
+  commentId: T:piine.Int3
+  parent: piine
+  name: Int3
+  nameWithType: Int3
+  fullName: piine.Int3
+- uid: piine.UInt3
+  commentId: T:piine.UInt3
+  parent: piine
+  name: UInt3
+  nameWithType: UInt3
+  fullName: piine.UInt3
+- uid: piine.Byte3
+  commentId: T:piine.Byte3
+  parent: piine
+  name: Byte3
+  nameWithType: Byte3
+  fullName: piine.Byte3
+- uid: piine.SByte3
+  commentId: T:piine.SByte3
+  parent: piine
+  name: SByte3
+  nameWithType: SByte3
+  fullName: piine.SByte3
+- uid: piine.Short3
+  commentId: T:piine.Short3
+  parent: piine
+  name: Short3
+  nameWithType: Short3
+  fullName: piine.Short3
+- uid: piine.UShort3
+  commentId: T:piine.UShort3
+  parent: piine
+  name: UShort3
+  nameWithType: UShort3
+  fullName: piine.UShort3
+- uid: piine.Long3
+  commentId: T:piine.Long3
+  parent: piine
+  name: Long3
+  nameWithType: Long3
+  fullName: piine.Long3
+- uid: piine.ULong3
+  commentId: T:piine.ULong3
+  parent: piine
+  name: ULong3
+  nameWithType: ULong3
+  fullName: piine.ULong3
